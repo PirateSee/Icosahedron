@@ -1,0 +1,13 @@
+filename = 'octolib-1.20.1-0.3.jar'
+name = 'OctoLib'
+side = 'both'
+
+[download]
+hash = '193889cafc9c3bfb83626008e142f2c7beb29119ae0887679f77e409cd8bcfee7f7b7018f1f78706972b247aa5d02c60245ef4fa678bf26623aad387f8b706cc'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/RH2KUdKJ/versions/DGHuSq0v/octolib-1.20.1-0.3.jar'
+
+[update.modrinth]
+mod-id = 'RH2KUdKJ'
+version = 'DGHuSq0v'

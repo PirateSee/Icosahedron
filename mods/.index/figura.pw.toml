@@ -1,0 +1,13 @@
+filename = 'figura-0.1.4+1.20.1-forge-mc.jar'
+name = 'Figura'
+side = 'client'
+
+[download]
+hash = '67613183318be52472809bc4e35acb01bd1050767346f917823ce6ca18e7f4e529c1752b2c0d516dfc59058a402e280ecfca922870332069353f6a7ac4e0fc45'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/s9gIPDom/versions/vo8jpIKn/figura-0.1.4%2B1.20.1-forge-mc.jar'
+
+[update.modrinth]
+mod-id = 's9gIPDom'
+version = 'vo8jpIKn'

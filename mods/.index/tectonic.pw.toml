@@ -1,0 +1,13 @@
+filename = 'tectonic-forge-1.19.3-2.3.4.jar'
+name = 'Tectonic'
+side = 'both'
+
+[download]
+hash = 'cca6512af58a4ecaa2ee4971c58ae99ea9da1f774368dd3d0c1a707a6ae5c345f1a15fd2906b8fb55e281c0f7e336f1f1223648b8023d7ed37416d4d5f4eab78'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/lWDHr9jE/versions/R41DAyGB/tectonic-forge-1.19.3-2.3.4.jar'
+
+[update.modrinth]
+mod-id = 'lWDHr9jE'
+version = 'R41DAyGB'

@@ -1,0 +1,13 @@
+filename = 'lootr-forge-1.20-0.7.33.83.jar'
+name = 'Lootr'
+side = 'both'
+
+[download]
+hash = '980dd141590172c1b081698ea4469e1f18167648af6e5514592fec7de989fbf0b9621bfe730c720650fad9294a7dcd3e4fd8f0d110d8ec8eb042faca49f2bdc4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/EltpO5cN/versions/FJZ5eToG/lootr-forge-1.20-0.7.33.83.jar'
+
+[update.modrinth]
+mod-id = 'EltpO5cN'
+version = 'FJZ5eToG'

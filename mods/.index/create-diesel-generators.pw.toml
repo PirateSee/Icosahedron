@@ -1,0 +1,13 @@
+filename = 'createdieselgenerators-1.20.1-1.2h.jar'
+name = 'Create: Diesel Generators'
+side = 'both'
+
+[download]
+hash = '97dd837453eac6c97338aa59ac0c8d0b3f45b3f3c55791b2e8db5f2bc04aa5d6e755c3cd45244015d29ec4af20a35adb9a4a08fd66dfad1d56a073a83e9c7330'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZM3tt6p1/versions/TkW9mOTh/createdieselgenerators-1.20.1-1.2h.jar'
+
+[update.modrinth]
+mod-id = 'ZM3tt6p1'
+version = 'TkW9mOTh'

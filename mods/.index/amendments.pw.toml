@@ -1,0 +1,13 @@
+filename = 'amendments-1.20-1.1.31.jar'
+name = 'Amendments'
+side = 'both'
+
+[download]
+hash = '9c69c3989cf08db03870252a37d091191bc506f46784cbc01ffc8af4b699998f766874e68d43f7fc5d74daf564d8b4e359ccf56d073fc1cc355fbe84b4a249d0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/6iTJugQR/versions/iFucsSea/amendments-1.20-1.1.31.jar'
+
+[update.modrinth]
+mod-id = '6iTJugQR'
+version = 'iFucsSea'

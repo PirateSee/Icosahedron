@@ -1,5 +1,7 @@
 ServerEvents.recipes(e => {
     //e.remove({id:''})
+    e.remove({id:'immersive_aircraft:warship'})
+    e.remove({id:'immersive_aircraft:biplane'})
     e.remove({id:'pneumaticcraft:flux_compressor'})
     e.remove({id:'pneumaticcraft:air_cannon'})
     e.remove({id:'pneumaticcraft:heat_sink'})
@@ -292,4 +294,42 @@ ServerEvents.recipes(e => {
         P: 'pneumaticcraft:printed_circuit_board',
         c: 'kubejs:carbon_steel_rod'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:programmer')
+    //piratesee didn't wanted to do Bipplane and Warship so i had to 😭
+    e.recipes.create.mechanical_crafting('immersive_aircraft:biplane', [ 
+        '   e   ',
+        'ppHEHpp',
+        ' cpPpc ',
+        '   s   ',
+        '  php  ',
+        ], {
+          s: '#create:seats',
+          e: 'immersive_aircraft:enhanced_propeller',
+          p: 'pneumaticcraft:plastic',
+          H: 'immersive_aircraft:hull_reinforcement',
+          h: 'immersive_aircraft:hull',
+          c: 'kubejs:carbon_steel_rod',
+          P: 'kubejs:high_pressure_plate',
+          E: 'immersive_aircraft:engine'
+      }).id('ico:biplane')
+      e.recipes.create.mechanical_crafting('immersive_aircraft:warship', [ 
+        ' hrscsrh ',
+        'pssssssss',
+        'hchjhjhch',
+        'pssssssss',
+        ' hreAerh ',
+        '   pSC   ',
+        '   HHH   '
+        ], {
+          h: 'kubejs:high_pressure_plate',
+          r: 'kubejs:rubber',
+          s: 'immersive_aircraft:sail',
+          c: 'kubejs:carbon_steel_rod',
+          p: 'immersive_aircraft:propeller',
+          j: 'minecraft:copper_block',
+          e: 'immersive_aircraft:engine',
+          A: 'immersive_aircraft:cargo_airship',
+          S: '#create:seats',
+          C: 'immersive_aircraft:heavy_crossbow',
+          H: 'immersive_aircraft:hull_reinforcement'
+      }).id('ico:warship')
 })

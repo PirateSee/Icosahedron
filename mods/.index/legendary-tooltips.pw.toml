@@ -1,0 +1,13 @@
+filename = 'LegendaryTooltips-1.20.1-forge-1.4.5.jar'
+name = 'Legendary Tooltips'
+side = 'client'
+
+[download]
+hash = '20d973e57ac7c20fe8f3a6f5cd75b46d3362a7f7ec408750f15894ce98c14174f083535abeff8640c21e53411cceef6387442141bf98a694b0e3ba4d18804257'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/atHH8NyV/versions/JhxD2e6J/LegendaryTooltips-1.20.1-forge-1.4.5.jar'
+
+[update.modrinth]
+mod-id = 'atHH8NyV'
+version = 'JhxD2e6J'

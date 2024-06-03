@@ -1,0 +1,13 @@
+filename = 'probejs-6.0.0-forge.jar'
+name = 'ProbeJS'
+side = 'client'
+
+[download]
+hash = 'ceb52fc0e9aa5fe66121c49fd86caf2dbd64bcca8aad77dea7990f9fb1b4d09c1d49ecbf91d26fb40dabf38bb1c36ec5fb0b0a7ecbcb23cc6a2efdde89031ade'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/JJNYRb4B/versions/XIxTqWLF/probejs-6.0.0-forge.jar'
+
+[update.modrinth]
+mod-id = 'JJNYRb4B'
+version = 'XIxTqWLF'

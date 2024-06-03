@@ -1,0 +1,13 @@
+filename = 'corpse-forge-1.20.1-1.0.12.jar'
+name = 'Corpse'
+side = 'both'
+
+[download]
+hash = '369791d4feddd2b14542a100c31fe62226bab961a2f023057c3353a09be7841da1478effed8274e854d4abc3df65dc5d4cdc37293ef1fb4cfe419160f5f4135a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/WrpuIfhw/versions/x5gi94YI/corpse-forge-1.20.1-1.0.12.jar'
+
+[update.modrinth]
+mod-id = 'WrpuIfhw'
+version = 'x5gi94YI'

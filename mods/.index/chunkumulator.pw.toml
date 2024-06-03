@@ -1,0 +1,13 @@
+filename = 'chunkumulator-1.0.3+MC1.20.1.jar'
+name = 'Chunkumulator'
+side = 'server'
+
+[download]
+hash = '7b889f2f9ad9fc448fea4a53ea962b0dd76919eccebf24c79d3eaf6132b9f1d9e11876d37dceb89782126a7be6addc8802f8c54a9324a3d60661d3b62c152e84'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/NdXjQHpc/versions/fttPWJH2/chunkumulator-1.0.3%2BMC1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'NdXjQHpc'
+version = 'fttPWJH2'

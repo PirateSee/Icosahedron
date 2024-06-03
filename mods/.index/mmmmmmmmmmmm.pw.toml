@@ -1,0 +1,13 @@
+filename = 'dummmmmmy-1.20-1.8.17b.jar'
+name = 'MmmMmmMmmMmm'
+side = 'both'
+
+[download]
+hash = '25a34d6d46ecfa6c654f08295805a4a17bf9419f734ce3c89e12abb148de9b72ce9050e6370ea69d914fa57486a67a28ba0d24bd7a1f6788e581beaec3dc1a45'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Adega8YN/versions/dGifKxWx/dummmmmmy-1.20-1.8.17b.jar'
+
+[update.modrinth]
+mod-id = 'Adega8YN'
+version = 'dGifKxWx'

@@ -1,0 +1,13 @@
+filename = 'melter-1.20.1-1.5.1.jar'
+name = 'Melter'
+side = 'both'
+
+[download]
+hash = '869efceaafbe18e818172cba193e6cb781cf940fe708adb5c36ae2a9c4075986388d33e69a05e01cbf84c0da871d544070291ba91c073162b869a9d2a3f8837c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1oFTujWR/versions/8NYayRSj/melter-1.20.1-1.5.1.jar'
+
+[update.modrinth]
+mod-id = '1oFTujWR'
+version = '8NYayRSj'

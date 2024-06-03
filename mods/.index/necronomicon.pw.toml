@@ -1,0 +1,13 @@
+filename = 'Necronomicon-Forge-1.4.2.jar'
+name = 'Necronomicon API'
+side = 'both'
+
+[download]
+hash = '76188df1b9be4d4d5f2bafc240d7bafdf13536c883e3d7cfc7abf69e2f6d934297e06a5c18d58ca18d839775f1707e3fab8568247919192fd3a6f68da4044b1d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/P1Kv5EAO/versions/txeRRjSH/Necronomicon-Forge-1.4.2.jar'
+
+[update.modrinth]
+mod-id = 'P1Kv5EAO'
+version = 'txeRRjSH'

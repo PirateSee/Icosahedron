@@ -1,0 +1,13 @@
+filename = 'incapacitated-1.20.1-1.4.4.2.jar'
+name = 'Incapacitated'
+side = 'both'
+
+[download]
+hash = 'df385f83b0e36284570d4c13d6281a1fa2e6ab06e76b8b7b60604b73741440ca98ba37ce9efc764b482f3b50c9381624e973c00bb273d751b91e9b379ac7239e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/CmDgNtOI/versions/iyEtB1EB/incapacitated-1.20.1-1.4.4.2.jar'
+
+[update.modrinth]
+mod-id = 'CmDgNtOI'
+version = 'iyEtB1EB'

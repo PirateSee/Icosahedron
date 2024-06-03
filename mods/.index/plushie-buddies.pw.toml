@@ -1,0 +1,13 @@
+filename = 'plushie_buddies-0.0.9-1.20.1.jar'
+name = 'Plushie Buddies'
+side = 'both'
+
+[download]
+hash = '8c73021699a4f30d23926940125a856402775cb92e97c267c698c38429358730e9a76b8e36fd741191dbf6b3566758a6612fd6223e1e62e5cde532c928378be4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/5hoSWfrw/versions/OC2RmfHs/plushie_buddies-0.0.9-1.20.1.jar'
+
+[update.modrinth]
+mod-id = '5hoSWfrw'
+version = 'OC2RmfHs'

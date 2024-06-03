@@ -1,0 +1,13 @@
+filename = 'create_gravity-1.20.1-1.2.0.jar'
+name = 'Create : Gravity'
+side = 'both'
+
+[download]
+hash = '78760803d9f0ec84caa7b8fe99569250e496fcb2385888b522e0839292177d8cf55d3be6fa10122f3f291b01a326684e1d4a9bbbe14163e0c0669c43a77e3164'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/KjNUIZp9/versions/ZmJKiVky/create_gravity-1.20.1-1.2.0.jar'
+
+[update.modrinth]
+mod-id = 'KjNUIZp9'
+version = 'ZmJKiVky'

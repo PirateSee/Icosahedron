@@ -1,0 +1,13 @@
+filename = 'particle-rain-2.0.8.jar'
+name = 'Particle Rain'
+side = 'client'
+
+[download]
+hash = '278d71dff299dbbcd49af1829e631332cc5c9a586b8a8d7f61e20555fd49b0f11b7e8e3d9feed05de6eeab4edf42eadb455706878f8fe063bb880d8106ea23fb'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/nrikgvxm/versions/soqqh6x4/particle-rain-2.0.8.jar'
+
+[update.modrinth]
+mod-id = 'nrikgvxm'
+version = 'soqqh6x4'

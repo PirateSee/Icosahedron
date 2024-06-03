@@ -1,0 +1,13 @@
+filename = 'Heracles-forge-1.20.1-1.1.12.jar'
+name = 'Heracles'
+side = 'both'
+
+[download]
+hash = '431705c10c9391cd602ef3f808993f2a21ba3c61ae0966a213dfda4c43feeeffc1f35081c9cf1493803f4777aca3fbef252459930727f9deaeb2966ae4631e38'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/lo90fZoB/versions/UVyQoEfQ/Heracles-forge-1.20.1-1.1.12.jar'
+
+[update.modrinth]
+mod-id = 'lo90fZoB'
+version = 'UVyQoEfQ'

@@ -1,0 +1,13 @@
+filename = 'mutil-1.20.1-6.1.1.jar'
+name = 'mutil'
+side = 'both'
+
+[download]
+hash = '736db7c6931244dbf67eb7116211149ff09b7cc368d7f49274152d8ea831b663ff50dc38789b667ef366777e3dacfe72d93b332f2d9e8a3eaef1827fdb6ce291'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/HWHl8Evb/versions/PI1cIWsh/mutil-1.20.1-6.1.1.jar'
+
+[update.modrinth]
+mod-id = 'HWHl8Evb'
+version = 'PI1cIWsh'

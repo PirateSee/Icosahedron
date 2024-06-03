@@ -1,0 +1,13 @@
+filename = 'voicechat-forge-1.20.1-2.5.15.jar'
+name = 'Simple Voice Chat'
+side = 'both'
+
+[download]
+hash = '25b2671d47e5cdf9aa7a3fc885dc7c65550bdffaf251707ec3414807196be6c44862c8a1360c67924ff5033e693b711735dfa142a6966be344aeae4bb15cce0d'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/9eGKb6K1/versions/akzMlJ1h/voicechat-forge-1.20.1-2.5.15.jar'
+
+[update.modrinth]
+mod-id = '9eGKb6K1'
+version = 'akzMlJ1h'

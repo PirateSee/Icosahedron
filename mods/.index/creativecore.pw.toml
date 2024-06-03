@@ -1,0 +1,13 @@
+filename = 'CreativeCore_FORGE_v2.11.30_mc1.20.1.jar'
+name = 'CreativeCore'
+side = 'client'
+
+[download]
+hash = '50dc006facd99811bea04943f100c149f54e68e3257bb727988c6bcb96e4f8cadd021a797f59ece14e91ebfcaaaeb7b4416a067d301815388307f3e8c2ff9aa8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/OsZiaDHq/versions/mbMcQfan/CreativeCore_FORGE_v2.11.30_mc1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'OsZiaDHq'
+version = 'mbMcQfan'
