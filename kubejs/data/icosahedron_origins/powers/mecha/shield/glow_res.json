@@ -1,0 +1,12 @@
+{
+    "hidden": true,
+    "type": "origins:resource",
+    "min": 0,
+    "max": 7,
+    "start_value": 0,
+    "max_action": {
+        "type": "origins:set_resource",
+        "resource": "icosahedron_origins:mecha/shield/glow_res",
+        "value": 1
+    }
+}

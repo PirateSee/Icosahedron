@@ -1,0 +1,25 @@
+{
+    "name": "Aquafir",
+    "description": "§0[Ranged]§7\nAquatic creatures that float on the surface of water. They perfer long-ranged combat from the safety of water.",
+    "powers": [
+        "icosahedron_origins:seaborn/wetbow",
+        "icosahedron_origins:seaborn/wetspeed",
+        "origins:swim_speed",
+        "icosahedron_origins:seaborn/water_walking",
+        "icosahedron_origins:seaborn/water_jump",
+        "icosahedron_origins:seaborn/water_jump_qualify",
+        "icosahedron_origins:seaborn/water_jump_disqualify",
+        "icosahedron_origins:seaborn/water_jump_resource",
+        "icosahedron_origins:seaborn/seaborn_particles",
+        "icosahedron_origins:seaborn/bow_particles",
+        "icosahedron_origins:seaborn/aquatic",
+        "icosahedron_origins:seaborn/melee_slow",
+        "icosahedron_origins:seaborn/fire_weak",
+        "icosahedron_origins:seaborn/water_slide",
+        "icosahedron_origins:seaborn/water_walk_particles"
+    ],
+    "icon": {
+        "item": "kubejs:icon_jellyfish"
+    },
+    "impact": 1
+}

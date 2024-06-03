@@ -1,0 +1,45 @@
+{
+  "dependencies": [
+    "Blazing Heat"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Treated Wood ---</h2>",
+      "",
+      "/b/Treated Wood/b/ is used in the creation of /b/Brass Casings/b/ and other higher tier machinery.",
+      "",
+      "/6/Mixing crushed coal/6/ will give /b/Tar/b/, which can be mixed with /b/Water/b/ to make /b/Creosote Oil/b/. /6/Pouring this on planks/6/ will give /b/Treated Wood/b/."
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -30,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "blocksyouneed_luna:treated_wood_planks",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Treated Wood"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

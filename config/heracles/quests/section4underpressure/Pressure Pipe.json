@@ -1,0 +1,56 @@
+{
+  "dependencies": [
+    "Compact Alloy"
+  ],
+  "tasks": {
+    "get_pressure_tube": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:pressure_tube",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:pressure_tube",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Pressure Pipe"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

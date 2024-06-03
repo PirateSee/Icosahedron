@@ -1,0 +1,61 @@
+{
+  "dependencies": [
+    "Crude Ore Processing"
+  ],
+  "tasks": {
+    "get_pipes": {
+      "type": "heracles:item",
+      "item": "create:fluid_pipe",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "get_pump": {
+      "type": "heracles:item",
+      "item": "create:mechanical_pump",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Fluid transfer"
+    },
+    "description": [
+      "<h2>- Pipe Dream ---</h2>",
+      "Copper pipes help you move fluids around.",
+      "Place pipes connecting then power a pump somewhere along the path.",
+      "<br/>",
+      "<crafting-recipe id=\"ico:fluid_pipe\"/>",
+      "<hr/>",
+      "<task task=\"get_pipes\" quest=\"Hydrodynamics\"/>",
+      "<task task=\"get_pump\" quest=\"Hydrodynamics\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          240,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:fluid_pipe",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Pipe Dream"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

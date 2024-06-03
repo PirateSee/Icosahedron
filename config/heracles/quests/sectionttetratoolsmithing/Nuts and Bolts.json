@@ -1,0 +1,50 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_bolt": {
+      "type": "heracles:item",
+      "item": "tetra:forged_bolt",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Nuts and Bolts ---</h2>",
+      "",
+      "These Bolts found in the ruins seem useful.",
+      "",
+      "They can be slotted into /b/various tool types/b/, often as a /b/Binding/b/, allowing for /6/tweaking tool properties/6/. On most tools, it allows for /6/sacrificing durability for efficency/6/ or vise versa. On others, it can tweak more useful tool properties, such as the /b/tightness of a bow/b/."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          -90,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:forged_bolt",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Nuts and Bolts"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "COMPLETED"
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:seaborn/water_jump_resource",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "inverted": true,
+                "type": "origins:swimming"
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "rising_action": {
+        "type": "origins:set_resource",
+        "resource": "icosahedron_origins:seaborn/water_jump_resource",
+        "value": 0
+    }
+}

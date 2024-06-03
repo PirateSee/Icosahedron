@@ -1,0 +1,27 @@
+{
+    "key": "carbon_steel",
+    "category": "metal",
+    "primary": 6.3,
+    "secondary": 4.6,
+    "tertiary": 1.6,
+    "durability": 380,
+    "integrityCost": 2,
+    "integrityGain": 6,
+    "magicCapacity": 72,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 6.5,
+    "tints": {
+        "glyph": "5D554E",
+        "texture": "5D554E"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "kubejs:carbon_steel_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:iron"
+    }
+}

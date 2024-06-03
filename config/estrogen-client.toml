@@ -1,0 +1,73 @@
+
+#.
+#Global settings for the chest feature
+[chestRenderingGlobal]
+	#.
+	#Enable chest feature rendering
+	chestFeatureRendering = true
+	#.
+	#Enable chest feature armor rendering
+	chestArmorRendering = true
+	#.
+	#Enable chest feature physics rendering
+	chestPhysicsRendering = true
+
+#.
+#Settings for the chest feature (for the local player)
+[chestEstrogen]
+	#.
+	#Enable chest feature
+	chestFeature = true
+	#.
+	#Enable chest feature armor
+	chestArmor = true
+	#.
+	#Enable chest feature physics
+	chestPhysics = true
+	#.
+	#Chest feature bounciness
+	#Range: 0.0 ~ 1.0
+	chestBounciness = 0.27000001072883606
+	#.
+	#Chest feature physics damping
+	#Range: 0.0 ~ 1.0
+	chestDamping = 0.375
+
+#.
+#UI element Configuration
+[ui]
+	#.
+	#Enable dash overlay
+	dashOverlay = true
+
+#.
+#Miscellaneous settings
+[misc]
+	#.
+	#Allows you to pat entities by shift right-clicking them!
+	entityPatting = true
+
+#.
+#Settings for Equippable Items
+[accessory]
+	#.
+	#Render estrogen patches on the player
+	estrogenPatchRender = true
+
+#.
+#Compatibility between other mods settings
+[compat]
+	#.
+	#Enable ears Compatibility
+	ears = true
+	#.
+	#Enable figura Compatibility
+	figura = true
+
+#.
+#Settings for custom sounds and music
+[sounds]
+	#.
+	#Enable ambient music which starts playing on specific moments
+	ambientMusic = true
+

@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "Planetfall"
+  ],
+  "tasks": {
+    "getiron": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_ingot",
+      "amount": 6,
+      "collection": "AUTOMATIC",
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "You know how this goes"
+    },
+    "description": [
+      "<h2>- Aquire Hardware ---</h2>",
+      "Make some iron. Simple, right? you've done this many times before, im sure.",
+      "<hr/>",
+      "<task task=\"getiron\" quest=\"iron\"/>"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          30,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Aquire Hardware"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

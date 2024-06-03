@@ -1,0 +1,102 @@
+{
+  "dependencies": [
+    "Planetfall"
+  ],
+  "tasks": {
+    "adv_insulate": {
+      "advancements": [
+        "cold_sweat:insulate_armor"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Regulated Tempature"
+    },
+    "description": [
+      "<h2>- Sew Much Insulation ---</h2>",
+      "Having tempature problems? Make a sewing table and sew materials into your armour to get insulation.",
+      "<crafting-recipe id=\"cold_sweat:sewing_table\"/>",
+      "",
+      "<item id=\"minecraft:leather\"/>",
+      "Leather makes /d/Neutral/d/ insulation. Not very strong, but works both ways.",
+      "<columns>",
+      "    <column>",
+      "        <columns template = \"75% 25%\">",
+      "            <column>",
+      "            </column>",
+      "            <column>",
+      "                <item id=\"cold_sweat:fur\"> </item>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "    <column>",
+      "        <columns template = \"25% 75%\">",
+      "            <column>",
+      "                <item id=\"minecraft:white_wool\"> </item>",
+      "            </column>",
+      "            <column>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "</columns>",
+      "Fur and wool makes /9/Cold/9/ insulation. Stronger, but only resists the cold. Wool is less effective then fur.",
+      "<columns>",
+      "    <column>",
+      "        <columns template = \"75% 25%\">",
+      "            <column>",
+      "            </column>",
+      "            <column>",
+      "                <item id=\"cold_sweat:hoglin_hide\"> </item>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "    <column>",
+      "        <columns template = \"25% 75%\">",
+      "            <column>",
+      "                <item id=\"minecraft:rabbit_hide\"> </item>",
+      "            </column>",
+      "            <column>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "</columns>",
+      "Hoglin Hide and Rabbit Hide makes /6/Hot/6/ insulation. Stronger, but only resists heat. Rabbit Hide is less effective then Hoglin Hide",
+      "",
+      "Fur can be obtained by shearing goats. Hoglin hide is dropped by Hoglins when they die.",
+      "",
+      "Armour can accept multiple pieces of insulation, each increasing the strength. You can also mix and match insulation types.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_insulate\" quest=\"Sew much insulation\"/>    "
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          0,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:leather",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Sew much insulation"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

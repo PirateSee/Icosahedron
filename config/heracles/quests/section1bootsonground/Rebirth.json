@@ -1,0 +1,64 @@
+{
+  "dependencies": [
+    "Planetfall"
+  ],
+  "tasks": {
+    "rebirth": {
+      "title": "I want to change my origin!",
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "award_orb": {
+      "item": {
+        "id": "minecraft:air",
+        "count": 0
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "Let's do that again"
+    },
+    "description": [
+      "<h2>- Rebirth ---</h2>",
+      "Made a mistake with picking your origin?",
+      "You can get a one-time free reset here.",
+      "Use it wisely, additonal Orbs of Origin aren't cheap to make.",
+      "<hr/>",
+      "You could also get another by asking someone else to claim theirs and give it to you.",
+      "",
+      "<task task=\"rebirth\" quest=\"Rebirth\"/>",
+      "<hr/>",
+      "Here it is. Try not to mess it up this time.",
+      "<reward reward=\"award_orb\" quest=\"Rebirth\"/>"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          -60,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "origins:orb_of_origin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Rebirth"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,172 @@
+{
+    "name": "§a+ §r§nShadow of a Star",
+    "description": "Double tapping the toggle button spends 3 dusk charges to fire a powerful laser. If it hits the air, it pulls you forward.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:gator/dusk_resource",
+                "comparison": ">=",
+                "compare_to": 3
+            },
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:gator/dusk_active_cd",
+                "comparison": "!=",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:gator/dusk_active_cd",
+                "comparison": "<",
+                "compare_to": 15
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:raycast",
+        "distance": 20,
+        "block": true,
+        "entity": true,
+        "shape_type": "visual",
+        "fluid_handling": "any",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle": "minecraft:dragon_breath",
+                                "count": 5,
+                                "speed": 0.5,
+                                "spread": {
+                                    "x": 0.25,
+                                    "y": 0.25,
+                                    "z": 0.25
+                                },
+                                "offset_y": 1
+                            },
+                            {
+                                "type": "origins:dismount"
+                            },
+                            {
+                                "type": "origins:area_of_effect",
+                                "radius": 4,
+                                "bientity_action": {
+                                    "type": "origins:target_action",
+                                    "action": {
+                                        "type": "origins:damage",
+                                        "amount": 6,
+                                        "damage_type": "minecraft:magic"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "y": 1.5,
+                    "z": 3,
+                    "client": true,
+                    "server": true
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 14,
+                    "damage_type": "minecraft:magic"
+                }
+            ]
+        },
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:explode",
+                    "power": 3,
+                    "destruction_type": "break",
+                    "damage_self": true,
+                    "destructible": {
+                        "type": "origins:blast_resistance",
+                        "comparison": "<=",
+                        "compare_to": 4
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:dragon_breath ~ ~ ~ 1 1 1 2 15"
+                }
+            ]
+        },
+        "before_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.beacon.deactivate",
+                    "volume": 1,
+                    "pitch": 1.2
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:dragon_breath",
+                    "count": 15,
+                    "speed": 0.5,
+                    "spread": {
+                        "x": 0.25,
+                        "y": 0.25,
+                        "z": 0.25
+                    },
+                    "offset_y": 1
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:gator/dusk_resource",
+                    "change": -3,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:gator/dusk_resource_off",
+                    "change": -3,
+                    "operation": "add"
+                }
+            ]
+        },
+        "miss_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "y": 0.1,
+                    "z": 3.25,
+                    "space": "local",
+                    "client": true,
+                    "server": true
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:slow_falling",
+                        "duration": 40,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                }
+            ]
+        },
+        "command_along_ray": "/particle minecraft:dripping_obsidian_tear ~ ~ ~",
+        "command_step": 0.2
+    },
+    "cooldown": 5,
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

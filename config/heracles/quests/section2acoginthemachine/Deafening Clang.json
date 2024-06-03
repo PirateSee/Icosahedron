@@ -1,0 +1,63 @@
+{
+  "dependencies": [
+    "Cogs n Shafts",
+    "Source of Life"
+  ],
+  "tasks": {
+    "adv_create_bonk": {
+      "advancements": [
+        "create:mechanical_press"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Ingots to sheets"
+    },
+    "description": [
+      "<h2>- Deafening Clang ---</h2>",
+      "Alright things are spinning, what do we do with it?",
+      "Power machines of course! Starting with the Mechanical Press.",
+      "<br/>",
+      "<crafting-recipe id=\"ico:mechanical_press\" grid-width=\"3\"/>",
+      "<br/>",
+      "Use cogwheels and shafts to connect your waterwheel to the press to get it working.",
+      "",
+      "<hint title=\"Gearing Up\" icon=\"create:large_cogwheel\">",
+      "    <p>Use large and small cogwheels to gear up. The faster a machine spins, the faster it processes, but also the more Stress Units (SU) it consumes. If you consume more SU then you produce, then the network will overstress and stop spinning.</p>",
+      "</hint>",
+      "<br/>",
+      "Go ahead and process something with the press. Try putting ingots under it.",
+      "<hr/>",
+      "<task task=\"adv_create_bonk\" quest=\"Deafening Clang\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          90,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:mechanical_press",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Deafening Clang"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

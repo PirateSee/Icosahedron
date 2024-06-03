@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Before the End"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          30,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:end_stone",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Enderfall"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

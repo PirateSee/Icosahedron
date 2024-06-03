@@ -1,0 +1,50 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_stonecutter": {
+      "type": "heracles:item",
+      "item": "tetra:stonecutter",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Like Butter ---</h2>",
+      "",
+      "The /6/Stonecutter/6/ is an intresting heavy /6/blade/6/ module.",
+      "",
+      "It can seemingly /b/slice through stone/b/ making it effective as a /b/mining tool/b/. It mines blocks in an /6/arc/6/ instead, but is no less effective. It loses much of its attack damage, so not a great choice for offense."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          90,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:stonecutter",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Like Butter"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "COMPLETED"
+  }
+}

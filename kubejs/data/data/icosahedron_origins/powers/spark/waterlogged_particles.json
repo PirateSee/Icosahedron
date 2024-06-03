@@ -1,0 +1,30 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_rain"
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">=",
+                "compare_to": 0.1
+            }
+        ]
+    },
+    "type": "origins:particle",
+    "particle": "minecraft:large_smoke",
+    "frequency": 5,
+    "count": 10,
+    "speed": 0,
+    "spread": {
+        "x": 0.5,
+        "y": 1,
+        "z": 0.5
+    },
+    "offset_y": 1,
+    "visible_in_first_person": true,
+    "visible_while_invisible": true
+}

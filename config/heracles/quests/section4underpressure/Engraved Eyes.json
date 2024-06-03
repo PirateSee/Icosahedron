@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Automated Assembly"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          0,
+          420
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:ender_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png",
+    "title": {
+      "translate": "Laser Eye Surgery"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

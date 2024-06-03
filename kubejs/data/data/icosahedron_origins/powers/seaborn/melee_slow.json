@@ -1,0 +1,19 @@
+{
+    "name": "Slow Swing",
+    "description": "Attack speed with melee weapons is 10% slower.",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:is_damageable"
+        }
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.attack_speed",
+        "operation": "multiply_base",
+        "value": -0.1
+    },
+    "tick_rate": 10,
+    "update_health": false
+}

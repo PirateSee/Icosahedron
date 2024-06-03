@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "antimatter"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "blocksyouneed_luna:antimetal_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png",
+    "title": {
+      "translate": "Anti-Tech"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

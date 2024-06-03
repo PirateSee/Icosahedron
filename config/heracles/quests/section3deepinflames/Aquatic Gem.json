@@ -1,0 +1,50 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_aquatrine": {
+      "type": "heracles:item",
+      "item": "blocksyouneed_luna:aquatrine",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Aquatic Gem ---</h2>",
+      "",
+      "Aquatrine is used for a few basic electronic components.",
+      "",
+      "You can find /b/Aquatrine/b/ buried in /6/sand or sandstone below sea level/6/. Usually this means you have to dig underwater, but you can find a bunch on /6/beaches/6/, as long as you dig low enough."
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -90,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "blocksyouneed_luna:aquatrine",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Aquatic Gem"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

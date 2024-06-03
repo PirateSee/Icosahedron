@@ -1,0 +1,61 @@
+{
+  "dependencies": [
+    "Cutting Sawblade"
+  ],
+  "tasks": {
+    "get_andesite_mesh": {
+      "type": "heracles:item",
+      "item": "createsifter:andesite_mesh",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_sifter": {
+      "type": "heracles:item",
+      "item": "createsifter:sifter",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- The Sieve ---</h2>",
+      "The sifter allows you to seperate mixed powders. The sifter requires a mesh in the top to filter out materials.",
+      "Craft one, and make an andesite mesh to go with it. You'll need the mesh to process ores later.",
+      "<br/>",
+      "<crafting-recipe id=\"ico:sifter\"/>",
+      "<hr/>",
+      "<task task=\"get_sifter\" quest=\"The Sieve\"/>",
+      "<task task=\"get_andesite_mesh\" quest=\"The Sieve\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          180,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createsifter:sifter",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Sieve"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

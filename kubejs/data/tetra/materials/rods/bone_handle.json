@@ -1,0 +1,27 @@
+{
+    "key": "bone_handle",
+    "category": "misc",
+    "primary": 3.2,
+    "secondary": 1.4,
+    "tertiary": 0.7,
+    "durability": 402,
+    "integrityCost": 3,
+    "integrityGain": 7,
+    "magicCapacity": 148,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "5D554E",
+        "texture": "5D554E"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "born_in_chaos_v1:bone_handle" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

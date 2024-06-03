@@ -1,0 +1,12 @@
+{
+    "origins": [
+        "icosahedron_origins:seaborn",
+        "icosahedron_origins:standard_bearer",
+        "icosahedron_origins:fox",
+        "icosahedron_origins:spark",
+        "icosahedron_origins:infection",
+        "icosahedron_origins:gator",
+        "icosahedron_origins:mecha"
+    ],
+    "enabled": true
+}

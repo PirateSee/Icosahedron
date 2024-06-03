@@ -1,0 +1,45 @@
+{
+  "dependencies": [
+    "Bigger Hammer"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Hammer Operation ---</h2>",
+      "",
+      "A /b/Forge Hammer/b/ requires some /b/attachments/b/ to function. A /b/set/b/ of /b/thermal power/b/ sources must be inserted. Another two slots can be found, requesting some kind of /b/upgrade/b/.",
+      "",
+      "The upgrades are slotted in quite well. You will need to /b/pry/b/ them off."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          0,
+          180
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:combustion_chamber",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Hammer Operation"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "IN_PROGRESS"
+  }
+}

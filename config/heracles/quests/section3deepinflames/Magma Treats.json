@@ -1,0 +1,48 @@
+{
+  "dependencies": [
+    "Crushing It"
+  ],
+  "tasks": {
+    "get_blaze_cake": {
+      "type": "heracles:item",
+      "item": "create:blaze_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          30,
+          240
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:blaze_cake",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Magma Treats"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

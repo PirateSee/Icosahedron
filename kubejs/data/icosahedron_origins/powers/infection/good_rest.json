@@ -1,0 +1,11 @@
+{
+    "name": "A Good Rest",
+    "description": "Sleeping lets your body push the infection back a little.",
+    "type": "origins:action_on_wake_up",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "icosahedron_origins:infection/spread",
+        "change": -30,
+        "operation": "add"
+    }
+}

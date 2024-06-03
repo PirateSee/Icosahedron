@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "chemical manipulation"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          180,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mekanism:basic_energy_cube",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Battery Block"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

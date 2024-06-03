@@ -1,0 +1,46 @@
+{
+  "dependencies": [
+    "Pressure Processing"
+  ],
+  "tasks": {
+    "check_heat": {
+      "title": "Understood",
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Keep your cool"
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          0,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:thermal_lagging",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Heat Management"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

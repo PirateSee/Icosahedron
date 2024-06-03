@@ -1,0 +1,68 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {
+    "get_funnel": {
+      "item": {
+        "id": "create:andesite_funnel",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "get_fluid_pipe": {
+      "item": {
+        "id": "create:fluid_pipe",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "get_belt": {
+      "item": {
+        "id": "create:belt_connector",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "get_pump": {
+      "item": {
+        "id": "create:mechanical_pump",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section EX: Supply Cache": {
+        "position": [
+          120,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:large_cogwheel",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Component Shipment II"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

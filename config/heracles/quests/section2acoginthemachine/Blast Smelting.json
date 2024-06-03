@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    "Charcoal Heating"
+  ],
+  "tasks": {
+    "get_blast_furnace": {
+      "type": "heracles:item",
+      "item": "minecraft:blast_furnace",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Blast Smelting ---</h2>",
+      "The classic /b/Blast Furnace./b/ Its a bit more expensive now, requiring /b/Blast Bricks/b/ made from /b/Ash/b/ and /b/Clay/b/.",
+      "",
+      "/b/Ash/b/ can be obtained by /6/burning wood in the world/6/. Make a pile of logs or planks and light them on fire and wait for them to burn away. You'll be left with /b/Ash Piles,/b/ which you can collect with a /b/Shovel./b/",
+      "",
+      "<hr/>",
+      "<task task=\"get_blast_furnace\" quest=\"Blast Smelting\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          180,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:blast_furnace",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Blasting Heat"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "dependencies": [
+    "Carbon Steel"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -90,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:advanced_hammer",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Advanced Tools"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "dependencies": [
+    "reinforced alloy"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          210,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mekanism:jetpack",
+        "count": 1,
+        "nbt": {}
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Airborn"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

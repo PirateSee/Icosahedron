@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "teleporting"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          540,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mekanism:quantum_entangloporter",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Entanglement"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

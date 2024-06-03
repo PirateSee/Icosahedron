@@ -1,0 +1,30 @@
+{
+    "hidden": true,
+    "type": "origins:resource",
+    "min": 0,
+    "max": 5,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:guard/buckle_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "min_action": {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:cloud",
+        "count": 4,
+        "speed": 0.1,
+        "spread": {
+            "x": 0.25,
+            "y": 0,
+            "z": 0.25
+        },
+        "offset_y": 0.5
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:modify_resource",
+        "resource": "icosahedron_origins:guard/buckle_resource",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": -1,
+            "name": "Buckle Expiring"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    "Cutting Sawblade"
+  ],
+  "tasks": {
+    "get_mech_belt": {
+      "type": "heracles:item",
+      "item": "create:belt_connector",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Belt Transfer ---</h2>",
+      "Belts allow you to /b/transfer items and rotational power/b/. A must have for automation.",
+      "Belts are made by /6/compacting dried kelp/6/ into a sheet, then /6/cutting/6/ it. You might want to automate the process: you'll likely wants lots of belts.",
+      "<br/>",
+      "",
+      "<hr/>",
+      "<task task=\"get_mech_belt\" quest=\"Belt Transfer\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          120,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:belt_connector",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Belt Transfer"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

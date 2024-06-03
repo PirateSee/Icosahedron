@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Charcoal Heating"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          150,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "breezy:hot_air_balloon",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Eye in the Sky"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

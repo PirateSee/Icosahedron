@@ -1,0 +1,48 @@
+{
+  "dependencies": [
+    "Plant Fuel"
+  ],
+  "tasks": {
+    "get_lube_bearing": {
+      "type": "heracles:item",
+      "item": "kubejs:lubricated_bearing",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          30,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:lubricated_bearing",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Lubricated"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

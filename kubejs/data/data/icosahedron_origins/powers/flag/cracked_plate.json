@@ -1,0 +1,19 @@
+{
+    "name": "Cracked Armour",
+    "description": "Armour provides 20% less defence.",
+    "condition": {
+        "type": "origins:attribute",
+        "attribute": "minecraft:generic.armor",
+        "comparison": ">=",
+        "compare_to": 2
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.armor",
+        "operation": "multiply_base",
+        "value": -0.2,
+        "name": "Cracked Armour"
+    },
+    "tick_rate": 20,
+    "update_health": false
+}

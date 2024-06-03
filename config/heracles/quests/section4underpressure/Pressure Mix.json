@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Turbine"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          30,
+          270
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:fluid_mixer",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Pressure Mix"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

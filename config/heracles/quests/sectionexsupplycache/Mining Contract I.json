@@ -1,0 +1,116 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "use_supply_pass": {
+      "type": "heracles:item",
+      "item": "kubejs:supply_pass",
+      "amount": 1,
+      "collection": "MANUAL",
+      "title": "Authenticate",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {
+    "reward_copper": {
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "minecraft:raw_copper",
+        "count": 64
+      },
+      "type": "heracles:item"
+    },
+    "reward_salpherite": {
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "kubejs:sphalerite_ore",
+        "count": 32
+      },
+      "type": "heracles:item"
+    },
+    "reward_limonite": {
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "kubejs:limonite_ore",
+        "count": 32
+      },
+      "type": "heracles:item"
+    },
+    "reward_emerald": {
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "kubejs:rough_emerald",
+        "count": 16
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Mining Contract I ---</h2>",
+      "Use a /6/Supply Cache Acess Pass/6/ to pay for some raw minerals."
+    ],
+    "groups": {
+      "Section EX: Supply Cache": {
+        "position": [
+          -60,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:raw_iron",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Mining Contract I"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": true,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "dependencies": [
+    "Crude Ore Processing"
+  ],
+  "tasks": {
+    "adv_create_kitted": {
+      "advancements": [
+        "create:wrench_goggles"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Specs for the job ---</h2>",
+      "Now that you got the basics down, its time to get some tools.",
+      "<hr/>",
+      "The Engineer's Goggles will grant you detailed stress information for blocks you look at.",
+      "<crafting-recipe id=\"create:crafting/kinetics/goggles\" grid-width=\"3\"/>",
+      "The Wrench allows you to rotate and deconstruct kinetic blocks quickly. It can also configure some blocks.",
+      "<crafting-recipe id=\"create:crafting/kinetics/wrench\" grid-width=\"3\"/>",
+      "These will help you build bigger contraptions later.",
+      "<hr/>",
+      "<task task=\"adv_create_kitted\" quest=\"Specs for the job\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          210,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:goggles",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Specs for the job"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

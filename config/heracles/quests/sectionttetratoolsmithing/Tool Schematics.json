@@ -1,0 +1,49 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Tool Schematics ---</h2>",
+      "",
+      "Hungry for more /b/upgrades/b/?",
+      "",
+      "Unfortunately, you don't know how to make all of them by yourself.",
+      "",
+      "But you might be able to find scrolls containing diagrams and schematics on new /b/tool parts/b/. Those schematics have likely been lost to time, so old /6/dungeons and structures/6/ may contain them.",
+      "",
+      "/b/Villagers/b/ that have mastered their craft might offer treatises on the /6/efficent use/6/ of materials.",
+      "",
+      "/b/Piglins/b/ seem to have good knowledge of the use of gold, potentally having written down how to harness gold's properties for /6/enchanting/6/."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          30,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:scroll_rolled",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Tool Schematics"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

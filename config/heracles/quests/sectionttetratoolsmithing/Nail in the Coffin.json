@@ -1,0 +1,58 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_extractor": {
+      "type": "heracles:item",
+      "item": "tetra:chthonic_extractor",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Nail in the Coffin ---</h2>",
+      "",
+      "This /6/Extractor/6/ is a handy mining utencil that has /b/multiple uses/b/.",
+      "",
+      "It's tooltip suggests /b/hammering it into bedrock/b/ to unearth /6/minerals/6/. It can also be /b/fitted to the back blad/b/e of a /6/Pickaxe/6/ to increase the /6/mining area/6/.",
+      "",
+      "Using the /6/Extractor/6/ on a mining tool does /b/increase the durability it consumes/b/, but the extra area of effect can greatly speed up mining operations."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          120,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:chthonic_extractor_used",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Nail in the Coffin"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "COMPLETED"
+  }
+}

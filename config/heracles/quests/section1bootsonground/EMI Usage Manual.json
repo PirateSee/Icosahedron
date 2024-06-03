@@ -1,0 +1,48 @@
+{
+  "dependencies": [
+    "Survival Guide"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "The item database"
+    },
+    "description": [
+      "<h2>- EMI Usage Manual ---</h2>",
+      "/d/E/d//a/M/a//b/I/b/ is the recipe and item viewer of choice in Icosahedreon.",
+      "",
+      "It works mostly how others such as JEI would work. /b/R/b/ to view recipes, /b/U/b/ to view uses.",
+      "",
+      "However, pressing the /b/\"View Tree\"/b/ button on a recipe will open a recipe tree viewer. From there, you can select recipes for all intermediate steps and build a full recipe tree. A use guide will appear in the bottom right of the tree viewer for more information.",
+      "",
+      "And no /d/E/d//a/M/a//b/I/b/ is not an acronym. It is just pronunced EMI. (although the mod developer has provided some backronyms if it makes you feel better)"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          -14,
+          -50
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:crafting_table",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "EMI Usage Manual"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

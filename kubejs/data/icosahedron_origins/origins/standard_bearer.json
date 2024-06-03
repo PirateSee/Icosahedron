@@ -1,0 +1,28 @@
+{
+    "name": "Guardian",
+    "description": "§0[Support]§7\nThose of this profession boast high defense and motivational abilties, inpsiring and protecting teammates.",
+    "powers": [
+        "icosahedron_origins:guard/inspire",
+        "icosahedron_origins:guard/shield_boost",
+        "icosahedron_origins:guard/shield_bounce",
+        "icosahedron_origins:guard/shield_bounce_cd",
+        "icosahedron_origins:guard/shield_bounce_gain",
+        "icosahedron_origins:guard/shield_land",
+        "icosahedron_origins:guard/shield_land_resist",
+        "icosahedron_origins:guard/shield_land_resource",
+        "icosahedron_origins:guard/shield_speed",
+        "icosahedron_origins:guard/light",
+        "icosahedron_origins:guard/buckle",
+        "icosahedron_origins:guard/buckle_gain",
+        "icosahedron_origins:guard/buckle_lose",
+        "icosahedron_origins:guard/buckle_resource",
+        "icosahedron_origins:guard/buckle_slow",
+        "icosahedron_origins:guard/nearsighted",
+        "icosahedron_origins:guard/tight_string"
+    ],
+    "icon": {
+        "item": "minecraft:shield",
+        "tag": "{BlockEntityTag:{Base:11,id:\"minecraft:banner\"}}"
+    },
+    "impact": 2
+}

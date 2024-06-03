@@ -1,0 +1,66 @@
+{
+  "dependencies": [
+    "Quartz Electronics"
+  ],
+  "tasks": {
+    "get_smart_pipe": {
+      "type": "heracles:item",
+      "item": "create:smart_fluid_pipe",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_brass_tunnel": {
+      "type": "heracles:item",
+      "item": "create:brass_funnel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Sorted Out ---</h2>",
+      "",
+      "Andesite funnels are cool and all, but what if you wanted to /6/sort items/6/?",
+      "",
+      "As it turns out, standard /b/funnels, tunnels, and pipes/b/ can be made of Brass and fitted with Electron Tubes to allow sorting functionality!",
+      "",
+      "Brass funnels and tunnels suport a /6/filter slot./6/ They will also transfer up to an /6/entire stack/6/ at a time, allowing for faster logistics.",
+      "",
+      "Pipes also get a sorter, called the /b/Smart Fluid Pipe/b/, which similarly allows filtering.",
+      "",
+      "If you like to use chutes instead, the /b/Smart Chute/b/ supports filtering and will also extract /6/entire stacks/6/ at a time.",
+      "",
+      "Make good use of these to make far more complex automation."
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -60,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:brass_tunnel",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Sorted Out"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

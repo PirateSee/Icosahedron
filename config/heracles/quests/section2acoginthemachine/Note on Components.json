@@ -1,0 +1,44 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Note on Components ---</h2>",
+      "A Component is considered any item that is used specificly for making (many) other items. These are typicaly good items to automate, even if you never do automate the end products themselves.",
+      "",
+      "You can search them up in EMI by searching by the tag #ico:component",
+      "",
+      "Other items with the sole use of crafting only a single other item as its only use are not considered components. (eg. Whisk)"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          30,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:wooden_slide",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "Note on Components"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "Deafening Clang"
+  ],
+  "tasks": {
+    "adv_create_mixing": {
+      "advancements": [
+        "create:mechanical_mixer"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Mixing it up ---</h2>",
+      "Mixers mix things. This means you can /b/automate any shapeless recipe/b/, along with some new fluid related recipes.",
+      "Make a basin to hold the materials for mixing.",
+      "<br/>",
+      "<crafting-recipe id=\"ico:mechanical_mixer\"/>",
+      "<crafting-recipe id=\"create:crafting/kinetics/basin\"/>",
+      "<br/>",
+      "This will allow you to make /6/twice as much andesite alloy/6/ by /6/mixing/6/ the components instead of crafting.",
+      "",
+      "If you want to use the /b/alternate recipe/b/ that mixes /b/directly into alloy/b/, skipping the furnace step, set /b/Andesite Alloy/b/ as the /6/recipe filter/6/. You can do this by /6/right clicking/6/ while holding an item on the /6/side of the basin/6/. This will prevent the mixer from making any recipe other then the one that outputs the item set on the filter.",
+      "<hr/>",
+      "<task task=\"adv_create_mixing\" quest=\"Mixing it up\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          120,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:mechanical_mixer",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Mixing it up"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

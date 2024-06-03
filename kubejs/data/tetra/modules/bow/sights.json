@@ -1,0 +1,43 @@
+{
+    "replace": false,
+    "variants": [
+		{
+            "key": "sights/glass",
+            "effects": {
+                "zoom": 60
+            },
+            "integrity": -1,
+            "durability": 13,
+			"glyph": {
+				"textureX": 120,
+				"textureY": 16,
+				"tint": "prismarine_glyph"
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/bow/riser/sight/default",
+					"type": "static"
+				}
+			]
+        },
+        {
+            "key": "sights/spyglass",
+            "effects": {
+                "zoom": 90
+            },
+            "integrity": -1,
+            "durability": 39,
+			"glyph": {
+				"textureX": 120,
+				"textureY": 16,
+				"tint": "prismarine_glyph"
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/bow/riser/sight/default",
+					"type": "static"
+				}
+			]
+        }
+    ]
+}

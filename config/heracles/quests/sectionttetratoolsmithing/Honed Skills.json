@@ -1,0 +1,47 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Honed Skills ---</h2>",
+      "",
+      "You may have noticed the /b/Hone/b/ meter on tools you've made.",
+      "",
+      "The hone progress increments every time the /6/tool uses durability/6/. Upon filling, the tool will /c/stop gaining progress/c/ and be ready for honing.",
+      "",
+      "Hone improvements give /b/flat bonuses/b/ in exchange for /c/tool intergrity/c/. A well-honed tool will simply be more effective then one without. Some /6/other improvments/6/, such as a sword's /b/Searated/b/ blade, may also be /6/honed/6/.",
+      "",
+      "Honing can be very valuable, but it should be noted that the /6/more intergrity/6/ a tool has, the /6/longer it may take to hone/6/. Socketing a /b/Lapis Lazuli/b/ gem into the side of the tool allows honing progress to be obtained by /6/earning experince/6/ as well."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          -30,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:experience_bottle",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Honed Skills"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

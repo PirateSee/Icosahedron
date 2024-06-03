@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    "Forged Walls"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Bigger Hammer ---</h2>",
+      "",
+      "Ruins may contain a stationary hammer of sorts. The standard configuration is to have one above a /b/Forged Workbench/b/. They can be much more powerful then ones swung by hand."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          0,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:hammer_base",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Bigger Hammer"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "IN_PROGRESS"
+  }
+}

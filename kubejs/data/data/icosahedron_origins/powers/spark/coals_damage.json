@@ -1,0 +1,17 @@
+{
+    "hidden": true,
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "hotFloor"
+    },
+    "modifier": {
+        "operation": "set_total",
+        "value": 0,
+        "name": "Hot Coals Bonus"
+    },
+    "damage_armor_condition": {
+        "type": "origins:constant",
+        "value": false
+    }
+}

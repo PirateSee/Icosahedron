@@ -1,0 +1,48 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Info ---</h2>",
+      "This quest catagory is a side addition to the main quest line.",
+      "",
+      "In this quest catagory, you can go through the involved processes for making the best tools possible with Tetra.",
+      "",
+      "Most quests in this catagory are /b/hidden/b/. Its up to you to discover them, but /6/clues may be given/6/.",
+      "",
+      "Tetra's built-in /6/advancements/6/ may also hint at where or how you could do things. It's worth taking a look.",
+      "",
+      "Other times, quests are just hidden because you need to progress the main questline further."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:map",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "Info"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

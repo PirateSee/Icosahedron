@@ -1,0 +1,66 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:bow/straight_stave/",
+        "tetra:bow/shared_stave/",
+        "tetra:bow/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:rods/stick", "tetra:metal/" ],
+            "key": "straight_stave/",
+            "attributes": {
+                "tetra:draw_speed": 1,
+				"generic.armor": 1,
+				"velocity": -2
+            },
+            "aspects": {
+                "bow": 2,
+                "breakable": 2
+            },
+            "durability": 171,
+            "extract": {
+                "primaryAttributes": {
+                    "tetra:draw_speed": 0.11,
+                    "tetra:draw_strength": 1.1,
+					"generic.armor": 0.5
+                },
+                "tertiaryAttributes": {
+                    "tetra:draw_speed": -0.06,
+                    "tetra:draw_strength": 0.6,
+					"generic.armor": 0.2
+                },
+                "durability": 1.2,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [ "crude" ],
+                "models": [
+                    {
+                        "location": "tetra:items/module/bow/stave/straight/"
+                    },
+                    {
+                        "type": "draw_0",
+                        "location": "tetra:items/module/bow/stave/straight/0_"
+                    },
+                    {
+                        "type": "draw_1",
+                        "location": "tetra:items/module/bow/stave/straight/1_"
+                    },
+                    {
+                        "type": "draw_2",
+                        "location": "tetra:items/module/bow/stave/straight/2_"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    "Nether Passport",
+    "Wrought Iron"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:flint_and_steel",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Blazing Depths"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

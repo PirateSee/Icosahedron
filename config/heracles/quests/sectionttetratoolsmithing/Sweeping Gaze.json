@@ -1,0 +1,68 @@
+{
+  "dependencies": [
+    "Subsitute Materials"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Sweeping Gaze ---</h2>",
+      "",
+      "/b/Looking/b/ for more power?",
+      "",
+      "Ruins have what you need, but your /b/Holosphere/b/ needs an /b/upgrade/b/ to locate them. Of course, you could look for one manually, but a /b/short-range Sweeper/b/ could make that process a little easier.",
+      "",
+      "While the range may be low, it will /6/hum/6/ when a ruin is located /6/in front/6/ of you, even while /b/in your pockets/b/.",
+      "",
+      "For a longer range scan, a /b/Percussion Scanner/b/ might work better. A /b/Holosphere/b/ fitted with one can be /6/placed and hammered/6/ to scan nearby chunks for ruins. If it gets a hit, the /b/chunk will be highlighted/b/.",
+      "",
+      "It's unlikely your sweeper will be able to /6/detect ruins while on the surface/6/. They are found quite deep, but you can narrow your search to /b/cold or mountaineous/b/ biomes."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          0,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:holo",
+        "count": 1,
+        "nbt": {
+          "honing_progress": 1050,
+          "holo/frame": "holo/frame",
+          "HideFlags": 1,
+          "holo/repo_material": "repo/default",
+          "holo/scanner_material": "scanner/default",
+          "holo/core": "holo/core",
+          "id": "cffc85aa-913d-40f2-ab10-17dac2a30d8e",
+          "holo/scanner": "holo/scanner",
+          "holo/frame_material": "core/ancient",
+          "holo/scanner:scanner/sweeper": 0,
+          "holo/scanner_tweak:scanner/adjustable_range": 6,
+          "holo/scanner_tweak:scanner/adjustable_span": -3,
+          "holo/scanner:scanner/sweeper_adjustable": 0,
+          "holo/repo": "holo/repo",
+          "holo/core_material": "frame/dim"
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Sweeping Gaze"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "IN_PROGRESS"
+  }
+}

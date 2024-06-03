@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    "Forged Walls"
+  ],
+  "tasks": {
+    "tetra_schematic_old": {
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "advancements": [
+        "tetra:spelunking/schematic_pry"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Anchient Schematics ---</h2>",
+      "",
+      "You may find Anchient Schematics in ruins. They contain lost toolsmithing /b/knowledge/b/.",
+      "",
+      "It may be possible to take one home as a souvenir if you can /b/pry/b/ them off the /b/back/b/."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          30,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:extractor_0_0",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ancient Schematics"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "IN_PROGRESS"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "hidden": true,
+    "type": "origins:self_action_when_hit",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:exists"
+        }
+    },
+    "entity_action": {
+        "type": "origins:modify_resource",
+        "resource": "icosahedron_origins:guard/buckle_resource",
+        "modifier": {
+            "operation": "set_total",
+            "value": 5,
+            "name": "Buckle Hit"
+        }
+    },
+    "cooldown": 1
+}

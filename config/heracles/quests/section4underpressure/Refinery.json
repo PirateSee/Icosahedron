@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    "Lubricated"
+  ],
+  "tasks": {
+    "get_refinery_output": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:refinery_output",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "get_refinery": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:refinery",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          30,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:refinery",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Refinery"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

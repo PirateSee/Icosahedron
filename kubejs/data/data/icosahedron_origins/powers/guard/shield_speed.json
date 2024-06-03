@@ -1,0 +1,21 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:using_item",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:shield"
+            }
+        }
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.1,
+        "name": "Fast Shield"
+    },
+    "tick_rate": 3,
+    "update_health": false
+}

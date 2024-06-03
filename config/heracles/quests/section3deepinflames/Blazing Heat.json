@@ -1,0 +1,47 @@
+{
+  "dependencies": [
+    "Blazing Depths"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Caution: Hot Surface"
+    },
+    "description": [
+      "<h2>- Blazing Heat ---</h2>",
+      "",
+      "/b/Blazes/b/ make great fireplaces. Works just fine as an industrial-grade heater. May violate workplace safety laws, but it's assumed that cage it's in keeps it safely locked up and working. There are no known instances of that thing escaping.",
+      "",
+      "When the Blaze Burner is fed with fuel, it starts burning brightly. This heat is enough to /c/cook you/c/, and also heat up /b/Basins/b/ for /6/Mixing or Compacting,/6/ or /b/Steam Engines/b/.",
+      "",
+      "> --/7/This will greatly aid in metallurgy and other processes, but i'd recommend to keep that thing away from anywhere you might be walking. I don't want to be near that thing while its running, and you probably don't either./7/--"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          0,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:blaze_burner",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Blazing Heat"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

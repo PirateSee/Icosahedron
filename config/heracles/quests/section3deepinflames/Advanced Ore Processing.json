@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "Crushing It"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "This will process /6/Pentlandite, Bauxite, Malachite, Hematite/6/"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          0,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:crushed_hematite",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Advanced Ore Processing"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

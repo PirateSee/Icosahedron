@@ -1,0 +1,40 @@
+{
+  "dependencies": [
+    "atomic alloy"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          300,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mekanism:mekasuit_bodyarmor",
+        "count": 1,
+        "nbt": {}
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Mekanical Mobility"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

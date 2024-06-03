@@ -1,0 +1,80 @@
+{
+  "dependencies": [
+    "Blast Smelting",
+    "The Sieve"
+  ],
+  "tasks": {
+    "get_copper_ingot": {
+      "type": "heracles:item",
+      "item": "minecraft:copper_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Finally copper"
+    },
+    "description": [
+      "<h2>- Crude Ore Processing ---</h2>",
+      "An important milestone in industralization.",
+      "You may have noticed that some raw metals such as copper and gold can't be smelted in a furnace.",
+      "You need to process them a diffrent way.",
+      "<hr/>",
+      "First, drop the raw ore in a /b/Millstone/b/. Then, /6/sift/6/ them using a /b/Sifter/b/ with an /b/Andesite Mesh/b/ and running at /6/64 RPM or higher/6/. The resulting pure ore powder can be /6/blasted/6/ in a /b/Blast Furnace/b/ for ingots.",
+      "",
+      "<columns template=\"40% 20% 40%\">",
+      "    <column>",
+      "        <item id=\"create:millstone\" scale=\"2\"> </item>",
+      "    </column>",
+      "    <column>",
+      "        <columns>",
+      "            <column>",
+      "                <item id=\"createsifter:sifter\" scale=\"2\"> </item>",
+      "            </column>",
+      "            <column>",
+      "                <item id=\"createsifter:andesite_mesh\" scale=\"2\"> </item>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "    <column>",
+      "        <item id=\"minecraft:blast_furnace\" scale=\"2\"> </item>",
+      "    </column>",
+      "</columns>",
+      "This will process /6/Raw Copper, Raw Gold, Limonite, Salepherite/6/.",
+      "<br/>",
+      "<hint title=\"Advanced ores\" icon=\"kubejs:nickel_ingot\">",
+      "<p>Advanced ores can't be smelted here. Hold on to them, you'll be able to process them later.</p>",
+      "</hint>",
+      "<hr/>",
+      "<task task=\"get_copper_ingot\" quest=\"Crude Ore Processing\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          210,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:raw_copper",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Crude Ore Processing"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

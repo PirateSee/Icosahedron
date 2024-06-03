@@ -1,0 +1,20 @@
+{
+    "name": "§a+ §r§nHot Coals",
+    "description": "Stepping on magma doesn't hurt anymore, but it puts a spring in your step.",
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:magma_block"
+        }
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.2,
+        "name": "Hot Coals Bonus"
+    },
+    "tick_rate": 10,
+    "update_health": true
+}

@@ -1,0 +1,12 @@
+{
+    "hidden": true,
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:trigger_cooldown",
+        "power": "icosahedron_origins:gator/dusk_active_cd"
+    },
+    "cooldown": 5,
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

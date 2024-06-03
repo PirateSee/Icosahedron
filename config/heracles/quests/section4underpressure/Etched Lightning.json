@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    "Plastics"
+  ],
+  "tasks": {
+    "get_uv_lightbox": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:uv_light_box",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_etching_tank": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:etching_tank",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          0,
+          240
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:etching_tank",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Etched Lightning"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Tidal Arrow",
+    "description": "Your ranged damage is boosted when wet.",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">=",
+                "compare_to": 0.1
+            },
+            {
+                "type": "origins:in_rain"
+            }
+        ]
+    },
+    "type": "origins:modify_projectile_damage",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.2,
+        "name": "Wet Bow Bonus"
+    }
+}

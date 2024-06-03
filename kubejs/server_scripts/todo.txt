@@ -1,0 +1,88 @@
+recipes todo:
+
+item ids that need redone recipes are listed here
+[square brackets] may contain the English localized name if they differ substantially
+
+blocksyouneed rebalancing and change to industrial processes
+some pneumaticcraft machines
+    machinery > (item recipes should be redesigned to use compressedcreativity:compressed_iron_casing and a screwdriver)
+        pneumaticcraft:flux_compressor
+        pneumaticcraft:air_cannon
+        pneumaticcraft:electrostatic_compressor
+        pneumaticcraft:heat_sink
+        pneumaticcraft:pneumatic_dynamo
+        pneumaticcraft:thermal_compressor
+        pneumaticcraft:tube_junction
+        pneumaticcraft:vacuum_trap
+        pneumaticcraft:manual_compressor
+        pneumaticcraft:crop_support
+        pneumaticcraft:air_grate_module
+        pneumaticcraft:charging_module
+        pneumaticcraft:flow_detector_module
+        pneumaticcraft:logistics_module
+        pneumaticcraft:pressure_gauge_tube_module
+        pneumaticcraft:redstone_module
+        pneumaticcraft:regular_tube_module
+        pneumaticcraft:safety_tube_module
+        pneumaticcraft:theromostat_module
+        pneumaticcraft:elevator_base
+        pneumaticcraft:elevator_caller
+        pneumaticcraft:programmer
+
+    expensive machinery > (item recipes should be made more expensive, potentialy in mechanical crafters)
+        pneumaticcraft:aerial_interface
+        pneumaticcraft:security_station
+        pneumaticcraft:sentry_turret
+        pneumaticcraft:solar_compressor
+        pneumaticcraft:drone
+        pneumaticcraft:collector_drone
+        pneumaticcraft:guard_drone
+        pneumaticcraft:harvesting_drone
+        pneumaticcraft:logistics_drone
+        pneumaticcraft:vortex_cannon
+        pneumaticcraft:minigun
+
+some create machines
+    andesite tier > (items need to require screwdrivers, and perhaps light adjustments)
+        create:clutch
+        create:encased_chain_drive
+        create:schematicannon
+        create:schematic_table
+        create:gearshift
+        create:adjustable_chain_gear
+        create:spedometer
+        createconnected:parallel_gearbox
+        createconnected:overstress_clutch
+        createconnected:centrifugal_clutch
+        createconnected:freewheel_clutch
+        createconnected:brake
+        createconnected:brass_gearbox
+
+    hammerable > (items need to require hammers)
+        create:chute
+        create:smart_chute
+
+    sawable > (items need to require saws)
+        createconnected:encased_chain_cogwheel
+
+    brass tier > (items need to require screwdrivers in recipe and potentialy be more expensive)
+        create:mechanical_roller
+        create:contraption_controls
+        create:sequenced_gearshift
+        create:rotation_speed_control
+        create:train_controls (make more expensive)
+        create:display_link
+        create:track_singal [Train Signal]
+        create:train_station (make more expensive)
+        create:smart_observer
+        create:stockpile_switch [Threshold Switch]
+        create:display_board
+        create:track_observer [Train Observer]
+
+        createdieselgenerators:diesel_engine
+        createdieselgenerators:modular_diesel_engine
+        createdieselgenerators:huge_diesel_engine
+
+        createadditon:modular_accumulator
+
+the entirety of mekanism (leave to piratesee for now, mekanism progression still needs to be planned out)

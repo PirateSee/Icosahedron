@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Blazing Heat"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          0,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:brass_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Top Brass"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

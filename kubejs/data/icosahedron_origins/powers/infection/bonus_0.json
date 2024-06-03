@@ -1,0 +1,39 @@
+{
+    "name": "Infectous Blow",
+    "description": "Every time you deal damage, there is a chance to wither for a short time. Potency and chance increase as infection grows.",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "icosahedron_origins:infection/spread",
+        "comparison": "<",
+        "compare_to": 100
+    },
+    "type": "origins:target_action_on_hit",
+    "damage_condition": {
+        "type": "origins:amount",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "entity_action": {
+        "type": "origins:chance",
+        "chance": 0.5,
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:wither",
+                        "duration": 20,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                },
+                {
+                    "type": "origins:nothing"
+                }
+            ]
+        }
+    },
+    "cooldown": 1
+}

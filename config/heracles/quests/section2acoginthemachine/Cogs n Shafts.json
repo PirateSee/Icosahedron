@@ -1,0 +1,66 @@
+{
+  "dependencies": [
+    "Kenetic Alloy"
+  ],
+  "tasks": {
+    "getcog": {
+      "type": "heracles:item",
+      "item": "create:cogwheel",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Kenetic Mobility"
+    },
+    "description": [
+      "<h2>- Cogs n' Shafts ---</h2>",
+      "Here is where the magic happens. Rotational propagation.",
+      "<br/>",
+      "",
+      "<columns>",
+      "    <column>",
+      "        <crafting-recipe id=\"ico:shaft\" grid-width=\"2\"> </crafting-recipe>",
+      "    </column>",
+      "    <column>",
+      "        <crafting-recipe id=\"ico:cogwheel\" grid-width=\"2\"> </crafting-recipe>",
+      "    </column>",
+      "</columns>",
+      "",
+      "<br/>",
+      "Use these to transfer rotational energy. Of course, your going to need a source of rotational energy, but we'll get to that in a bit.",
+      "Try connecting cogs and shafts together. Use Create's ponder system to learn more.",
+      "Hover over the item and hold W to ponder.",
+      "<hr/>",
+      "<task task=\"getcog\" quest=\"Cogs n Shafts\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:cogwheel",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Cogs n' Shafts"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

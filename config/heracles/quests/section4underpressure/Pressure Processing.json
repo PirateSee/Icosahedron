@@ -1,0 +1,49 @@
+{
+  "dependencies": [
+    "Pressure Chamber",
+    "Pressure Dynamo"
+  ],
+  "tasks": {
+    "get_thermoplant": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:thermopneumatic_processing_plant",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          0,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:thermopneumatic_processing_plant",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Pressure Processing"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

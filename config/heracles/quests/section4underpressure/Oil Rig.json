@@ -1,0 +1,45 @@
+{
+  "dependencies": [
+    "Lubricated"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Oil Rig ---</h2>",
+      "",
+      "> --/7/Digging these oil wells destroys my back. So much of this jet-black fluid is needed for modern materials. It's so hard to go out all this distance to get this stuff, then ship it back to home base for refinement. It's versatility makes it more than worth it though. I got a few more rigs to link up now./7/--",
+      "",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          0,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createdieselgenerators:pumpjack_crank",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Oil Rig"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    "Deafening Clang",
+    "Subsitute Materials"
+  ],
+  "tasks": {
+    "adv_suit_up": {
+      "advancements": [
+        "minecraft:story/obtain_armor"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Protective Upgrade"
+    },
+    "description": [
+      "<h2>- Arms of Steel ---</h2>",
+      "Living is hard. So how about you put on some iron armor and get some iron tools. It'll be easier then.",
+      "Armor is made the same way as normal, except you need iron sheets instead of ingots.",
+      "Tools are made with Tetra.",
+      "",
+      "Iron tools will have /4/stone mining level/4/. To get iron mining level tools you will need /b/wrought iron/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_suit_up\" quest=\"Arms of Steel\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          90,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_chestplate",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Arms of Steel"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

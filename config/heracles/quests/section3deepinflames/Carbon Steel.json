@@ -1,0 +1,47 @@
+{
+  "dependencies": [
+    "Blazing Heat"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Carbon Steel ---</h2>",
+      "",
+      "Carbon steel makes a good material for tools.",
+      "",
+      "/6/Mixing crushed coal/6/ will give you /b/Coal Coke/b/, which is used in the production of Carbon Steel.",
+      "",
+      "Carbon Steel is very strong, but not very easy to work with, so it'll have to be /6/shaped while its still hot/6/. Hot carbon steel can be freely pressed or rolled into other shapes, but once it has been /6/quenched with water/6/ it can no longer be changed."
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -60,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:carbon_steel_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Carbon Steel"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

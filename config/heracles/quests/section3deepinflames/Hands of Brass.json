@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Quartz Electronics"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -30,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:deployer",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Hands of Brass"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

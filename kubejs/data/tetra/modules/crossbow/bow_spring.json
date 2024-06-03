@@ -1,0 +1,54 @@
+{
+    "replace": true,
+    "slots": [ "crossbow/string" ],
+    "type": "tetra:basic_module",
+    "variants": [
+        {
+            "materials": [ "tetra:metal/"],
+            "key": "basic_spring/",
+            "attributes": {
+                "tetra:draw_speed": 0.1,
+                "tetra:draw_strength": 0.2
+            },
+            "integrity": 1,
+            "durability": 18,
+            "extract": {
+                "secondaryAttributes": {
+                    "tetra:draw_speed": 0.12,
+                    "tetra:draw_strength": 0.3
+                },
+                "tertiaryAttributes": {
+                    "tetra:draw_speed": -0.03
+                },
+                "durability": 0.3,
+                "integrity": 1,
+                "glyph": {
+                    "textureX": 24,
+                    "textureY": 16
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:items/module/crossbow/string/basic/"
+                    },
+                    {
+                        "type": "draw_0",
+                        "location": "tetra:items/module/crossbow/string/basic/0_"
+                    },
+                    {
+                        "type": "draw_1",
+                        "location": "tetra:items/module/crossbow/string/basic/1_"
+                    },
+                    {
+                        "type": "draw_2",
+                        "location": "tetra:items/module/crossbow/string/basic/2_"
+                    },
+                    {
+                        "type": "loaded",
+                        "location": "tetra:items/module/crossbow/string/basic/2_"
+                    }
+                ]
+            }
+        }
+    ]
+}

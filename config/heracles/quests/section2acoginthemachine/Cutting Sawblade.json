@@ -1,0 +1,62 @@
+{
+  "dependencies": [
+    "Deafening Clang"
+  ],
+  "tasks": {
+    "get_mech_saw": {
+      "type": "heracles:item",
+      "item": "create:mechanical_saw",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Trees-B-Gone"
+    },
+    "description": [
+      "<h2>- Cutting Sawblade ---</h2>",
+      "Mechanical saws can process various materials. They can also chop down trees very quickly. Ponder them to learn how they work.",
+      "They can process wood and make shafts more efficently than crafting tables can.",
+      "<br/>",
+      "<crafting-recipe id=\"ico:mechanical_saw\" grid-width=\"2\"/>",
+      "<hr/>",
+      "<task task=\"get_mech_saw\" quest=\"Cutting Sawblade\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          120,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:mechanical_saw",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Cutting Sawblade"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

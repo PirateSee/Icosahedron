@@ -1,0 +1,19 @@
+{
+    "name": "Aqua Dashing",
+    "description": "You can walk quickly on the surface of water. Sneak to dive in.",
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 0.1
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.4,
+        "name": "Water Movement Bonus"
+    },
+    "tick_rate": 10,
+    "update_health": false
+}

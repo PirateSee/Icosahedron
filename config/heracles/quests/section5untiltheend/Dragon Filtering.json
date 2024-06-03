@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "And down it goes"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          90,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:dragon_sinew_mesh",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Dragon Filtering"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

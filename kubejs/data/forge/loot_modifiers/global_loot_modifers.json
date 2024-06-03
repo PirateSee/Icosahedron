@@ -1,0 +1,20 @@
+{
+    "entries": [
+        "kintsugi:gameplay_fishing",
+        "kintsugi:chests_nether_bridge",
+        "kintsugi:chests_underwater_ruin_small",
+        "kintsugi:chests_ruined_portal",
+        "kintsugi:chests_abandoned_mineshaft",
+        "kintsugi:chests_pillager_outpost",
+        "kintsugi:chests_bastion_treasure",
+        "kintsugi:chests_bastion_hoglin_stable",
+        "kintsugi:chests_stronghold_library",
+        "kintsugi:chests_bastion_bridge",
+        "kintsugi:chests_ancient_city",
+        "kintsugi:chests_underwater_ruin_big",
+        "kintsugi:chests_shipwreck_treasure",
+        "kintsugi:chests_woodland_mansion",
+        "kintsugi:chests_simple_dungeon"
+    ],
+    "replace": true
+}

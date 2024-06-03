@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "magic assembly"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "I command thee"
+    },
+    "description": [],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          60,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:twig_wand",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Designator"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

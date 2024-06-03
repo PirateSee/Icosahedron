@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "metal of the earth"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          90,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:alfheim_portal",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Gate to Alfheim"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": ">=",
+        "compare_to": 20
+    },
+    "type": "origins:modify_damage_dealt",
+    "damage_condition": {
+        "type": "origins:amount",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "modifier": {
+        "operation": "add_base_early",
+        "value": 2,
+        "name": "Overcharge Bonus"
+    }
+}

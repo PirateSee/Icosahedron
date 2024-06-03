@@ -1,0 +1,52 @@
+{
+  "dependencies": [
+    "Cutting Sawblade"
+  ],
+  "tasks": {
+    "get_funnel": {
+      "type": "heracles:item",
+      "item": "create:andesite_funnel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Input/Output"
+    },
+    "description": [
+      "<h2>- BIOS ---</h2>",
+      "",
+      "Andesite funnels and tunnels can give you some basic item input/output capabilities.",
+      "",
+      "Welcome to the start of some automation! /b/Conveyor Belts/b/ will likely help you finish automating things, but Andesite Funnels will at least let you /6/input/output from machines/6/, and /6/Tunnels will split items/6/, although they do need to be placed on conveyor belts."
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          150,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:andesite_tunnel",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "BIOS"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

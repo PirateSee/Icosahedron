@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    "Forged Walls"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Ruin Salvaging ---</h2>",
+      "",
+      "Those crates look suspicous. They are /b/sealed shut/b/ and may require /b/specialized tools/b/ to /b/pry/b/ them open."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          -30,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:forged_crate",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ruin Salvaging"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "IN_PROGRESS"
+  }
+}

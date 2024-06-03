@@ -1,0 +1,42 @@
+{
+  "dependencies": [
+    "Vac Chamber",
+    "Aquatic Gem",
+    "Carbon Steel",
+    "Treated Wood"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -60,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:electron_tube",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Quartz Electronics"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

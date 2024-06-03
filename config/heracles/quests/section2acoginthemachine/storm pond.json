@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "magic conduit"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Open-air storage"
+    },
+    "description": [],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          150,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:mana_pool",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Storm pond"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

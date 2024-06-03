@@ -1,0 +1,55 @@
+{
+  "dependencies": [
+    "iron"
+  ],
+  "tasks": {
+    "getaa": {
+      "type": "heracles:item",
+      "item": "create:andesite_alloy",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Andesite is useful!"
+    },
+    "description": [
+      "<h2>- Kinetic Alloy ---</h2>",
+      "Alright, now that the simple stuff is out of the way...",
+      "Make some Andesite Alloy.",
+      "<crafting-recipe id=\"create:crafting/materials/andesite_alloy\" grid-width=\"2\"/>",
+      "<br/>",
+      "Your going to need quite a bit of this stuff. It's used for everything involving rotation, and will also be a general base material for many things going forward.",
+      "<hr/>",
+      "<task task=\"getaa\" quest=\"Kenetic Alloy\"/>"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          60,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:andesite_alloy",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kinetic Alloy"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

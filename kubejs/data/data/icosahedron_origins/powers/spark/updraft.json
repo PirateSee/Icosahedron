@@ -1,0 +1,47 @@
+{
+    "name": "§a+ §r§nUpdraft",
+    "description": "Smoke rising from flames completely cushions your falls.",
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:fire"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": true
+                }
+            ]
+        },
+        "radius": 1,
+        "shape": "star",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "type": "origins:action_over_time",
+    "interval": 3,
+    "rising_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:set_fall_distance",
+                "fall_distance": 0
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:cosy_smoke",
+                "count": 15,
+                "speed": 0.2,
+                "offset_y": -0.5
+            }
+        ]
+    },
+    "falling_action": {
+        "type": "origins:set_fall_distance",
+        "fall_distance": 0
+    }
+}

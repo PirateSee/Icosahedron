@@ -1,0 +1,53 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "double/handle"
+    ],
+    "renderLayer": "lower",
+    "improvements": [
+        "tetra:double/curved_handle/",
+		"tetra:double/basic_handle/",
+        "tetra:double/shared_handle/",
+        "tetra:double/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rods/" ],
+            "key": "curved_handle/",
+            "attributes": {
+                "generic.attack_speed": -0.45
+            },
+            "aspects": {
+                "blockBreaker": 1,
+				"throwable": 2,
+                "breakable": 2
+            },
+			"effects": {
+                "throwable": [ 1, 0.6 ]
+            },
+            "durability": 6,
+            "integrity": 1,
+            "extract": {
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.15
+                },
+				"secondaryEffects": {
+                    "throwable": [ 0, 0.1 ]
+                },
+				"tertiaryEffects": {
+                    "throwable": [ 0, 0.1 ]
+                },
+                "durability": 0.3,
+                "integrity": 1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 16
+                },
+                "availableTextures": [ "default", "metal", "bone", "bright" ],
+                "models": [ { "location": "tetra:items/module/double/handle/basic/" } ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:modify_resource",
+        "resource": "icosahedron_origins:gator/dusk_resource_off",
+        "modifier": {
+            "operation": "set_total",
+            "value": 0,
+            "resource": "icosahedron_origins:gator/dusk_resource",
+            "name": "Visual Syncing"
+        }
+    }
+}

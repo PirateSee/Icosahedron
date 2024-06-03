@@ -1,0 +1,27 @@
+{
+    "name": "Mechanical",
+    "description": "§8[Defensive] [Hungry]§7\nAn endoskeleton making use of fancy tech and a biofuel reactor. Boasts increased strength but some odd vulnerabilities.",
+    "powers": [
+        "icosahedron_origins:mecha/shield/activate",
+        "icosahedron_origins:mecha/shield/duration",
+        "icosahedron_origins:mecha/shield/duration_decrease",
+        "icosahedron_origins:mecha/shield/fire",
+        "icosahedron_origins:mecha/shield/glow_1",
+        "icosahedron_origins:mecha/shield/glow_2",
+        "icosahedron_origins:mecha/shield/glow_3",
+        "icosahedron_origins:mecha/shield/glow_4",
+        "icosahedron_origins:mecha/shield/glow_5",
+        "icosahedron_origins:mecha/shield/glow_6",
+        "icosahedron_origins:mecha/shield/glow_increase",
+        "icosahedron_origins:mecha/shield/glow_res",
+        "icosahedron_origins:mecha/shield/resistance",
+        "icosahedron_origins:mecha/overcharge",
+        "icosahedron_origins:mecha/overcharge_damage",
+        "icosahedron_origins:mecha/overcharge_mine",
+        "icosahedron_origins:mecha/hydrophobia",
+        "icosahedron_origins:mecha/hungry",
+        "icosahedron_origins:mecha/shock_absorber",
+        "icosahedron_origins:mecha/shock_absorber_effect"
+    ],
+    "impact": 3
+}

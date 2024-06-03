@@ -1,0 +1,31 @@
+{
+    "name": "§a+ §r§nAqua Dashing",
+    "description": "You can run and float across water with hightened speed.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Sneak to dive.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        },
+        {
+            "type": "origins:tooltip",
+            "text": "The bonus works on waterlogged blocks.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 0.1
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.8,
+        "name": "Water Movement Bonus"
+    },
+    "tick_rate": 10,
+    "update_health": false
+}

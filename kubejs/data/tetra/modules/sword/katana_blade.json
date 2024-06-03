@@ -1,0 +1,49 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:sword/katana_blade/",
+        "tetra:sword/shared_blade/",
+        "tetra:sword/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+            "key": "katana_blade/",
+            "attributes": {
+                "generic.attack_speed": -1.1,
+				"generic.attack_damage": -0.5
+            },
+            "effects": {
+                "sweeping": 2,
+				"truesweep": 1
+            },
+            "aspects": {
+                "edgedWeapon": 2,
+                "breakable": 2
+            },
+            "durability": -28,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 0.9
+                },
+				"secondaryAttributes": {
+					"generic.attack_speed": -0.3
+				},
+                "durability": 0.9,
+                "integrity": -1,
+                "magicCapacity": 1.5,
+				"tools": {
+					"cut": [ 0.6, 0.9 ]
+				},
+                "glyph": {
+                    "textureX": 0
+                },
+                "availableTextures": [ "metal", "shiny", "grainy", "crude" ],
+                "models": [ { "location": "tetra:items/module/sword/blade/basic/" } ]
+            }
+        }
+    ]
+}

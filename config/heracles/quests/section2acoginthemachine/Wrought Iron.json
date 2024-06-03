@@ -1,0 +1,94 @@
+{
+  "dependencies": [
+    "Melting Away"
+  ],
+  "tasks": {
+    "get_wrought_iron": {
+      "type": "heracles:item",
+      "item": "blocksyouneed_luna:wrought_iron_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Wrought Iron ---</h2>",
+      "Wrought Iron is a easily workable material used in higher-level metal products.",
+      "You may also make some other iron products more efficently using Wrought Iron.",
+      "",
+      "Molten Pig Iron comes from /6/melting iron ore or Limonite/6/ in the /b/Melter/b/. The pig iron needs to be /6/mixed/6/ to seperate it into /b/Wrought Iron/b/ and /b/Slag/b/.",
+      "",
+      "Pouring either /b/Molten Pig Iron or Wrought Iron/b/ onto an /b/Ingot Mold/b/ then /6/Pressing/6/ to pop out the mold yeilds your ingots.",
+      "",
+      "<item id=\"blocksyouneed_luna:wrought_iron_ingot\" scale=\"2.0\"> </item>",
+      "",
+      "Wrought iron can be worked into tools with /b/diamond-level mining/b/ capabilities. Do note that wrought iron is fairly brittle, and doesn't do so well as a tool head. It will have to do for now. It is currently your only option for diamond-level tools.",
+      "",
+      "It also makes a good decorative material.",
+      "<columns>",
+      "    <column>",
+      "        <columns>",
+      "            <column>",
+      "                <item id=\"blocksyouneed_luna:wrought_iron_block\" scale=\"2.0\"> </item>",
+      "                <p>Wrought Iron Block</p>",
+      "            </column>",
+      "            <column>",
+      "                <item id=\"blocksyouneed_luna:wrought_factory_block\" scale=\"2.0\"> </item>",
+      "            <p>Wrought Factory Block</p>",
+      "            </column>",
+      "            <column>",
+      "                <item id=\"blocksyouneed_luna:corrugated_sheet_wrought\" scale=\"2.0\"> </item>",
+      "                <p>Corrugated Wrought Iron Sheet</p>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "    <column>",
+      "        <columns>",
+      "            <column>",
+      "                <item id='blocksyouneed_luna:wrought_iron_boiler_plate' scale=\"2.0\"> </item>",
+      "                <p>Wrought Iron Boilerplate</p>",
+      "            </column>",
+      "            <column>",
+      "                <item id='blocksyouneed_luna:wrought_iron_beam' scale=\"2.0\"> </item>",
+      "                <p>Wrought Iron Beam</p>",
+      "            </column>",
+      "            <column>",
+      "                <item id='blocksyouneed_luna:wrought_window' scale=\"2.0\"> </item>",
+      "                <p>Wrought Iron Window</p>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "</columns>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          300,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:wrought_iron_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png",
+    "title": {
+      "translate": "Wrought Iron"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

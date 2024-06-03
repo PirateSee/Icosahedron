@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "purify"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          30,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:apothecary_default",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Floral Assembly"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

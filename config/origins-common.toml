@@ -1,0 +1,207 @@
+
+[origins]
+
+	[origins."origins:enderian"]
+		enabled = true
+		"origins:throw_ender_pearl" = true
+		"origins:water_vulnerability" = true
+		"origins:pumpkin_hate" = true
+		"origins:extra_reach" = true
+		"origins:ender_particles" = true
+		"origins:damage_from_potions" = true
+
+	[origins."origins:human"]
+		enabled = true
+
+	[origins."icosahedron_origins:spark"]
+		enabled = true
+		"icosahedron_origins:spark/blazing_rage" = true
+		"icosahedron_origins:spark/blazing_rage_particles" = true
+		"icosahedron_origins:spark/blazing_rage_speed" = true
+		"icosahedron_origins:spark/ignition" = true
+		"icosahedron_origins:spark/coals" = true
+		"icosahedron_origins:spark/coals_damage" = true
+		"icosahedron_origins:spark/updraft" = true
+		"icosahedron_origins:spark/undoused" = true
+		"icosahedron_origins:spark/torch" = true
+		"icosahedron_origins:spark/waterlogged" = true
+		"icosahedron_origins:spark/waterlogged_particles" = true
+
+	[origins."origins:feline"]
+		enabled = true
+		"origins:fall_immunity" = true
+		"origins:sprint_jump" = true
+		"origins:velvet_paws" = true
+		"origins:nine_lives" = true
+		"origins:weak_arms" = true
+		"origins:scare_creepers" = true
+		"origins:cat_vision" = true
+
+	[origins."origins:elytrian"]
+		enabled = true
+		"origins:elytra" = true
+		"origins:launch_into_air" = true
+		"origins:aerial_combatant" = true
+		"origins:light_armor" = true
+		"origins:claustrophobia" = true
+		"origins:more_kinetic_damage" = true
+
+	[origins."origins:shulk"]
+		enabled = true
+		"origins:shulker_inventory" = true
+		"origins:natural_armor" = true
+		"origins:strong_arms" = true
+		"origins:strong_arms_break_speed" = true
+		"origins:no_shield" = true
+		"origins:more_exhaustion" = true
+
+	[origins."icosahedron_origins:standard_bearer"]
+		enabled = true
+		"icosahedron_origins:guard/inspire" = true
+		"icosahedron_origins:guard/shield_boost" = true
+		"icosahedron_origins:guard/shield_bounce" = true
+		"icosahedron_origins:guard/shield_bounce_cd" = true
+		"icosahedron_origins:guard/shield_bounce_gain" = true
+		"icosahedron_origins:guard/shield_land" = true
+		"icosahedron_origins:guard/shield_land_resist" = true
+		"icosahedron_origins:guard/shield_land_resource" = true
+		"icosahedron_origins:guard/shield_speed" = true
+		"icosahedron_origins:guard/light" = true
+		"icosahedron_origins:guard/buckle" = true
+		"icosahedron_origins:guard/buckle_gain" = true
+		"icosahedron_origins:guard/buckle_lose" = true
+		"icosahedron_origins:guard/buckle_resource" = true
+		"icosahedron_origins:guard/buckle_slow" = true
+		"icosahedron_origins:guard/nearsighted" = true
+		"icosahedron_origins:guard/tight_string" = true
+
+	[origins."icosahedron_origins:fox"]
+		enabled = true
+		"icosahedron_origins:fox/sharp_hearing" = true
+		"icosahedron_origins:fox/accent" = true
+		"icosahedron_origins:fox/accent_effect" = true
+		"icosahedron_origins:fox/rapid_descent" = true
+		"icosahedron_origins:fox/rapid_descent_resist" = true
+		"icosahedron_origins:fox/cracked_plate" = true
+		"icosahedron_origins:fox/cracked_plate_fail" = true
+		"icosahedron_origins:fox/cracked_toughness" = true
+
+	[origins."icosahedron_origins:mecha"]
+		enabled = true
+		"icosahedron_origins:mecha/shield/activate" = true
+		"icosahedron_origins:mecha/shield/duration" = true
+		"icosahedron_origins:mecha/shield/duration_decrease" = true
+		"icosahedron_origins:mecha/shield/fire" = true
+		"icosahedron_origins:mecha/shield/glow_1" = true
+		"icosahedron_origins:mecha/shield/glow_2" = true
+		"icosahedron_origins:mecha/shield/glow_3" = true
+		"icosahedron_origins:mecha/shield/glow_4" = true
+		"icosahedron_origins:mecha/shield/glow_5" = true
+		"icosahedron_origins:mecha/shield/glow_6" = true
+		"icosahedron_origins:mecha/shield/glow_increase" = true
+		"icosahedron_origins:mecha/shield/glow_res" = true
+		"icosahedron_origins:mecha/shield/resistance" = true
+		"icosahedron_origins:mecha/overcharge" = true
+		"icosahedron_origins:mecha/overcharge_damage" = true
+		"icosahedron_origins:mecha/overcharge_mine" = true
+		"icosahedron_origins:mecha/breathless" = true
+		"icosahedron_origins:mecha/breathless_wall" = true
+		"icosahedron_origins:mecha/hydrophobia" = true
+		"icosahedron_origins:mecha/hungry" = true
+		"icosahedron_origins:mecha/shock_absorber" = true
+		"icosahedron_origins:mecha/shock_absorber_effect" = true
+
+	[origins."origins:merling"]
+		enabled = true
+		"origins:water_breathing" = true
+		"origins:water_vision" = true
+		"origins:aqua_affinity" = true
+		"origins:swim_speed" = true
+		"origins:like_water" = true
+		"origins:aquatic" = true
+		"origins:conduit_power_on_land" = true
+		"origins:air_from_potions" = true
+
+	[origins."origins:phantom"]
+		enabled = true
+		"origins:phantomize" = true
+		"origins:translucent" = true
+		"origins:phasing" = true
+		"origins:invisibility" = true
+		"origins:burn_in_daylight" = true
+		"origins:hunger_over_time" = true
+		"origins:fragile" = true
+		"origins:phantomize_overlay" = true
+
+	[origins."icosahedron_origins:infection"]
+		enabled = true
+		"icosahedron_origins:infection/spread" = true
+		"icosahedron_origins:infection/spread_gain" = true
+		"icosahedron_origins:infection/supressant" = true
+		"icosahedron_origins:infection/supressant_lose" = true
+		"icosahedron_origins:infection/supressant_resource" = true
+		"icosahedron_origins:infection/vitality_0" = true
+		"icosahedron_origins:infection/vitality_1" = true
+		"icosahedron_origins:infection/bonus_0" = true
+		"icosahedron_origins:infection/good_rest" = true
+		"icosahedron_origins:infection/midas_cure" = true
+
+	[origins."data:origin_layers/origin"]
+		enabled = true
+
+	[origins."origins:arachnid"]
+		enabled = true
+		"origins:climbing" = true
+		"origins:master_of_webs" = true
+		"origins:carnivore" = true
+		"origins:fragile" = true
+		"origins:arthropod" = true
+
+	[origins."icosahedron_origins:gator"]
+		enabled = true
+		"icosahedron_origins:gator/dusk_spark" = true
+		"icosahedron_origins:gator/dusk_resource" = true
+		"icosahedron_origins:gator/dusk_resource_off" = true
+		"icosahedron_origins:gator/dusk_sync" = true
+		"icosahedron_origins:gator/dusk_arrow" = true
+		"icosahedron_origins:gator/dusk_melee" = true
+		"icosahedron_origins:gator/dusk_active_cd_a" = true
+		"icosahedron_origins:gator/dusk_active" = true
+		"icosahedron_origins:gator/dusk_active_cd" = true
+		"icosahedron_origins:gator/dusk_toggle" = true
+		"icosahedron_origins:gator/rally" = true
+		"icosahedron_origins:gator/rally_gain" = true
+		"icosahedron_origins:gator/rally_lose" = true
+		"icosahedron_origins:gator/rally_resource" = true
+		"icosahedron_origins:gator/seathed_strike" = true
+		"icosahedron_origins:gator/seathed_strike_debuff" = true
+		"icosahedron_origins:gator/dim" = true
+		"icosahedron_origins:gator/dim_slow" = true
+		"icosahedron_origins:gator/the_sun" = true
+		"icosahedron_origins:gator/the_sun_fire" = true
+		"icosahedron_origins:gator/the_sun_gain" = true
+		"icosahedron_origins:gator/the_sun_resource" = true
+
+	[origins."origins:blazeborn"]
+		enabled = true
+		"origins:fire_immunity" = true
+		"origins:nether_spawn" = true
+		"origins:burning_wrath" = true
+		"origins:hotblooded" = true
+		"origins:water_vulnerability" = true
+		"origins:flame_particles" = true
+		"origins:damage_from_snowballs" = true
+		"origins:damage_from_potions" = true
+
+	[origins."origins:avian"]
+		enabled = true
+		"origins:slow_falling" = true
+		"origins:fresh_air" = true
+		"origins:like_air" = true
+		"origins:tailwind" = true
+		"origins:lay_eggs" = true
+		"origins:vegetarian" = true
+
+	[origins."icosahedron_origins:arrowhead"]
+		enabled = true
+

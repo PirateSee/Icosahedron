@@ -1,0 +1,46 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "tetra_anchient_ruins": {
+      "advancements": [
+        "tetra:spelunking/ancient_ruins"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          0,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:forged_vent",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Forged Walls"
+    }
+  },
+  "settings": {
+    "unlockNotification": true,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "COMPLETED"
+  }
+}

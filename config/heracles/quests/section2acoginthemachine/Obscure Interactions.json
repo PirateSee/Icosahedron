@@ -1,0 +1,47 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Obscure Interactions --</h2>",
+      "draft",
+      "",
+      "liquid interactions - probably will be listed under mechanical extruder recipes in EMI",
+      "tar touch blue ice = ashfalt mend",
+      "chocolate + lava = scoria",
+      "honey + lava = limestone",
+      "",
+      "haunted bell"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          16,
+          -80
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:structure_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "Obscure Interactions"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

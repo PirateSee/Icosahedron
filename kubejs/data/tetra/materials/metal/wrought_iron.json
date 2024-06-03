@@ -1,0 +1,27 @@
+{
+    "key": "wrought_iron",
+    "category": "metal",
+    "primary": 4.6,
+    "secondary": 4,
+    "tertiary": 2.8,
+    "durability": 218,
+    "integrityCost": 2,
+    "integrityGain": 3,
+    "magicCapacity": 78,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 5.4,
+    "tints": {
+        "glyph": "586E78",
+        "texture": "586E78"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "blocksyouneed_luna:wrought_iron_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:iron"
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    "Planetfall"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Need-to-know information"
+    },
+    "description": [
+      "<h2>- Survival Guide ---</h2>",
+      "This quest and following quests will outline a few key things to note for survival, and some QOL features you might miss.",
+      "",
+      "This quest will go over the stuff you need to know right now to stay alive for the next 10 minutes. Further quests will go over good to know but slightly less important topics. Once you find a good footing, its recomending you look over them.",
+      "",
+      "<h2>| Tempature</h2>",
+      "In the center of your bar is a number and a square head. This represents your current tempature.",
+      "",
+      "If it is a grey zero, you are at nutrual tempature. You want to stay here.",
+      "If it is /9/blue/9/, you are starting to get cold. As you get colder, you gain debuffs until finaly freezing and /4/taking damage at 100./4/",
+      "If it is /6/orange/6/, you are starting to get hot. As you get hoterer, you gain debuffs until finaly boiling and /4/taking damage at 100./4/",
+      "",
+      "Tempature is based on biome, elevation, and nearby blocks. Armour insulation and waterskins can regulate your tempature.",
+      "",
+      "A diamond on the right of your hotbar shows roughly how hot or cold your suroundings are.",
+      "",
+      "<h2>| Mobs</h2>",
+      "A mod called /b/Enhanced AI/b/ makes mobs smarter, and harder to fight. You should be a bit more careful around them now. Skeletons will run when your close, zombies make use of Ender Pearls and Fishing Rods, and creepers try to employ team-tactics to breach walls, or they just leap at you.",
+      "",
+      "/b/Born in Chaos/b/ adds some more difficult mobs that come out at night. It might be best that you stay inside for your first few nights."
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          0,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:pristine_diamond",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "Survival Guide"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

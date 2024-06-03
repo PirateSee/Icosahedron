@@ -1,0 +1,18 @@
+{
+    "name": "Spark",
+    "description": "§0[Agressive]§7\nSparks like to start fires and are empowered by them. Fire still hurts them, just not as much.",
+    "powers": [
+        "icosahedron_origins:spark/blazing_rage",
+        "icosahedron_origins:spark/blazing_rage_particles",
+        "icosahedron_origins:spark/blazing_rage_speed",
+        "icosahedron_origins:spark/ignition",
+        "icosahedron_origins:spark/coals",
+        "icosahedron_origins:spark/coals_damage",
+        "icosahedron_origins:spark/updraft",
+        "icosahedron_origins:spark/undoused",
+        "icosahedron_origins:spark/torch",
+        "icosahedron_origins:spark/waterlogged",
+        "icosahedron_origins:spark/waterlogged_particles"
+    ],
+    "impact": 1
+}

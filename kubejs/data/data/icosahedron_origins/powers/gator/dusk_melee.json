@@ -1,0 +1,66 @@
+{
+    "name": "§a+ §r§nDarkened Swipe",
+    "description": "Hitting an entity spends a dusk charge to give signifigant knockback and bonus damage.",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:gator/dusk_resource",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:power_active",
+                "power": "icosahedron_origins:gator/dusk_toggle"
+            }
+        ]
+    },
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "z": 2,
+                "client": true,
+                "server": true
+            },
+            {
+                "type": "origins:damage",
+                "amount": 3,
+                "damage_type": "minecraft:magic"
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:gator/dusk_resource",
+                    "change": -1,
+                    "operation": "add"
+                }
+            },
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:gator/dusk_resource_off",
+                    "change": -1,
+                    "operation": "add"
+                }
+            },
+            {
+                "type": "origins:target_action",
+                "action": {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:dragon_breath",
+                    "count": 5,
+                    "speed": 0.5,
+                    "offset_y": 1
+                }
+            }
+        ]
+    },
+    "cooldown": 1
+}

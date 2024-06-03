@@ -1,0 +1,79 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "welcome": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "welcomelog": {
+      "item": {
+        "id": "minecraft:spruce_log",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "Welcome"
+    },
+    "description": [
+      "<h2>- Welcome ---</h2>",
+      "Welcome to Icosahedron, an expert-lite modpack based on combat, tech, and fun systems to master.",
+      "",
+      "<hint title=\"Note on Skill\" icon=\"minecraft:cobblestone\">",
+      "    <p>It's generaly expected that you have played minecraft before, and are fairly good at it. You are not expected to know and have mastered the mods included. This quest book will attempt to guide you through the included mods (and the modifications made to them) as if you've never seen them before.</p>",
+      "</hint>",
+      "",
+      "<details summary=\"An Overview on Changes\">",
+      "    <p>Vanilla recipes are mostly untouched, except iron-tier and above armor and tools, which have been modified and can no longer be made normally. Modded recipes have been modified signifigantly. Most recipes have been made more expensive or changed to require other modded processes to be made.</p>",
+      "</details>",
+      "",
+      "This is the quest book. It can be opened with /b/U/b/ (by default) and shows objectives and rewards.",
+      "This book will guide you through systems and progression of the mod.",
+      "",
+      "<details summary=\"An Overview on Quest Icons\">",
+      "    <p>Quest backgrounds are dependant on what the quest is.</p>",
+      "    <p>Diamonds (like this one) signal important milestones. These generaly unlock many more quests.</p>",
+      "    <p>Gears signal the end of a section, and the start of another one. This is your main goal for the section.</p>",
+      "    <p>Hexagons are mostly informational, usualy without a goal attached. Its highly recomended you read these over, they'll tell you a lot of useful stuff.</p>",
+      "</details>",
+      "",
+      "Some quests may come with handy rewards!",
+      "<hr/>",
+      "Complete this quest by checking the box.",
+      "<task task=\"welcome\" quest=\"Planetfall\"/>",
+      "<hr/>",
+      "And claim the rewards!",
+      "<reward reward=\"welcomelog\" quest=\"Planetfall\"/>",
+      "You should look at the Survival Guide quest next. It'll tell you need-to-know information on how to survive regarding some of the new modded mechanics."
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "heracles:quest_book",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Planetfall"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

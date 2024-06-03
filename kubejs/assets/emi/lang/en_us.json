@@ -1,0 +1,95 @@
+{
+    "tag.item.ico.tool.screwdriver": "Screwdrivers",
+    "tag.item.ico.tool.file": "Files",
+    "tag.item.ico.tool.hammer": "Hammers",
+    "tag.item.ico.tool.saw": "Saws",
+
+    "tag.item.ico.component": "Components",
+
+    "tag.item.create.casing": "Casings",
+    "tag.item.create.contraption_controlled": "Contraption Controllable",
+    "tag.item.create.sandpaper": "Sandpaper",
+    "tag.item.create.seats": "Seats",
+    "tag.item.create.sleepers": "Track Sleepers",
+    "tag.item.create.toolboxes": "Toolboxes",
+    "tag.item.create.upright_on_belt": "Upright on Belts",
+    "tag.item.create.valve_handles": "Valve Handles",
+
+    "tag.item.createaddition.plants": "Plants",
+
+    "tag.item.curios.belt": "Belt Curios",
+
+    "tag.item.fabric.axes": "Axes",
+    "tag.item.fabric.bows": "Bows",
+    "tag.item.fabric.crosbows": "Crossbows",
+    "tag.item.fabric.pickaxes": "Pickaxes",
+    "tag.item.fabric.shields": "Shields",
+    "tag.item.fabric.swords": "Swords",
+    
+    "tag.item.farmersdelight.cabbage_roll_ingredients": "Cabbage Roll Ingredients",
+    "tag.item.farmersdelight.cabinets": "Cabinets",
+    "tag.item.farmersdelight.canvas_signs": "Canvas Signs",
+    "tag.item.farmersdelight.hanging_canvas_signs": "Hanging Canvas Signs",
+    "tag.item.farmersdelight.serving_containers": "Serving Containers",
+    "tag.item.farmersdelight.wild_crops": "Wild Crops",
+
+    "tag.item.forge.armor": "Armor",
+    "tag.item.forge.tools.knives": "Knives",
+    "tag.item.forge.tools.wrench": "Wrenches",
+    "tag.item.forge.vegetables": "Vegetables",
+    "tag.item.forge.wires": "Wires",
+
+    "tag.item.lootr.chests": "Lootr Chests",
+    "tag.item.lootr.containers": "Lootr Containers",
+
+    "tag.item.origins.chests": "Ranged Weapons",
+    "tag.item.origins.shields": "Shields",
+    "tag.item.origins.meat": "Meat",
+    "tag.item.origins.ranged_weapons": "Ranged Weapons",
+
+    "tag.item.pneumaticcraft.basic_drones": "Simple Drones",
+    "tag.item.pneumaticcraft.chests": "Chests",
+    "tag.item.pneumaticcraft.fluid_tanks": "Fluid Tanks",
+    "tag.item.pneumaticcraft.plastic_bricks": "Plastic Bricks",
+    "tag.item.pneumaticcraft.smooth_plastic_bricks": "Smooth Plastic Bricks",
+    "tag.item.pneumaticcraft.wall_lamps": "Wall Lamps",
+    "tag.item.pneumaticcraft.wall_lamps_inverted": "Inverted Wall Lamps",
+
+    "tag.item.supplementaries.hourglass_dusts": "Hourglass Dusts",
+    "tag.item.supplementaries.trapped_presents": "Trapped Presents",
+    "tag.item.supplementaries.wattle_and_daub": "Wattle and Daub",
+    "tag.item.supplementaries.throwable_bricks": "Throwing Bricks",
+    "tag.item.supplementaries.straw": "Straw",
+    "tag.item.supplementaries.statue_tools": "Statue Tools",
+    "tag.item.supplementaries.sign_posts": "Sign Posts",
+    "tag.item.supplementaries.slingshot_blacklist": "Slingshot Blacklisted",
+    "tag.item.supplementaries.sconces": "sconces",
+    "tag.item.supplementaries.shulker_blacklist": "Shulker Blacklisted",
+    "tag.item.supplementaries.presents": "Presents",
+    "tag.item.supplementaries.ropes": "Ropes",
+    "tag.item.supplementaries.placable_books": "Placable Books",
+    "tag.item.supplementaries.flower_box_plantable": "Flower Box Plantables",
+    "tag.item.supplementaries.cookies": "Cookies",
+    "tag.item.supplementaries.flags": "Flags",
+    "tag.item.supplementaries.blackboard_white": "White Chalk",
+    "tag.item.supplementaries.candle_holders": "Candle Holders",
+    "tag.item.supplementaries.blackboard_black": "Black Chalk",
+
+    "tag.item.twigs.silt_pots": "Silt Pots",
+    "tag.item.twigs.tables": "Tables",
+    "tag.item.twigs.schist": "Schist",
+    "tag.item.twigs.seashells": "Seashells",
+    "tag.item.twigs.packed_silt_full_blocks": "Fully Packed Silt",
+    "tag.item.twigs.rhyolite": "Ryholite",
+    "tag.item.twigs.packed_silt": "All Packed Silt",
+    "tag.item.twigs.bloodstone": "Bloodstone",
+
+    "tag.item.tetra:toolbelt.potion_accept": "Toolbelt Potions",
+
+    "tag.fluid.forge.gasoline": "Gasoline",
+    "tag.fluid.forge.plantoil": "Plant Oils",
+    "tag.fluid.forge.fuel": "Fuels",
+
+    "tag.fluid.create.bottomless.allow": "Fluid Hose Bottomless Fluids"
+
+}

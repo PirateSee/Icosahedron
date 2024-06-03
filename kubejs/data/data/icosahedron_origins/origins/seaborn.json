@@ -1,0 +1,19 @@
+{
+    "name": "Aquafir",
+    "description": "Aquatic creatures that float on the surface of water. They perfer long-ranged combat while standing ontop of water, making it hard for enemies to reach them.",
+    "powers": [
+        "icosahedron_origins:seaborn/wetbow",
+        "icosahedron_origins:seaborn/wetspeed",
+        "origins:swim_speed",
+        "icosahedron_origins:seaborn/water_walking",
+        "icosahedron_origins:seaborn/seaborn_particles",
+        "icosahedron_origins:seaborn/bow_particles",
+        "icosahedron_origins:seaborn/aquatic",
+        "icosahedron_origins:seaborn/fire_weak",
+        "icosahedron_origins:seaborn/melee_slow"
+    ],
+    "icon": {
+        "item": "kubejs:icon_jellyfish"
+    },
+    "impact": 1
+}

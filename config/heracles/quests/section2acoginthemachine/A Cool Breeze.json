@@ -1,0 +1,58 @@
+{
+  "dependencies": [
+    "Deafening Clang"
+  ],
+  "tasks": {
+    "adv_create_windmill": {
+      "advancements": [
+        "create:windmill"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- A Cool Breeze ---</h2>",
+      "Hungry for more power? Windmills can output far more power than puny waterwheels.",
+      "Ponder the windmill bearing to learn how to construct one.",
+      "<hr/>",
+      "<crafting-recipe id=\"ico:windmill_bearing\"/>",
+      "You should seek other forms of kenetic energy generation, this and waterwheels are just the simplest ones.",
+      "",
+      "> --/7/Harnessing the wind for power? Hah, it's like a dream I had when I was little, soaring above the clouds. Of course that isn't possible, at least not with our current tech, but this is a step in the right direction. It might even take us to the stars one day./7/--",
+      "",
+      "<hr/>",
+      "<task task=\"adv_create_windmill\" quest=\"A Cool Breeze\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          60,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:white_sail",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "A Cool Breeze"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

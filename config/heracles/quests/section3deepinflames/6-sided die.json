@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "Gemstone Polishing"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          90,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:budding_amethyst",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "6-Sided Die"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

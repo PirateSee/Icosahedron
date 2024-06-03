@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "flower power"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          -60,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:lexicon",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png",
+    "title": {
+      "translate": "Flower Manual"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

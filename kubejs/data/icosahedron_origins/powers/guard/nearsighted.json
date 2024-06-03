@@ -1,0 +1,15 @@
+{
+    "name": "§c- §r§nMarksman's Prey",
+    "description": "Ranged attacks hurt you more, and your ranged damage is reduced.",
+    "type": "origins:modify_damage_taken",
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": ">=",
+        "compare_to": 5
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5,
+        "name": "Arrow Damage Penalty"
+    }
+}

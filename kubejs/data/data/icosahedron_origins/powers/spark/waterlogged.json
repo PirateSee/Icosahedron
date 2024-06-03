@@ -1,0 +1,24 @@
+{
+    "name": "§c- §r§nDousing",
+    "description": "Water washes off all the sulfur and soot, making you vulnerable to damage.",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_rain"
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">=",
+                "compare_to": 0.1
+            }
+        ]
+    },
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.6,
+        "name": "Waterlogged"
+    }
+}

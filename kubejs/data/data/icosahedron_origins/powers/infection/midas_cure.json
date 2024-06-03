@@ -1,0 +1,17 @@
+{
+    "name": "Midas Antivirus",
+    "description": "Gold-plated food reverses the infection's growth.",
+    "type": "origins:modify_food",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "icosahedron_origins:gilded_food"
+        }
+    },
+    "entity_action": {
+        "type": "origins:set_resource",
+        "resource": "icosahedron_origins:infection/spread",
+        "value": -20
+    },
+    "always_edible": true
+}

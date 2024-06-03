@@ -1,0 +1,39 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Mantle Knife ---</h2>"
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          90,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:map",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Mantle Knife"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

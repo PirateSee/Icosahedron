@@ -1,0 +1,77 @@
+{
+  "dependencies": [
+    "tetra"
+  ],
+  "tasks": {
+    "adv_tetra_tool": {
+      "advancements": [
+        "tetra:upgrades/tool_upgrade"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Tetra Volume 2"
+    },
+    "description": [
+      "<h2>- Subsitute Meterials ---</h2>",
+      "Ready to use that fancy new workbench?",
+      "Put a vanilla tool into it. You can swap out parts for diffrent types or new materials.",
+      "Try it out, swap out a tool part. ",
+      "",
+      "<hint title=\"Notice\" icon=\"minecraft:iron_pickaxe\">\r",
+      "    <p>You may require addtional tools to apply parts. Iron requires a level 2 hammer for example. Make sure you have the required tools for tinkering.</p>\r",
+      "</hint>",
+      "",
+      "It should also be noted that vanilla tools better than stone are no longer craftable. Tetra it is!",
+      "",
+      "See: /e/**__Section T: Tetra Toolsmithing__**/e/",
+      "<hr/>",
+      "<task task=\"adv_tetra_tool\" quest=\"Subsitute Materials\"/>"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          60,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:modular_double",
+        "count": 1,
+        "nbt": {
+          "honing_progress": 437,
+          "double/handle": "double/basic_handle",
+          "HideFlags": 1,
+          "id": "2edc2f9e-214b-4f84-bd37-52dab4bbc393",
+          "double/head_right": "double/basic_axe_right",
+          "double/basic_pickaxe_left_material": "basic_pickaxe/copper",
+          "double/handle:basic_handle/wrap/wool_light_blue": 0,
+          "double/basic_handle_material": "basic_handle/blaze_rod",
+          "double/basic_axe_right_material": "basic_axe/iron",
+          "double/head_left:workable": 1,
+          "double/head_left": "double/basic_pickaxe_left",
+          "double/socket_material": "double_socket/socket_emerald",
+          "double/binding": "double/socket",
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Subsitute Materials"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "dependencies": [
+    "Slipstream Processing",
+    "Hands of Brass"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "w"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          0,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:unpolished_diamond",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Gemstone Polishing"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

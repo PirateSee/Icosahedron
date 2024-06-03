@@ -1,0 +1,39 @@
+{
+  "dependencies": [
+    "Pressure Chamber"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Charging Tools"
+    },
+    "description": [],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          60,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "pneumaticcraft:charging_station",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Repuressurizing"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

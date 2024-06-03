@@ -1,0 +1,72 @@
+{
+  "dependencies": [
+    "Blazing Heat"
+  ],
+  "tasks": {
+    "use_supply_pass": {
+      "type": "heracles:item",
+      "item": "kubejs:supply_pass",
+      "amount": 1,
+      "collection": "MANUAL",
+      "title": "Authenticate"
+    }
+  },
+  "rewards": {
+    "reward_brass": {
+      "item": {
+        "id": "create:brass_ingot",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "reward_kelp": {
+      "item": {
+        "id": "minecraft:dried_kelp",
+        "count": 32
+      },
+      "type": "heracles:item"
+    },
+    "reward_wrought_iron": {
+      "item": {
+        "id": "kubejs:wrought_iron_ingot",
+        "count": 32
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Spare Goods I ---</h2>",
+      "Use a /6/Supply Cache Acess Pass/6/ for some spare resources."
+    ],
+    "groups": {
+      "Section EX: Supply Cache": {
+        "position": [
+          60,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Spare Goods II"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": true,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

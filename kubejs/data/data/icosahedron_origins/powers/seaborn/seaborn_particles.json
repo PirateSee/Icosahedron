@@ -1,0 +1,22 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 0.1
+    },
+    "type": "origins:particle",
+    "particle": "minecraft:bubble_column_up",
+    "frequency": 3,
+    "count": 12,
+    "speed": 0.1,
+    "spread": {
+        "x": 0.1,
+        "y": 0,
+        "z": 0.1
+    },
+    "offset_y": -0.2,
+    "visible_in_first_person": true,
+    "visible_while_invisible": true
+}

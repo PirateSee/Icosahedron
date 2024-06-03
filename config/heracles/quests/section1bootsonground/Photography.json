@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "iron"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "A moment in time"
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          30,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "exposure:camera",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Photography"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

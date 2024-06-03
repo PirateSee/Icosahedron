@@ -1,0 +1,24 @@
+{
+    "definitions": [
+        {
+            "image": "legendarytooltips:textures/tt_borders.png",
+            "index": 0,
+            "startColor": "#3f4243",
+            "endColor": "#2c3033",
+            "bgStartColor": "#141618",
+            "bgEndColor": "#111215",
+            "priority": 0,
+            "selectors": [ "rotten_flesh", "stick" ]
+        },
+        {
+            "image": "legendarytooltips:textures/tt_borders.png",
+            "index": 8,
+            "startColor": "#c9caba",
+            "endColor": "#a9afa1",
+            "bgStartColor": "#281c11",
+            "bgEndColor": "#150d07",
+            "priority": 0,
+            "selectors": [ "create:cogwheel", "create:shaft" ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+  "dependencies": [
+    "Cogs n Shafts"
+  ],
+  "tasks": {
+    "get_andesite_casing": {
+      "type": "heracles:item",
+      "item": "create:andesite_casing",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Encased ---</h2>",
+      "",
+      "<crafting-recipe id=\"ico:andesite_framing\" grid-width=\"2\"/>",
+      "<columns template=\"45% 10 45%\">",
+      "    <column>",
+      "        <columns template = \"75% 25%\">",
+      "            <column>",
+      "            </column>",
+      "            <column>",
+      "                <item id=\"kubejs:andesite_framing\" scale=\"2.0\"> </item>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "    <column>",
+      "        <item id=\"create:brass_hand\" scale=\"1.0\"> </item>",
+      "    </column>",
+      "    <column>",
+      "        <columns template = \"25% 75%\">",
+      "            <column>",
+      "                <item id=\"minecraft:stripped_oak_log\" scale=\"2.0\"> </item>",
+      "            </column>",
+      "            <column>",
+      "            </column>",
+      "        </columns>",
+      "    </column>",
+      "</columns>",
+      "",
+      "To build more advanced machines we're going to need something to put them in.",
+      "/6/Right click a stripped log/6/ with /b/Andesite Framing/b/ to make andesite casing. Probably make a bunch, nearly every kinetic machine will need one.",
+      "<hr/>",
+      "<task task=\"get_andesite_casing\" quest=\"Encased\"/>    "
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          30,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:andesite_casing",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Encased"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

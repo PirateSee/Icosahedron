@@ -1,0 +1,73 @@
+{
+  "dependencies": [
+    "Planetfall"
+  ],
+  "tasks": {
+    "adv_tetra_workbench": {
+      "title": "",
+      "icon": {
+        "item": {
+          "id": "minecraft:air",
+          "count": 0
+        },
+        "type": "heracles:item"
+      },
+      "advancements": [
+        "tetra:upgrades/workbench"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Tetra tools"
+    },
+    "description": [
+      "<h2>- A new Paradigm ---</h2>",
+      "Standard issue tools are great and all, but what if you wanted more?",
+      "Tetra has you covered.",
+      "Whack a Crafting Table with a hammer and get started.",
+      "<br/>",
+      "<crafting-recipe id=\"tetra:hammer/oak\" grid-width=\"3\"/>",
+      "<hr/>",
+      "<task task=\"adv_tetra_workbench\" quest=\"tetra\"/>"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          30,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:holo",
+        "count": 1,
+        "nbt": {
+          "holo/repo": "holo/repo",
+          "holo/repo_material": "repo/default",
+          "holo/frame": "holo/frame",
+          "holo/scanner": "holo/scanner",
+          "holo/scanner_material": "scanner/default",
+          "holo/core_material": "frame/dim",
+          "holo/core": "holo/core",
+          "holo/frame_material": "core/ancient"
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "A New Paridigm"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

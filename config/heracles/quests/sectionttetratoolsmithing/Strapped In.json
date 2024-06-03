@@ -1,0 +1,44 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          60,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:modular_toolbelt",
+        "count": 1,
+        "nbt": {
+          "toolbelt/belt_material": "belt/rope",
+          "id": "fe3c1215-cce8-4c46-abba-05395ca8ed35",
+          "toolbelt/belt": "toolbelt/belt",
+          "toolbelt/slot1": "toolbelt/strap_slot1",
+          "toolbelt/strap_slot1_material": "strap1/leather"
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Strapped In"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "LOCKED"
+  }
+}

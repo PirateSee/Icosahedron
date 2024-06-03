@@ -1,0 +1,82 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_rain"
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<",
+                    "compare_to": 0.1
+                }
+            ]
+        },
+        "if_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:gator/the_sun_resource",
+                    "change": 1,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:smoke",
+                    "count": 5,
+                    "speed": 0.3,
+                    "spread": {
+                        "x": 0.25,
+                        "y": 0.25,
+                        "z": 0.25
+                    },
+                    "offset_y": 1
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "block.fire.extinguish",
+                    "volume": 0.5,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "icosahedron_origins:gator/the_sun_resource",
+                        "comparison": ">=",
+                        "compare_to": 15
+                    },
+                    "if_action": {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:flame",
+                        "count": 10,
+                        "speed": 0.2,
+                        "spread": {
+                            "x": 0.3,
+                            "y": 0.3,
+                            "z": 0.3
+                        },
+                        "offset_y": 1
+                    }
+                }
+            ]
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:gator/the_sun_resource",
+            "change": -2,
+            "operation": "add"
+        }
+    }
+}

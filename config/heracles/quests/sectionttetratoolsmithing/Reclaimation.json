@@ -1,0 +1,47 @@
+{
+  "dependencies": [
+    "Forged Walls"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Reclaimation ---</h2>",
+      "",
+      "These ruins are made of some fancy stuff.",
+      "",
+      "Pickaxes can't pierce the plating. /b/Hammers/b/ seem to be more effective, but  /b/scrap/b/ is all that gets left.",
+      "",
+      "Perhaps a /b/smoother touch/b/ would be required."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          60,
+          120
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:forged_platform_slab",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Reclaimation"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "IN_PROGRESS"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "icosahedron_origins:mecha/shield/glow_res",
+        "comparison": "==",
+        "compare_to": 1
+    },
+    "type": "origins:self_glow",
+    "use_teams": false,
+    "green": 0,
+    "blue": 0
+}

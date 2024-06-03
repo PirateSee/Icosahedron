@@ -1,0 +1,94 @@
+{
+    "replace": true,
+    "slots": [ "crossbow/attachment_0", "crossbow/attachment_1" ],
+    "type": "tetra:basic_module",
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/" ],
+            "key": "sights/",
+            "effects": {
+                "zoom": 15
+            },
+            "integrity": -1,
+            "durability": 10,
+            "extract": {
+                "primaryEffects": {
+                    "zoom": 4.9
+                },
+                "durability": 0.2,
+                "glyph": {
+                    "textureX": 120,
+                    "textureY": 16
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:items/module/bow/riser/sight/",
+                        "type": "static"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [ "tetra:rods/stick" ],
+            "key": "sights/",
+            "effects": {
+                "zoom": 20
+            },
+            "integrity": -1,
+            "durability": 10,
+            "extract": {
+                "durability": 0.2,
+                "glyph": {
+                    "textureX": 120,
+                    "textureY": 16
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:items/module/bow/riser/sight/",
+                        "type": "static"
+                    }
+                ]
+            }
+        },
+		{
+            "key": "sights/glass",
+            "effects": {
+                "zoom": 60
+            },
+            "integrity": -1,
+            "durability": 13,
+			"glyph": {
+				"textureX": 120,
+				"textureY": 16,
+				"tint": "prismarine_glyph"
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/bow/riser/sight/default",
+					"type": "static"
+				}
+			]
+        },
+        {
+            "key": "sights/spyglass",
+            "effects": {
+                "zoom": 90
+            },
+            "integrity": -1,
+            "durability": 39,
+			"glyph": {
+				"textureX": 120,
+				"textureY": 16,
+				"tint": "prismarine_glyph"
+			},
+			"models": [
+				{
+					"location": "tetra:items/module/bow/riser/sight/default",
+					"type": "static"
+				}
+			]
+        }
+    ]
+}

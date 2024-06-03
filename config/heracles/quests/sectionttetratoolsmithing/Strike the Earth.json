@@ -1,0 +1,50 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_earthpericer": {
+      "type": "heracles:item",
+      "item": "tetra:earthpiercer",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "<h2>- Strike the Earth ---</h2>",
+      "",
+      "The /6/Earthpeircer/6/ can be used as a mining tool.",
+      "",
+      "When fitted to the end of a handle as in a /6/Single Headed Tool/6/, it much resembles a spear. It can dig out blocks in a long line, with /b/greater effect on standard or longer handles/b/. If the tool could be leveraged in a way that makes it /6/throwable/6/, it could be used to create a /b/long-distancce mining/b/ tool."
+    ],
+    "groups": {
+      "Section T: Tetra Toolsmithing": {
+        "position": [
+          150,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tetra:earthpiercer",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Strike the Earth"
+    }
+  },
+  "settings": {
+    "unlockNotification": false,
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "individual_progress": false,
+    "hidden": "COMPLETED"
+  }
+}

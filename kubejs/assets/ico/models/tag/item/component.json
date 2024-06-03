@@ -1,0 +1,9 @@
+{
+"parent": "emi:item/quarter_item",
+    "textures": {
+        "first": "kubejs:item/andesite_framing",
+        "second": "create:item/electron_tube",
+        "third": "kubejs:item/wooden_slde",
+        "fourth": "create:item/precision_mechanism"
+    }
+}
