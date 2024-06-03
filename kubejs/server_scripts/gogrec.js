@@ -1,5 +1,10 @@
 ServerEvents.recipes(e => {
     //e.remove({id:''})
+    e.remove({id:'create:crafting/kinetics/clutch'})
+    e.remove({id:'create:crafting/schematics/schematic_table'})
+    e.remove({id:'immersive_aircraft:hull_reinforcement'})
+    e.remove({id:'immersive_aircraft:hull'})
+    e.remove({id:'create:crafting/schematics/schematicannon'})
     e.remove({id:'immersive_aircraft:warship'})
     e.remove({id:'immersive_aircraft:biplane'})
     e.remove({id:'pneumaticcraft:flux_compressor'})
@@ -332,4 +337,44 @@ ServerEvents.recipes(e => {
           C: 'immersive_aircraft:heavy_crossbow',
           H: 'immersive_aircraft:hull_reinforcement'
       }).id('ico:warship')
+      //end of suffering
+      e.shaped('create:schematicannon', [
+        ' wh', 
+        'lwl',
+        'ses'
+    ], {
+        w: 'createbigcannons:wrought_iron_cannon_chamber',
+        h: '#ico:tool/hammer',
+        l: '#minecraft:logs',
+        s: 'minecraft:smooth_stone',
+        e: 'createbigcannons:wrought_iron_cannon_end'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:schematicannon')
+    e.shaped('immersive_aircraft:hull', [
+        'lal', 
+        'www',
+        'lal'
+    ], {
+        l: '#minecraft:logs',
+        a: 'create:andesite_casing',
+        w: 'kubejs:wrought_iron_sheet',
+    }).id('ico:hull')
+    e.shaped('immersive_aircraft:hull_reinforcement', [
+        'ccc', 
+        'hhh',
+        'ccc'
+    ], {
+        c: 'kubejs:carbon_steel_ingot',
+        h: 'immersive_aircraft:hull'
+    }).id('ico:hull_reinforcement')
+    e.shaped('create:schematic_table', [
+        'SSS', 
+        'hsf',
+        ' s '
+    ], {
+        s: 'minecraft:smooth_stone',
+        S: '#minecraft:wooden_slabs',
+        h: '#ico:tool/hammer',
+        f: '#ico:tool/file'
+    }).damageIngredient(Item.of('#ico:tool/file')).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:schematic_table')
+    e.shapeless('create:clutch', ['create:andesite_casing','create:shaft','minecraft:redstone','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:clutch')
 })
