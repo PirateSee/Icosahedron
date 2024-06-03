@@ -2,7 +2,7 @@ type = user_variables
 
 variable {
   name = confirm_disconnect
-  value = 1
+  value = 
   reset_on_launch = true
 }
 
