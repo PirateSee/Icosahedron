@@ -36,7 +36,8 @@ StartupEvents.registry('fluid', e => {
 		.flowingTexture('icosahedron:block/fluid/molten_wrought_iron_flowing')
 
 	e.create('molten_nickel').bucketColor(0xBBAFB9).displayName('Molten Nickel')
-		.stillTexture('icosahedron:block/fluid/molten_gold_still')
+		.stillTexture('icosahedron:block/fluid/molten_nickel_still')
+        .flowingTexture('icosahedron:block/fluid/molten_nickel_flowing')
 	e.create('molten_iron').bucketColor(0xBBAFB9).displayName('Molten Iron')
 		.stillTexture('icosahedron:block/fluid/molten_iron_still')
 		.flowingTexture('icosahedron:block/fluid/molten_iron_flowing')
@@ -62,14 +63,15 @@ StartupEvents.registry('item', e => {
 	
     e.create('impure_gold_grit').texture('icosahedron:item/ore/crude/dirty_gold_grit')
 	e.create('gold_grit').texture('icosahedron:item/ore/crude/pure_gold_grit')
+    e.create('small_copper_grit').texture('icosahedron:item/ore/crude/small_pure_copper_grit')
 
 	e.create('impure_zinc_grit').texture('icosahedron:item/ore/crude/dirty_zinc_grit')
 	e.create('zinc_grit').texture('icosahedron:item/ore/crude/pure_zinc_grit')
-	e.create('small_zinc_grit').texture('icosahedron:item/ore/crude/small_zinc_grit')
+	e.create('small_zinc_grit').texture('icosahedron:item/ore/crude/small_pure_zinc_grit')
 
 	e.create('impure_iron_grit').texture('icosahedron:item/ore/crude/dirty_iron_grit')
 	e.create('iron_grit').texture('icosahedron:item/ore/crude/pure_iron_grit')
-	e.create('small_iron_grit').texture('icosahedron:item/ore/crude/small_iron_grit')
+	e.create('small_iron_grit').texture('icosahedron:item/ore/crude/small_pure_iron_grit')
 
 	//gemstone	
 	e.create('rough_nether_quartz').texture('icosahedron:item/ore/gemstone/rough_quartz')
