@@ -1,5 +1,15 @@
 ServerEvents.recipes(e => {
     //e.remove({id:''})
+    e.remove({id:'create:crafting/kinetics/encased_chain_drive'})
+    e.remove({id:'create:crafting/kinetics/gearshift'})
+    e.remove({id:'create:crafting/kinetics/adjustable_chain_gearshift'})
+    e.remove({id:'create_connected:crafting/kinetics/parallel_gearbox'})
+    e.remove({id:'create_connected:crafting/kinetics/overstress_clutch'})
+    e.remove({id:'create_connected:crafting/kinetics/centrifugal_clutch'})
+    e.remove({id:'create_connected:crafting/kinetics/freewheel_clutch'})
+    e.remove({id:'create_connected:crafting/kinetics/brake'})
+    e.remove({id:'create_connected:crafting/kinetics/brass_gearbox'})
+    e.remove({id:'create:crafting/kinetics/speedometer'})
     e.remove({id:'create:crafting/kinetics/clutch'})
     e.remove({id:'create:crafting/schematics/schematic_table'})
     e.remove({id:'immersive_aircraft:hull_reinforcement'})
@@ -377,4 +387,32 @@ ServerEvents.recipes(e => {
         f: '#ico:tool/file'
     }).damageIngredient(Item.of('#ico:tool/file')).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:schematic_table')
     e.shapeless('create:clutch', ['create:andesite_casing','create:shaft','minecraft:redstone','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:clutch')
+    e.shaped('create:speedometer', [
+        ' cs', 
+        ' a ',
+        '   '
+    ], {
+        a: 'create:andesite_casing',
+        c: 'minecraft:compass',
+        s: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:speedometer')
+    e.shaped('create_connected:brass_gearbox', [
+        ' cs', 
+        'crc',
+        ' c '
+    ], {
+        c: 'create:cogwheel',
+        r: 'create:rotation_speed_controller',
+        s: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:brass_gearbox')
+
+    e.shapeless('create_connected:brake', ['create:andesite_casing','create:shaft','minecraft:redstone','minecraft:obsidian','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:brake')
+    e.shapeless('create_connected:freewheel_clutch', ['create:andesite_casing','create:shaft','create:iron_sheet','create:cogwheel','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:freewheel_clutch')
+    e.shapeless('create_connected:centrifugal_clutch', ['create:andesite_casing','create:shaft','create:iron_sheet','create:speedometer','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:centrifugal_clutch')
+    e.shapeless('create_connected:overstress_clutch', ['create:andesite_casing','create:shaft','create:iron_sheet','create:electron_tube','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:overstress_clutch')
+    e.shapeless('create_connected:parallel_gearbox', ['create:gearbox','create:large_cogwheel','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:parallel_gearbox')
+    e.shapeless('create:adjustable_chain_gearshift', ['create:encased_chain_drive','create:electron_tube','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:adjustable_chain_gearshift')
+    e.shapeless('create:gearshift', ['create:andesite_casing','create:cogwheel','minecraft:redstone','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:gearshift')
+    e.shapeless('create:encased_chain_drive', ['create:andesite_casing','minecraft:iron_nugget','minecraft:iron_nugget','minecraft:iron_nugget','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:encased_chain_drive')
+    
 })
