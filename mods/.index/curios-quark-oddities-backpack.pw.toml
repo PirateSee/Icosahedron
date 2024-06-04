@@ -1,0 +1,13 @@
+filename = 'CuriosQuarkOBP-1.20.1-1.2.5.jar'
+name = 'Curios Quark Oddities Backpack'
+side = 'both'
+
+[download]
+hash = 'bc46d641551f20611c002d46d83e24908eb305a3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5085092
+project-id = 445208

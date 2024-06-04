@@ -1,13 +1,13 @@
-filename = 'Bookshelf-Forge-1.20.1-20.1.10.jar'
+filename = 'Bookshelf-Forge-1.20.1-20.1.11.jar'
 name = 'Bookshelf'
 side = 'both'
 
 [download]
-hash = '29158563b4619ae97e876e132d4b5feb728df8b12af454aad3b0c4b996ffd113cf0995f720400d877df08d469466742c28ba27e6275abb889f1a2f121205bde0'
+hash = '8c38ca3f2ff0b3b31d166a69b88ed73b3603fdf920c789585f4a6143d25c2bd1e5287f707185ff13568fc7cc3f4af13e9490746cab720ebff021d3acff7659f4'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/uy4Cnpcm/versions/zozOd4AM/Bookshelf-Forge-1.20.1-20.1.10.jar'
+url = 'https://cdn.modrinth.com/data/uy4Cnpcm/versions/exZ1SlS5/Bookshelf-Forge-1.20.1-20.1.11.jar'
 
 [update.modrinth]
 mod-id = 'uy4Cnpcm'
-version = 'zozOd4AM'
+version = 'exZ1SlS5'

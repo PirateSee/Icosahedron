@@ -1,0 +1,13 @@
+filename = 'SpreadEm-1.20.1-0.1.0.jar'
+name = 'Spread em'
+side = 'both'
+
+[download]
+hash = '6bd1e7d30e9cbd3a71475ceb8a4963581016722396f1c01bd961a33a8ee087f929794ab950c1eaaa8837a75856c2975eaac01289656a32aa1b3c3d3bd3ab5fa7'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/bh2ekORa/versions/DXgW9nyl/SpreadEm-1.20.1-0.1.0.jar'
+
+[update.modrinth]
+mod-id = 'bh2ekORa'
+version = 'DXgW9nyl'

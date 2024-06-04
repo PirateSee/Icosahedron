@@ -1,13 +1,13 @@
-filename = 'EnchantmentDescriptions-Forge-1.20.1-17.0.15.jar'
-name = 'Enchantment Descriptions'
-side = 'client'
+filename = 'EnchantmentDescriptions-Forge-1.20.1-17.0.16.jar'
+name = 'EnchantmentDescriptions'
+side = 'both'
 
 [download]
-hash = '304d2b4a545107e69813fd45fd983dcf754a9951cf508fb9a23af96ab4dfc87f0786e273e1db4122fd5061d02a7230ccd880c8d3b355a9b1a69662ddd80adc39'
+hash = 'a56820b0c637e7c3baf7d51b3769faa5466055505134adcd214e6810ab1316bb7ffdebd4c279a2d3c6787f68d863667cc8035b09d9128b695c1dd8003c3fa7b9'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/UVtY3ZAC/versions/P4T8CChc/EnchantmentDescriptions-Forge-1.20.1-17.0.15.jar'
+url = 'https://cdn.modrinth.com/data/UVtY3ZAC/versions/zzrCQ69V/EnchantmentDescriptions-Forge-1.20.1-17.0.16.jar'
 
 [update.modrinth]
 mod-id = 'UVtY3ZAC'
-version = 'P4T8CChc'
+version = 'zzrCQ69V'
