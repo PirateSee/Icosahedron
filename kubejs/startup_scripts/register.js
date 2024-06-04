@@ -279,6 +279,7 @@ StartupEvents.registry('item', e => {
 	e.create('uninfused_ultimate_circuit').texture('icosahedron:item/component/uninfused_ultimate_circuit')
 
 	//other
+    e.create('heavyweight').texture('icosahedron:item/heavyweight')
 	e.create('supply_pass').displayName("Supply Cache Access Pass").texture('icosahedron:item/supply_pass')
 
 	//tools
@@ -442,13 +443,14 @@ StartupEvents.registry("block", (event) => {
 		.mapColor("sand").soundType(SoundType.SAND)
 		.hardness(2).resistance(0.6).requiresTool(true)
 		.tagBlock("mineable/shovel").tagBlock("needs_diamond_tool")
-		.textureAll('icosahedron:block/sand_aquatrine')
+		.textureAll('icosahedron:block/sand_aquatrine_ore')
 
     event.create("sandstone_aquatrine_ore")
 		.mapColor("sand").soundType(SoundType.SAND)
 		.hardness(3.2).resistance(1).requiresTool(true)
 		.tagBlock("mineable/pickaxe").tagBlock("needs_diamond_tool")
-		.textureAll('icosahedron:block/sandstone_aquatrine')
+		.textureAll('icosahedron:block/sandstone_aquatrine_ore_side')
+        .textureTop('icosahedron:block/sandstone_aquatrine_ore_top')
 
 	//blocks
 
