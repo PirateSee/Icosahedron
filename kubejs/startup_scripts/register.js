@@ -234,8 +234,7 @@ StartupEvents.registry('item', e => {
 	e.create('laser_emitter').texture('icosahedron:item/component/laser_emitter')
 
 	e.create('sturdy_sheet_dust').texture('icosahedron:item/sturdy_sheet_dust')
-
-	e.create('uninfused_atomic_alloy').texture('icosahedron:item/component/uninfused_atomic_alloy')
+    e.create('lithium_ion_cell').texture('icosahedron:item/component/lithium_ion_cell').displayName('Lithium-Ion Cell')
 
 	//magic
 	e.create('cadmium').texture('icosahedron:item/ore/cadmium')

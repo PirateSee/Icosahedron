@@ -45,6 +45,10 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:dynamic_tank'})
     e.remove({id: 'mekanism:dynamic_valve'})
 
+    e.remove({id: 'mekanism:thermal_evaporation/block'})
+    e.remove({id: 'mekanism:thermal_evaporation/controller'})
+    e.remove({id: 'mekanism:thermal_evaporation/valve'})
+
     //components
     e.remove({id:'mekanism:steel_casing'})
     e.remove({id:'mekanism:control_circuit/basic'})
@@ -343,6 +347,39 @@ ServerEvents.recipes(e => {
             O: 'kubejs:tempered_glass',
             P: 'kubejs:high_pressure_plate'
     }).id('ico:basic_fluid_tank')*/
+
+    e.shaped('2x mekanism:thermal_evaporation_block', [ 
+        ' HT', 
+        'HSH',
+        'RH '
+        ], {
+            S: 'create:copper_casing',
+            H: 'mekanism:ingot_steel',
+            R: 'kubejs:rubber',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:thermal_evaporation_block')
+
+    e.shaped('2x mekanism:thermal_evaporation_valve', [ 
+        ' HT', 
+        'HSH',
+        'RH '
+        ], {
+            S: 'mekanism:advanced_control_circuit',
+            H: 'mekanism:thermal_evaporation_block',
+            R: 'create:portable_fluid_interface',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:thermal_evaporation_valve')
+
+    e.shaped('mekanism:thermal_evaporation_controller', [ 
+        ' BT', 
+        'SCS',
+        'BBB'
+        ], {
+            B: 'mekanism:thermal_evaporation_block',
+            C: 'computercraft:advanced_monitor',
+            S: 'mekanism:advanced_control_circuit',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:thermal_evaporation_controller')
 
     //components
     e.custom({
