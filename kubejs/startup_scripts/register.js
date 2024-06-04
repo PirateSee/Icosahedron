@@ -450,7 +450,7 @@ StartupEvents.registry("block", (event) => {
 		.hardness(3.2).resistance(1).requiresTool(true)
 		.tagBlock("mineable/pickaxe").tagBlock("needs_diamond_tool")
 		.textureAll('icosahedron:block/sandstone_aquatrine_ore_side')
-        .textureTop('icosahedron:block/sandstone_aquatrine_ore_top')
+        .textureSide('up', 'icosahedron:block/sandstone_aquatrine_ore_top')
 
 	//blocks
 
