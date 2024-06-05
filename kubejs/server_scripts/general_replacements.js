@@ -340,7 +340,7 @@ ServerEvents.recipes(e => {
     e.shaped('4x create_connected:fluid_vessel', [
 		'ET ', 
 		'SBS', 
-		'SBS '  
+		'SBS'  
 	], {
 		S: 'create:copper_sheet',
 		B: 'minecraft:barrel',
