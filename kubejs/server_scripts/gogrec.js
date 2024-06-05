@@ -1,5 +1,10 @@
 ServerEvents.recipes(e => {
     //e.remove({id:''})
+    e.remove({id:'create_connected:crafting/kinetics/sequences_pulse_generator'})
+    e.remove({id:'create_connected:crafting/kinetics/fluid_vessel'})
+    e.remove({id:'create_connected:crafting/kinetics/item_silo'})
+    e.remove({id:'supplementaries:sack'})
+    e.remove({id:'quark:oddities/crafting/backpack'})
     e.remove({id:'create:crafting/kinetics/encased_chain_drive'})
     e.remove({id:'create:crafting/kinetics/gearshift'})
     e.remove({id:'create:crafting/kinetics/adjustable_chain_gearshift'})
@@ -415,4 +420,22 @@ ServerEvents.recipes(e => {
     e.shapeless('create:gearshift', ['create:andesite_casing','create:cogwheel','minecraft:redstone','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:gearshift')
     e.shapeless('create:encased_chain_drive', ['create:andesite_casing','minecraft:iron_nugget','minecraft:iron_nugget','minecraft:iron_nugget','#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:encased_chain_drive')
     
+    e.shaped('quark:backpack', [ 
+        'hmh',
+        'hch',
+        'mim'
+        ], {
+          m: 'born_in_chaos_v1:monster_skin',
+          h: 'minecraft:leather',
+          c: '#c:chests',
+          i: 'minecraft:iron_ingot'
+      }).id('ico:backpack')
+      e.shaped('create_connected:fluid_vessel', [
+        ' h ', 
+        'cbc'
+    ], {
+        c: 'create:copper_sheet',
+        b: 'minecraft:barrel',
+        h: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:fluid_vessel')
 })
