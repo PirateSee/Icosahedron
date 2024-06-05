@@ -353,7 +353,8 @@ StartupEvents.registry('item', e => {
 	e.create('incomplete_capacitor', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_capacitor')
 	e.create('incomplete_machine_plating', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_machine_plating')
 	e.create('incomplete_electrolytic_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_electrolytic_core')
-	
+	e.create('incomplete_lithium_ion_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_lithium_ion_cell')
+    e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_solid_state_cell')
 
 	//reflection based
 	const $EventBuses = Java.loadClass('dev.architectury.platform.forge.EventBuses')

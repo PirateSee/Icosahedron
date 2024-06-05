@@ -247,4 +247,15 @@ ServerEvents.recipes(e => {
 			"item": "kubejs:diamond_plated_alloy"
 		}
 	}).id('diamond_plated_alloy')
+
+    inter = 'kubejs:incomplete_lithium_ion_cell'
+	e.recipes.create.sequenced_assembly([
+		Item.of('kubejs:lithium_ion_cell').withChance(16.0)
+	], 'kubejs:steel_framing', [
+		e.recipes.createDeploying(inter, [inter, 'mekanism:ingot_osmium']),
+        e.recipes.createDeploying(inter, [inter, 'mekanism:dust_lithium']),
+		e.recipes.createDeploying(inter, [inter, 'kubejs:cupronickel_sheet']),
+        e.recipes.createDeploying(inter, [inter, 'create:golden_sheet']),
+        e.recipes.createPressing(inter, inter),
+	]).transitionalItem(inter).loops(2)
 })

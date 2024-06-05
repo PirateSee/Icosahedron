@@ -67,6 +67,9 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:enriching/enriched/refined_obsidian'})
     e.remove({id: 'mekanism:processing/refined_obsidian/dust/from_obsidian_dust'})
 
+    //equipment
+    e.remove({id: 'mekanism:energy_tablet'})
+
     //infusion
     e.custom({
         "type": "mekanism:infusion_conversion",
@@ -488,11 +491,11 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 80,
+			"amount": 160,
 			"infuse_type": "mekanism:carbon"
 		},
 		"itemInput": {
-            "amount": 2,
+            "amount": 3,
 			"ingredient": {
 				"item": "kubejs:pressed_iron"
 			}
@@ -506,7 +509,7 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 80,
+			"amount": 160,
 			"infuse_type": "mekanism:carbon"
 		},
 		"itemInput": {
@@ -579,4 +582,16 @@ ServerEvents.recipes(e => {
             "item": "mekanism:alloy_reinforced"
         }
     })
+
+    //equipment
+    e.shaped('mekanism:energy_tablet', [ 
+        'RTR', 
+        'ACA',
+        'RCR'
+        ], {    
+            C: 'kubejs:lithium_ion_cell',
+            A: 'mekanism:alloy_infused',
+            R: 'kubejs:redstone_cable',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:energy_tablet')
 })
