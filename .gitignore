@@ -23,3 +23,10 @@ fancymenu_data
 etched-sounds
 modernfix
 icon.png
+fabricloader.log
+config/sound_physics_remastered/reflectivity.properties
+config/sound_physics_remastered/occlusion.properties
+config/oculus.properties
+config/indium-renderer.properties
+config/fabric/indigo-renderer.properties
+icon.png
