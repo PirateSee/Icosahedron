@@ -443,14 +443,14 @@ StartupEvents.registry("block", (event) => {
 		.mapColor("sand").soundType(SoundType.SAND)
 		.hardness(2).resistance(0.6).requiresTool(true)
 		.tagBlock("mineable/shovel").tagBlock("needs_diamond_tool")
-		.textureAll('icosahedron:block/sand_aquatrine_ore')
+		.textureAll('icosahedron:block/aquatrine_sand_ore')
 
     event.create("sandstone_aquatrine_ore")
 		.mapColor("sand").soundType(SoundType.SAND)
 		.hardness(3.2).resistance(1).requiresTool(true)
 		.tagBlock("mineable/pickaxe").tagBlock("needs_diamond_tool")
-		.textureAll('icosahedron:block/sandstone_aquatrine_ore_side')
-        .textureSide('up', 'icosahedron:block/sandstone_aquatrine_ore_top')
+		.textureAll('icosahedron:block/aquatrine_sandstone_ore_side')
+        .textureSide('up', 'icosahedron:block/aquatrine_sandstone_ore_top')
 
 	//blocks
 
