@@ -430,12 +430,4 @@ ServerEvents.recipes(e => {
           c: '#c:chests',
           i: 'minecraft:iron_ingot'
       }).id('ico:backpack')
-      e.shaped('create_connected:fluid_vessel', [
-        ' h ', 
-        'cbc'
-    ], {
-        c: 'create:copper_sheet',
-        b: 'minecraft:barrel',
-        h: '#ico:tool/hammer'
-    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:fluid_vessel')
 })
