@@ -1,7 +1,149 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": "item:pneumaticcraft:security_station"
+    },
+    {
+      "stack": "item:pneumaticcraft:sentry_turret"
+    },
+    {
+      "stack": "item:pneumaticcraft:solar_compressor"
+    },
+    {
+      "stack": "item:pneumaticcraft:drone"
+    },
+    {
+      "stack": "item:pneumaticcraft:collector_drone"
+    },
+    {
+      "stack": "item:pneumaticcraft:guard_drone"
+    },
+    {
+      "stack": "item:pneumaticcraft:harvesting_drone"
+    },
+    {
+      "stack": "item:pneumaticcraft:logistics_drone"
+    },
+    {
+      "stack": "item:pneumaticcraft:vortex_cannon"
+    },
+    {
+      "stack": "item:pneumaticcraft:minigun"
+    },
+    {
+      "stack": "item:create:mechanical_roller"
+    },
+    {
+      "stack": "item:create:contraption_controls"
+    },
+    {
+      "stack": "item:create:sequenced_gearshift"
+    },
+    {
+      "stack": "item:create:rotation_speed_controller"
+    },
+    {
+      "stack": "item:create:track_station"
+    },
+    {
+      "stack": "item:create:track_signal"
+    },
+    {
+      "stack": "item:create:track_observer"
+    },
+    {
+      "stack": "item:create:controls"
+    },
+    {
+      "stack": "item:railways:track_coupler",
+      "recipe": "railways:crafting/track_coupler"
+    },
+    {
+      "stack": "item:create:display_board"
+    },
+    {
+      "stack": "item:create:display_link"
+    },
+    {
+      "stack": "item:create:content_observer"
+    },
+    {
+      "stack": "item:create:stockpile_switch"
+    },
+    {
+      "stack": "item:createdieselgenerators:diesel_engine"
+    },
+    {
+      "stack": "item:createdieselgenerators:large_diesel_engine"
+    },
+    {
+      "stack": "item:createdieselgenerators:huge_diesel_engine"
+    },
+    {
+      "stack": {
+        "type": "fluid",
+        "id": "kubejs:molten_pressure_alloy",
+        "amount": 300
+      },
+      "recipe": "jei:/ico/mix_molten_pressure_alloy"
+    }
+  ],
   "lookup_history": [
     "item:mekanism:alloy_atomic",
+    "item:mekanism:elite_enriching_factory",
+    "item:mekanism:alloy_reinforced",
+    "item:mekanism:advanced_combining_factory",
+    "item:mekanism:alloy_infused",
+    "item:kubejs:andesite_pressure_alloy",
+    {
+      "type": "fluid",
+      "id": "kubejs:molten_pressure_alloy",
+      "amount": 300
+    },
+    "item:kubejs:crushed_bauxite",
+    {
+      "type": "fluid",
+      "id": "kubejs:bauxite_slurry",
+      "amount": 250
+    },
+    {
+      "type": "fluid",
+      "id": "kubejs:molten_aluminum",
+      "amount": 90
+    },
+    "item:kubejs:ingot_mold_with_aluminum",
+    "item:kubejs:aluminum_ingot",
+    "item:kubejs:cupronickel_ingot",
+    "item:kubejs:cupronickel_sheet",
+    "item:kubejs:cupronickel_wire",
+    "item:vintageimprovements:small_aluminum_spring",
+    {
+      "type": "item",
+      "id": "vintageimprovements:aluminum_wire",
+      "amount": 2
+    },
+    "item:vintageimprovements:aluminum_sheet",
+    "item:vintageimprovements:aluminum_spring",
+    "item:kubejs:bauxite_ore",
+    "item:kubejs:scorched_tailings",
+    "item:kubejs:oled_display",
+    "item:computercraft:monitor_normal",
+    "item:kubejs:lcd_display",
+    {
+      "type": "fluid",
+      "id": "estrogen:molten_amethyst",
+      "amount": 50
+    },
+    "item:railways:track_coupler",
+    "item:create_connected:sequenced_pulse_generator",
+    "item:pneumaticcraft:security_station",
+    "item:mekanism:basic_universal_cable",
+    "item:mekanism:advanced_universal_cable",
+    "item:ae2:cell_component_256k",
+    "item:appmek:chemical_storage_cell_256k{}",
+    "item:mekanism:ultimate_energy_cube",
+    "item:mekanism:elite_energy_cube",
+    "item:born_in_chaos_v1:darkwarblade{Damage:7}",
     "item:kubejs:solid_state_cell",
     "item:mekanism:dust_emerald",
     {
@@ -12,7 +154,14 @@
   ],
   "craft_history": [],
   "recipe_defaults": {
-    "added": [],
+    "added": [
+      "jei:/createbigcannons/kjs/3mbm2s0uvzdqowvc52kvt2l8o",
+      "jei:/create/kjs/bc82apih5t85myp8ucmtswuqd",
+      "jei:/ico/pop_aluminum_ingot_mold",
+      "jei:/ico/decomposing_bauxite",
+      "jei:/ico/mix_molten_pressure_alloy",
+      "jei:/ico/ingot_mold_with_aluminum"
+    ],
     "tags": {},
     "resolutions": {},
     "disabled": []
