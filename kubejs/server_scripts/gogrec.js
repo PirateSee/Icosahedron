@@ -493,7 +493,7 @@ ServerEvents.recipes(e => {
         'iai'
     ], {
         s: '#ico:tool/screwdriver',
-        i: 'mekanism:alloy_reinforced',
+        i: 'mekanism:alloy_atomic',
         e: 'mekanism:energy_tablet',
         a: 'kubejs:solid_state_cell',
         c: 'mekanism:elite_energy_cube'

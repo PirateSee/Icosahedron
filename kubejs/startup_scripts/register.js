@@ -235,6 +235,7 @@ StartupEvents.registry('item', e => {
 
 	e.create('sturdy_sheet_dust').texture('icosahedron:item/sturdy_sheet_dust')
     e.create('lithium_ion_cell').texture('icosahedron:item/component/lithium_ion_cell').displayName('Lithium-Ion Cell')
+    e.create('solid_state_cell').texture('icosahedron:item/component/solid_state_cell').displayName('Solid-State Cell')
 
 	//magic
 	e.create('cadmium').texture('icosahedron:item/ore/cadmium')
