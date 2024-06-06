@@ -1,6 +1,15 @@
 ServerEvents.recipes(e => {
     //e.remove({id:''})
-    e.remove({id:'create_connected:crafting/kinetics/sequences_pulse_generator'})
+    e.remove({id:'immersive_aircraft:cargo_airship'})
+    e.remove({id:'immersive_aircraft:airship'})
+    e.remove({id:'mekanism:pigment_mixer'})
+    e.remove({id:'mekanism:energy_cube/ultimate'})
+    e.remove({id:'mekanism:energy_cube/elite'})
+    e.remove({id:'mekanism:energy_cube/advanced'})
+    e.remove({id:'mekanism:energy_cube/basic'})
+    e.remove({id:'createaddition:crafting/modular_accumulator_gold'})
+    e.remove({id:'createaddition:crafting/modular_accumulator_electrum'})
+    e.remove({id:'create_connected:crafting/kinetics/sequenced_pulse_generator'})
     e.remove({id:'create_connected:crafting/kinetics/fluid_vessel'})
     e.remove({id:'create_connected:crafting/kinetics/item_silo'})
     e.remove({id:'supplementaries:sack'})
@@ -430,4 +439,467 @@ ServerEvents.recipes(e => {
           c: '#c:chests',
           i: 'minecraft:iron_ingot'
       }).id('ico:backpack')
+    
+    e.recipes.create.mechanical_crafting('2x createaddition:modular_accumulator', [ 
+        'rgr',
+        'cbc',
+        'cbc',
+        'rRr'
+        ], {
+          r: 'createaddition:copper_rod',
+          g: 'create:golden_sheet',
+          c: 'createaddition:capacitor',
+          b: 'create:brass_casing',
+          R: 'kubejs:redstone_cable'
+    }).id('ico:modular_accumulator')
+    e.shaped('2x mekanism:basic_energy_cube', [
+        'ras', 
+        'oSo',
+        'cec'
+    ], {
+        r: 'kubejs:redstone_cable',
+        a: 'createaddition:modular_accumulator',
+        s: '#ico:tool/screwdriver',
+        o: 'mekanism:ingot_osmium',
+        S: 'mekanism:steel_casing',
+        c: 'kubejs:cupronickel_sheet',
+        e: 'mekanism:energy_tablet'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:basic_energy_cube')
+    e.shaped('mekanism:advanced_energy_cube', [
+        'iei', 
+        'acs',
+        'iei'
+    ], {
+        s: '#ico:tool/screwdriver',
+        i: 'mekanism:alloy_infused',
+        e: 'mekanism:energy_tablet',
+        a: 'createaddition:modular_accumulator',
+        c: 'mekanism:basic_energy_cube'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:advanced_energy_cube')
+    e.shaped('mekanism:elite_energy_cube', [
+        'iei', 
+        'acs',
+        'iei'
+    ], {
+        s: '#ico:tool/screwdriver',
+        i: 'mekanism:alloy_reinforced',
+        e: 'mekanism:energy_tablet',
+        a: 'kubejs:solid_state_cell',
+        c: 'mekanism:advanced_energy_cube'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:elite_energy_cube')
+    e.shaped('mekanism:ultimate_energy_cube', [
+        'iai', 
+        'ecs',
+        'iai'
+    ], {
+        s: '#ico:tool/screwdriver',
+        i: 'mekanism:alloy_reinforced',
+        e: 'mekanism:energy_tablet',
+        a: 'kubejs:solid_state_cell',
+        c: 'mekanism:elite_energy_cube'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:ultimate_energy_cube')
+    e.shaped('mekanism:pigment_mixer', [
+        'smS', 
+        'wCw',
+        'cbc'
+    ], {
+        S: '#ico:tool/screwdriver',
+        s: 'kubejs:sealant',
+        m: 'create:mechanical_mixer',
+        w: 'kubejs:wrought_iron_spring',
+        C: 'mekanism:steel_casing',
+        c: 'kubejs:cupronickel_sheet',
+        b: 'mekanism:basic_control_circuit'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:pigment_mixer')
+    e.recipes.create.mechanical_crafting('immersive_aircraft:airship', [ 
+        'ssss',
+        'ssss',
+        'c c ',
+        'ehh '
+        ], {
+          s: 'immersive_aircraft:sail',
+          c: 'kubejs:carbon_steel_rod',
+          e: 'immersive_aircraft:engine',
+          h: 'immersive_aircraft:hull'
+      }).id('ico:airship')
+      e.recipes.create.mechanical_crafting('immersive_aircraft:cargo_airship', [ 
+        'fcac ',
+        ' chcs'
+        ], {
+          c: '#forge:chests',
+          f: 'create:encased_fan',
+          a: 'immersive_aircraft:airship',
+          h: 'immersive_aircraft:hull',
+          s: 'immersive_aircraft:sail'
+      }).id('ico:cargo_airship')
+    //mekanism basic
+
+
+
+    e.recipes.create.mechanical_crafting('mekanism:basic_smelting_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:energized_smelter'
+      }).id('ico:basic_smelting_factory')
+    e.recipes.create.mechanical_crafting('mekanism:basic_enriching_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:enrichment_chamber'
+      }).id('ico:basic_enriching_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_crushing_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:crusher'
+      }).id('ico:basic_crushing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_compressing_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:osmium_compressor'
+      }).id('ico:basic_compressing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_combining_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:combiner'
+      }).id('ico:basic_combining_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_purifying_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:purification_chamber'
+      }).id('ico:basic_purifying_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_injecting_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:chemical_injection_chamber'
+      }).id('ico:basic_injecting_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_infusing_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:metallurgic_infuser'
+      }).id('ico:basic_infusing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:basic_sawing_factory', [ 
+        'pcp',
+        'rmr',
+        'eme',
+        'pcp'
+        ], {
+          p: 'kubejs:polystyrene',
+          c: 'mekanism:basic_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'kubejs:machine_plating',
+          m: 'mekanism:precision_sawmill'
+      }).id('ico:basic_sawing_factory')
+    //mekanism advanced
+    
+    e.recipes.create.mechanical_crafting('mekanism:advanced_smelting_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_smelting_factory'
+      }).id('ico:advanced_smelting_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_enriching_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_enriching_factory'
+      }).id('ico:advanced_enriching_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_crushing_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_crushing_factory'
+      }).id('ico:advanced_crushing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_compressing_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_compressing_factory'
+      }).id('ico:advanced_compressing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_combining_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_combining_factory'
+      }).id('ico:advanced_combining_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_purifying_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_purifying_factory'
+      }).id('ico:advanced_purifying_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_injecting_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_injecting_factory'
+      }).id('ico:advanced_injecting_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_infusing_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_infusing_factory'
+      }).id('ico:advanced_infusing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:advanced_sawing_factory', [ 
+        'ici',
+        'rmr',
+        'emp',
+        'ici'
+        ], {
+          i: 'mekanism:alloy_infused',
+          c: 'mekanism:advanced_control_circuit',
+          r: 'kubejs:rubber',
+          e: 'mekanism:energy_tablet',
+          p: 'kubejs:machine_plating',
+          m: 'mekanism:basic_sawing_factory'
+      }).id('ico:advanced_sawing_factory')
+    //mekanism elite
+    e.recipes.create.mechanical_crafting('mekanism:elite_smelting_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_smelting_factory'
+      }).id('ico:elite_smelting_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_enriching_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_enriching_factory'
+      }).id('ico:elite_enriching_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_crushing_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_crushing_factory'
+      }).id('ico:elite_crushing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_compressing_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_compressing_factory'
+      }).id('ico:elite_compressing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_combining_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_combining_factory'
+      }).id('ico:elite_combining_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_injecting_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_injecting_factory'
+      }).id('ico:elite_injecting_factoryy')
+      e.recipes.create.mechanical_crafting('mekanism:elite_infusing_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_infusing_factory'
+      }).id('ico:elite_infusing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_sawing_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_sawing_factory'
+      }).id('ico:elite_sawing_factory')
+      e.recipes.create.mechanical_crafting('mekanism:elite_purifying_factory', [ 
+        'rcr',
+        'tmt',
+        'HmH',
+        'rcr'
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          c: 'mekanism:elite_control_circuit',
+          t: 'kubejs:tungsten_ingot',
+          H: 'mekanism:hdpe_sheet',
+          m: 'mekanism:advanced_purifying_factory'
+      }).id('ico:elite_purifying_factory')
+    //recipe genocide 
+    e.remove({id:'mekanism:factory/basic/smelting'})
+    e.remove({id:'mekanism:factory/basic/enriching'})
+    e.remove({id:'mekanism:factory/basic/compressing'})
+    e.remove({id:'mekanism:factory/basic/combining'})
+    e.remove({id:'mekanism:factory/basic/purifying'})
+    e.remove({id:'mekanism:factory/basic/injecting'})
+    e.remove({id:'mekanism:factory/basic/infusing'})
+    e.remove({id:'mekanism:factory/basic/crushing'})
+    e.remove({id:'mekanism:factory/basic/sawing'})
+    e.remove({id:'mekanism:factory/advanced/smelting'})
+    e.remove({id:'mekanism:factory/advanced/enriching'})
+    e.remove({id:'mekanism:factory/advanced/compressing'})
+    e.remove({id:'mekanism:factory/advanced/combining'})
+    e.remove({id:'mekanism:factory/advanced/purifying'})
+    e.remove({id:'mekanism:factory/advanced/injecting'})
+    e.remove({id:'mekanism:factory/advanced/infusing'})
+    e.remove({id:'mekanism:factory/advanced/crushing'})
+    e.remove({id:'mekanism:factory/advanced/sawing'})
+    e.remove({id:'mekanism:factory/elite/smelting'})
+    e.remove({id:'mekanism:factory/elite/enriching'})
+    e.remove({id:'mekanism:factory/elite/compressing'})
+    e.remove({id:'mekanism:factory/elite/combining'})
+    e.remove({id:'mekanism:factory/elite/purifying'})
+    e.remove({id:'mekanism:factory/elite/injecting'})
+    e.remove({id:'mekanism:factory/elite/infusing'})
+    e.remove({id:'mekanism:factory/elite/crushing'})
+    e.remove({id:'mekanism:factory/elite/sawing'})
+
+
 })
