@@ -1,0 +1,13 @@
+filename = 'chatanimation-1.0.5.jar'
+name = 'Chat Animation'
+side = 'client'
+
+[download]
+hash = 'a53f0938f70d0a1b2c7677d7ddc34e33f7e8182ad9817e431d0ee4a7feb3c9a68de94fd720720d19331c89e25799882bb057f4c381bc2b3e7f88d44a7385afec'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/DnNYdJsx/versions/hn2TlcOt/chatanimation-1.0.5.jar'
+
+[update.modrinth]
+mod-id = 'DnNYdJsx'
+version = 'hn2TlcOt'

@@ -1,13 +1,13 @@
-filename = 'lootjs-forge-1.20.1-2.11.0.jar'
-name = 'LootJS: KubeJS Addon'
+filename = 'lootjs-forge-1.20.1-2.12.0.jar'
+name = 'LootJS'
 side = 'both'
 
 [download]
-hash = '0cc94a5817968e54013a79755c598660d49a9ce546b693be326e75c158f0e34623723579e7b68cca6c6c1447567d5b49b9d169a92b7a51b6a43c2b93992b2bbc'
+hash = '50d79869601a81375fcb5d60635abbb901770107c675e07a0d5aade4c235bb3ff6879310b821583df856fa034b839045ae5f5fe7d543280195c4c2405b83dc4f'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/fJFETWDN/versions/gFOZANKr/lootjs-forge-1.20.1-2.11.0.jar'
+url = 'https://cdn.modrinth.com/data/fJFETWDN/versions/72Tq9bfK/lootjs-forge-1.20.1-2.12.0.jar'
 
 [update.modrinth]
 mod-id = 'fJFETWDN'
-version = 'gFOZANKr'
+version = '72Tq9bfK'

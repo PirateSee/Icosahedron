@@ -30,3 +30,8 @@ config/oculus.properties
 config/indium-renderer.properties
 config/fabric/indigo-renderer.properties
 icon.png
+config/fabric/indigo-renderer.properties
+config/indium-renderer.properties
+config/sound_physics_remastered/reflectivity.properties
+config/sound_physics_remastered/occlusion.properties
+config/voicechat/username-cache.json
