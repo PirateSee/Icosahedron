@@ -35,3 +35,8 @@ config/indium-renderer.properties
 config/sound_physics_remastered/reflectivity.properties
 config/sound_physics_remastered/occlusion.properties
 config/voicechat/username-cache.json
+config/indium-renderer.properties
+config/fabric/indigo-renderer.properties
+config/embeddium-fingerprint.json
+config/sound_physics_remastered/occlusion.properties
+config/sound_physics_remastered/reflectivity.properties
