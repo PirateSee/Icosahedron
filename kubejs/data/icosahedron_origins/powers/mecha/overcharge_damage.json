@@ -13,7 +13,7 @@
     },
     "modifier": {
         "operation": "add_base_early",
-        "value": 2,
+        "value": 1,
         "name": "Overcharge Bonus"
     }
 }

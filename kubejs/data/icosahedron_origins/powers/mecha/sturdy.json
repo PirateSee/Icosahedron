@@ -1,0 +1,12 @@
+{
+    "name": "§7o §r§nSturdy",
+    "description": "Your rigid body has increased max health, but regenerates health much slower",
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": 4,
+        "name": "Sturdy Bonus"
+    },
+    "update_health": true
+}

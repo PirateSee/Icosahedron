@@ -1,0 +1,22 @@
+{
+    "name": "§a+ §r§nBlasted",
+    "description": "Explosions hurt less, and they launch you upward",
+    "hidden": true,
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:is_explosion"
+    },
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": -0.4,
+        "name": "Blasting"
+    },
+    "self_action": {
+        "type": "origins:add_velocity",
+        "y": 0.3,
+        "space": "world",
+        "client": true,
+        "server": true
+    }
+}

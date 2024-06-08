@@ -75,6 +75,9 @@
     },
     {
       "stack": "item:createdieselgenerators:huge_diesel_engine"
+    },
+    {
+      "stack": "item:born_in_chaos_v1:maggot_spawn_egg"
     }
   ],
   "lookup_history": [

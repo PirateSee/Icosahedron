@@ -26,6 +26,15 @@
 		"icosahedron_origins:spark/torch" = true
 		"icosahedron_origins:spark/waterlogged" = true
 		"icosahedron_origins:spark/waterlogged_particles" = true
+		"icosahedron_origins:spark/ignition_atk" = true
+		"icosahedron_origins:spark/blasting" = true
+		"icosahedron_origins:spark/blastball" = true
+		"icosahedron_origins:spark/unfireresist" = true
+		"icosahedron_origins:spark/file" = true
+		"icosahedron_origins:spark/blazing_rage_defense" = true
+		"icosahedron_origins:spark/blastball_charges" = true
+		"icosahedron_origins:spark/blastball_gain" = true
+		"icosahedron_origins:spark/no_fire_kill" = true
 
 	[origins."origins:feline"]
 		enabled = true
@@ -85,6 +94,13 @@
 		"icosahedron_origins:fox/cracked_plate" = true
 		"icosahedron_origins:fox/cracked_plate_fail" = true
 		"icosahedron_origins:fox/cracked_toughness" = true
+		"icosahedron_origins:fox/mantle" = true
+		"icosahedron_origins:fox/mantle_lose" = true
+		"icosahedron_origins:fox/mantle_gain" = true
+		"icosahedron_origins:fox/mantle_land" = true
+		"icosahedron_origins:fox/mantle_resource" = true
+		"icosahedron_origins:fox/shove" = true
+		"icosahedron_origins:fox/flimsy_stance" = true
 
 	[origins."icosahedron_origins:mecha"]
 		enabled = true
@@ -110,6 +126,10 @@
 		"icosahedron_origins:mecha/hungry" = true
 		"icosahedron_origins:mecha/shock_absorber" = true
 		"icosahedron_origins:mecha/shock_absorber_effect" = true
+		"icosahedron_origins:mecha/sturdy" = true
+		"icosahedron_origins:mecha/sturdy_deny" = true
+		"icosahedron_origins:mecha/sturdy_heal" = true
+		"icosahedron_origins:mecha/sturdy_heal_fast" = true
 
 	[origins."origins:merling"]
 		enabled = true
@@ -204,4 +224,9 @@
 
 	[origins."icosahedron_origins:arrowhead"]
 		enabled = true
+
+	[origins."icosahedron_origins:plant"]
+		enabled = true
+		"icosahedron_origins:plant/herbicide" = true
+		"icosahedron_origins:plant/herbicide_fire" = true
 

@@ -1,0 +1,24 @@
+{
+    "name": "§a+ §r§nShove",
+    "description": "Unarmed attacks deal hefty knockback",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:add_velocity",
+        "y": 0.1,
+        "z": 1.5,
+        "client": true,
+        "server": true
+    },
+    "damage_condition": {
+        "inverted": true,
+        "type": "origins:projectile"
+    },
+    "cooldown": 1
+}

@@ -1,0 +1,12 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:health",
+        "comparison": "<=",
+        "compare_to": 1
+    },
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:fire"
+    }
+}

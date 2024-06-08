@@ -1,10 +1,9 @@
 {
-    "name": "§a+ §r§nIgnition",
-    "description": "Attacking or being attacked may set others on fire",
-    "type": "origins:attacker_action_when_hit",
+    "hidden": true,
+    "type": "origins:target_action_on_hit",
     "entity_action": {
         "type": "origins:chance",
-        "chance": 0.8,
+        "chance": 0.4,
         "action": {
             "type": "origins:set_on_fire",
             "duration": 4

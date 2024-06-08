@@ -1,18 +1,28 @@
 {
     "name": "Spark",
-    "description": "§0[Agressive]§7\nSparks like to start fires and are empowered by them. Fire still hurts them, just not as much.",
+    "description": "§0[Agressive]§7\nFire, explosions, chaos. Sparks like to start those and are truly terrifying to fight",
     "powers": [
         "icosahedron_origins:spark/blazing_rage",
         "icosahedron_origins:spark/blazing_rage_particles",
         "icosahedron_origins:spark/blazing_rage_speed",
+        "icosahedron_origins:spark/blazing_rage_defense",
+        "icosahedron_origins:spark/no_fire_kill",
+        "icosahedron_origins:spark/blastball",
+        "icosahedron_origins:spark/blastball_charges",
+        "icosahedron_origins:spark/blastball_gain",
         "icosahedron_origins:spark/ignition",
+        "icosahedron_origins:spark/ignition_atk",
+        "icosahedron_origins:spark/blasting",
         "icosahedron_origins:spark/coals",
         "icosahedron_origins:spark/coals_damage",
-        "icosahedron_origins:spark/updraft",
         "icosahedron_origins:spark/undoused",
         "icosahedron_origins:spark/torch",
         "icosahedron_origins:spark/waterlogged",
-        "icosahedron_origins:spark/waterlogged_particles"
+        "icosahedron_origins:spark/waterlogged_particles",
+        "icosahedron_origins:spark/unfireresist"
     ],
+    "icon": {
+        "item": "minecraft:blaze_powder"
+    },
     "impact": 1
 }

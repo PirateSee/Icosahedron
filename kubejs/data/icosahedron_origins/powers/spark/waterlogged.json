@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nDousing",
-    "description": "Water washes off all the sulfur and soot, making you vulnerable to damage.",
+    "description": "Take greatly increased damage while wet",
     "condition": {
         "type": "origins:or",
         "conditions": [

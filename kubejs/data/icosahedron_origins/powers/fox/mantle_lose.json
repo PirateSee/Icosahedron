@@ -1,0 +1,32 @@
+{
+    "condition": {
+        "type": "origins:collided_horizontally"
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "y": 0.4,
+                "z": 0.01,
+                "space": "local_horizontal_normalized",
+                "client": true,
+                "server": true
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:fox/mantle_resource",
+                "change": -1,
+                "operation": "add"
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:cloud",
+                "count": 1,
+                "speed": 0.2
+            }
+        ]
+    }
+}

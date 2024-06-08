@@ -1,0 +1,28 @@
+{
+    "name": "§c- §r§nFlimsy Stance",
+    "description": "Getting hit slows you momentarily, and increases ability cooldowns.",
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:slowness",
+                        "duration": 10,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "operation": "add"
+                }
+            ]
+        }
+    },
+    "cooldown": 1
+}
