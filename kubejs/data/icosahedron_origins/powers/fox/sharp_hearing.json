@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nSharp Hearing",
-    "description": "You can sense entities within 16 blocks. They glow for you through walls.",
+    "description": "Sense entities through walls",
     "type": "origins:entity_glow",
     "bientity_condition": {
         "type": "origins:and",
@@ -13,8 +13,26 @@
             {
                 "inverted": true,
                 "type": "origins:can_see"
+            },
+            {
+                "type": "origins:target_condition",
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "inverted": true,
+                            "type": "origins:sneaking"
+                        },
+                        {
+                            "type": "origins:living"
+                        }
+                    ]
+                }
             }
         ]
     },
-    "use_teams": true
+    "use_teams": true,
+    "red": 0.2,
+    "green": 0.2,
+    "blue": 0.2
 }

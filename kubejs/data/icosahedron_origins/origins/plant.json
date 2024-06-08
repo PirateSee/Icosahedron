@@ -1,0 +1,9 @@
+{
+    "name": "Floran",
+    "description": "§0[Sunlight]§7\nFlorans are plant-like people who benifit from being in the sun.",
+    "powers": [
+        "icosahedron_origins:plant/herbicide",
+        "icosahedron_origins:plant/herbicide_fire"
+    ],
+    "impact": 0
+}
