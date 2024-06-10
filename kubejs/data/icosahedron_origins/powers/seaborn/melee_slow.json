@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nHeavy Swipe",
-    "description": "Melee weapons deal more damage but attack slower.",
+    "description": "Melee weapons attack slower, but do slightly more damage",
     "condition": {
         "type": "origins:equipped_item",
         "equipment_slot": "mainhand",
@@ -13,7 +13,7 @@
         {
             "attribute": "minecraft:generic.attack_speed",
             "operation": "multiply_total",
-            "value": -0.2,
+            "value": -0.3,
             "name": "Heavy Swipe"
         },
         {

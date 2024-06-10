@@ -23,9 +23,9 @@
     "modifier": {
         "attribute": "generic.movement_speed",
         "operation": "multiply_base",
-        "value": 0.8,
+        "value": 1,
         "name": "Water Movement Bonus"
     },
-    "tick_rate": 10,
+    "tick_rate": 2,
     "update_health": false
 }

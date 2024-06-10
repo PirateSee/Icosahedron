@@ -1,17 +1,36 @@
 {
     "hidden": true,
     "condition": {
-        "type": "origins:resource",
-        "resource": "icosahedron_origins:spark/blastball_charges",
-        "comparison": "<",
-        "compare_to": 50
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:spark/blastball_charges",
+                "comparison": "<",
+                "compare_to": 50
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": ">",
+                "compare_to": 5
+            }
+        ]
     },
     "type": "origins:action_over_time",
     "interval": 10,
     "entity_action": {
-        "type": "origins:change_resource",
-        "resource": "icosahedron_origins:spark/blastball_charges",
-        "change": 1,
-        "operation": "add"
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:exhaust",
+                "amount": 0.03
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:spark/blastball_charges",
+                "change": 1,
+                "operation": "add"
+            }
+        ]
     }
 }

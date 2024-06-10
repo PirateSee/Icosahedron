@@ -12,6 +12,12 @@
                 "fluid": "minecraft:water",
                 "comparison": "<=",
                 "compare_to": 0.5
+            },
+            {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:seaborn/fallwater",
+                "comparison": "==",
+                "compare_to": 0
             }
         ]
     },

@@ -1,0 +1,14 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 0.1
+    },
+    "type": "apugli:modify_fov",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": -0.31
+    }
+}

@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nBlastball",
-    "description": "Fire explosives with high knockback. Blastballs don't hurt you. Take less damage and be boosted upward by any explosion",
+    "description": "Fire explosives with high knockback. Blastballs don't hurt you. Take less damage and be boosted upward by any explosion. 5 charges, slowly rechage using hunger",
     "condition": {
         "type": "origins:resource",
         "resource": "icosahedron_origins:spark/blastball_charges",

@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nDousing",
-    "description": "Take greatly increased damage while wet",
+    "description": "Move slower and take greatly increased damage while wet",
     "condition": {
         "type": "origins:or",
         "conditions": [

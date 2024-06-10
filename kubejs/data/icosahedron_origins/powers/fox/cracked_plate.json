@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nCracked Armour",
-    "description": "Armour is less effective, light attacks may pierce",
+    "description": "Armour is less effective",
     "condition": {
         "type": "origins:attribute",
         "attribute": "minecraft:generic.armor",
