@@ -26,6 +26,17 @@
 		"icosahedron_origins:spark/torch" = true
 		"icosahedron_origins:spark/waterlogged" = true
 		"icosahedron_origins:spark/waterlogged_particles" = true
+		"icosahedron_origins:spark/ignition_atk" = true
+		"icosahedron_origins:spark/blasting" = true
+		"icosahedron_origins:spark/blastball" = true
+		"icosahedron_origins:spark/unfireresist" = true
+		"icosahedron_origins:spark/file" = true
+		"icosahedron_origins:spark/blazing_rage_defense" = true
+		"icosahedron_origins:spark/blastball_charges" = true
+		"icosahedron_origins:spark/blastball_gain" = true
+		"icosahedron_origins:spark/no_fire_kill" = true
+		"icosahedron_origins:spark/waterlogged_slow" = true
+		"icosahedron_origins:spark/quickfire" = true
 
 	[origins."origins:feline"]
 		enabled = true
@@ -85,6 +96,20 @@
 		"icosahedron_origins:fox/cracked_plate" = true
 		"icosahedron_origins:fox/cracked_plate_fail" = true
 		"icosahedron_origins:fox/cracked_toughness" = true
+		"icosahedron_origins:fox/mantle" = true
+		"icosahedron_origins:fox/mantle_lose" = true
+		"icosahedron_origins:fox/mantle_gain" = true
+		"icosahedron_origins:fox/mantle_land" = true
+		"icosahedron_origins:fox/mantle_resource" = true
+		"icosahedron_origins:fox/shove" = true
+		"icosahedron_origins:fox/flimsy_stance" = true
+		"icosahedron_origins:fox/superhop" = true
+		"icosahedron_origins:fox/superhop_charge" = true
+		"icosahedron_origins:fox/superhop_cooldown" = true
+		"icosahedron_origins:fox/superhop_cooling" = true
+		"icosahedron_origins:fox/superhop_leap" = true
+		"icosahedron_origins:fox/superhop_fov" = true
+		"icosahedron_origins:fox/superhop_release" = true
 
 	[origins."icosahedron_origins:mecha"]
 		enabled = true
@@ -110,6 +135,10 @@
 		"icosahedron_origins:mecha/hungry" = true
 		"icosahedron_origins:mecha/shock_absorber" = true
 		"icosahedron_origins:mecha/shock_absorber_effect" = true
+		"icosahedron_origins:mecha/sturdy" = true
+		"icosahedron_origins:mecha/sturdy_deny" = true
+		"icosahedron_origins:mecha/sturdy_heal" = true
+		"icosahedron_origins:mecha/sturdy_heal_fast" = true
 
 	[origins."origins:merling"]
 		enabled = true
@@ -204,4 +233,33 @@
 
 	[origins."icosahedron_origins:arrowhead"]
 		enabled = true
+
+	[origins."icosahedron_origins:plant"]
+		enabled = true
+		"icosahedron_origins:plant/herbicide" = true
+		"icosahedron_origins:plant/herbicide_fire" = true
+
+	[origins."icosahedron_origins:seaborn"]
+		enabled = true
+		"icosahedron_origins:seaborn/wetbow" = true
+		"icosahedron_origins:seaborn/arrowrad_mark" = true
+		"icosahedron_origins:seaborn/wetspeed" = true
+		"origins:swim_speed" = true
+		"icosahedron_origins:seaborn/water_walking" = true
+		"icosahedron_origins:seaborn/water_jump" = true
+		"icosahedron_origins:seaborn/water_jump_qualify" = true
+		"icosahedron_origins:seaborn/water_jump_disqualify" = true
+		"icosahedron_origins:seaborn/water_jump_resource" = true
+		"icosahedron_origins:seaborn/seaborn_particles" = true
+		"icosahedron_origins:seaborn/bow_particles" = true
+		"icosahedron_origins:seaborn/big_lungs" = true
+		"icosahedron_origins:seaborn/aquatic" = true
+		"icosahedron_origins:seaborn/melee_slow" = true
+		"icosahedron_origins:seaborn/fire_weak" = true
+		"icosahedron_origins:seaborn/water_slide" = true
+		"icosahedron_origins:seaborn/water_walk_particles" = true
+		"icosahedron_origins:seaborn/wetfov" = true
+		"icosahedron_origins:seaborn/fallwater" = true
+		"icosahedron_origins:seaborn/fallwater_gain" = true
+		"icosahedron_origins:seaborn/swim_speed" = true
 

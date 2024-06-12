@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "origins:action_on_land",
+    "entity_action": {
+        "type": "origins:set_resource",
+        "resource": "icosahedron_origins:fox/mantle_resource",
+        "value": 0
+    }
+}

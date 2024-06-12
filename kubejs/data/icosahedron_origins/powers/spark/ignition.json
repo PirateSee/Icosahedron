@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nIgnition",
-    "description": "Those who hit you might be set ablaze.",
+    "description": "Attacking or being attacked may set others on fire",
     "type": "origins:attacker_action_when_hit",
     "entity_action": {
         "type": "origins:chance",

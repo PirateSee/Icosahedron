@@ -8,6 +8,7 @@
             "sprite": "origins:textures/gui/badge/info.png"
         }
     ],
+    "hidden": true,
     "type": "origins:modify_damage_taken",
     "damage_condition": {
         "type": "origins:fire"
@@ -15,7 +16,7 @@
     "modifier": {
         "operation": "multiply_base",
         "value": -0.5,
-        "name": "Undoused Bonus"
+        "name": "Embers Bonus"
     },
     "damage_armor_condition": {
         "type": "origins:constant",

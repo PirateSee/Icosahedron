@@ -1,0 +1,12 @@
+{
+    "name": "§a+ §r§nPhotosynthsis",
+    "description": "Standing in the sun reduces hunger consumption",
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": -0.1
+    }
+}

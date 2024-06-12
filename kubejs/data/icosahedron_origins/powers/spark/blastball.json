@@ -1,0 +1,137 @@
+{
+    "name": "§a+ §r§nBlastball",
+    "description": "Fire explosives with high knockback. Blastballs don't hurt you. Take less damage and be boosted upward by any explosion. 5 charges, slowly rechage using hunger",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "icosahedron_origins:spark/blastball_charges",
+        "comparison": ">",
+        "compare_to": 10
+    },
+    "type": "apugli:custom_projectile",
+    "texture_location": "minecraft:textures/item/gunpowder.png",
+    "entity_action_before_firing": {
+        "type": "origins:change_resource",
+        "resource": "icosahedron_origins:spark/blastball_charges",
+        "change": -10
+    },
+    "bientity_action_on_miss": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:resistance",
+                        "duration": 1,
+                        "amplifier": 10
+                    }
+                }
+            },
+            {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.generic.explode",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        {
+                            "type": "origins:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:explosion_emitter"
+                            },
+                            "count": 1
+                        },
+                        {
+                            "type": "origins:area_of_effect",
+                            "radius": 4,
+                            "bientity_action": {
+                                "type": "origins:add_velocity",
+                                "x": 0,
+                                "y": 0.1,
+                                "z": 1.5,
+                                "client": false,
+                                "server": true,
+                                "set": false
+                            },
+                            "include_target": true
+                        },
+                        {
+                            "type": "origins:explode",
+                            "power": 2,
+                            "destruction_type": "none",
+                            "damage_self": true
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "bientity_action_on_hit": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:actor_action",
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:resistance",
+                        "duration": 1,
+                        "amplifier": 10
+                    }
+                }
+            },
+            {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.generic.explode",
+                            "volume": 1,
+                            "pitch": 1
+                        },
+                        {
+                            "type": "origins:spawn_particles",
+                            "particle": {
+                                "type": "minecraft:explosion_emitter"
+                            },
+                            "count": 1
+                        },
+                        {
+                            "type": "origins:area_of_effect",
+                            "radius": 4,
+                            "bientity_action": {
+                                "type": "origins:add_velocity",
+                                "x": 0,
+                                "y": 0.1,
+                                "z": 1.5,
+                                "client": false,
+                                "server": true,
+                                "set": false
+                            },
+                            "include_target": true
+                        },
+                        {
+                            "type": "origins:explode",
+                            "power": 2,
+                            "destruction_type": "none",
+                            "damage_self": true
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "divergence": 0,
+    "speed": 0.8,
+    "cooldown": 5
+}

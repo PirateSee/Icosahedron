@@ -1,0 +1,59 @@
+{
+    "name": "§a+ §r§nSuperleap",
+    "description": "Hold down the button to charge a high jump",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "icosahedron_origins:fox/superhop_cooldown",
+                        "comparison": ">",
+                        "compare_to": 0
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "icosahedron_origins:fox/superhop_charge",
+                        "comparison": "==",
+                        "compare_to": 0
+                    }
+                ]
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:fox/superhop_charge",
+                "change": 5,
+                "operation": "add"
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:fox/superhop_cooldown",
+                "change": 2,
+                "operation": "set"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 2,
+                    "amplifier": 0,
+                    "is_ambient": true,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            }
+        ]
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    }
+}

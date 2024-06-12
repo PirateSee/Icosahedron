@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "additionalentityattributes:swim_speed",
+        "operation": "multiply_base",
+        "value": 0.5,
+        "name": "Swim Bonus"
+    },
+    "update_health": true
+}

@@ -1,0 +1,23 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:food_level",
+        "comparison": ">=",
+        "compare_to": 18
+    },
+    "type": "origins:action_over_time",
+    "interval": 960,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:heal",
+                "amount": 0.5
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 6
+            }
+        ]
+    }
+}

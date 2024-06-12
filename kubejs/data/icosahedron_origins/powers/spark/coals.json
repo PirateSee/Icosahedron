@@ -1,6 +1,7 @@
 {
     "name": "§a+ §r§nHot Coals",
     "description": "Stepping on magma doesn't hurt anymore, but it puts a spring in your step.",
+    "hidden": true,
     "condition": {
         "type": "origins:on_block",
         "block_condition": {

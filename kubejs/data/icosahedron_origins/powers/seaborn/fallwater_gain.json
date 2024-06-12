@@ -1,0 +1,25 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "interval": 2,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:fall_distance",
+            "comparison": ">",
+            "compare_to": 3
+        },
+        "if_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:seaborn/fallwater",
+            "change": 1,
+            "operation": "add"
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:seaborn/fallwater",
+            "change": -1,
+            "operation": "add"
+        }
+    }
+}

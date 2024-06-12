@@ -1,5 +1,5 @@
 {
-    "name": "§a+ §r§nLeap out",
+    "name": "§a+ §r§nDolphin Leap",
     "description": "Swimming up out of water launches you high in the air.",
     "condition": {
         "type": "origins:and",

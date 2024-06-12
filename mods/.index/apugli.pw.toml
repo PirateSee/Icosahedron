@@ -1,0 +1,13 @@
+filename = 'Apugli-2.10.2+1.20.1-forge.jar'
+name = 'Apugli'
+side = 'both'
+
+[download]
+hash = '51436bc4081a6ce1c7a0b64a2fe8ad1c92fd3ef974bc8318037dbe5825c836a7926b9416ebd50fd5a2a48ed72c4499ff8e699289049cfef0a074b7cff0cbb4c5'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1qeWG44Y/versions/Vs1Plhky/Apugli-2.10.2%2B1.20.1-forge.jar'
+
+[update.modrinth]
+mod-id = '1qeWG44Y'
+version = 'Vs1Plhky'

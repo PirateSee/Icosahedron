@@ -1,10 +1,10 @@
 {
     "name": "§a+ §r§nBlazing Rage",
-    "description": "The ash and fumes of fire empower you, increasing your damage and speed.",
+    "description": "Being on fire increases your defense, damage and speed. Fire hurts less, and can't kill you.",
     "badges": [
         {
             "type": "origins:tooltip",
-            "text": "130% damage and speed while on fire.",
+            "text": "Magma blocks just increase speed",
             "sprite": "origins:textures/gui/badge/info.png"
         }
     ],

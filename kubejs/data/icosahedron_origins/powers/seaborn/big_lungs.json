@@ -1,0 +1,15 @@
+{
+    "name": "§a+ §r§nExpanded Lungs",
+    "description": "Hold breath for longer",
+    "hidden": true,
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 1
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:fire"
+        },
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "type": "origins:action_over_time",
+    "interval": 2,
+    "rising_action": {
+        "type": "origins:set_on_fire",
+        "duration": 4
+    }
+}
