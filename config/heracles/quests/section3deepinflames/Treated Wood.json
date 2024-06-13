@@ -25,7 +25,7 @@
     },
     "icon": {
       "item": {
-        "id": "blocksyouneed_luna:treated_wood_planks",
+        "id": "kubejs:treated_wood_planks",
         "count": 1
       },
       "type": "heracles:item"
@@ -36,10 +36,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

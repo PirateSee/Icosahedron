@@ -9,7 +9,7 @@
     "type": "apugli:modify_fov",
     "modifier": {
         "operation": "multiply_base_multiplicative",
-        "value": 0.025,
+        "value": 0.006,
         "modifier": {
             "name": "Additional FOV from stored resource",
             "operation": "multiply_total_multiplicative",

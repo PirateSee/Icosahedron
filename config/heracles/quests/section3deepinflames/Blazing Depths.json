@@ -3,13 +3,29 @@
     "Nether Passport",
     "Wrought Iron"
   ],
-  "tasks": {},
+  "tasks": {
+    "adv_nether": {
+      "advancements": [
+        "minecraft:story/enter_the_nether"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Blazing Depths ---</h2>",
+      "Ready to go deeper? Into the /c/Nether/c/?",
+      "",
+      "Something to note - it's /c/very hot/c/ in there. You'll want a plan to deal with the heat somehow.",
+      "",
+      "Your also bound to fight greater threats as well.",
+      "",
+      "Best of luck."
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -34,10 +50,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

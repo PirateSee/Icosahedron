@@ -1,0 +1,24 @@
+{
+    "type": "origins:action_over_time",
+    "interval": 5,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:health",
+            "comparison": ">=",
+            "compare_to": 4
+        },
+        "if_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:doll/undying_resource",
+            "change": 2,
+            "operation": "set"
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:doll/undying_resource",
+            "change": -1,
+            "operation": "add"
+        }
+    }
+}

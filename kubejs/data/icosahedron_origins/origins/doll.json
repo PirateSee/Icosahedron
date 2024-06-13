@@ -1,0 +1,20 @@
+{
+    "name": "Living Doll",
+    "description": "§0[Defensive]§7\nBeing not quite alive and made out of easily repairable materials, Dolls have great fortitute.",
+    "powers": [
+        "icosahedron_origins:doll/sewing",
+        "icosahedron_origins:mecha/sturdy_deny",
+        "icosahedron_origins:mecha/sturdy_heal",
+        "icosahedron_origins:mecha/sturdy_heal_fast",
+        "icosahedron_origins:doll/undying",
+        "icosahedron_origins:doll/undying_resource",
+        "icosahedron_origins:doll/undying_qualify",
+        "icosahedron_origins:seaborn/fire_weak",
+        "icosahedron_origins:doll/buckle",
+        "icosahedron_origins:guard/buckle_gain",
+        "icosahedron_origins:guard/buckle_lose",
+        "icosahedron_origins:guard/buckle_resource",
+        "icosahedron_origins:guard/buckle_slow"
+    ],
+    "impact": 1
+}

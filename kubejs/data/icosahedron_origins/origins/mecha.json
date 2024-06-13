@@ -1,5 +1,5 @@
 {
-    "name": "Mechanical",
+    "name": "Synthetic",
     "description": "§0[Defensive] [Hungry]§7\nAn endoskeleton making use of fancy tech and a biofuel reactor. Boasts increased strength but some odd vulnerabilities.",
     "powers": [
         "icosahedron_origins:mecha/shield/activate",

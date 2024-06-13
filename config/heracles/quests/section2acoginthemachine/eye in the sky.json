@@ -2,13 +2,27 @@
   "dependencies": [
     "Charcoal Heating"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_hot_air_balloon": {
+      "type": "heracles:item",
+      "item": "breezy:hot_air_balloon",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Eye in the Sky ---</h2>",
+      "Exploration and travel through rough terrain can be quite the hassle. Some /6/basic flight/6/ might help with that.",
+      "",
+      "/b/Hot Air Balloons/b/ are simple aircraft that /6/move with the wind/6/. Those little wind gust particles you might have noticed singal the wind direction. Wind blows in /6/diffrent directions every 32 blocks verticaly/6/, and changes direction every day.",
+      "",
+      "/6/Right click/6/ with a /b/Flint and Steel/b/ to light the burner and /6/ascend/6/. Use /b/Sand/b/ to weigh it down and /6/decend/6/. /b/Shears/b/ will /6/remove sandbags/6/. /c/Rain will extinguish the burner./c/"
+    ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
@@ -30,10 +44,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

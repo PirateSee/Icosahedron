@@ -1,0 +1,10 @@
+{
+    "name": "§c- §r§nBuckle",
+    "description": "After taking damage, you move slower for a while and expend hunger.",
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+        "type": "origins:exhaust",
+        "amount": 0.4
+    },
+    "cooldown": 10
+}

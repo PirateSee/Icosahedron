@@ -23,8 +23,8 @@
     },
     "description": [
       "<h2>- Pipe Dream ---</h2>",
-      "Copper pipes help you move fluids around.",
-      "Place pipes connecting then power a pump somewhere along the path.",
+      "Copper /b/Fluid Pipes/b/ help you/6/ move fluids/6/ around.",
+      "Place pipes between fluid containers then power a /b/Mechanical Pump/b/ somewhere along the path to get them moving.",
       "<br/>",
       "<crafting-recipe id=\"ico:fluid_pipe\"/>",
       "<hr/>",
@@ -52,10 +52,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

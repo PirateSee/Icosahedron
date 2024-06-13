@@ -1,7 +1,5 @@
 {
-  "dependencies": [
-    "atomic alloy"
-  ],
+  "dependencies": [],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -12,8 +10,8 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          300,
-          -60
+          453,
+          -58
         ]
       }
     },
@@ -31,10 +29,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

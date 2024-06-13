@@ -1,0 +1,43 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "apugli:velocity",
+                "axes": [
+                    "y"
+                ],
+                "comparison": "<=",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:block_collision",
+                "block_condition": {
+                    "type": "origins:movement_blocking"
+                },
+                "offset_x": 0,
+                "offset_y": -0.35,
+                "offset_z": 0
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:lava",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": "==",
+                "compare_to": 0
+            },
+            {
+                "inverted": true,
+                "type": "origins:climbing"
+            }
+        ]
+    },
+    "type": "apugli:hover",
+    "step_assist": 0.6
+}

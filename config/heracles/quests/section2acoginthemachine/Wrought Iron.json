@@ -2,14 +2,7 @@
   "dependencies": [
     "Melting Away"
   ],
-  "tasks": {
-    "get_wrought_iron": {
-      "type": "heracles:item",
-      "item": "blocksyouneed_luna:wrought_iron_ingot",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
-  },
+  "tasks": {},
   "rewards": {},
   "display": {
     "subtitle": {
@@ -24,45 +17,9 @@
       "",
       "Pouring either /b/Molten Pig Iron or Wrought Iron/b/ onto an /b/Ingot Mold/b/ then /6/Pressing/6/ to pop out the mold yeilds your ingots.",
       "",
-      "<item id=\"blocksyouneed_luna:wrought_iron_ingot\" scale=\"2.0\"> </item>",
+      "<item id=\"kubejs:wrought_iron_ingot\" scale=\"2.0\"> </item>",
       "",
-      "Wrought iron can be worked into tools with /b/diamond-level mining/b/ capabilities. Do note that wrought iron is fairly brittle, and doesn't do so well as a tool head. It will have to do for now. It is currently your only option for diamond-level tools.",
-      "",
-      "It also makes a good decorative material.",
-      "<columns>",
-      "    <column>",
-      "        <columns>",
-      "            <column>",
-      "                <item id=\"blocksyouneed_luna:wrought_iron_block\" scale=\"2.0\"> </item>",
-      "                <p>Wrought Iron Block</p>",
-      "            </column>",
-      "            <column>",
-      "                <item id=\"blocksyouneed_luna:wrought_factory_block\" scale=\"2.0\"> </item>",
-      "            <p>Wrought Factory Block</p>",
-      "            </column>",
-      "            <column>",
-      "                <item id=\"blocksyouneed_luna:corrugated_sheet_wrought\" scale=\"2.0\"> </item>",
-      "                <p>Corrugated Wrought Iron Sheet</p>",
-      "            </column>",
-      "        </columns>",
-      "    </column>",
-      "    <column>",
-      "        <columns>",
-      "            <column>",
-      "                <item id='blocksyouneed_luna:wrought_iron_boiler_plate' scale=\"2.0\"> </item>",
-      "                <p>Wrought Iron Boilerplate</p>",
-      "            </column>",
-      "            <column>",
-      "                <item id='blocksyouneed_luna:wrought_iron_beam' scale=\"2.0\"> </item>",
-      "                <p>Wrought Iron Beam</p>",
-      "            </column>",
-      "            <column>",
-      "                <item id='blocksyouneed_luna:wrought_window' scale=\"2.0\"> </item>",
-      "                <p>Wrought Iron Window</p>",
-      "            </column>",
-      "        </columns>",
-      "    </column>",
-      "</columns>"
+      "Wrought iron can be worked into tools with /b/diamond-level mining/b/ capabilities. Do note that wrought iron is fairly brittle, and doesn't do so well as a tool head. It will have to do for now. It is currently your only option for diamond-level tools."
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
@@ -85,10 +42,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

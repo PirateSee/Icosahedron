@@ -1,0 +1,17 @@
+{
+    "name": "§a+ §r§nUndying",
+    "description": "Survive lethal damage, as long as you had at least 2 hearts beforehand",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "icosahedron_origins:doll/undying_resource",
+        "comparison": "!=",
+        "compare_to": 0
+    },
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.allay.hurt",
+        "volume": 1,
+        "pitch": 1.2
+    }
+}

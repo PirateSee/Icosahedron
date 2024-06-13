@@ -42,7 +42,7 @@
       "        <item id=\"minecraft:blast_furnace\" scale=\"2\"> </item>",
       "    </column>",
       "</columns>",
-      "This will process /6/Raw Copper, Raw Gold, Limonite, Salepherite/6/.",
+      "This will process /b/Raw Copper, Raw Gold, Limonite, Salepherite/b/.",
       "<br/>",
       "<hint title=\"Advanced ores\" icon=\"kubejs:nickel_ingot\">",
       "<p>Advanced ores can't be smelted here. Hold on to them, you'll be able to process them later.</p>",
@@ -71,10 +71,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

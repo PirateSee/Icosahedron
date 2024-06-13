@@ -1,0 +1,136 @@
+{
+    "name": "§7o §r§nSewing",
+    "description": "Repair yourself with wool and string, but struggle to heal naturally",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Hold wool in one hand, string in the other",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": [
+                                {
+                                    "item": "minecraft:string"
+                                },
+                                {
+                                    "tag": "forge:string"
+                                },
+                                {
+                                    "tag": "c:string"
+                                },
+                                {
+                                    "tag": "fabric:string"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "minecraft:wool"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": [
+                                {
+                                    "item": "minecraft:string"
+                                },
+                                {
+                                    "tag": "forge:string"
+                                },
+                                {
+                                    "tag": "c:string"
+                                },
+                                {
+                                    "tag": "fabric:string"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "minecraft:wool"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "apugli:cooldown",
+                            "ticks": 120
+                        },
+                        {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "offhand",
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "apugli:cooldown",
+                            "ticks": 120
+                        },
+                        {
+                            "type": "origins:consume",
+                            "amount": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:heal",
+                "amount": 4
+            }
+        ]
+    },
+    "cooldown": 120,
+    "key": {
+        "key": "key.use"
+    }
+}

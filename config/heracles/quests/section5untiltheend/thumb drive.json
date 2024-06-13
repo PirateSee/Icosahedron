@@ -1,5 +1,7 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "antimatter"
+  ],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -10,28 +12,30 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          374,
-          -75
+          390,
+          -60
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "minecraft:map",
-        "count": 1
+        "id": "ae2:portable_item_cell_1k",
+        "count": 1,
+        "nbt": {}
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "text": "Thumb Drive"
+      "translate": "Thumb Drive"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

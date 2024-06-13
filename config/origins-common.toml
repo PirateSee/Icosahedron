@@ -263,3 +263,26 @@
 		"icosahedron_origins:seaborn/fallwater_gain" = true
 		"icosahedron_origins:seaborn/swim_speed" = true
 
+	[origins."icosahedron_origins:doll"]
+		enabled = true
+		"icosahedron_origins:doll/sewing" = true
+		"icosahedron_origins:mecha/sturdy_deny" = true
+		"icosahedron_origins:mecha/sturdy_heal" = true
+		"icosahedron_origins:mecha/sturdy_heal_fast" = true
+		"icosahedron_origins:doll/undying" = true
+		"icosahedron_origins:seaborn/fire_weak" = true
+		"icosahedron_origins:doll/undying_resource" = true
+		"icosahedron_origins:doll/undying_qualify" = true
+		"icosahedron_origins:doll/buckle" = true
+		"icosahedron_origins:guard/buckle_gain" = true
+		"icosahedron_origins:guard/buckle_lose" = true
+		"icosahedron_origins:guard/buckle_resource" = true
+		"icosahedron_origins:guard/buckle_slow" = true
+
+	[origins."icosahedron_origins:spirit"]
+		enabled = true
+		"icosahedron_origins:spirit/float" = true
+		"icosahedron_origins:spirit/float_hover" = true
+		"icosahedron_origins:spirit/float_jump" = true
+		"icosahedron_origins:spirit/blink" = true
+

@@ -1,0 +1,82 @@
+{
+    "name": "§7o §r§nFloat",
+    "description": "Float slightly off the ground",
+    "condition": {
+        "type": "origins:block_collision",
+        "block_condition": {
+            "type": "origins:movement_blocking"
+        },
+        "offset_x": 0,
+        "offset_y": -0.35,
+        "offset_z": 0
+    },
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_collision",
+                    "block_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:movement_blocking"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:doors"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:trapdoors"
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:in_tag",
+                                "tag": "minecraft:climbable"
+                            }
+                        ]
+                    },
+                    "offset_x": 0,
+                    "offset_y": -0.2,
+                    "offset_z": 0
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:climbing"
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:lava",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "if_action": {
+            "type": "origins:execute_command",
+            "command": "tp ~ ~0.25 ~"
+        },
+        "else_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slow_falling",
+                "duration": 30,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
+            }
+        }
+    }
+}

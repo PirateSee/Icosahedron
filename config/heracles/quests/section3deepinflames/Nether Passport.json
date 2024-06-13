@@ -1,12 +1,28 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "dummy_nether_passport": {
+      "icon": {
+        "item": {
+          "id": "minecraft:netherite_upgrade_smithing_template",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "value": "1c230170-a9ec-44ff-9ee4-71591c04",
+      "description": "Recieve nether authentication",
+      "title": "Recieve nether authentication",
+      "type": "heracles:dummy"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Nether Passport ---</h2>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -28,10 +44,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

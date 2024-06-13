@@ -6,26 +6,11 @@
       "item": "kubejs:supply_pass",
       "amount": 1,
       "collection": "MANUAL",
-      "title": "Authenticate",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      }
+      "title": "Authenticate"
     }
   },
   "rewards": {
     "reward_pickaxe": {
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      },
       "item": {
         "id": "tetra:modular_double",
         "count": 1,
@@ -59,14 +44,6 @@
       "type": "heracles:item"
     },
     "reward_bed": {
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      },
       "item": {
         "id": "minecraft:light_blue_bed",
         "count": 1
@@ -74,14 +51,6 @@
       "type": "heracles:item"
     },
     "reward_thermo": {
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      },
       "item": {
         "id": "cold_sweat:thermometer",
         "count": 1
@@ -146,10 +115,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

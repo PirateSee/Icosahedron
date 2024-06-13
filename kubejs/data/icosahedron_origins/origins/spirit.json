@@ -1,0 +1,11 @@
+{
+    "name": "Wayward Spirit",
+    "description": "§0[Exploration] [Stealth]§7\nA ghostly figure overstaying in the mortal realm. Being not-quite real has some side effects.",
+    "powers": [
+        "icosahedron_origins:spirit/float",
+        "icosahedron_origins:spirit/float_hover",
+        "icosahedron_origins:spirit/float_jump",
+        "icosahedron_origins:spirit/blink"
+    ],
+    "impact": 3
+}

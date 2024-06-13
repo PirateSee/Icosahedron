@@ -1,7 +1,7 @@
 {
     "hidden": true,
     "type": "origins:action_over_time",
-    "interval": 1,
+    "interval": 2,
     "entity_action": {
         "type": "origins:change_resource",
         "resource": "icosahedron_origins:fox/superhop_cooldown",

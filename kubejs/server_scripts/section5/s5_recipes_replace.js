@@ -566,11 +566,11 @@ ServerEvents.recipes(e => {
         "type": "mekanism:reaction",
         "duration": 200,
         "fluidInput": {
-            "amount": 250,
+            "amount": 500,
             "fluid": "pneumaticcraft:plastic"
         },
         "gasInput": {
-            "amount": 100,
+            "amount": 200,
             "gas": "mekanism:hydrogen_chloride"
         },
         "itemInput": {

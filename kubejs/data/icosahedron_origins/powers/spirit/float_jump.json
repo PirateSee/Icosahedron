@@ -1,0 +1,26 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "apugli:velocity",
+                "axes": [
+                    "y"
+                ],
+                "comparison": "<=",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:block_collision",
+                "block_condition": {
+                    "type": "origins:movement_blocking"
+                },
+                "offset_x": 0,
+                "offset_y": -0.36,
+                "offset_z": 0
+            }
+        ]
+    },
+    "type": "origins:grounded"
+}
