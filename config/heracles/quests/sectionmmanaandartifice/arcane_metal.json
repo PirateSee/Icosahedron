@@ -4,34 +4,37 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Obtain a vinteum ingot"
     },
-    "description": [],
+    "description": [
+      ""
+    ],
     "groups": {
-      "Section 5: Until the End": {
+      "Section M: Mana and Artifice": {
         "position": [
-          90,
-          -30
+          -2,
+          -85
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "ars_nouveau:apprentice_spell_book",
+        "id": "mna:vinteum_ingot",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Unbreaking 11"
+      "translate": "Arcane metal"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

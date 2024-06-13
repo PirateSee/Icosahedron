@@ -5,3 +5,4 @@ Section T: Tetra Toolsmithing
 Section 4: Under Pressure
 Section 5: Until the End
 Section EX: Supply Cache
+Section M: Mana and Artifice

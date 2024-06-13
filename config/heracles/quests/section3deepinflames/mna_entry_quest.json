@@ -1,0 +1,57 @@
+{
+  "dependencies": [
+    "Crushing It"
+  ],
+  "tasks": {
+    "mna:vinteum_dust": {
+      "type": "heracles:item",
+      "item": "mna:vinteum_dust",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Vinteum Dust",
+      "icon": {
+        "item": {
+          "id": "mna:vinteum_dust",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Obtain vinteum dust"
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -33,
+          243
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:guide_book",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "A spark of magic"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

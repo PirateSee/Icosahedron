@@ -1,0 +1,111 @@
+{
+  "dependencies": [
+    "arcane_metal"
+  ],
+  "tasks": {
+    "emeralds": {
+      "type": "heracles:item",
+      "item": "minecraft:emerald",
+      "amount": 1,
+      "collection": "MANUAL",
+      "title": "Pay here",
+      "icon": {
+        "item": {
+          "id": "minecraft:emerald",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {
+    "duck": {
+      "title": "The Magictastical Backflipping Rubber Duck",
+      "icon": {
+        "item": {
+          "id": "ducky-periphs:duck_block",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "ducky-periphs:duck_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "The Magictastical Backflipping Rubber Duck"
+    },
+    "description": [
+      "We here at Icosahedron Incorporated™ would like to introduce to you: ",
+      "",
+      "            **--The Magictastical Backflipping Rubber Duck!--**",
+      "",
+      "At the Low price of just 2 Emeralds you too can own your own Magictastical Backflipping Rubber Duck!",
+      "",
+      "/4/Buy now and get it 50% off!/4/",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Reviews:  /e/★★★★/e//7/★/7/",
+      "",
+      " anonymous: /e/★★★★★/e/",
+      "  \"Five stars!\"",
+      "",
+      " anonymous: /e/★★★★★/e/",
+      "  \"Flawless!\"",
+      "",
+      " anonymous: /e/★★★★★/e/",
+      "  \"Greater than great!\"",
+      "",
+      " TurntechGodhead: /e/★/e//7/★★★★/7/",
+      "  \"OH GOD WHAT THE HELL IS THAT\"",
+      "",
+      "",
+      "",
+      "Legal Notice: We can neither confirm nor deny the claims of this product being \"Magictastical\", \"Backflipping\", or \"Rubber\". ",
+      "We are not responsable for mania, accidental transorbital lobotomies, major bodily harm, or death.",
+      "",
+      "CALIFORNIA PROP. 65",
+      "This product can expose you to chemicals including Lead, Bromine, Ytterbium-169, and Mercury which are known to the State of California to cause cancer, and birth defects or other reproductive harm."
+    ],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -118,
+          -43
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "ducky-periphs:duck_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png",
+    "title": {
+      "translate": "Magictastical Backflipping Duck"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}
