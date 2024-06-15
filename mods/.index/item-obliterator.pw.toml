@@ -1,13 +1,13 @@
-filename = 'Item-Obliterator-NeoForge-1.20.1-2.2.1.jar'
+filename = 'Item-Obliterator-NeoForge-MC1.20.1-2.3.0.jar'
 name = 'Item Obliterator'
 side = 'both'
 
 [download]
-hash = 'f306607ea293d796e7629326a59e24a7f39d2165721b96ec6b88a39c0198c44edd35359e4e768468838cc9c2f8a04c44c7e07a03f6bad7d1f4e3fabc7eb5f111'
+hash = '7a40dc7277fb55bf00d1662a2f37ff43c49faed4bf246b3b42d93a36ee803a0e9047a523ee16e5e4d9c2459a02bc30ca29ba60c56477bb9723137fbd0cdbceec'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/3ESR84kR/versions/HBSgjdKo/Item-Obliterator-NeoForge-1.20.1-2.2.1.jar'
+url = 'https://cdn.modrinth.com/data/3ESR84kR/versions/veDPhmBN/Item-Obliterator-NeoForge-MC1.20.1-2.3.0.jar'
 
 [update.modrinth]
 mod-id = '3ESR84kR'
-version = 'HBSgjdKo'
+version = 'veDPhmBN'

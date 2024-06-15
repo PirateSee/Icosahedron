@@ -1,13 +1,13 @@
-filename = 'notenoughanimations-forge-1.7.3-mc1.20.1.jar'
-name = 'Not Enough Animations'
-side = 'client'
+filename = 'notenoughanimations-forge-1.7.4-mc1.20.1.jar'
+name = 'NotEnoughAnimations'
+side = 'both'
 
 [download]
-hash = '57eabf4723aaeb9c1256ada00667b7d4954f093ddb549fcb55c034ac28f55a8ba74cc742ed406451c1e785bc0a6ad7e0afcd47c185d957f9b78877b6c6944d87'
+hash = 'ad8b2f37bc6abe82274f000ae827cf806fb0798cb05f8d3066a7130452d9af99c5dd061e2930079777f4c4fd4d1d1923878c78af0b28569d4215b6bd3a4d7787'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/MPCX6s5C/versions/Av1z44jf/notenoughanimations-forge-1.7.3-mc1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/MPCX6s5C/versions/Wse7FiBl/notenoughanimations-forge-1.7.4-mc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'MPCX6s5C'
-version = 'Av1z44jf'
+version = 'Wse7FiBl'
