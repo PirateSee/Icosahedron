@@ -168,6 +168,9 @@ ServerEvents.tags('item', e => {
 	e.add('forge:glass', 'kubejs:quartz_glass')
 	e.add('forge:glass', 'kubejs:tempered_glass')
 
+    //plushie
+    e.add('kubejs:plushies', Ingredient.of("@plushie_buddies").itemIds)
+
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
 })

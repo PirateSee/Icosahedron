@@ -6,12 +6,17 @@
     }
   },
   "rewards": {
-    "welcomelog": {
-      "item": {
-        "id": "supplementaries:sack",
-        "count": 1
+    "cmd_sack": {
+      "title": "Starting Equipment",
+      "icon": {
+        "item": {
+          "id": "supplementaries:sack",
+          "count": 1
+        },
+        "type": "heracles:item"
       },
-      "type": "heracles:item"
+      "command": "give @p supplementaries:sack{BlockEntityTag:{ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:\"simpleradio:walkie_talkie\"},{Count:1b,Slot:1b,id:\"farmersdelight:bacon_sandwich\"},{Count:2b,Slot:2b,id:\"farmersdelight:melon_popsicle\"},{Count:1b,Slot:3b,id:\"farmersdelight:apple_cider\"},{Count:1b,Slot:4b,id:\"minecraft:campfire\"},{Count:1b,Slot:5b,id:\"cold_sweat:filled_waterskin\",tag:{temperature:-50}},{Count:1b,Slot:6b,id:\"cold_sweat:filled_waterskin\",tag:{temperature:-50}},{Count:1b,Slot:7b,id:\"cold_sweat:filled_waterskin\",tag:{temperature:50}},{Count:1b,Slot:8b,id:\"cold_sweat:filled_waterskin\",tag:{temperature:50}}]}}",
+      "type": "heracles:command"
     }
   },
   "display": {
@@ -46,7 +51,7 @@
       "<task task=\"welcome\" quest=\"Planetfall\"/>",
       "<hr/>",
       "And claim the rewards!",
-      "<reward reward=\"welcomelog\" quest=\"Planetfall\"/>",
+      "<reward reward=\"cmd_sack\" quest=\"Planetfall\"/>",
       "You should look at the Survival Guide quest next. It'll tell you need-to-know information on how to survive regarding some of the new modded mechanics."
     ],
     "groups": {
