@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "antimatter",
     "anti-tech"
   ],
   "tasks": {},
@@ -12,7 +13,7 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          510,
+          480,
           60
         ]
       }
@@ -30,10 +31,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

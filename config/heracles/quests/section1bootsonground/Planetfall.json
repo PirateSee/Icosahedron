@@ -6,6 +6,18 @@
     }
   },
   "rewards": {
+    "cmd_plushie": {
+      "title": "Plushie!",
+      "icon": {
+        "item": {
+          "id": "plushie_buddies:plushie_fox",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "command": "loot give @s loot kubejs:commands/plushies",
+      "type": "heracles:command"
+    },
     "cmd_sack": {
       "title": "Starting Equipment",
       "icon": {

@@ -1,5 +1,7 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "reinforced alloy"
+  ],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -10,28 +12,29 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          90,
+          210,
           -30
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "ars_nouveau:apprentice_spell_book",
+        "id": "mekanism:basic_induction_cell",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Unbreaking 11"
+      "translate": "Battery Packed"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

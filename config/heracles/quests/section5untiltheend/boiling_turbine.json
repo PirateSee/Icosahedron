@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "antimatter"
+    "Complex Ore Processing"
   ],
   "tasks": {},
   "rewards": {},
@@ -12,28 +12,29 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          450,
-          0
+          270,
+          30
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "blocksyouneed_luna:antimetal_block",
+        "id": "mekanismgenerators:turbine_blade",
         "count": 1
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Anti-Tech"
+      "translate": "Boiling Turbine"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

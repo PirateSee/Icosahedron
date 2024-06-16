@@ -21,7 +21,7 @@ ServerEvents.recipes(e => {
 			],
 			"results": [
 			{
-				"item": 'minecraft:chorus_fruit',
+				"item": 'minecraft:glowstone_dust',
 				"chance": 0.02
 			},
 			{
@@ -205,7 +205,7 @@ ServerEvents.recipes(e => {
 	})
 
 	let inter = 'kubejs:incomplete_machine_plating'
-	e.recipes.create.sequenced_assembly([
+	e.recipes.createSequencedAssembly([
 		Item.of('kubejs:machine_plating').withChance(16.0)
 	], 'kubejs:compressed_framing', [
 		e.recipes.createDeploying(inter, [inter, 'mekanism:ingot_osmium']),

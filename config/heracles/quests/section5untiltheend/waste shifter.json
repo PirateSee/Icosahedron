@@ -13,7 +13,7 @@
       "Section 5: Until the End": {
         "position": [
           390,
-          30
+          0
         ]
       }
     },
@@ -30,10 +30,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

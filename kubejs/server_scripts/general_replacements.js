@@ -18,6 +18,7 @@ ServerEvents.recipes(e => {
 
 	//sifting
 	e.remove({id:'createsifter:sifting/dirt_string_mesh_waterlogged'})
+    e.remove({id:'createsifter:sifting/gravel_andesite_mesh'})
 	e.remove({id:'createsifter:sifting/gravel_advanced_brass_mesh'})
 	e.remove({id:'createsifter:sifting/gravel_brass_mesh'})
 	e.remove({id:'createsifter:sifting/gravel_zinc_mesh'})

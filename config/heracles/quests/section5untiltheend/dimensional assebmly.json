@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "antimatter",
     "anti-tech"
   ],
   "tasks": {},
@@ -12,15 +13,15 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          510,
+          480,
           -60
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "rftoolsdim:dimension_builder",
-        "count": 1
+        "id": "minecraft:air",
+        "count": 0
       },
       "type": "heracles:item"
     },
@@ -30,10 +31,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
