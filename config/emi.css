@@ -151,7 +151,7 @@
 	/**
 	 * The subpanels in the left sidebar
 	 */
-	left-sidebar-subpanels: none;
+	left-sidebar-subpanels: craftables 5;
 
 	/**
 	 * How many columns and rows of ingredients to limit the left sidebar to

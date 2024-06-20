@@ -1,13 +1,13 @@
-filename = 'firstperson-forge-2.4.2-mc1.20.1.jar'
+filename = 'firstperson-forge-2.4.3-mc1.20.1.jar'
 name = 'FirstPerson'
 side = 'both'
 
 [download]
-hash = 'b242791f82b1625d557b38d7715362238323b3c52aacdbfb373c7d8371a90fab74c160def9b19a8dfb3c214406a8225b6b08b3b1bb243534d83b14e4923acfa2'
+hash = '1c0353c5ca3c20a61537fff412f1f083daea7b94f991cfe6230ce39b4b1831b747f8c7ff73ac4380ba50341178aa410e3a904fc5c1b7a7199e2dd6b57cb8584d'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/H5XMjpHi/versions/QKGljI8Y/firstperson-forge-2.4.2-mc1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/H5XMjpHi/versions/iFHNhuRi/firstperson-forge-2.4.3-mc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'H5XMjpHi'
-version = 'QKGljI8Y'
+version = 'iFHNhuRi'

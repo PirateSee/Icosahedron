@@ -1,0 +1,13 @@
+filename = 'bury_me_deep-1.20.1-1.0.0.jar'
+name = 'Bury Me Deep'
+side = 'both'
+
+[download]
+hash = '5f52f5b93f24dad5b842a2beec25e95ee5a2ef7895b4aa96d5f8258798074978e455bada9f75b2d0474fac8e4595cabe37f6dc60673de591835be5f0564d8b0f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Sa8lEyhX/versions/zTiTCHE2/bury_me_deep-1.20.1-1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'Sa8lEyhX'
+version = 'zTiTCHE2'

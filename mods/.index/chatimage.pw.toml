@@ -1,13 +1,13 @@
-filename = 'ChatImage-1.2.3+1.20.1+forge.jar'
+filename = 'ChatImage-1.2.4+1.20.1+forge.jar'
 name = 'ChatImage'
 side = 'both'
 
 [download]
-hash = '80e4a1b8f1f6bd66bf9c626a6659df801bcb5e56e000deb81268c96285088fea04a2964db57abc687c9f7e89731951941521be4f5edac88bed16f3ef4c6f9e99'
+hash = '575bedec72bd52642ffc5280c1aea8acb7eda62cb594745af2baedb9571222cf1425100ed77a600fae70d41bc7f9c690c8426f6997afd1594e2d23b47dd316bd'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/zhVN1dvW/versions/fzgdYxq0/ChatImage-1.2.3%2B1.20.1%2Bforge.jar'
+url = 'https://cdn.modrinth.com/data/zhVN1dvW/versions/p1fWsY0e/ChatImage-1.2.4%2B1.20.1%2Bforge.jar'
 
 [update.modrinth]
 mod-id = 'zhVN1dvW'
-version = 'fzgdYxq0'
+version = 'p1fWsY0e'
