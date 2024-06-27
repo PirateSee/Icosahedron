@@ -2,13 +2,13 @@
 #These are the configurations for the transceiver item.
 [transceiver]
 	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 1000.
-	maxFMDistance = 1150
+	maxFMDistance = 1000
 	#This is the range after which audio begins to decay for frequency modulation. Defaults to 900.
-	falloffFM = 1000
+	falloffFM = 900
 	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 1800.
-	maxAMDistance = 1950
+	maxAMDistance = 1800
 	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 1700.
-	falloffAM = 1750
+	falloffAM = 1700
 	#This is whether or not using the transceiver slows the player. Defaults to true.
 	transceiverSlow = false
 	#When false, removes the transceiver recipe. Defaults to true.
@@ -17,13 +17,13 @@
 #These are the configurations for the walkie talkie item.
 [walkie_talkie]
 	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 500.
-	maxFMDistance = 450
+	maxFMDistance = 350
 	#This is the range after which audio begins to decay for frequency modulation. Defaults to 400.
-	falloffFM = 350
+	falloffFM = 300
 	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 900.
-	maxAMDistance = 875
+	maxAMDistance = 750
 	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 800.
-	falloffAM = 750
+	falloffAM = 650
 	#This is whether or not using the walkie talkie slows the player. Defaults to true.
 	walkieTalkieSlow = true
 	#When true, replaces the walkie talkie with the spuddie talkie. Defaults to true.
@@ -54,7 +54,7 @@
 #These are the configurations for the microphone block.
 [microphone]
 	#This is the range for the microphone that it can hear from. Defaults to 8.
-	range = 6
+	range = 5
 	#When false, removes the microphone recipe. Defaults to true.
 	enabled = true
 
@@ -96,5 +96,10 @@
 	#These are the configurations for the optional dependency Vibrative Voice.
 	[compatibilities.vibrative_voice]
 		#When false, removes compatibility for Vibrative Voice. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency Valkyrien Skies.
+	[compatibilities.valkyrien_skies]
+		#When false, removes compatibility for Valkyrien Skies. Defaults to true.
 		enabled = true
 

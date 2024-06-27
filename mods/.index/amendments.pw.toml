@@ -1,13 +1,13 @@
-filename = 'amendments-1.20-1.2.4.jar'
+filename = 'amendments-1.20-1.2.8.jar'
 name = 'Amendments'
 side = 'both'
 
 [download]
-hash = 'da68c05f8e71320acbeaca0bd307e2755290c969466a5dfd9e8d1d0f6b828f04fcf882510e1b450315439010b2e9b0284e09c4419aa35de1a2231fc92863c0cd'
+hash = '0545278cfce290aaae47c01b7268c211f14c719c52bd34fe45cbe5e0533efd95aa02c3a8ef0430a0b11bd058a48c105b358cb832daf7dccc96b7b52b2f072594'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/6iTJugQR/versions/Bn6pXTB5/amendments-1.20-1.2.4.jar'
+url = 'https://cdn.modrinth.com/data/6iTJugQR/versions/rygiK2go/amendments-1.20-1.2.8.jar'
 
 [update.modrinth]
 mod-id = '6iTJugQR'
-version = 'Bn6pXTB5'
+version = 'rygiK2go'

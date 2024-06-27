@@ -1,13 +1,13 @@
-filename = 'Lexiconfig-forge-1.2.11.jar'
+filename = 'Lexiconfig-forge-1.3.11.jar'
 name = 'Lexiconfig'
 side = 'both'
 
 [download]
-hash = 'bf1edbeb32678c7793e18e55f8c83b435589091d6cd345f99dc2a310ca55d91790971c6fb16f308554c802bad65dfe81e4fac1669d75ff9ee004f1ef717a6e07'
+hash = '72bf0cd184114af4fa8a650d784b29c78a7e7fee628193e90e500fa215ee1f7cf437844d1749214bb671678b5e850f1ad276ac82731b9b224a07c157fdb86960'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/D157Rgyf/versions/Gy7U48aH/Lexiconfig-forge-1.2.11.jar'
+url = 'https://cdn.modrinth.com/data/D157Rgyf/versions/lwVdnWWV/Lexiconfig-forge-1.3.11.jar'
 
 [update.modrinth]
 mod-id = 'D157Rgyf'
-version = 'Gy7U48aH'
+version = 'lwVdnWWV'
