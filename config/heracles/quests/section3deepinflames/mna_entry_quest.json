@@ -3,19 +3,16 @@
     "Crushing It"
   ],
   "tasks": {
-    "mna:vinteum_dust": {
-      "type": "heracles:item",
-      "item": "mna:vinteum_dust",
-      "amount": 1,
-      "collection": "AUTOMATIC",
-      "title": "Vinteum Dust",
+    "unlock_mna": {
+      "title": "Mana and Artifice",
       "icon": {
         "item": {
-          "id": "mna:vinteum_dust",
+          "id": "mna:guide_book",
           "count": 1
         },
         "type": "heracles:item"
-      }
+      },
+      "type": "heracles:check"
     }
   },
   "rewards": {},
@@ -24,13 +21,19 @@
       "translate": "Obtain vinteum dust"
     },
     "description": [
-      ""
+      "<h1>- A spark of magic ---</h1>",
+      "",
+      "Ya know that dust you've been using for botania? /6/You can now automate it!/6/ You can also now refine it into proper /b/Vinteum Ingots/b/. This means you can finally begin work on some real --/5/magic/5/--, botanists beware.",
+      "",
+      "<hr/>",
+      "<task task=\"unlock_mna\" quest=\"mna_entry_quest\"/>",
+      "<hr/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
-          -33,
-          243
+          -29,
+          242
         ]
       }
     },

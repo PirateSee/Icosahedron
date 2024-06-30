@@ -1,5 +1,7 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "mna_entry_quest"
+  ],
   "tasks": {
     "Vinteum_Ingot": {
       "type": "heracles:item",
