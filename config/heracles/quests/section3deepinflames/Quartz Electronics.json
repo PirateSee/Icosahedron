@@ -4,7 +4,14 @@
     "Carbon Steel",
     "Treated Wood"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_electron_tube": {
+      "type": "heracles:item",
+      "item": "create:electron_tube",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
