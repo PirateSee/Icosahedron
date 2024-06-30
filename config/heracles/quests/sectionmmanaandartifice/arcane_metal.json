@@ -1,0 +1,61 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "Vinteum_Ingot": {
+      "type": "heracles:item",
+      "item": "mna:vinteum_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain a Vinteum Ingot",
+      "icon": {
+        "item": {
+          "id": "mna:vinteum_ingot",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Obtain a vinteum ingot"
+    },
+    "description": [
+      "<h1>- Arcane Metal ---</h1>",
+      "",
+      "One of your main resources in Mana and Artifice is the /b/Vinteum Ingot/b/. You can only craft this via /4/[consult piratesee on this!]/4/. /6/Sense your going to need alot of it Id suggest automating the process/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"Vinteum_Ingot\" quest=\"arcane_metal\"/>",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -2,
+          -85
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:vinteum_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Arcane metal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "dependencies": [
+    "arcane_metal"
+  ],
+  "tasks": {
+    "Novice Spellcaster": {
+      "title": "Read the Codex Arcana",
+      "advancements": [
+        "mna:tier_0/codex_trade"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {
+    "mna_staff_reward": {
+      "title": "Misc magic items",
+      "loot_table": "mna:structure/ma_structure_loot",
+      "type": "heracles:loottable"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "Craft or obtain a Codex Arcana"
+    },
+    "description": [
+      "<h1>- Novice Wizard ---</h1>",
+      "Before you begin your journey into the mystic arts you need to obtain the /b/Codex Arcana/b/. This book functions as a guide and a reference for all forms of magic. /6/You can either trade with a villager, find it in a structure in the wild, or craft one yourself./6/",
+      "",
+      "<hr/>",
+      "<task task=\"Novice Spellcaster\" quest=\"novice_wizard\"/>",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -2,
+          -18
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:guide_book",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Novice Wizard"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

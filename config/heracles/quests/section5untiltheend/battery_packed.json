@@ -1,6 +1,10 @@
 {
   "dependencies": [
+<<<<<<<< HEAD:config/heracles/quests/section5untiltheend/battery_packed.json
     "reinforced alloy"
+========
+    "arcane_metal"
+>>>>>>>> adding-mna:config/heracles/quests/sectionmmanaandartifice/some_usefull_info.json
   ],
   "tasks": {},
   "rewards": {},
@@ -8,25 +12,43 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "",
+      "Some minor tips:",
+      "",
+      "1. If your ever in need of "
+    ],
     "groups": {
-      "Section 5: Until the End": {
+      "Section M: Mana and Artifice": {
         "position": [
+<<<<<<<< HEAD:config/heracles/quests/section5untiltheend/battery_packed.json
           210,
           -30
+========
+          102,
+          -41
+>>>>>>>> adding-mna:config/heracles/quests/sectionmmanaandartifice/some_usefull_info.json
         ]
       }
     },
     "icon": {
       "item": {
+<<<<<<<< HEAD:config/heracles/quests/section5untiltheend/battery_packed.json
         "id": "mekanism:basic_induction_cell",
+========
+        "id": "minecraft:map",
+>>>>>>>> adding-mna:config/heracles/quests/sectionmmanaandartifice/some_usefull_info.json
         "count": 1
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png",
     "title": {
+<<<<<<<< HEAD:config/heracles/quests/section5untiltheend/battery_packed.json
       "translate": "Battery Packed"
+========
+      "translate": "Some usefull info"
+>>>>>>>> adding-mna:config/heracles/quests/sectionmmanaandartifice/some_usefull_info.json
     }
   },
   "settings": {
