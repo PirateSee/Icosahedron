@@ -1,6 +1,13 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "get_aquatrine": {
+      "type": "heracles:item",
+      "item": "kubejs:aquatrine",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {

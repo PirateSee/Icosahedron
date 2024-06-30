@@ -21,6 +21,9 @@ ServerEvents.recipes(e => {
     "inputs": [
         {
         "item": "kubejs:compressed_iron_sheet"
+        },
+        {
+            "item": "kubejs:carbon_steel_rod"
         }
     ],
     "pressure": 2.0,

@@ -1,4 +1,4 @@
-ServerEvents.commandRegistry( e => {
+/*ServerEvents.commandRegistry( e => {
 
     const { commands: Commands } = e;
     
@@ -189,7 +189,7 @@ ServerEvents.commandRegistry( e => {
     }
 
     e.register(
-        Commands.literal("generatetool").executes(ctx => grantRandomTool(ctx.source.player))
+        //Commands.literal("generatetool").executes(ctx => grantRandomTool(ctx.source.player))
     )
 
-})
+})*/

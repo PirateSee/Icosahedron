@@ -539,7 +539,7 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 160,
+			"amount": 80,
 			"infuse_type": "mekanism:diamond"
 		},
 		"itemInput": {

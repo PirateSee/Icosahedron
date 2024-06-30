@@ -2,7 +2,14 @@
   "dependencies": [
     "Blazing Depths"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_blaze_burner": {
+      "type": "heracles:item",
+      "item": "create:blaze_burner",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
