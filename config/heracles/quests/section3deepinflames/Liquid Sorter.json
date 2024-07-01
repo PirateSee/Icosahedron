@@ -34,7 +34,11 @@
       "",
       "If you like to use chutes instead, the /b/Smart Chute/b/ supports filtering and will also extract /6/entire stacks/6/ at a time.",
       "",
-      "Make good use of these to make far more complex automation."
+      "Make good use of these to make far more complex automation.",
+      "",
+      "<hr/>",
+      "<task task=\"get_brass_tunnel\" quest=\"Liquid Sorter\"/>",
+      "<task task=\"get_smart_pipe\" quest=\"Liquid Sorter\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
@@ -57,10 +61,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

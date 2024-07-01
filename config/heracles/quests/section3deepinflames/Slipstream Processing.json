@@ -2,13 +2,33 @@
   "dependencies": [
     "Big Brass"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_encased_fan": {
+      "type": "heracles:item",
+      "item": "create:encased_fan",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Slipstream Processing ---</h2>",
+      "/b/Encased Fans/b/ turn kinetic energy into a /6/gust of wind/6/. Should this /6/flowing air pass/6/ /b/Fire/b/, /b/Lava/b/, or /b/Water/b/, /6/items caught downstream can be processed/6/.",
+      "",
+      "Air blowing through /b/Fire/b/ processes /6/Smoking/6/ recipes.",
+      "/b/Lava/b/ processes /6/Blasting/6/ and /6/Smelting/6/ recipes, excluding Smoking ones.",
+      "/b/Water/b/ processes /6/Washing/6/ recipes, a new recipe type.",
+      "/b/Soul Fire/b/ /6/haunts items/6/, corrupting them into similar items.",
+      "",
+      "These processes /6/use no fuel/6/ and /6/simultaneously process all items/6/ cought in the stream. This makes it perfect for quick /b/bulk processing/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_encased_fan\" quest=\"Slipstream Processing\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -30,10 +50,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

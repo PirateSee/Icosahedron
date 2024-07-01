@@ -13,7 +13,7 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "translate": "Andesite is useful!"
+      "translate": "Useful rocks"
     },
     "description": [
       "<h2>- Kinetic Alloy ---</h2>",
@@ -29,7 +29,7 @@
       "Section 1: Boots on Ground": {
         "position": [
           60,
-          60
+          30
         ]
       }
     },
@@ -46,10 +46,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

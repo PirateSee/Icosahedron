@@ -24,7 +24,10 @@
       "",
       "Your also bound to fight greater threats as well.",
       "",
-      "Best of luck."
+      "Best of luck.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_nether\" quest=\"Blazing Depths\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

@@ -13,7 +13,7 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Great View from up Here"
     },
     "description": [
       "<h2>- Eye in the Sky ---</h2>",
@@ -21,7 +21,10 @@
       "",
       "/b/Hot Air Balloons/b/ are simple aircraft that /6/move with the wind/6/. Those little wind gust particles you might have noticed singal the wind direction. Wind blows in /6/diffrent directions every 32 blocks verticaly/6/, and changes direction every day.",
       "",
-      "/6/Right click/6/ with a /b/Flint and Steel/b/ to light the burner and /6/ascend/6/. Use /b/Sand/b/ to weigh it down and /6/decend/6/. /b/Shears/b/ will /6/remove sandbags/6/. /c/Rain will extinguish the burner./c/"
+      "/6/Right click/6/ with a /b/Flint and Steel/b/ to light the burner and /6/ascend/6/. Use /b/Sand/b/ to weigh it down and /6/decend/6/. /b/Shears/b/ will /6/remove sandbags/6/. /c/Rain will extinguish the burner./c/",
+      "",
+      "<hr/>",
+      "<task task=\"get_hot_air_balloon\" quest=\"eye in the sky\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

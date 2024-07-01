@@ -44,19 +44,19 @@
         "id": "tetra:modular_double",
         "count": 1,
         "nbt": {
+          "double/basic_axe_right_material": "basic_axe/iron",
+          "double/head_left:workable": 1,
+          "double/binding": "double/socket",
+          "double/basic_handle_material": "basic_handle/blaze_rod",
+          "double/socket_material": "double_socket/socket_emerald",
           "honing_progress": 437,
           "double/handle": "double/basic_handle",
           "HideFlags": 1,
-          "id": "2edc2f9e-214b-4f84-bd37-52dab4bbc393",
-          "double/head_right": "double/basic_axe_right",
-          "double/basic_pickaxe_left_material": "basic_pickaxe/copper",
-          "double/handle:basic_handle/wrap/wool_light_blue": 0,
-          "double/basic_handle_material": "basic_handle/blaze_rod",
-          "double/basic_axe_right_material": "basic_axe/iron",
-          "double/head_left:workable": 1,
           "double/head_left": "double/basic_pickaxe_left",
-          "double/socket_material": "double_socket/socket_emerald",
-          "double/binding": "double/socket",
+          "double/head_right": "double/basic_axe_right",
+          "double/handle:basic_handle/wrap/wool_light_blue": 0,
+          "id": "2edc2f9e-214b-4f84-bd37-52dab4bbc393",
+          "double/basic_pickaxe_left_material": "basic_pickaxe/copper",
           "Damage": 0
         }
       },
@@ -68,10 +68,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

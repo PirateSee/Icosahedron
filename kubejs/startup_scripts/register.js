@@ -448,7 +448,7 @@ StartupEvents.registry("block", (event) => {
 		.textureAll('icosahedron:block/aquatrine_sand_ore')
 
     event.create("sandstone_aquatrine_ore")
-		.mapColor("sand").soundType(SoundType.SAND)
+		.mapColor("sand").soundType(SoundType.STONE)
 		.hardness(3.2).resistance(1).requiresTool(true)
 		.tagBlock("mineable/pickaxe").tagBlock("needs_diamond_tool")
 		.textureAll('icosahedron:block/aquatrine_sandstone_ore_side')

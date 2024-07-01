@@ -2,7 +2,14 @@
   "dependencies": [
     "Blazing Heat"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_treated_wood_planks": {
+      "type": "heracles:item",
+      "item": "kubejs:treated_wood_planks",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -13,7 +20,9 @@
       "",
       "/b/Treated Wood/b/ is used in the creation of /b/Brass Casings/b/ and other higher tier machinery.",
       "",
-      "/6/Mixing crushed coal/6/ will give /b/Tar/b/, which can be mixed with /b/Water/b/ to make /b/Creosote Oil/b/. /6/Pouring this on planks/6/ will give /b/Treated Wood/b/."
+      "/6/Mixing crushed coal/6/ will give /b/Tar/b/, which can be mixed with /b/Water/b/ to make /b/Creosote Oil/b/. /6/Pouring this on planks/6/ will give /b/Treated Wood/b/.",
+      "<hr/>",
+      "<task task=\"get_treated_wood_planks\" quest=\"Treated Wood\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

@@ -2,13 +2,31 @@
   "dependencies": [
     "Carbon Steel"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_advanced_tool": {
+      "type": "heracles:item",
+      "item": "kubejs:advanced_hammer",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Advanced Tools --</h2>",
+      "Tired of your tools breaking?",
+      "",
+      "/b/Advanced tools/b/ may be a fair bit more expensive, but they last /6/more than four times longer/6/!",
+      "",
+      "<hr/>",
+      "<task task=\"get_advanced_tool\" quest=\"Advanced Tools\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -33,10 +51,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

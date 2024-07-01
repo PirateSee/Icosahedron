@@ -23,7 +23,9 @@
       "",
       "Anyway, we're going to make them think. /b/Electron tubes/b/ are the basis of any logical or computing device. Made up of /b/Rose Quartz/b/, /b/Aquatrine/b/, and some /b/metal sheets/b/, these small tubes are the perfect component for /b/Deployers/b/, /b/Computers/b/, /b/high-end redstone components/b/, and more.",
       "",
-      "They can be made via /b/Deployers/b/ later, skipping the need for a hammer."
+      "They can be made via /b/Deployers/b/ later, skipping the need for a hammer.",
+      "<hr/>",
+      "<task task=\"get_electron_tube\" quest=\"Quartz Electronics\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

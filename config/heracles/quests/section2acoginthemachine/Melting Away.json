@@ -17,7 +17,16 @@
     },
     "description": [
       "<h2>- Melting away ---</h2>",
-      "Time for some basic metalurgy"
+      "Time for some basic metalurgy",
+      "",
+      "Craft a /b/Basin Foundry Lid/b/ and place it /6/on top/6/ of a /b/Basin/b/. /6/Apply heat underneath/6/ with /6/items inside/6/ and wait for your /b/molten metals/b/.",
+      "",
+      "Items can be /6/automatically inserted/6/ via /b/Funnels/b/, or /6/manually/6/ by /6/removing the lid/6/ and tossing items in the top, then placing the lid back on.",
+      "",
+      "Those /b/Fluid Pipes/b/ from before are going to be nessary to /6/transport the liquid metal/6/ for further processing.",
+      "",
+      "<hr/>",
+      "<task task=\"get_melter\" quest=\"Melting Away\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

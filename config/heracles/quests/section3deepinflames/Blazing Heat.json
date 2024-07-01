@@ -22,7 +22,10 @@
       "",
       "When the Blaze Burner is fed with fuel, it starts burning brightly. This heat is enough to /c/cook you/c/, and also heat up /b/Basins/b/ for /6/Mixing or Compacting,/6/ or /b/Steam Engines/b/.",
       "",
-      "> --/7/This will greatly aid in metallurgy and other processes, but i'd recommend to keep that thing away from anywhere you might be walking. I don't want to be near that thing while its running, and you probably don't either./7/--"
+      "> --/7/This will greatly aid in metallurgy and other processes, but i'd recommend to keep that thing away from anywhere you might be walking. I don't want to be near that thing while its running, and you probably don't either./7/--",
+      "",
+      "<hr/>",
+      "<task task=\"get_blaze_burner\" quest=\"Blazing Heat\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

@@ -13,7 +13,7 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Keep it inside"
     },
     "description": [
       "<h2>- Encased ---</h2>",
@@ -46,7 +46,7 @@
       "To build more advanced machines we're going to need something to put them in.",
       "/6/Right click a stripped log/6/ with /b/Andesite Framing/b/ to make andesite casing. Probably make a bunch, nearly every kinetic machine will need one.",
       "<hr/>",
-      "<task task=\"get_andesite_casing\" quest=\"Encased\"/>    "
+      "<task task=\"get_andesite_casing\" quest=\"Encased\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
@@ -69,10 +69,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

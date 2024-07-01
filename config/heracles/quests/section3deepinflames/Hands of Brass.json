@@ -2,13 +2,33 @@
   "dependencies": [
     "Quartz Electronics"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_deployer": {
+      "type": "heracles:item",
+      "item": "create:deployer",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Hands of Brass ---</h2>",
+      "Wouldn't it be nice to have another set of hands?",
+      "",
+      "The brass hand of a /b/Deployer/b/ acts /6/much like one of your own/6/. When powered, the Deployer constantly /6/preforms a use action/6/ on the block infront of it. /b/Give it an item/b/ and it will use it. Right clicking the /6/front with a wrench/6/ will switch to an /b/attack mode,/b/ performing /b/attacks/b/ with the held item instead.",
+      "",
+      "The Deployer /c/can only hold one item/c/, and while it will /6/pick up drops of killed mobs/6/ the Deployer will be /c/clogged and unable to operate/c/ until the /6/drops are extracted/6/.",
+      "",
+      "Deployers are capable of certain crafting processes. This includes /6/any process requiring you to click on another block/item/6/ (eg. /b/sandpaper polishing/b/ or /b/log stripping/b/) and /b/Sequenced Assembly/b/, a process where /6/multiple steps of Deploying, Cutting, or Pressing/6/ must be done.",
+      "",
+      "Here's to more advanced automation!",
+      "<hr/>",
+      "<task task=\"get_deployer\" quest=\"Hands of Brass\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -30,10 +50,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

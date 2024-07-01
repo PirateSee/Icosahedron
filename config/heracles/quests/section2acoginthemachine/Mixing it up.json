@@ -13,7 +13,7 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Wisk and stir"
     },
     "description": [
       "<h2>- Mixing it up ---</h2>",
@@ -50,10 +50,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

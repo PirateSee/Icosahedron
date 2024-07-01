@@ -400,7 +400,7 @@ ServerEvents.recipes(e => {
 			"item": 'mekanism:steel_casing'
 			}
 		]
-	}).id('steel_casing')
+	}).id('ico:steel_casing')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -417,7 +417,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:basic_control_circuit"
 		}
-	}).id('basic_control_circuit')
+	}).id('ico:basic_control_circuit')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -434,7 +434,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:advanced_control_circuit"
 		}
-	}).id('advanced_control_circuit')
+	}).id('ico:advanced_control_circuit')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -451,7 +451,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:elite_control_circuit"
 		}
-	}).id('elite_control_circuit')
+	}).id('ico:elite_control_circuit')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -468,7 +468,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:ultimate_control_circuit"
 		}
-	}).id('ultimate_control_circuit')
+	}).id('ico:ultimate_control_circuit')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -486,7 +486,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:alloy_infused"
 		}
-	}).id('infused_alloy')
+	}).id('ico:infused_alloy')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -504,7 +504,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:enriched_iron"
 		}
-	}).id('enriched_iron')
+	}).id('ico:enriched_iron')
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -521,7 +521,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:dust_steel"
 		}
-	}).id('steel_dust')
+	}).id('ico:steel_dust')
 
     e.custom({
         "type": "mekanism:enriching",
@@ -551,7 +551,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "mekanism:dust_refined_obsidian"
 		}
-	}).id('dust_refined_obsidian')
+	}).id('ico:dust_refined_obsidian')
 
     let inter = 'kubejs:incomplete_electrolytic_core'
 	e.recipes.create.sequenced_assembly([

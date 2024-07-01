@@ -2,13 +2,33 @@
   "dependencies": [
     "Wrought Iron"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_soulspring_lamp": {
+      "type": "heracles:item",
+      "item": "cold_sweat:soulspring_lamp",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Preventative Measures"
     },
-    "description": [],
+    "description": [
+      "<h2>- Overheat Preperation ---</h2>",
+      "It can be difficult to cool down in /b/biomes with hot ambient tempatures/b/.",
+      "",
+      "Holding a /b/Soulspring Lamp/b/ cools down the /b/ambient tempature/b/ to just /6/within the habitable range/6/. The lamp must be held in either hand, and has to be /6/kept fueled/6/ with /b/Soul Sprouts/b/ from the nether.",
+      "",
+      "<crafting-recipe id=\"cold_sweat:soulspring_lamp\" grid-width=\"3\"> </crafting-recipe>",
+      "",
+      "It should be noted that the /b/Soulspring Lamp/b/ only reduces ambient tempature, so standing near /4/hot blocks will still cause overheating/4/.",
+      "",
+      "/b/Soul Sprouts/b/ can be found in the /b/Nether/b/, and will /6/grow in hot enviroments/6/. A farm next to /b/lots of hot blocks/b/ can satisfy their heat requirement.",
+      "<hr/>",
+      "<task task=\"get_soulspring_lamp\" quest=\"Overheat Preperation\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -30,10 +50,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

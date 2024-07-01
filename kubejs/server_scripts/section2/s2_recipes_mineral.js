@@ -241,4 +241,5 @@ ServerEvents.recipes(e => {
 	//gem polishing
 	e.recipes.create.sandpaper_polishing('minecraft:quartz', 'kubejs:rough_nether_quartz')
 	e.recipes.create.sandpaper_polishing('minecraft:emerald', 'kubejs:rough_emerald')
+    e.recipes.create.sandpaper_polishing('kubejs:aquatrine', 'kubejs:rough_aquatrine')
 })

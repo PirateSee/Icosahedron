@@ -1,6 +1,23 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "get_sandpaper": {
+      "type": "heracles:item",
+      "item": "#create:sandpaper",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "icon": {
+        "item": {
+          "id": "create:sand_paper",
+          "count": 1,
+          "nbt": {
+            "Damage": 0
+          }
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -8,8 +25,16 @@
     },
     "description": [
       "<h2>- Sandpaper ---</h2>",
-      "draft",
-      "polishes quartz and emerald"
+      "Noticed those rough gemstones you unearthed from rock?",
+      "",
+      "Some /b/Sandpaper/b/ will help with /6/polishing/6/ those to proper usable quality.",
+      "",
+      "Hold the item to be polished and the sandpaper in /6/opposite hands/6/ and/6/ hold right click/6/.",
+      "",
+      "With this basic polishing, /b/Lapis Lazuli/b/, /b/Emeralds/b/, /b/Nether Quartz/b/ and /b/Aquatrine/b/ can be refined.",
+      "",
+      "<hr/>",
+      "<task task=\"get_sandpaper\" quest=\"Sandpaper\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
@@ -35,10 +60,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

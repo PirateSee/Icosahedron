@@ -20,7 +20,9 @@
       "",
       "Andesite funnels and tunnels can give you some basic item input/output capabilities.",
       "",
-      "Welcome to the start of some automation! /b/Conveyor Belts/b/ will likely help you finish automating things, but Andesite Funnels will at least let you /6/input/output from machines/6/, and /6/Tunnels will split items/6/, although they do need to be placed on conveyor belts."
+      "Welcome to the start of some automation! /b/Conveyor Belts/b/ will likely help you finish automating things, but Andesite Funnels will at least let you /6/input/output from machines/6/, and /6/Tunnels will split items/6/, although they do need to be placed on conveyor belts.",
+      "<hr/>",
+      "<task task=\"get_funnel\" quest=\"BIOS\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

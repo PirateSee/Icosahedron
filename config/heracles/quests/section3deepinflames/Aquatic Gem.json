@@ -18,7 +18,10 @@
       "",
       "Aquatrine is used for a few basic electronic components.",
       "",
-      "You can find /b/Aquatrine/b/ buried in /6/sand or sandstone below sea level/6/. Usually this means you have to dig underwater, but you can find a bunch on /6/beaches/6/, as long as you dig low enough."
+      "You can find /b/Aquatrine/b/ buried in /6/sand or sandstone near oceans/6/. Usually this means you have to dig underwater, but you can find a bunch burried on /b/beaches/b/, as long as you dig a little.",
+      "",
+      "<hr/>",
+      "<task task=\"get_aquatrine\" quest=\"Aquatic Gem\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
