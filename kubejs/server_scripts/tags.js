@@ -171,6 +171,11 @@ ServerEvents.tags('item', e => {
     //plushie
     e.add('kubejs:plushies', Ingredient.of("@plushie_buddies").itemIds)
 
+	//manaweaving wands
+	e.add('ico:manaweaving_wands', 'mna:improvised_manaweaver_wand')
+
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
+
+
 })

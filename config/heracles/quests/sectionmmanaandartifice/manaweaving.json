@@ -1,0 +1,83 @@
+{
+  "dependencies": [
+    "novice_wizard"
+  ],
+  "tasks": {
+    "get_wand": {
+      "type": "heracles:item",
+      "item": "#ico:manaweaving_wands",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Get a Manaweaving wand",
+      "icon": {
+        "item": "#ico:manaweaving_wands",
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Begin manaweaving\n"
+    },
+    "description": [
+      "<h1>- Manaweaving ---</h1>",
+      "",
+      "Much of what you'll be doing in Mana and Artifice will require /b/manaweaving/b/. /b/Manaweaving/b/ is the process of drawing shapes into the air via a /b/Manaweaver's Wand/b/, this is used to power /b/Manaweaving Altars/b/, some /b/Rituals/b/, and /b/Cantrips/b/.",
+      "",
+      "/6/If your having trouble drawing the patterns by hand you can use the radial menu to select a pattern to be drawn automatically./6/",
+      "",
+      "",
+      "<h2>The Wands</h2>",
+      "",
+      "There are three types of wand avalable to you. The /b/Improvised Manaweaver's Wand/b/, The /b/Vinteum Manaweaver's Wand/b/, and The /b/Chimerite Manaweaver's Wand/b/.",
+      "",
+      "",
+      "<item id=\"mna:improvised_manaweaver_wand\"/>",
+      "The /b/Improvised Manaweaver's Wand/b/ is the cheapest of the Manaweaving Wands, it only has enough durability for a couple patterns and Id only ever recomend using it in the off chance you dont have access to your main wand.",
+      "",
+      "<crafting-recipe id=\"mna:improvised_manaweaver_wand\"/>",
+      "/6/This recipe can be done with allmost any stick shaped object and any magical flower./6/",
+      "",
+      "",
+      "<item id=\"mna:manaweaver_wand\"/>",
+      "The /b/Vinteum Manaweaver's Wand/b/ has a --much-- higher durability ",
+      "than The /b/Improvized Manaweaver's Wand/b/, and has the lowest /9/Mana/9/ cost when drawing patterns.",
+      "",
+      "<crafting-recipe id=\"mna:vinteum_manaweaver_wand\"/>",
+      "",
+      "",
+      "<item id=\"mna:manaweaver_wand_advanced\"/>",
+      "The /b/Chimerite Manaweaver's Wand/b/ is the most expensive out of all of the Manaweaving wands. It also has the highest /9/Mana/9/ cost out of all the wands. But it does not cost any durability to use.",
+      "",
+      "<crafting-recipe id=\"mna:chimerite_manaweaver_wand\"/>"
+    ],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -2,
+          76
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:manaweaver_wand_advanced",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Manaweaving"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}
