@@ -6,9 +6,21 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Your a wizard Harry"
     },
-    "description": [],
+    "description": [
+      "<h1>- Spellcasting ---</h1>",
+      "",
+      "/6/Due to the complexity of this topic there is a seperate info quest attached to this one explaining how spell casting itself actually works./6/",
+      "",
+      "Now with that out of the way. To begin spellcasting you need to make a /b/Inscription Table/b/. It is where you will compose your spells for later crafting. Along side the /b/Inscription Table/b/ you will need /b/Arcanist's Ink/b/, a large amount of /b/Arcane Ash/b/, and some /b/Vellum/b/, which is made by using /b/Leather/b/ on a /6/Cauldron/6/.",
+      "",
+      "The Inscription Table has 3 slots in the top for the /b/Arcanist's Ink/b/, /b/Arcane Ash/b/, and /b/Vellum/b/ respectively. When a spell is being created it consumes the materials in said slots as fuel, and if it manages to run out the process will halt until the required resources have been added.",
+      "",
+      "Once you have assembled a spell you need to fully craft it using the /6/Ritual of Arcana/6/. The ingredients the ritual requires depends entirely on the spell your crafting which you can see either once the ritual is in progress or by right clicking the /6/Spell Recipe/6/.",
+      "",
+      "As a starter spell, personally Id suggest making a /5/Touch-Dig/5/ spell, as it will function as a infinite /b/Stone Pickaxe/b/, and be a quick way to increase your /5/Magic Level/5/."
+    ],
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
@@ -26,7 +38,7 @@
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "spellcasting"
+      "translate": "Spellcasting"
     }
   },
   "settings": {

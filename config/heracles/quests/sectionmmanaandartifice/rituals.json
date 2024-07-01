@@ -3,11 +3,46 @@
     "novice_wizard",
     "runeforging"
   ],
-  "tasks": {},
+  "tasks": {
+    "obtain_wizard_chalk": {
+      "type": "heracles:item",
+      "item": "mna:wizard_chalk",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain Wizard Chalk",
+      "icon": {
+        "item": {
+          "id": "mna:wizard_chalk",
+          "count": 1,
+          "nbt": {
+            "Damage": 0
+          }
+        },
+        "type": "heracles:item"
+      }
+    },
+    "obtain_purified_vinteum": {
+      "type": "heracles:item",
+      "item": "mna:purified_vinteum_dust",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain Purified Vinteum Dust",
+      "icon": {
+        "item": {
+          "id": "mna:purified_vinteum_dust",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
-      "translate": "Obtain Wizard Chalk"
+      "translate": "Offbrand witchery"
     },
     "description": [
       "<h1>- Ritual Magic 101 ---</h1>",
@@ -17,7 +52,12 @@
       "As you progress more rituals will become accessable to you, as such I recomend having alot of /b/Purified Vinteum Dust/b/ and /b/Wizard Chalk/b/ on hand.",
       "",
       "Rituals are performed by drawing patterns onto the ground via /b/Wizard Chalk/b/. Once you have the correct shape for the ritual you want (you can find them in the rituals section of the /b/Codex Arcana/b/), you use /b/Purified Vinteum Dust/b/ on the center rune. This will activate the runes, if the ritual requires items you will be required to place them on now. ",
-      "Then to activate the ritual you use the /b/Purified Vinteum Dust/b/ on the center rune again, and /6/draw any Manaweaving patterns that appear/6/."
+      "Then to activate the ritual you use the /b/Purified Vinteum Dust/b/ on the center rune again, and /6/draw any Manaweaving patterns that appear/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"obtain_wizard_chalk\" quest=\"rituals\"/>",
+      "<task task=\"obtain_purified_vinteum\" quest=\"rituals\"/>",
+      "<hr/>"
     ],
     "groups": {
       "Section M: Mana and Artifice": {

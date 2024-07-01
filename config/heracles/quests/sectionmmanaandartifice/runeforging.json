@@ -3,6 +3,20 @@
     "novice_wizard"
   ],
   "tasks": {
+    "obtain_runeforge": {
+      "type": "heracles:item",
+      "item": "mna:runeforge",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain a Runeforge",
+      "icon": {
+        "item": {
+          "id": "mna:runeforge",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    },
     "obtain_bone_ash": {
       "type": "heracles:item",
       "item": "mna:bone_ash",
@@ -30,26 +44,12 @@
         },
         "type": "heracles:item"
       }
-    },
-    "obtain_runeforge": {
-      "type": "heracles:item",
-      "item": "mna:runeforge",
-      "amount": 1,
-      "collection": "AUTOMATIC",
-      "title": "Obtain a Runeforge",
-      "icon": {
-        "item": {
-          "id": "mna:runeforge",
-          "count": 1
-        },
-        "type": "heracles:item"
-      }
     }
   },
   "rewards": {},
   "display": {
     "subtitle": {
-      "translate": "Gain a Runeforge"
+      "translate": "Magical smelting"
     },
     "description": [
       "<h1>- Runeforging ---</h1>",

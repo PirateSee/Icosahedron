@@ -1,7 +1,5 @@
 {
-  "dependencies": [
-    "arcane_metal"
-  ],
+  "dependencies": [],
   "tasks": {
     "Novice Spellcaster": {
       "title": "Read the Codex Arcana",
@@ -20,7 +18,7 @@
   },
   "display": {
     "subtitle": {
-      "translate": "Craft or obtain a Codex Arcana"
+      "translate": "Begin your journey"
     },
     "description": [
       "<h1>- Novice Wizard ---</h1>",

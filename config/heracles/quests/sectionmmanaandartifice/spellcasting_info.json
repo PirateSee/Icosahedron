@@ -1,0 +1,40 @@
+{
+  "dependencies": [
+    "spellcasting"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          125,
+          173
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:spell_part_thesis",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "spellcasting info"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

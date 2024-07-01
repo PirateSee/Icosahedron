@@ -41,3 +41,12 @@ config/embeddium-fingerprint.json
 config/sound_physics_remastered/occlusion.properties
 config/sound_physics_remastered/reflectivity.properties
 /.probe
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/fabric/indigo-renderer.properties
+config/jei/recipe-category-sort-order.ini
+config/oculus.properties
+emi.json
+config/sound_physics_remastered/occlusion.properties
+config/sound_physics_remastered/reflectivity.properties
+emi.json
