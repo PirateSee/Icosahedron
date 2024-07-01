@@ -1,0 +1,41 @@
+{
+  "dependencies": [
+    "novice_wizard",
+    "manaweaving_alter"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -104,
+          7
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:constructs/construct_basic_head_wickerwood",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "constructs"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

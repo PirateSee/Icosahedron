@@ -32,7 +32,7 @@
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
-          -29,
+          -30,
           242
         ]
       }
@@ -44,7 +44,7 @@
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png",
     "title": {
       "translate": "A spark of magic"
     }

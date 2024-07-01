@@ -1,0 +1,95 @@
+{
+  "dependencies": [
+    "novice_wizard"
+  ],
+  "tasks": {
+    "obtain_bone_ash": {
+      "type": "heracles:item",
+      "item": "mna:bone_ash",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain Bone Ash",
+      "icon": {
+        "item": {
+          "id": "mna:bone_ash",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    },
+    "obtain_arcane_ash": {
+      "type": "heracles:item",
+      "item": "mna:arcane_ash",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain Arcane Ash",
+      "icon": {
+        "item": {
+          "id": "mna:arcane_ash",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    },
+    "obtain_runeforge": {
+      "type": "heracles:item",
+      "item": "mna:runeforge",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain a Runeforge",
+      "icon": {
+        "item": {
+          "id": "mna:runeforge",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "Gain a Runeforge"
+    },
+    "description": [
+      "<h1>- Runeforging ---</h1>",
+      "",
+      "The /b/Runeforge/b/ allows the player to smelt items without the use of fuel. It also allows for the production of a few new materials that your going to need. That being, /b/Bone Ash/b/ and /b/Arcane Ash/b/.",
+      "",
+      "/b/Bone Ash/b/ and /b/Arcane Ash/b/, are made by /6/smelting/6/ /b/Bones/b/ and /b/Arcane Compound/b/ in the /b/Runeforge/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"obtain_runeforge\" quest=\"runeforging\"/>",
+      "<task task=\"obtain_bone_ash\" quest=\"runeforging\"/>",
+      "<task task=\"obtain_arcane_ash\" quest=\"runeforging\"/>",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          101,
+          7
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:runeforge",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Runeforging"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

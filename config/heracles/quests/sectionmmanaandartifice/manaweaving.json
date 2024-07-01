@@ -18,7 +18,7 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "translate": "Begin manaweaving\n"
+      "translate": "Begin manaweaving"
     },
     "description": [
       "<h1>- Manaweaving ---</h1>",
@@ -26,6 +26,10 @@
       "Much of what you'll be doing in Mana and Artifice will require /b/manaweaving/b/. /b/Manaweaving/b/ is the process of drawing shapes into the air via a /b/Manaweaver's Wand/b/, this is used to power /b/Manaweaving Altars/b/, some /b/Rituals/b/, and /b/Cantrips/b/.",
       "",
       "/6/If your having trouble drawing the patterns by hand you can use the radial menu to select a pattern to be drawn automatically./6/",
+      "",
+      "<hr/>",
+      "<task task=\"get_wand\" quest=\"manaweaving\"/>",
+      "<hr/>",
       "",
       "",
       "<h2>The Wands</h2>",
@@ -56,7 +60,7 @@
       "Section M: Mana and Artifice": {
         "position": [
           -2,
-          76
+          105
         ]
       }
     },

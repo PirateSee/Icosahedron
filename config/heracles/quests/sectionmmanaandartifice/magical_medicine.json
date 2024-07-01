@@ -1,0 +1,40 @@
+{
+  "dependencies": [
+    "manaweaving_alter"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -139,
+          93
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:healing_poultice",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "magical medicine"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

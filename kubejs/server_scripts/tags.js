@@ -173,6 +173,8 @@ ServerEvents.tags('item', e => {
 
 	//manaweaving wands
 	e.add('ico:manaweaving_wands', 'mna:improvised_manaweaver_wand')
+	e.add('ico:manaweaving_wands', 'mna:manaweaver_wand')
+	e.add('ico:manaweaving_wands', 'mna:manaweaver_wand_advanced')
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')

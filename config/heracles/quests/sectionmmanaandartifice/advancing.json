@@ -1,0 +1,42 @@
+{
+  "dependencies": [
+    "spellcasting",
+    "the_divine_art",
+    "charms"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          -2,
+          216
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:occulus",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "advancing"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

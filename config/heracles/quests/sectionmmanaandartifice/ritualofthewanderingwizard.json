@@ -1,0 +1,40 @@
+{
+  "dependencies": [
+    "rituals"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [],
+    "groups": {
+      "Section M: Mana and Artifice": {
+        "position": [
+          141,
+          46
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mna:thaumaturgic_link",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "ritualofthewanderingwizard"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}
