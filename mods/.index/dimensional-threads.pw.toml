@@ -1,13 +1,13 @@
-filename = 'dimthread-1.20.1-v1.0.0.jar'
-name = 'Dimensional Threads Reforked'
-side = 'server'
+filename = 'dimthread-1.20.1-v1.0.5.jar'
+name = 'Dimensional Threading Reforked'
+side = 'both'
 
 [download]
-hash = '627d26fc23b8c7d22c408d6a73cc2ec7d0ef71a43346b6ab8a0f4664a7e3165d63ebd5a3866531a186dc3ff17c61c4a526f73febcf10f3247d54af156d5b01e9'
+hash = 'c3e5bfd00f58b5589a285c6c4b63d8498669b8539c93cc0a097b3237d3b2ca732b6f4e7d59c0970dd79bdcec04475c1680cf2e5bbbda4a5390f6f64ea50f3f0a'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/V92cR3aK/versions/4Pbba3Qs/dimthread-1.20.1-v1.0.0.jar'
+url = 'https://cdn.modrinth.com/data/V92cR3aK/versions/acGg0hXH/dimthread-1.20.1-v1.0.5.jar'
 
 [update.modrinth]
 mod-id = 'V92cR3aK'
-version = '4Pbba3Qs'
+version = 'acGg0hXH'

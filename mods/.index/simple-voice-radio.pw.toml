@@ -1,13 +1,13 @@
-filename = 'SimpleRadio-forge-1.20.1-2.4.6.jar'
+filename = 'SimpleRadio-forge-1.20.1-2.4.6.1.jar'
 name = 'SimpleRadio'
 side = 'both'
 
 [download]
-hash = 'd488eb45317caff556e5f97054b994da37289cd584069c049c18b6cfbb7f9f38c9271ef63b3f69d2498fe53887e4090aa64a461b83bfd0c5228092fff8f757a5'
+hash = 'bcc6cac4ade382c1205ae8e1e3747a639608ef5d8b26473eaf4a5ccac745edbce1d316ae106a1381d8cef1f67c8dc8b7ce4a5529a8501c6486e2870c775688d6'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/S7b8mMXS/versions/w13t5zpl/SimpleRadio-forge-1.20.1-2.4.6.jar'
+url = 'https://cdn.modrinth.com/data/S7b8mMXS/versions/WQ689CyS/SimpleRadio-forge-1.20.1-2.4.6.1.jar'
 
 [update.modrinth]
 mod-id = 'S7b8mMXS'
-version = 'w13t5zpl'
+version = 'WQ689CyS'
