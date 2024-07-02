@@ -668,7 +668,7 @@ ServerEvents.recipes(e => {
       "exothermic": false,
       "fluid_input": {
         "type": "pneumaticcraft:fluid",
-        "amount": 250,
+        "amount": 200,
         "fluid": "kubejs:ethylene"
       },
       "item_input": {
@@ -927,7 +927,7 @@ ServerEvents.recipes(e => {
     ],
     "temperature": {
       "min_temp": 423,
-      "max_temp": 573
+      "max_temp": 673
     }
   })
 
@@ -954,7 +954,7 @@ ServerEvents.recipes(e => {
     ],
     "temperature": {
       "min_temp": 423,
-      "max_temp": 573
+      "max_temp": 673
     }
   })
 
@@ -985,7 +985,7 @@ ServerEvents.recipes(e => {
     ],
     "temperature": {
       "min_temp": 423,
-      "max_temp": 573
+      "max_temp": 673
     }
   })
 
@@ -998,7 +998,7 @@ ServerEvents.recipes(e => {
     },
     "results": [
       {
-        "amount": 5,
+        "amount": 7,
         "fluid": "kubejs:ethylene"
       },
       {
@@ -1006,13 +1006,13 @@ ServerEvents.recipes(e => {
         "fluid": "createdieselgenerators:crude_oil"
       },
       {
-        "amount": 3,
+        "amount": 1,
         "fluid": "kubejs:slag_runoff"
       }
     ],
     "temperature": {
       "min_temp": 473,
-      "max_temp": 623
+      "max_temp": 673
     }
   })
 

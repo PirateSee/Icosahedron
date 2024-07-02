@@ -82,7 +82,7 @@ ServerEvents.recipes(e => {
     },
     "item_output": {
         "item": "kubejs:plasticizer",
-        "count": 4,
+        "count": 8,
     },
     "pressure": 4.0,
     "speed": 0.1,
@@ -106,7 +106,7 @@ ServerEvents.recipes(e => {
         },
         "fluid_output": {
             "type": "pneumaticcraft:fluid",
-            "amount": 100,
+            "amount": 50,
             "fluid": "kubejs:styrene"
         },
         "pressure": 4.0,
@@ -123,19 +123,19 @@ ServerEvents.recipes(e => {
         },
         "input1": {
           "type": "pneumaticcraft:fluid",
-          "amount": 1000,
+          "amount": 500,
           "fluid": "kubejs:styrene"
         },
         "input2": {
           "type": "pneumaticcraft:fluid",
-          "amount": 500,
+          "amount": 450,
           "fluid": 'kubejs:coal_tar'
         },
         "pressure": 3.5,
         "time": 400
     })
 
-    e.recipes.create.compacting('kubejs:polystyrene', [Fluid.of('kubejs:styrene', 500), {fluidTag: 'forge:plantoil', amount: 200}]).heated()
+    e.recipes.create.compacting('kubejs:polystyrene', [Fluid.of('kubejs:styrene', 1000), {fluidTag: 'forge:plantoil', amount: 200}]).heated()
 
     e.recipes.create.compacting('32x kubejs:sealant', 'kubejs:rubber').heated()
 

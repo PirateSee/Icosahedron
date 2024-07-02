@@ -228,12 +228,12 @@ ServerEvents.recipes(e => {
         }
     })
 
-	e.recipes.create.compacting('kubejs:andesite_pressure_alloy', ['4x create:andesite_alloy', Fluid.of('kubejs:molten_pressure_alloy', 200)]).superheated()
+	e.recipes.create.compacting('kubejs:andesite_pressure_alloy', ['3x create:andesite_alloy', Fluid.of('kubejs:molten_pressure_alloy', 100)]).superheated()
 
 	e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 320,
+			"amount": 80,
 			"infuse_type": "mekanism:diamond"
 		},
 		"itemInput": {

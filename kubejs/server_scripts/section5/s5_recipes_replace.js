@@ -477,7 +477,7 @@ ServerEvents.recipes(e => {
 			"infuse_type": "kubejs:cupronickel"
 		},
 		"itemInput": {
-            "amount": 2,
+            "amount": 1,
 			"ingredient": {
 				"item": "kubejs:andesite_pressure_alloy"
 			}

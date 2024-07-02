@@ -208,17 +208,17 @@ ServerEvents.recipes(e => {
 
 	//synthetic
 	e.shaped('minecraft:sponge', [ 
-        'SP',
-        'P '
+        'PS',
+        'SS'
         ], {
           P: 'kubejs:polystyrene',
           S: 'kubejs:sealant'
     }).id('ico:sponge')
 
-    e.shaped('8x minecraft:arrow', [ 
-      'F',
-      'S',
-      'R'
+    e.shaped('16x minecraft:arrow', [ 
+      'FFF',
+      'SSS',
+      ' R '
       ], {
         R: 'kubejs:rubber',
         S: 'minecraft:stick',
