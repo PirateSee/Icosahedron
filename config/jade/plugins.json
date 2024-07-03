@@ -50,6 +50,23 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
+  },
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "remove_builtin": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true,
+    "tooltip_renderer": true
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -57,6 +74,9 @@
     "redstone": true,
     "camo": true,
     "semiblock": true
+  },
+  "supplementaries": {
+    "hat_stand": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -66,8 +86,22 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "lootr": {
     "info": true
+  },
+  "corpse": {
+    "corpse": true
   },
   "melter": {
     "melter_data": true
@@ -83,41 +117,5 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
-  },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
-  "exposure": {
-    "lightroom": true
-  },
-  "mekanism": {
-    "infuse_type": true,
-    "gas": true,
-    "remove_builtin": true,
-    "pigment": true,
-    "fluid": true,
-    "slurry": true,
-    "energy": true,
-    "tooltip_renderer": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
-  "corpse": {
-    "corpse": true
   }
 }
