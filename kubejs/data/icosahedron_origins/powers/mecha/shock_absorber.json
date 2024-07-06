@@ -6,8 +6,8 @@
         "type": "origins:or",
         "conditions": [
             {
-                "type": "origins:name",
-                "name": "fall"
+                "type": "origins:in_tag",
+                "tag": "minecraft:is_fall"
             },
             {
                 "type": "origins:name",

@@ -9,7 +9,17 @@
       "text": ""
     },
     "description": [
-      "This will process /6/Pentlandite, Bauxite, Malachite, Hematite/6/"
+      "<h2>- Advanced Ore Processing ---</h2>",
+      "Time to get at some of those richer rocks.",
+      "",
+      "Advanced ores will need to be /6/Crushed/6/, then /6/Melted/6/ into /b/molten slurries/b/. Put the slurry in a /b/Centrifuge/b/ to seperate the /b/Slag/b/, then /6/pour out into a cast/6/.",
+      "",
+      "The /b/Slag Runoff/b/ can be /6/Centrifuged/6/ to recycle it.",
+      "",
+      "This will process /6/Pentlandite, Bauxite, Malachite, Hematite/6/",
+      "",
+      "/b/Bauxite/b/ and /b/Malachite/b/ yield /b/Iron/b/ and /b/Copper/b/ respectively. They can be found in the /c/Nether/c/ and are far /6/more common and mineral-rich/6/ than their overworld counterparts. Risk for reward.",
+      "<hr/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

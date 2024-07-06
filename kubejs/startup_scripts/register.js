@@ -16,11 +16,6 @@ StartupEvents.registry('fluid', e => {
 	e.create('dirty_plastic').bucketColor(0xBBAFB9).displayName('Unrefined Plastic')
 	e.create('styrene').bucketColor(0xBBAFB9).displayName('Styrene')
 
-	//magic
-	e.create('condensed_essence').bucketColor(0xBBAFB9).displayName('Condensed Essence')
-	e.create('sourceberry_juice').bucketColor(0xBBAFB9).displayName('Sourceberry Juice')
-	e.create('gilding_slush').bucketColor(0xBBAFB9).displayName('Gilding Slush')
-
 	//slurry
 	e.create('pentlandite_slurry').bucketColor(0xBBAFB9).displayName('Pentlandite Slurry')
 	e.create('hematite_slurry').bucketColor(0xBBAFB9).displayName('Hematite Slurry')
@@ -28,36 +23,39 @@ StartupEvents.registry('fluid', e => {
 	e.create('bauxite_slurry').bucketColor(0xBBAFB9).displayName('Bauxite Slurry')
 
 	//molten
-	e.create('molten_pig_iron').bucketColor(0xBBAFB9).displayName('Molten Pig Iron')
+	e.create('molten_pig_iron').displayName('Molten Pig Iron')
 		.stillTexture('icosahedron:block/fluid/molten_pig_iron')
 		.flowingTexture('icosahedron:block/fluid/molten_pig_iron_flowing')
-	e.create('molten_wrought_iron').bucketColor(0xBBAFB9).displayName('Molten Wrought Iron')
+	e.create('molten_wrought_iron').displayName('Molten Wrought Iron')
 		.stillTexture('icosahedron:block/fluid/molten_wrought_iron')
 		.flowingTexture('icosahedron:block/fluid/molten_wrought_iron_flowing')
 
-	e.create('molten_nickel').bucketColor(0xBBAFB9).displayName('Molten Nickel')
+	e.create('molten_nickel').displayName('Molten Nickel')
 		.stillTexture('icosahedron:block/fluid/molten_nickel_still')
         .flowingTexture('icosahedron:block/fluid/molten_nickel_flowing')
-	e.create('molten_iron').bucketColor(0xBBAFB9).displayName('Molten Iron')
+	e.create('molten_iron').displayName('Molten Iron')
 		.stillTexture('icosahedron:block/fluid/molten_iron_still')
 		.flowingTexture('icosahedron:block/fluid/molten_iron_flowing')
-	e.create('molten_copper').bucketColor(0xBBAFB9).displayName('Molten Copper')
-	e.create('molten_aluminum').bucketColor(0xBBAFB9).displayName('Alumina Solution')
+	e.create('molten_copper').displayName('Molten Copper')
+        .stillTexture('icosahedron:block/fluid/molten_copper_still')
+		.flowingTexture('icosahedron:block/fluid/molten_copper_flowing')
+	e.create('molten_aluminum').displayName('Alumina Solution')
 		.stillTexture('icosahedron:block/fluid/molten_aluminum')
 		.flowingTexture('icosahedron:block/fluid/molten_aluminum_flowing')
 
 	//alloy
-	e.create('molten_brass').bucketColor(0xBBAFB9).displayName('Molten Brass')
-	e.create('molten_pressure_alloy').bucketColor(0xBBAFB9).displayName('Molten Pressure Alloy')
+	e.create('molten_brass').displayName('Molten Brass')
+        .stillTexture('icosahedron:block/fluid/molten_brass')
+		.flowingTexture('icosahedron:block/fluid/molten_brass_flowing')
+	e.create('molten_pressure_alloy').displayName('Molten Pressure Alloy')
 		.stillTexture('icosahedron:block/fluid/molten_pressure_alloy')
 		.flowingTexture('icosahedron:block/fluid/molten_pressure_alloy_flowing')
 })
 
 StartupEvents.registry('item', e => {
 	
-	//ore processing
-
-	//crude
+	//ores and ore related
+    //crude
     e.create('impure_copper_grit').texture('icosahedron:item/ore/crude/dirty_copper_grit')
 	e.create('copper_grit').texture('icosahedron:item/ore/crude/pure_copper_grit')
 	
@@ -90,12 +88,14 @@ StartupEvents.registry('item', e => {
 
 	e.create('icosahedron').texture('icosahedron:item/ore/gemstone/ico_gem')
 
-	//advanced	
-	/*e.create('clean_crushed_raw_nickel').texture('icosahedron:item/ore/crude/clean_crushed_raw_nickel')
-	e.create('ingot_mold_with_nickel').texture('icosahedron:item/ore/ingot_mold_with_nickel')
-
-	e.create('clean_crushed_raw_iron').texture('icosahedron:item/ore/crude/clean_crushed_raw_iron')
-	e.create('ingot_mold_with_iron').texture('icosahedron:item/ore/ingot_mold_with_iron')*/
+	//advanced
+	e.create('unprocessed_nickel').texture('icosahedron:item/ore/crude/unprocessed_nickel')
+	e.create('sulfur').texture('icosahedron:item/ore/sulfur').displayName('Crude Sulfur')
+	e.create('sphalerite_grit').texture('icosahedron:item/ore/advanced/salpherite_grit')
+	e.create('crushed_pentlandite').texture('icosahedron:item/ore/advanced/crushed_pentlandite')
+	e.create('crushed_hematite').texture('icosahedron:item/ore/advanced/crushed_hematite')
+	e.create('crushed_malachite').texture('icosahedron:item/ore/advanced/crushed_malachite')
+	e.create('crushed_bauxite').texture('icosahedron:item/ore/advanced/crushed_bauxite')
 
 	//complex
 	e.create('tungsten_crystal')
@@ -104,186 +104,167 @@ StartupEvents.registry('item', e => {
 	e.create('tungsten_dirty_dust')
 	e.create('tungsten_dust')
 
-	//components
-
-    //organics
-    e.create('kelp_sheet').texture('icosahedron:item/kelp_sheet')
-    e.create('kelp_strap').texture('icosahedron:item/kelp_strap')
-
-	//e.create('tunnel_flap').texture('icosahedron:item/component/funnel_flap')
-	e.create('sealant').texture('icosahedron:item/component/sealant')
-
-	e.create('dragon_sinew_mesh','createsifter:mesh').texture('icosahedron:item/dragon_sinew_mesh')
-	
-	//wood
-	e.create('wooden_slide').texture('icosahedron:item/component/wooden_slide')
-	e.create('tool_handle').texture('icosahedron:item/tool/tool_handle')
-	e.create('advanced_tool_handle').texture('icosahedron:item/tool/advanced_tool_handle')
-	
-	//stone
-	e.create('slag').texture('icosahedron:item/ore/slag')
-	e.create('soft_slag_dust').texture('icosahedron:item/ore/soft_slag_dust')
-	e.create('blast_brick_dust').texture('icosahedron:item/blast_brick_dust')
-	e.create('blast_brick').texture('icosahedron:item/component/blast_brick')
-	
-	e.create('unfired_ingot_mold').texture('icosahedron:item/unfired_ingot_mold')
+    //empty molds
+    e.create('unfired_ingot_mold').texture('icosahedron:item/unfired_ingot_mold')
 	e.create('ingot_mold').texture('icosahedron:item/ingot_mold')
 	
 	e.create('unfired_nugget_mold').texture('icosahedron:item/unfired_nugget_mold')
 	e.create('nugget_mold').texture('icosahedron:item/nugget_mold')
-	
-	//carbon
+
+    //metal molds
+    e.create('ingot_mold_with_iron').texture('icosahedron:item/ore/ingot_mold_with_iron')
+	e.create('ingot_mold_with_copper').texture('icosahedron:item/ore/ingot_mold_with_copper')
+	e.create('ingot_mold_with_nickel').texture('icosahedron:item/ore/ingot_mold_with_nickel')
+	e.create('ingot_mold_with_aluminum').texture('icosahedron:item/ore/ingot_mold_with_aluminum')
+    //alloy molds
+    e.create('ingot_mold_with_wrought_iron').texture('icosahedron:item/ore/ingot_mold_with_wrought_iron')
+	e.create('ingot_mold_with_pig_iron').texture('icosahedron:item/ore/ingot_mold_with_pig_iron')
+	e.create('ingot_mold_with_brass').texture('icosahedron:item/ore/ingot_mold_with_brass')
+
+    //carbon
 	e.create('coal_powder').texture('icosahedron:item/coal_powder').burnTime(1600)
 	//e.create('charcoal_powder').texture('icosahedron:item/charcoal_powder')
 
 	e.create('coal_coke').texture('icosahedron:item/coal_coke').burnTime(2400)
+
+    //refined
+    //tin
+    e.create('tin_ingot').texture('icosahedron:item/ore/refined/tin_ingot')
+    //nickel
+	e.create('nickel_ingot').texture('icosahedron:item/ore/refined/nickel_ingot')
+	e.create('nickel_nugget').texture('icosahedron:item/ore/refined/nickel_nugget')
+	e.create('enriched_nickel').texture('icosahedron:item/ore/refined/enriched_nickel')
+    //tungsten
+	e.create('tungsten_ingot').texture('icosahedron:item/ore/refined/tungsten_ingot')
+	e.create('tungsten_nugget').texture('icosahedron:item/ore/refined/tungsten_nugget')
+	e.create('tungsten_sheet').texture('icosahedron:item/ore/refined/tungsten_sheet')
+    //aluminum
+	e.create('aluminum_ingot').texture('icosahedron:item/ore/refined/aluminum_ingot')
+	e.create('aluminum_nugget').texture('icosahedron:item/ore/refined/aluminum_nugget')
+	e.create('aluminum_sheet').texture('icosahedron:item/ore/refined/aluminum_sheet')
+
+    //alloys
+    //andesite alloy
+    e.create('andesite_alloy_dust').texture('icosahedron:item/ore/alloy/andesite_alloy_dust')
+    //wrought/pig iron
+	e.create('pig_iron_ingot').texture('icosahedron:item/ore/alloy/pig_iron_ingot')
 	
-    //andesite
-    e.create('andesite_framing').texture('icosahedron:item/component/andesite_framing')
-    e.create('filter_framing').texture('icosahedron:item/andesite_filter_framing')
-    e.create('andesite_rod').texture('icosahedron:item/component/andesite_rod')
-    e.create('unfinished_andesite_filter').texture('icosahedron:item/component/unfinished_andesite_mesh')
+	e.create('wrought_iron_ingot').texture('icosahedron:item/ore/alloy/wrought_iron_ingot')
+	e.create('wrought_iron_sheet').texture('icosahedron:item/ore/alloy/wrought_iron_sheet')
+	e.create('wrought_iron_rod').texture('icosahedron:item/ore/alloy/wrought_iron_rod')
+	e.create('wrought_iron_spring').texture('icosahedron:item/ore/alloy/wrought_iron_spring')
+    //double/pressed iron
+    e.create('double_iron').texture('icosahedron:item/ore/alloy/double_iron')
+	e.create('pressed_iron').texture('icosahedron:item/ore/alloy/pressed_iron')
+    //carbon steel
+    e.create('hot_carbon_steel').texture('icosahedron:item/ore/alloy/hot_carbon_steel')
+    e.create('hot_carbon_steel_sheet').texture('icosahedron:item/ore/alloy/hot_carbon_steel_sheet')
+    e.create('hot_carbon_steel_rod').texture('icosahedron:item/ore/alloy/hot_carbon_steel_rod')
+	e.create('carbon_steel_ingot').texture('icosahedron:item/ore/alloy/carbon_steel_ingot')
+	e.create('carbon_steel_sheet').texture('icosahedron:item/ore/alloy/carbon_steel_sheet')
+	e.create('carbon_steel_rod').texture('icosahedron:item/ore/alloy/carbon_steel_rod')
+    //bronze
+	e.create('bronze_ingot').texture('icosahedron:item/ore/alloy/brass_ingot')
+    //pressure alloy
+    e.create('pressure_alloy').texture('icosahedron:item/ore/alloy/pressure_alloy')
+    e.create('compressed_iron_sheet').texture('icosahedron:item/component/alloy/compressed_alloy_sheet')
+    //coppronickel
+	e.create('cupronickel_ingot').texture('icosahedron:item/ore/alloy/cupronickel_ingot')
+	e.create('cupronickel_sheet').texture('icosahedron:item/ore/alloy/cupronickel_sheet')
+	e.create('cupronickel_rod').texture('icosahedron:item/ore/alloy/cupronickel_rod')
+	e.create('cupronickel_wire').texture('icosahedron:item/ore/alloy/cupronickel_wire')
+
+    //slag
+	e.create('slag').texture('icosahedron:item/ore/slag')
+	e.create('soft_slag_dust').texture('icosahedron:item/ore/soft_slag_dust')
+
+	//components
+    //andesite-tier (section 2)
+    e.create('wooden_slide').texture('icosahedron:item/component/andesite/wooden_slide')
+    //andesite related
+    e.create('andesite_framing').texture('icosahedron:item/component/andesite/andesite_framing')
+    e.create('filter_framing').texture('icosahedron:item/component/andesite/andesite_filter_framing')
+    e.create('andesite_rod').texture('icosahedron:item/component/andesite/andesite_rod')
+    e.create('unfinished_andesite_filter').texture('icosahedron:item/incomplete/unfinished_andesite_mesh')
 	
-	e.create('andesite_alloy_dust').texture('icosahedron:item/andesite_alloy_dust')
-	
+    //blast brick
+    e.create('blast_brick_dust').texture('icosahedron:item/component/andesite/blast_brick_dust')
+	e.create('blast_brick').texture('icosahedron:item/component/andesite/blast_brick')
+
+    //kelp
+    e.create('kelp_sheet').texture('icosahedron:item/component/andesite/kelp_sheet')
+    e.create('kelp_strap').texture('icosahedron:item/component/andesite/kelp_strap')
+    //e.create('tunnel_flap').texture('icosahedron:item/component/funnel_flap')
+
+    //metal
+	e.create('sawblade').texture('icosahedron:item/component/andesite/sawblade')
+	e.create('drill_bit').texture('icosahedron:item/component/andesite/drill_bit').displayName('Iron Drill')
+
 	//copper
-	e.create('copper_framing').texture('icosahedron:item/component/copper_framing')
-	e.create('enriched_copper').texture('icosahedron:item/component/enriched_copper')
+    e.create('sealant').texture('icosahedron:item/component/andesite/sealant')
+	e.create('copper_framing').texture('icosahedron:item/component/andesite/copper_framing')
 	
-	//brass
-	e.create('brass_framing').texture('icosahedron:item/component/brass_framing')
-	e.create('brass_filter_framing').texture('icosahedron:item/brass_filter_framing')
-	e.create('unfinished_brass_filter').texture('icosahedron:item/unfinished_brass_mesh')
-	
-	//metal
-	e.create('sawblade').texture('icosahedron:item/sawblade')
-	e.create('drill_bit').texture('icosahedron:item/drill_bit').displayName('Iron Drill')
+    //brass tier (section 3)
+    //brass related
+    e.create('brass_framing').texture('icosahedron:item/component/brass/brass_framing')
+	e.create('brass_filter_framing').texture('icosahedron:item/component/brass/brass_filter_framing')
+	e.create('unfinished_brass_filter').texture('icosahedron:item/component/brass/unfinished_brass_mesh')
+    //logic
+    e.create('logic_circuit').texture('icosahedron:item/component/brass/logic_circuit')
+	e.create('redstone_cable').texture('icosahedron:item/component/brass/redstone_cable')
 
-	e.create('pressure_alloy').texture('icosahedron:item/ore/pressure_alloy')
-	e.create('lubricated_bearing').texture('icosahedron:item/component/lubricated_bearing')
-	
-	//wrought/pig iron
-	e.create('pig_iron_ingot').texture('icosahedron:item/ore/pig_iron_ingot')
-	
-	e.create('wrought_iron_ingot').texture('icosahedron:item/ore/wrought_iron_ingot')
-	e.create('wrought_iron_sheet').texture('icosahedron:item/ore/wrought_iron_sheet')
-	e.create('wrought_iron_rod').texture('icosahedron:item/ore/wrought_iron_rod')
-	e.create('wrought_iron_spring').texture('icosahedron:item/ore/wrought_iron_spring')
-	
-	e.create('ingot_mold_with_wrought_iron').texture('icosahedron:item/ore/ingot_mold_with_wrought_iron')
-	e.create('ingot_mold_with_pig_iron').texture('icosahedron:item/ore/ingot_mold_with_pig_iron')
+    //pneumatic tier (section 4)
+    //compressed alloy
+    e.create('high_pressure_plate').displayName("High-Pressure Plate").texture('icosahedron:item/component/pneumatic/high_pressure_plate')
+	e.create('compressed_framing').texture('icosahedron:item/component/pneumatic/compressed_framing')
+    e.create('lubricated_bearing').texture('icosahedron:item/component/pneumatic/lubricated_bearing')
+    //tech
+    e.create('lcd_display').texture('icosahedron:item/component/pneumatic/lcd_display').displayName('LCD Screen')
+	e.create('oled_display').texture('icosahedron:item/component/pneumatic/oled_display').displayName('OLED Display')
+	e.create('laser_emitter').texture('icosahedron:item/component/pneumatic/laser_emitter')
 
-	//all molds
+    //oil tier (section 4)
+	e.create('plasticizer').texture('icosahedron:item/component/oil/plasticizer')
+	e.create('rubber').texture('icosahedron:item/component/oil/rubber')
+	e.create('polystyrene').texture('icosahedron:item/component/oil/polystyrene')
+    //mekanism tier (section 5)
+    e.create('dragon_sinew_mesh','createsifter:mesh').texture('icosahedron:item/mekanism/dragon_sinew_mesh')
 
-	e.create('ingot_mold_with_iron').texture('icosahedron:item/ore/ingot_mold_with_iron')
-	e.create('ingot_mold_with_copper').texture('icosahedron:item/ore/ingot_mold_with_copper')
-	e.create('ingot_mold_with_nickel').texture('icosahedron:item/ore/ingot_mold_with_nickel')
-	e.create('ingot_mold_with_aluminum').texture('icosahedron:item/ore/ingot_mold_with_aluminum')
-	e.create('ingot_mold_with_brass').texture('icosahedron:item/ore/ingot_mold_with_brass')
+    e.create('machine_plating').texture('icosahedron:item/component/mekanism/machine_plating')
+    e.create('steel_framing').texture('icosahedron:item/component/mekanism/steel_framing')
 
-	//carbon steel
-	e.create('carbon_steel_ingot').texture('icosahedron:item/ore/carbon_steel_ingot')
-	e.create('hot_carbon_steel').texture('icosahedron:item/ore/hot_carbon_steel')
-	e.create('carbon_steel_sheet').texture('icosahedron:item/ore/carbon_steel_sheet')
-	e.create('hot_carbon_steel_sheet').texture('icosahedron:item/ore/hot_carbon_steel_sheet')
-	e.create('carbon_steel_rod').texture('icosahedron:item/ore/carbon_steel_rod')
-	e.create('hot_carbon_steel_rod').texture('icosahedron:item/ore/hot_carbon_steel_rod')
+    e.create('sturdy_sheet_dust').texture('icosahedron:item/mekanism/sturdy_sheet_dust')
+    e.create('magnetized_iron').texture('icosahedron:item/component/mekanism/magnetized_iron')
 
-	e.create('double_iron').texture('icosahedron:item/ore/double_iron')
-	e.create('pressed_iron').texture('icosahedron:item/ore/pressed_iron')
+    e.create('andesite_pressure_alloy').texture('icosahedron:item/ore/mekanism/andesite_pressure_alloy')
+	e.create('diamond_plated_alloy').texture('icosahedron:item/ore/mekanism/diamond_plated_alloy')
+    e.create('refined_tungsten').texture('icosahedron:item/ore/mekanism/refined_tungsten')
 
-	//bronze
-	e.create('bronze_ingot').texture('icosahedron:item/ore/brass_ingot')
-
-	//aluminum
-	e.create('aluminum_ingot').texture('icosahedron:item/ore/aluminum_ingot')
-	e.create('aluminum_nugget').texture('icosahedron:item/ore/aluminum_nugget')
-	e.create('aluminum_sheet').texture('icosahedron:item/ore/aluminum_sheet')
-
-	//nickel
-	e.create('nickel_ingot').texture('icosahedron:item/ore/nickel_ingot')
-	e.create('nickel_nugget').texture('icosahedron:item/ore/nickel_nugget')
-	e.create('enriched_nickel').texture('icosahedron:item/ore/enriched_nickel')
-
-	//tin
-	e.create('tin_ingot').texture('icosahedron:item/ore/tin_ingot')
-	
-	//compressed
-	e.create('compressed_iron_sheet').texture('icosahedron:item/component/compressed_alloy_sheet')
-	e.create('high_pressure_plate').displayName("High-Pressure Plate").texture('icosahedron:item/component/high_pressure_plate')
-	e.create('compressed_framing').texture('icosahedron:item/component/compressed_framing')
-
-	e.create('unfinished_advanced_pressure_tube').texture('icosahedron:item/unfinished_advanced_pressure_tube')
-
-	//tungsten
-	e.create('tungsten_ingot').texture('icosahedron:item/ore/tungsten_ingot')
-	e.create('tungsten_nugget').texture('icosahedron:item/ore/tungsten_nugget')
-	e.create('tungsten_sheet').texture('icosahedron:item/ore/tungsten_sheet')
-
-	//coppronickel
-	e.create('cupronickel_ingot').texture('icosahedron:item/ore/cupronickel_ingot')
-	e.create('cupronickel_sheet').texture('icosahedron:item/ore/cupronickel_sheet')
-	e.create('cupronickel_rod').texture('icosahedron:item/ore/cupronickel_rod')
-	e.create('cupronickel_wire').texture('icosahedron:item/ore/cupronickel_wire')
-
-	//electric
-	e.create('logic_circuit').texture('icosahedron:item/component/logic_circuit')
-	e.create('redstone_cable').texture('icosahedron:item/component/redstone_cable')
-	e.create('lcd_display').texture('icosahedron:item/component/lcd_display').displayName('LCD Screen')
-	e.create('oled_display').texture('icosahedron:item/component/oled_display').displayName('OLED Display')
-	e.create('laser_emitter').texture('icosahedron:item/component/laser_emitter')
-
-	e.create('sturdy_sheet_dust').texture('icosahedron:item/sturdy_sheet_dust')
-    e.create('lithium_ion_cell').texture('icosahedron:item/component/lithium_ion_cell').displayName('Lithium-Ion Cell')
-    e.create('solid_state_cell').texture('icosahedron:item/component/solid_state_cell').displayName('Solid-State Cell')
+    
+    e.create('lithium_ion_cell').texture('icosahedron:item/component/mekanism/lithium_ion_cell').displayName('Lithium-Ion Cell')
+    e.create('solid_state_cell').texture('icosahedron:item/component/mekanism/solid_state_cell').displayName('Solid-State Cell')
+    e.create('celestite_ingot').texture('icosahedron:item/ore/celestite')
 
 	//magic
-	e.create('cadmium').texture('icosahedron:item/ore/cadmium')
-	
 	e.create('transmutation_catalyst').texture('icosahedron:item/magic/transmutation_catalyst')
 	e.create('transmutation_chip').texture('icosahedron:item/magic/transmutation_tablet')
 
 	e.create('cadmium_coated_ingot').texture('icosahedron:item/magic/cadmium_coated_ingot')
-	e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
+	//e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
 
 	e.create('ornate_gold').texture('icosahedron:item/magic/ornate_gold')
-	e.create('dripping_source_gem').texture('icosahedron:item/magic/dripping_source_gem')
+	/*e.create('dripping_source_gem').texture('icosahedron:item/magic/dripping_source_gem')
 	e.create('gilded_amethyst').texture('icosahedron:item/magic/gilded_amethyst')
 	e.create('glyph_backing').texture('icosahedron:item/magic/glyph_backing')
-	e.create('blank_essence').texture('icosahedron:item/magic/source_catcher')
-
-	//oil
-	e.create('plasticizer').texture('icosahedron:item/component/plasticizer')
-	e.create('rubber').texture('icosahedron:item/component/rubber')
-	e.create('polystyrene').texture('icosahedron:item/component/polystyrene')
-
-	//processed ores
-	e.create('unprocessed_nickel').texture('icosahedron:item/ore/unprocessed_nickel')
-	e.create('sulfur').texture('icosahedron:item/ore/sulfur').displayName('Crude Sulfur')
-	e.create('sphalerite_grit').texture('icosahedron:item/ore/salpherite_grit')
-	e.create('crushed_pentlandite').texture('icosahedron:item/ore/crushed_pentlandite')
-	e.create('crushed_hematite').texture('icosahedron:item/ore/crushed_hematite')
-	e.create('crushed_malachite').texture('icosahedron:item/ore/crushed_malachite')
-	e.create('crushed_bauxite').texture('icosahedron:item/ore/crushed_bauxite')
-	
-	//mekanism
-	e.create('andesite_pressure_alloy').texture('icosahedron:item/ore/andesite_pressure_alloy')
-	e.create('diamond_plated_alloy').texture('icosahedron:item/ore/diamond_plated_alloy')
-	e.create('steel_framing').texture('icosahedron:item/component/steel_framing')
-	
-	e.create('magnetized_iron').texture('icosahedron:item/component/magnetized_iron')
-	e.create('machine_plating').texture('icosahedron:item/component/machine_plating')
-
-	e.create('uninfused_basic_circuit').texture('icosahedron:item/component/uninfused_basic_circuit')
-	e.create('uninfused_advanced_circuit').texture('icosahedron:item/component/uninfused_advanced_circuit')
-	e.create('uninfused_elite_circuit').texture('icosahedron:item/component/uninfused_elite_circuit')
-	e.create('uninfused_ultimate_circuit').texture('icosahedron:item/component/uninfused_ultimate_circuit')
+	e.create('blank_essence').texture('icosahedron:item/magic/source_catcher')*/
 
 	//other
     e.create('heavyweight').texture('icosahedron:item/heavyweight')
 	e.create('supply_pass').displayName("Supply Cache Access Pass").texture('icosahedron:item/supply_pass')
 
 	//tools
+	e.create('tool_handle').texture('icosahedron:item/tool/tool_handle')
+	e.create('advanced_tool_handle').texture('icosahedron:item/tool/advanced_tool_handle')
 	
 	//simple
 	e.create('simple_file').maxDamage(48).texture('icosahedron:item/tool/simple_file')
@@ -333,29 +314,34 @@ StartupEvents.registry('item', e => {
 	e.create('compressed_iron_drill').texture('icosahedron:item/compressed_drill_bit')
 	e.create('netherite_drill').texture('icosahedron:item/netherite_drill')
 
-	//origin icons
-
 	//function
 	e.create('random_tool_alpha')
 
+    //incomplete
+	e.create('uninfused_basic_circuit').texture('icosahedron:item/incomplete/uninfused_basic_circuit')
+	e.create('uninfused_advanced_circuit').texture('icosahedron:item/incomplete/uninfused_advanced_circuit')
+	e.create('uninfused_elite_circuit').texture('icosahedron:item/incomplete/uninfused_elite_circuit')
+	e.create('uninfused_ultimate_circuit').texture('icosahedron:item/incomplete/uninfused_ultimate_circuit')
+
 	//sequenced assembly
 
-	e.create('incomplete_electron_tube', 'create:sequenced_assembly').texture('icosahedron:item/component/incomplete_electron_tube')
-	e.create('incomplete_andesite_filter', 'create:sequenced_assembly').texture('icosahedron:item/component/incomplete_andesite_mesh')
-	e.create('incomplete_fluid_pipe', 'create:sequenced_assembly').texture('icosahedron:item/component/incomplete_fluid_pipe')
-	e.create('incomplete_logic_circuit', 'create:sequenced_assembly').texture('icosahedron:item/component/incomplete_logic_circuit')
-	e.create('unprosessed_pressed_iron', 'create:sequenced_assembly').texture('icosahedron:item/unprocessed_pressed_iron')
-	e.create('incomplete_turbine_rotor', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_turbine_rotor')
-	e.create('incomplete_heat_pipe', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_heat_pipe')
-	e.create('incomplete_memory_stick', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_memory_stick')
-	e.create('incomplete_pcb', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_pcb').displayName('Incomplete PCB')
-	e.create('incomplete_logistics_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_memory_stick')
-	e.create('incomplete_pneumatic_cylinder', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_pneumatic_cylinder')
-	e.create('incomplete_capacitor', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_capacitor')
-	e.create('incomplete_machine_plating', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_machine_plating')
-	e.create('incomplete_electrolytic_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_electrolytic_core')
-	e.create('incomplete_lithium_ion_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_lithium_ion_cell')
-    e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete_solid_state_cell')
+	e.create('incomplete_electron_tube', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_electron_tube')
+	e.create('incomplete_andesite_filter', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_andesite_mesh')
+	e.create('incomplete_fluid_pipe', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_fluid_pipe')
+	e.create('incomplete_logic_circuit', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_logic_circuit')
+	e.create('unprosessed_pressed_iron', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/unprocessed_pressed_iron')
+	e.create('incomplete_turbine_rotor', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_turbine_rotor')
+	e.create('incomplete_heat_pipe', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_heat_pipe')
+	e.create('incomplete_memory_stick', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_memory_stick')
+	e.create('incomplete_pcb', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_pcb').displayName('Incomplete PCB')
+	e.create('incomplete_logistics_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_memory_stick')
+	e.create('incomplete_pneumatic_cylinder', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_pneumatic_cylinder')
+	e.create('incomplete_capacitor', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_capacitor')
+    e.create('unfinished_advanced_pressure_tube').texture('icosahedron:item/unfinished_advanced_pressure_tube')
+	e.create('incomplete_machine_plating', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_machine_plating')
+	e.create('incomplete_electrolytic_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_electrolytic_core')
+	e.create('incomplete_lithium_ion_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_lithium_ion_cell')
+    e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_solid_state_cell')
 
 	//reflection based
 	const $EventBuses = Java.loadClass('dev.architectury.platform.forge.EventBuses')

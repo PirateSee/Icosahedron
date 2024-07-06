@@ -4,7 +4,7 @@
     "type": "origins:modify_exhaustion",
     "modifier": {
         "operation": "multiply_base",
-        "value": 0.2,
+        "value": 0.15,
         "name": "Anemia Penalty"
     }
 }

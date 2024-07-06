@@ -1,0 +1,55 @@
+{
+    "name": "§a+ §r§nRebound",
+    "description": "Bounce out of high falls",
+    "type": "origins:action_on_land",
+    "entity_action": {
+        "type": "origins:if_else_list",
+        "actions": [
+            {
+                "condition": {
+                    "type": "origins:fall_distance",
+                    "comparison": ">=",
+                    "compare_to": 12
+                },
+                "action": {
+                    "type": "origins:add_velocity",
+                    "y": 1,
+                    "space": "world",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:fall_distance",
+                    "comparison": ">=",
+                    "compare_to": 8
+                },
+                "action": {
+                    "type": "origins:add_velocity",
+                    "y": 0.6,
+                    "space": "world",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                }
+            },
+            {
+                "condition": {
+                    "type": "origins:fall_distance",
+                    "comparison": ">=",
+                    "compare_to": 4
+                },
+                "action": {
+                    "type": "origins:add_velocity",
+                    "y": 0.4,
+                    "space": "world",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                }
+            }
+        ]
+    }
+}

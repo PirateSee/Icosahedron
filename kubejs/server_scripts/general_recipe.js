@@ -55,27 +55,34 @@ ServerEvents.recipes(e => {
 				"item": 'kubejs:iron_grit',
 				"chance": 0.04
 			},
-			{
-				"item": 'kubejs:cadmium',
-				"chance": 0.05
-			},
+            {
+                "item": 'mna:vinteum_dust',
+                "chance": 0.05
+            },
 			{
 				"item": 'immersive_weathering:sand_layer_block',
+				"chance": 0.6
+			},
+            {
+				"item": 'minecraft:flint',
 				"chance": 0.8
 			},
 			{
 				"item": 'create:experience_nugget',
-				"chance": 0.1
+				"chance": 0.05
 			}
 		],
 		"processingTime": 400,
 		"minimumSpeed": 32.0
 	})
-	/*e.custom({
+    e.recipes.create.milling('3x kubejs:soft_slag_dust', 'kubejs:slag')
+    e.recipes.create.crushing([Item.of('minecraft:quartz').withChance(0.2), Item.of('mna:vinteum_dust').withChance(0.1), Item.of('createaddition:electrum_nugget').withChance(0.2), "minecraft:flint", Item.of('create:experience_nugget').withChance(0.1)], 'kubejs:slag')
+	e.custom({
 		"type":"vintageimprovements:centrifugation",
 		"ingredients": [ 
 			{
-				"item": 'kubejs:slag',
+				"fluid": 'kubejs:slag_runoff',
+                "amount": 1000
 			}
 		],
 		"results": [ 
@@ -84,10 +91,21 @@ ServerEvents.recipes(e => {
 			},
 			{
 				"item": 'minecraft:flint'
-			}
+			},
+            {
+                "item": 'supplementaries:ash'
+            },
+            {
+                "fluid": "kubejs:sulfur",
+                "amount": 100
+            },
+            {
+                "fluid": "kubejs:coal_tar",
+                "amount": 100
+            }
 		],
-		"processingTime": 1000
-	})*/
+		"processingTime": 1500
+	})
 
 	e.recipes.create.compacting('blocksyouneed_luna:soot', 'immersive_weathering:soot')
 

@@ -37,6 +37,10 @@
 		"icosahedron_origins:spark/no_fire_kill" = true
 		"icosahedron_origins:spark/waterlogged_slow" = true
 		"icosahedron_origins:spark/quickfire" = true
+		"icosahedron_origins:spark/flimsy_swing" = true
+		"icosahedron_origins:mecha/shock_absorber" = true
+		"icosahedron_origins:mecha/shock_absorber_effect" = true
+		"icosahedron_origins:spark/unfireresist_enchantment" = true
 
 	[origins."origins:feline"]
 		enabled = true
@@ -110,6 +114,8 @@
 		"icosahedron_origins:fox/superhop_leap" = true
 		"icosahedron_origins:fox/superhop_fov" = true
 		"icosahedron_origins:fox/superhop_release" = true
+		"icosahedron_origins:fox/unaquatic" = true
+		"icosahedron_origins:fox/unaquatic_slow" = true
 
 	[origins."icosahedron_origins:mecha"]
 		enabled = true
@@ -139,6 +145,8 @@
 		"icosahedron_origins:mecha/sturdy_deny" = true
 		"icosahedron_origins:mecha/sturdy_heal" = true
 		"icosahedron_origins:mecha/sturdy_heal_fast" = true
+		"icosahedron_origins:mecha/momentum" = true
+		"icosahedron_origins:mecha/conductive" = true
 
 	[origins."origins:merling"]
 		enabled = true
@@ -238,6 +246,12 @@
 		enabled = true
 		"icosahedron_origins:plant/herbicide" = true
 		"icosahedron_origins:plant/herbicide_fire" = true
+		"icosahedron_origins:plant/grapplevine" = true
+		"icosahedron_origins:plant/photovolt" = true
+		"icosahedron_origins:plant/plantspeed" = true
+		"icosahedron_origins:plant/wilting" = true
+		"icosahedron_origins:plant/vineshot" = true
+		"icosahedron_origins:plant/leaf_phasing" = true
 
 	[origins."icosahedron_origins:seaborn"]
 		enabled = true
@@ -278,6 +292,9 @@
 		"icosahedron_origins:guard/buckle_lose" = true
 		"icosahedron_origins:guard/buckle_resource" = true
 		"icosahedron_origins:guard/buckle_slow" = true
+		"icosahedron_origins:doll/fallbounce" = true
+		"icosahedron_origins:doll/fall_immune" = true
+		"icosahedron_origins:doll/undead" = true
 
 	[origins."icosahedron_origins:spirit"]
 		enabled = true
@@ -285,4 +302,7 @@
 		"icosahedron_origins:spirit/float_hover" = true
 		"icosahedron_origins:spirit/float_jump" = true
 		"icosahedron_origins:spirit/blink" = true
+		"icosahedron_origins:doll/fall_immune" = true
+		"icosahedron_origins:spirit/veil" = true
+		"icosahedron_origins:spirit/solar_weakness" = true
 

@@ -2,13 +2,29 @@
   "dependencies": [
     "Blazing Heat"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_brass_ingot": {
+      "type": "heracles:item",
+      "item": "create:brass_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Top Brass ---</h2>",
+      "Gold ol' /b/Brass/b/. A /6/valuable alloy/6/ going forward.",
+      "",
+      "/b/Brass/b/ is made by /6/mixing/6/ over a /6/Blaze Burner-heated/6/ basin. One part /b/zinc/b/, two parts /b/copper/b/.",
+      "",
+      "/b/Brass/b/ is used for a variety of /b/high-tier kinetic machinery/b/. Worth getting a lot of it.",
+      "<hr/>",
+      "<task task=\"get_brass_ingot\" quest=\"Big Brass\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [

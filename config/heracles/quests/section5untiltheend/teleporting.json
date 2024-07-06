@@ -1,7 +1,6 @@
 {
   "dependencies": [
-    "antimatter",
-    "anti-tech"
+    "antimatter"
   ],
   "tasks": {},
   "rewards": {},
@@ -15,7 +14,7 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          480,
+          510,
           0
         ]
       }

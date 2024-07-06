@@ -14,7 +14,7 @@ ServerEvents.recipes(e => {
             "item": "kubejs:compressed_iron_sheet"
           }
         ]
-    })
+    }).id("ico:compressed_iron_sheet")
 
     e.custom({
     "type": "pneumaticcraft:pressure_chamber",
@@ -32,7 +32,7 @@ ServerEvents.recipes(e => {
         "item": "kubejs:high_pressure_plate"
         }
     ]
-    })
+    }).id("ico:high_pressure_plate")
 
     e.shaped('kubejs:compressed_framing', [
 		'AIT', 
@@ -65,7 +65,7 @@ ServerEvents.recipes(e => {
     "temperature": {
         "min_temp": 473
       }
-    })
+    }).id("ico:lubricated_bearing")
 
     //plastic
 
@@ -89,13 +89,14 @@ ServerEvents.recipes(e => {
     "temperature": {
         "min_temp": 473
         }
-    })
+    }).id("ico:plasticizer")
 
-    e.recipes.create.mixing('64x minecraft:brick', ['kubejs:plasticizer', '4x minecraft:clay'])
-    e.recipes.create.mixing('24x minecraft:white_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/white'])
+    e.recipes.create.mixing('32 minecraft:brick', ['kubejs:plasticizer', '4x minecraft:clay']).id("ico:plasticizer_brick")
+    e.recipes.create.mixing('24x minecraft:white_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/white']).id("ico:plasticizer_concrete")
 
-    e.recipes.create.mixing('minecraft:blue_ice', [Fluid.of('minecraft:water', 500), Fluid.of('kubejs:ethylene', 50)])
-    e.recipes.create.mixing('minecraft:packed_ice', [Fluid.of('minecraft:water', 500), Fluid.of('kubejs:ethylene', 10)])
+    e.recipes.create.mixing('minecraft:blue_ice', [Fluid.of('minecraft:water', 500), Fluid.of('kubejs:ethylene', 50)]).id("ico:ethylene_blue_ice")
+    e.recipes.create.mixing('minecraft:packed_ice', [Fluid.of('minecraft:water', 500), Fluid.of('kubejs:ethylene', 10)]).id("ico:ethylene_packed_ice")
+    e.recipes.create.mixing('minecraft:ice', [Fluid.of('minecraft:water', 250), Fluid.of('kubejs:ethylene', 1)]).id("ico:ethylene_ice")
 
     e.custom({
         "type": "pneumaticcraft:thermo_plant",
@@ -106,7 +107,7 @@ ServerEvents.recipes(e => {
         },
         "fluid_output": {
             "type": "pneumaticcraft:fluid",
-            "amount": 50,
+            "amount": 25,
             "fluid": "kubejs:styrene"
         },
         "pressure": 4.0,
@@ -114,7 +115,7 @@ ServerEvents.recipes(e => {
         "temperature": {
             "min_temp": 473
         }
-    })
+    }).id("ico:styrene")
 
     e.custom({
         "type": "pneumaticcraft:fluid_mixer",
@@ -123,21 +124,21 @@ ServerEvents.recipes(e => {
         },
         "input1": {
           "type": "pneumaticcraft:fluid",
-          "amount": 500,
+          "amount": 750,
           "fluid": "kubejs:styrene"
         },
         "input2": {
           "type": "pneumaticcraft:fluid",
-          "amount": 450,
+          "amount": 600,
           "fluid": 'kubejs:coal_tar'
         },
         "pressure": 3.5,
         "time": 400
-    })
+    }).id("ico:rubber")
 
-    e.recipes.create.compacting('kubejs:polystyrene', [Fluid.of('kubejs:styrene', 1000), {fluidTag: 'forge:plantoil', amount: 200}]).heated()
+    e.recipes.create.compacting('kubejs:polystyrene', [Fluid.of('kubejs:styrene', 500), {fluidTag: 'forge:plantoil', amount: 200}]).heated().id("ico:polystyrene")
 
-    e.recipes.create.compacting('32x kubejs:sealant', 'kubejs:rubber').heated()
+    e.recipes.create.compacting('32x kubejs:sealant', 'kubejs:rubber').heated().id("ico:rubber_sealant")
 
     e.recipes.create.mechanical_crafting('kubejs:laser_emitter', [
       'RRGUL',
@@ -149,7 +150,7 @@ ServerEvents.recipes(e => {
           U: 'kubejs:rubber',
           G: 'kubejs:tempered_glass',
           W: 'createaddition:copper_spool'
-    })
+    }).id("ico:laser_emitter")
 
     e.custom({
       "type":"createaddition:charging",
@@ -163,5 +164,5 @@ ServerEvents.recipes(e => {
       },
       "energy": 2000,
       "maxChargeRate": 200
-    })
+    }).id("ico:magnetized_iron")
 })

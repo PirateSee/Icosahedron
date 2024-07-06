@@ -15,6 +15,7 @@
         "icosahedron_origins:mecha/shield/glow_increase",
         "icosahedron_origins:mecha/shield/glow_res",
         "icosahedron_origins:mecha/shield/resistance",
+        "icosahedron_origins:mecha/momentum",
         "icosahedron_origins:mecha/overcharge",
         "icosahedron_origins:mecha/overcharge_damage",
         "icosahedron_origins:mecha/overcharge_mine",
@@ -25,7 +26,8 @@
         "icosahedron_origins:mecha/hydrophobia",
         "icosahedron_origins:mecha/hungry",
         "icosahedron_origins:mecha/shock_absorber",
-        "icosahedron_origins:mecha/shock_absorber_effect"
+        "icosahedron_origins:mecha/shock_absorber_effect",
+        "icosahedron_origins:mecha/conductive"
     ],
     "impact": 3
 }

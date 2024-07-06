@@ -229,4 +229,6 @@ ServerEvents.recipes(e => {
 
 	e.recipes.create.deploying('minecraft:spectral_arrow', ['minecraft:arrow', 'minecraft:glowstone_dust'])
 	e.recipes.create.deploying('quark:torch_arrow', ['minecraft:arrow', 'minecraft:torch'])
+
+    e.recipes.create.splashing('quark:limestone', 'create:limestone')
 })

@@ -4,7 +4,7 @@
     "badges": [
         {
             "type": "origins:tooltip",
-            "text": "Lasts 20 seconds, duration decreased when taking damage, 2 minute cooldown",
+            "text": "Lasts 20 seconds, duration decreased when taking damage, 1.5 minute cooldown",
             "sprite": "origins:textures/gui/badge/info.png"
         },
         {
@@ -19,7 +19,7 @@
         "resource": "icosahedron_origins:mecha/shield/duration",
         "value": 20
     },
-    "cooldown": 2400,
+    "cooldown": 1800,
     "hud_render": {
         "should_render": true,
         "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
@@ -28,7 +28,7 @@
             "type": "origins:resource",
             "resource": "icosahedron_origins:mecha/shield/activate",
             "comparison": "<",
-            "compare_to": 2380
+            "compare_to": 1780
         }
     },
     "key": {

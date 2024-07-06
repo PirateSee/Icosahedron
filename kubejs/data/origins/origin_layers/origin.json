@@ -4,11 +4,11 @@
         "icosahedron_origins:standard_bearer",
         "icosahedron_origins:fox",
         "icosahedron_origins:spark",
-        "icosahedron_origins:infection",
         "icosahedron_origins:gator",
         "icosahedron_origins:mecha",
         "icosahedron_origins:doll",
-        "icosahedron_origins:spirit"
+        "icosahedron_origins:spirit",
+        "icosahedron_origins:plant"
     ],
     "enabled": true
 }

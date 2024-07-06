@@ -23,7 +23,7 @@
         "actions": [
             {
                 "type": "origins:exhaust",
-                "amount": 0.03
+                "amount": 0.04
             },
             {
                 "type": "origins:change_resource",

@@ -3,13 +3,31 @@
     "Dragon Filtering",
     "high-strength plates"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_metallurgic_infuser": {
+      "type": "heracles:item",
+      "item": "mekanism:metallurgic_infuser",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Mekanized ---</h2>",
+      "/b/Mekanism/b/. Now here's where things get intresting.",
+      "",
+      "/b/Mekanism/b/ brings with it /b/electric machinery/b/ and /6/mass production/6/. Be prepared for things to get a lot more expensive here on out, and to be dealing with fairly high numbers.",
+      "",
+      "To start, you'll need to make the /b/Metallurgic Infuser/b/. This machine takes /b/electricity/b/, an /b/item/b/, and an /b/infusion material/b/ to produce infused materials. Items can be /6/slotted in the infuse slot to convert/6/ to an /b/infuse type/b/.",
+      "",
+      "The main resources you'll want out of this are /b/Steel/b/ and /b/Cupronickel/b/.",
+      "<hr/>",
+      "<task task=\"get_metallurgic_infuser\" quest=\"mekanized\"/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
@@ -31,10 +49,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

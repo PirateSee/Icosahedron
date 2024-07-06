@@ -19,7 +19,7 @@
             {
                 "type": "origins:set_resource",
                 "resource": "icosahedron_origins:mecha/shield/activate",
-                "value": 2379
+                "value": 1779
             }
         ]
     }

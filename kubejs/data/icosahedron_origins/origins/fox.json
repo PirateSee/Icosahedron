@@ -15,7 +15,9 @@
         "icosahedron_origins:fox/shove",
         "icosahedron_origins:fox/cracked_plate",
         "icosahedron_origins:fox/cracked_toughness",
-        "icosahedron_origins:fox/flimsy_stance"
+        "icosahedron_origins:fox/flimsy_stance",
+        "icosahedron_origins:fox/unaquatic",
+        "icosahedron_origins:fox/unaquatic_slow"
     ],
     "impact": 1
 }

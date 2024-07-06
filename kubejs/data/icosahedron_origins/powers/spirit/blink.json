@@ -20,6 +20,12 @@
                 "offset_y": 1
             },
             {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.enderman.teleport",
+                "volume": 0.8,
+                "pitch": 1
+            },
+            {
                 "type": "origins:execute_command",
                 "command": "tp ^ ^ ^8"
             },
@@ -36,6 +42,16 @@
                 "count": 10,
                 "speed": 0,
                 "offset_y": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.enderman.teleport",
+                "volume": 1,
+                "pitch": 1.1
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 0.8
             }
         ]
     },

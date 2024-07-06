@@ -72,6 +72,9 @@ ServerEvents.recipes(e => {
     e.remove({id:'pneumaticcraft:pneumatic_cylinder'})
     e.remove({id:'pneumaticcraft:assembly/unassembled_pcb'})
     e.remove({id:'pneumaticcraft:thermo_plant/upgrade_matrix'})
+
+    e.remove({id:'pneumaticcraft:thermo_plant/lubricant_from_biodiesel'})
+    e.remove({id:'pneumaticcraft:thermo_plant/lubricant_from_diesel'})
     /*e.remove({id:'pneumaticcraft:assembly/advanced_pressure_tube'})
     e.remove({id:'pneumaticcraft:assembly/pressure_chamber_valve'})*/
 
@@ -90,6 +93,7 @@ ServerEvents.recipes(e => {
     e.remove({id:'pneumaticcraft:thermo_plant/ethanol_from_sweet_berries'})
 
     e.remove({id:'createaddition:compacting/seed_oil'})
+    e.remove({id:'craeatedieselgenerators:compacting/plant_oil'})
 
     e.remove({id:'pneumaticcraft:pressure_chamber/empty_pcb'})
     e.remove({id:'pneumaticcraft:pressure_chamber/etching_acid'})
@@ -660,7 +664,7 @@ ServerEvents.recipes(e => {
           "min_temp": 273,
           "max_temp": 323
         }
-    })
+    }).id("ico:upgrade_matrix")
 
     e.custom({
       "type": "pneumaticcraft:thermo_plant",
@@ -668,7 +672,7 @@ ServerEvents.recipes(e => {
       "exothermic": false,
       "fluid_input": {
         "type": "pneumaticcraft:fluid",
-        "amount": 200,
+        "amount": 250,
         "fluid": "kubejs:ethylene"
       },
       "item_input": {
@@ -684,7 +688,7 @@ ServerEvents.recipes(e => {
       "temperature": {
           "min_temp": 473
         }
-    })
+    }).id("ico:dirty_plastic")
 
     e.custom({
       "type": "estrogen:centrifuging",
@@ -700,7 +704,55 @@ ServerEvents.recipes(e => {
           "fluid": "pneumaticcraft:plastic"
         }
       ]
-    })
+    }).id("ico:plastic")
+
+    e.custom({
+        "type": "pneumaticcraft:thermo_plant",
+        "air_use_multiplier": 1,
+        "exothermic": false,
+        "fluid_input": {
+            "type": "pneumaticcraft:fluid",
+            "amount": 1500,
+            "tag": "forge:biodiesel"
+        },
+        "item_input": {
+            "item": "minecraft:redstone"
+        },
+        "fluid_output": {
+            "type": "pneumaticcraft:fluid",
+            "amount": 500,
+            "fluid": "pneumaticcraft:lubricant"
+        },
+        "pressure": 1.0,
+        "speed": 0.5,
+        "temperature": {
+            "min_temp": 473
+        }
+    }).id("ico:lubericant_from_biodiesel")
+
+    e.custom({
+        "type": "pneumaticcraft:thermo_plant",
+        "air_use_multiplier": 1,
+        "exothermic": false,
+        "fluid_input": {
+            "type": "pneumaticcraft:fluid",
+            "amount": 1500,
+            "tag": "forge:diesel"
+        },
+        "item_input": {
+            "item": "minecraft:redstone"
+        },
+        "fluid_output": {
+            "type": "pneumaticcraft:fluid",
+            "amount": 500,
+            "fluid": "pneumaticcraft:lubricant"
+        },
+        "pressure": 1.0,
+        "speed": 0.5,
+        "temperature": {
+            "min_temp": 473
+        }
+    }).id("ico:lubericant_from_diesel")
 
     //equipment
 
@@ -779,17 +831,17 @@ ServerEvents.recipes(e => {
         },
         {
           "fluid": "pneumaticcraft:yeast_culture",
-          "amount": 100
+          "amount": 150
         }
       ],
       "processingTime": 400,
       "results": [
         {
           "fluid": "createdieselgenerators:ethanol",
-          "amount": 200
+          "amount": 100
         }
       ]
-    })
+    }).id("ico:ethanol_from_frementable")
 
     e.custom({
       "type": "createdieselgenerators:basin_fermenting",
@@ -802,7 +854,7 @@ ServerEvents.recipes(e => {
         },
         {
           "fluid": "pneumaticcraft:yeast_culture",
-          "amount": 50
+          "amount": 150
         }
       ],
       "processingTime": 200,
@@ -815,45 +867,43 @@ ServerEvents.recipes(e => {
           "item": 'minecraft:fermented_spider_eye'
         }
       ]
-    })
+    }).id("ico:ethanol_from_spider_eye")
 
     e.custom({
     "type": "pneumaticcraft:thermo_plant",
-    "air_use_multiplier": 1,
+    "air_use_multiplier": 0.8,
     "exothermic": false,
     "item_input": {
         "tag": "forge:seeds"
     },
     "fluid_output": {
-      "amount": 50,
+      "amount": 15,
       "fluid": 'createaddition:seed_oil'
     },
     "pressure": 2.0,
-    "speed": 0.75,
     "temperature": {
         "min_temp": 333,
-        "max_temp": 373
+        "max_temp": 473
       }
-    })
+    }).id("ico:seed_oil")
 
     e.custom({
       "type": "pneumaticcraft:thermo_plant",
-      "air_use_multiplier": 1,
+      "air_use_multiplier": 0.8,
       "exothermic": false,
       "item_input": {
           "tag": "forge:crops"
       },
       "fluid_output": {
-        "amount": 50,
+        "amount": 25,
         "fluid": 'createdieselgenerators:plant_oil'
       },
       "pressure": 2.0,
-      "speed": 0.75,
       "temperature": {
           "min_temp": 333,
-          "max_temp": 373
+          "max_temp": 473
         }
-      })
+      }).id("ico:plant_oil")
 
     e.custom({
 		"type": "pneumaticcraft:pressure_chamber",
@@ -886,17 +936,17 @@ ServerEvents.recipes(e => {
 			"item": "pneumaticcraft:empty_pcb",
 			}
 		]
-	})
+	}).id("ico:empty_pcb")
 
   e.custom({
     "type": "pneumaticcraft:fluid_mixer",
     "fluid_output": {
-      "amount": 50,
+      "amount": 100,
       "fluid": "pneumaticcraft:etching_acid"
     },
     "input1": {
       "type": "pneumaticcraft:fluid",
-      "amount": 25,
+      "amount": 75,
       "fluid": "pneumaticcraft:plastic"
     },
     "input2": {
@@ -906,7 +956,7 @@ ServerEvents.recipes(e => {
     },
     "pressure": 2.0,
     "time": 200
-  })
+  }).id("ico:etching_acid")
 
   e.custom({
     "type": "pneumaticcraft:refinery",
@@ -929,7 +979,7 @@ ServerEvents.recipes(e => {
       "min_temp": 423,
       "max_temp": 673
     }
-  })
+  }).id("ico:oil_refine_2")
 
   e.custom({
     "type": "pneumaticcraft:refinery",
@@ -956,7 +1006,7 @@ ServerEvents.recipes(e => {
       "min_temp": 423,
       "max_temp": 673
     }
-  })
+  }).id("ico:oil_refine_3")
 
   e.custom({
     "type": "pneumaticcraft:refinery",
@@ -987,7 +1037,7 @@ ServerEvents.recipes(e => {
       "min_temp": 423,
       "max_temp": 673
     }
-  })
+  }).id("ico:oil_refine_4")
 
   e.custom({
     "type": "pneumaticcraft:refinery",
@@ -1014,7 +1064,7 @@ ServerEvents.recipes(e => {
       "min_temp": 473,
       "max_temp": 673
     }
-  })
+  }).id("ico:ethylene")
 
   //computer
 
@@ -1034,7 +1084,7 @@ ServerEvents.recipes(e => {
       "GIG"],
     "result": {"item": "computercraft:computer_advanced"},
     "show_notification": true
-  })
+  }).id("ico:computer_advanced")
 
   e.shaped('2x computercraft:monitor_advanced', [
 		'RST',

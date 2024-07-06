@@ -1,0 +1,19 @@
+{
+    "name": "§c- §r§nSolar Weakness",
+    "description": "Being out in the sun makes you weak",
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": -1,
+    "max_stacks": 5,
+    "duration_per_stack": 20,
+    "tick_rate": 10,
+    "effect": {
+        "effect": "minecraft:weakness",
+        "duration": 20,
+        "amplifier": 0,
+        "show_particles": true,
+        "show_icon": true
+    }
+}

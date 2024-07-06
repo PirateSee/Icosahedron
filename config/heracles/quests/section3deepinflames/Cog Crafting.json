@@ -16,7 +16,16 @@
       "text": ""
     },
     "description": [
-      ""
+      "<h2>- Cog Crafting ---</h2>",
+      "Tired of /6/crafting with your hands/6/? Need a bigger crafting grid?",
+      "",
+      "/b/Mechanical Crafters/b/ can automate any /6/Shaped Crafting Recipe/6/. Place /6/nine of them in a grid/6/, supply power, and slot in the items. /b/Mechanical Crafters/b/ can be automated by inputting with /b/Hoppers/b/ or /b/Funnels/b/ and placing a depot or belt by the output side.",
+      "",
+      "/b/Mechanical Crafters/b/ can also make /6/grids larger/6/ than normal, allowing them to process /6/Mechanical Crafting recipes/6/, which involve the bigger crafting grid. These work the same as /6/Automated Shaped Crafting/6/, just with more slots.",
+      "",
+      "There are a lot of other quirks and features, give them a /6/ponder/6/ for a more detailed overview.",
+      "<hr/>",
+      "<task task=\"get_mechanical_crafter\" quest=\"Cog Crafting\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

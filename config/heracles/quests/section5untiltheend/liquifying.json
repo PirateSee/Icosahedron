@@ -1,5 +1,7 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "chemical manipulation"
+  ],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -8,30 +10,31 @@
     },
     "description": [],
     "groups": {
-      "Section 4: Under Pressure": {
+      "Section 5: Until the End": {
         "position": [
-          90,
-          175
+          180,
+          90
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "kubejs:slag_runoff_bucket",
+        "id": "mekanism:rotary_condensentrator",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Runaway Slag Condensing"
+      "translate": "Liquifying"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

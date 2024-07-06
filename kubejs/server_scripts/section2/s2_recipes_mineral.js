@@ -71,7 +71,7 @@ ServerEvents.recipes(e => {
 			"count": 1
 		},
 		{
-			"item": 'kubejs:cadmium',
+			"item": 'mna:vinteum_dust',
 			"chance": 0.05
 		},
 		{

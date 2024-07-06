@@ -1,0 +1,11 @@
+{
+    "name": "§a+ §r§nLeaf Phasing",
+    "description": "Move through leaves",
+    "type": "origins:phasing",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:leaves"
+    },
+    "render_type": "none",
+    "view_distance": 10
+}

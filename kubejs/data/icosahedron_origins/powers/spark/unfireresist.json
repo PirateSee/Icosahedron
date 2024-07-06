@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nEverburn",
-    "description": "Fire resistance doesn't work",
+    "description": "Fire resistance or protection doesn't work",
     "type": "origins:effect_immunity",
     "effect": "minecraft:fire_resistance"
 }

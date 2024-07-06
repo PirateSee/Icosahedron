@@ -1,0 +1,29 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:in_rain"
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">=",
+                "compare_to": 0.1
+            }
+        ]
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 15,
+    "tick_rate": 10,
+    "effect": {
+        "effect": "minecraft:slowness",
+        "duration": 15,
+        "amplifier": 0,
+        "show_particles": true,
+        "show_icon": true
+    }
+}

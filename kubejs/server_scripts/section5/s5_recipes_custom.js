@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
 		],
 		"processingTime": 900,
 		"minimumSpeed": 128.0
-	})
+	}).id("sift_crushed_end_stone")
 
 	e.custom({
         "type": "mekanism:infusion_conversion",
@@ -116,9 +116,9 @@ ServerEvents.recipes(e => {
 			"item": "kubejs:cupronickel_rod",
 			"count": 2
 		}
-	})
+	}).id("cupronickel_rod")
 
-	e.recipes.create.pressing('kubejs:cupronickel_sheet', 'kubejs:cupronickel_ingot')
+	e.recipes.create.pressing('kubejs:cupronickel_sheet', 'kubejs:cupronickel_ingot').id("cupronickel_sheet")
 
 	e.custom({
 		"type":"createaddition:rolling",
@@ -129,7 +129,7 @@ ServerEvents.recipes(e => {
 			"item": "kubejs:cupronickel_wire",
 			"count": 2
 		}
-	})
+	}).id("cupronickel_wire")
 
 	e.shaped('kubejs:steel_framing', [
 		'AIT', 
@@ -140,20 +140,18 @@ ServerEvents.recipes(e => {
 		T: '#ico:tool/hammer'
 	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:steel_framing')
 
-	e.recipes.create.deploying('kubejs:uninfused_basic_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:ingot_osmium'])
+	e.recipes.create.deploying('kubejs:uninfused_basic_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:ingot_osmium']).id("ico:uninfused_basic_circuit")
 
 	e.custom({
 		"type": "pneumaticcraft:pressure_chamber",
 		"inputs": [
 			{
-				"type": "pneumaticcraft:stacked_item",
 				"item": "mekanism:basic_control_circuit",
-				"count": 2
 			},
 			{
 				"type": "pneumaticcraft:stacked_item",
 				"item": "mekanism:alloy_infused",
-				"count": 4
+				"count": 2
 			}
 		],
 		"pressure": 3,
@@ -162,7 +160,7 @@ ServerEvents.recipes(e => {
 		  	"item": "kubejs:uninfused_advanced_circuit"
 			}
 		]
-	})
+	}).id("ico:uninfused_advanced_circuit")
 
 	e.custom({
 		"type": "pneumaticcraft:pressure_chamber",
@@ -173,7 +171,7 @@ ServerEvents.recipes(e => {
 			{
 				"type": "pneumaticcraft:stacked_item",
 				"item": "mekanism:alloy_reinforced",
-				"count": 4
+				"count": 2
 			}
 		],
 		"pressure": 3,
@@ -182,7 +180,7 @@ ServerEvents.recipes(e => {
 		  	"item": "kubejs:uninfused_elite_circuit"
 			}
 		]
-	})
+	}).id("ico:uninfused_elite_circuit")
 
 	e.custom({
 		"type": "pneumaticcraft:pressure_chamber",
@@ -202,7 +200,7 @@ ServerEvents.recipes(e => {
 		  	"item": "kubejs:uninfused_ultimate_circuit"
 			}
 		]
-	})
+	}).id("ico:uninfused_ultimate_circuit")
 
 	let inter = 'kubejs:incomplete_machine_plating'
 	e.recipes.createSequencedAssembly([
@@ -223,12 +221,12 @@ ServerEvents.recipes(e => {
             }
         },
         "output": {
-            "count": 1,
+            "count": 2,
             "item": "kubejs:sturdy_sheet_dust"
         }
-    })
+    }).id("ico:sturdy_sheet_dust")
 
-	e.recipes.create.compacting('kubejs:andesite_pressure_alloy', ['3x create:andesite_alloy', Fluid.of('kubejs:molten_pressure_alloy', 100)]).superheated()
+	e.recipes.create.compacting('kubejs:andesite_pressure_alloy', ['3x create:andesite_alloy', Fluid.of('kubejs:molten_pressure_alloy', 100)]).superheated().id("andesite_pressure_alloy")
 
 	e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -257,5 +255,5 @@ ServerEvents.recipes(e => {
 		e.recipes.createDeploying(inter, [inter, 'kubejs:cupronickel_sheet']),
         e.recipes.createDeploying(inter, [inter, 'create:golden_sheet']),
         e.recipes.createPressing(inter, inter),
-	]).transitionalItem(inter).loops(2)
+	]).transitionalItem(inter).loops(2).id("lithium_ion_cell")
 })

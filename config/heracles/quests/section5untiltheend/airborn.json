@@ -13,7 +13,7 @@
       "Section 5: Until the End": {
         "position": [
           210,
-          60
+          -60
         ]
       }
     },
@@ -27,14 +27,15 @@
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Airborn"
+      "translate": "Airborne"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

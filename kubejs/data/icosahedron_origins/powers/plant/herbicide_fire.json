@@ -7,6 +7,6 @@
     "modifier": {
         "operation": "multiply_base",
         "value": 1,
-        "name": "Smoked Bonus"
+        "name": "Herbicide Penalty"
     }
 }

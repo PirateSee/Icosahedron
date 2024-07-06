@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "additionalentityattributes:water_speed",
+        "operation": "multiply_base",
+        "value": -0.15,
+        "name": "Unaquatic Penalty"
+    },
+    "update_health": false
+}

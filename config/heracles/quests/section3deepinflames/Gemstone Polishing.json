@@ -3,14 +3,30 @@
     "Slipstream Processing",
     "Hands of Brass"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_diamond": {
+      "type": "heracles:item",
+      "item": "minecraft:diamond",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      "w"
+      "<h2>- Gemstone Polishing ---</h2>",
+      "Those unrefined gemstones can finaly get polished up!",
+      "",
+      "/b/Unrefined Gems/b/ need to be /6/washed/6/ via an /b/Ecased Fan/b/ through /b/Water/b/. Next, /6/cut them/6/ to shape on a /b/Mechanical Saw/b/, and finally /6/polish/6/ them on a /b/Belt Grinder/b/. Handheld sandpaper wont cut it.",
+      "",
+      "The Belt Grinder must be /c/powered above a set RPM/c/ aganist the flow of items depending on the recipe and then be /6/passed items over/6/ it similar to the saw.",
+      "",
+      "This will allow you to refine /b/Diamonds/b/ and /b/Amethyst/b/.",
+      "<hr/>",
+      "<task task=\"get_diamond\" quest=\"Gemstone Polishing\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

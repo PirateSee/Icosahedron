@@ -1,0 +1,160 @@
+{
+    "name": "§a+ §r§nMomentum",
+    "description": "The longer you sprint, the faster you go",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 28,
+        "hud_render": {
+            "should_render": true,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:mecha/momentum_resource",
+                "comparison": ">=",
+                "compare_to": 3
+            }
+        }
+    },
+    "gain": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:sprinting"
+            },
+            "if_action": {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:mecha/momentum_resource",
+                "change": 1,
+                "operation": "add"
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:mecha/momentum_resource",
+                "change": -3,
+                "operation": "add"
+            }
+        }
+    },
+    "speed_1": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 4
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum I"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "speed_2": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 8
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum II"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "speed_3": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 12
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum III"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "speed_4": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 16
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum IV"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "speed_5": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 20
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum IV"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "speed_6": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 24
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum VI"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "speed_7": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:mecha/momentum_resource",
+            "comparison": ">=",
+            "compare_to": 28
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 0.05,
+            "name": "Momentum VII"
+        },
+        "tick_rate": 5,
+        "update_health": false
+    }
+}

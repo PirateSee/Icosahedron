@@ -1,0 +1,14 @@
+{
+    "name": "§c- §r§nFlimsy Swing",
+    "description": "Damage you deal is reduced slightly (unless you're on fire)",
+    "condition": {
+        "inverted": true,
+        "type": "origins:on_fire"
+    },
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": -0.05,
+        "name": "Flimsy Swing Penalty"
+    }
+}

@@ -58,6 +58,7 @@ ServerEvents.recipes(e => {
     e.remove({id:'mekanism:metallurgic_infusing/alloy/infused'})
     e.remove({id:'mekanism:metallurgic_infusing/alloy/reinforced'})
     e.remove({id:'mekanism:metallurgic_infusing/alloy/ultimate'})
+    e.remove({id:'mekanism:metallurgic_infusing/alloy/atomic'})
 
     e.remove({id:'mekanism:electrolytic_core'})
 
@@ -439,7 +440,7 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 160,
+			"amount": 80,
 			"infuse_type": "mekanism:diamond"
 		},
 		"itemInput": {
@@ -456,7 +457,7 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 160,
+			"amount": 80,
 			"infuse_type": "mekanism:refined_obsidian"
 		},
 		"itemInput": {
@@ -534,12 +535,12 @@ ServerEvents.recipes(e => {
             "count": 1,
             "item": "mekanism:enriched_refined_obsidian"
         }
-    })
+    }).id("ico:enriched_refined_obsidian")
 
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 80,
+			"amount": 40,
 			"infuse_type": "mekanism:diamond"
 		},
 		"itemInput": {
@@ -581,7 +582,9 @@ ServerEvents.recipes(e => {
         "itemOutput": {
             "item": "mekanism:alloy_reinforced"
         }
-    })
+    }).id("ico:alloy_reinforced")
+
+    e.recipes.create.compacting('mekanism:alloy_atomic', ["mekanism:alloy_reinforced", 'kubejs:refined_tungsten', Fluid.of('kubejs:ethylene', 500)]).superheated().id("alloy_atomic")
 
     //equipment
     e.shaped('mekanism:energy_tablet', [ 

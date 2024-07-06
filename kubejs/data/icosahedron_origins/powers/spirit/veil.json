@@ -1,0 +1,10 @@
+{
+    "name": "§7o §r§nVeil",
+    "description": "Nametag hidden in darkness",
+    "condition": {
+        "type": "origins:brightness",
+        "comparison": "<=",
+        "compare_to": 0.3
+    },
+    "type": "apugli:prevent_label_render"
+}

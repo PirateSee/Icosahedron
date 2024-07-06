@@ -1,0 +1,14 @@
+{
+    "name": "§c- §r§nUnaquatic",
+    "description": "Move slowly and exhaust quicker in water",
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "mineccraft:water"
+    },
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": 0.2,
+        "name": "Unaquatic Penalty"
+    }
+}

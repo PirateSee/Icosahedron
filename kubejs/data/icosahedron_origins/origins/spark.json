@@ -17,10 +17,14 @@
         "icosahedron_origins:spark/coals_damage",
         "icosahedron_origins:spark/undoused",
         "icosahedron_origins:spark/torch",
+        "icosahedron_origins:spark/flimsy_swing",
         "icosahedron_origins:spark/waterlogged",
         "icosahedron_origins:spark/waterlogged_slow",
         "icosahedron_origins:spark/waterlogged_particles",
+        "icosahedron_origins:mecha/shock_absorber",
+        "icosahedron_origins:mecha/shock_absorber_effect",
         "icosahedron_origins:spark/unfireresist",
+        "icosahedron_origins:spark/unfireresist_enchantment",
         "icosahedron_origins:spark/quickfire"
     ],
     "icon": {

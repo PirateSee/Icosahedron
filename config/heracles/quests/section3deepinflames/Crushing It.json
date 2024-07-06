@@ -2,14 +2,28 @@
   "dependencies": [
     "Cog Crafting"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_crushing_wheel": {
+      "type": "heracles:item",
+      "item": "create:crushing_wheel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "<h2>- Crushing It ---</h2>",
+      "Now here is some real crushing power, nothing like that puny /b/Millstone/b/.",
+      "",
+      "/b/Cruhsing Wheels/b/ will require /b/Mechanical Crafting/b/ to be made. Place /b/two/b/ of these /6/spinning opposite/6/ of each other to get the crushing going. Depending on the orientation and direction they spin in, items can be pushed though /6/horizontaly/6/, /6/downwards/6/, or /6/upwards/6/ (making use of /b/fans/b/ to push them up).",
+      "",
+      "/b/Cruhsing Wheels/b/ can process any /6/Milling recipe/6/ faster, along with new /6/Crushing recipes/6/. Make sure something is catching the output on the other side, the /c/wheels wont hold on to the result/c/ unless their output is clogged.",
+      "<hr/>",
+      "<task task=\"get_crushing_wheel\" quest=\"Crushing It\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

@@ -16,7 +16,16 @@
       "text": ""
     },
     "description": [
-      ""
+      "<h2>- Magma Treats ---</h2>",
+      "Time to feed those blaze burners a real five-star meal.",
+      "",
+      "/b/Blaze Burners/b/ running off of standard fuel is great, but some recipes call for a bit more /c/heat/c/.",
+      "",
+      "Feeding a /b/Blaze Burner/b/ a /b/Blaze Cake/b/ sets it into a /6/Seething state/6/. This allows it to process /6/Superheated/6/ recipes. Use it just like you would a standard blaze or basic burner.",
+      "",
+      "Automation of /b/Blaze Cakes/b/ is a little complex, but could be a good investment.",
+      "<hr/>",
+      "<task task=\"get_blaze_cake\" quest=\"Magma Treats\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
@@ -39,10 +48,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

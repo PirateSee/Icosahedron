@@ -1,0 +1,13 @@
+{
+    "name": "§7o §r§nUndead",
+    "description": "Classified as undead (instant health/harming inverted, vulnerable to smite)",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "You do not burn in sunlight",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:entity_group",
+    "group": "undead"
+}

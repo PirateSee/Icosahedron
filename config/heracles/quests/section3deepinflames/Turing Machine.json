@@ -2,13 +2,31 @@
   "dependencies": [
     "Hands of Brass"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_computer": {
+      "type": "heracles:item",
+      "item": "computercraft:computer_normal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "<h2>- Turing Machine ---</h2>",
+      "Looking for some more /6/control/6/, /b/programmer/b/?",
+      "",
+      "For the low price of some /b/Lua/b/ /6/coding skills/6/, you can use Computers to /6/program nearly any system/6/ you can think of. /b/Automated logistics? Secure storefronts? Detailed informative displays? The internet?/b/ It's all possible, with a little coding.",
+      "",
+      "/b/Computers/b/ will /6/connect to adjacent peripherals/6/ to /6/pass data/6/ between them. peripherals include special blocks like Monitors, Printers, and Disk Drives, but also other blocks you can get information from, like Containers, Redstone components, Energy storage, and more.",
+      "",
+      "<text>Visit the online wiki for more information on APIs and programming <dark_aqua><underline><link href=\"https://tweaked.cc\">here</link></underline></dark_aqua></text>",
+      "<hr/>",
+      "<task task=\"get_computer\" quest=\"Turing Machine\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -30,10 +48,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
