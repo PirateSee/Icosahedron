@@ -52,3 +52,4 @@ config/sound_physics_remastered/reflectivity.properties
 emi.json
 /exposures
 config/voicechat/voicechat-client.properties
+/config/sound_physics_remastered
