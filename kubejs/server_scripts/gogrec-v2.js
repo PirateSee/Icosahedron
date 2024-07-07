@@ -232,14 +232,14 @@ ServerEvents.recipes(e => {
           a: 'mekanism:alloy_reinforced',
           r: 'kubejs:rubber',
           p: 'pneumaticcraft:plastic',
-          s: 'mekanism:ingot_steel',
+          s: 'born_in_chaos_v1:armor_plate_from_dark_metal',
           c: 'mekanism:elite_control_circuit',
           b: 'mekanism:basic_chemical_tank',
           e: 'immersive_aircraft:engine'
       }).id('ico:jetpack')
       e.remove({id:'mekanism:jetpack'})
       e.recipes.create.mechanical_crafting('mekanism:jetpack_armored', [ 
-        ' tst ',
+        'dtstd',
         'tojot',
         '  a  '
         ], {
@@ -247,7 +247,8 @@ ServerEvents.recipes(e => {
           t: 'kubejs:tungsten_ingot',
           s: 'mekanism:block_steel',
           o: 'mekanism:ingot_refined_obsidian',
-          j: 'mekanism:jetpack'
+          j: 'mekanism:jetpack',
+          d: 'born_in_chaos_v1:armor_plate_from_dark_metal'
       }).id('ico:jetpack_armored')
       e.remove({id:'mekanism:jetpack_armored'})
 })
