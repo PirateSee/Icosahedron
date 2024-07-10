@@ -8,6 +8,10 @@
 	#3: UI buttons / escape / right mouse.  Escape or right mouse backs the codex out until the index, then closes it.
 	#Range: 0 ~ 3
 	codexBackStyle = 0
+	#Codex entries that have been unlocked
+	codexUnlocked = []
+	#Codex entries that have been read
+	codexRead = []
 
 #Mana and Artifice // HUD Settings
 [ma_hud_settings]

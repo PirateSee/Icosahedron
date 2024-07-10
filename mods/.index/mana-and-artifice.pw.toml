@@ -1,13 +1,13 @@
-filename = 'mna-forge-1.20.1-3.0.0.15-all.jar'
+filename = 'mna-forge-1.20.1-3.0.0.19-all.jar'
 name = 'Mana and Artifice'
 side = 'both'
 
 [download]
-hash = 'd8ec2af42fadaa9c148bc15af6109eea7c7e3febe5bf5434ac4b254ac9ac40bfb2a112192a6b1d37ef86bb62a5c61bf212b4c00b52e6bbd9e0cbb9c9d962231c'
+hash = 'd48726fcf070fb4ee75e657a28eda4deb8479a73da5e1872bb3d2e874a2ee5f28cd1f2750229785d6c56bbbdcc679645b4073ba71c0ee157504f8ee06567f1c6'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/zaRGNexp/versions/NMkitlJl/mna-forge-1.20.1-3.0.0.15-all.jar'
+url = 'https://cdn.modrinth.com/data/zaRGNexp/versions/i6nCwjWU/mna-forge-1.20.1-3.0.0.19-all.jar'
 
 [update.modrinth]
 mod-id = 'zaRGNexp'
-version = 'NMkitlJl'
+version = 'i6nCwjWU'
