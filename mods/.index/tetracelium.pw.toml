@@ -1,0 +1,13 @@
+filename = 'tetracelium-1.20.1-1.2.0.jar'
+name = 'tetracelium'
+side = 'both'
+
+[download]
+hash = 'c820390c1c45db1138bf424a018fafa8c7325689ec55869e2a267fde63a9587c97f79095989784e9a0afbbdd5fdf4bff08afad116f8ccde8268b5d6c117eb388'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rTvWs5Jz/versions/jFtEdFmI/tetracelium-1.20.1-1.2.0.jar'
+
+[update.modrinth]
+mod-id = 'rTvWs5Jz'
+version = 'jFtEdFmI'
