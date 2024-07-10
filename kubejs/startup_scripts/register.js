@@ -1,15 +1,11 @@
 StartupEvents.registry('fluid', e => {	
-	//misc
-	e.create('creosote_oil').bucketColor(0xBBAFB9)
+	//coal products
     e.create('coal_tar').bucketColor(0xBBAFB9)
-	e.create('blaze_icing').displayName('Blaze Icing')
-   		.stillTexture('icosahedron:block/blaze_icing')
-		.flowingTexture('icosahedron:block/flowing_blaze_icing')
-	e.create('molten_glass').bucketColor(0xBBAFB9).displayName('Molten Quartz Glass')
+	e.create('creosote_oil').bucketColor(0xBBAFB9)
+    e.create('sulfur').bucketColor(0xBBAFB9).displayName('Aqueous Sulfur')
+        .stillTexture('icosahedron:block/fluid/aq_sulfur')
+        .flowingTexture('icosahedron:block/fluid/flowing_aq_sulfur')
 	e.create('slag_runoff').bucketColor(0xBBAFB9).displayName('Slag Runoff')
-	e.create('sulfur').bucketColor(0xBBAFB9).displayName('Aqueous Sulfur')
-		.stillTexture('icosahedron:block/fluid/aq_sulfur')
-		.flowingTexture('icosahedron:block/fluid/flowing_aq_sulfur')
 
 	//oil
 	e.create('ethylene').bucketColor(0xBBAFB9).displayName('Ethylene')
@@ -45,11 +41,17 @@ StartupEvents.registry('fluid', e => {
 
 	//alloy
 	e.create('molten_brass').displayName('Molten Brass')
-        .stillTexture('icosahedron:block/fluid/molten_brass')
+        .stillTexture('icosahedron:block/fluid/molten_brass_still')
 		.flowingTexture('icosahedron:block/fluid/molten_brass_flowing')
 	e.create('molten_pressure_alloy').displayName('Molten Pressure Alloy')
 		.stillTexture('icosahedron:block/fluid/molten_pressure_alloy')
 		.flowingTexture('icosahedron:block/fluid/molten_pressure_alloy_flowing')
+
+    //refined misc
+    e.create('blaze_icing').displayName('Blaze Icing')
+   		.stillTexture('icosahedron:block/blaze_icing')
+		.flowingTexture('icosahedron:block/flowing_blaze_icing')
+	e.create('molten_glass').bucketColor(0xBBAFB9).displayName('Molten Quartz Glass')
 })
 
 StartupEvents.registry('item', e => {
@@ -164,7 +166,7 @@ StartupEvents.registry('item', e => {
 	e.create('carbon_steel_sheet').texture('icosahedron:item/ore/alloy/carbon_steel_sheet')
 	e.create('carbon_steel_rod').texture('icosahedron:item/ore/alloy/carbon_steel_rod')
     //bronze
-	e.create('bronze_ingot').texture('icosahedron:item/ore/alloy/brass_ingot')
+	//e.create('bronze_ingot').texture('icosahedron:item/ore/alloy/brass_ingot')
     //pressure alloy
     e.create('pressure_alloy').texture('icosahedron:item/ore/alloy/pressure_alloy')
     e.create('compressed_iron_sheet').texture('icosahedron:item/component/alloy/compressed_alloy_sheet')
@@ -198,7 +200,7 @@ StartupEvents.registry('item', e => {
 
     //metal
 	e.create('sawblade').texture('icosahedron:item/component/andesite/sawblade')
-	e.create('drill_bit').texture('icosahedron:item/component/andesite/drill_bit').displayName('Iron Drill')
+	e.create('drill_bit').texture('icosahedron:item/drill_bit').displayName('Iron Drill')
 
 	//copper
     e.create('sealant').texture('icosahedron:item/component/andesite/sealant')
@@ -233,7 +235,7 @@ StartupEvents.registry('item', e => {
     e.create('machine_plating').texture('icosahedron:item/component/mekanism/machine_plating')
     e.create('steel_framing').texture('icosahedron:item/component/mekanism/steel_framing')
 
-    e.create('sturdy_sheet_dust').texture('icosahedron:item/mekanism/sturdy_sheet_dust')
+    e.create('sturdy_sheet_dust').texture('icosahedron:item/component/mekanism/sturdy_sheet_dust')
     e.create('magnetized_iron').texture('icosahedron:item/component/mekanism/magnetized_iron')
 
     e.create('andesite_pressure_alloy').texture('icosahedron:item/ore/mekanism/andesite_pressure_alloy')
@@ -250,7 +252,7 @@ StartupEvents.registry('item', e => {
 	e.create('transmutation_chip').texture('icosahedron:item/magic/transmutation_tablet')
 
 	e.create('cadmium_coated_ingot').texture('icosahedron:item/magic/cadmium_coated_ingot')
-	//e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
+	e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
 
 	e.create('ornate_gold').texture('icosahedron:item/magic/ornate_gold')
 	/*e.create('dripping_source_gem').texture('icosahedron:item/magic/dripping_source_gem')
@@ -337,29 +339,34 @@ StartupEvents.registry('item', e => {
 	e.create('incomplete_logistics_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_memory_stick')
 	e.create('incomplete_pneumatic_cylinder', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_pneumatic_cylinder')
 	e.create('incomplete_capacitor', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_capacitor')
-    e.create('unfinished_advanced_pressure_tube').texture('icosahedron:item/unfinished_advanced_pressure_tube')
+    e.create('unfinished_advanced_pressure_tube').texture('icosahedron:item/incomplete/unfinished_advanced_pressure_tube')
 	e.create('incomplete_machine_plating', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_machine_plating')
 	e.create('incomplete_electrolytic_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_electrolytic_core')
 	e.create('incomplete_lithium_ion_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_lithium_ion_cell')
     e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_solid_state_cell')
-
-	//reflection based
-	const $EventBuses = Java.loadClass('dev.architectury.platform.forge.EventBuses')
-	const $InfuseTypeDeferredRegister = Java.loadClass('mekanism.common.registration.impl.InfuseTypeDeferredRegister')
-	const $SlurryDeferredRegister = Java.loadClass('mekanism.common.registration.impl.SlurryDeferredRegister')
-
-	const INFUSETYPE = new $InfuseTypeDeferredRegister('kubejs')
-	const SLURRY = new $SlurryDeferredRegister('kubejs')
-
-	INFUSETYPE.register('nickel', 0xC2C5A4)
-	//INFUSETYPE.register('copper', 0xD96E24)
-	INFUSETYPE.register('cupronickel', 0xD96E24)
-
-	SLURRY.register('tungsten', builder => builder.tint(0x3D5C4E))
-
-	INFUSETYPE.register($EventBuses.getModEventBus('kubejs').get())
-	SLURRY['register(net.minecraftforge.eventbus.api.IEventBus)']($EventBuses.getModEventBus('kubejs').get())
 })
+
+//reflection based
+const $EventBuses = Java.loadClass('dev.architectury.platform.forge.EventBuses')
+const $InfuseTypeDeferredRegister = Java.loadClass('mekanism.common.registration.impl.InfuseTypeDeferredRegister')
+const $SlurryDeferredRegister = Java.loadClass('mekanism.common.registration.impl.SlurryDeferredRegister')
+const $GasDeferredRegister = Java.loadClass('mekanism.common.registration.impl.GasDeferredRegister')
+
+const INFUSETYPE = new $InfuseTypeDeferredRegister('kubejs')
+const SLURRY = new $SlurryDeferredRegister('kubejs')
+const GASES = new $GasDeferredRegister('kubejs')
+
+INFUSETYPE.register('nickel', 0xC2C5A4)
+//INFUSETYPE.register('copper', 0xD96E24)
+INFUSETYPE.register('cupronickel', 0xD96E24)
+
+SLURRY.register('tungsten', builder => builder.tint(0x3D5C4E))
+
+GASES.register('gaseous_substrate', 0x726F37)
+
+INFUSETYPE.register($EventBuses.getModEventBus('kubejs').get())
+SLURRY['register(net.minecraftforge.eventbus.api.IEventBus)']($EventBuses.getModEventBus('kubejs').get())
+GASES.register($EventBuses.getModEventBus('kubejs').get())
 
 StartupEvents.registry("block", (event) => {
 	

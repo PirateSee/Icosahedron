@@ -1,0 +1,10 @@
+{
+    "infuse_type.kubejs.cupronickel": "Cupronickel",
+    "infuse_type.kubejs.nickel": "Nickel",
+    "infuse_type.kubejs.tungsten": "Tungsten",
+
+    "slurry.kubejs.clean_tungsten": "Clean Tungsten Slurry",
+    "slurry.kubejs.dirty_tungsten": "Dirty Tungsten Slurry",
+
+    "gas.kubejs.gaseous_substrate": "Gaseous Substrate"
+}

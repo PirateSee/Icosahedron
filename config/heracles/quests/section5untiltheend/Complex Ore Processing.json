@@ -8,7 +8,9 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "This will process /b/Wolframite/b/, /b/Lead/b/, /b/Uranium/b/"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [

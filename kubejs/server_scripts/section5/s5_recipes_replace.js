@@ -68,6 +68,11 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:enriching/enriched/refined_obsidian'})
     e.remove({id: 'mekanism:processing/refined_obsidian/dust/from_obsidian_dust'})
 
+    e.remove({id: 'mekanism:reaction/substrate/water_hydrogen'})
+    e.remove({id: 'mekanism:reaction/substrate/water_ethene'})
+    e.remove({id: 'mekanism:reaction/substrate/ethene_oxygen'})
+    e.remove({id: 'mekanism:hdpe_rod'})
+
     //equipment
     e.remove({id: 'mekanism:energy_tablet'})
 
@@ -297,11 +302,11 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:dynamic_valve')
 
     e.recipes.create.mechanical_crafting('mekanism:basic_chemical_tank', [
-        ' PFP ',
-        'H F H',
-        'HOSOH',
-        'H F H',
-        ' PFP '
+        ' P ',
+        'HFH',
+        'OSO',
+        'HFH',
+        ' P '
     ], {
         F: 'create:fluid_tank',
         S: 'mekanism:steel_casing',
@@ -311,11 +316,11 @@ ServerEvents.recipes(e => {
     }).id('ico:basic_chemical_tank')
 
     e.recipes.create.mechanical_crafting('mekanism:advanced_chemical_tank', [
-        ' PFP ',
-        'H F H',
-        'HOSOH',
-        'H F H',
-        ' PFP '
+        ' P ',
+        'HFH',
+        'OSO',
+        'HFH',
+        ' P '
     ], {
         F: 'create:fluid_tank',
         S: 'mekanism:basic_chemical_tank',
@@ -325,11 +330,11 @@ ServerEvents.recipes(e => {
     }).id('ico:advanced_chemical_tank')
 
     e.recipes.create.mechanical_crafting('mekanism:elite_chemical_tank', [
-        ' PFP ',
-        'H F H',
-        'HOSOH',
-        'H F H',
-        ' PFP '
+        ' P ',
+        'HFH',
+        'OSO',
+        'HFH',
+        ' P '
     ], {
         F: 'create:fluid_tank',
         S: 'mekanism:advanced_chemical_tank',
@@ -556,12 +561,13 @@ ServerEvents.recipes(e => {
 
     let inter = 'kubejs:incomplete_electrolytic_core'
 	e.recipes.create.sequenced_assembly([
-		Item.of('kubejs:electrolytic_core').withChance(16.0)
+		Item.of('mekanism:electrolytic_core').withChance(16.0)
 	], 'create:electron_tube', [
 		e.recipes.createDeploying(inter, [inter, 'pneumaticcraft:plastic']),
         e.recipes.createDeploying(inter, [inter, 'pneumaticcraft:plastic']),
+        e.recipes.createPressing(inter,inter),
 		e.recipes.createDeploying(inter, [inter, 'mekanism:alloy_infused']),
-	]).transitionalItem(inter).loops(3)
+	]).transitionalItem(inter).loops(3).id("ico:electrolytic_core")
 
     e.custom({
         "type": "mekanism:reaction",
@@ -584,7 +590,120 @@ ServerEvents.recipes(e => {
         }
     }).id("ico:alloy_reinforced")
 
-    e.recipes.create.compacting('mekanism:alloy_atomic', ["mekanism:alloy_reinforced", 'kubejs:refined_tungsten', Fluid.of('kubejs:ethylene', 500)]).superheated().id("alloy_atomic")
+    e.custom({
+		"type": "mekanism:metallurgic_infusing",
+		"chemicalInput": {
+			"amount": 40,
+			"infuse_type": "mekanism:refined_obsidian"
+		},
+		"itemInput": {
+            "count": 3,
+			"ingredient": {
+				"item": "kubejs:tungsten_ingot"
+			}
+		},
+		"output": {
+			"count": 1,
+			"item": "kubejs:refined_tungsten"
+		}
+	}).id('ico:refined_tungsten')
+
+    e.recipes.create.compacting(['mekanism:alloy_atomic', Fluid.of('kubejs:slag_runoff', 100)], ["mekanism:alloy_reinforced", 'kubejs:refined_tungsten', Fluid.of('kubejs:ethylene', 500)]).superheated().id("alloy_atomic")
+
+    e.custom({
+        "type": "mekanism:reaction",
+        "duration": 100,
+        "fluidInput": {
+            "amount": 250,
+            "fluid": "minecraft:water"
+        },
+        "gasInput": {
+            "amount": 100,
+            "gas": "mekanism:lithium"
+        },
+        "itemInput": {
+            "ingredient": {
+                "item": "minecraft:flint"
+            }
+        },
+        "itemOutput": {
+            "item": "mekanism:dust_lithium"
+        }
+    }).id("ico:early_lithium")
+
+    //HDPE
+    e.custom({
+        "type": "mekanism:reaction",
+        "duration": 100,
+        "fluidInput": {
+            "amount": 250,
+            "fluid": "kubejs:styrene"
+        },
+        "gasInput": {
+            "amount": 500,
+            "gas": "mekanism:hydrogen"
+        },
+        "gasOutput": {
+            "amount": 250,
+            "gas": "kubejs:gaseous_substrate"
+        },
+        "itemInput": {
+            "amount": 6,
+            "ingredient": {
+                "tag": "forge:fuels/bio"
+            }
+        }
+    }).id("ico:gas_substrate")
+    
+    e.custom({
+        "type": "mekanism:crystallizing",
+        "chemicalType": "gas",
+        "input": {
+            "amount": 500,
+            "gas": "kubejs:gaseous_substrate"
+        },
+        "output": {
+            "item": "mekanism:substrate"
+        }
+    }).id("ico:crystalize_substrate")
+
+    e.custom({
+        "type": "mekanism:reaction",
+        "duration": 100,
+        "fluidInput": {
+            "amount": 750,
+            "fluid": "kubejs:ethylene"
+        },
+        "gasInput": {
+            "amount": 500,
+            "gas": "mekanism:oxygen"
+        },
+        "itemInput": {
+            "ingredient": {
+                "item": "mekanism:substrate"
+            }
+        },
+        "gasOutput": {
+            "amount": 250,
+            "gas": "mekanism:water_vapor"
+        },
+        "itemOutput": {
+            "item": "mekanism:hdpe_pellet"
+        }
+    }).id("ico:hdpe_pellet")
+
+    e.custom({
+		"type":"createaddition:rolling",
+		"input": {
+			  "item": "mekanism:hdpe_sheet"
+		},
+		"result": {
+			"item": "mekanism:hdpe_rod"
+		}
+	})
+
+    //biomass
+    e.recipes.create.mixing('createaddition:biomass', ['4x mekanism:bio_fuel', {fluidTag: 'forge:plantoil', amount: 100}]).heated().id('ico:biomass_from_biofuel')
 
     //equipment
     e.shaped('mekanism:energy_tablet', [ 

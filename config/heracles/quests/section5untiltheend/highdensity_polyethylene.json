@@ -1,35 +1,30 @@
 {
-  "dependencies": [
-    "manaweaving",
-    "novice_wizard"
-  ],
+  "dependencies": [],
   "tasks": {},
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [
-      ""
-    ],
+    "description": [],
     "groups": {
-      "Section M: Mana and Artifice": {
+      "Section 5: Until the End": {
         "position": [
-          -74,
-          71
+          330,
+          -30
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "mna:manaweaving_altar",
+        "id": "mekanism:hdpe_sheet",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "manaweaving alter"
+      "translate": "High-density Polyethylene"
     }
   },
   "settings": {
