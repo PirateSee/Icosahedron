@@ -1,6 +1,7 @@
 {
     "name": "§a+ §r§nLeaf Phasing",
     "description": "Move through leaves",
+    "hidden": true,
     "type": "origins:phasing",
     "block_condition": {
         "type": "origins:in_tag",

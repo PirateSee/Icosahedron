@@ -1,0 +1,23 @@
+{
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "inverted": true,
+                "type": "origins:dimension",
+                "dimension": "minecraft:nether"
+            },
+            {
+                "type": "origins:brightness",
+                "comparison": "<",
+                "compare_to": 0.5
+            }
+        ]
+    },
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": 0.15,
+        "name": "Photosynthsis Penalty"
+    }
+}

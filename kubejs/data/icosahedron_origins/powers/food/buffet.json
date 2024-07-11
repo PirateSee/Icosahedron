@@ -1,0 +1,16 @@
+{
+    "name": "§a+ §r§nBuffet Strategy",
+    "description": "Eat even when full, and recieve short invincibility after eating.",
+    "type": "origins:modify_food",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:resistance",
+            "duration": 30,
+            "amplifier": 10,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "always_edible": true
+}

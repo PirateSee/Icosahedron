@@ -1,0 +1,16 @@
+{
+    "name": "§a+ §r§nVanishing",
+    "description": "Taking damage makes you invisible for 2 seconds.",
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:invisibility",
+            "duration": 40,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "cooldown": 40
+}

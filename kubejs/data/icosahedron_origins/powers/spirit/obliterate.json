@@ -1,0 +1,101 @@
+{
+    "name": "§c- §r§nObliterate",
+    "description": "Being at low health (less than 3 hearts) for too long explodes and kills you",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "A visible bar will show how much time you have left. Bar will regenerate while in good health.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 48,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 2
+        },
+        "max_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:explode",
+                    "power": 4,
+                    "destruction_type": "none",
+                    "damage_self": false
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 999,
+                    "damage_type": "minecraft:out_of_world"
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:spirit/obliterate_resource",
+                    "change": 47,
+                    "operation": "set"
+                }
+            ]
+        }
+    },
+    "modify": {
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:health",
+                "comparison": "<",
+                "compare_to": 5
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "icosahedron_origins:spirit/obliterate_resource",
+                        "change": 2,
+                        "operation": "add"
+                    },
+                    {
+                        "type": "origins:spawn_particles",
+                        "particle": "minecraft:dragon_breath",
+                        "count": 5,
+                        "speed": 0.1,
+                        "spread": {
+                            "x": 0.5,
+                            "y": 1,
+                            "z": 0.5
+                        },
+                        "offset_y": 0.5
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "block.fire.extinguish",
+                        "volume": 1,
+                        "pitch": 1
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:spirit/obliterate_resource",
+                "change": -1,
+                "operation": "add"
+            }
+        }
+    },
+    "respawn": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:spirit/obliterate_resource",
+            "change": 0,
+            "operation": "set"
+        }
+    }
+}

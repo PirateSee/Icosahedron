@@ -1,6 +1,0 @@
-{
-    "name": "Our light",
-    "description": "You glow, making you visible even through walls.",
-    "type": "origins:self_glow",
-    "use_teams": true
-}

@@ -1,0 +1,9 @@
+{
+    "name": "Bloodthirsty",
+    "description": "§0[Offensive] [Blood]§7\nRelies on siphoning blood from other creatures to keep fed and powerful.",
+    "powers": [
+        "icosahedron_origins:cave/nightvision",
+        "icosahedron_origins:doll/undead"
+    ],
+    "impact": 0
+}

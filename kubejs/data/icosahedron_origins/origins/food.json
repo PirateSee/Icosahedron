@@ -1,0 +1,9 @@
+{
+    "name": "Devourer",
+    "description": "§0[Food]§7\nAlways hungry, and loves to eat.",
+    "powers": [
+        "icosahedron_origins:food/buffet",
+        "icosahedron_origins:food/hungry"
+    ],
+    "impact": 1
+}

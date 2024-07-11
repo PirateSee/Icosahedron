@@ -1,0 +1,30 @@
+{
+    "name": "§a+ §r§nTunnel Run",
+    "description": "Sprint faster under tight ceilings",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:sprinting"
+            },
+            {
+                "type": "origins:block_collision",
+                "block_condition": {
+                    "type": "origins:movement_blocking"
+                },
+                "offset_x": 0,
+                "offset_y": 0.5,
+                "offset_z": 0
+            }
+        ]
+    },
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.2,
+        "name": "Tunnel Run Bonus"
+    },
+    "tick_rate": 5,
+    "update_health": false
+}

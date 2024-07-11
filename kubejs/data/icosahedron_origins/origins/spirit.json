@@ -7,8 +7,10 @@
         "icosahedron_origins:spirit/float_jump",
         "icosahedron_origins:doll/fall_immune",
         "icosahedron_origins:spirit/blink",
+        "icosahedron_origins:spirit/vanishing",
         "icosahedron_origins:spirit/veil",
-        "icosahedron_origins:spirit/solar_weakness"
+        "icosahedron_origins:spirit/solar_weakness",
+        "icosahedron_origins:spirit/obliterate"
     ],
     "impact": 3
 }

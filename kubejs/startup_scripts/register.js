@@ -238,9 +238,9 @@ StartupEvents.registry('item', e => {
     e.create('sturdy_sheet_dust').texture('icosahedron:item/component/mekanism/sturdy_sheet_dust')
     e.create('magnetized_iron').texture('icosahedron:item/component/mekanism/magnetized_iron')
 
-    e.create('andesite_pressure_alloy').texture('icosahedron:item/ore/mekanism/andesite_pressure_alloy')
-	e.create('diamond_plated_alloy').texture('icosahedron:item/ore/mekanism/diamond_plated_alloy')
-    e.create('refined_tungsten').texture('icosahedron:item/ore/mekanism/refined_tungsten')
+    e.create('andesite_pressure_alloy').texture('icosahedron:item/component/mekanism/andesite_pressure_alloy')
+	e.create('diamond_plated_alloy').texture('icosahedron:item/component/mekanism/diamond_plated_alloy')
+    e.create('refined_tungsten').texture('icosahedron:item/component/mekanism/refined_tungsten')
 
     
     e.create('lithium_ion_cell').texture('icosahedron:item/component/mekanism/lithium_ion_cell').displayName('Lithium-Ion Cell')
@@ -248,9 +248,6 @@ StartupEvents.registry('item', e => {
     e.create('celestite_ingot').texture('icosahedron:item/ore/celestite')
 
 	//magic
-	e.create('transmutation_catalyst').texture('icosahedron:item/magic/transmutation_catalyst')
-	e.create('transmutation_chip').texture('icosahedron:item/magic/transmutation_tablet')
-
 	e.create('cadmium_coated_ingot').texture('icosahedron:item/magic/cadmium_coated_ingot')
 	e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
 
@@ -394,7 +391,7 @@ StartupEvents.registry("block", (event) => {
 			.mapColor("stone").stoneSoundType()
 			.hardness(hard).resistance(resist).requiresTool(true)
 			.tagBlock("mineable/pickaxe").tagBlock("needs_" + harvest_level + "_tool")
-			.tagItem("ico:" + id + "_blocks")
+			//.tagItem("ico:" + id + "_blocks")
 			.textureAll('icosahedron:block/polished_' + id)
 
 		event.create("polished_" + id + "_stairs", "stairs")
@@ -415,7 +412,7 @@ StartupEvents.registry("block", (event) => {
 			.mapColor("stone").stoneSoundType()
 			.hardness(hard).resistance(resist).requiresTool(true)
 			.tagBlock("mineable/pickaxe").tagBlock("needs_" + harvest_level + "_tool")
-			.tagItem("ico:" + id + "_blocks")
+			//.tagItem("ico:" + id + "_blocks")
 			.textureAll('icosahedron:block/polished_' + id + '_bricks')
 
 		event.create("polished_" + id + "_brick_stairs", "stairs")
@@ -542,6 +539,8 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool")
 		.textureAll('icosahedron:block/industrial/industrial_concrete_reinforced_scuffed')
 
+    //old metal
+
 	event.create("old_metal_plate")
 		.mapColor("metal").soundType(SoundType.METAL)
 		.hardness(4).resistance(2.5).requiresTool(true)
@@ -608,6 +607,8 @@ StartupEvents.registry("block", (event) => {
 			}
 		}
 
+    //steeled
+
 	event.create("steeled_plate")
 		.mapColor("metal").soundType(SoundType.METAL)
 		.hardness(5).resistance(3).requiresTool(true)
@@ -658,6 +659,8 @@ StartupEvents.registry("block", (event) => {
 				}
 			}
 		}
+
+    //crystalbrick
 
 	event.create("crystal_bricks")
 		.mapColor("metal").soundType(SoundType.METAL)

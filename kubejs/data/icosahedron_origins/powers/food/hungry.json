@@ -1,0 +1,9 @@
+{
+    "name": "§c- §r§nStarved",
+    "description": "Exhuast quicker.",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.25
+    }
+}

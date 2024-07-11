@@ -1,0 +1,123 @@
+{
+    "name": "§a+ §r§nCling",
+    "description": "Jump up and hold on to any ceiling you touch.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Works as a double jump too",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "hidden": true,
+    "type": "origins:multiple",
+    "stick": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:cave/ceiling_climb_resource",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:block_collision",
+                "block_condition": {
+                    "type": "origins:movement_blocking"
+                },
+                "offset_x": 0,
+                "offset_y": 1,
+                "offset_z": 0
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:levitation",
+                            "duration": 6,
+                            "amplifier": 1,
+                            "show_particles": false,
+                            "show_icon": false
+                        }
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "icosahedron_origins:cave/ceiling_climb_resource",
+                        "change": 1,
+                        "operation": "add"
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "icosahedron_origins:cave/ceiling_climb_resource",
+                        "change": -1,
+                        "operation": "add"
+                    }
+                ]
+            }
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "hud_render": {
+            "should_render": true
+        }
+    },
+    "jump": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:fall_flying"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "icosahedron_origins:cave/ceiling_climb_resource",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:cave/ceiling_climb_resource",
+                    "change": 5,
+                    "operation": "set"
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "y": 1.1,
+                    "space": "world",
+                    "client": true,
+                    "server": true,
+                    "set": true
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "z": 0.1,
+                    "space": "local",
+                    "client": true,
+                    "server": true
+                }
+            ]
+        },
+        "cooldown": 60,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    }
+}

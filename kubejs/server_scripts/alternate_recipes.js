@@ -191,8 +191,10 @@ ServerEvents.recipes(e => {
 
 	//transmutation
 
+    //TODO: move to botania or mana and artifice process
+
 	//catalyized
-	e.recipes.create.mixing([Item.of('kubejs:transmutation_catalyst').withChance(0.99), 'immersive_weathering:sand_layer_block'], ['kubejs:transmutation_catalyst', 'immersive_weathering:red_sand_layer_block'])
+	/*e.recipes.create.mixing([Item.of('kubejs:transmutation_catalyst').withChance(0.99), 'immersive_weathering:sand_layer_block'], ['kubejs:transmutation_catalyst', 'immersive_weathering:red_sand_layer_block'])
 	e.recipes.create.mixing([Item.of('kubejs:transmutation_catalyst').withChance(0.99), 'immersive_weathering:red_sand_layer_block'], ['kubejs:transmutation_catalyst', 'immersive_weathering:sand_layer_block'])
 
 	e.recipes.create.compacting([Item.of('kubejs:transmutation_catalyst').withChance(0.99), '6x create:limestone'], ['kubejs:transmutation_catalyst', '6x quark:limestone'])
@@ -202,9 +204,7 @@ ServerEvents.recipes(e => {
 	e.recipes.create.compacting([Item.of('kubejs:transmutation_catalyst').withChance(0.99), '6x quark:shale'], ['kubejs:transmutation_catalyst', '6x minecraft:blackstone'])
 
 	e.recipes.create.compacting([Item.of('kubejs:transmutation_catalyst').withChance(0.99), '6x immersive_weathering:silt'], ['kubejs:transmutation_catalyst', '6x twigs:silt'])
-	e.recipes.create.compacting([Item.of('kubejs:transmutation_catalyst').withChance(0.99), '6x twigs:silt'], ['kubejs:transmutation_catalyst', '6x immersive_weathering:silt'])
-
-	//chip
+	e.recipes.create.compacting([Item.of('kubejs:transmutation_catalyst').withChance(0.99), '6x twigs:silt'], ['kubejs:transmutation_catalyst', '6x immersive_weathering:silt'])*/
 
 	//synthetic
 	e.shaped('minecraft:sponge', [ 

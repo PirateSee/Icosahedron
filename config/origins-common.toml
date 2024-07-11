@@ -252,6 +252,10 @@
 		"icosahedron_origins:plant/wilting" = true
 		"icosahedron_origins:plant/vineshot" = true
 		"icosahedron_origins:plant/leaf_phasing" = true
+		"icosahedron_origins:plant/leaf_phasing_slow" = true
+		"icosahedron_origins:plant/leaf_phasing_protection" = true
+		"icosahedron_origins:plant/berry_immune" = true
+		"icosahedron_origins:plant/photovolt_dark" = true
 
 	[origins."icosahedron_origins:seaborn"]
 		enabled = true
@@ -305,4 +309,22 @@
 		"icosahedron_origins:doll/fall_immune" = true
 		"icosahedron_origins:spirit/veil" = true
 		"icosahedron_origins:spirit/solar_weakness" = true
+		"icosahedron_origins:spirit/vanishing" = true
+		"icosahedron_origins:spirit/obliterate" = true
+
+	[origins."icosahedron_origins:food"]
+		enabled = true
+		"icosahedron_origins:food/buffet" = true
+		"icosahedron_origins:food/hungry" = true
+
+	[origins."icosahedron_origins:blood"]
+		enabled = true
+		"icosahedron_origins:cave/nightvision" = true
+		"icosahedron_origins:doll/undead" = true
+
+	[origins."icosahedron_origins:cave"]
+		enabled = true
+		"icosahedron_origins:cave/nightvision" = true
+		"icosahedron_origins:cave/lowspeed" = true
+		"icosahedron_origins:cave/ceiling_climb" = true
 

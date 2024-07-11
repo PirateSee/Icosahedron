@@ -1,9 +1,9 @@
 {
     "name": "§a+ §r§nGrapple Vine",
-    "description": "Launch yourself towards plants. Very short cooldown, but expends lots of hunger",
+    "description": "Launch yourself towards plants, or entities towards you. Very short cooldown, but expends lots of hunger",
     "condition": {
         "type": "origins:raycast",
-        "distance": 20,
+        "distance": 15,
         "block": true,
         "entity": false,
         "shape_type": "outline",
@@ -16,12 +16,24 @@
                     "tag": "minecraft:leaves"
                 },
                 {
-                    "type": "origins:in_tag",
-                    "tag": "minecraft:moseek"
+                    "type": "origins:block",
+                    "block": "minecraft:moss_carpet"
+                },
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:moss_block"
+                },
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:vine"
                 },
                 {
                     "type": "origins:block",
                     "block": "minecraft:glow_lichen"
+                },
+                {
+                    "type": "origins:block",
+                    "block": "twigs:petrified_lichen"
                 }
             ]
         }
@@ -37,23 +49,135 @@
                 "pitch": 1.2
             },
             {
-                "type": "origins:add_velocity",
-                "z": 1.5,
-                "space": "local",
-                "client": true,
-                "server": true,
-                "set": true
-            },
-            {
-                "type": "origins:add_velocity",
-                "y": 0.1,
-                "space": "world",
-                "client": true,
-                "server": true
-            },
-            {
-                "type": "origins:exhaust",
-                "amount": 0.6
+                "type": "origins:if_else_list",
+                "actions": [
+                    {
+                        "condition": {
+                            "type": "origins:raycast",
+                            "distance": 20,
+                            "block": true,
+                            "entity": true,
+                            "shape_type": "outline",
+                            "fluid_handling": "any",
+                            "hit_bientity_condition": {
+                                "type": "origins:target_condition",
+                                "condition": {
+                                    "type": "origins:exists"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:raycast",
+                            "distance": 20,
+                            "block": true,
+                            "entity": true,
+                            "shape_type": "outline",
+                            "fluid_handling": "any",
+                            "bientity_action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:add_velocity",
+                                        "y": 0.1,
+                                        "z": -2,
+                                        "client": true,
+                                        "server": true
+                                    },
+                                    {
+                                        "type": "origins:target_action",
+                                        "action": {
+                                            "type": "origins:apply_effect",
+                                            "effect": {
+                                                "effect": "minecraft:slowness",
+                                                "duration": 10,
+                                                "amplifier": 2,
+                                                "show_particles": true,
+                                                "show_icon": true
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "origins:actor_action",
+                                        "action": {
+                                            "type": "origins:exhaust",
+                                            "amount": 0.8
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:raycast",
+                            "distance": 15,
+                            "block": true,
+                            "entity": false,
+                            "shape_type": "outline",
+                            "fluid_handling": "any",
+                            "block_condition": {
+                                "type": "origins:or",
+                                "conditions": [
+                                    {
+                                        "type": "origins:in_tag",
+                                        "tag": "minecraft:leaves"
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:moss_carpet"
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:moss_block"
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:vine"
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:glow_lichen"
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:glow_lichen"
+                                    }
+                                ]
+                            }
+                        },
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "z": 1.5,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "set": true
+                                },
+                                {
+                                    "type": "origins:add_velocity",
+                                    "y": 0.1,
+                                    "space": "world",
+                                    "client": true,
+                                    "server": true
+                                },
+                                {
+                                    "type": "origins:exhaust",
+                                    "amount": 0.8
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "action": {
+                            "type": "origins:set_resource",
+                            "resource": "icosahedron_origins:plant/grapplevine",
+                            "value": 0
+                        }
+                    }
+                ]
             }
         ]
     },
