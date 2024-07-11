@@ -231,4 +231,28 @@ ServerEvents.recipes(e => {
 	e.recipes.create.deploying('quark:torch_arrow', ['minecraft:arrow', 'minecraft:torch'])
 
     e.recipes.create.splashing('quark:limestone', 'create:limestone')
+
+    e.custom({
+        "type": "createdieselgenerators:basin_fermenting",
+        "ingredients": [
+            {
+                "item": "minecraft:brown_dye"
+            },
+            {
+                "item": "minecraft:glass_bottle"
+            },
+            {
+                "fluid": "create_enchantment_industry:ink",
+                "amount": 1000
+            }
+        ],
+        "processingTime": 4000,
+        "results": [
+            {
+                "item": 'supplementaries:antique_ink'
+            }
+        ]
+    }).id("ico:antique_ink")
+
+    e.recipes.create.emptying([Fluid.of('create_enchantment_industry:ink', 1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
 })

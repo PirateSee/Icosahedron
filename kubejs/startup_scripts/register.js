@@ -169,7 +169,7 @@ StartupEvents.registry('item', e => {
 	//e.create('bronze_ingot').texture('icosahedron:item/ore/alloy/brass_ingot')
     //pressure alloy
     e.create('pressure_alloy').texture('icosahedron:item/ore/alloy/pressure_alloy')
-    e.create('compressed_iron_sheet').texture('icosahedron:item/component/alloy/compressed_alloy_sheet')
+    e.create('compressed_iron_sheet').texture('icosahedron:item/ore/alloy/compressed_alloy_sheet')
     //coppronickel
 	e.create('cupronickel_ingot').texture('icosahedron:item/ore/alloy/cupronickel_ingot')
 	e.create('cupronickel_sheet').texture('icosahedron:item/ore/alloy/cupronickel_sheet')
@@ -225,10 +225,11 @@ StartupEvents.registry('item', e => {
 	e.create('oled_display').texture('icosahedron:item/component/pneumatic/oled_display').displayName('OLED Display')
 	e.create('laser_emitter').texture('icosahedron:item/component/pneumatic/laser_emitter')
 
-    //oil tier (section 4)
+    //oil tier (section 4-5)
 	e.create('plasticizer').texture('icosahedron:item/component/oil/plasticizer')
 	e.create('rubber').texture('icosahedron:item/component/oil/rubber')
 	e.create('polystyrene').texture('icosahedron:item/component/oil/polystyrene')
+
     //mekanism tier (section 5)
     e.create('dragon_sinew_mesh','createsifter:mesh').texture('icosahedron:item/mekanism/dragon_sinew_mesh')
 

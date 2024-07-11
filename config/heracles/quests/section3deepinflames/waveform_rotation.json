@@ -1,5 +1,7 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "Gemstone Polishing"
+  ],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -10,28 +12,29 @@
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
-          -93,
-          232
+          -30,
+          180
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "minecraft:map",
+        "id": "create_optical:laser",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "text": "Recordsmith"
+      "translate": "Waveform Rotation"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
