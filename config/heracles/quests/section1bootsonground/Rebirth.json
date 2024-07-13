@@ -11,8 +11,8 @@
   "rewards": {
     "award_orb": {
       "item": {
-        "id": "minecraft:air",
-        "count": 0
+        "id": "origins:orb_of_origin",
+        "count": 1
       },
       "type": "heracles:item"
     }

@@ -8,7 +8,15 @@
     "subtitle": {
       "translate": "Botania plants"
     },
-    "description": [],
+    "description": [
+      "## - Flower Power ---",
+      "Have you noticed those odd /b/mystical flowers/b/?",
+      "",
+      "/b/Mystical Flowers/b/ seem to /6/grow nearly anywhere green/6/. Take some with you, they might have /6/magical properties/6/.",
+      "",
+      "This is your introduction to /b/Botania/b/. Welcome, botanist. These flowers can be refined for use in natrual but /6/automatable processes/6/.",
+      "<hr/>"
+    ],
     "groups": {
       "Section 1: Boots on Ground": {
         "position": [
@@ -30,10 +38,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

@@ -1,13 +1,41 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "get_item_vault": {
+      "type": "heracles:item",
+      "item": "create:item_vault",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_fluid_tank": {
+      "type": "heracles:item",
+      "item": "create:fluid_tank",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## - Mass Storage ---",
+      "Got a hoarding problem?",
+      "",
+      "/b/Item Vaults/b/ are a mass-storage solution. Each item vault /6/stores 18 stacks/6/, making /b/3 vaults/b/ the same capacity of a /b/double chest/b/. However, additonal item vaults can be placed and connected, up to /b/81 item vaults/b/ making a /6/combined capacity of 1,458 stacks/6/.",
+      "",
+      "However, /c/input and output can only be done via automation/c/. /b/Funnels/b/ or /b/Hoppers/b/ can be placed anywhere along the vault and will have /6/acess to the full capacity/6/. /6/Great for automated storage/6/, even if  a little cumbersome for storing and acessing your belongings.",
+      "",
+      "/b/Fluid Tanks/b/ work similarly. A single tank /6/holds 8 buckets/6/ of liquid. /b/Up to 270 tanks/b/ can be combined, for a /6/total capacity of 2,160 buckets/6/.",
+      "",
+      "Similarly, pipes can input and output anywhere along it's length.",
+      "",
+      "/b/Vaults/b/ and /b/Tanks/b/ must have a square base. /b/Fluid Tanks/b/ and /b/Item Silos/b/ stack vertically, but /b/Fluid Vessels/b/ and /b/Item Vaults/b/ can be placed horizontally.",
+      "",
+      "<hr/>",
+      "<task task=\"get_item_vault\" quest=\"Mass Storage\"/>",
+      "<task task=\"get_fluid_tank\" quest=\"Mass Storage\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
@@ -30,10 +58,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
