@@ -1,0 +1,10 @@
+{
+    "name": "Hermit",
+    "description": "§0[Underground]§7\nHermits love spending time under low ceilings and in dark areas.",
+    "powers": [
+        "icosahedron_origins:cave/nightvision",
+        "icosahedron_origins:cave/lowspeed",
+        "icosahedron_origins:cave/ceiling_climb"
+    ],
+    "impact": 0
+}

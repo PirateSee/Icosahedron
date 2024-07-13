@@ -8,7 +8,10 @@
         "icosahedron_origins:mecha",
         "icosahedron_origins:doll",
         "icosahedron_origins:spirit",
-        "icosahedron_origins:plant"
+        "icosahedron_origins:plant",
+        "icosahedron_origins:cave",
+        "icosahedron_origins:blood",
+        "icosahedron_origins:food"
     ],
     "enabled": true
 }

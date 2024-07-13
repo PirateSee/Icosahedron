@@ -1,0 +1,17 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:leaves"
+        },
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "inWall"
+    }
+}

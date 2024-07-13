@@ -1,13 +1,20 @@
 {
     "name": "Dryad",
-    "description": "[Exploration]\nDryads swiftly move through dense vegitation, and keep themselves full of energy through photosynthsis.",
+    "description": "§0[Exploration]§7\nDryads swiftly move through dense vegitation, and keep themselves full of energy through photosynthsis.",
     "powers": [
         "icosahedron_origins:plant/grapplevine",
-        "icosahedron_origins:plant/leaf_phasing",
-        "icosahedron_origins:plant/photovolt",
         "icosahedron_origins:plant/plantspeed",
+        "icosahedron_origins:plant/leaf_phasing",
+        "icosahedron_origins:plant/leaf_phasing_slow",
+        "icosahedron_origins:plant/leaf_phasing_protection",
+        "icosahedron_origins:plant/berry_immune",
+        "icosahedron_origins:plant/photovolt",
+        "icosahedron_origins:plant/photovolt_dark",
         "icosahedron_origins:plant/herbicide",
         "icosahedron_origins:plant/herbicide_fire"
     ],
-    "impact": 0
+    "icon": {
+        "item": "minecraft:vine"
+    },
+    "impact": 2
 }

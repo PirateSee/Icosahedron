@@ -19,7 +19,7 @@
         "default"
     ],
     "material": {
-        "items": [ "blocksyouneed_luna:wrought_iron_ingot" ]
+        "items": [ "kubejs:wrought_iron_ingot" ]
     },
     "requiredTools": {
         "hammer_dig": "minecraft:iron"

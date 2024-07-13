@@ -22,8 +22,6 @@
       "Armor is made the same way as normal, except you need iron sheets instead of ingots.",
       "Tools are made with Tetra.",
       "",
-      "Iron tools will have /4/stone mining level/4/. To get iron mining level tools you will need /b/wrought iron/b/.",
-      "",
       "<hr/>",
       "<task task=\"adv_suit_up\" quest=\"Arms of Steel\"/>"
     ],

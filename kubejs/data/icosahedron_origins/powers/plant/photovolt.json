@@ -1,6 +1,6 @@
 {
-    "name": "§a+ §r§nPhotosynthsis",
-    "description": "Standing in the sun reduces hunger consumption",
+    "name": "§7o §r§nPhotosynthsis",
+    "description": "Standing in the sun reduces hunger consumption, but darkness increases.",
     "condition": {
         "type": "origins:exposed_to_sun"
     },

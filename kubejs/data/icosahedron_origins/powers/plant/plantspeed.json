@@ -1,6 +1,6 @@
 {
-    "name": "§a+ §r§nPlant Affinity",
-    "description": "Increased movement speed near tall grass or flowers.",
+    "name": "§a+ §r§nHerbal Affinity",
+    "description": "Increased movement speed near tall grass or flowers. Pass through leaves and berry bushes.",
     "condition": {
         "type": "origins:block_in_radius",
         "block_condition": {

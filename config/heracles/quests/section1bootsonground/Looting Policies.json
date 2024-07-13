@@ -1,12 +1,23 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "EMI Usage Manual"
+  ],
   "tasks": {},
   "rewards": {},
   "display": {
     "subtitle": {
       "translate": "Treasure!"
     },
-    "description": [],
+    "description": [
+      "## - Looting Policies ---",
+      "Don't you hate it when you find a structure that has already been picked dry?",
+      "",
+      "/b/Lootr/b/ changes how structure loot is handled. /6/Each player can loot/6/ a chest with seperate loot for each of them. Explore in a group for multiples more treasure.",
+      "",
+      "/c/Breaking a chest will prevent other players from looting it./c/ We ask that you /c/do not break loot chests/c/ as to allow other explorers the chance at some good loot.",
+      "",
+      "Otherwise, the process is the same. Enjoy your riches!"
+    ],
     "groups": {
       "Section 1: Boots on Ground": {
         "position": [
@@ -28,10 +39,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

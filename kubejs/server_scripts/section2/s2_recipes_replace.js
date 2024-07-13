@@ -37,6 +37,8 @@ ServerEvents.recipes(e => {
 	e.remove({id:'create:crafting/kinetics/spout'})
 
 	//equipment
+    e.remove({id:'cold_sweat:soulspring_lamp'})
+
 	e.remove({id:'create:crafting/appliances/copper_backtank'})
 	e.remove({id:'create:crafting/materials/sand_paper'})
 	e.remove({id:'create:crafting/materials/red_sand_paper'})
@@ -169,7 +171,7 @@ ServerEvents.recipes(e => {
 		'M ', 
 		'CT'  
 	], {
-		M: 'quark:iron_grate', 
+		M: 'quark:grate', 
 		C: 'create:copper_casing',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:item_drain')
@@ -410,4 +412,16 @@ ServerEvents.recipes(e => {
 		C: 'create_connected:encased_chain_cogwheel',
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:quadrocopter')
+
+    e.shaped('cold_sweat:soulspring_lamp', [
+		' GT', 
+		'WHW', 
+		'WCW'  
+	], {
+		W: 'kubejs:wrought_iron_ingot',
+        C: 'minecraft:chain',
+        H: 'minecraft:heart_of_the_sea',
+        G: 'minecraft:gold_ingot',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:soulspring_lamp')
 })

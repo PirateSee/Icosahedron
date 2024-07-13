@@ -1,6 +1,0 @@
-{
-    "name": "§7o §r§nDimmed Step",
-    "description": "You move slower in well-lit areas, but you can see better in the dark.",
-    "type": "origins:night_vision",
-    "strength": 0.15
-}
