@@ -25,7 +25,7 @@
 	#Enable to use the prefix you set above
 	usePrefix = false
 	#Should the distance away be indicated in the chat? This also disables the custom prefix.
-	rangeNotifier = true
+	rangeNotifier = false
 
 #These codes control the output of the colors sent to the client for the various parts of the mod
 #Color codes reference at http://minecraft.wikia.com/wiki/Formatting_Codes
