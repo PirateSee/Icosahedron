@@ -19,9 +19,9 @@
       "<h2>- Sew Much Insulation ---</h2>",
       "Having tempature problems? Make a sewing table and sew materials into your armour to get insulation.",
       "<crafting-recipe id=\"cold_sweat:sewing_table\"/>",
-      "",
       "<item id=\"minecraft:leather\"/>",
       "Leather makes /d/Neutral/d/ insulation. Not very strong, but works both ways.",
+      "<hr/>",
       "<columns>",
       "    <column>",
       "        <columns template = \"75% 25%\">",
@@ -42,7 +42,10 @@
       "        </columns>",
       "    </column>",
       "</columns>",
+      "<text><aqua><item item=\"cold_sweat:fur\"></item></aqua> and <aqua><item item=\"minecraft:wool\"></item></aqua></text>",
+      "",
       "Fur and wool makes /9/Cold/9/ insulation. Stronger, but only resists the cold. Wool is less effective then fur.",
+      "<hr/>",
       "<columns>",
       "    <column>",
       "        <columns template = \"75% 25%\">",
@@ -63,7 +66,8 @@
       "        </columns>",
       "    </column>",
       "</columns>",
-      "Hoglin Hide and Rabbit Hide makes /6/Hot/6/ insulation. Stronger, but only resists heat. Rabbit Hide is less effective then Hoglin Hide",
+      "<text><aqua><item item=\"cold_sweat:hoglin_hide\"></item></aqua> and <aqua><item item=\"minecraft:rabbit_hide\"></item></aqua> makes <gold>Hot</gold> insulation. Stronger, but only resists heat. Rabbit Hide is less effective then Hoglin Hide</text>",
+      "<hr/>",
       "",
       "Fur can be obtained by shearing goats. Hoglin hide is dropped by Hoglins when they die.",
       "",
@@ -93,10 +97,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

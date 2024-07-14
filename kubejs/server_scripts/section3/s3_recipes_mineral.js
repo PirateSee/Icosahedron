@@ -107,6 +107,18 @@ ServerEvents.recipes(e => {
         ], 'kubejs:aluminum_ingot')
 
     //gemstone polishing
+    //replace other diamond-outputting recipes
+    e.replaceOutput(
+        { output: 'minecraft:diamond' }, // Arg 1: the filter
+        'minecraft:diamond',            // Arg 2: the item to replace
+        'kubejs:unrefined_diamond'         // Arg 3: the item to replace it with
+    )
+    e.replaceOutput(
+        { output: 'minecraft:amethyst_shard' }, // Arg 1: the filter
+        'minecraft:amethyst_shard',            // Arg 2: the item to replace
+        'kubejs:unrefined_amethyst'         // Arg 3: the item to replace it with
+    )
+
     let gemstonePolishing = (id,output) => {
         e.recipes.create.splashing('kubejs:cleaned_unrefined_'.concat(id), 'kubejs:unrefined_'.concat(id)).id("ico:splashing_".concat(id))
         e.recipes.create.cutting('kubejs:unpolished_'.concat(id), 'kubejs:cleaned_unrefined_'.concat(id)).id("ico:cutting_".concat(id))

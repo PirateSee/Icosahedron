@@ -9,7 +9,16 @@
       "translate": "A moment in time"
     },
     "description": [
-      ""
+      "## - Photography ---",
+      "Want to take a picture?",
+      "",
+      "/b/Exposure/b/ adds /b/cameras/b/ and /b/photographs/b/. Place some /b/Film/b/ into a camera, /6/click to take a picture/6/, and /6/develop the film/6/ then /6/print/6/ in a /b/Lightbox/b/.",
+      "",
+      "Black and white film is much cheaper than coloured film. /b/Lenses/b/ can be /6/fitted/6/ to the front of the camera. A /b/Spyglass/b/ /6/increases zoom./6/ A /b/Redstone Lantern/b/ adds a /6/flash/6/.",
+      "",
+      "If you have an image from outside of this world, an /b/Interplaner Projector/b/ can be /6/renamed to a file adress/6/. /6/Attach it to a camera and take a picture/6/, if all went well the film should have captured that image.",
+      "",
+      "<hr/>"
     ],
     "groups": {
       "Section 1: Boots on Ground": {
@@ -32,10 +41,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
