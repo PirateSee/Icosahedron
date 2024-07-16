@@ -1,0 +1,66 @@
+{
+  "dependencies": [
+    "flower power"
+  ],
+  "tasks": {
+    "get_apothecary": {
+      "type": "heracles:item",
+      "item": "botania:apothecary_default",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_pure_daisy": {
+      "type": "heracles:item",
+      "item": "botania:pure_daisy",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Petal Assembly ---",
+      "Time to make some flowers. Make, not grow, it's much quicker this way.",
+      "",
+      "The /b/Petal Apothercary/b/ is used to make /b/magical flowers/b/. It must be /6/filled with water/6/ to operate. Once full, /6/throw in resources/6/ according to recipe then throw in some /b/Seeds/b/ to finalize.",
+      "",
+      "Place blocks around the /b/Pure Daisy/b/ to /6/purify/6/ them. Use this process to make /b/Livingrock/b/ and /b/Livingwood/b/, two important base resources.",
+      "",
+      "The /b/Lexica Botanica/b/ contains /6/additonal information/6/ on how these, and other items, work.",
+      "",
+      "<hr/>",
+      "<task task=\"get_apothecary\" quest=\"petal_assembly\"/>",
+      "<task task=\"get_pure_daisy\" quest=\"petal_assembly\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          0,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:apothecary_default",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Petal Assembly"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

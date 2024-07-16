@@ -15,6 +15,8 @@
       "/b/Mystical Flowers/b/ seem to /6/grow nearly anywhere green/6/. Take some with you, they might have /6/magical properties/6/.",
       "",
       "This is your introduction to /b/Botania/b/. Welcome, botanist. These flowers can be refined for use in natrual but /6/automatable processes/6/.",
+      "",
+      "The /b/Lexica Botanica/b/ contains helpful information on /b/Botania/b/. While some of the information is /c/wrong/c/ (usually recipes, due to changes made by this modpack), it still contains many /6/useful pages on the functions/6/ of diffrent flowers and devices.",
       "<hr/>"
     ],
     "groups": {
@@ -32,7 +34,7 @@
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png",
     "title": {
       "translate": "Flower Power"
     }

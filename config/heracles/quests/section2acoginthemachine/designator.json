@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "petal_assembly",
     "magic assembly"
   ],
   "tasks": {},
@@ -8,11 +9,13 @@
     "subtitle": {
       "translate": "I command thee"
     },
-    "description": [],
+    "description": [
+      "## - Designator ---"
+    ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
-          60,
+          30,
           120
         ]
       }
@@ -30,10 +33,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

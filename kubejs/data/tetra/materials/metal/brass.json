@@ -1,0 +1,30 @@
+{
+    "key": "brass",
+    "category": "metal",
+    "primary": 4.6,
+    "secondary": 4.4,
+    "tertiary": 3.2,
+    "durability": 314,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 70,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 5.4,
+    "tints": {
+        "glyph": "F8CA67",
+        "texture": "F8CA67"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:ingots/brass"
+    },
+    "improvements": {
+        "workable": 1
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:iron"
+    }
+}

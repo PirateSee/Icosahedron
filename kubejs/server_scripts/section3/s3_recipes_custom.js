@@ -144,8 +144,6 @@ ServerEvents.recipes(e => {
 
 	e.recipes.create.mixing('2x minecraft:corase_dirt', ['minecraft:dirt', 'minecraft:gravel'])
 
-	e.recipes.create.milling('5x kubejs:soft_slag_dust', 'kubejs:slag')
-
 	e.custom({
 		"type": "createsifter:sifting",
 		"ingredients": [

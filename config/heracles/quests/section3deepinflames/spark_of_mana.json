@@ -1,7 +1,5 @@
 {
-  "dependencies": [
-    "purify"
-  ],
+  "dependencies": [],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -10,30 +8,31 @@
     },
     "description": [],
     "groups": {
-      "Section 2: A Cog in the Machine": {
+      "Section 3: Deep in Flames": {
         "position": [
-          30,
-          90
+          90,
+          60
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "botania:apothecary_default",
+        "id": "botania:spark",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Floral Assembly"
+      "translate": "Spark of Mana"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
