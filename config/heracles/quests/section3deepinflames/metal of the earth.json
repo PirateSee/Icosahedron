@@ -1,5 +1,8 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "spark_of_mana",
+    "Gemstone Polishing"
+  ],
   "tasks": {},
   "rewards": {},
   "display": {
@@ -11,7 +14,7 @@
       "Section 3: Deep in Flames": {
         "position": [
           90,
-          0
+          150
         ]
       }
     },
@@ -28,10 +31,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

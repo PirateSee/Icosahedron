@@ -8,7 +8,19 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Symphony ---",
+      "Feeling the music?",
+      "",
+      "/b/Minecraft Instrument Musical Interface/b/ (or /b/MIMI/b/) adds /6/MIDI compatible instruments/6/.",
+      "",
+      "If you don't know what that means, you can still /6/play/6/ them normally /6/with your keyboard/6/. Otherwise, you may /6/plug in a MIDI device/6/.",
+      "",
+      "A /b/Transmitter/b/ will allow you to /6/play automatically/6/ off of a /b/MIDI file/b/.",
+      "",
+      "There are many instruments and many other tools to help you make a grand orchestra.",
+      "<hr/>"
+    ],
     "groups": {
       "Section 1: Boots on Ground": {
         "position": [

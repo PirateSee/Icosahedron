@@ -11,14 +11,14 @@
       "text": ""
     },
     "description": [
-      "<h1>- Style Guide ---</h1>",
-      "",
+      "## - Style Guide ---",
       "Icosahedron Quest Description Style Guide.",
       "",
-      "The title of the quest should be put as a /b/Heading 1/b/, with dashes as seen above. Text should be spaced one space down from the title.",
+      "The title of the quest should be put as a /b/Heading 2/b/, with dashes as seen above. A subtitle should be placed directly under, then body text should be spaced one space down from the title.",
       "",
-      "> /<h1>- Title ---</h1>",
-      "> ",
+      "> /## - Title ---",
+      "> subtitle",
+      ">",
       "> text",
       "",
       "/b/Blue/b/ and /6/Orange/6/ highlighted text is used to /6/highlight important information/6/. Generaly /b/Blue/b/ is used for /b/Item Names/b/. /6/Orange/6/ is used for /6/Processes/6/. Highlighted item names or other objects should be capitalized.",
@@ -27,12 +27,12 @@
       "",
       "> /6/Smelting/6/ a /b/Raw Porkchop/b/ will give you a /b/Cooked Porkchop/b/.",
       "",
-      "<h2>Sub Headers</h2>",
+      "## Sub Headers",
       "",
-      "Sub headers, similar to the title, should have a space below and above them. They are a /b/Heading 2/b/.",
+      "Sub headers, should have a space below and above them. They are a /b/Heading 2/b/.",
       "",
-      "> /<h2>- Sub Header ---</h2>",
-      "> ",
+      "> /## Sub Header",
+      ">",
       "> text",
       "",
       "Generally there should be no need for sub headers in regular quests. They should be focused on a single topic and not need to be sectioned.",
@@ -72,10 +72,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

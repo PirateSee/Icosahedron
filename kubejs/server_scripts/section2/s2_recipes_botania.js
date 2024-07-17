@@ -1,25 +1,123 @@
 ServerEvents.recipes(e => {  
 
-    e.remove({id:'botania:mana_infusion/manasteel'})
-    e.remove({id:'botania:mana_infusion/manasteel_block'})
+    e.remove({id: 'botania:diluted_pool'})
+    e.remove({id: 'botania:mana_pool'})
+    e.remove({id: 'botania:mana_spreader'})
+    e.remove({id: 'botania:runic_altar'})
+    e.remove({id: 'botania:runic_altar_alt'})
 
-    e.remove({id:'botania:runic_altar/water'})
-    e.remove({id:'botania:runic_altar/fire'})
-    e.remove({id:'botania:runic_altar/earth'})
-    e.remove({id:'botania:runic_altar/air'})
+    e.remove({id: 'mna:arcane_compound'})
+
+    e.remove({id: 'mna:vinteum_coated_iron'})
+
+    e.remove({id: 'botania:mana_infusion/manasteel'})
+    e.remove({id: 'botania:mana_infusion/manasteel_block'})
+    e.remove({id: 'botania:mana_infusion/mana_powder_dust'})
+    e.remove({id: 'botania:mana_infusion/mana_powder_dye'})
+    e.remove({id: 'botania:mana_pearl'})
+
+    e.remove({id: 'botania:runic_altar/water'})
+    e.remove({id: 'botania:runic_altar/fire'})
+    e.remove({id: 'botania:runic_altar/earth'})
+    e.remove({id: 'botania:runic_altar/air'})
+
+    e.shaped('botania:diluted_pool', [
+        '  T',
+        'WVW', 
+		'WWW'
+	], {
+		W: 'botania:livingrock', 
+		V: 'mna:vinteum_dust',
+        T: '#ico:tool/file'
+	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:diluted_pool')
+
+    e.shaped('botania:mana_pool', [
+        ' MT',
+        'WPW', 
+		'WWW'
+	], {
+		W: 'botania:livingrock', 
+		V: 'botania:mana_pearl',
+        P: 'botania:diluted_pool',
+        T: '#ico:tool/file'
+	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:mana_pool')
+
+    e.shaped('botania:mana_spreader', [
+        'LLT',
+        'GEG', 
+		'LLL'
+	], {
+        L: '#botania:livingwood_logs',
+		E: 'minecraft:emerald',
+        G: 'minecraft:gold_ingot',
+        T: '#ico:tool/saw'
+	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:mana_spreader')
+
+    e.shapeless('2x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '#botania:mystical_flowers'])
+
+    e.custom({
+		"type": "create:compacting",
+		"ingredients": [
+			{
+			  "item": "minecraft:gold_ingot"
+			},
+			{
+			  "item": "minecraft:copper_ingot",
+              "count": 2
+			},
+			{
+			  "item": 'botania:mana_powder',
+			},
+			{
+			  "item": 'mna:vinteum_dust',
+			}
+		],
+		"results": [
+			{
+			  "item": "mna:vinteum_coated_iron",
+			  "count": 1
+			}
+		],
+		"heatRequirement": "lowheated"
+	})
 
     e.custom({
         "type": "botania:mana_infusion",
         "input": {
-            "item": 'kubejs:cadmium_coated_ingot'
+            "item": 'mna:vinteum_coated_iron'
         },
         "mana": 3000,
         "output": {
-        "item": "botania:manasteel_ingot"
+            "item": "botania:manasteel_ingot"
         }
-    })
+    }).id('ico:manasteel')
 
-    e.recipes.create.compacting('kubejs:rune_backing', ['botania:manasteel_ingot', 'botania:mana_powder', 'botania:livingrock'])
+    e.custom({
+        "type": "botania:mana_infusion",
+        "input": {
+            "item": 'mna:arcane_compound'
+        },
+        "mana": 500,
+        "output": {
+            "item": "botania:mana_powder"
+        }
+    }).id('ico:mana_powder')
+
+    e.custom({
+        "type": "botania:mana_infusion",
+        "input": {
+            "item": 'born_in_chaos_v1:phantom_powder'
+        },
+        "mana": 750,
+        "output": {
+            "count": 2,
+            "item": "botania:mana_powder"
+        }
+    }).id('ico:mana_powder_2')
+
+    e.recipes.create.mixing('botania:mana_pearl', ['minecraft:ender_pearl', '6x botania:mana_powder'])
+
+    e.recipes.create.compacting('kubejs:rune_backing', ['botania:manasteel_ingot', 'botania:mana_powder', '2x botania:livingrock'])
 
     e.shaped('botania:runic_altar', [
 		'  T',

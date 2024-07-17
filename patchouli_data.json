@@ -70,7 +70,22 @@
         "botania:devices/animated_torch",
         "botania:generating_flowers/thermalily",
         "botania:generating_flowers/arcanerose",
-        "botania:basics/apothecary"
+        "botania:basics/apothecary",
+        "botania:tools/rainbow_rod",
+        "botania:challenges/rune_crafter",
+        "botania:challenges/pure_daisy",
+        "botania:challenges/record_farm",
+        "botania:mana/lens",
+        "botania:functional_flowers/agricarnation",
+        "botania:functional_flowers/rannuncarpus",
+        "botania:functional_flowers/marimorphosis",
+        "botania:functional_flowers/jaded_amaranthus",
+        "botania:mana/mana_mirror",
+        "botania:mana/elven_lenses",
+        "botania:tools/smelt_rod",
+        "botania:tools/cobble_rod",
+        "botania:devices/pylon",
+        "botania:basics/terrasteel"
       ],
       "bookmarks": [],
       "completedManualQuests": []

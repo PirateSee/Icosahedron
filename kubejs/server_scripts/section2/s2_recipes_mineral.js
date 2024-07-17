@@ -239,6 +239,18 @@ ServerEvents.recipes(e => {
 	//e.smelting('minecraft:iron_ingot', 'kubejs:pig_iron_ingot')
 
 	//gem polishing
+    //replace other gem-outputting recipes
+    e.replaceOutput(
+        { output: 'minecraft:emerald' }, // Arg 1: the filter
+        'minecraft:emerald',            // Arg 2: the item to replace
+        'kubejs:rough_emerald'         // Arg 3: the item to replace it with
+    )
+    e.replaceOutput(
+        { output: 'minecraft:quartz' }, // Arg 1: the filter
+        'minecraft:quartz',            // Arg 2: the item to replace
+        'kubejs:rough_nether_quartz'         // Arg 3: the item to replace it with
+    )
+
 	e.recipes.create.sandpaper_polishing('minecraft:quartz', 'kubejs:rough_nether_quartz')
 	e.recipes.create.sandpaper_polishing('minecraft:emerald', 'kubejs:rough_emerald')
     e.recipes.create.sandpaper_polishing('kubejs:aquatrine', 'kubejs:rough_aquatrine')

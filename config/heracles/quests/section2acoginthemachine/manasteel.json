@@ -3,13 +3,30 @@
     "Crude Ore Processing",
     "storm pond"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_manasteel": {
+      "type": "heracles:item",
+      "item": "botania:manasteel_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "translate": "Mana-infused metal"
     },
-    "description": [],
+    "description": [
+      "## - Manasteel ---",
+      "What about an alloy of metal and mana?",
+      "",
+      "/b/Manasteel/b/ is made by dropping unkown into a /b/Mana Pool/b/. Some /b/mana/b/ is used in the process.",
+      "",
+      "This material is used for more advanced devices, and is a decent tool material. Tools made from /b/Manasteel/b/ can be /6/repaired with mana/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_manasteel\" quest=\"manasteel\"/>"
+    ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
@@ -31,10 +48,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

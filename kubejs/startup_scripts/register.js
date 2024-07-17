@@ -250,6 +250,9 @@ StartupEvents.registry('item', e => {
 
 	//magic
 	e.create('cadmium_coated_ingot').texture('icosahedron:item/magic/cadmium_coated_ingot')
+
+    //e.create('arcane_compound')
+
 	e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
 
 	e.create('ornate_gold').texture('icosahedron:item/magic/ornate_gold')

@@ -8,6 +8,14 @@ ServerEvents.tags('item', e => {
 	e.add('ico:insulator', 'cold_sweat:hoglin_hide')
 	e.add('ico:insulator', 'cold_sweat:chameleon_molt')
 
+    //arcane_base
+    e.add('ico:arcane_base', 'minecraft:gunpowder')
+    e.add('ico:arcane_base', 'minecraft:sugar')
+    e.add('ico:arcane_base', 'minecraft:redstone')
+    e.add('ico:arcane_base', 'minecraft:glowstone_dust')
+    e.add('ico:arcane_base', 'kubejs:iron_grit')
+    e.add('ico:arcane_base', 'kubejs:copper_grit')
+
 	//components
 	e.add('ico:component', 'kubejs:wooden_slide')
 	e.add('ico:component', 'kubejs:andesite_framing')
@@ -179,5 +187,6 @@ ServerEvents.tags('item', e => {
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
 
+    e.add('botania:mystical_flowers', Ingredient.of("#mna:ma_flowers").itemIds)
 
 })

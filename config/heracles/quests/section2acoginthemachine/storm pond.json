@@ -8,7 +8,16 @@
     "subtitle": {
       "translate": "Open-air storage"
     },
-    "description": [],
+    "description": [
+      "## - Storm Pond ---",
+      "Now that we have mana, we've got to put it somewhere.",
+      "",
+      "draft",
+      "",
+      "mana pools",
+      "link spreader to pool",
+      "uses of mana pools"
+    ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
@@ -30,10 +39,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

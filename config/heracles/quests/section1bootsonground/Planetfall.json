@@ -36,7 +36,7 @@
       "translate": "Welcome"
     },
     "description": [
-      "<h2>- Welcome ---</h2>",
+      "## - Welcome ---",
       "Welcome to Icosahedron, an expert-lite modpack based on combat, tech, and fun systems to master.",
       "",
       "<hint title=\"Note on Skill\" icon=\"minecraft:cobblestone\">",
