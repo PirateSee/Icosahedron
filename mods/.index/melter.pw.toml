@@ -1,13 +1,13 @@
-filename = 'melter-1.20.1-1.5.1.jar'
+filename = 'melter-1.20.1-1.6.0.jar'
 name = 'Melter'
 side = 'both'
 
 [download]
-hash = '869efceaafbe18e818172cba193e6cb781cf940fe708adb5c36ae2a9c4075986388d33e69a05e01cbf84c0da871d544070291ba91c073162b869a9d2a3f8837c'
+hash = '4c307e85e76ea7a3195f371da0b0b793bfc07d3315493621f6ffb96ec9b77f7425679d457890f757f1c87cd16b950202b19f348afdd2656173925800ab691525'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/1oFTujWR/versions/8NYayRSj/melter-1.20.1-1.5.1.jar'
+url = 'https://cdn.modrinth.com/data/1oFTujWR/versions/go1ZeKOa/melter-1.20.1-1.6.0.jar'
 
 [update.modrinth]
 mod-id = '1oFTujWR'
-version = '8NYayRSj'
+version = 'go1ZeKOa'

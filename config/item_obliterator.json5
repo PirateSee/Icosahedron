@@ -16,7 +16,16 @@
   // Items here will be unusable completely
   //    Example: minecraft:diamond
   "blacklisted_items": [
-    "examplemod:example_item"
+    "pneumaticcraft:ethanol",
+    "vinery:straw_hat",
+    "vinery:winemaker_apron",
+    "vinery:winemaker_leggings",
+    "vinery:winemaker_boots",
+    "vintageimprovements:pig_iron_sheet",
+    "vintageimprovements:pig_iron_rod",
+    "vintageimprovements:pig_iron_wire",
+    "vintageimprovements:pig_iron_spring",
+    "vintageimprovements:small_pig_iron_spring"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
