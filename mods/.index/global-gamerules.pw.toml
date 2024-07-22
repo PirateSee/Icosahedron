@@ -1,0 +1,13 @@
+filename = 'GlobalGameRules-1.20-8.0.0.11.jar'
+name = 'Global GameRules'
+side = 'server'
+
+[download]
+hash = 'd78e1b1aab091a4cd932158627d8f3bb6738c6b30a24880e7842faae84d05df1950f4ebcb3a626ab1cd8b0ac237efe95cd7409f37b3da221650a420bddf4ad42'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/PIJSp01k/versions/Leux4ZWt/GlobalGameRules-1.20-8.0.0.11.jar'
+
+[update.modrinth]
+mod-id = 'PIJSp01k'
+version = 'Leux4ZWt'

@@ -1,0 +1,8 @@
+{
+  "filters":
+  [
+    "ae2:facade",
+    "/vintageimprovements:.*(cobalt|enderium|signalium|pig_iron|queens_slime)/"
+  ],
+  "disable": true
+}
