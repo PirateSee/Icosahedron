@@ -22,7 +22,7 @@
     "material": {
         "tag": "forge:ingots/refined_glowstone"
     },
-	"improvements": {
+	"effects": {
         "stablizing": 1
     },
     "requiredTools": {

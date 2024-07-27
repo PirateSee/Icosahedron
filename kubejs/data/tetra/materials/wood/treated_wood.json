@@ -19,7 +19,9 @@
         "wooden"
     ],
     "material": {
-        "items": [ "kubejs:treated_wood_planks","immersive_engineering:treated_wood_planks" ]
+        "items": [
+            "kubejs:treated_wood_planks"
+        ]
     },
     "requiredTools": {
         "axe_dig": "minecraft:wood"

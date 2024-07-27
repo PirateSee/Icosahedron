@@ -18,7 +18,7 @@
         ],
 		"manaRepair": [
 			0,
-			0.0025
+			0.005
 		]
     },
     "tints": {
@@ -31,7 +31,7 @@
     "experienceCost": 2,
     "material": {
         "items": [
-            "ae2:fluix_pearl"
+            "botania:mana_pearl"
         ]
     }
 }

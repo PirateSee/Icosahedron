@@ -1,5 +1,5 @@
 {
-    "key": "socket_fluix_pearl",
+    "key": "socket_mana_diamond",
     "hidden": true,
     "category": "socket",
     "primary": 0,
@@ -14,7 +14,7 @@
     "effects": {
         "manaRepair": [
             0,
-            0.005
+            0.0025
         ]
     },
     "tints": {
@@ -27,7 +27,7 @@
     "experienceCost": 2,
     "material": {
         "items": [
-            "ae2:fluix_pearl"
+            "botania:mana_diamond"
         ]
     }
 }

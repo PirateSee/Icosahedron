@@ -137,6 +137,9 @@ ServerEvents.tags('item', e => {
 	e.add('forge:ingots/tin', 'kubejs:tin_ingot')
 	e.add('forge:ingots/cupronickel', 'kubejs:cupronickel_ingot')
 	e.add('forge:ingots/tungsten', 'kubejs:tungsten_ingot')
+    e.add('forge:ingots/pig_iron', 'kubejs:pig_iron_ingot')
+    e.add('forge:ingots/wrought_iron', 'kubejs:wrought_iron_ingot')
+    e.add('forge:ingots/carbon_steel', 'kubejs:carbon_steel_ingot')
 
 	e.add('forge:nuggets/nickel', 'kubejs:nickel_nugget')
 	//e.add('forge:nuggets/aluminum', 'kubejs:aluminum_nugget')
@@ -160,9 +163,12 @@ ServerEvents.tags('item', e => {
 	e.add('forge:dusts/zinc', 'kubejs:zinc_grit')
 	e.add('mekanism:dirty_dusts/zinc', 'kubejs:impure_zinc_grit')
 
+    e.add('forge:gems/aquatrine', 'kubejs:aquatrine')
+    
+	e.add('minecraft:planks', 'kubejs:treated_wood_planks')
+
 	//mods
 	e.add('immersive_weathering:flammable_planks', 'minecraft:cherry_planks')
-	e.add('immersive_weathering:flammable_planks', 'blocksyouneed_luna:treated_wood_planks')
 
 	e.add('c:bows', 'tetra:modular_bow')
 	e.add('c:bows', 'tetra:modular_crossbow')
@@ -171,6 +177,8 @@ ServerEvents.tags('item', e => {
 	e.add('c:swords', 'tetra:modular_sword')
 
 	e.add('pneumaticcraft:wiring', 'createaddition:electrum_nugget')
+
+    e.add('botania:mystical_flowers', Ingredient.of("#mna:ma_flowers").itemIds)
 
 	//misc
 	e.add('forge:glass', 'kubejs:quartz_glass')
@@ -186,7 +194,5 @@ ServerEvents.tags('item', e => {
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
-
-    e.add('botania:mystical_flowers', Ingredient.of("#mna:ma_flowers").itemIds)
 
 })
