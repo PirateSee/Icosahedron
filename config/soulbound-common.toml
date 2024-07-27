@@ -37,4 +37,10 @@ whitelist = []
 #Blacklist
 #黑名单
 blacklist = []
+#Whether to allow librarians to sell this enchantment
+#是否允许图书管理员出售此附魔
+allowEnchantedBookTrade = true
+#Whether to disable obtaining in survival
+#是否禁用生存模式获取途径
+disableSurvivalObtaining = false
 
