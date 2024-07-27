@@ -6,7 +6,20 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Strapped in ---",
+      "Wouldn't it be nice to have more hands?",
+      "",
+      "A /b/toolbelt/b/ isn't quite extra hands, but it does help lighten the load. A simple belt can be /6/crafted from just string/6/.",
+      "",
+      "The /b/Rope belt/b/ starts with a single /b/Leather Strap/b/, capable of holding /6/one quickslot/6/.",
+      "",
+      "/6/Sneak/6/ and press /b/B/b/ (by default) to /6/insert your held item/6/ into the slot. Hold /b/B/b/ to /6/select a quickslotted item/6/. Press /b/Alt+B/b/ to open it as an inventory, allowing acess to any /b/Storage Pouches/b/.",
+      "",
+      "The rope belt has /c/poor intergrity/c/ and thus cant hold many other utilities, but it can be /6/upgraded with more strength/6/. An /b/upgraded belt/b/ can hold more /b/Straps/b/, /b/Storage Pouches/b/, /b/Quivers/b/, and even a /b/jet Booster/b/.",
+      "",
+      "<hr/>"
+    ],
     "groups": {
       "Section T: Tetra Toolsmithing": {
         "position": [
@@ -35,10 +48,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

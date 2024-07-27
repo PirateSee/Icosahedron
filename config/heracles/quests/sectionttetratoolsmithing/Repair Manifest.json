@@ -6,7 +6,17 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Repair Manifest ---",
+      "Time to fix up that old beater.",
+      "",
+      "Tetra tools can be worked until broken, after which they will /c/stop functioning/c/ but /6/not be destroyed/6/ so as to let you repair them.",
+      "",
+      "Repairs are done by /6/cycling through modules/6/ and /6/submitting the material/6/ they are composed of to /b/gain durability/b/. Repairing will also /6/require the appopriate tool/6/. /b/Major modules/b/ (tool heads) are cycled through more often, while others rarely need reparing. ",
+      "",
+      "/c/Magically destablized modules additonaly require experince/c/ for repairs.",
+      "<hr/>"
+    ],
     "groups": {
       "Section T: Tetra Toolsmithing": {
         "position": [
@@ -28,10 +38,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

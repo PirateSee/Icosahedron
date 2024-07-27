@@ -11,7 +11,14 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Compact Alloy ---",
+      "Ready for some real /6/pressure/6/?",
+      "",
+      "/b/Compressed Alloy/b/ is the base material for everything /b/pneumatic/b/. You'll need quite a lot of this, and it's production is fairly complex.",
+      "",
+      "You'll need to /6/superheat/6/ /b/Aluminum/b/ and /b/Pressed Iron/b/, then /6/compact/6/ them with /b/Corundum Clusters/b/ to make ingots. The pressure alloy ingots msut then be /6/exploded/6/ to make /b/Pressure Alloy/b/. Blowing up the ingots /c/may cause you to lose som/c/e, so a /6/more efficent process/6/ is worth investing in.",
+      "",
+      "<hr/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
@@ -34,10 +41,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

@@ -6,7 +6,19 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Enchanted ---",
+      "Whats better than a sword with magic imbued in it?",
+      "",
+      "You're probably famillar with enchantments on regular tools, but they work slightly diffrently on tetra tools. Enchantment affects are still the same, but watch out for /b/Magic Capacity/b/.",
+      "",
+      "/b/Enchantments/b/ consume /b/Magic Capacity/b/ when applied. Exceeding the capacity makes the module /c/magically unstable/c/. /6/Repairs/6/ to the module will cost /b/experience/b/, and /6/modifications/6/ to it may /c/destabilize/c/ the enchantments.",
+      "",
+      "/b/Magic Capacity/b/ is based on the materials used in the module. More /b/enchantable/b/ materials grant higher capacity. Some materials may be /6/Stablizing/6/ and will increase the capacity of the major modules.",
+      "",
+      "Enchantments are /6/bound to a single module/6/. This means you can avoid destablization by spreading out enchantments between difrent modules. However, if you /6/replace the module/6/ with enchantments, /c/they will be lost/c/. Other non-enchanted modules can be swapped without worry.",
+      "<hr/>"
+    ],
     "groups": {
       "Section T: Tetra Toolsmithing": {
         "position": [
@@ -28,10 +40,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

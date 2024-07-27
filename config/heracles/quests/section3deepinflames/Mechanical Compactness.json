@@ -2,14 +2,27 @@
   "dependencies": [
     "Advanced Ore Processing"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_precision_mechanism": {
+      "type": "heracles:item",
+      "item": "create:precision_mechanism",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## - Mechanical Compactness ---",
+      "It's like a little gearbox in your hand!",
+      "",
+      "/b/Precision Mechanisms/b/ are complex components used for high-tier Create machinery. These require /6/Sequenced Assembly/6/ to be made. They are used for some /b/equipment/b/, /b/trains/b/, and /b/mining machines/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_precision_mechanism\" quest=\"Mechanical Compactness\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
@@ -32,10 +45,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

@@ -21,7 +21,7 @@
       "",
       "Holding a /b/Soulspring Lamp/b/ cools down the /b/ambient tempature/b/ to just /6/within the habitable range/6/. The lamp must be held in either hand, and has to be /6/kept fueled/6/ with /b/Soul Sprouts/b/ from the nether.",
       "",
-      "<crafting-recipe id=\"cold_sweat:soulspring_lamp\" grid-width=\"3\"> </crafting-recipe>",
+      "<crafting-recipe id=\"ico:soulspring_lamp\" grid-width=\"3\"> </crafting-recipe>",
       "",
       "It should be noted that the /b/Soulspring Lamp/b/ only reduces ambient tempature, so standing near /4/hot blocks will still cause overheating/4/.",
       "",

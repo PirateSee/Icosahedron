@@ -8,7 +8,17 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Real Trains ---",
+      "All aboard!",
+      "",
+      "Trains are great logistics tools. They can /6/automatically carry/6/ /b/entities/b/, /b/items/b/, and /b/fluids/b/ long distances with good speed.",
+      "",
+      "Lay some /b/Train Tracks,/b/ place down a /b/Train Station/b/, put on a /b/Train Controler/b/ and get moving. Trains /6/do not require fuel/6/, but will move /6/much faster with some/6/ placed anywhere on the vehicle.",
+      "",
+      "A /b/Train Schedule/b/ and an /b/entity/b/ in the driver's seat can /6/automatically drive/6/ the train.",
+      "<hr/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -30,10 +40,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

@@ -1,12 +1,30 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "get_geode": {
+      "type": "heracles:item",
+      "item": "tetra:geode",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Conspicous Rocks ---",
+      "Rock and stone!",
+      "",
+      "Deep underground, you may find some /b/sparkling deepslate/b/. When mined, these drop a /b/Geode/b/. Geodes can be /6/smashed open/6/ at a /b/workbench/b/ using a /b/hamer/b/.",
+      "",
+      "Geode drops typically include various gemstones, rarely including /b/pristine gemstones/b/. Pristine gemstones have /6/improved stats/6/ when /6/socketed/6/ into tools. They can also be /6/smashed into regular-quality/6/ pieces.",
+      "",
+      "Keep an eye out, these can yield valuable gems.",
+      "<hr/>",
+      "<task task=\"get_geode\" quest=\"Conspicous Rocks\"/>"
+    ],
     "groups": {
       "Section T: Tetra Toolsmithing": {
         "position": [
@@ -28,10 +46,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

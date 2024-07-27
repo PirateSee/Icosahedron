@@ -8,7 +8,6 @@
     },
     "description": [
       "<h2>- Tool Schematics ---</h2>",
-      "",
       "Hungry for more /b/upgrades/b/?",
       "",
       "Unfortunately, you don't know how to make all of them by yourself.",
@@ -17,7 +16,9 @@
       "",
       "/b/Villagers/b/ that have mastered their craft might offer treatises on the /6/efficent use/6/ of materials.",
       "",
-      "/b/Piglins/b/ seem to have good knowledge of the use of gold, potentally having written down how to harness gold's properties for /6/enchanting/6/."
+      "/b/Piglins/b/ seem to have good knowledge of the use of gold, potentally having written down how to harness gold's properties for /6/enchanting/6/.",
+      "",
+      "Finding these scrolls would greatly aid you in your toolsmithing endevours."
     ],
     "groups": {
       "Section T: Tetra Toolsmithing": {
@@ -40,10 +41,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }
