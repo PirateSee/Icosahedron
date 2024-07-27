@@ -1,0 +1,64 @@
+{
+    "name": "§a+ §r§nFloating",
+    "description": "Activate in air to float for a short time",
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:block_collision",
+                "block_condition": {
+                    "inverted": true,
+                    "type": "origins:movement_blocking"
+                },
+                "offset_x": 0,
+                "offset_y": -0.1,
+                "offset_z": 0
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        ]
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:levitation",
+                    "duration": 100,
+                    "amplifier": 255,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 0.1,
+                "space": "velocity",
+                "client": true,
+                "server": true,
+                "set": true
+            },
+            {
+                "type": "origins:exhaust",
+                "amount": 0.5
+            },
+            {
+                "type": "origins:set_fall_distance",
+                "fall_distance": 0
+            }
+        ]
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

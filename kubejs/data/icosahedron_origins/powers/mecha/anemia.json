@@ -1,0 +1,83 @@
+{
+    "3": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 3
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.1,
+            "name": "Anemia Bonus"
+        }
+    },
+    "7": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 7
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.1,
+            "name": "Anemia Bonus"
+        }
+    },
+    "10": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 10
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.1,
+            "name": "Anemia Bonus"
+        }
+    },
+    "12": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">=",
+            "compare_to": 16
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.05,
+            "name": "Anemia Penalty"
+        }
+    },
+    "16": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">=",
+            "compare_to": 16
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.1,
+            "name": "Anemia Penalty"
+        }
+    },
+    "18": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">=",
+            "compare_to": 18
+        },
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 0.05,
+            "name": "Anemia Penalty"
+        }
+    },
+    "name": "§7o §r§nAnemia",
+    "description": "You exhaust quicker the fuller you are, but much slower when hungry.",
+    "type": "origins:multiple"
+}

@@ -1,6 +1,6 @@
 {
     "name": "§7o §r§nFloat",
-    "description": "Float slightly off the ground",
+    "description": "Float slightly off the ground. When stuck in blocks, you'll rapidly accend.",
     "condition": {
         "type": "origins:block_collision",
         "block_condition": {

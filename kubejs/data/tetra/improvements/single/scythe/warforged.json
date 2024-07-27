@@ -1,0 +1,21 @@
+[
+    {
+        "key": "double/warforged",
+        "integrity": -2,
+        "attributes": {
+            "generic.attack_damage": 3
+        },
+        "effects": {
+            "sweeping": [3, 2]
+        },
+        "aspects": {
+            "edged_weapon": 1
+        },
+        "models": [
+            {
+                "location": "tetrasulphide:item/module/single/scythe/warforged",
+                "tint": "inherit"
+            }
+        ]
+    }
+]

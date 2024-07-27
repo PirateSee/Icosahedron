@@ -1,0 +1,28 @@
+{
+    "key": "rose_quartz",
+    "category": "gem",
+    "primary": 6,
+    "secondary": 2.5,
+    "tertiary": 0,
+    "durability": 850,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 37,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 7,
+    "tints": {
+        "glyph": "fcbda2",
+        "texture": "fcbda2"
+    },
+    "textures": [
+        "shiny",
+		"crude",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:gems/rose_quartz"
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

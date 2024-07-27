@@ -1,0 +1,94 @@
+{
+    "name": "§a+ §r§nCombo",
+    "description": "Take more damage right after taking damage (stacks up to 3 times)",
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 7,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png"
+        }
+    },
+    "increase": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "comparison": "<",
+            "compare_to": 3
+        },
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "change": 1,
+            "operation": "add"
+        },
+        "cooldown": 1
+    },
+    "decrease": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "type": "origins:action_over_time",
+        "interval": 50,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "change": -1,
+            "operation": "add"
+        },
+        "rising_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "change": 1,
+            "operation": "add"
+        }
+    },
+    "damage_1": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "comparison": "==",
+            "compare_to": 1
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.1,
+            "name": "Combo 1"
+        }
+    },
+    "damage_2": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "comparison": "==",
+            "compare_to": 2
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.2,
+            "name": "Combo 2"
+        }
+    },
+    "damage_3": {
+        "condition": {
+            "type": "origins:resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "comparison": "==",
+            "compare_to": 3
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.3,
+            "name": "Combo 3"
+        }
+    }
+}

@@ -1,20 +1,18 @@
 {
     "name": "§a+ §r§nMomentum",
     "description": "The longer you sprint, the faster you go",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Signifigantly increased knockback at high speeds",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
     "type": "origins:multiple",
     "resource": {
         "type": "origins:resource",
         "min": 0,
-        "max": 28,
-        "hud_render": {
-            "should_render": true,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "icosahedron_origins:mecha/momentum_resource",
-                "comparison": ">=",
-                "compare_to": 3
-            }
-        }
+        "max": 28
     },
     "gain": {
         "type": "origins:action_over_time",
@@ -156,5 +154,130 @@
         },
         "tick_rate": 5,
         "update_health": false
+    },
+    "kick": {
+        "condition": {
+            "type": "origins:sprinting"
+        },
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:mecha/momentum_resource",
+                            "comparison": ">=",
+                            "compare_to": 4
+                        }
+                    },
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.05,
+                        "z": 0.25,
+                        "client": true,
+                        "server": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:mecha/momentum_resource",
+                            "comparison": ">=",
+                            "compare_to": 8
+                        }
+                    },
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.05,
+                        "z": 0.5,
+                        "client": true,
+                        "server": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:mecha/momentum_resource",
+                            "comparison": ">=",
+                            "compare_to": 12
+                        }
+                    },
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.05,
+                        "z": 0.75,
+                        "client": true,
+                        "server": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:mecha/momentum_resource",
+                            "comparison": ">=",
+                            "compare_to": 16
+                        }
+                    },
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.1,
+                        "z": 1,
+                        "client": true,
+                        "server": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:mecha/momentum_resource",
+                            "comparison": ">=",
+                            "compare_to": 24
+                        }
+                    },
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.1,
+                        "z": 1.25,
+                        "client": true,
+                        "server": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:mecha/momentum_resource",
+                            "comparison": ">=",
+                            "compare_to": 28
+                        }
+                    },
+                    "action": {
+                        "type": "origins:add_velocity",
+                        "y": 0.1,
+                        "z": 1.5,
+                        "client": true,
+                        "server": true
+                    }
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:distance",
+            "comparison": "<=",
+            "compare_to": 5
+        },
+        "cooldown": 1
     }
 }

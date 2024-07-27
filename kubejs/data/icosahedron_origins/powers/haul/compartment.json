@@ -1,0 +1,79 @@
+{
+    "name": "§a+ §r§nCompartment",
+    "description": "If grounded, open a storage that persists on death. Crouch for crafting table.",
+    "type": "origins:multiple",
+    "storage": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">=",
+                            "compare_to": 0.1
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "block_condition": {
+                                "type": "origins:movement_blocking"
+                            },
+                            "offset_x": 0,
+                            "offset_y": -0.1,
+                            "offset_z": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:inventory",
+        "container_type": "dispenser",
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "recoverable": true
+    },
+    "craft": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:fluid_height",
+                            "fluid": "minecraft:water",
+                            "comparison": ">=",
+                            "compare_to": 0.1
+                        },
+                        {
+                            "type": "origins:block_collision",
+                            "block_condition": {
+                                "type": "origins:movement_blocking"
+                            },
+                            "offset_x": 0,
+                            "offset_y": -0.1,
+                            "offset_z": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:crafting_table"
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    }
+}

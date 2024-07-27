@@ -5,7 +5,7 @@
     ],
     "type": "tetra:basic_major_module",
     "improvements": [
-        "tetra:bow/straight_stave/",
+        "tetra:bow/riot_stave/",
         "tetra:bow/shared_stave/",
         "tetra:bow/shared/",
         "tetra:shared/"
@@ -13,51 +13,55 @@
     "variants": [
         {
             "materials": [ "tetra:wood/", "tetra:rods/stick", "tetra:metal/" ],
-            "key": "straight_stave/",
+            "key": "riot_stave/",
             "attributes": {
-                "tetra:draw_speed": 1,
-				"generic.armor": 1,
-				"velocity": -2
+                "tetra:draw_speed": 1.3,
+				"generic.armor": 0.5,
+				"velocity": -15
             },
             "aspects": {
                 "bow": 2,
                 "breakable": 2
             },
+			"effects": {
+				"spread":[0,99]
+			},
             "durability": 171,
             "extract": {
                 "primaryAttributes": {
-                    "tetra:draw_speed": 0.11,
+                    "tetra:draw_speed": 0.16,
                     "tetra:draw_strength": 1.1,
-					"generic.armor": 0.5
+					"generic.armor": 0.4
                 },
                 "tertiaryAttributes": {
                     "tetra:draw_speed": -0.06,
                     "tetra:draw_strength": 0.6,
-					"generic.armor": 0.2
+					"generic.armor": 0.15
                 },
-                "durability": 1.2,
+                "durability": 1.3,
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+					"textureX": 0,
+					"textureY": 64
                 },
                 "availableTextures": [ "crude" ],
                 "models": [
                     {
-                        "location": "tetra:items/module/bow/stave/straight/"
+                        "location": "tetrasulphide:item/module/bow/stave/riot/0_"
                     },
                     {
                         "type": "draw_0",
-                        "location": "tetra:items/module/bow/stave/straight/0_"
+                        "location": "tetrasulphide:item/module/bow/stave/riot/0_"
                     },
                     {
                         "type": "draw_1",
-                        "location": "tetra:items/module/bow/stave/straight/1_"
+                        "location": "tetrasulphide:item/module/bow/stave/riot/1_"
                     },
                     {
                         "type": "draw_2",
-                        "location": "tetra:items/module/bow/stave/straight/2_"
+                        "location": "tetrasulphide:item/module/bow/stave/riot/2_"
                     }
                 ]
             }

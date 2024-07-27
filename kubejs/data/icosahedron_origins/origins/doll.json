@@ -19,5 +19,8 @@
         "icosahedron_origins:guard/buckle_resource",
         "icosahedron_origins:guard/buckle_slow"
     ],
+    "icon": {
+        "item": "minecraft:armor_stand"
+    },
     "impact": 1
 }

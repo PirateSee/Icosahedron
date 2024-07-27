@@ -1,0 +1,31 @@
+{
+    "key": "refined_glowstone",
+    "category": "metal",
+    "primary": 5.2,
+    "secondary": 1.8,
+    "tertiary": 2.6,
+    "durability": 282,
+    "integrityCost": 2,
+    "integrityGain": 6,
+    "magicCapacity": 129,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 12.5,
+    "tints": {
+        "glyph": "fcf4aa",
+        "texture": "fcf4aa"
+    },
+    "textures": [
+        "shiny",
+		"metal",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:ingots/refined_glowstone"
+    },
+	"improvements": {
+        "stablizing": 1
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

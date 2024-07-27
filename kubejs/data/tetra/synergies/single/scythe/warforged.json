@@ -1,0 +1,67 @@
+[
+    {
+        "modules": [
+            "single/scythe"
+        ],
+        "matchSuffixed": true,
+        "improvements": [
+            "double/warforged"
+        ],
+        "name": "single/warscythe",
+        "effects": {
+            "reap": [80, 3]
+        }
+    },
+	{
+        "modules": [
+            "single/scythe",
+			"single/single_binding"
+        ],
+        "matchSuffixed": true,
+        "improvements": [
+            "double/warforged"
+        ],
+        "effects": {
+            "abilityDefensive": [1, 3]
+        }
+    },
+	{
+        "modules": [
+            "single/scythe",
+			"single/long_handle"
+        ],
+        "matchSuffixed": true,
+        "improvements": [
+            "double/warforged"
+        ],
+		"effects": {
+			"abilityOverextend": 40
+		}
+    },
+	{
+        "modules": [
+            "single/scythe",
+			"single/light_handle"
+        ],
+        "matchSuffixed": true,
+        "improvements": [
+            "double/warforged"
+        ],
+		"effects": {
+			"abilitySpeed": [0, 20]
+		}
+    },
+	{
+        "modules": [
+            "single/scythe",
+			"single/basic_handle"
+        ],
+        "matchSuffixed": true,
+        "improvements": [
+            "double/warforged"
+        ],
+        "effects": {
+            "abilityMomentum": [15, 2]
+        }
+    }
+]

@@ -1,14 +1,28 @@
 {
     "name": "§c- §r§nHerbicide",
     "description": "Wither and poison lasts longer, and fire hurts more.",
-    "type": "origins:modify_status_effect_duration",
-    "status_effects": [
-        "minecraft:poison",
-        "minecraft:wither"
-    ],
-    "modifier": {
-        "operation": "multiply_base_multiplicative",
-        "value": 0.25,
-        "name": "Herbicide Penalty"
+    "type": "origins:multiple",
+    "status": {
+        "type": "origins:modify_status_effect_duration",
+        "status_effects": [
+            "minecraft:poison",
+            "minecraft:wither"
+        ],
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": 0.25,
+            "name": "Herbicide Penalty"
+        }
+    },
+    "fire": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:fire"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1,
+            "name": "Herbicide Penalty"
+        }
     }
 }

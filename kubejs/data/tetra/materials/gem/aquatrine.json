@@ -1,0 +1,28 @@
+{
+    "key": "aquatrine",
+    "category": "gem",
+    "primary": 5.5,
+    "secondary": 2.7,
+    "tertiary": 0,
+    "durability": 1013,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 57,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 7.3,
+    "tints": {
+        "glyph": "6b5860",
+        "texture": "6b5860"
+    },
+    "textures": [
+        "shiny",
+		"crude",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:gems/aquatrine"
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

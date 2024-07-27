@@ -4,14 +4,14 @@
         "icosahedron_origins:standard_bearer",
         "icosahedron_origins:fox",
         "icosahedron_origins:spark",
-        "icosahedron_origins:gator",
         "icosahedron_origins:mecha",
         "icosahedron_origins:doll",
         "icosahedron_origins:spirit",
         "icosahedron_origins:plant",
         "icosahedron_origins:cave",
         "icosahedron_origins:blood",
-        "icosahedron_origins:food"
+        "icosahedron_origins:food",
+        "icosahedron_origins:haul"
     ],
     "enabled": true
 }

@@ -5,13 +5,10 @@
         "icosahedron_origins:plant/grapplevine",
         "icosahedron_origins:plant/plantspeed",
         "icosahedron_origins:plant/leaf_phasing",
-        "icosahedron_origins:plant/leaf_phasing_slow",
-        "icosahedron_origins:plant/leaf_phasing_protection",
         "icosahedron_origins:plant/berry_immune",
         "icosahedron_origins:plant/photovolt",
-        "icosahedron_origins:plant/photovolt_dark",
         "icosahedron_origins:plant/herbicide",
-        "icosahedron_origins:plant/herbicide_fire"
+        "icosahedron_origins:plant/sleep_sky"
     ],
     "icon": {
         "item": "minecraft:vine"

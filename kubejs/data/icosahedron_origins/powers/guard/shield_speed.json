@@ -4,9 +4,20 @@
         "type": "origins:using_item",
         "item_condition": {
             "type": "origins:ingredient",
-            "ingredient": {
-                "item": "minecraft:shield"
-            }
+            "ingredient": [
+                {
+                    "item": "minecraft:shield"
+                },
+                {
+                    "tag": "c:shields"
+                },
+                {
+                    "tag": "forge:shields"
+                },
+                {
+                    "tag": "fabric:shields"
+                }
+            ]
         }
     },
     "type": "origins:conditioned_attribute",

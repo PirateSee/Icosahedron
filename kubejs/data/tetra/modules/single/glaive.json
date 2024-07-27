@@ -1,0 +1,63 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "single/head"
+    ],
+    "improvements": [
+        "tetra:single/glaive/",
+        "tetra:single/shared_head/",
+		"tetra:single/shared_polearm/",
+        "tetra:single/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:wood/",
+                "tetra:stone/",
+                "tetra:metal/",
+                "tetra:gem/",
+                "tetra:bone/"
+            ],
+            "key": "glaive/",
+            "attributes": {
+                "generic.attack_speed": -1.2,
+				"generic.attack_damage": 0.5
+            },
+            "aspects": {
+                "pointy_weapon": 1,
+                "throwable": 1,
+                "breakable": 2
+            },
+            "durability": -20,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1.4
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.15,
+                    "generic.attack_damage": 0.15
+                },
+                "durability": 0.9,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+					"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+                    "textureX": 0,
+                    "textureY": 16
+                },
+                "availableTextures": [
+                    "metal",
+                    "shiny",
+                    "crude"
+                ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/single/head/spearhead/"
+                    }
+                ]
+            }
+        }
+    ]
+}

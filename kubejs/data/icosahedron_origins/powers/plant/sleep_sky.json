@@ -1,0 +1,10 @@
+{
+    "name": "§c- §r§nSolar Alarm",
+    "description": "Must sleep with acess to sky.",
+    "type": "origins:prevent_sleep",
+    "block_condition": {
+        "type": "origins:exposed_to_sky"
+    },
+    "message": "Can't sleep without a view of the sky!",
+    "set_spawn_point": true
+}

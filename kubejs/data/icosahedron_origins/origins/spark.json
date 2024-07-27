@@ -25,7 +25,8 @@
         "icosahedron_origins:mecha/shock_absorber_effect",
         "icosahedron_origins:spark/unfireresist",
         "icosahedron_origins:spark/unfireresist_enchantment",
-        "icosahedron_origins:spark/quickfire"
+        "icosahedron_origins:spark/quickfire",
+        "icosahedron_origins:spark/soot_particle"
     ],
     "icon": {
         "item": "minecraft:blaze_powder"

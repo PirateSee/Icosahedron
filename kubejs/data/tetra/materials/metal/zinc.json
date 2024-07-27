@@ -11,8 +11,8 @@
     "toolLevel": "minecraft:iron",
     "toolEfficiency": 5.4,
     "tints": {
-        "glyph": "B7E6BF",
-        "texture": "B7E6BF"
+        "glyph": "909985",
+        "texture": "909985"
     },
     "textures": [
         "metal",

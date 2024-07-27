@@ -1,0 +1,38 @@
+{
+    "Version": 1,
+    "attributemap": {
+        "single/head": {
+            "single/glaive": {
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:glaive"
+                    }
+                }
+            },
+            "single/scythe": {
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:scythe"
+                    }
+                }
+            },
+            "single/basic_shovel": {
+				"type": "improvement",
+				"key": "single/head",
+				"improvement": "single/gravedigger",
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:pickaxe"
+                    }
+                }
+            },
+			"single/excavator": {
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:pickaxe"
+                    }
+                }
+            }
+        }
+    }
+}

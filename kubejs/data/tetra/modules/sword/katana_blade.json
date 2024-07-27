@@ -13,18 +13,17 @@
             "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
             "key": "katana_blade/",
             "attributes": {
-                "generic.attack_speed": -1.1,
-				"generic.attack_damage": -0.5
+                "generic.attack_speed": -1,
+				"generic.attack_damage": -0.3
             },
             "effects": {
-                "sweeping": 2,
-				"truesweep": 1
+                "sweeping": 2
             },
             "aspects": {
                 "edgedWeapon": 2,
                 "breakable": 2
             },
-            "durability": -28,
+            "durability": -22,
             "extract": {
                 "primaryAttributes": {
                     "generic.attack_damage": 0.9
@@ -32,17 +31,18 @@
 				"secondaryAttributes": {
 					"generic.attack_speed": -0.3
 				},
-                "durability": 0.9,
+                "durability": 1.1,
                 "integrity": -1,
                 "magicCapacity": 1.5,
 				"tools": {
 					"cut": [ 0.6, 0.9 ]
 				},
                 "glyph": {
-                    "textureX": 0
+                    "textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+					"textureY": 0
                 },
                 "availableTextures": [ "metal", "shiny", "grainy", "crude" ],
-                "models": [ { "location": "tetra:items/module/sword/blade/basic/" } ]
+                "models": [ { "location": "tetrasulphide:item/module/sword/blade/katana/" } ]
             }
         }
     ]

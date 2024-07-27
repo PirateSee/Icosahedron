@@ -1,0 +1,30 @@
+{
+    "hidden": true,
+    "condition": {
+        "inverted": true,
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:in_rain"
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">=",
+                "compare_to": 0.1
+            }
+        ]
+    },
+    "type": "origins:particle",
+    "particle": "minecraft:ash",
+    "frequency": 3,
+    "count": 8,
+    "speed": 0.01,
+    "spread": {
+        "x": 1.5,
+        "y": 1.5,
+        "z": 1.5
+    },
+    "offset_y": 1,
+    "visible_in_first_person": true
+}

@@ -1,0 +1,24 @@
+[
+    {
+		"materials": [
+            "tetra:metal/",
+			"tetra:wood/",
+			"tetra:gem/",
+			"tetra:stone/",
+			"tetra:bone/"
+        ],
+        "key": "shared_handle/decorative_pommel/",
+		"group": "decorative_pommel",
+		"extract": {
+			"durability": 0.05,
+			"availableTextures": [
+                "default"
+            ],
+			"models": [
+				{
+					"location": "tetra:item/module/sword/pommel/decorative_pommel/"
+				}
+			]
+		}
+    }
+]

@@ -1,0 +1,70 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "single/head"
+    ],
+    "improvements": [
+        "tetra:single/excavator/",
+		"tetra:single/shovel/",
+        "tetra:single/shared_head/",
+        "tetra:single/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:metal/",
+                "tetra:stone/",
+                "tetra:wood/",
+                "tetra:gem/"
+            ],
+            "key": "excavator/",
+            "attributes": {
+                "generic.attack_damage": -1.3,
+                "generic.attack_speed": -2
+            },
+            "tools": {
+                "shovel_flatten": 1,
+                "dowse": 1
+            },
+            "aspects": {
+                "block_breaker": 2,
+                "breakable": 2
+            },
+			"tools": {
+                "shovel_dig": -1
+            },
+			"effects": {
+                "extraction": 1
+            },
+            "durability": -23,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1
+                },
+                "tools": {
+                    "shovel_dig": [1, 0.8]
+                },
+                "durability": 1.1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+					"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+                    "textureX": 48,
+                    "textureY": 16
+                },
+                "availableTextures": [
+                    "crude",
+                    "metal",
+                    "shiny"
+                ],
+                "models": [
+                    {
+                        "location": "tetrasulphide:item/module/single/excavator/"
+                    }
+                ]
+            }
+        }
+    ]
+}

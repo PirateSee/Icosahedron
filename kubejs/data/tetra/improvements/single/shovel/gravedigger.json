@@ -1,0 +1,64 @@
+[
+    {
+        "key": "single/gravedigger",
+		"level": 1,
+        "integrity": -1,
+        "attributes": {
+            "generic.attack_damage": 1.5
+        },
+        "effects": {
+            "earthbind": 1
+        },
+        "aspects": {
+            "blunt_weapon": 1
+        },
+        "models": [
+            {
+                "location": "tetrasulphide:item/module/single/gravedigger",
+                "tint": "inherit"
+            }
+        ]
+    },
+	{
+        "key": "single/gravedigger",
+		"level": 2,
+        "integrity": -1,
+        "attributes": {
+            "generic.attack_damage": 2
+        },
+        "effects": {
+            "earthbind": 2
+        },
+        "aspects": {
+            "blunt_weapon": 1,
+			"honed": 1
+        },
+        "models": [
+            {
+                "location": "tetrasulphide:item/module/single/gravedigger",
+                "tint": "inherit"
+            }
+        ]
+    },
+	{
+        "key": "single/gravedigger",
+		"level": 3,
+        "integrity": -2,
+        "attributes": {
+            "generic.attack_damage": 3
+        },
+        "effects": {
+            "earthbind": 3
+        },
+        "aspects": {
+            "blunt_weapon": 2,
+			"honed": 2
+        },
+        "models": [
+            {
+                "location": "tetrasulphide:item/module/single/gravedigger",
+                "tint": "inherit"
+            }
+        ]
+    }
+]

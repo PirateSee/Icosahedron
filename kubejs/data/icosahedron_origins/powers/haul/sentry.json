@@ -1,0 +1,47 @@
+{
+    "name": "§a+ §r§nSentry",
+    "description": "Increased damage and resistance while seated in vehicles",
+    "type": "origins:multiple",
+    "attack": {
+        "condition": {
+            "type": "origins:riding",
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "inverted": true,
+                    "type": "origins:living"
+                }
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.15,
+            "name": "Sentry Bonus"
+        }
+    },
+    "defense": {
+        "condition": {
+            "type": "origins:riding",
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "inverted": true,
+                    "type": "origins:living"
+                }
+            }
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 15,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:resistance",
+            "duration": 15,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    }
+}

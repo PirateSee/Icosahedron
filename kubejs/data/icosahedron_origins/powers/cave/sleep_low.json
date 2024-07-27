@@ -1,0 +1,12 @@
+{
+    "name": "§c- §r§nDeep Sleeper",
+    "description": "Must sleep below Y50",
+    "type": "origins:prevent_sleep",
+    "block_condition": {
+        "type": "origins:height",
+        "comparison": ">",
+        "compare_to": 50
+    },
+    "message": "Bed too high! Must be below Y50",
+    "set_spawn_point": true
+}

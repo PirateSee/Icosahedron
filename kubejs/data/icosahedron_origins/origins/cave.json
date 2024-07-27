@@ -4,7 +4,14 @@
     "powers": [
         "icosahedron_origins:cave/nightvision",
         "icosahedron_origins:cave/lowspeed",
-        "icosahedron_origins:cave/ceiling_climb"
+        "icosahedron_origins:cave/ceiling_climb",
+        "icosahedron_origins:cave/dark_cover",
+        "icosahedron_origins:spirit/solar_weakness",
+        "icosahedron_origins:cave/featherweight",
+        "icosahedron_origins:cave/sleep_low"
     ],
-    "impact": 0
+    "icon": {
+        "item": "minecraft:deepslate"
+    },
+    "impact": 2
 }

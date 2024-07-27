@@ -1,0 +1,37 @@
+{
+    "key": "socket_mana_pearl",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 48,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 20,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "janking": [
+            1,
+            0.01
+        ],
+		"manaRepair": [
+			0,
+			0.0025
+		]
+    },
+    "tints": {
+        "glyph": "00b2c2",
+        "texture": "00b2c2"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 2,
+    "material": {
+        "items": [
+            "ae2:fluix_pearl"
+        ]
+    }
+}

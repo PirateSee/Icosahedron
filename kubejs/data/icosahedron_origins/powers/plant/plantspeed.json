@@ -1,37 +1,75 @@
 {
     "name": "§a+ §r§nHerbal Affinity",
-    "description": "Increased movement speed near tall grass or flowers. Pass through leaves and berry bushes.",
-    "condition": {
-        "type": "origins:block_in_radius",
-        "block_condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:in_tag",
-                    "tag": "minecraft:flowers"
-                },
-                {
-                    "type": "origins:block",
-                    "block": "minecraft:grass"
-                },
-                {
-                    "type": "origins:block",
-                    "block": "minecraft:tall_grass"
-                }
-            ]
+    "description": "Increased movement speed near tall grass or flowers. Pass through leaves and berry bushes. Moss and leaves break your fall.",
+    "type": "origins:multiple",
+    "speed": {
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:flowers"
+                    },
+                    {
+                        "type": "origins:block",
+                        "block": "minecraft:grass"
+                    },
+                    {
+                        "type": "origins:block",
+                        "block": "minecraft:tall_grass"
+                    }
+                ]
+            },
+            "radius": 2,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 1
         },
-        "radius": 2,
-        "shape": "cube",
-        "comparison": ">=",
-        "compare_to": 1
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 0.12,
+            "name": "Plant Affinity Bonus"
+        },
+        "tick_rate": 20,
+        "update_health": false
     },
-    "type": "origins:conditioned_attribute",
-    "modifier": {
-        "attribute": "minecraft:generic.movement_speed",
-        "operation": "multiply_base",
-        "value": 0.1,
-        "name": "Plant Affinity Bonus"
-    },
-    "tick_rate": 20,
-    "update_health": true
+    "fall": {
+        "condition": {
+            "type": "origins:block_collision",
+            "block_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:block",
+                        "block": "minecraft:moss_block"
+                    },
+                    {
+                        "type": "origins:block",
+                        "block": "minecraft:moss_carpet"
+                    },
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:leaves"
+                    }
+                ]
+            },
+            "offset_x": 0,
+            "offset_y": -1,
+            "offset_z": 0
+        },
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "fall"
+        },
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.5,
+            "name": "Herbal Affinity Bonus"
+        }
+    }
 }

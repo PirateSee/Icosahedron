@@ -1,0 +1,27 @@
+{
+    "key": "pig_iron",
+    "category": "metal",
+    "primary": 4.7,
+    "secondary": 4.1,
+    "tertiary": 3.9,
+    "durability": 132,
+    "integrityCost": 2,
+    "integrityGain": 5,
+    "magicCapacity": 81,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "6b5860",
+        "texture": "6b5860"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:ingots/pig_iron"
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:gold"
+    }
+}

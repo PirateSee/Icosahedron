@@ -1,0 +1,27 @@
+{
+    "key": "tungsten",
+    "category": "metal",
+    "primary": 6.3,
+    "secondary": 7.8,
+    "tertiary": 2.3,
+    "durability": 2478,
+    "integrityCost": 3,
+    "integrityGain": 3,
+    "magicCapacity": 73,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 6.2,
+    "tints": {
+        "glyph": "637d6e",
+        "texture": "637d6e"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:ingots/tungsten"
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:netherite"
+    }
+}

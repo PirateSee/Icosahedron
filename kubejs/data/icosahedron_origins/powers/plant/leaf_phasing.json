@@ -2,11 +2,49 @@
     "name": "§a+ §r§nLeaf Phasing",
     "description": "Move through leaves",
     "hidden": true,
-    "type": "origins:phasing",
-    "block_condition": {
-        "type": "origins:in_tag",
-        "tag": "minecraft:leaves"
+    "type": "origins:multiple",
+    "phasing": {
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:leaves"
+        },
+        "render_type": "none",
+        "view_distance": 10
     },
-    "render_type": "none",
-    "view_distance": 10
+    "slow": {
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:leaves"
+            },
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": -0.1
+        },
+        "tick_rate": 5,
+        "update_health": false
+    },
+    "protection": {
+        "condition": {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:leaves"
+            },
+            "comparison": ">=",
+            "compare_to": 1
+        },
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        }
+    }
 }

@@ -1,20 +1,8 @@
 {
     "name": "Synthetic",
-    "description": "§0[Defensive] [Hungry]§7\nAn endoskeleton making use of fancy tech and a biofuel reactor. Boasts increased strength but some odd vulnerabilities.",
+    "description": "§0[Defensive] [Endurance]§7\nAn endoskeleton making use of fancy tech and a biofuel reactor. Boasts increased strength but some odd vulnerabilities.",
     "powers": [
-        "icosahedron_origins:mecha/shield/activate",
-        "icosahedron_origins:mecha/shield/duration",
-        "icosahedron_origins:mecha/shield/duration_decrease",
-        "icosahedron_origins:mecha/shield/fire",
-        "icosahedron_origins:mecha/shield/glow_1",
-        "icosahedron_origins:mecha/shield/glow_2",
-        "icosahedron_origins:mecha/shield/glow_3",
-        "icosahedron_origins:mecha/shield/glow_4",
-        "icosahedron_origins:mecha/shield/glow_5",
-        "icosahedron_origins:mecha/shield/glow_6",
-        "icosahedron_origins:mecha/shield/glow_increase",
-        "icosahedron_origins:mecha/shield/glow_res",
-        "icosahedron_origins:mecha/shield/resistance",
+        "icosahedron_origins:mecha/shield",
         "icosahedron_origins:mecha/momentum",
         "icosahedron_origins:mecha/overcharge",
         "icosahedron_origins:mecha/overcharge_damage",
@@ -23,11 +11,14 @@
         "icosahedron_origins:mecha/sturdy_deny",
         "icosahedron_origins:mecha/sturdy_heal",
         "icosahedron_origins:mecha/sturdy_heal_fast",
+        "icosahedron_origins:mecha/anemia",
         "icosahedron_origins:mecha/hydrophobia",
-        "icosahedron_origins:mecha/hungry",
         "icosahedron_origins:mecha/shock_absorber",
         "icosahedron_origins:mecha/shock_absorber_effect",
         "icosahedron_origins:mecha/conductive"
     ],
+    "icon": {
+        "item": "minecraft:iron_block"
+    },
     "impact": 3
 }

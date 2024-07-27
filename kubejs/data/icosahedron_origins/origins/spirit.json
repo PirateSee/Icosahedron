@@ -10,7 +10,12 @@
         "icosahedron_origins:spirit/vanishing",
         "icosahedron_origins:spirit/veil",
         "icosahedron_origins:spirit/solar_weakness",
-        "icosahedron_origins:spirit/obliterate"
+        "icosahedron_origins:spirit/obliterate",
+        "icosahedron_origins:cave/featherweight",
+        "icosahedron_origins:spirit/invis_short"
     ],
+    "icon": {
+        "item": "minecraft:soul_lantern"
+    },
     "impact": 3
 }

@@ -7,17 +7,16 @@
     "renderLayer": "lower",
     "improvements": [
         "tetra:double/curved_handle/",
-		"tetra:double/basic_handle/",
         "tetra:double/shared_handle/",
         "tetra:double/shared/",
         "tetra:shared/"
     ],
     "variants": [
         {
-            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rods/" ],
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:rods/" ],
             "key": "curved_handle/",
             "attributes": {
-                "generic.attack_speed": -0.45
+                "generic.attack_speed": -0.4
             },
             "aspects": {
                 "blockBreaker": 1,
@@ -31,22 +30,23 @@
             "integrity": 1,
             "extract": {
                 "secondaryAttributes": {
-                    "generic.attack_speed": -0.15
+                    "generic.attack_speed": -0.2
                 },
 				"secondaryEffects": {
                     "throwable": [ 0, 0.1 ]
                 },
 				"tertiaryEffects": {
-                    "throwable": [ 0, 0.1 ]
+                    "throwable": [ 0, 0.05 ]
                 },
-                "durability": 0.3,
+                "durability": 0.2,
                 "integrity": 1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 16
+                    "textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+					"textureY": 32
                 },
-                "availableTextures": [ "default", "metal", "bone", "bright" ],
-                "models": [ { "location": "tetra:items/module/double/handle/basic/" } ]
+                "availableTextures": [ "default", "metal", "bright" ],
+                "models": [ { "location": "tetrasulphide:item/module/double/handle/curved/" } ]
             }
         }
     ]

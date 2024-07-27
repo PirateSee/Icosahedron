@@ -1,0 +1,32 @@
+[
+    {
+        "key": "glaive/tempered",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "armorPenetration": 25
+        }
+    },
+    {
+        "key": "glaive/tempered",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "armorPenetration": 35
+        }
+    },
+    {
+        "key": "glaive/tempered",
+        "level": 3,
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "armorPenetration": 50
+        }
+    }
+]

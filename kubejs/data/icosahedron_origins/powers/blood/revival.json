@@ -1,0 +1,54 @@
+{
+    "name": "§a+ §r§nBeyond the Grave",
+    "description": "Evade death and gain health by consuming 5 bars of blood.",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "icosahedron_origins:blood/blood_resource",
+        "comparison": ">=",
+        "compare_to": 70
+    },
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:resistance",
+                    "duration": 60,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "flame",
+                "count": 25,
+                "speed": 0.2,
+                "spread": {
+                    "x": 0.5,
+                    "y": 0.8,
+                    "z": 0.5
+                },
+                "offset_y": 1
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "item.totem.use",
+                "volume": 0.5,
+                "pitch": 0.5
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:blood/blood_resource",
+                "change": -70,
+                "operation": "add"
+            },
+            {
+                "type": "origins:heal",
+                "amount": 10
+            }
+        ]
+    }
+}

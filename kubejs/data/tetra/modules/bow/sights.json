@@ -4,18 +4,20 @@
 		{
             "key": "sights/glass",
             "effects": {
-                "zoom": 60
+                "zoom": 30,
+				"focus": [0, 0.6]
             },
             "integrity": -1,
             "durability": 13,
 			"glyph": {
 				"textureX": 120,
-				"textureY": 16,
-				"tint": "prismarine_glyph"
+				"textureY": 112,
+				"tint": "ffffff"
 			},
 			"models": [
 				{
-					"location": "tetra:items/module/bow/riser/sight/default",
+					"location": "tetra:item/module/bow/riser/sight/default",
+					"tint": "ffffff",
 					"type": "static"
 				}
 			]
@@ -23,18 +25,20 @@
         {
             "key": "sights/spyglass",
             "effects": {
-                "zoom": 90
+                "zoom": 90,
+				"focus": [0, 0.7]
             },
             "integrity": -1,
             "durability": 39,
 			"glyph": {
 				"textureX": 120,
-				"textureY": 16,
-				"tint": "prismarine_glyph"
+            "textureY": 112,
+				"tint": "db9039"
 			},
 			"models": [
 				{
-					"location": "tetra:items/module/bow/riser/sight/default",
+					"location": "tetra:item/module/bow/riser/sight/default",
+					"tint": "db9039",
 					"type": "static"
 				}
 			]

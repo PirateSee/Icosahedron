@@ -1,0 +1,31 @@
+{
+    "key": "socket_rose_quartz",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 23,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 15,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "stabilizing": [
+            20,
+            0
+        ]
+    },
+    "tints": {
+        "glyph": "fce8ce",
+        "texture": "fce8ce"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 2,
+    "material": {
+        "tag": "forge:gems/rose_quartz"
+    }
+}

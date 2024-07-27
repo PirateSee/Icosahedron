@@ -1,19 +1,122 @@
 {
     "name": "§c- §r§nSolar Weakness",
-    "description": "Being out in the sun makes you weak",
-    "condition": {
-        "type": "origins:exposed_to_sun"
+    "description": "Being out in the sun makes you weak. Prolonged time may set you on fire.",
+    "type": "origins:multiple",
+    "weak": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -1,
+        "max_stacks": 5,
+        "duration_per_stack": 20,
+        "tick_rate": 10,
+        "effect": {
+            "effect": "minecraft:weakness",
+            "duration": 20,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
     },
-    "type": "origins:stacking_status_effect",
-    "min_stacks": -1,
-    "max_stacks": 5,
-    "duration_per_stack": 20,
-    "tick_rate": 10,
-    "effect": {
-        "effect": "minecraft:weakness",
-        "duration": 20,
-        "amplifier": 0,
-        "show_particles": true,
-        "show_icon": true
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 20,
+        "start_value": 0
+    },
+    "tick": {
+        "type": "origins:action_over_time",
+        "interval": 50,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:exposed_to_sun"
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+                        "change": 1,
+                        "operation": "add"
+                    },
+                    {
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+                                    "comparison": "==",
+                                    "compare_to": 20
+                                },
+                                "action": {
+                                    "type": "origins:chance",
+                                    "chance": 0.2,
+                                    "action": {
+                                        "type": "origins:set_on_fire",
+                                        "duration": 5
+                                    }
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+                                    "comparison": ">=",
+                                    "compare_to": 14
+                                },
+                                "action": {
+                                    "type": "origins:chance",
+                                    "chance": 0.15,
+                                    "action": {
+                                        "type": "origins:set_on_fire",
+                                        "duration": 4
+                                    }
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:resource",
+                                    "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+                                    "comparison": ">=",
+                                    "compare_to": 8
+                                },
+                                "action": {
+                                    "type": "origins:chance",
+                                    "chance": 0.1,
+                                    "action": {
+                                        "type": "origins:set_on_fire",
+                                        "duration": 3
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:change_resource",
+                "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+                "change": -2,
+                "operation": "add"
+            }
+        }
+    },
+    "reset": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:set_resource",
+            "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+            "value": 0
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_respawned": {
+            "type": "origins:set_resource",
+            "resource": "icosahedron_origins:spirit/solar_weakness_resource",
+            "value": 0
+        }
     }
 }

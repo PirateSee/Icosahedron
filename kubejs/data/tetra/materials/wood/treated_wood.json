@@ -1,0 +1,27 @@
+{
+    "key": "treated_wood",
+    "category": "wood",
+    "primary": 3.2,
+    "secondary": 1.8,
+    "tertiary": 5.8,
+    "durability": 314,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 70,
+    "toolLevel": "minecraft:wood",
+    "toolEfficiency": 2.2,
+    "tints": {
+        "glyph": "bf5d37",
+        "texture": "bf5d37"
+    },
+    "textures": [
+        "crude",
+        "wooden"
+    ],
+    "material": {
+        "items": [ "kubejs:treated_wood_planks","immersive_engineering:treated_wood_planks" ]
+    },
+    "requiredTools": {
+        "axe_dig": "minecraft:wood"
+    }
+}

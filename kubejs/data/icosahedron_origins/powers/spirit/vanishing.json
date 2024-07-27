@@ -1,16 +1,93 @@
 {
     "name": "§a+ §r§nVanishing",
-    "description": "Taking damage makes you invisible for 2 seconds.",
-    "type": "origins:self_action_when_hit",
-    "entity_action": {
-        "type": "origins:apply_effect",
-        "effect": {
-            "effect": "minecraft:invisibility",
-            "duration": 40,
-            "amplifier": 0,
-            "show_particles": true,
-            "show_icon": true
+    "description": "Taking damage makes you invisible. Mobs can not detect you while invisible.",
+    "type": "origins:multiple",
+    "invis": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "icosahedron_origins:spirit/vanishing_resource",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:invisibility"
+                }
+            ]
+        },
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "render_outline": true
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 3
+    },
+    "modify": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "icosahedron_origins:spirit/vanishing_resource",
+            "change": -1,
+            "operation": "add"
         }
     },
-    "cooldown": 40
+    "trigger": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:set_resource",
+                    "resource": "icosahedron_origins:spirit/vanishing_resource",
+                    "value": 3
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:cloud",
+                    "count": 10,
+                    "speed": 0.5,
+                    "spread": {
+                        "x": 0.5,
+                        "y": 1,
+                        "z": 0.5
+                    },
+                    "offset_y": 0.8
+                }
+            ]
+        },
+        "cooldown": 40
+    },
+    "ignore": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:glowing"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:resource",
+                            "resource": "icosahedron_origins:spirit/vanishing_resource",
+                            "comparison": ">",
+                            "compare_to": 0
+                        },
+                        {
+                            "type": "origins:status_effect",
+                            "effect": "minecraft:invisibility"
+                        }
+                    ]
+                }
+            ]
+        },
+        "type": "apugli:mobs_ignore"
+    }
 }

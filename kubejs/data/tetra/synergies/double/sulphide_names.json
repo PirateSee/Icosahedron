@@ -1,0 +1,23 @@
+[
+    {
+        "modules": [
+            "double/basic_pickaxe",
+            "double/curved_handle"
+        ],
+        "name": "double/throw_pick"
+    },
+	{
+        "modules": [
+            "double/basic_axe",
+            "double/curved_handle"
+        ],
+        "name": "double/throw_axe"
+    },
+	{
+        "modules": [
+            "single/glaive",
+            "single/light_handle"
+        ],
+        "name": "single/light_glaive"
+    }
+]

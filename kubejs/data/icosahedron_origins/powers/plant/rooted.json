@@ -1,8 +1,0 @@
-{
-    "name": "§a+ §r§nRooted",
-    "condition": {
-        "inverted": true,
-        "type": "origins:moving"
-    },
-    "type": "origins:simple"
-}

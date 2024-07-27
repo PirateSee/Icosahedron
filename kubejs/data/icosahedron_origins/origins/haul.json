@@ -1,0 +1,15 @@
+{
+    "name": "Hauler",
+    "description": "§0[Building]§7\nYears of experience in logistics work makes the Hauler an expert in transport and construction.",
+    "powers": [
+        "icosahedron_origins:haul/compartment",
+        "icosahedron_origins:haul/float",
+        "icosahedron_origins:haul/sentry",
+        "icosahedron_origins:haul/combo",
+        "icosahedron_origins:haul/dark_caution"
+    ],
+    "icon": {
+        "item": "minecraft:barrel"
+    },
+    "impact": 2
+}

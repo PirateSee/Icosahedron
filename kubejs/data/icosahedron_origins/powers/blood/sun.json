@@ -1,0 +1,57 @@
+{
+    "name": "§c- §r§nBurning Sun",
+    "description": "Slowness and weakness in the sun, burn if no blood.",
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:chance",
+                "chance": 0.1,
+                "action": {
+                    "type": "origins:change_resource",
+                    "resource": "icosahedron_origins:blood/blood_resource",
+                    "change": -1,
+                    "operation": "add"
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:weakness",
+                    "duration": 40,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness",
+                    "duration": 40,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "icosahedron_origins:blood/blood_resource",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:set_on_fire",
+                    "duration": 4
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "key": "nethersteel",
+    "category": "metal",
+    "primary": 6.5,
+    "secondary": 1.8,
+    "tertiary": 4.2,
+    "durability": 1238,
+    "integrityCost": 2,
+    "integrityGain": 7,
+    "magicCapacity": 63,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 8,
+    "tints": {
+        "glyph": "756a65",
+        "texture": "756a65"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:ingots/nethersteel"
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

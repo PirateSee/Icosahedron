@@ -1,6 +1,13 @@
 {
     "name": "§c- §r§nHydrophobia",
     "description": "Take damage while in contact with water.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Water Breathing or Shield Bubble protects you",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
     "condition": {
         "type": "origins:and",
         "conditions": [
@@ -19,15 +26,14 @@
                 ]
             },
             {
-                "type": "origins:resource",
-                "resource": "icosahedron_origins:mecha/shield/duration",
-                "comparison": "==",
-                "compare_to": 0
-            },
-            {
                 "inverted": true,
                 "type": "origins:status_effect",
                 "effect": "minecraft:water_breathing"
+            },
+            {
+                "inverted": true,
+                "type": "origins:power_active",
+                "power": "icosahedron_origins:mecha/shield_toggle"
             }
         ]
     },

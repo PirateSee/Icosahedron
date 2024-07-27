@@ -41,6 +41,7 @@
 		"icosahedron_origins:mecha/shock_absorber" = true
 		"icosahedron_origins:mecha/shock_absorber_effect" = true
 		"icosahedron_origins:spark/unfireresist_enchantment" = true
+		"icosahedron_origins:spark/soot_particle" = true
 
 	[origins."origins:feline"]
 		enabled = true
@@ -116,6 +117,7 @@
 		"icosahedron_origins:fox/superhop_release" = true
 		"icosahedron_origins:fox/unaquatic" = true
 		"icosahedron_origins:fox/unaquatic_slow" = true
+		"icosahedron_origins:fox/sleep_high" = true
 
 	[origins."icosahedron_origins:mecha"]
 		enabled = true
@@ -147,6 +149,8 @@
 		"icosahedron_origins:mecha/sturdy_heal_fast" = true
 		"icosahedron_origins:mecha/momentum" = true
 		"icosahedron_origins:mecha/conductive" = true
+		"icosahedron_origins:mecha/shield" = true
+		"icosahedron_origins:mecha/anemia" = true
 
 	[origins."origins:merling"]
 		enabled = true
@@ -256,6 +260,7 @@
 		"icosahedron_origins:plant/leaf_phasing_protection" = true
 		"icosahedron_origins:plant/berry_immune" = true
 		"icosahedron_origins:plant/photovolt_dark" = true
+		"icosahedron_origins:plant/sleep_sky" = true
 
 	[origins."icosahedron_origins:seaborn"]
 		enabled = true
@@ -311,6 +316,8 @@
 		"icosahedron_origins:spirit/solar_weakness" = true
 		"icosahedron_origins:spirit/vanishing" = true
 		"icosahedron_origins:spirit/obliterate" = true
+		"icosahedron_origins:cave/featherweight" = true
+		"icosahedron_origins:spirit/invis_short" = true
 
 	[origins."icosahedron_origins:food"]
 		enabled = true
@@ -321,10 +328,27 @@
 		enabled = true
 		"icosahedron_origins:cave/nightvision" = true
 		"icosahedron_origins:doll/undead" = true
+		"icosahedron_origins:blood/blood" = true
+		"icosahedron_origins:blood/revival" = true
+		"icosahedron_origins:cave/dark_cover" = true
+		"icosahedron_origins:blood/sun" = true
+		"icosahedron_origins:mecha/sturdy_deny" = true
 
 	[origins."icosahedron_origins:cave"]
 		enabled = true
 		"icosahedron_origins:cave/nightvision" = true
 		"icosahedron_origins:cave/lowspeed" = true
 		"icosahedron_origins:cave/ceiling_climb" = true
+		"icosahedron_origins:cave/dark_cover" = true
+		"icosahedron_origins:spirit/solar_weakness" = true
+		"icosahedron_origins:cave/featherweight" = true
+		"icosahedron_origins:cave/sleep_low" = true
+
+	[origins."icosahedron_origins:haul"]
+		enabled = true
+		"icosahedron_origins:haul/compartment" = true
+		"icosahedron_origins:haul/float" = true
+		"icosahedron_origins:haul/sentry" = true
+		"icosahedron_origins:haul/combo" = true
+		"icosahedron_origins:haul/dark_caution" = true
 

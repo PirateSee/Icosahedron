@@ -1,0 +1,12 @@
+{
+    "name": "§c- §r§nFresh Air",
+    "description": "Must sleep above Y70",
+    "type": "origins:prevent_sleep",
+    "block_condition": {
+        "type": "origins:height",
+        "comparison": "<",
+        "compare_to": 70
+    },
+    "message": "Bed too low! Must be above Y70.",
+    "set_spawn_point": true
+}

@@ -5,5 +5,8 @@
         "icosahedron_origins:food/buffet",
         "icosahedron_origins:food/hungry"
     ],
+    "icon": {
+        "item": "minecraft:cake"
+    },
     "impact": 1
 }

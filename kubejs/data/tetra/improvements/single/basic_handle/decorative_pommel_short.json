@@ -1,0 +1,24 @@
+[
+    {
+		"materials": [
+            "tetra:metal/",
+			"tetra:wood/",
+			"tetra:gem/",
+			"tetra:stone/",
+			"tetra:bone/"
+        ],
+        "key": "basic_handle/decorative_pommel_short/",
+		"group": "decorative_pommel",
+		"extract": {
+			"durability": 0.05,
+			"availableTextures": [
+                "decorative_pommel"
+            ],
+			"models": [
+				{
+					"location": "tetrasulphide:item/module/single/handle/"
+				}
+			]
+		}
+    }
+]

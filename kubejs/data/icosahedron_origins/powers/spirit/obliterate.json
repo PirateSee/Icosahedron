@@ -12,11 +12,17 @@
     "resource": {
         "type": "origins:resource",
         "min": 0,
-        "max": 48,
+        "max": 56,
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-            "bar_index": 2
+            "bar_index": 2,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "icosahedron_origins:spirit/obliterate_resource",
+                "comparison": "!=",
+                "compare_to": 0
+            }
         },
         "max_action": {
             "type": "origins:and",
@@ -35,7 +41,7 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "icosahedron_origins:spirit/obliterate_resource",
-                    "change": 47,
+                    "change": 55,
                     "operation": "set"
                 }
             ]

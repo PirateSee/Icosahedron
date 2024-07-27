@@ -1,0 +1,27 @@
+{
+    "key": "cast_iron",
+    "category": "metal",
+    "primary": 4.8,
+    "secondary": 4,
+    "tertiary": 3.4,
+    "durability": 232,
+    "integrityCost": 2,
+    "integrityGain": 5,
+    "magicCapacity": 81,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "555457",
+        "texture": "555457"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "tag": "forge:ingots/cast_iron"
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:gold"
+    }
+}

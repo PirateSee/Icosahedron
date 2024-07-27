@@ -11,7 +11,7 @@
     "modifier": {
         "attribute": "minecraft:generic.armor",
         "operation": "multiply_base",
-        "value": -0.3,
+        "value": -0.2,
         "name": "Cracked Armour"
     },
     "tick_rate": 20,

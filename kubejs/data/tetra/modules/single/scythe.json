@@ -1,0 +1,68 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "single/head"
+    ],
+    "improvements": [
+        "tetra:single/scythe/",
+        "tetra:single/shared_head/",
+        "tetra:single/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:metal/",
+                "tetra:stone/",
+                "tetra:wood/",
+                "tetra:gem/"
+            ],
+            "key": "scythe/",
+            "attributes": {
+                "generic.attack_damage": -1.7,
+                "generic.attack_speed": -1.8
+            },
+            "aspects": {
+                "block_breaker": 2,
+                "edged_weapon": 1,
+                "breakable": 2
+            },
+            "effects": {
+                "strikingHoe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 1
+            },
+            "durability": -7,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1.1
+                },
+                "tools": {
+                    "hoe_dig": [
+                        0.83,
+                        1.15
+                    ]
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+					"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+                    "textureX": 32,
+                    "textureY": 16
+                },
+                "availableTextures": [
+                    "crude",
+                    "metal",
+                    "shiny"
+                ],
+                "models": [
+                    {
+                        "location": "tetrasulphide:item/module/single/scythe/"
+                    }
+                ]
+            }
+        }
+    ]
+}

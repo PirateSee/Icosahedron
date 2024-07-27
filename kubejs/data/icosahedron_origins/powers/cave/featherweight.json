@@ -1,0 +1,19 @@
+{
+    "name": "§c- §r§nFeatherweight",
+    "description": "Take more knockback",
+    "type": "origins:action_when_hit",
+    "bientity_action": {
+        "type": "origins:add_velocity",
+        "y": 0.1,
+        "z": 0.5,
+        "client": true,
+        "server": true
+    },
+    "bientity_condition": {
+        "type": "origins:actor_condition",
+        "condition": {
+            "type": "origins:exists"
+        }
+    },
+    "cooldown": 1
+}

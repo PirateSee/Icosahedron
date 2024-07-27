@@ -19,7 +19,7 @@
         "default"
     ],
     "material": {
-        "items": [ "kubejs:carbon_steel_ingot" ]
+        "tag": "forge:ingots/carbon_steel"
     },
     "requiredTools": {
         "hammer_dig": "minecraft:iron"

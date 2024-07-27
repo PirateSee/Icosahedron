@@ -1,0 +1,21 @@
+[
+    {
+        "key": "single/gravedigger",
+        "integrity": -2,
+        "attributes": {
+            "generic.attack_damage": 3
+        },
+        "effects": {
+            "earthbind": 2
+        },
+        "aspects": {
+            "blunt_weapon": 1
+        },
+        "models": [
+            {
+                "location": "tetrasulphide:item/module/single/excavator/gravedigger",
+                "tint": "inherit"
+            }
+        ]
+    }
+]

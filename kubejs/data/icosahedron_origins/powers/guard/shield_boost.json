@@ -8,14 +8,37 @@
             {
                 "type": "origins:execute_command",
                 "command": "/effect give @a[distance=0..5] minecraft:resistance 1"
+            },
+            {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:electric_spark",
+                "count": 5,
+                "speed": 0.1,
+                "spread": {
+                    "x": 5,
+                    "y": 2,
+                    "z": 5
+                },
+                "offset_y": 1
             }
         ]
     },
     "item_condition": {
         "type": "origins:ingredient",
-        "ingredient": {
-            "item": "minecraft:shield"
-        }
+        "ingredient": [
+            {
+                "item": "minecraft:shield"
+            },
+            {
+                "tag": "c:shields"
+            },
+            {
+                "tag": "forge:shields"
+            },
+            {
+                "tag": "fabric:shields"
+            }
+        ]
     },
     "trigger": "during",
     "priority": 0
