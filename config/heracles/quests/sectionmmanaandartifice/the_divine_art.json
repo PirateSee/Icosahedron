@@ -6,9 +6,13 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Tabula Smaragdina"
     },
-    "description": [],
+    "description": [
+      "<h1>- The Divine Art ---</h1>",
+      " ",
+      "Among other things /b/Manaweaving Wands/b/ can /6/Transmute/6/ a few materials into a magical counterpart."
+    ],
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
@@ -26,7 +30,7 @@
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "the divine art"
+      "translate": "The Divine Art"
     }
   },
   "settings": {

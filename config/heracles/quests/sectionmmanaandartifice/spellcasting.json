@@ -2,7 +2,22 @@
   "dependencies": [
     "rituals"
   ],
-  "tasks": {},
+  "tasks": {
+    "spell": {
+      "type": "heracles:item",
+      "item": "mna:spell",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Obtain a spell",
+      "icon": {
+        "item": {
+          "id": "mna:spell",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -19,7 +34,11 @@
       "",
       "Once you have assembled a spell you need to fully craft it using the /6/Ritual of Arcana/6/. The ingredients the ritual requires depends entirely on the spell your crafting which you can see either once the ritual is in progress or by right clicking the /6/Spell Recipe/6/.",
       "",
-      "As a starter spell, personally Id suggest making a /5/Touch-Dig/5/ spell, as it will function as a infinite /b/Stone Pickaxe/b/, and be a quick way to increase your /5/Magic Level/5/."
+      "As a starter spell, personally Id suggest making a /5/Touch-Dig/5/ spell, as it will function as a infinite /b/Stone Pickaxe/b/, and be a quick way to increase your /5/Magic Level/5/.",
+      "",
+      "<hr/>",
+      "<task task=\"spell\" quest=\"spellcasting\"/>",
+      "<hr/>"
     ],
     "groups": {
       "Section M: Mana and Artifice": {
