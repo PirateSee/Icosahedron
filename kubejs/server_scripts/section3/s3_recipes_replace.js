@@ -356,6 +356,8 @@ ServerEvents.recipes(e => {
 	e.recipes.create.mixing(Fluid.of('kubejs:creosote_oil', 400), [Fluid.of('kubejs:coal_tar', 200), Fluid.of('minecraft:water', 200)])
 
 	e.recipes.create.filling('kubejs:treated_wood_planks', [Fluid.of('kubejs:creosote_oil', 100), '#minecraft:planks'])
+    e.recipes.create.filling('kubejs:treated_wood_stairs', [Fluid.of('kubejs:creosote_oil', 100), '#minecraft:wooden_stairs'])
+    e.recipes.create.filling('kubejs:treated_wood_slab', [Fluid.of('kubejs:creosote_oil', 50), '#minecraft:wooden_slabs'])
 
 	let inter = 'create:incomplete_precision_mechanism'
 	e.recipes.create.sequenced_assembly([

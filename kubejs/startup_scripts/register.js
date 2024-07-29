@@ -100,11 +100,19 @@ StartupEvents.registry('item', e => {
 	e.create('crushed_bauxite').texture('icosahedron:item/ore/advanced/crushed_bauxite')
 
 	//complex
-	e.create('tungsten_crystal')
-	e.create('tungsten_shard')
-	e.create('tungsten_clump')
-	e.create('tungsten_dirty_dust')
-	e.create('tungsten_dust')
+	e.create('wolframite_crystal').texture('icosahedron:item/ore/complex/wolframite_crystal')
+	e.create('wolframite_shard').texture('icosahedron:item/ore/complex/wolframite_shard')
+	e.create('wolframite_clump').texture('icosahedron:item/ore/complex/wolframite_clump')
+	e.create('wolframite_dirty_dust').texture('icosahedron:item/ore/complex/wolframite_dirty_dust')
+	e.create('wolframite_powder').texture('icosahedron:item/ore/complex/wolframite_powder')
+
+    e.create('tungsten_dust').texture('icosahedron:item/ore/complex/tungsten_dust')
+
+    e.create('uraninite_crystal').texture('icosahedron:item/ore/complex/uraninite_crystal')
+	e.create('uraninite_shard').texture('icosahedron:item/ore/complex/uraninite_shard')
+	e.create('uraninite_clump').texture('icosahedron:item/ore/complex/uraninite_clump')
+	e.create('uraninite_dirty_dust').texture('icosahedron:item/ore/complex/uraninite_dirty_dust')
+	e.create('uraninite_powder').texture('icosahedron:item/ore/complex/uraninite_powder')
 
     //empty molds
     e.create('unfired_ingot_mold').texture('icosahedron:item/unfired_ingot_mold')
@@ -135,7 +143,6 @@ StartupEvents.registry('item', e => {
     //nickel
 	e.create('nickel_ingot').texture('icosahedron:item/ore/refined/nickel_ingot')
 	e.create('nickel_nugget').texture('icosahedron:item/ore/refined/nickel_nugget')
-	e.create('enriched_nickel').texture('icosahedron:item/ore/refined/enriched_nickel')
     //tungsten
 	e.create('tungsten_ingot').texture('icosahedron:item/ore/refined/tungsten_ingot')
 	e.create('tungsten_nugget').texture('icosahedron:item/ore/refined/tungsten_nugget')
@@ -246,7 +253,6 @@ StartupEvents.registry('item', e => {
     
     e.create('lithium_ion_cell').texture('icosahedron:item/component/mekanism/lithium_ion_cell').displayName('Lithium-Ion Cell')
     e.create('solid_state_cell').texture('icosahedron:item/component/mekanism/solid_state_cell').displayName('Solid-State Cell')
-    e.create('celestite_ingot').texture('icosahedron:item/ore/celestite')
 
 	//magic
 	e.create('cadmium_coated_ingot').texture('icosahedron:item/magic/cadmium_coated_ingot')
@@ -284,8 +290,6 @@ StartupEvents.registry('item', e => {
 	e.create('advanced_screwdriver').maxDamage(128).texture('icosahedron:item/tool/advanced_screwdriver')
 	
 	e.create('advanced_multitool').maxDamage(2648).texture('icosahedron:item/tool/advanced_multitool')
-
-	e.create('blowtorch').maxDamage(64).texture('icosahedron:item/tool/blowtorch')
 	
 	//complex
 	
@@ -295,9 +299,6 @@ StartupEvents.registry('item', e => {
 	e.create('complex_screwdriver').maxDamage(256).texture('icosahedron:item/tool/complex_screwdriver')
 	
 	e.create('complex_multitool').maxDamage(4396).texture('icosahedron:item/tool/complex_multitool')
-
-	e.create('hyper_blowtorch').maxDamage(128).texture('icosahedron:item/tool/hyper_blowtorch')
-	e.create('antimatter_manipulator').maxDamage(6).texture('icosahedron:item/tool/antimatter_manipulator')
 
 	//ore extraction
 	e.create('smooth_pebbles').maxStackSize(16).texture('icosahedron:item/ore/extracted/basic_pebbles') //common, trace basic
@@ -361,7 +362,8 @@ INFUSETYPE.register('nickel', 0xC2C5A4)
 //INFUSETYPE.register('copper', 0xD96E24)
 INFUSETYPE.register('cupronickel', 0xD96E24)
 
-SLURRY.register('tungsten', builder => builder.tint(0x3D5C4E))
+SLURRY.register('wolframite', builder => builder.tint(0x3D5C4E))
+SLURRY.register('uraninite', builder => builder.tint(0x222D31))
 
 GASES.register('gaseous_substrate', 0x726F37)
 
@@ -428,12 +430,13 @@ StartupEvents.registry("block", (event) => {
 	}
 
 	ore_decor('limonite', 3.5, 3, 'stone') //crude iron
-	ore_decor('sphalerite', 3.5, 3, 'stone') //crude zinc
+	ore_decor('sphalerite', 3.5, 3, 'iron') //crude zinc
 	ore_decor('hematite', 4, 3, 'iron') //advanced nether iron
 	ore_decor('malachite', 4, 3, 'iron') //advanced nether copper
-	ore_decor('bauxite', 4, 3, 'iron') //advanced nether aluminum
-	ore_decor('pentlandite', 4, 3, 'iron') //advanced nickel
-	ore_decor('wolframite', 5, 3.5, 'diamond') //complex tungsten
+	ore_decor('bauxite', 4, 3, 'diamond') //advanced nether aluminum
+	ore_decor('pentlandite', 4, 3, 'diamond') //advanced nickel
+	ore_decor('wolframite', 5, 3.5, 'netherite') //complex tungsten
+    ore_decor('uraninite', 7, 5, 'netherite') //complex lead
 
     event.create("sand_aquatrine_ore")
 		.mapColor("sand").soundType(SoundType.SAND)
@@ -456,6 +459,19 @@ StartupEvents.registry("block", (event) => {
 		.hardness(2.2).resistance(3.5)
 		.tagBlock("mineable/axe")
 		.textureAll('icosahedron:block/treated_wood_planks')
+
+    event.create("treated_wood_slab", "slab")
+		.mapColor("wood").woodSoundType()
+		.hardness(2.2).resistance(3.5)
+		.tagBlock("mineable/axe")
+		.textureAll('icosahedron:block/treated_wood_planks')
+
+    event.create("treated_wood_stairs", "stairs")
+		.mapColor("wood").woodSoundType()
+		.hardness(2.2).resistance(3.5)
+		.tagBlock("mineable/axe")
+		.textureAll('icosahedron:block/treated_wood_planks')
+
 
 	//decor
     event.create("blast_brick_block")

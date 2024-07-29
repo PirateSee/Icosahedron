@@ -53,7 +53,7 @@ ServerEvents.recipes(e => {
         "output": {
           "amount": 200,
             "chemicalType": "slurry",
-            "slurry": "kubejs:dirty_tungsten"
+            "slurry": "kubejs:dirty_wolframite"
         }
     })
     e.custom({
@@ -64,11 +64,11 @@ ServerEvents.recipes(e => {
         },
         "output": {
             "amount": 1,
-            "slurry": "kubejs:clean_tungsten"
+            "slurry": "kubejs:clean_wolframite"
         },
         "slurryInput": {
             "amount": 1,
-            "slurry": "kubejs:dirty_tungsten"
+            "slurry": "kubejs:dirty_wolframite"
         }
     })
     e.custom({
@@ -76,10 +76,10 @@ ServerEvents.recipes(e => {
         "chemicalType": "slurry",
         "input": {
             "amount": 200,
-            "slurry": 'kubejs:clean_tungsten'
+            "slurry": 'kubejs:clean_wolframite'
         },
         "output": {
-            "item": "kubejs:tungsten_crystal"
+            "item": "kubejs:wolframite_crystal"
         }
     })
     e.custom({
@@ -90,12 +90,12 @@ ServerEvents.recipes(e => {
         },
         "itemInput": {
             "ingredient": {
-                "item": "kubejs:tungsten_crystal"
+                "item": "kubejs:wolframite_crystal"
             }
         },
             "output": {
             "count": 1,
-            "item": "kubejs:tungsten_shard"
+            "item": "kubejs:wolframite_shard"
         }
     })
     e.custom({
@@ -106,38 +106,83 @@ ServerEvents.recipes(e => {
         },
         "itemInput": {
             "ingredient": {
-                "item": "kubejs:tungsten_shard"
+                "item": "kubejs:wolframite_shard"
             }
         },
         "output": {
             "count": 1,
-            "item": "kubejs:tungsten_clump"
+            "item": "kubejs:wolframite_clump"
         }
     })
     e.custom({
         "type": "mekanism:crushing",
         "input": {
             "ingredient": {
-                "item": "kubejs:tungsten_clump"
+                "item": "kubejs:wolframite_clump"
             }
         },
         "output": {
             "count": 1,
-            "item": "kubejs:tungsten_dirty_dust"
-        }
-    })
-    e.custom({
-        "type": "mekanism:enriching",
-        "input": {
-            "ingredient": {
-                "item": "kubejs:tungsten_dirty_dust"
-            }
-        },
-        "output": {
-            "count": 1,
-            "item": "kubejs:tungsten_dust"
+            "item": "kubejs:wolframite_powder"
         }
     })
 
+    e.custom({
+        "type":"vintageimprovements:centrifugation",
+        "ingredients": [ 
+            {
+                "item": 'kubejs:wolframite_powder',
+            }
+        ],
+        "results": [
+            {
+                "item": "kubejs:small_iron_grit",
+                "amount": 3
+            },
+            {
+                "item": "kubejs:tungsten_dust"
+            },
+            {
+                "item": "minecraft:quartz",
+                "chance": 0.25
+            },
+            {
+                "fluid": "kubejs:slag_runoff",
+                "amount": 150
+            }
+        ],
+        "processingTime": 2000
+    }).id('ico:decomposing_wolframite')
+
+    e.custom({
+        "type":"vintageimprovements:centrifugation",
+        "ingredients": [ 
+            {
+                "item": 'kubejs:uraninite_powder',
+            }
+        ],
+        "results": [
+            {
+                "item": "kubejs:small_zinc_grit",
+                "amount": 2
+            },
+            {
+                "item": "mekanism:lead_dust"
+            },
+            {
+                "item": "mekanism:raw_uranium",
+                "chance": 0.5
+            },
+            {
+                "fluid": "kubejs:slag_runoff",
+                "amount": 200
+            }
+        ],
+        "processingTime": 2000
+    }).id('ico:decomposing_uraninite')
+
+    
     e.blasting('kubejs:tungsten_ingot', 'kubejs:tungsten_dust')
+
+    e.recipes.create.crushing(Item.of('mekanism:dirty_dust_tin').withChance(0.05), 'minecraft:granite')
 })

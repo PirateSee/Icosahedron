@@ -61,6 +61,21 @@ ServerEvents.recipes(e => {
     stonedecor("limonite")
     stonedecor("wolframite")
 
+    //wood
+    e.shaped('4x kubejs:treated_wood_stairs', [
+        'A  ',
+        'AA ',
+        'AAA'
+    ], {
+        A: 'kubejs:treated_wood_planks'
+    }).id('ico:treated_wood_stairs')
+
+    e.shaped('6x kubejs:treated_wood_slab', [
+        'AAA'
+    ], {
+        A: 'kubejs:treated_wood_planks'
+    }).id('ico:treated_wood_slab')
+
     //industrial concrete
     e.recipes.create.mixing('6x kubejs:industrial_concrete', ['kubejs:soft_slag_dust', '2x minecraft:gravel', '2x minecraft:cobblestone'])
     e.recipes.create.cutting('kubejs:industrial_concrete_scuffed', 'kubejs:industrial_concrete')

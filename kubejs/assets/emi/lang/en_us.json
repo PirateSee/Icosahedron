@@ -5,6 +5,20 @@
     "tag.item.ico.tool.saw": "Saws",
 
     "tag.item.ico.component": "Components",
+    "tag.item.ico.arcane_base": "Arcane Bases",
+    "tag.item.ico.insulator": "Insulator",
+
+    "tag.item.ico.corundum_clusters": "Corundum Clusters",
+    "tag.item.ico.corundum": "All Corundum",
+    "tag.item.ico.manaweaving_wands": "Manaweaving Wands",
+
+    "tag.item.ico.limonite_blocks": "Limonite",
+    "tag.item.ico.hematite_blocks": "Hematite",
+    "tag.item.ico.malachite_blocks": "Malachite",
+    "tag.item.ico.bauxite_blocks": "Bauxite",
+    "tag.item.ico.pentlandite_blocks": "Pentlandite",
+    "tag.item.ico.wolframite_blocks": "Wolframite",
+    "tag.item.ico.uraninite_blocks": "Uraninite",
 
     "tag.item.create.casing": "Casings",
     "tag.item.create.contraption_controlled": "Contraption Controllable",
