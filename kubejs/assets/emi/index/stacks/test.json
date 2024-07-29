@@ -2,7 +2,7 @@
   "filters":
   [
     "ae2:facade",
-    "/vintageimprovements:.*(cobalt|enderium|signalium|pig_iron|queens_slime)/"
+    "/vintageimprovements:.*(cobalt|enderium|pig_iron|queens_slime|slimesteel|lead|aluminum|amethyst_bronze|bronze|cast_iron|constantan|electrum|hepatizon|invar|lumium|manyullyn|nickel|osmium|palladium|platinum|pure_gold|refined_glowstone|refined_obsidian|rhodium|rose_gold|signalum|silver|steel|tin|uranium|andesite|blaze|netherite|nethersteel|vanadium|zinc|calorite|ostrum|desh|ironwood|knightmetal|shadow_steel|fiery|refined_radiance)/"
   ],
   "disable": true
 }

@@ -2,13 +2,22 @@
   "dependencies": [
     "gate to alfheim"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_elementium": {
+      "type": "heracles:item",
+      "item": "botania:elementium_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      ""
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [

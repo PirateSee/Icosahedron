@@ -1,7 +1,6 @@
 {
   "dependencies": [
-    "Dragon Filtering",
-    "high-strength plates"
+    "Dragon Filtering"
   ],
   "tasks": {
     "get_metallurgic_infuser": {

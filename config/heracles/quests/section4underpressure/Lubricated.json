@@ -16,7 +16,10 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Lubricated ---",
+      "",
+      "<hr/>",
+      "<task task=\"get_lube_bearing\" quest=\"Lubricated\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -39,10 +42,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

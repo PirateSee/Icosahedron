@@ -9,7 +9,7 @@
         "start_value": 105,
         "hud_render": {
             "should_render": true,
-            "sprite_location": " \torigins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
             "bar_index": 5
         }
     },

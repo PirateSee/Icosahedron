@@ -10,8 +10,8 @@
     "groups": {
       "Section 4: Under Pressure": {
         "position": [
-          66,
-          468
+          -50,
+          298
         ]
       }
     },
@@ -28,10 +28,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

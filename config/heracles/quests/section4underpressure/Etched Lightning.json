@@ -22,7 +22,11 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Etched Lightning ---",
+      "",
+      "<hr/>",
+      "<task task=\"get_uv_lightbox\" quest=\"Etched Lightning\"/>",
+      "<task task=\"get_etching_tank\" quest=\"Etched Lightning\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -45,10 +49,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

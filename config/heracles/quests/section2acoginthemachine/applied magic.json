@@ -8,7 +8,17 @@
     "subtitle": {
       "translate": "Applications for mana"
     },
-    "description": [],
+    "description": [
+      "## Applied Magic",
+      "Got mana, but now what?",
+      "",
+      "/b/Functional Flowers/b/ can pull mana from /b/Mana Pools/b/ and start causing things to happen!",
+      "",
+      "They will pull from the closest /b/Mana Pool/b/ in range, but can be rebinded if necessary. Installing a /b/Redstone Root/b/ allows for /6/redstone control/6/ of the flower.",
+      "",
+      "Refer to the /b/Lexica Botanica/b/'s section on Functional Flora for a comprehensive and discriptive list.",
+      "<hr/>"
+    ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [

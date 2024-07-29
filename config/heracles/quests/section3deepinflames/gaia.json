@@ -1,11 +1,11 @@
 {
   "dependencies": [
-    "Plastics"
+    "elemental steel"
   ],
   "tasks": {
-    "get_heat_frame": {
+    "get_gaia_spirit": {
       "type": "heracles:item",
-      "item": "pneumaticcraft:heat_frame",
+      "item": "botania:life_essence",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
@@ -16,33 +16,34 @@
       "text": ""
     },
     "description": [
-      "A Heat Pipe or Compressed Iron Block must be placed between the heat/cooling source and the Heat Frame in order to transfer heat."
+      ""
     ],
     "groups": {
-      "Section 4: Under Pressure": {
+      "Section 3: Deep in Flames": {
         "position": [
-          -60,
-          180
+          120,
+          270
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "pneumaticcraft:heat_frame",
+        "id": "botania:life_essence",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Icebox"
+      "translate": "Gaia"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

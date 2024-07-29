@@ -40,7 +40,7 @@
       "Section 4: Under Pressure": {
         "position": [
           0,
-          360
+          330
         ]
       }
     },
@@ -57,10 +57,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

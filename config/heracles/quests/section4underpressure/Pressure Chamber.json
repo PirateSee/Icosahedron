@@ -4,15 +4,9 @@
   ],
   "tasks": {
     "adv_pressure_chamber": {
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      },
-      "advancements": [],
+      "advancements": [
+        "pneumaticcraft:pressure_chamber"
+      ],
       "type": "heracles:advancement"
     }
   },
@@ -22,7 +16,21 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Pressure Chamber ---",
+      "A box for your air.",
+      "",
+      "/b/Pressure Chambers/b/ are large /b/Compressed Air/b/ containers. These are kind of like your batteries.",
+      "",
+      "/6/Items can also be processed/6/ as long as /b/Pressure Chamber Interfaces/b/ were installed. Input/output for /b/Interfaces/b/ can /c/only be done via hopper or funnel/c/.",
+      "",
+      "You may notice your pressure drop when one of these is added to your network. This is normal.",
+      "",
+      "/b/Pressure/b/ is based off of /6/the ratio of/6/ /b/Air/b/ to /b/Volume/b/. The more volume you have, the more air you need for higher pressure. /b/Pressure Chambers/b/ have lots of /b/volume/b/. But this isn't a bad thing. While /6/machines have a minimum pressure requirement/6/, they always /6/consume a flat amount of air/6/. The more air you have, the/b/ longer they can run/b/, but the /6/more air you'll need to mantain a set pressure/6/.",
+      "",
+      "Oh and /c/do not exceed the maximum pressure/c/. These are only rated for a certain pressure, anything more might cause... unwanted explosions.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_pressure_chamber\" quest=\"Pressure Chamber\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -45,10 +53,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

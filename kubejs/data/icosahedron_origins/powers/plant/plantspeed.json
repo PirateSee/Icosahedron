@@ -54,6 +54,10 @@
                     {
                         "type": "origins:in_tag",
                         "tag": "minecraft:leaves"
+                    },
+                    {
+                        "type": "origins:in_tag",
+                        "tag": "chipped:moss_block"
                     }
                 ]
             },

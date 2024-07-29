@@ -3,13 +3,22 @@
     "spark_of_mana",
     "Gemstone Polishing"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_terrasteel": {
+      "type": "heracles:item",
+      "item": "botania:terrasteel_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      ""
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [

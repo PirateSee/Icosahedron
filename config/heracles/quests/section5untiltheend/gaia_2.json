@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "Turbine"
+    "mekanized"
   ],
   "tasks": {},
   "rewards": {},
@@ -8,32 +8,35 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      ""
+    ],
     "groups": {
-      "Section 4: Under Pressure": {
+      "Section 5: Until the End": {
         "position": [
-          90,
-          210
+          120,
+          -60
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "immersive_aircraft:biplane",
+        "id": "botania:gaia_ingot",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Aeronautics"
+      "translate": "Gaia 2"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

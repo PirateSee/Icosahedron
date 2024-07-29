@@ -17,7 +17,11 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Logical Compactness ---",
+      "A marvel of engineering.",
+      "",
+      "<hr/>",
+      "<task task=\"get_pcb\" quest=\"Logical Compactness\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -40,10 +44,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

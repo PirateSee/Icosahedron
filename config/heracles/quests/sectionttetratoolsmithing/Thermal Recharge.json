@@ -1,6 +1,16 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "get_thermal_cell": {
+      "type": "heracles:item",
+      "item": "tetra:thermal_cell",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -33,10 +43,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "COMPLETED",
+    "unlockNotification": false
   }
 }

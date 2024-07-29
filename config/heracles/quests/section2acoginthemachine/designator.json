@@ -1,16 +1,33 @@
 {
   "dependencies": [
-    "petal_assembly",
-    "magic assembly"
+    "petal_assembly"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_wand_of_forest": {
+      "type": "heracles:item",
+      "item": "botania:twig_wand",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "translate": "I command thee"
     },
     "description": [
-      "## - Designator ---"
+      "## - Designator ---",
+      "The forest is your choir, conductor.",
+      "",
+      "The /b/Wand of the Forest/b/ is a crucial tool for mana manipulation.",
+      "",
+      "The Wand lets you bind /b/Mana Spreaders/b/, /b/Flowers/b/, and any other mana related equipment via /6/Shift-Right Clicking/6/ on them, then /6/Right Clicking/6/ the destination.",
+      "",
+      "Holding the Wand lets you /6/inspect/6/ the /b/Mana/b/ within an object.",
+      "",
+      "The Wand has other useful applications which are more useful later. For now, let's move on to getting some mana so you can make use of your fancy new stick.",
+      "<hr/>",
+      "<task task=\"get_wand_of_forest\" quest=\"designator\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

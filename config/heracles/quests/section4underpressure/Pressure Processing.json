@@ -17,7 +17,19 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Pressure Processing ---",
+      "Thermopneumatic Processing Plant? Why such a long name?",
+      "",
+      "The /b/Thermopneumatic Processing Plant/b/ (/b/TPP/b/ from now on) is your first real machine. The /b/TPP/b/ takes in items and fluids, and when /6/given suitable pressure/6/, processes them into something else.",
+      "",
+      "There are /b/fluid dump buttons/b/ inside if you need to get rid of any excess fluid stuck inside.",
+      "",
+      "You may notice the /b/tempature gauge/b/ on in the /b/TPP/b/. This isn't nessary for all recipes, but some will require the /6/tempature to be above, below, or within a certain range/6/.",
+      "",
+      "Placing hot or cold /b/blocks adjacent/b/ will /6/adjust the tempature/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_thermoplant\" quest=\"Pressure Processing\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -40,10 +52,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

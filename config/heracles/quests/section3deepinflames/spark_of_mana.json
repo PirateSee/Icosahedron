@@ -1,12 +1,21 @@
 {
   "dependencies": [],
-  "tasks": {},
+  "tasks": {
+    "get_spark": {
+      "type": "heracles:item",
+      "item": "botania:spark",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      ""
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [

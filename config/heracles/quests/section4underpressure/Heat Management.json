@@ -2,19 +2,25 @@
   "dependencies": [
     "Pressure Processing"
   ],
-  "tasks": {
-    "check_heat": {
-      "title": "Understood",
-      "type": "heracles:check"
-    }
-  },
+  "tasks": {},
   "rewards": {},
   "display": {
     "subtitle": {
       "translate": "Keep your cool"
     },
     "description": [
-      ""
+      "## - Heat Management ---",
+      "Radiating heat is inefficent. Lets fix that.",
+      "",
+      "Machines will /6/warn you if they are radiating/6/ lots of heat or cold. /b/Place blocks/b/ or /b/Thermal Lagging/b/ on /6/all faces of the block/6/ to prevent loss of tempature.",
+      "",
+      "/b/Thermal Lagging/b/ insulates the same as any block, but still /6/allows interaction through it/6/. Use a /b/Pneumatic Wrench/b/ to remove.",
+      "",
+      "/b/Compressed Alloy Blocks/b/ can /6/transport tempature/6/, but will /c/radiate a lot/c/ if not insulated. /b/Heat pipes/b/ /6/come with insulation/6/, and are much more compact.",
+      "",
+      "/c/Some blocks will transform into another/c/ after transfering lots of heat. Lava solidifes, ice melts, etc. Watch out for those.",
+      "",
+      "<hr/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -37,10 +43,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

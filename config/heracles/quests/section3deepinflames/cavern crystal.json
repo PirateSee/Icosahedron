@@ -20,7 +20,6 @@
       "",
       "They can be found /b/growing underground/b/ in caves. Corundum blocks placed /b/deep underground/b/ will start /6/emitting particles and growing upward/6/. They grow up to 4 blocks tall, and can be waxed to prevent growth.",
       "",
-      "> --/7/When I first saw this kind of crystal, I found it stunningly beautiful. Clusters of glowing rocks all along the caves. Putting them in these crystal-growing rooms makes them lose a lot of their allure though. They are lined up, row by row, with a machine chugging along to trim them./7/--",
       "<hr/>",
       "<task task=\"get_cor\" quest=\"cavern crystal\"/>"
     ],

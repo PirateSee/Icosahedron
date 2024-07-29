@@ -7,15 +7,7 @@
       "type": "heracles:item",
       "item": "compressedcreativity:rotational_compressor",
       "amount": 1,
-      "collection": "AUTOMATIC",
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      }
+      "collection": "AUTOMATIC"
     }
   },
   "rewards": {},
@@ -24,7 +16,17 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Pressure Dynamo ---",
+      "Wait, what about kinetic energy? We can't leave that behind!",
+      "",
+      "/b/Rotational Compressors/b/ turn /b/Kinetic Energy/b/ into /b/Compressed Air/b/. An easy way to start on power production.",
+      "",
+      "But be careful. At high RPMs, /b/Rotational Compressors/b/ /6/generate lots of air/6/. Your neterwork likely /c/can't handle so much pressure/c/. Whatever you do, make sure you /c/do not exceed the maximum pressure/c/. These are only rated for a certain pressure, anything more might cause... unwanted explosions.",
+      "",
+      "The /b/Compressed Air Engine/b/ can be used to turn /b/Compressed Air/b/ back into /b/Kinetic Energy/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_rotational_compressor\" quest=\"Pressure Dynamo\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -47,10 +49,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

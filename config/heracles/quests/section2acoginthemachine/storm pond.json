@@ -2,7 +2,14 @@
   "dependencies": [
     "magic conduit"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_diluited_pool": {
+      "type": "heracles:item",
+      "item": "botania:diluted_pool",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -12,11 +19,15 @@
       "## - Storm Pond ---",
       "Now that we have mana, we've got to put it somewhere.",
       "",
-      "draft",
+      "Once you've got mana pouring through the /b/Mana Spreader/b/, you'll need a destination.",
       "",
-      "mana pools",
-      "link spreader to pool",
-      "uses of mana pools"
+      "/b/Mana Pools/b/ store /b/Mana/b/ for later use, either by /6/dropping items/6/ in the pool or by /b/Functional Flora/b/.",
+      "",
+      "/6/Bind/6/ the /b/Mana Spreader/b/ to the /b/Mana Pool/b/, and make sure there is a /c/clear path/c/ for the /b/Mana Blast/b/ to travel.",
+      "",
+      "Don't worry, even the /b/Diluted Mana Pool/b/ can hold a lot of mana.",
+      "<hr/>",
+      "<task task=\"get_diluted_pool\" quest=\"storm pond\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

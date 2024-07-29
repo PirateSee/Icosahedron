@@ -3,7 +3,14 @@
     "designator",
     "Sandpaper"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_mana_spreader": {
+      "type": "heracles:item",
+      "item": "botania:mana_spreader",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -13,9 +20,19 @@
       "## - Magic Conduit ---",
       "Lets get some Mana production going.",
       "",
-      "draft",
+      "/b/Generating Flora/b/ are flowers that /6/produce mana/6/. The /b/Lexica Botanica/b/ has a full list on those, but some you can start off with are the /b/Endoflame/b/ and /b/Hydrogenas/b/.",
       "",
-      "basic generating flowers, link to mana spreader"
+      "The /b/Endoflame/b/ takes nearby fuel on the ground and /6/burns/6/ them for Mana.",
+      "",
+      "The /b/Hydrogenas/b/ /6/absorbs mana from nearby water/6/ passively, until it dies after a few days.",
+      "",
+      "Either or both will get you some basic mana produciton. But now you have to put it somewhere.",
+      "",
+      "Bind the flowers to a nearby /b/Mana Spreader/b/. Mana Spreaders take mana and then fire them in a blast at whatever they are binded to.",
+      "",
+      "You'll likely want a Mana pool as the destination for them.",
+      "<hr/>",
+      "<task task=\"get_mana_spreader\" quest=\"magic conduit\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

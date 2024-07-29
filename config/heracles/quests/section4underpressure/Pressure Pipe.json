@@ -7,15 +7,7 @@
       "type": "heracles:item",
       "item": "pneumaticcraft:pressure_tube",
       "amount": 1,
-      "collection": "AUTOMATIC",
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      }
+      "collection": "AUTOMATIC"
     }
   },
   "rewards": {},
@@ -24,7 +16,15 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Pressure Pipe ---",
+      "Keep it all in.",
+      "",
+      "/b/Pressure Tubes/b/ transport /b/Compressed Air/b/ from one place to another. /b/Compressed Air/b/ is the main power source for pneumatic machinery.",
+      "",
+      "Any open ends of the tube will /c/leak air/c/, and as such /6/should be sealed/6/ to prevent power loss.",
+      "",
+      "<hr/>",
+      "<task task=\"get_pressure_tube\" quest=\"Pressure Pipe\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -47,10 +47,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

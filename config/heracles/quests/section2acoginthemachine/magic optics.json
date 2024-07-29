@@ -2,13 +2,29 @@
   "dependencies": [
     "manasteel"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_mana_lens": {
+      "type": "heracles:item",
+      "item": "botania:lens_normal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## Magic Optics",
+      "Mana blasts and lasers are basically the same thing, right?",
+      "",
+      "/b/Mana Lenses/b/ /6/augment mana blasts/6/ that pass through them. The /b/Lexica Botanica/b/ has good information on what each one does.",
+      "",
+      "Use these lenses to turn /b/Mana Spreaders/b/ from simple logistics machines to /6/laser blasters/6/ with great potential.",
+      "<hr/>",
+      "<task task=\"get_mana_lens\" quest=\"magic optics\"/>"
+    ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
@@ -30,10 +46,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

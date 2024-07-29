@@ -16,7 +16,10 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Tri-Turbine ---",
+      "",
+      "<hr/>",
+      "<task task=\"get_turbine\" quest=\"Turbine\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -39,10 +42,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

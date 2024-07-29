@@ -85,7 +85,11 @@
         "botania:tools/smelt_rod",
         "botania:tools/cobble_rod",
         "botania:devices/pylon",
-        "botania:basics/terrasteel"
+        "botania:basics/terrasteel",
+        "botania:baubles/monocle",
+        "botania:alfhomancy/gaia_ritual",
+        "botania:functional_flowers/exoflame",
+        "botania:functional_flowers/intro"
       ],
       "bookmarks": [],
       "completedManualQuests": []
