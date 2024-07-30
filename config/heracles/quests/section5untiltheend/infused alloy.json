@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "mekanism",
     "mekanized"
   ],
   "tasks": {},
@@ -13,7 +14,7 @@
       "Section 5: Until the End": {
         "position": [
           150,
-          30
+          60
         ]
       }
     },
@@ -30,10 +31,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

@@ -9,15 +9,15 @@
       "amount": 1,
       "collection": "AUTOMATIC"
     },
-    "get_head": {
-      "type": "heracles:item",
-      "item": "createdieselgenerators:pumpjack_head",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
     "get_bearing": {
       "type": "heracles:item",
       "item": "createdieselgenerators:pumpjack_bearing",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_head": {
+      "type": "heracles:item",
+      "item": "createdieselgenerators:pumpjack_head",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
@@ -29,8 +29,13 @@
     },
     "description": [
       "<h2>- Oil Rig ---</h2>",
+      "Liquid black gold of the earth.",
       "",
+      "Search for oil with an /b/Oil Detector/b/. If it lights up, you can construct a /b/Pumpjack/b/ /6/within that chunk/6/.",
       "",
+      "Ponder any of the Pumpjack parts for construction specs.",
+      "",
+      "Once up and running, a /c/limited/c/ (but rather large) amount of oil /6/can be extracted/6/ from that chunk. Pipe the /b/Crude Oil/b/ away and into tanks or processing.",
       "",
       "<hr/>",
       "<task task=\"get_bearing\" quest=\"Oil Rig\"/>",

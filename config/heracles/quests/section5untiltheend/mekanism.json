@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "Dragon Filtering"
+    "And down it goes"
   ],
   "tasks": {
     "get_metallurgic_infuser": {
@@ -16,7 +16,7 @@
       "text": ""
     },
     "description": [
-      "<h2>- Mekanized ---</h2>",
+      "## - Mekanized ---",
       "/b/Mekanism/b/. Now here's where things get intresting.",
       "",
       "/b/Mekanism/b/ brings with it /b/electric machinery/b/ and /6/mass production/6/. Be prepared for things to get a lot more expensive here on out, and to be dealing with fairly high numbers.",

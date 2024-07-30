@@ -2,17 +2,34 @@
   "dependencies": [
     "Enderfall"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_sinew_mesh": {
+      "type": "heracles:item",
+      "item": "kubejs:dragon_sinew_mesh",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Dragonslayer ---",
+      "The End... Or is it?",
+      "",
+      "You've fought well, but now there is a whole new dimension to exploit.",
+      "",
+      "Make sure you catch that /b/Dragon Sinew/b/. It's not only a /b/good bowstring/b/, but it can be /6/fitted to a mesh/6/ to filter some valuable material from /b/End Stone/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_sinew_mesh\" quest=\"And down it goes\"/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          60,
+          90,
           0
         ]
       }
@@ -26,14 +43,15 @@
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
     "title": {
-      "translate": "And down it goes"
+      "translate": "Dragonslayer"
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

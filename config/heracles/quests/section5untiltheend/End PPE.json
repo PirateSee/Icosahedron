@@ -6,7 +6,16 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - End PPE ---",
+      "Gotta prepare for the big day.",
+      "",
+      "/8/The End/8/ has /c/low air/c/. You'll need /c/a solution to replenish your air/c/ while in there.",
+      "",
+      "Air doesn't drain too fast,",
+      "",
+      "/b/Water Breathing/b/ won't help. This isn't water, it's just thin air."
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
@@ -28,10 +37,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

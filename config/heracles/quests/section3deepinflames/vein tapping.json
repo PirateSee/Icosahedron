@@ -3,13 +3,26 @@
     "Compact Alloy",
     "Mechanical Compactness"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_mining_machine": {
+      "type": "heracles:item",
+      "item": "createoreexcavation:drilling_machine",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Miners hate him"
     },
-    "description": [],
+    "description": [
+      "## - Vein Tapping ---",
+      "A little prospecting to strike gold.",
+      "",
+      "<hr/>",
+      "<task task=\"get_mining_machine\" quest=\"vein tapping\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -31,10 +44,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

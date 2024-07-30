@@ -2,13 +2,35 @@
   "dependencies": [
     "Before the End"
   ],
-  "tasks": {},
+  "tasks": {
+    "enter_end": {
+      "icon": {
+        "item": {
+          "id": "minecraft:end_portal_frame",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "from": "minecraft:overworld",
+      "to": "minecraft:the_end",
+      "title": "Jump through the End Portal",
+      "type": "heracles:changed_dimension"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Enderfall ---",
+      "The beginning of the End.",
+      "",
+      "Welcome to the End. Enjoy your stay.",
+      "",
+      "<hr/>",
+      "<task task=\"enter_end\" quest=\"Enderfall\"/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
@@ -30,10 +52,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

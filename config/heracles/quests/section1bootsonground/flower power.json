@@ -2,7 +2,14 @@
   "dependencies": [
     "Planetfall"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_mystical_flower": {
+      "type": "heracles:item",
+      "item": "#botania:mystical_flowers",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -17,7 +24,8 @@
       "This is your introduction to /b/Botania/b/. Welcome, botanist. These flowers can be refined for use in natrual but /6/automatable processes/6/.",
       "",
       "The /b/Lexica Botanica/b/ contains helpful information on /b/Botania/b/. While some of the information is /c/wrong/c/ (usually recipes, due to changes made by this modpack), it still contains many /6/useful pages on the functions/6/ of diffrent flowers and devices.",
-      "<hr/>"
+      "<hr/>",
+      "<task task=\"get_mystical_flower\" quest=\"flower power\"/>"
     ],
     "groups": {
       "Section 1: Boots on Ground": {

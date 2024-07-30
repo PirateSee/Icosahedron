@@ -1,0 +1,14 @@
+{
+    "block.pneumaticcraft.compressed_iron_block" : "Block of Compressed Alloy",
+    "block.pneumaticcraft.creative_compressed_iron_block" : "Creative Compressed Alloy Block",
+
+    "item.pneumaticcraft.compressed_iron_boots" : "Compressed Alloy Boots",
+    "item.pneumaticcraft.compressed_iron_chestplate" : "Compressed Alloy Chestplate",
+    "item.pneumaticcraft.compressed_iron_helmet" : "Compressed Alloy Helmet",
+    "item.pneumaticcraft.compressed_iron_gear" : "Compressed Alloy Gear",
+    "item.pneumaticcraft.compressed_iron_leggings" : "Compressed Alloy Leggings",
+    "item.pneumaticcraft.drill_bit_compressed_iron" : "Compressed Alloy Drill Bit",
+	"item.pneumaticcraft.ingot_iron_compressed": "Compressed Alloy Ingot",
+
+    "gui.tooltip.item.pneumaticcraft.drill_bit_diamond" : "Faster than Compressed Alloy\nDig Modes: 1x1, 1x2, 1x3, 3x3(+), vein(ores+logs)"
+}

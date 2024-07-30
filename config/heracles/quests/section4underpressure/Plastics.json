@@ -18,6 +18,11 @@
     },
     "description": [
       "## - Plastics ---",
+      "Durable, flexible, cheap, versatile. An amazing set of materials.",
+      "",
+      "Use your new /b/Pumpjack/b/ to extract /b/Crude Oil/b/, put it through a /b/Refinery/b/, and process it into production-quality /b/Plastic Sheets/b/.",
+      "",
+      "/b/Plastic Sheets/b/, /b/Rubber/b/, and /b/Polystyrene/b/ are three complex but useful plastic products. Many machines going forward will need at least a little bit of one of these.",
       "",
       "<hr/>",
       "<task task=\"get_plastic\" quest=\"Plastics\"/>"

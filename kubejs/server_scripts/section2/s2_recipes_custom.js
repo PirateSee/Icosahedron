@@ -167,6 +167,5 @@ ServerEvents.recipes(e => {
 	e.recipes.createMixing('kubejs:sealant', ['2x supplementaries:daub', '6x minecraft:mud'])
 
 	//magic
-	e.recipes.createMixing('2x kubejs:cadmium_coated_ingot', ['2x minecraft:gold_ingot', 'kubejs:cadmium'])
 	e.recipes.createMilling('5x minecraft:red_dye', 'kubejs:cadmium')
 })

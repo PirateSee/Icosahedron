@@ -30,7 +30,9 @@
     "description": [
       "<h2>- Tube Logistics ---</h2>",
       "",
-      "You know the classic modded minecraft item transport pipes? You need to be a physicist to know how this works but /b/pressure pipes/b/ can /6/transport items/6/ along them with some pressure and a little help."
+      "You know the classic modded minecraft item transport pipes? You need to be a physicist to know how this works but /b/pressure pipes/b/ can /6/transport items/6/ along them with some pressure and a little help.",
+      "",
+      "<hr/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
@@ -53,10 +55,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

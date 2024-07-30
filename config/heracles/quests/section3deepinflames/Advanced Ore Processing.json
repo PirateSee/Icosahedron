@@ -2,7 +2,14 @@
   "dependencies": [
     "Crushing It"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_aluminum": {
+      "type": "heracles:item",
+      "item": "kubejs:aluminum_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -19,7 +26,8 @@
       "This will process /6/Pentlandite, Bauxite, Malachite, Hematite/6/",
       "",
       "/b/Bauxite/b/ and /b/Malachite/b/ yield /b/Iron/b/ and /b/Copper/b/ respectively. They can be found in the /c/Nether/c/ and are far /6/more common and mineral-rich/6/ than their overworld counterparts. Risk for reward.",
-      "<hr/>"
+      "<hr/>",
+      "<task task=\"get_aluminum\" quest=\"Advanced Ore Processing\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

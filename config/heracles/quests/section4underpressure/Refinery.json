@@ -23,6 +23,13 @@
     },
     "description": [
       "## - Refinery ---",
+      "Time to remove the 'crude' in /b/Crude Oil/b/.",
+      "",
+      "/b/Refineries/b/ are a multiblock which /6/uses heat/6/ to /6/seperate a liquid/6/ into /b/two-four seperate liquids/b/. Place a /b/Refinery Controller/b/ at the bottom, then /6/stack two-four/6/ /b/Refinery Outputs/b/ ontop. The amount of /b/Outputs/b/ /6/increases the amount/6/ of unique fluids extracted.",
+      "",
+      "/b/Crude Oil/b/ is an example of a refinable liquid. The more Outputs you have, the more oil products you get. (up to four, of course)",
+      "",
+      "To avoid massive heat dissipation, you'll need to i/c/nsulate all of the outputs/c/.",
       "",
       "<hr/>",
       "<task task=\"get_refinery_output\" quest=\"Refinery\"/>",

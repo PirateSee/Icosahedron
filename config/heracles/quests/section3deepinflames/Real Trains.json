@@ -2,7 +2,14 @@
   "dependencies": [
     "Mechanical Compactness"
   ],
-  "tasks": {},
+  "tasks": {
+    "adv_train": {
+      "advancements": [
+        "create:train"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {

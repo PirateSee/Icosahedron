@@ -37,7 +37,7 @@ ServerEvents.recipes(e => {
 		'WWW'
 	], {
 		W: 'botania:livingrock', 
-		V: 'botania:mana_pearl',
+		M: 'botania:mana_pearl',
         P: 'botania:diluted_pool',
         T: '#ico:tool/file'
 	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:mana_pool')

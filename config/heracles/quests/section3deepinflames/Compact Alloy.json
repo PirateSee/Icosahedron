@@ -4,7 +4,14 @@
     "Advanced Ore Processing",
     "Magma Treats"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_compressed_iron": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:ingot_iron_compressed",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -18,7 +25,8 @@
       "",
       "You'll need to /6/superheat/6/ /b/Aluminum/b/ and /b/Pressed Iron/b/, then /6/compact/6/ them with /b/Corundum Clusters/b/ to make ingots. The pressure alloy ingots msut then be /6/exploded/6/ to make /b/Pressure Alloy/b/. Blowing up the ingots /c/may cause you to lose som/c/e, so a /6/more efficent process/6/ is worth investing in.",
       "",
-      "<hr/>"
+      "<hr/>",
+      "<task task=\"get_compressed_iron\" quest=\"Compact Alloy\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
