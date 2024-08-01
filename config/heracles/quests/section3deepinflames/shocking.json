@@ -2,13 +2,25 @@
   "dependencies": [
     "Cog Crafting"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_generator_coil": {
+      "type": "heracles:item",
+      "item": "create_new_age:generator_coil",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Shocking ---",
+      "",
+      "<hr/>",
+      "<task task=\"get_generator_coil\" quest=\"shocking\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
@@ -30,10 +42,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

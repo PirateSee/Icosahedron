@@ -104,7 +104,10 @@
         "pneumaticcraft:programming/tutorial_1",
         "pneumaticcraft:programming/puzzle_pieces",
         "pneumaticcraft:programming/variables",
-        "pneumaticcraft:programming/programmable_controller"
+        "pneumaticcraft:programming/programmable_controller",
+        "pneumaticcraft:logistics/frames",
+        "pneumaticcraft:logistics/logistics_module",
+        "pneumaticcraft:tubes/logistics_module"
       ],
       "bookmarks": [],
       "completedManualQuests": []

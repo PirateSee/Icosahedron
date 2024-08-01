@@ -8,12 +8,81 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Splitting the Atom ---",
+      "The power of the Atom.",
+      "",
+      "/b/Fission Reactors/b/ burn /b/Fissile Fuel/b/ to /6/heat up mass amounts of coolant/6/. Fission Reactors /6/generate no power on their own/6/, but produce /b/Steam/b/ or /b/Superheated Sodium/b/ which can be used in a /b/Turbine/b/ or /b/Boiler/b/ respectively to make power.",
+      "",
+      "While they can produce massive amounts of power, /b/Fission Reactors/b/ /c/have some risks/c/. They produce /b/Nuclear Waste/b/, a /6/radioactive byproduct/6/ of fission. Waste can be /6/reprocessed back into fuel/6/, saving up to 80%. Improperly cooled /b/Fission Reactors/b/ may /6/melt down/6/, causing a /c/huge explosion and release of radiation/c/.",
+      "",
+      "/b/Reactor Valves/b/ allow for the input of /b/Fuel/b/ or /b/Coolant/b/, and the output of /b/Heated Coolant/b/ and /b/Waste/b/.",
+      "",
+      "/b/Reactor Logic Ports/b/ allow for /6/redstone control/6/ of the reactor.",
+      "",
+      "Here is a small /b/Fission Reactor/b/ blueprint:",
+      "",
+      "Legend:",
+      "/0/■/0/ - Air",
+      "/7/■/7/ - Only casing",
+      "■ - Casing/glass/ports",
+      "- /b/■/b/ Fission Fuel Assembly",
+      "- /9/■/9/ Control Rod Assembly",
+      "",
+      "<columns>",
+      "<column>",
+      "<columns>",
+      "<column>",
+      "Layer 1",
+      "/7/■■■■/7/",
+      "/7/■/7/■■/7/■/7/",
+      "/7/■/7/■■/7/■/7/",
+      "/7/■■■■/7/",
+      "</column>",
+      "<column>",
+      "Layer 2",
+      "/7/■/7/■■/7/■/7/",
+      "■/b/■/b//0/■/0/■",
+      "■/0/■/0//b/■/b/■",
+      "/7/■/7/■■/7/■/7/",
+      "</column>",
+      "</columns>",
+      "</column>",
+      "<column>",
+      "<columns>",
+      "<column>",
+      "Layer 3",
+      "/7/■/7/■■/7/■/7/",
+      "■/9/■/9//0/■/0/■",
+      "■/0/■/0//9/■/9/■",
+      "/7/■/7/■■/7/■/7/",
+      "</column>",
+      "<column>",
+      "Layer 4",
+      "/7/■■■■/7/",
+      "/7/■/7/■■/7/■/7/",
+      "/7/■/7/■■/7/■/7/",
+      "/7/■■■■/7/",
+      "</column>",
+      "</columns>",
+      "</column>",
+      "</columns>",
+      "",
+      "/b/Layer 2/b/ can be /6/extended upwards/6/, and the whole thing can be scaled from /b/3x3x4/b/ to /b/18x18x18/b/.",
+      "",
+      "/b/Reactor Glass/b/ and ports can't be placed on the edges (grey).",
+      "",
+      "/b/Control rods/b/ are the pillars in the inside made of /b/Fission Fuel Assemblies/b/ with /b/Control Rod Assemblies/b/ at the top. Within the casing, either pillars of /6/air or control rods/6/ can be placed. That is, you /6/don't need to fill the entire casing with control rod/6/s if you can't. /b/Control rods/b/ /c/shouldn't touch each other/c/, or else it will be /c/very difficult to cool the reactor/c/.",
+      "",
+      "<text>The <underline><dark_aqua><link href=\"https://wiki.aidancbrady.com/wiki/Fission_Reactor\">Mekanism Wiki</link></dark_aqua></underline> has futher information on Fission Reactor operations.</text>",
+      "",
+      "<hr/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
           330,
-          30
+          0
         ]
       }
     },
@@ -30,10 +99,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

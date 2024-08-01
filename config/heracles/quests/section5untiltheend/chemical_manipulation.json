@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    "mekanism"
+  ],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Chemical Manipulation ---",
+      "Gasses, slurries, pigments, infuse types, what's it all for?",
+      "",
+      "/b/Mekanism/b/ introduces /b/Gasses/b/. The only way to transport these is by /b/Pressurized Tubes/b/. They simply are pipes (without pumps) that /6/spread gas around their length/6/.",
+      "",
+      "Most machines in Mekanism handle gasses.",
+      "",
+      "## Thermal Evaporation Plant",
+      "",
+      "The /b/Thermal Evaporation Plant/b/ is an important machine for the production of Lithium. It takes water or brine, and with /6/sufficent heat/6/ evaporates the useless parts and leaves another liquid.",
+      "",
+      "/b/Thermal Evaporation Valves/b/ within the multiblock /6/allow for the input/output/6/ of /b/fluids/b/, and the /6/input of Heat/6/ via /b/Resistive Heaters/b/, /b/Fuelwood Heaters/b/, or /b/Boilers/b/.",
+      "",
+      "Here is a blueprint on the Thermal Evaporation Plant.",
+      "",
+      "Legend:",
+      "/0/■/0/ - Air",
+      "■ - Only Casing",
+      "/6/■/6/ - Casing/ports/controller",
+      "/1/■/1/ - Air/anything or Advanced Solar Generator",
+      "",
+      "<columns>",
+      "<column>",
+      "Bottom Layer",
+      "■■■■",
+      "■/6/■■/6/■",
+      "■/6/■■/6/■",
+      "■■■■",
+      "</column>",
+      "<column>",
+      "Middle Layer",
+      "■/6/■■/6/■",
+      "/6/■/6//0/■■/0//6/■/6/",
+      "/6/■/6//0/■■/0//6/■/6/",
+      "■/6/■■/6/■",
+      "</column>",
+      "<column>",
+      "Top Layer",
+      "/1/■/1//6/■■/6//1/■/1/",
+      "/6/■/6//0/■■/0//6/■/6/",
+      "/6/■/6//0/■■/0//6/■/6/",
+      "/1/■/1//6/■■/6//1/■/1/",
+      "</column>",
+      "</columns>",
+      "",
+      "One /b/Thermal Evaporation Controler/b/ must be included in the walls somewhere.",
+      "",
+      "The Middle Layer can be extended up to 16 times for a total of an /b/18 block tall Evaporation Plant/b/.",
+      "",
+      "/b/Advanced Solar Generators/b/ at the top /6/increase the passive heating rate/6/.",
+      "",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          180,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mekanism:chemical_infuser",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Chemical Manipulation"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

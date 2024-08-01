@@ -1,18 +1,30 @@
 {
   "dependencies": [
-    "chemical manipulation"
+    "chemical_manipulation"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_cube": {
+      "type": "heracles:item",
+      "item": "mekanism:basic_energy_cube",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Battery Block ---",
+      "",
+      "<hr/>",
+      "<task task=\"get_cube\" quest=\"battery_block\"/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          210,
+          180,
           60
         ]
       }

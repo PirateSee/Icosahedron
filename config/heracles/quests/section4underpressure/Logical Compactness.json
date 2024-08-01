@@ -20,6 +20,10 @@
       "## - Logical Compactness ---",
       "A marvel of engineering.",
       "",
+      "/b/Printed Circuit Boards/b/ are complex but important components in any advanced electrical device. These boards will require a /6/variety of resources/6/ and machines you've made in this section.",
+      "",
+      "A good challange is automating these boards. You'll need quite a few of them after all.",
+      "",
       "<hr/>",
       "<task task=\"get_pcb\" quest=\"Logical Compactness\"/>"
     ],

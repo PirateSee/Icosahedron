@@ -17,6 +17,9 @@
     },
     "description": [
       "## - Tri-Turbine ---",
+      "A little propeller.",
+      "",
+      "/b/Turbine Rotors/b/ are moderately complex components using /b/Plastic Sheets/b/. They are used in a few machines.",
       "",
       "<hr/>",
       "<task task=\"get_turbine\" quest=\"Turbine\"/>"

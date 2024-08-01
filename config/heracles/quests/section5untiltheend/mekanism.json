@@ -1,6 +1,7 @@
 {
   "dependencies": [
-    "And down it goes"
+    "And down it goes",
+    "shocking"
   ],
   "tasks": {
     "get_metallurgic_infuser": {
@@ -25,7 +26,7 @@
       "",
       "The main resources you'll want out of this are /b/Steel/b/ and /b/Cupronickel/b/.",
       "<hr/>",
-      "<task task=\"get_metallurgic_infuser\" quest=\"mekanized\"/>"
+      "<task task=\"get_metallurgic_infuser\" quest=\"mekanism\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {

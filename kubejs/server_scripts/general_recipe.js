@@ -136,7 +136,11 @@ ServerEvents.recipes(e => {
 
 	//nether
 	e.recipes.createoreexcavation.vein('{"text": "Bauxite Tailings"}', 'kubejs:bauxite_ore').placement(128, 16, 2162738).biomeWhitelist('forge:the_nether/in').id('ico:bauxite_tailings')
-	e.recipes.createoreexcavation.drilling(['minecraft:netherrack', 'kubejs:scorched_tailings', Item.of('kubejs:sulfur').withChance(0.02)], 'ico:bauxite_tailings', 240).id('ico:bauxite_tailings_drill').drill('createoreexcavation:diamond_drill')
+	e.recipes.createoreexcavation.drilling(['minecraft:netherrack', 'kubejs:scorched_tailings', Item.of('kubejs:sulfur').withChance(0.02)], 'ico:bauxite_tailings', 240).id('ico:bauxite_tailings_drill').drill('kubejs:compressed_iron_drill')
+
+    //end
+    e.recipes.createoreexcavation.vein('{"text": "Ender Wolframite"}', 'kubejs:wolframite_ore').placement(128, 16, 17922462).biomeWhitelist('forge:the_end/in').id('ico:ender_wolframite')
+	e.recipes.createoreexcavation.drilling(['minecraft:end_stone', Item.of('kubejs:wolframite_ore').withChance(0.5), Item.of('kubejs:uraninite_ore').withChance(0.05)], 'ico:ender_wolframite', 240).id('ico:ender_wolframite_drill').drill('kubejs:netherite_drill')
 
 	//extracted material refinement
 	e.recipes.create.crushing(['cobbled_deepslate', Item.of('minecraft:lapis_lazuli').withChance(0.3), Item.of('minecraft:redstone').withChance(0.5)], 'kubejs:smooth_pebbles')

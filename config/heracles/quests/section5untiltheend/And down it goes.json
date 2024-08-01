@@ -21,7 +21,7 @@
       "",
       "You've fought well, but now there is a whole new dimension to exploit.",
       "",
-      "Make sure you catch that /b/Dragon Sinew/b/. It's not only a /b/good bowstring/b/, but it can be /6/fitted to a mesh/6/ to filter some valuable material from /b/End Stone/b/.",
+      "Make sure you catch that /b/Dragon Sinew/b/. It'll be found at the exact spot the dragon died, not where it flew afterwards. It's not only a /b/good bowstring/b/, but it can be /6/fitted to a mesh/6/ to filter some valuable material from /b/End Stone/b/.",
       "",
       "<hr/>",
       "<task task=\"get_sinew_mesh\" quest=\"And down it goes\"/>"

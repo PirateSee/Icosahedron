@@ -60,6 +60,15 @@ ServerEvents.tags('item', e => {
 	e.add('ico:wolframite_blocks', 'kubejs:wolframite_ore')
 	e.add('ico:wolframite_blocks', 'kubejs:polished_wolframite')
 
+    //drills
+
+    e.add('ico:any_drill', 'kubejs:drill_bit')
+    e.add('ico:any_drill', 'kubejs:compressed_iron_drill')
+    e.add('ico:any_drill', 'kubejs:netherite_drill')
+
+    e.add('ico:good_drill', 'kubejs:compressed_iron_drill')
+    e.add('ico:good_drill', 'kubejs:netherite_drill')
+
 	//tools
 	
 	e.add('ico:tool/file', 'kubejs:simple_file')

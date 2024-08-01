@@ -2,13 +2,32 @@
   "dependencies": [
     "Turbine"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_fluid_mixer": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:fluid_mixer",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Pressure Mix ---",
+      "Wait, didn't we already have this machine before?",
+      "",
+      "The /b/Fluid Mixer/b/ mixes two fluids into another.",
+      "",
+      "Some of its recipes are shared with regular /6/Mechanical Mixing/6/, but some can be done with /6/geater efficency/6/ or with /b/extra byproducts/b/.",
+      "",
+      "It's also necessary for the production of /b/Etching Acid/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_fluid_mixer\" quest=\"Pressure Mix\"/>"
+    ],
     "groups": {
       "Section 4: Under Pressure": {
         "position": [
@@ -30,10 +49,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

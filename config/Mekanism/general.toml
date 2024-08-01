@@ -62,7 +62,7 @@
 		#Add filled creative fluid tanks to creative/JEI.
 		fluidTanks = false
 		#Add filled creative gas tanks to creative/JEI.
-		gasTanks = false
+		gasTanks = true
 		#Add filled creative infusion tanks to creative/JEI.
 		infusionTanks = false
 		#Add filled creative pigment tanks to creative/JEI.

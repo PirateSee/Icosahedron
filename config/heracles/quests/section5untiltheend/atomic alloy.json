@@ -2,17 +2,29 @@
   "dependencies": [
     "Complex Ore Processing"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_atomic_alloy": {
+      "type": "heracles:item",
+      "item": "mekanism:alloy_atomic",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Atomic Alloy ---",
+      "",
+      "<hr/>",
+      "<task task=\"get_atomic_alloy\" quest=\"atomic alloy\"/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          300,
+          270,
           0
         ]
       }

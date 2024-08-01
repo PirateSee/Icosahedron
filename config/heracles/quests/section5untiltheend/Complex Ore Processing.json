@@ -1,20 +1,36 @@
 {
   "dependencies": [
-    "reinforced alloy"
+    "chemical_manipulation"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_tungsten": {
+      "type": "heracles:item",
+      "item": "kubejs:tungsten_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      "This will process /b/Wolframite/b/, /b/Uraninite/b/, /b/Fluorite/b/"
+      "## - Complex Ore Processing ---",
+      "The last set of ores. Process them all!",
+      "",
+      "Complex Ore Processing is a /6/fairly long recipe tree/6/ going through a lot of /b/Mekanism/b/ machines. It also requires /6/additional input/6/, such as /b/Oxygen/b/ and /b/Hydrogen Chloride/b/.",
+      "",
+      "But from this, you can get so much more.",
+      "",
+      "This will process /b/Wolframite/b/, /b/Uraninite/b/, /b/Fluorite/b/",
+      "<hr/>",
+      "<task task=\"get_tungsten\" quest=\"Complex Ore Processing\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          270,
+          210,
           0
         ]
       }
