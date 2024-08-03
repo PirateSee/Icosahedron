@@ -456,7 +456,7 @@ ServerEvents.recipes(e => {
       'ICI'
       ], {
         I: 'kubejs:high_pressure_plate',
-        O: 'kubejs:oled_display',
+        O: 'kubejs:lcd_display',
         U: 'pneumaticcraft:pressure_tube',
         P: 'pneumaticcraft:printed_circuit_board',
         C: 'pneumaticcraft:assembly_platform',
@@ -1091,7 +1091,7 @@ ServerEvents.recipes(e => {
 		'SDS'
 	], {
 		R: 'pneumaticcraft:capacitor',
-		D: 'kubejs:oled_display',
+		D: 'kubejs:lcd_display',
 		S: 'create:golden_sheet',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:monitor_advanced')

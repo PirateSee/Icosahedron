@@ -163,11 +163,11 @@ ServerEvents.recipes(e => {
         ],
         "results": [
             {
-                "item": "kubejs:small_zinc_grit",
-                "amount": 2
+                "item": "kubejs:small_zinc_grit"
             },
             {
-                "item": "mekanism:lead_dust"
+                "item": "mekanism:lead_dust",
+                "chance": 0.75
             },
             {
                 "item": "mekanism:raw_uranium",

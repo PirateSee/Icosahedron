@@ -1,4 +1,4 @@
-ServerEvents.recipes(e => {  
+ServerEvents.recipes(e => {
     //tools
 
     e.shaped('kubejs:simple_file', [

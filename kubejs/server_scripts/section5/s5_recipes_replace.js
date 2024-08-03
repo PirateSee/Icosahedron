@@ -49,6 +49,17 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:thermal_evaporation/controller'})
     e.remove({id: 'mekanism:thermal_evaporation/valve'})
 
+    e.remove({id: 'mekanism:boiler_casing'})
+    e.remove({id: 'mekanism:boiler_valve'})
+    e.remove({id: 'mekanism:superheating_element'})
+    e.remove({id: 'mekanism:pressure_disperser'})
+
+    e.remove({id: 'mekanism:turbine_casing'})
+    e.remove({id: 'mekanism:turbine_vent'})
+    e.remove({id: 'mekanism:turbine_rotor'})
+    e.remove({id: 'mekanism:turbine_blade'})
+    //e.remove({id: 'mekanism:electromagnetic_coil'})
+
     //components
     e.remove({id:'mekanism:steel_casing'})
     e.remove({id:'mekanism:control_circuit/basic'})
@@ -389,6 +400,103 @@ ServerEvents.recipes(e => {
             S: 'mekanism:advanced_control_circuit',
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:thermal_evaporation_controller')
+
+    e.shaped('6x mekanism:boiler_casing', [ 
+        ' HT', 
+        ' S ',
+        'RH '
+        ], {
+            S: 'mekanism:steel_block',
+            H: 'kubejs:tungsten_ingot',
+            R: 'kubejs:rubber',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:boiler_casing')
+
+    e.shaped('2x mekanism:boiler_valve', [ 
+        ' HT', 
+        'HSH',
+        'RH '
+        ], {
+            S: 'mekanism:advanced_control_circuit',
+            H: 'mekanism:boiler_casing',
+            R: 'create:portable_fluid_interface',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:boiler_valve')
+
+    e.shaped('mekanism:superheating_element', [ 
+        ' CT', 
+        'CSC',
+        'AC '
+        ], {
+            S: 'mekanism:steel_casing',
+            A: 'mekanism:alloy_reinforced',
+            C: 'kubejs:cupronickel_sheet',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:superheating_element')
+
+    e.shaped('mekanism:pressure_disperser', [ 
+        'IST', 
+        'SAS',
+        'ISI'
+        ], {
+            S: 'mekanism:ingot_steel',
+            A: 'mekanism:alloy_reinforced',
+            I: 'minecraft:iron_bars',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:pressure_disperser')
+
+    e.shaped('4x mekanism:turbine_casing', [ 
+        ' HT', 
+        ' S ',
+        'RH '
+        ], {
+            S: 'mekanism:steel_block',
+            H: 'mekanism:ingot_osmium',
+            R: 'kubejs:rubber',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:turbine_casing')
+
+    e.shaped('2x mekanism:turbine_valve', [ 
+        ' HT', 
+        'HSH',
+        'RH '
+        ], {
+            S: 'mekanism:advanced_control_circuit',
+            H: 'mekanism:boiler_casing',
+            R: 'create:portable_fluid_interface',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_valve')
+
+    e.shaped('2x mekanism:turbine_vent', [ 
+        ' HT', 
+        'HSH',
+        ' H '
+        ], {
+            S: 'mekanism:advanced_control_circuit',
+            H: 'create:iron_bars',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_vent')
+
+    e.shaped('mekanism:turbine_blade', [ 
+        ' AT', 
+        'SRS'
+        ], {
+            R: 'pneumaticcraft:turbine_rotor',
+            A: 'mekanism:alloy_reinforced',
+            S: 'mekanism:ingot_steel',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_vent')
+
+    e.custom({
+		"type":"createaddition:rolling",
+		"input": {
+			  "item": "mekanism:alloy_reinforced"
+		},
+		"result": {
+			"item": "mekanism:turbine_rotor",
+			"count": 2
+		}
+	})
 
     //components
     e.custom({
