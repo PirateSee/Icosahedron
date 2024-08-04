@@ -2,13 +2,28 @@
   "dependencies": [
     "waste shifter"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_antimatter": {
+      "type": "heracles:item",
+      "item": "mekanism:pellet_antimatter",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Antimatter ---",
+      "You have it now.",
+      "",
+      "/d/Antimatter/d/. From here you can go anywhere.",
+      "",
+      "<hr/>",
+      "<task task=\"get_antimatter\" quest=\"antimatter\"/>"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [

@@ -8,11 +8,11 @@ ServerEvents.recipes(e => {
 	
 	
 	//melting
-	e.recipes.melterMelting(Fluid.of('minecraft:water', 1000),"minecraft:ice").processingTime(500).minimumHeat(1)
+	//e.recipes.melterMelting(Fluid.of('minecraft:water', 1000),"minecraft:ice").processingTime(500).minimumHeat(1)
 	
-	e.recipes.melterMelting(Fluid.of('minecraft:water', 1000),"minecraft:packed_ice").processingTime(750).minimumHeat(1)
+	//e.recipes.melterMelting(Fluid.of('minecraft:water', 1000),"minecraft:packed_ice").processingTime(750).minimumHeat(1)
 	
-	e.recipes.melterMelting(Fluid.of('minecraft:water', 1000),"minecraft:blue_ice").processingTime(1000).minimumHeat(2)
+	//e.recipes.melterMelting(Fluid.of('minecraft:water', 1000),"minecraft:blue_ice").processingTime(1000).minimumHeat(2)
 
 	//replace blocksyouneed_luna:wrought_iron_ingot with kubejs:wrought_iron_ingot
 

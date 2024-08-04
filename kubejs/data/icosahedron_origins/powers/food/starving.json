@@ -1,0 +1,81 @@
+{
+    "1": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<",
+            "compare_to": 10
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 5,
+        "duration_per_stack": 60,
+        "tick_rate": 40,
+        "effect": {
+            "effect": "minecraft:slowness",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "2": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<",
+            "compare_to": 6
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 5,
+        "duration_per_stack": 60,
+        "tick_rate": 40,
+        "effect": {
+            "effect": "minecraft:weakness",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "3": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<",
+            "compare_to": 4
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 5,
+        "duration_per_stack": 60,
+        "tick_rate": 40,
+        "effect": {
+            "effect": "minecraft:mining_fatigue",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "4": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": "<",
+            "compare_to": 1
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 5,
+        "duration_per_stack": 60,
+        "tick_rate": 40,
+        "effect": {
+            "effect": "minecraft:blindness",
+            "duration": 100,
+            "amplifier": 0,
+            "show_particles": true,
+            "show_icon": true
+        }
+    },
+    "name": "§c- §r§nStarving",
+    "description": "Recieve increasing debuffs as you get hungry",
+    "type": "origins:multiple"
+}

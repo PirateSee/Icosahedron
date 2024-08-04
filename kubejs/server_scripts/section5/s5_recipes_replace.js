@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:chemical_infuser'})
     e.remove({id: 'mekanism:pressurized_reaction_chamber'})
 
-    //storage
+    //storage and multiblock
     e.remove({id: 'mekanism:chemical_tank/basic'})
     e.remove({id: 'mekanism:chemical_tank/advanced'})
     e.remove({id: 'mekanism:chemical_tank/elite'})
@@ -49,16 +49,27 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:thermal_evaporation/controller'})
     e.remove({id: 'mekanism:thermal_evaporation/valve'})
 
+    e.remove({id: 'mekanism:structual_glass'})
+
     e.remove({id: 'mekanism:boiler_casing'})
     e.remove({id: 'mekanism:boiler_valve'})
     e.remove({id: 'mekanism:superheating_element'})
     e.remove({id: 'mekanism:pressure_disperser'})
 
-    e.remove({id: 'mekanism:turbine_casing'})
-    e.remove({id: 'mekanism:turbine_vent'})
-    e.remove({id: 'mekanism:turbine_rotor'})
-    e.remove({id: 'mekanism:turbine_blade'})
+    e.remove({id: 'mekanismgenerators:turbine/casing'})
+    e.remove({id: 'mekanismgenerators:turbine/vent'})
+    e.remove({id: 'mekanismgenerators:turbine/rotor'})
+    e.remove({id: 'mekanismgenerators:turbine/blade'})
     //e.remove({id: 'mekanism:electromagnetic_coil'})
+
+    e.remove({id: 'mekanismgenerators:reactor/glass'})
+
+    e.remove({id: 'mekanismgenerators:fission_reactor/casing'})
+    e.remove({id: 'mekanismgenerators:fission_reactor/port'})
+    e.remove({id: 'mekanismgenerators:fission_reactor/logic_adapter'})
+
+    /*e.remove({id: 'mekanism:sps_casing'}) //might be expensive enough already...
+    e.remove({id: 'mekanism:sps_port'})*/
 
     //components
     e.remove({id:'mekanism:steel_casing'})
@@ -401,6 +412,8 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:thermal_evaporation_controller')
 
+    e.recipes.createDeploying('mekanism:structural_glass', ['kubejs:tempered_glass', 'mekanism:ingot_steel'])
+
     e.shaped('6x mekanism:boiler_casing', [ 
         ' HT', 
         ' S ',
@@ -445,18 +458,18 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:pressure_disperser')
 
-    e.shaped('4x mekanism:turbine_casing', [ 
+    e.shaped('4x mekanismgenerators:turbine_casing', [ 
         ' HT', 
         ' S ',
         'RH '
         ], {
-            S: 'mekanism:steel_block',
+            S: 'mekanism:block_steel',
             H: 'mekanism:ingot_osmium',
             R: 'kubejs:rubber',
             T: '#ico:tool/hammer'
     }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:turbine_casing')
 
-    e.shaped('2x mekanism:turbine_valve', [ 
+    e.shaped('2x mekanismgenerators:turbine_valve', [ 
         ' HT', 
         'HSH',
         'RH '
@@ -467,7 +480,7 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_valve')
 
-    e.shaped('2x mekanism:turbine_vent', [ 
+    e.shaped('2x mekanismgenerators:turbine_vent', [ 
         ' HT', 
         'HSH',
         ' H '
@@ -477,7 +490,7 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_vent')
 
-    e.shaped('mekanism:turbine_blade', [ 
+    e.shaped('mekanismgenerators:turbine_blade', [ 
         ' AT', 
         'SRS'
         ], {
@@ -485,7 +498,42 @@ ServerEvents.recipes(e => {
             A: 'mekanism:alloy_reinforced',
             S: 'mekanism:ingot_steel',
             T: '#ico:tool/screwdriver'
-    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_vent')
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_blade')
+
+    e.shaped('4x mekanismgenerators:reactor_glass', [ 
+        'ULT', 
+        'LGL',
+        'ULU'
+        ], {
+            G: 'kubejs:tempered_glass',
+            L: 'mekanism:ingot_lead',
+            U: 'kubejs:tungsten_ingot',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:reactor_glass')
+
+    e.shaped('4x mekanismgenerators:fission_reactor_casing', [ 
+        ' LT', 
+        'LSL',
+        'HL '
+        ], {
+            S: 'mekanism:steel_casing',
+            L: 'mekanism:ingot_lead',
+            H: 'mekanism:hdpe_sheet',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fission_reactor_casing')
+
+    e.shaped('2x mekanismgenerators:fission_reactor_port', [ 
+        ' CT', 
+        'CAC',
+        'IC '
+        ], {
+            C: 'mekanismgenerators:fission_reactor_casing',
+            I: 'create:portable_fluid_interface',
+            A: 'mekanism:ultimate_control_circuit',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fission_reactor_port')
+
+    e.recipes.createDeploying('mekanismgenerators:fission_reactor_logic_adapter', ['mekanismgenerators:fission_reactor_casing', 'pneumaticcraft:printed_circuit_board'])
 
     e.custom({
 		"type":"createaddition:rolling",
@@ -493,7 +541,7 @@ ServerEvents.recipes(e => {
 			  "item": "mekanism:alloy_reinforced"
 		},
 		"result": {
-			"item": "mekanism:turbine_rotor",
+			"item": "mekanismgenerators:turbine_rotor",
 			"count": 2
 		}
 	})

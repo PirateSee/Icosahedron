@@ -3,12 +3,14 @@
     "description": "§0[Endurance] [Blood]§7\nRelies on siphoning blood from other creatures to keep fed and powerful.",
     "powers": [
         "icosahedron_origins:blood/blood",
+        "icosahedron_origins:blood/blood_jump",
         "icosahedron_origins:blood/revival",
         "icosahedron_origins:cave/nightvision",
         "icosahedron_origins:cave/dark_cover",
         "icosahedron_origins:doll/undead",
         "icosahedron_origins:blood/sun",
-        "icosahedron_origins:mecha/sturdy_deny"
+        "icosahedron_origins:mecha/sturdy_deny",
+        "icosahedron_origins:seaborn/fire_weak"
     ],
     "icon": {
         "item": "minecraft:redstone"

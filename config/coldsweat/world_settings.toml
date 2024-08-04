@@ -3,7 +3,7 @@
 #Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
 [Dimensions]
 	#Applies an offset to the world's temperature across an entire dimension
-	"Dimension Temperature Offsets" = [["minecraft:the_nether", 1.0], ["minecraft:the_end", -0.1], ["minecraft:overworld", 0.03]]
+	"Dimension Temperature Offsets" = [["minecraft:overworld", 0.03, "MC"], ["minecraft:the_end", -0.15, "MC"], ["minecraft:the_nether", 1.0, "MC"]]
 	#Overrides existing dimension temperatures & offsets
 	#Also overrides temperatures of all biomes in the dimension
 	"Dimension Temperatures" = []
@@ -16,7 +16,7 @@
 	#Applies an offset to the temperature of a biome
 	"Biome Temperature Offsets" = []
 	#Defines the temperature of a biome, overriding existing biome temperatures & offsets.
-	"Biome Temperatures" = [["minecraft:soul_sand_valley", 53, 53, "F"], ["minecraft:old_growth_birch_forest", 58, 72, "F"], ["minecraft:river", 60, 70, "F"], ["minecraft:swamp", 72, 84, "F"], ["minecraft:savanna", 70, 95, "F"], ["minecraft:savanna_plateau", 76, 98, "F"], ["minecraft:windswept_savanna", 67, 90, "F"], ["minecraft:taiga", 44, 62, "F"], ["minecraft:snowy_taiga", 19, 48, "F"], ["minecraft:old_growth_pine_taiga", 48, 62, "F"], ["minecraft:old_growth_spruce_taiga", 48, 62, "F"], ["minecraft:desert", 48, 115, "F"], ["minecraft:stony_shore", 50, 64, "F"], ["minecraft:snowy_beach", 38, 52, "F"], ["minecraft:snowy_slopes", 24, 38, "F"], ["minecraft:windswept_forest", 48, 66, "F"], ["minecraft:frozen_peaks", 15, 33, "F"], ["minecraft:warm_ocean", 67, 76, "F"], ["minecraft:deep_frozen_ocean", 56, 65, "F"], ["minecraft:jungle", 76, 87, "F"], ["minecraft:bamboo_jungle", 76, 87, "F"], ["minecraft:badlands", 84, 120, "F"], ["minecraft:wooded_badlands", 80, 108, "F"], ["minecraft:eroded_badlands", 88, 120, "F"], ["minecraft:deep_dark", 63, 63, "F"]]
+	"Biome Temperatures" = [["minecraft:savanna_plateau", 76.0, 98.0, "F"], ["minecraft:taiga", 44.0, 62.0, "F"], ["minecraft:eroded_badlands", 88.0, 120.0, "F"], ["minecraft:savanna", 70.0, 95.0, "F"], ["minecraft:swamp", 72.0, 84.0, "F"], ["minecraft:bamboo_jungle", 76.0, 87.0, "F"], ["minecraft:frozen_peaks", 15.0, 33.0, "F"], ["minecraft:old_growth_spruce_taiga", 48.0, 62.0, "F"], ["minecraft:snowy_beach", 38.0, 52.0, "F"], ["minecraft:deep_dark", 63.0, 63.0, "F"], ["minecraft:warm_ocean", 67.0, 76.0, "F"], ["minecraft:windswept_forest", 48.0, 66.0, "F"], ["minecraft:jungle", 76.0, 87.0, "F"], ["minecraft:snowy_slopes", 24.0, 38.0, "F"], ["minecraft:stony_shore", 50.0, 64.0, "F"], ["minecraft:soul_sand_valley", 53.0, 53.0, "F"], ["minecraft:old_growth_birch_forest", 58.0, 72.0, "F"], ["minecraft:desert", 48.0, 115.0, "F"], ["minecraft:snowy_taiga", 19.0, 48.0, "F"], ["minecraft:badlands", 84.0, 120.0, "F"], ["minecraft:deep_frozen_ocean", 56.0, 65.0, "F"], ["minecraft:river", 60.0, 70.0, "F"], ["minecraft:old_growth_pine_taiga", 48.0, 62.0, "F"], ["minecraft:windswept_savanna", 67.0, 90.0, "F"], ["minecraft:wooded_badlands", 80.0, 108.0, "F"]]
 
 ["Block Temperature"]
 	#Allows for adding simple BlockTemps without the use of Java mods
@@ -50,7 +50,7 @@
 	"Hearth Strength" = 0.5
 	#List of additional blocks that the hearth can spread through
 	#Use this list if the hearth isn't spreading through particular blocks that it should
-	"Hearth Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "ars_nouveau:purple_archwood_leaves", "ars_nouveau:blue_archwood_leaves", "ars_nouveau:red_archwood_leaves", "ars_nouveau:green_archwood_leaves", "vinery:dark_cherry_leaves", "vinery:apple_leaves", "vinery:grapevine_leaves", "quark:blue_blossom_leaves", "quark:lavender_blossom_leaves", "quark:orange_blossom_leaves", "quark:yellow_blossom_leaves", "quark:red_blossom_leaves", "quark:ancient_leaves"]
+	"Hearth Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "vinery:dark_cherry_leaves", "vinery:apple_leaves", "vinery:grapevine_leaves", "quark:blue_blossom_leaves", "quark:lavender_blossom_leaves", "quark:orange_blossom_leaves", "quark:yellow_blossom_leaves", "quark:red_blossom_leaves", "quark:ancient_leaves"]
 	#List of additional blocks that the hearth cannot spread through
 	#Use this list if the hearth is spreading through particular blocks that it shouldn't
 	"Hearth Spread Blacklist" = ["create:encased_fluid_pipe"]

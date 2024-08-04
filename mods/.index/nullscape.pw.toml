@@ -1,0 +1,13 @@
+filename = 'Nullscape_1.20.x_v1.2.7.jar'
+name = 'Nullscape'
+side = 'server'
+
+[download]
+hash = '61b66528ff76beeea56c600472c6a8fa8c424a9d781684e39867877c79b5fe6878e70fa27a978f8e071e77e7a449ccbb8092f9636af515dd812ad071bad7bff9'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/LPjGiSO4/versions/IGSIk1BM/Nullscape_1.20.x_v1.2.7.jar'
+
+[update.modrinth]
+mod-id = 'LPjGiSO4'
+version = 'IGSIk1BM'

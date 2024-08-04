@@ -172,23 +172,6 @@
         },
         "only_when_harvested": false
     },
-    "lose_jump": {
-        "type": "origins:active_self",
-        "entity_action": {
-            "type": "origins:chance",
-            "chance": 0.1,
-            "action": {
-                "type": "origins:change_resource",
-                "resource": "icosahedron_origins:blood/blood_resource",
-                "change": -1,
-                "operation": "add"
-            }
-        },
-        "cooldown": 20,
-        "key": {
-            "key": "key.jump"
-        }
-    },
     "heal_high": {
         "condition": {
             "type": "origins:and",
@@ -220,6 +203,10 @@
                 {
                     "type": "origins:heal",
                     "amount": 1
+                },
+                {
+                    "type": "origins:exhaust",
+                    "amount": 4
                 }
             ]
         }
@@ -255,6 +242,10 @@
                 {
                     "type": "origins:heal",
                     "amount": 1
+                },
+                {
+                    "type": "origins:exhaust",
+                    "amount": 4
                 }
             ]
         }

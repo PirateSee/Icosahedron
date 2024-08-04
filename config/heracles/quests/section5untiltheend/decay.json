@@ -2,7 +2,14 @@
   "dependencies": [
     "splitting the atom"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_radioactive_waste_barrel": {
+      "type": "heracles:item",
+      "item": "mekanism:radioactive_waste_barrel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -10,8 +17,12 @@
     },
     "description": [
       "## - Decay ---",
+      "Out of sight, out of mind.",
       "",
-      "<hr/>"
+      "/b/Radioactive products/b/ can /6/slowly and safely decay/6/ in /b/Radioactive Waste Barrels/b/. It's very slow, but it will eventually disapear. Just don't let them get broken, otherwise they will /c/release their radioactive contents into the air/c/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_radioactive_waste_barrel\" quest=\"decay\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {

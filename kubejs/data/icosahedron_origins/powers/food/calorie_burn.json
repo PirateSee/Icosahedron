@@ -1,0 +1,34 @@
+{
+    "name": "§a+ §r§nCalorie Burn",
+    "description": "Fire burns hunger instead of health until starving.",
+    "type": "origins:multiple",
+    "immune": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "type": "origins:fire_immunity"
+    },
+    "hunger": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:on_fire"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 0.5
+        }
+    }
+}

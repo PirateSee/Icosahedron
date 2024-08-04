@@ -12,9 +12,13 @@
       "",
       "/8/The End/8/ has /c/low air/c/. You'll need /c/a solution to replenish your air/c/ while in there.",
       "",
-      "Air doesn't drain too fast,",
+      "Air doesn't drain too fast, giving you a few good minutes even without any gear. Wearing a /b/Diving Helmet/b/ will /6/give you even longer/6/, and wearing a filled /b/Copper Backtank/b/ allows you to draw air from it instead, /6/keeping you breathing until it runs out/6/.",
       "",
-      "/b/Water Breathing/b/ won't help. This isn't water, it's just thin air."
+      "You'll have to /6/sacrifice some armour/6/ for this, but the outer end islands are /6/fairly peaceful/6/. It's just you, the void, and some endermen.",
+      "",
+      "/b/Water Breathing/b/ won't help. This isn't water, it's just thin air.",
+      "",
+      "It's also /c/quite cold/c/ in the end. Bring a /b/heating solution/b/, or some /6/well-insulated/6/ armour. It's not /6/quite as cold/6/ as the nether is hot, so you'll have a /6/fair bit of time before freezing/6/."
     ],
     "groups": {
       "Section 5: Until the End": {

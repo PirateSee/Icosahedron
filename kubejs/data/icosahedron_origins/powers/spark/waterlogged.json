@@ -12,6 +12,10 @@
                 "fluid": "minecraft:water",
                 "comparison": ">=",
                 "compare_to": 0.1
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "mna:soaked"
             }
         ]
     },

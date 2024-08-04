@@ -30,7 +30,8 @@
     "multi_dimension_fog_control": false,
     "dimensionFogDistance": {
       "minecraft:overworld": 0,
-      "ae2:spatial_storage": 0
+      "ae2:spatial_storage": 0,
+      "minecraft:the_end": 0
     },
     "light_updates": true,
     "item_frame": true,
@@ -49,7 +50,7 @@
     "show_f_p_s_extended": true,
     "show_coords": true,
     "reduce_resolution_on_mac": false,
-    "use_adaptive_sync": false,
+    "use_adaptive_sync": true,
     "cloud_height": 192,
     "cloud_distance": 100,
     "toasts": true,

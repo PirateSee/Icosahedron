@@ -1,6 +1,11 @@
 {
     "name": "§a+ §r§nSharp Hearing",
     "description": "Sense entities through walls",
+    "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:darkness",
+        "min_duration": 5
+    },
     "type": "origins:entity_glow",
     "bientity_condition": {
         "type": "origins:and",
@@ -32,7 +37,7 @@
         ]
     },
     "use_teams": true,
-    "red": 0.2,
-    "green": 0.2,
-    "blue": 0.2
+    "red": 0.5,
+    "green": 0.5,
+    "blue": 0.5
 }

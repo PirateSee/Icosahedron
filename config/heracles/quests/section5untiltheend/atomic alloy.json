@@ -17,6 +17,11 @@
     },
     "description": [
       "## - Atomic Alloy ---",
+      "An alloy of epic proportions.",
+      "",
+      "/b/Atomic Alloy/b/ requires many resources acessible before it. This is /6/quite expensive, and quite useful/6/.",
+      "",
+      "I told you /b/Mekanism/b/ was gonna be expensive.",
       "",
       "<hr/>",
       "<task task=\"get_atomic_alloy\" quest=\"atomic alloy\"/>"

@@ -3,6 +3,9 @@
     "description": "§0[Food]§7\nAlways hungry, and loves to eat.",
     "powers": [
         "icosahedron_origins:food/buffet",
+        "icosahedron_origins:food/calorie_burn",
+        "icosahedron_origins:food/patch",
+        "icosahedron_origins:food/starving",
         "icosahedron_origins:food/hungry"
     ],
     "icon": {

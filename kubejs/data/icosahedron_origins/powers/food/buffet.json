@@ -6,8 +6,8 @@
         "type": "origins:apply_effect",
         "effect": {
             "effect": "minecraft:resistance",
-            "duration": 30,
-            "amplifier": 0,
+            "duration": 10,
+            "amplifier": 5,
             "show_particles": true,
             "show_icon": true
         }

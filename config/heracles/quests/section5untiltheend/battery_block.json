@@ -17,6 +17,11 @@
     },
     "description": [
       "## - Battery Block ---",
+      "Storing power for a rainy day?",
+      "",
+      "Those old /b/Accumulators/b/ worked before, but now /b/Energy Cubes/b/ are /6/better suited/6/ for the /6/high-end energy consumption/6/ now.",
+      "",
+      "They come in /b/four tiers/b/, each /6/much better than the last/6/.",
       "",
       "<hr/>",
       "<task task=\"get_cube\" quest=\"battery_block\"/>"

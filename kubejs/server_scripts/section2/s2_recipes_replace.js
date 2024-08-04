@@ -326,7 +326,7 @@ ServerEvents.recipes(e => {
 		B: 'kubejs:blast_brick_block'
 	}).id('ico:blast_furnace_2')
 	
-	e.shaped('melter:melter', [
+	/*e.shaped('melter:melter', [
 		'I I', 
 		'ABA'
 	], {
@@ -341,7 +341,7 @@ ServerEvents.recipes(e => {
 	], {
 		I: 'kubejs:wrought_iron_ingot',
 		B: 'create:basin'
-	}).id('ico:melter_2')
+	}).id('ico:melter_2')*/
 
 	e.shapeless('create:sand_paper', ['minecraft:paper', '3x immersive_weathering:sand_layer_block']).id('ico:sand_paper')
 	e.shapeless('create:red_sand_paper', ['minecraft:paper', '3x immersive_weathering:red_sand_layer_block']).id('ico:red_sand_paper')

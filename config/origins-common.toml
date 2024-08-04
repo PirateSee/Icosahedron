@@ -323,6 +323,9 @@
 		enabled = true
 		"icosahedron_origins:food/buffet" = true
 		"icosahedron_origins:food/hungry" = true
+		"icosahedron_origins:food/calorie_burn" = true
+		"icosahedron_origins:food/patch" = true
+		"icosahedron_origins:food/starving" = true
 
 	[origins."icosahedron_origins:blood"]
 		enabled = true
@@ -333,6 +336,8 @@
 		"icosahedron_origins:cave/dark_cover" = true
 		"icosahedron_origins:blood/sun" = true
 		"icosahedron_origins:mecha/sturdy_deny" = true
+		"icosahedron_origins:blood/blood_jump" = true
+		"icosahedron_origins:seaborn/fire_weak" = true
 
 	[origins."icosahedron_origins:cave"]
 		enabled = true
