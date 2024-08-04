@@ -22,7 +22,7 @@
         "actions": [
             {
                 "type": "origins:heal",
-                "amount": 0.5
+                "amount": 1
             },
             {
                 "type": "origins:exhaust",

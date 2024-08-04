@@ -104,6 +104,8 @@
     "tag.fluid.forge.plantoil": "Plant Oils",
     "tag.fluid.forge.fuel": "Fuels",
 
-    "tag.fluid.create.bottomless.allow": "Fluid Hose Bottomless Fluids"
+    "tag.fluid.create.bottomless.allow": "Fluid Hose Bottomless Fluids",
+
+    "tag.item.mna.arcane_furnace_doubling_blacklist": "No Arcane Furnace Doubling"
 
 }

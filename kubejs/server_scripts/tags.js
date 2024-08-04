@@ -195,6 +195,13 @@ ServerEvents.tags('item', e => {
 
     e.add('botania:mystical_flowers', Ingredient.of("#mna:ma_flowers").itemIds)
 
+    //curio
+    e.add('curios:back', 'create:copper_backtank')
+    e.add('curios:back', 'create:netherite_backtank')
+    
+    e.add('curios:charm', 'supplementaries:key')
+    e.add('curios:talisman', 'supplementaries:key')
+
 	//misc
 	e.add('forge:glass', 'kubejs:quartz_glass')
 	e.add('forge:glass', 'kubejs:tempered_glass')
@@ -209,5 +216,4 @@ ServerEvents.tags('item', e => {
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
-
 })

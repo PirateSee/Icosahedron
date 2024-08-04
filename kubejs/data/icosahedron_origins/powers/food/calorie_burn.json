@@ -8,7 +8,11 @@
             "comparison": ">",
             "compare_to": 0
         },
-        "type": "origins:fire_immunity"
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_fire"
+        }
     },
     "hunger": {
         "condition": {
@@ -25,10 +29,10 @@
             ]
         },
         "type": "origins:action_over_time",
-        "interval": 10,
+        "interval": 5,
         "entity_action": {
             "type": "origins:exhaust",
-            "amount": 0.5
+            "amount": 0.7
         }
     }
 }

@@ -6,8 +6,7 @@
         "icosahedron_origins:haul/float",
         "icosahedron_origins:haul/sentry",
         "icosahedron_origins:haul/combo",
-        "icosahedron_origins:haul/dark_caution",
-        "icosahedron_origins:"
+        "icosahedron_origins:haul/dark_caution"
     ],
     "icon": {
         "item": "minecraft:barrel"

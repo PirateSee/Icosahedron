@@ -343,6 +343,7 @@ StartupEvents.registry('item', e => {
 	e.create('incomplete_electrolytic_core', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_electrolytic_core')
 	e.create('incomplete_lithium_ion_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_lithium_ion_cell')
     e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_solid_state_cell')
+    e.create('incomplete_casing', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_casing')
 })
 
 //reflection based
