@@ -334,6 +334,9 @@
 	[management.quick_armor_swapping]
 		"Swap Off Hand" = true
 
+	[management.hotbar_changer]
+		"Animation Time" = 7.0
+
 [tools]
 	Abacus = true
 	"Ambient Discs" = true
@@ -1127,6 +1130,8 @@
 		"Sparse Biome Rarity" = 12
 		#Tags that define which biomes can have which wood types
 		"Biome Tags" = ["quark:has_fallen_acacia=minecraft:acacia_log", "quark:has_fallen_birch=minecraft:birch_log", "quark:has_fallen_cherry=minecraft:cherry_log", "quark:has_fallen_dark_oak=minecraft:dark_oak_log", "quark:has_fallen_jungle=minecraft:jungle_log", "quark:has_fallen_mangrove=minecraft:mangrove_log", "quark:has_fallen_oak=minecraft:oak_log", "quark:has_fallen_spruce=minecraft:spruce_log"]
+		#chance for logs to spawn on water
+		"On Water Chance" = 0.1
 
 		[world.fallen_logs.dimensions]
 			"Is Blacklist" = false
@@ -1844,6 +1849,8 @@
 		"Entities Pull Force" = 0.15000000596046448
 		#Stonecutters pulled by magnets will silk touch the blocks they cut.
 		"Stone Cutter Silk Touch" = true
+		#When true magnets will never push something that pistons cant push. Disable to have further control. This allows iron rods to break obsidian for example
+		"Use Piston Logic" = true
 
 	[oddities.matrix_enchanting]
 		#The maximum enchanting power the matrix enchanter can accept

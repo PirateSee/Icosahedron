@@ -1,0 +1,13 @@
+filename = 'GoodEnding-1.20.1-1.0.1-Forge.jar'
+name = 'Good Ending'
+side = 'both'
+
+[download]
+hash = '856f549f13ed14a70cc8e534c3941232fb3a93216c91c9852fc55da9a7c87a450d07c753722eaab5a07f664a402327831960f6a2f68cf150b3ae49c399bf571a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/O7B5FVvG/versions/pcmiGJze/GoodEnding-1.20.1-1.0.1-Forge.jar'
+
+[update.modrinth]
+mod-id = 'O7B5FVvG'
+version = 'pcmiGJze'

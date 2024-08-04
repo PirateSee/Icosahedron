@@ -3,11 +3,11 @@ name = 'InsaneLib'
 side = 'both'
 
 [download]
-hash = 'beaabe94fe8d580586afe5a07e9f8aa26f29aeef'
-hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+hash = '4bc650b044f8ef15e2a1b2d4c0dca966731c7bc7c0fe8bf7545b1dc46a922dc56171d09d221f6133227d67960c294a0db3595277c600be1237604640c9513384'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/USZyvOJq/versions/EAntekp9/InsaneLib-1.13.5-mc1.20.1.jar'
 
-[update.curseforge]
-file-id = 5392944
-project-id = 465109
+[update.modrinth]
+mod-id = 'USZyvOJq'
+version = 'EAntekp9'

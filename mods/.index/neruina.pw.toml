@@ -1,13 +1,13 @@
-filename = 'Neruina-2.1.0-forge+1.20.1.jar'
+filename = 'Neruina-2.1.1-forge+1.20.1.jar'
 name = 'Neruina'
 side = 'both'
 
 [download]
-hash = 'fd0d0750d9208c8505f1a807685366d0d3ed115c19209eb427fe60f337fc460825cb4fe3b22ca9e3b15a203e01ffb2abd317432cf07db2fcc58492214556cd6a'
+hash = '8597526b68383230c44f8078dfa3755429ab1bcd5d5a349ffd590745bf23622b2694320f3b450ce6efa2bf68a6d5663bcb2549ddb6c6bc3f565cc101b76d3a6c'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/1s5x833P/versions/fO2dWV9v/Neruina-2.1.0-forge%2B1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/1s5x833P/versions/3dEDxcSK/Neruina-2.1.1-forge%2B1.20.1.jar'
 
 [update.modrinth]
 mod-id = '1s5x833P'
-version = 'fO2dWV9v'
+version = '3dEDxcSK'

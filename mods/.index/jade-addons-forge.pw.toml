@@ -1,13 +1,13 @@
-filename = 'JadeAddons-1.20.1-forge-5.2.2.jar'
-name = 'Jade Addons (Forge)'
+filename = 'JadeAddons-1.20.1-Forge-5.3.0.jar'
+name = 'Jade Addons'
 side = 'both'
 
 [download]
-hash = 'e10fd945f24af9e738726e8155c70a084de09800984d7fee2c4c1097158c73f8aee9b8e363fc9968b5a43c421daad721648b4c23188a235c0ffc19e6d067808c'
+hash = '8a12f1e0d99532023f8d72038a935fc7658d4cdd7e75a6200ef2223bef2b3dd4903c3ad9025a5f661d1fc13e0480af2b902f509d8607a2716689b988712cbc4c'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/xuDOzCLy/versions/AdyaTuHw/JadeAddons-1.20.1-forge-5.2.2.jar'
+url = 'https://cdn.modrinth.com/data/xuDOzCLy/versions/vSfJX8UF/JadeAddons-1.20.1-Forge-5.3.0.jar'
 
 [update.modrinth]
 mod-id = 'xuDOzCLy'
-version = 'AdyaTuHw'
+version = 'vSfJX8UF'

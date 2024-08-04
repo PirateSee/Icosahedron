@@ -1,6 +1,6 @@
 {
   "type": "minecraft:ae2mtrt",
-  "biomes": "minecraft:end_highlands",
+  "biomes": "#forge:end/in_the",
   "spawn_overrides": {},
   "step": "top_layer_modification"
 }
