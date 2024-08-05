@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:network/blocks/crank'})
     e.remove({id: 'ae2:network/blocks/storage_drive'})
     e.remove({id: 'ae2:network/blocks/inscribers'})
+    e.remove({id: 'ae2:network/blocks/controller'})
 
     //base resources
     e.custom({

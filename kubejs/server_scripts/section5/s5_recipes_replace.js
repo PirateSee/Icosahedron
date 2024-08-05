@@ -68,8 +68,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanismgenerators:fission_reactor/port'})
     e.remove({id: 'mekanismgenerators:fission_reactor/logic_adapter'})
 
-    /*e.remove({id: 'mekanism:sps_casing'}) //might be expensive enough already...
-    e.remove({id: 'mekanism:sps_port'})*/
+    e.remove({id: 'mekanism:sps_casing'})
+    e.remove({id: 'mekanism:sps_port'})
 
     //components
     e.remove({id:'mekanism:steel_casing'})
@@ -391,7 +391,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:thermal_evaporation_block')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('2x mekanism:thermal_evaporation_block').withChance(16.0)
 	], 'create:copper_casing', [
 		e.recipes.createDeploying(inter, [inter, 'mekanism:ingot_steel']),
@@ -412,7 +412,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:thermal_evaporation_valve')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('2x mekanism:thermal_evaporation_valve').withChance(16.0)
 	], 'mekanism:advanced_control_circuit', [
 		e.recipes.createDeploying(inter, [inter, 'mekanism:thermal_evaporation_block']),
@@ -447,7 +447,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:boiler_casing')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('6x mekanism:boiler_casing').withChance(16.0)
 	], 'mekanism:block_steel', [
 		e.recipes.createDeploying(inter, [inter, 'kubejs:tungsten_ingot']),
@@ -468,7 +468,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:boiler_valve')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('2x mekanism:boiler_valve').withChance(16.0)
 	], 'mekanism:advanced_control_circuit', [
 		e.recipes.createDeploying(inter, [inter, 'mekanism:boiler_casing']),
@@ -512,7 +512,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:turbine_casing')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('6x mekanismgenerators:turbine_casing').withChance(16.0)
 	], 'mekanism:block_steel', [
 		e.recipes.createDeploying(inter, [inter, 'mekanism:ingot_osmium']),
@@ -533,7 +533,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_valve')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('2x mekanismgenerators:turbine_valve').withChance(16.0)
 	], 'mekanism:advanced_control_circuit', [
 		e.recipes.createDeploying(inter, [inter, 'mekanismgenerators:turbine_casing']),
@@ -577,7 +577,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fission_reactor_casing')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('4x mekanismgenerators:fission_reactor_casing').withChance(16.0)
 	], 'mekanism:steel_casing', [
 		e.recipes.createDeploying(inter, [inter, 'mekanism:ingot_lead']),
@@ -598,7 +598,7 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fission_reactor_port')*/
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
+	e.recipes.create.sequenced_assembly([
 		Item.of('2x mekanismgenerators:fission_reactor_port').withChance(16.0)
 	], 'mekanism:ultimate_control_circuit', [
 		e.recipes.createDeploying(inter, [inter, 'mekanismgenerators:fission_reactor_casing']),
@@ -622,20 +622,20 @@ ServerEvents.recipes(e => {
 	})
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
-		Item.of('4x mekanismgenerators:sps_casing').withChance(16.0)
-	], 'mekanism:plutonium_pellet', [
-		e.recipes.createDeploying(inter, [inter, 'mekanism:polonium_pellet']),
+	e.recipes.create.sequenced_assembly([
+		Item.of('4x mekanism:sps_casing').withChance(16.0)
+	], 'mekanism:pellet_plutonium', [
+		e.recipes.createDeploying(inter, [inter, 'mekanism:pellet_polonium']),
         e.recipes.createDeploying(inter, [inter, 'mekanism:hdpe_sheet']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(4).id("ico:sps_casing")
 
     inter = 'kubejs:incomplete_casing'
-	e.recipes.create.mekanism([
-		Item.of('2x mekanismgenerators:sps_port').withChance(16.0)
+	e.recipes.create.sequenced_assembly([
+		Item.of('2x mekanism:sps_port').withChance(16.0)
 	], 'mekanism:ultimate_control_circuit', [
-		e.recipes.createDeploying(inter, [inter, 'mekanismgenerators:sps_casing']),
-        e.recipes.createDeploying(inter, [inter, 'mekanismgenerators:sps_casing']),
+		e.recipes.createDeploying(inter, [inter, 'mekanism:sps_casing']),
+        e.recipes.createDeploying(inter, [inter, 'mekanism:sps_casing']),
         e.recipes.createCutting(inter,inter),
         e.recipes.createDeploying(inter, [inter, 'create:portable_fluid_interface']),
 		e.recipes.createPressing(inter,inter),
