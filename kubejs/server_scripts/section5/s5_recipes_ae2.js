@@ -82,6 +82,8 @@ ServerEvents.recipes(e => {
         T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:inscriber')
 
+    
+
     //alternate
     e.recipes.create.mixing('2x ae2:sky_dust', ['ae2:sky_dust', '6x betterend:violecite']).id('ico:sky_stone_violecite')
     e.recipes.create.mixing('2x ae2:sky_dust', ['ae2:sky_dust', '6x betterend:umbralith']).id('ico:sky_stone_umbralith')

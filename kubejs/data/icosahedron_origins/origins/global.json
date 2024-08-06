@@ -1,0 +1,10 @@
+{
+    "name": "Global Effects",
+    "description": "Applies some base effects, regardless of the origin(s) you pick.",
+    "powers": [
+        "icosahedron_origins:water_breathing_force",
+        "icosahedron_origins:water_breathing_no_suffocate",
+        "icosahedron_origins:conduit_in_end"
+    ],
+    "impact": 0
+}

@@ -217,3 +217,12 @@ ServerEvents.tags('item', e => {
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
 })
+
+ServerEvents.tags('block', e => {
+    e.add('forge:plant', 'minecraft:moss_block')
+    e.add('forge:plant', 'minecraft:moss_carpet')
+    e.add('forge:plant', 'minecraft:glow_lichen')
+    e.add('forge:plant', 'minecraft:glow_lichen')
+    e.add('forge:plant', 'twigs:petrified_lichen')
+    e.add('forge:plant', 'immersive_weathering:ivy')
+})

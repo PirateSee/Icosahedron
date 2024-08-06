@@ -109,28 +109,8 @@
                                             "tag": "minecraft:leaves"
                                         },
                                         {
-                                            "type": "origins:block",
-                                            "block": "minecraft:moss_carpet"
-                                        },
-                                        {
-                                            "type": "origins:block",
-                                            "block": "minecraft:moss_block"
-                                        },
-                                        {
-                                            "type": "origins:block",
-                                            "block": "minecraft:vine"
-                                        },
-                                        {
-                                            "type": "origins:block",
-                                            "block": "minecraft:glow_lichen"
-                                        },
-                                        {
-                                            "type": "origins:block",
-                                            "block": "twigs:petrified_lichen"
-                                        },
-                                        {
-                                            "type": "origins:block",
-                                            "block": "immersive_weathering:ivy"
+                                            "type": "origins:in_tag",
+                                            "tag": "forge:plant"
                                         }
                                     ]
                                 }

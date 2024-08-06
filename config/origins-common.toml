@@ -357,3 +357,10 @@
 		"icosahedron_origins:haul/combo" = true
 		"icosahedron_origins:haul/dark_caution" = true
 
+	[origins."icosahedron_origins:global"]
+		enabled = true
+		"icosahedron_origins:water_breathing_force" = true
+		"icosahedron_origins:water_breathing_no_suffocate" = true
+		"origins:conduit_power_on_land" = true
+		"icosahedron_origins:conduit_in_end" = true
+

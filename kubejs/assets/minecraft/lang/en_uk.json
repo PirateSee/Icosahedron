@@ -1,0 +1,6 @@
+{
+	"effect.minecraft.water_breathing": "Free Breathing",
+    "item.minecraft.potion.effect.water_breathing": "Potion of Free Breathing",
+    "item.minecraft.splash_potion.effect.water_breathing": "Splash Potion of Free Breathing",
+    "item.minecraft.lingering_potion.effect.water_breathing": "Lingering Potion of Free Breathing"
+}

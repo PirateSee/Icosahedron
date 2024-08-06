@@ -1,0 +1,22 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:water_breathing"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:conduit_power"
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    }
+}

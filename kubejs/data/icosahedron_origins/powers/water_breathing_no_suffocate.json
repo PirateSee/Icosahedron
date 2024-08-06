@@ -1,0 +1,21 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:water_breathing"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:conduit_power"
+            }
+        ]
+    },
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "inWall"
+    }
+}

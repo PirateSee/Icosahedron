@@ -155,7 +155,7 @@
         "tick_rate": 10,
         "update_health": false
     },
-    "name": "§a+ §r§nCaution",
+    "name": "§c- §r§nCaution",
     "description": "Move slower in darkness. Holding a torch reduces the effect.",
     "type": "origins:multiple"
 }

@@ -1,0 +1,9 @@
+{
+    "origins": [
+        "icosahedron_origins:global"
+    ],
+    "enabled": true,
+    "name": "Global",
+    "auto_choose": true,
+    "hidden": true
+}

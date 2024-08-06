@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_end"
+    },
+    "type": "origins:action_over_time",
+    "interval": 300,
+    "rising_action": {
+        "type": "origins:grant_power",
+        "power": "origins:conduit_power_on_land",
+        "source": "icosahedron_origins:conduit_in_end"
+    },
+    "falling_action": {
+        "type": "origins:revoke_power",
+        "power": "origins:conduit_power_on_land",
+        "source": "icosahedron_origins:conduit_in_end"
+    }
+}
