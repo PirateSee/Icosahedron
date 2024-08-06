@@ -149,7 +149,7 @@ ServerEvents.recipes(e => {
 		A: 'minecraft:amethyst_shard',
 		C: 'create:brass_casing',
 		E: 'create:electron_tube',
-		F: 'minecraft:crafting_table',
+		F: 'quark:crafter',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:mechanical_crafter')
 

@@ -1,0 +1,49 @@
+{
+  "dependencies": [
+    "heavy_metal_1"
+  ],
+  "tasks": {
+    "submit_wrought_iron": {
+      "type": "heracles:item",
+      "item": "kubejs:wrought_iron_block",
+      "amount": 128,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section C: Challanges": {
+        "position": [
+          0,
+          30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:wrought_iron_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Heavy Metal II"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

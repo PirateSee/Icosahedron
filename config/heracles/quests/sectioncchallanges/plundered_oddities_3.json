@@ -1,0 +1,47 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "submit_blaze_rod": {
+      "type": "heracles:item",
+      "item": "minecraft:blaze_rod",
+      "amount": 64,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section C: Challanges": {
+        "position": [
+          150,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:blaze_rod",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Plundered Oddities III"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

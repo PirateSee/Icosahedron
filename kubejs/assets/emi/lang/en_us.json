@@ -106,6 +106,12 @@
 
     "tag.fluid.create.bottomless.allow": "Fluid Hose Bottomless Fluids",
 
-    "tag.item.mna.arcane_furnace_doubling_blacklist": "No Arcane Furnace Doubling"
+    "tag.item.mna.arcane_furnace_doubling_blacklist": "No Arcane Furnace Doubling",
 
+    "tag.item.ae2.illuminated_panel": "Illuminated Panels",
+    "tag.item.ae2.metal_ingots": "Metal Ingots",
+    "tag.item.ae2.all_quartz": "Quartz",
+    "tag.item.ae2.can_remove_color": "Color Removers",
+
+    "tag.item.ae2.p2p_attunements.fe_p2p_tunnel": "Item P2P Attunable"
 }

@@ -1,0 +1,49 @@
+{
+  "dependencies": [
+    "heavy_metal_2"
+  ],
+  "tasks": {
+    "submit_carbon_steel": {
+      "type": "heracles:item",
+      "item": "kubejs:carbon_steel_block",
+      "amount": 128,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section C: Challanges": {
+        "position": [
+          0,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "kubejs:carbon_steel_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Heavy Metal III"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

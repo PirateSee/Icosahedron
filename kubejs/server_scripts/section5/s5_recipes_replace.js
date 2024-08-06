@@ -841,24 +841,6 @@ ServerEvents.recipes(e => {
         }
     }).id("ico:alloy_reinforced")
 
-    e.custom({
-		"type": "mekanism:metallurgic_infusing",
-		"chemicalInput": {
-			"amount": 40,
-			"infuse_type": "mekanism:refined_obsidian"
-		},
-		"itemInput": {
-            "count": 3,
-			"ingredient": {
-				"item": "kubejs:tungsten_ingot"
-			}
-		},
-		"output": {
-			"count": 1,
-			"item": "kubejs:refined_tungsten"
-		}
-	}).id('ico:refined_tungsten')
-
     e.recipes.create.compacting(['mekanism:alloy_atomic', Fluid.of('kubejs:slag_runoff', 100)], ["mekanism:alloy_reinforced", 'kubejs:refined_tungsten', Fluid.of('kubejs:ethylene', 500)]).superheated().id("alloy_atomic")
 
     e.custom({
