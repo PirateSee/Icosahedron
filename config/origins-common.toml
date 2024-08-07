@@ -318,6 +318,7 @@
 		"icosahedron_origins:spirit/obliterate" = true
 		"icosahedron_origins:cave/featherweight" = true
 		"icosahedron_origins:spirit/invis_short" = true
+		"icosahedron_origins:spirit/no_step" = true
 
 	[origins."icosahedron_origins:food"]
 		enabled = true
@@ -356,6 +357,7 @@
 		"icosahedron_origins:haul/sentry" = true
 		"icosahedron_origins:haul/combo" = true
 		"icosahedron_origins:haul/dark_caution" = true
+		"icosahedron_origins:haul/manipulator" = true
 
 	[origins."icosahedron_origins:global"]
 		enabled = true
@@ -363,4 +365,37 @@
 		"icosahedron_origins:water_breathing_no_suffocate" = true
 		"origins:conduit_power_on_land" = true
 		"icosahedron_origins:conduit_in_end" = true
+
+	[origins."icosahedron_origins:phantom"]
+		enabled = true
+		"icosahedron_origins:phantom/phantomize" = true
+		"icosahedron_origins:phantom/phantomize_dsc" = true
+		"icosahedron_origins:phantom/phantomize_dsc_launch" = true
+		"icosahedron_origins:phantom/phantomize_dsc_bad" = true
+		"icosahedron_origins:phantom/air_move" = true
+		"icosahedron_origins:doll/undead" = true
+		"icosahedron_origins:fox/cracked_plate" = true
+		"icosahedron_origins:fox/cracked_toughness" = true
+		"icosahedron_origins:spirit/solar_weakness" = true
+
+	[origins."icosahedron_origins:feline"]
+		enabled = true
+		"icosahedron_origins:feline/velvet_paws" = true
+		"origins:scare_creepers" = true
+		"icosahedron_origins:cave/nightvision" = true
+		"icosahedron_origins:feline/nearsighted" = true
+		"icosahedron_origins:fox/unaquatic" = true
+		"icosahedron_origins:fox/unaquatic_slow" = true
+		"icosahedron_origins:spirit/no_step" = true
+		"icosahedron_origins:doll/fall_immune" = true
+
+	[origins."icosahedron_origins:arachnid"]
+		enabled = true
+		"origins:climbing" = true
+		"icosahedron_origins:arachnid/spin_master" = true
+		"icosahedron_origins:arachnid/spin" = true
+		"icosahedron_origins:arachnid/web_spit" = true
+		"icosahedron_origins:arachnid/carnivore" = true
+		"origins:master_of_webs" = true
+		"origins:arthropod" = true
 

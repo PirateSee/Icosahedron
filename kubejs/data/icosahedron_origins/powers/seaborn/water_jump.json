@@ -26,7 +26,7 @@
                 "type": "origins:apply_effect",
                 "effect": {
                     "effect": "minecraft:levitation",
-                    "duration": 5,
+                    "duration": 6,
                     "amplifier": 20,
                     "is_ambient": true,
                     "show_particles": false,

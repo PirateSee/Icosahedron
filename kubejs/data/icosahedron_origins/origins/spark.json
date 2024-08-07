@@ -31,5 +31,6 @@
     "icon": {
         "item": "minecraft:blaze_powder"
     },
+    "order": 212,
     "impact": 2
 }

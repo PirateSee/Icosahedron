@@ -43,14 +43,14 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 2,
+                                    "y": 2.2,
                                     "space": "world",
                                     "client": true,
                                     "server": true
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "z": 0.1,
+                                    "z": 0.3,
                                     "space": "local",
                                     "client": true,
                                     "server": true
@@ -83,7 +83,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "z": 0.1,
+                                    "z": 0.3,
                                     "space": "local",
                                     "client": true,
                                     "server": true
@@ -116,7 +116,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "z": 0.1,
+                                    "z": 0.2,
                                     "space": "local",
                                     "client": true,
                                     "server": true
@@ -149,7 +149,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "z": 0.1,
+                                    "z": 0.2,
                                     "space": "local",
                                     "client": true,
                                     "server": true
@@ -182,7 +182,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "z": 0.1,
+                                    "z": 0.15,
                                     "space": "local",
                                     "client": true,
                                     "server": true
@@ -215,7 +215,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "z": 0.1,
+                                    "z": 0.15,
                                     "space": "local",
                                     "client": true,
                                     "server": true
@@ -241,7 +241,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.75,
+                                    "y": 0.8,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -272,7 +272,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.5,
+                                    "y": 0.6,
                                     "space": "world",
                                     "client": true,
                                     "server": true

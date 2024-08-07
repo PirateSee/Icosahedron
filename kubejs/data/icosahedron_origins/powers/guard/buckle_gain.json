@@ -12,7 +12,7 @@
         "resource": "icosahedron_origins:guard/buckle_resource",
         "modifier": {
             "operation": "set_total",
-            "value": 5,
+            "value": 10,
             "name": "Buckle Hit"
         }
     },

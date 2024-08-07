@@ -1,0 +1,24 @@
+{
+    "name": "§a+ §r§nWeb Spit",
+    "description": "Projectiles stun entities",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 20,
+                "amplifier": 5,
+                "show_particles": true,
+                "show_icon": true
+            }
+        }
+    },
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": ">=",
+        "compare_to": 4
+    },
+    "cooldown": 30
+}

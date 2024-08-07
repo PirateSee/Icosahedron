@@ -21,5 +21,6 @@
     "icon": {
         "item": "minecraft:armor_stand"
     },
+    "order": 113,
     "impact": 1
 }

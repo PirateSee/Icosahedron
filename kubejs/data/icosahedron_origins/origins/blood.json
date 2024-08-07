@@ -15,5 +15,6 @@
     "icon": {
         "item": "minecraft:redstone"
     },
+    "order": 310,
     "impact": 3
 }

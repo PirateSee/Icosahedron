@@ -11,5 +11,6 @@
     "icon": {
         "item": "minecraft:cake"
     },
+    "order": 112,
     "impact": 1
 }

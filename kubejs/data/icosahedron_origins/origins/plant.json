@@ -13,5 +13,6 @@
     "icon": {
         "item": "minecraft:vine"
     },
+    "order": 211,
     "impact": 2
 }

@@ -24,5 +24,6 @@
         "item": "minecraft:shield",
         "tag": "{BlockEntityTag:{Base:11,id:\"minecraft:banner\"}}"
     },
+    "order": 214,
     "impact": 2
 }

@@ -4,7 +4,7 @@
     "badges": [
         {
             "type": "origins:tooltip",
-            "text": "Lasts 30 seconds, 5 minute cooldown.",
+            "text": "Lasts 30 seconds, 3 minute cooldown.",
             "sprite": "origins:textures/gui/badge/info.png"
         }
     ],
@@ -14,11 +14,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "/effect give @a[distance=0..10] minecraft:strength 30"
+                "command": "/effect give @a[distance=0..12] minecraft:strength 30"
             },
             {
                 "type": "origins:execute_command",
-                "command": "/effect give @a[distance=0..10] minecraft:speed 30"
+                "command": "/effect give @a[distance=0..12] minecraft:speed 30"
             },
             {
                 "type": "origins:spawn_particles",
@@ -46,7 +46,7 @@
             }
         ]
     },
-    "cooldown": 6000,
+    "cooldown": 3600,
     "hud_render": {
         "should_render": true,
         "sprite_location": "origins:textures/gui/resource_bar.png",

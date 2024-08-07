@@ -1,5 +1,5 @@
 {
-    "name": "§c- §r§nUnaquatic",
+    "name": "§c- §r§nCountercurrent",
     "description": "Move slowly and exhaust quicker in water",
     "condition": {
         "type": "origins:submerged_in",
@@ -8,7 +8,7 @@
     "type": "origins:modify_exhaustion",
     "modifier": {
         "operation": "multiply_base_multiplicative",
-        "value": 0.2,
+        "value": 0.6,
         "name": "Unaquatic Penalty"
     }
 }

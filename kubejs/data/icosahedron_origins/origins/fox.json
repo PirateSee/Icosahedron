@@ -22,5 +22,6 @@
     "icon": {
         "item": "minecraft:rabbit_foot"
     },
+    "order": 110,
     "impact": 1
 }

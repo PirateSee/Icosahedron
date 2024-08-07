@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nSentry",
-    "description": "Increased damage and resistance while seated in vehicles",
+    "description": "Increased damage and resistance while seated in vehicles.",
     "type": "origins:multiple",
     "attack": {
         "condition": {
@@ -15,8 +15,8 @@
         },
         "type": "origins:modify_damage_dealt",
         "modifier": {
-            "operation": "multiply_total",
-            "value": 0.15,
+            "operation": "addition",
+            "value": 2,
             "name": "Sentry Bonus"
         }
     },

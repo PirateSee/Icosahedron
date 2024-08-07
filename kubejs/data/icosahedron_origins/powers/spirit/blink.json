@@ -51,11 +51,11 @@
             },
             {
                 "type": "origins:exhaust",
-                "amount": 0.8
+                "amount": 1
             }
         ]
     },
-    "cooldown": 60,
+    "cooldown": 100,
     "hud_render": {
         "should_render": true
     },

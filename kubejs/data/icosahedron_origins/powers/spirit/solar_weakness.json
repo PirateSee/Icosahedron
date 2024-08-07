@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nSolar Weakness",
-    "description": "Being out in the sun makes you weak. Prolonged time may set you on fire.",
+    "description": "Being out in the sun makes you weak. You may catch fire the longer you stay out.",
     "type": "origins:multiple",
     "weak": {
         "condition": {
@@ -27,11 +27,28 @@
     },
     "tick": {
         "type": "origins:action_over_time",
-        "interval": 50,
+        "interval": 20,
         "entity_action": {
             "type": "origins:if_else",
             "condition": {
-                "type": "origins:exposed_to_sun"
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:exposed_to_sun"
+                    },
+                    {
+                        "inverted": true,
+                        "type": "origins:fluid_height",
+                        "fluid": "minecraft:water",
+                        "comparison": ">",
+                        "compare_to": 0
+                    },
+                    {
+                        "inverted": true,
+                        "type": "origins:power_active",
+                        "power": "icosahedron_origins:phantom/phantomize_toggle"
+                    }
+                ]
             },
             "if_action": {
                 "type": "origins:and",
@@ -49,12 +66,12 @@
                                 "condition": {
                                     "type": "origins:resource",
                                     "resource": "icosahedron_origins:spirit/solar_weakness_resource",
-                                    "comparison": "==",
-                                    "compare_to": 20
+                                    "comparison": ">=",
+                                    "compare_to": 15
                                 },
                                 "action": {
                                     "type": "origins:chance",
-                                    "chance": 0.2,
+                                    "chance": 0.4,
                                     "action": {
                                         "type": "origins:set_on_fire",
                                         "duration": 5
@@ -66,11 +83,11 @@
                                     "type": "origins:resource",
                                     "resource": "icosahedron_origins:spirit/solar_weakness_resource",
                                     "comparison": ">=",
-                                    "compare_to": 14
+                                    "compare_to": 7
                                 },
                                 "action": {
                                     "type": "origins:chance",
-                                    "chance": 0.15,
+                                    "chance": 0.25,
                                     "action": {
                                         "type": "origins:set_on_fire",
                                         "duration": 4
@@ -82,11 +99,11 @@
                                     "type": "origins:resource",
                                     "resource": "icosahedron_origins:spirit/solar_weakness_resource",
                                     "comparison": ">=",
-                                    "compare_to": 8
+                                    "compare_to": 1
                                 },
                                 "action": {
                                     "type": "origins:chance",
-                                    "chance": 0.1,
+                                    "chance": 0.15,
                                     "action": {
                                         "type": "origins:set_on_fire",
                                         "duration": 3

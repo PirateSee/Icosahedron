@@ -1,0 +1,222 @@
+{
+    "name": "§a+ §r§nPhantomize",
+    "description": "Toggle to a phantom form. Requires enough food to sprint.",
+    "type": "origins:multiple",
+    "toggle": {
+        "condition": {
+            "type": "origins:food_level",
+            "comparison": ">",
+            "compare_to": 6
+        },
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "retain_state": false
+    },
+    "phasing": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "icosahedron_origins:phantom/phantomize_toggle"
+        },
+        "type": "origins:phasing",
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "origins:unphasable"
+                },
+                {
+                    "type": "origins:hardness",
+                    "comparison": ">",
+                    "compare_to": 25
+                }
+            ]
+        },
+        "blacklist": true,
+        "render_type": "blindness",
+        "view_distance": 10
+    },
+    "over_time": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "icosahedron_origins:phantom/phantomize_toggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 10,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:weakness",
+                            "duration": 12,
+                            "amplifier": 5,
+                            "show_particles": true,
+                            "show_icon": true
+                        },
+                        {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 12,
+                            "amplifier": 0,
+                            "show_particles": true,
+                            "show_icon": true
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:exhaust",
+                    "amount": 0.41
+                }
+            ]
+        }
+    },
+    "invis": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "icosahedron_origins:phantom/phantomize_toggle"
+        },
+        "type": "origins:invisibility",
+        "render_armor": true,
+        "render_outline": true
+    },
+    "active_launch": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:movement_blocking"
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "icosahedron_origins:phantom/phantomize_toggle"
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:add_velocity",
+                    "y": 1.5,
+                    "space": "world",
+                    "client": true,
+                    "server": true
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "z": 0.25,
+                    "space": "local",
+                    "client": true,
+                    "server": true
+                }
+            ]
+        },
+        "cooldown": 100,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "good": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "icosahedron_origins:phantom/phantomize_toggle"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 12
+                }
+            ]
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/nausea.png",
+        "strength": 0.7,
+        "red": 0.2,
+        "green": 0.3,
+        "blue": 0.4,
+        "draw_mode": "nausea",
+        "draw_phase": "above_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true
+    },
+    "mid": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "icosahedron_origins:phantom/phantomize_toggle"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 12
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 8
+                }
+            ]
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/nausea.png",
+        "strength": 0.7,
+        "red": 0.4,
+        "green": 0.3,
+        "blue": 0.4,
+        "draw_mode": "nausea",
+        "draw_phase": "above_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true
+    },
+    "alert": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "icosahedron_origins:phantom/phantomize_toggle"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<=",
+                    "compare_to": 8
+                }
+            ]
+        },
+        "type": "origins:overlay",
+        "texture": "minecraft:textures/misc/nausea.png",
+        "strength": 0.7,
+        "red": 0.4,
+        "green": 0.2,
+        "blue": 0.2,
+        "draw_mode": "nausea",
+        "draw_phase": "above_hud",
+        "hide_with_hud": true,
+        "visible_in_third_person": true
+    },
+    "immunity": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "icosahedron_origins:phantom/phantomize_toggle"
+        },
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        }
+    }
+}

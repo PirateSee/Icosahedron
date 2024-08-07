@@ -20,5 +20,6 @@
     "icon": {
         "item": "minecraft:iron_block"
     },
+    "order": 311,
     "impact": 3
 }

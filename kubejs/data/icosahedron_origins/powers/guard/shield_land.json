@@ -40,7 +40,7 @@
                         },
                         {
                             "type": "origins:add_velocity",
-                            "y": 0.5,
+                            "y": 0.75,
                             "z": 2.5,
                             "client": true,
                             "server": true

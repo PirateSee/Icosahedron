@@ -1,5 +1,7 @@
 {
+    "order": 0,
     "origins": [
+        "origins:human",
         "icosahedron_origins:seaborn",
         "icosahedron_origins:standard_bearer",
         "icosahedron_origins:fox",
@@ -11,7 +13,15 @@
         "icosahedron_origins:cave",
         "icosahedron_origins:blood",
         "icosahedron_origins:food",
-        "icosahedron_origins:haul"
+        "icosahedron_origins:haul",
+        "icosahedron_origins:feline",
+        "icosahedron_origins:arachnid",
+        "icosahedron_origins:phantom"
     ],
-    "enabled": true
+    "enabled": true,
+    "replace": true,
+    "allow_random": true,
+    "exclude_random": [
+        "origins:human"
+    ]
 }
