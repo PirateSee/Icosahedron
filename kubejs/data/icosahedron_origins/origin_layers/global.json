@@ -4,6 +4,7 @@
     ],
     "enabled": true,
     "name": "Global",
+    "default_origin": "icosahedron_origins:global",
     "auto_choose": true,
     "hidden": true
 }

@@ -17,7 +17,7 @@
         ]
     },
     "type": "origins:action_over_time",
-    "interval": 800,
+    "interval": 700,
     "entity_action": {
         "type": "origins:and",
         "actions": [

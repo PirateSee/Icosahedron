@@ -2,5 +2,5 @@
     "name": "§c- §r§nConductive",
     "description": "Likely to be struck by lightning",
     "type": "apugli:redirect_lightning",
-    "chance": 0.2
+    "chance": 0.25
 }

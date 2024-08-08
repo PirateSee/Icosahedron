@@ -344,6 +344,7 @@ StartupEvents.registry('item', e => {
 	e.create('incomplete_lithium_ion_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_lithium_ion_cell')
     e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_solid_state_cell')
     e.create('incomplete_casing', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_casing')
+    e.create('incomplete_screen', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_screen')
 })
 
 //reflection based
@@ -434,7 +435,7 @@ StartupEvents.registry("block", (event) => {
 	ore_decor('bauxite', 4, 3, 'diamond') //advanced nether aluminum
 	ore_decor('pentlandite', 4, 3, 'diamond') //advanced nickel
 	ore_decor('wolframite', 5, 3.5, 'netherite') //complex tungsten
-    ore_decor('uraninite', 7, 5, 'netherite') //complex lead
+    ore_decor('uraninite', 7, 5, 'netherite') //complex lead/uranium
 
     event.create("sand_aquatrine_ore")
 		.mapColor("sand").soundType(SoundType.SAND)
@@ -495,6 +496,18 @@ StartupEvents.registry("block", (event) => {
 
 	//compacting
 
+    event.create("pig_iron_block")
+		.mapColor("metal").soundType(SoundType.METAL)
+		.hardness(4).resistance(6).requiresTool(true)
+		.tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool")
+		.textureAll('icosahedron:block/pig_iron_block')
+
+        event.create("wrought_iron_block")
+		.mapColor("metal").soundType(SoundType.METAL)
+		.hardness(5).resistance(6).requiresTool(true)
+		.tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool")
+		.textureAll('icosahedron:block/wrought_iron_block')
+
 	event.create("coal_coke_block")
 		.mapColor("stone").stoneSoundType()
 		.hardness(5).resistance(6).requiresTool(true)
@@ -504,13 +517,13 @@ StartupEvents.registry("block", (event) => {
 
 	event.create("carbon_steel_block")
 		.mapColor("metal").soundType(SoundType.METAL)
-		.hardness(5).resistance(3).requiresTool(true)
+		.hardness(6).resistance(6).requiresTool(true)
 		.tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool")
 		.textureAll('icosahedron:block/carbon_steel_block')
 
 	event.create("ornate_gold_block")
 		.mapColor("metal").soundType(SoundType.METAL)
-		.hardness(3).resistance(2).requiresTool(true)
+		.hardness(3).resistance(6).requiresTool(true)
 		.tagBlock("mineable/pickaxe").tagBlock("needs_stone_tool")
 		.textureAll('icosahedron:block/ornate_gold_block')
 

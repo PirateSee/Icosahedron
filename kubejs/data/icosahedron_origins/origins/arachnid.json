@@ -1,0 +1,17 @@
+{
+    "name": "Arachnid",
+    "description": "§0[Disabler]§7\nSpinning webs and climbing walls allows an Arachnid to trap and hunt their prey.",
+    "powers": [
+        "origins:climbing",
+        "icosahedron_origins:arachnid/spin_master",
+        "icosahedron_origins:arachnid/spin",
+        "icosahedron_origins:arachnid/web_spit",
+        "icosahedron_origins:arachnid/carnivore",
+        "origins:arthropod"
+    ],
+    "icon": {
+        "item": "minecraft:cobweb"
+    },
+    "order": 200,
+    "impact": 2
+}

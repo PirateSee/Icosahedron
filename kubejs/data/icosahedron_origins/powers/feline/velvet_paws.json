@@ -1,0 +1,13 @@
+{
+    "name": "§a+ §r§nVelvet Paws",
+    "description": "Your paws are excellent at mobility, preventing fall damage and increasing sprint-jump height, all without making a sound.",
+    "condition": {
+        "type": "origins:sprinting"
+    },
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5,
+        "name": "Velvet Paws Bonus"
+    }
+}

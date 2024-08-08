@@ -1,0 +1,47 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "submit_ender_pearl": {
+      "type": "heracles:item",
+      "item": "minecraft:ender_pearl",
+      "amount": 64,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section C: Challanges": {
+        "position": [
+          90,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Plundered Oddities I"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

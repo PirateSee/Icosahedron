@@ -7,7 +7,7 @@ ServerEvents.recipes(e => {
 		W: 'tetra:dragon_sinew'
 	}).id('ico:dragon_sinew_mesh')
 
-	e.recipes.create.crushing('createsifter:crushed_end_stone', 'minecraft:end_stone')
+	e.recipes.create.crushing('betterend:endstone_dust', 'minecraft:end_stone')
 
 	e.custom({
 		"type": "createsifter:sifting",
@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 				"item": "kubejs:dragon_sinew_mesh"
 			},
 			{
-				"item": 'createsifter:crushed_end_stone'
+				"item": 'betterend:endstone_dust'
 			}
 			],
 			"results": [
@@ -142,7 +142,13 @@ ServerEvents.recipes(e => {
 
 	e.recipes.create.deploying('kubejs:uninfused_basic_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:ingot_osmium']).id("ico:uninfused_basic_circuit")
 
-	e.custom({
+    e.recipes.create.deploying('kubejs:uninfused_advanced_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:alloy_infused']).id("ico:uninfused_advanced_circuit")
+
+    e.recipes.create.deploying('kubejs:uninfused_elite_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:alloy_reinforced']).id("ico:uninfused_elite_circuit")
+
+    e.recipes.create.deploying('kubejs:uninfused_ultimate_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:alloy_atomic']).id("ico:uninfused_ultimate_circuit")
+
+	/*e.custom({
 		"type": "pneumaticcraft:pressure_chamber",
 		"inputs": [
 			{
@@ -200,7 +206,7 @@ ServerEvents.recipes(e => {
 		  	"item": "kubejs:uninfused_ultimate_circuit"
 			}
 		]
-	}).id("ico:uninfused_ultimate_circuit")
+	}).id("ico:uninfused_ultimate_circuit")*/
 
 	let inter = 'kubejs:incomplete_machine_plating'
 	e.recipes.createSequencedAssembly([
@@ -244,7 +250,7 @@ ServerEvents.recipes(e => {
 			"count": 1,
 			"item": "kubejs:diamond_plated_alloy"
 		}
-	}).id('diamond_plated_alloy')
+	}).id('ico:diamond_plated_alloy')
 
     inter = 'kubejs:incomplete_lithium_ion_cell'
 	e.recipes.create.sequenced_assembly([
@@ -255,5 +261,23 @@ ServerEvents.recipes(e => {
 		e.recipes.createDeploying(inter, [inter, 'kubejs:cupronickel_sheet']),
         e.recipes.createDeploying(inter, [inter, 'create:golden_sheet']),
         e.recipes.createPressing(inter, inter),
-	]).transitionalItem(inter).loops(2).id("lithium_ion_cell")
+	]).transitionalItem(inter).loops(2).id("ico:lithium_ion_cell")
+
+    e.custom({
+		"type": "mekanism:metallurgic_infusing",
+		"chemicalInput": {
+			"amount": 40,
+			"infuse_type": "mekanism:refined_obsidian"
+		},
+		"itemInput": {
+			"ingredient": {
+				"item": "kubejs:tungsten_ingot",
+				"count": 2
+			}
+		},
+		"output": {
+			"count": 1,
+			"item": "kubejs:refined_tungsten"
+		}
+	}).id('ico:refined_tungsten')
 })

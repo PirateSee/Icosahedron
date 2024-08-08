@@ -46,7 +46,7 @@
             "if_action": {
                 "type": "origins:change_resource",
                 "resource": "icosahedron_origins:mecha/shield_resource",
-                "change": -10,
+                "change": -5,
                 "operation": "add"
             },
             "else_action": {

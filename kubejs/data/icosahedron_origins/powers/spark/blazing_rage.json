@@ -12,11 +12,18 @@
         "type": "origins:on_fire"
     },
     "type": "origins:modify_damage_dealt",
-    "modifier": {
-        "operation": "multiply_base",
-        "value": 0.25,
-        "name": "Blazing Rage"
-    },
+    "modifiers": [
+        {
+            "operation": "addition",
+            "name": "Blazing Rage",
+            "value": 1
+        },
+        {
+            "operation": "multiply_base",
+            "value": 0.25,
+            "name": "Blazing Rage"
+        }
+    ],
     "target_action": {
         "type": "origins:and",
         "actions": [

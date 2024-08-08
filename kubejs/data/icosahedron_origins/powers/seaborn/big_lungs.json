@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nExpanded Lungs",
-    "description": "Hold breath for longer",
+    "description": "Hold breath underwater for longer",
     "hidden": true,
     "condition": {
         "type": "origins:submerged_in",

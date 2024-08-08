@@ -1,0 +1,47 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "submit_amber_gem": {
+      "type": "heracles:item",
+      "item": "betterend:amber_gem",
+      "amount": 64,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section C: Challanges": {
+        "position": [
+          180,
+          -30
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "betterend:amber_gem",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Plundered Oddities IV"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

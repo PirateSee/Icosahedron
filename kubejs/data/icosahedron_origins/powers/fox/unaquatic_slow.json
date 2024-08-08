@@ -1,11 +1,39 @@
 {
     "hidden": true,
-    "type": "origins:attribute",
-    "modifier": {
-        "attribute": "additionalentityattributes:water_speed",
-        "operation": "multiply_base",
-        "value": -0.15,
-        "name": "Unaquatic Penalty"
+    "type": "origins:multiple",
+    "swim": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "additionalentityattributes:water_speed",
+            "operation": "multiply_base",
+            "value": -0.15,
+            "name": "Unaquatic Penalty"
+        },
+        "update_health": false
     },
-    "update_health": false
+    "move": {
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0.1
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ]
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": -0.15,
+            "name": "Unaquatic Penalty"
+        },
+        "tick_rate": 20,
+        "update_health": true
+    }
 }

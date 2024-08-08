@@ -18,7 +18,7 @@
             "comparison": "<",
             "compare_to": 3
         },
-        "type": "origins:self_action_on_hit",
+        "type": "origins:self_action_when_hit",
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "icosahedron_origins:haul/combo_resource",
@@ -35,7 +35,7 @@
             "compare_to": 0
         },
         "type": "origins:action_over_time",
-        "interval": 50,
+        "interval": 80,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "icosahedron_origins:haul/combo_resource",
@@ -59,7 +59,7 @@
         "type": "origins:modify_damage_taken",
         "modifier": {
             "operation": "multiply_total",
-            "value": 0.1,
+            "value": 0.2,
             "name": "Combo 1"
         }
     },
@@ -73,7 +73,7 @@
         "type": "origins:modify_damage_taken",
         "modifier": {
             "operation": "multiply_total",
-            "value": 0.2,
+            "value": 0.4,
             "name": "Combo 2"
         }
     },
@@ -87,8 +87,22 @@
         "type": "origins:modify_damage_taken",
         "modifier": {
             "operation": "multiply_total",
-            "value": 0.3,
+            "value": 0.6,
             "name": "Combo 3"
+        }
+    },
+    "reset": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:set_resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "value": 0
+        },
+        "execute_chosen_when_orb": true,
+        "entity_action_respawned": {
+            "type": "origins:set_resource",
+            "resource": "icosahedron_origins:haul/combo_resource",
+            "value": 0
         }
     }
 }

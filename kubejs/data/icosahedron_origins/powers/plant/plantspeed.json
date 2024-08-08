@@ -31,7 +31,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_base",
-            "value": 0.12,
+            "value": 0.15,
             "name": "Plant Affinity Bonus"
         },
         "tick_rate": 20,
@@ -72,7 +72,7 @@
         },
         "modifier": {
             "operation": "multiply_total",
-            "value": -0.5,
+            "value": -0.75,
             "name": "Herbal Affinity Bonus"
         }
     }

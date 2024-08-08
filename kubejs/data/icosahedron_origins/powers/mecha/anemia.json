@@ -8,7 +8,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_base",
-            "value": -0.1,
+            "value": -0.2,
             "name": "Anemia Bonus"
         }
     },
@@ -21,7 +21,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_base",
-            "value": -0.1,
+            "value": -0.2,
             "name": "Anemia Bonus"
         }
     },
@@ -47,7 +47,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_base",
-            "value": 0.05,
+            "value": 0.1,
             "name": "Anemia Penalty"
         }
     },
@@ -60,7 +60,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_base",
-            "value": 0.1,
+            "value": 0.2,
             "name": "Anemia Penalty"
         }
     },
@@ -73,7 +73,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_base",
-            "value": 0.05,
+            "value": 0.2,
             "name": "Anemia Penalty"
         }
     },

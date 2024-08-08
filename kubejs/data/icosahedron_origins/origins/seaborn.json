@@ -26,5 +26,6 @@
     "icon": {
         "item": "minecraft:lily_pad"
     },
+    "order": 111,
     "impact": 1
 }

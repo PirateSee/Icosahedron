@@ -1,0 +1,71 @@
+{
+    "name": "§a+ §r§nManipulator",
+    "description": "Your hands mine as a wooden tool. Increased block interaction range.",
+    "type": "origins:multiple",
+    "range": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "forge:block_reach",
+            "operation": "addition",
+            "value": 2,
+            "name": "Manipulator Bonus"
+        },
+        "update_health": false
+    },
+    "harvest": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_stone_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_iron_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_diamond_tool"
+                }
+            ]
+        },
+        "allow": true
+    },
+    "speed": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:using_effective_tool"
+        },
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_stone_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_iron_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_diamond_tool"
+                }
+            ]
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 0.05,
+            "name": "Manipulator Bonus"
+        }
+    }
+}

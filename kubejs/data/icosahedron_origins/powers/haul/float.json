@@ -56,7 +56,8 @@
     },
     "cooldown": 600,
     "hud_render": {
-        "should_render": true
+        "should_render": true,
+        "bar_index": 4
     },
     "key": {
         "key": "key.origins.primary_active"

@@ -1,0 +1,91 @@
+{
+    "name": "§a+ §r§nWeb Expert",
+    "description": "Enemies you hit you get stuck in cobwebs. No slowdown in cobwebs. Detect non-arthopod entities in webs.",
+    "type": "origins:multiple",
+    "webbing": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:block_action_at",
+            "block_action": {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "apoli:replaceable"
+                },
+                "if_action": {
+                    "type": "origins:set_block",
+                    "block": "origins:temporary_cobweb"
+                }
+            }
+        },
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 5
+        }
+    },
+    "no_slowdown": {
+        "type": "origins:no_slowdown",
+        "tag": "origins:cobwebs"
+    },
+    "climbing": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    },
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "origins:climbing_toggle"
+                }
+            ]
+        },
+        "type": "origins:climbing",
+        "allow_holding": true,
+        "hold_condition": {
+            "type": "origins:power_active",
+            "power": "origins:master_of_webs_climbing"
+        }
+    },
+    "punch_through": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:sneaking"
+        },
+        "type": "origins:prevent_block_selection",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:cobwebs"
+        }
+    },
+    "sense": {
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    },
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:entity_group",
+                    "group": "arthropod"
+                }
+            ]
+        },
+        "use_teams": true
+    }
+}

@@ -5,7 +5,7 @@
     "bientity_action": {
         "type": "origins:add_velocity",
         "y": 0.1,
-        "z": 0.5,
+        "z": 0.75,
         "client": true,
         "server": true
     },
@@ -15,5 +15,5 @@
             "type": "origins:exists"
         }
     },
-    "cooldown": 1
+    "cooldown": 5
 }

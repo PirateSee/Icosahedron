@@ -35,12 +35,18 @@
             },
             {
                 "type": "origins:add_velocity",
-                "y": -0.25,
-                "z": -1.25,
-                "space": "local",
+                "y": 0.2,
+                "space": "world",
                 "client": true,
                 "server": true,
                 "set": true
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": -1.5,
+                "space": "local",
+                "client": true,
+                "server": true
             },
             {
                 "type": "origins:spawn_particles",

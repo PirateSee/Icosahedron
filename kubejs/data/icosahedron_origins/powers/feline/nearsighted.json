@@ -1,0 +1,15 @@
+{
+    "name": "§c- §r§nNearsighted",
+    "description": "Ranged attacks hurt you more.",
+    "type": "origins:modify_damage_taken",
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": ">=",
+        "compare_to": 5
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 0.5,
+        "name": "Arrow Damage Penalty"
+    }
+}

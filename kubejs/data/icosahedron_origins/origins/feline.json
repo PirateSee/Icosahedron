@@ -1,0 +1,19 @@
+{
+    "name": "Feline",
+    "description": "§0[Stealth]§7\nA Feline's cat-like physique allows for quiet and nimble mobility, keeping them out of sight.",
+    "powers": [
+        "icosahedron_origins:feline/velvet_paws",
+        "origins:scare_creepers",
+        "icosahedron_origins:cave/nightvision",
+        "icosahedron_origins:feline/nearsighted",
+        "icosahedron_origins:fox/unaquatic",
+        "icosahedron_origins:fox/unaquatic_slow",
+        "icosahedron_origins:spirit/no_step",
+        "icosahedron_origins:doll/fall_immune"
+    ],
+    "icon": {
+        "item": "minecraft:orange_wool"
+    },
+    "order": 100,
+    "impact": 1
+}

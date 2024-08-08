@@ -1,0 +1,49 @@
+{
+  "dependencies": [
+    "heavy_metal_3"
+  ],
+  "tasks": {
+    "submit_steel": {
+      "type": "heracles:item",
+      "item": "mekanism:block_steel",
+      "amount": 128,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section C: Challanges": {
+        "position": [
+          0,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mekanism:block_steel",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Heavy Metal IV"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,87 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "webbing": {
+      "entity_action": {
+        "block_action": {
+          "condition": {
+            "type": "apoli:replaceable"
+          },
+          "if_action": {
+            "block": "origins:temporary_cobweb",
+            "type": "apoli:set_block"
+          },
+          "type": "apoli:if_else"
+        },
+        "type": "apoli:block_action_at"
+      },
+      "cooldown": 200,
+      "hud_render": {
+        "bar_index": 5,
+        "sprite_location": "origins:textures/gui/resource_bar.png"
+      },
+      "type": "apoli:target_action_on_hit"
+    },
+    "no_slowdown": {
+      "tag": "origins:cobwebs",
+      "type": "origins:no_slowdown"
+    },
+    "climbing": {
+      "hold_condition": {
+        "power": "origins:master_of_webs_climbing",
+        "type": "apoli:power_active"
+      },
+      "conditions": [
+        {
+          "conditions": [
+            {
+              "block_condition": {
+                "tag": "origins:cobwebs",
+                "type": "apoli:in_tag"
+              },
+              "type": "apoli:in_block_anywhere"
+            },
+            {
+              "power": "origins:climbing_toggle",
+              "type": "apoli:power_active"
+            }
+          ],
+          "type": "apoli:and"
+        }
+      ],
+      "type": "apoli:climbing"
+    },
+    "punch_through": {
+      "block_condition": {
+        "tag": "origins:cobwebs",
+        "type": "apoli:in_tag"
+      },
+      "conditions": [
+        {
+          "inverted": true,
+          "type": "apoli:sneaking"
+        }
+      ],
+      "type": "apoli:prevent_block_selection"
+    },
+    "sense": {
+      "entity_condition": {
+        "conditions": [
+          {
+            "block_condition": {
+              "tag": "origins:cobwebs",
+              "type": "apoli:in_tag"
+            },
+            "type": "apoli:in_block_anywhere"
+          },
+          {
+            "group": "arthropod",
+            "inverted": true,
+            "type": "apoli:entity_group"
+          }
+        ],
+        "type": "apoli:and"
+      },
+      "type": "apoli:entity_glow"
+    }
+  }

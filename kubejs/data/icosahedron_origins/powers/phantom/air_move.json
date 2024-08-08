@@ -1,0 +1,8 @@
+{
+    "name": "§a+ §r§nAileron",
+    "description": "Airspeed increased based on movement speed",
+    "type": "origins:attribute_modify_transfer",
+    "attribute": "minecraft:generic.movement_speed",
+    "class": "modify_air_speed",
+    "multiplier": 0.8
+}

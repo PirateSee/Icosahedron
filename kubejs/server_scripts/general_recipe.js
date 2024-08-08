@@ -18,8 +18,27 @@ ServerEvents.recipes(e => {
 
 	//e.recipes.createoreexcavation.vein('minecraft').placement(23,2,1)
 
-	e.recipes.create.compacting('kubejs:carbon_steel_block', '9x kubejs:carbon_steel_ingot')
-	e.custom({
+    e.shaped('kubejs:wrought_iron_block', [
+		'III',
+		'III',
+        'III'
+	], {
+        I: 'kubejs:wrought_iron_ingot'
+	}).id('ico:wrought_iron_block')
+    e.shapeless('9x kubejs:wrought_iron_ingot', 'kubejs:wrought_iron_block').id('ico:wrought_iron_block_unpacking')
+
+    e.shaped('kubejs:pig_iron_block', [
+		'III',
+		'III',
+        'III'
+	], {
+        I: 'kubejs:pig_iron_ingot'
+	}).id('ico:pig_iron_block')
+    e.shapeless('9x kubejs:pig_iron_ingot', 'kubejs:pig_iron_block').id('ico:pig_iron_block_unpacking')
+
+	e.recipes.create.compacting('kubejs:carbon_steel_block', '9x kubejs:carbon_steel_ingot').id('ico:carbon_steel_block')
+    e.shapeless('9x kubejs:carbon_steel_ingot', 'kubejs:carbon_steel_block').id('ico:carbon_steel_block_unpacking')
+	/*e.custom({
 		"type":"vintageimprovements:vibrating",
 		"ingredients": [
 			{
@@ -33,7 +52,7 @@ ServerEvents.recipes(e => {
 			}
 		],
 		"processingTime": 400
-	})
+	}).id('ico:carbon_steel_block_unpacking')*/
 
 	//slag
 	e.custom({
@@ -75,8 +94,10 @@ ServerEvents.recipes(e => {
 		"processingTime": 400,
 		"minimumSpeed": 32.0
 	})
+
     e.recipes.create.milling('3x kubejs:soft_slag_dust', 'kubejs:slag')
     e.recipes.create.crushing([Item.of('minecraft:quartz').withChance(0.2), Item.of('mna:vinteum_dust').withChance(0.1), Item.of('createaddition:electrum_nugget').withChance(0.2), "minecraft:flint", Item.of('create:experience_nugget').withChance(0.1)], 'kubejs:slag')
+
 	e.custom({
 		"type":"vintageimprovements:centrifugation",
 		"ingredients": [ 

@@ -13,5 +13,6 @@
     "icon": {
         "item": "minecraft:deepslate"
     },
+    "order": 213,
     "impact": 2
 }

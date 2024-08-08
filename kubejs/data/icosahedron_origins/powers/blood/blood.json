@@ -127,7 +127,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_total",
-            "value": -0.8,
+            "value": -0.7,
             "name": "Blood Supplement"
         }
     },
@@ -141,7 +141,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_total",
-            "value": 0.5,
+            "value": 0.7,
             "name": "Blood No Supplement"
         }
     },

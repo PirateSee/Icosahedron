@@ -12,10 +12,12 @@
         "icosahedron_origins:spirit/solar_weakness",
         "icosahedron_origins:spirit/obliterate",
         "icosahedron_origins:cave/featherweight",
-        "icosahedron_origins:spirit/invis_short"
+        "icosahedron_origins:spirit/invis_short",
+        "icosahedron_origins:spirit/no_step"
     ],
     "icon": {
         "item": "minecraft:soul_lantern"
     },
+    "order": 312,
     "impact": 3
 }
