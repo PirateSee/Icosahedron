@@ -1,13 +1,13 @@
-filename = 'jei-1.20.1-forge-15.8.2.25.jar'
+filename = 'jei-1.20.1-forge-15.11.0.43.jar'
 name = 'Just Enough Items'
 side = 'both'
 
 [download]
-hash = '36b50265c9f71f49c9367078285b70cc03fd11e4e06b691064d212714ce62cf46a7c5cb7e62d7110c9d3cf087ef997e08084d6f64dbbc2053f437a14db8da85e'
+hash = '99aac59ab1e65f618956171ddb504c189169c5902bf6f0d39b8387dab357f6d4c526eeecb5e887c3e2eab7bd91ec92378179515f1438ae9ff4cc172e7cc86a09'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/u6dRKJwZ/versions/C7nTY0fi/jei-1.20.1-forge-15.8.2.25.jar'
+url = 'https://cdn.modrinth.com/data/u6dRKJwZ/versions/zDIRJq0x/jei-1.20.1-forge-15.11.0.43.jar'
 
 [update.modrinth]
 mod-id = 'u6dRKJwZ'
-version = 'C7nTY0fi'
+version = 'zDIRJq0x'

@@ -582,6 +582,8 @@
 		#If the mobs' affected by blindness effect the target range is multiplied by this value
 		#Range: 0.0 ~ 1.0
 		"Blindness range multiplier" = 0.1
+		#By default, the new targeting AI only changes for targeting players. Setting this to true allows overriding target AI for entities other than players. Please note this might break specific AIs
+		"Targeting Override for non-Players" = false
 
 		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. I recommend using mods like Mobs Properties Randomness to have more control over the attribute.
 		[Mobs.Targeting."Follow Range Override"]
@@ -724,9 +726,6 @@
 		#Percentage chance for a Creeper to ignore walls while targeting a player. This means that a creeper will be able to explode if it's in the correct range from a player even if there's a wall between.
 		#Range: 0.0 ~ 1.0
 		"Ignore Walls Chance" = 0.0
-		#Breaching creepers will try to open a hole in the wall to let mobs in.
-		#Range: 0.0 ~ 1.0
-		"Breach Chance" = 0.0
 		#Beta creepers when exploding will walk around the target, like the creepers in pre-1.2.
 		#Range: 0.0 ~ 1.0
 		"Beta Creeper Chance" = 0.35
@@ -775,6 +774,14 @@
 			"Explosion power" = 4.0
 			#Angry Creeper will not stop swelling when triggered
 			"Forced Explosion" = true
+
+		[Creepers."Creeper Swell".Breach]
+			#Breaching creepers will try to open a hole in the wall to let mobs in.
+			#Range: 0.0 ~ 1.0
+			Chance = 0.075
+			#How far away (horizontally) from the target breaching creepers can breach.
+			#Range: > 0
+			"Horizontal Range" = 24
 
 [Bugs]
 	#Let them swarm. This also changes the Merge With stone goal to have 1.5 seconds cooldown before trying to merge, to prevent them from instantly getting into stone without having the chance to target someone.

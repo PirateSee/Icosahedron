@@ -10,6 +10,8 @@
 	itemsRepairSouls = 5
 	#Fire Spawn Cage are enabled, Default: true
 	fireSpawnCage = true
+	#If soulRepair is enabled, the cost of Soul Energy multiplies per item's enchantments, Default: true
+	soulRepairEnchant = true
 
 [Curios]
 	#Show gloves in first person, Default: true

@@ -1,13 +1,13 @@
-filename = 'goety-2.5.18.0.jar'
-name = 'Goety - The Dark Arts'
+filename = 'goety-2.5.19.0.jar'
+name = 'Goety'
 side = 'both'
 
 [download]
-hash = 'fe1f5cbf3a5eba497bc9b2432ba519720ff901c893bc157ba372e4f9f0c246c34ea319eb4f6ae815de355a09d527337062d35d4f318673b4d74c96e3ad0f9301'
+hash = '4393961f437d4f099d59d8c021a07d04228cfc43b65144e58d1eeab000a94bdff7dafe97d3cd26f4d955d11ea6efc20d0ed900034143c9f7b205745118e683ab'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/4ZVIxU8x/versions/axXcpkhv/goety-2.5.18.0.jar'
+url = 'https://cdn.modrinth.com/data/4ZVIxU8x/versions/KXUwZZl6/goety-2.5.19.0.jar'
 
 [update.modrinth]
 mod-id = '4ZVIxU8x'
-version = 'axXcpkhv'
+version = 'KXUwZZl6'

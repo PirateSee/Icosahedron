@@ -16,7 +16,7 @@
 	transmitterAlloyUpgrade = true
 	#Base factor for working out machine performance with upgrades - UpgradeModifier * (UpgradesInstalled/UpgradesPossible).
 	#Range: > 1
-	maxUpgradeMultiplier = 5
+	maxUpgradeMultiplier = 10
 	#How much Boiler heat is immediately usable to convert water to steam.
 	#Range: 0.01 ~ 1.0
 	boilerWaterConductivity = 0.7
@@ -60,15 +60,15 @@
 	#Prefilled Tanks
 	[general.prefilled]
 		#Add filled creative fluid tanks to creative/JEI.
-		fluidTanks = false
+		fluidTanks = true
 		#Add filled creative gas tanks to creative/JEI.
 		gasTanks = true
 		#Add filled creative infusion tanks to creative/JEI.
-		infusionTanks = false
+		infusionTanks = true
 		#Add filled creative pigment tanks to creative/JEI.
-		pigmentTanks = false
+		pigmentTanks = true
 		#Add filled creative slurry tanks to creative/JEI.
-		slurryTanks = false
+		slurryTanks = true
 
 	#Energy Conversion Rate Settings
 	[general.energy_conversion]

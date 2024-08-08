@@ -118,6 +118,9 @@
 	#How many seconds it takes before Ravager can manually roar again, Default: 10
 	#Range: > 0
 	ravagerRoarCooldown = 10
+	#How far servants can patrol from their patrol location, Default: 16
+	#Range: > 2
+	servantPatrolRange = 16
 
 	[Servants."Undead Servants"]
 		#Whether Undead Servants can teleport to Players, Default: false
@@ -159,6 +162,8 @@
 		#How much Health Natural Servants heal, numerically, Default: 0.5
 		#Range: 0.0 ~ 1.7976931348623157E308
 		naturalMinionHealAmount = 0.5
+		#Whether Black Beasts gain buffs if total game time has gone long enough, Default: true
+		blackBeastDayStrength = true
 
 	[Servants."Frost Servants"]
 		#Whether Frost Servants can heal if summoned while wearing Frost Robe, Default: true

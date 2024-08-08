@@ -1,13 +1,13 @@
-filename = 'relics-1.20.1-0.8.0.4.jar'
+filename = 'relics-1.20.1-0.8.0.5.jar'
 name = 'Relics'
 side = 'both'
 
 [download]
-hash = 'b9be054fc175fb377988ea3cd5e713b3dc7496fe82b2bc84edef820d1c36e72b0476dc6de761afc9a501429fd607ef2210b9d7b3b3cce0665d3e12cc22d9baa0'
+hash = '9e366fb827abb5d5c830a3ae092ce9603428ebaa6a53c16054ef57496023fd688e3b7a49a369de20674f2701ad884957130d9a18db385c609d333c09dab10576'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/OCJRPujW/versions/LUGLmLsd/relics-1.20.1-0.8.0.4.jar'
+url = 'https://cdn.modrinth.com/data/OCJRPujW/versions/EERI0tro/relics-1.20.1-0.8.0.5.jar'
 
 [update.modrinth]
 mod-id = 'OCJRPujW'
-version = 'LUGLmLsd'
+version = 'EERI0tro'

@@ -97,6 +97,10 @@
 	pithosRespawn = true
 	#Allow used Crystal Balls to spawn Crones again when right-clicked with respawn_boss tagged item, Default: true
 	crystalBallRespawn = true
+	#Whether creating items through Rituals will transfer enchantments from the original item, Default: true
+	ritualCraftEnchant = true
+	#Whether creating items through Rituals will transfer damage from the original item, Default: false
+	ritualCraftDamage = false
 
 ["Soul Taken"]
 	#Multiplies the amount of Souls taken by this amount, Default: 2
@@ -167,4 +171,6 @@
 	lichScrollRequirement = true
 	#Whether the player in Lich Mode will emit Lich sounds, Default: true
 	lichModeSounds = true
+	#Whether players lose their lichdom if their Arca is removed, Default: true
+	lichArcaRemove = true
 

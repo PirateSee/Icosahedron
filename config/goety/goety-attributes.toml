@@ -655,6 +655,17 @@
 			#Range: 1.0 ~ 2048.0
 			redstoneCubeFollowRange = 16.0
 
+		[Attributes."Summoned Mobs"."Black Beast"]
+			#How much Max Health Black Beasts have, Default: 75.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			blackBeastHealth = 75.0
+			#How much natural Armor Black Beasts have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			blackBeastArmor = 0.0
+			#How much damage Black Beasts melee attack deals, Default: 8.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			blackBeastDamage = 8.0
+
 	[Attributes.Mini-Bosses]
 
 		[Attributes.Mini-Bosses.Crone]
