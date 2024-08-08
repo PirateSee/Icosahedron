@@ -319,6 +319,7 @@
 		"icosahedron_origins:cave/featherweight" = true
 		"icosahedron_origins:spirit/invis_short" = true
 		"icosahedron_origins:spirit/no_step" = true
+		"icosahedron_origins:spirit/last_wish" = true
 
 	[origins."icosahedron_origins:food"]
 		enabled = true
@@ -349,6 +350,7 @@
 		"icosahedron_origins:spirit/solar_weakness" = true
 		"icosahedron_origins:cave/featherweight" = true
 		"icosahedron_origins:cave/sleep_low" = true
+		"icosahedron_origins:cave/stone_fist" = true
 
 	[origins."icosahedron_origins:haul"]
 		enabled = true

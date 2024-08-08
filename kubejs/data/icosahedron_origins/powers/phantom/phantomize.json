@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nPhantomize",
-    "description": "Toggle to a phantom form. Requires enough food to sprint.",
+    "description": "Toggle to a phantom form. Requires enough food to sprint, and constantly drains hunger while in use.",
     "type": "origins:multiple",
     "toggle": {
         "condition": {
@@ -51,22 +51,13 @@
             "actions": [
                 {
                     "type": "origins:apply_effect",
-                    "effects": [
-                        {
-                            "effect": "minecraft:weakness",
-                            "duration": 12,
-                            "amplifier": 5,
-                            "show_particles": true,
-                            "show_icon": true
-                        },
-                        {
-                            "effect": "minecraft:slow_falling",
-                            "duration": 12,
-                            "amplifier": 0,
-                            "show_particles": true,
-                            "show_icon": true
-                        }
-                    ]
+                    "effect": {
+                        "effect": "minecraft:slow_falling",
+                        "duration": 12,
+                        "amplifier": 0,
+                        "show_particles": true,
+                        "show_icon": true
+                    }
                 },
                 {
                     "type": "origins:exhaust",
@@ -215,8 +206,17 @@
         },
         "type": "origins:invulnerability",
         "damage_condition": {
-            "type": "origins:name",
-            "name": "inWall"
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "inWall"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "fall"
+                }
+            ]
         }
     }
 }

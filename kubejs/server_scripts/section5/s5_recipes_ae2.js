@@ -249,7 +249,6 @@ ServerEvents.recipes(e => {
         'C   C'
 	], {
 		F: 'ae2:fluix_dust',
-		U: 'kubejs:tungsten_ingot',
         I: 'kubejs:lithium_ion_cell',
         A: 'createaddition:accumulator',
         G: 'ae2:quartz_glass',
@@ -261,7 +260,7 @@ ServerEvents.recipes(e => {
         'EAE',
         'EEE'
 	], {
-		P: 'ae2:calculation_processor',
+		A: 'ae2:calculation_processor',
         E: 'ae2:energy_cell',
 	}).id('ico:dense_energy_cell')
 

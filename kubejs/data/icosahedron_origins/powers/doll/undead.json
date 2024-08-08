@@ -4,7 +4,7 @@
     "badges": [
         {
             "type": "origins:tooltip",
-            "text": "Instant health/harming inverted, vunurable to smite. You do not burn in sunlight",
+            "text": "Instant health/harming inverted, vunurable to smite.",
             "sprite": "origins:textures/gui/badge/info.png"
         }
     ],

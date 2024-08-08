@@ -35,6 +35,10 @@
             {
                 "inverted": true,
                 "type": "origins:climbing"
+            },
+            {
+                "inverted": true,
+                "type": "origins:sneaking"
             }
         ]
     },

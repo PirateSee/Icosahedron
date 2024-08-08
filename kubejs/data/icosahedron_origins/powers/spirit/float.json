@@ -1,13 +1,13 @@
 {
     "name": "§7o §r§nFloat",
-    "description": "Float slightly off the ground. When stuck in blocks, you'll rapidly accend.",
+    "description": "Float slightly off the ground. Sneak to disable. When stuck in blocks, you'll rapidly accend.",
     "condition": {
         "type": "origins:block_collision",
         "block_condition": {
             "type": "origins:movement_blocking"
         },
         "offset_x": 0,
-        "offset_y": -0.35,
+        "offset_y": -0.3,
         "offset_z": 0
     },
     "type": "origins:action_over_time",
@@ -61,6 +61,10 @@
                     "fluid": "minecraft:lava",
                     "comparison": "==",
                     "compare_to": 0
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:sneaking"
                 }
             ]
         },

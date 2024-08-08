@@ -906,31 +906,31 @@ ServerEvents.recipes(e => {
       }).id("ico:plant_oil")
 
     e.custom({
-            "type": "pneumaticcraft:pressure_chamber",
-            "inputs": [
-                {
-            "type": "pneumaticcraft:stacked_item",
-            "count": 2,
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "count": 2,
                 "item": "pneumaticcraft:plastic"
-                },
-        {
-                "item": "create:copper_sheet"
-        },
-        {
-            "type": "pneumaticcraft:stacked_item",
-            "item": "kubejs:redstone_cable",
-            "count": 2
-        },
-        {
-            "item": "minecraft:quartz"
-        },
-            ],
-            "pressure": 2,
-            "results": [
-                {
+            },
+            {
+                    "item": "create:copper_sheet"
+            },
+            {
+                "type": "pneumaticcraft:stacked_item",
+                "item": "kubejs:redstone_cable",
+                "count": 2
+            },
+            {
+                "item": "minecraft:quartz"
+            },
+        ],
+        "pressure": 2,
+        "results": [
+            {
                 "item": "pneumaticcraft:empty_pcb",
-                }
-            ]
+            }
+        ]
 	}).id("ico:empty_pcb")
 
   e.custom({

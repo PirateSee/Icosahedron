@@ -1,0 +1,76 @@
+{
+    "name": "§a+ §r§nStone Fist",
+    "description": "Your hands mine as a wooden tool. Increased punch damage.",
+    "type": "origins:multiple",
+    "harvest": {
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_stone_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_iron_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_diamond_tool"
+                }
+            ]
+        },
+        "allow": true
+    },
+    "speed": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:using_effective_tool"
+        },
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_stone_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_iron_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_diamond_tool"
+                }
+            ]
+        },
+        "modifier": {
+            "operation": "addition",
+            "value": 0.05,
+            "name": "Manipulator Bonus"
+        }
+    },
+    "unarmed_attack": {
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:is_damageable"
+            }
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": 3,
+            "name": "Stone Fist Bonus"
+        }
+    }
+}

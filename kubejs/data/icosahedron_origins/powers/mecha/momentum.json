@@ -47,7 +47,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.05,
+            "value": 0.06,
             "name": "Momentum I"
         },
         "tick_rate": 5,
@@ -64,7 +64,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.05,
+            "value": 0.06,
             "name": "Momentum II"
         },
         "tick_rate": 5,
@@ -81,7 +81,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.05,
+            "value": 0.06,
             "name": "Momentum III"
         },
         "tick_rate": 5,
@@ -98,7 +98,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.05,
+            "value": 0.06,
             "name": "Momentum IV"
         },
         "tick_rate": 5,
@@ -115,7 +115,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.05,
+            "value": 0.06,
             "name": "Momentum IV"
         },
         "tick_rate": 5,
@@ -132,7 +132,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.05,
+            "value": 0.06,
             "name": "Momentum VI"
         },
         "tick_rate": 5,
@@ -149,7 +149,7 @@
         "modifier": {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "multiply_total",
-            "value": 0.06,
+            "value": 0.07,
             "name": "Momentum VII"
         },
         "tick_rate": 5,

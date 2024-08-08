@@ -4,14 +4,7 @@
     "type": "origins:multiple",
     "attack": {
         "condition": {
-            "type": "origins:riding",
-            "bientity_condition": {
-                "type": "origins:target_condition",
-                "condition": {
-                    "inverted": true,
-                    "type": "origins:living"
-                }
-            }
+            "type": "origins:riding"
         },
         "type": "origins:modify_damage_dealt",
         "modifier": {

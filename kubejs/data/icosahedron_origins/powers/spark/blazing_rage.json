@@ -15,8 +15,8 @@
     "modifiers": [
         {
             "operation": "addition",
-            "name": "Blazing Rage",
-            "value": 1
+            "value": 1,
+            "name": "Blazing Rage"
         },
         {
             "operation": "multiply_base",
