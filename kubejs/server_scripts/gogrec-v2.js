@@ -251,4 +251,257 @@ ServerEvents.recipes(e => {
           d: 'born_in_chaos_v1:armor_plate_from_dark_metal'
       }).id('ico:jetpack_armored')
       e.remove({id:'mekanism:jetpack_armored'})
+      e.shaped('pneumaticcraft:harvesting_drone', [
+        ' ts', 
+        'tmt',
+        'ltp'
+    ], {
+        t: 'pneumaticcraft:turbine_rotor',
+        m: 'create:mechanical_harvester',
+        s: '#ico:tool/screwdriver',
+        l: 'kubejs:laser_emitter',
+        p: 'pneumaticcraft:plastic'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:harvesting_drone')
+    e.remove({id:'pneumaticcraft:harvesting_drone'})
+
+    e.shaped('pneumaticcraft:logistics_drone', [
+        ' ts', 
+        'tmt',
+        'ltp'
+    ], {
+        t: 'pneumaticcraft:turbine_rotor',
+        m: 'pneumaticcraft:logistics_core',
+        s: '#ico:tool/screwdriver',
+        l: 'kubejs:laser_emitter',
+        p: 'pneumaticcraft:plastic'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:logistics_drone')
+    e.remove({id:'pneumaticcraft:logistics_drone'})
+
+    e.shaped('pneumaticcraft:guard_drone', [
+        ' ts', 
+        'tmt',
+        'ltp'
+    ], {
+        t: 'pneumaticcraft:turbine_rotor',
+        m: 'minecraft:stone_sword',
+        s: '#ico:tool/screwdriver',
+        l: 'kubejs:laser_emitter',
+        p: 'pneumaticcraft:plastic'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:guard_drone')
+    e.remove({id:'pneumaticcraft:guard_drone'})
+
+    e.shaped('pneumaticcraft:collector_drone', [
+        ' ts', 
+        'tmt',
+        'ltp'
+    ], {
+        t: 'pneumaticcraft:turbine_rotor',
+        m: 'pneumaticcraft:omnidirectional_hopper',
+        s: '#ico:tool/screwdriver',
+        l: 'kubejs:laser_emitter',
+        p: 'pneumaticcraft:plastic'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:collector_drone')
+    e.remove({id:'pneumaticcraft:collector_drone'})
+
+    e.shaped('pneumaticcraft:drone', [
+        ' ts', 
+        'tmt',
+        'ltp'
+    ], {
+        t: 'pneumaticcraft:turbine_rotor',
+        m: 'pneumaticcraft:printed_circuit_board',
+        s: '#ico:tool/screwdriver',
+        l: 'kubejs:laser_emitter',
+        p: 'pneumaticcraft:plastic'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:drone')
+    e.remove({id:'pneumaticcraft:drone'})
+
+    e.recipes.create.mechanical_crafting('pneumaticcraft:minigun', [ 
+        ' d   ', 
+        'ccrbb',
+        'tRrbb',
+        'clc  '
+        ], {
+          d: 'born_in_chaos_v1:armor_plate_from_dark_metal',
+          c: 'pneumaticcraft:ingot_iron_compressed',
+          r: 'kubejs:carbon_steel_rod',
+          b: 'pneumaticcraft:cannon_barrel',
+          t: 'pneumaticcraft:reinforced_air_canister',
+          R: 'kubejs:rubber',
+          l: 'create:analog_lever'
+      }).id('ico:minigun')
+      e.remove({id:'pneumaticcraft:minigun'})
+
+      e.recipes.create.mechanical_crafting('pneumaticcraft:vortex_cannon', [ 
+        'ccyc', 
+        'tdfb',
+        ' c  '
+        ], {
+          c: 'pneumaticcraft:ingot_iron_compressed',
+          f: 'kubejs:compressed_framing',
+          y: '#c:yellow_dyes',
+          t: 'pneumaticcraft:air_canister',
+          d: 'born_in_chaos_v1:pieceofdarkmetal',
+          b: 'pneumaticcraft:cannon_barrel'
+      }).id('ico:vortex_cannon')
+      e.remove({id:'pneumaticcraft:vortex_cannon'})
+
+      e.shaped('create:contraption_controls', [
+        'bls', 
+        'ec '
+    ], {
+        b: '#minecraft:buttons',
+        s: '#ico:tool/screwdriver',
+        l: 'minecraft:lever',
+        e: 'create:electron_tube',
+        c: 'create:andesite_casing'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:contraption_controls')
+    e.remove({id:'create:crafting/kinetics/contraption_controls'})
+
+    e.shaped('createbigcannons:basin_foundry_lid', [
+        '  h', 
+        'gcg',
+        'aaa'
+    ], {
+        a: 'create:andesite_alloy',
+        h: '#ico:tool/hammer',
+        g: 'minecraft:gold_nugget',
+        c: 'create:copper_sheet'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basin_foundry_lid')
+    e.remove({id:'createbigcannons:basin_foundry_lid'})
+
+    e.shaped('createbigcannons:wrought_iron_cannon_end', [
+        ' w ', 
+        'ppp',
+        ' g '
+    ], {
+        w: 'kubejs:wrought_iron_ingot',
+        p: 'kubejs:wrought_iron_sheet',
+        g: 'minecraft:gunpowder'
+    }).id('ico:wrought_iron_cannon_end')
+    e.remove({id:'createbigcannons:wrought_iron_cannon_end'})
+
+    e.shaped('createbigcannons:wrought_iron_cannon_chamber', [
+        ' w ', 
+        'wgw',
+        ' w '
+    ], {
+        w: 'kubejs:wrought_iron_sheet',
+        g: 'minecraft:gunpowder'
+    }).id('ico:wrought_iron_cannon_chamber')
+    e.remove({id:'createbigcannons:wrought_iron_cannon_chamber'})
+
+    e.shaped('createbigcannons:cannon_mount', [
+        'hSs', 
+        'gwr',
+        'Sc '
+    ], {
+        s: '#ico:tool/screwdriver',
+        S: 'create:shaft',
+        g: 'minecraft:gunpowder',
+        h: 'kubejs:wrought_iron_sheet',
+        r: 'minecraft:redstone_torch',
+        c: 'create:andesite_casing',
+        w: 'kubejs:wrought_iron_ingot'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:cannon_mount')
+    e.remove({id:'createbigcannons:cannon_mount'})
+
+    e.shaped('createbigcannons:yaw_controller', [
+        ' Ss', 
+        'gcg',
+        ' s '
+    ], {
+        S: 'create:shaft',
+        s: '#ico:tool/screwdriver',
+        g: 'minecraft:gunpowder',
+        c: 'create:andesite_casing'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:yaw_controller')
+    e.remove({id:'createbigcannons:yaw_controller'})
+
+    e.shaped('createbigcannons:cannon_loader', [
+        ' gs', 
+        'Sc ',
+        ' e '
+    ], {
+        e: 'create:piston_extension_pole',
+        g: 'minecraft:gunpowder',
+        c: 'create:andesite_casing',
+        S: 'create:shaft',
+        s: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:cannon_loader')
+    e.remove({id:'createbigcannons:cannon_loader'})
+
+    e.shaped('createbigcannons:worm_head', [
+        'wbw', 
+        ' e '
+    ], {
+        w: 'kubejs:wrought_iron_sheet',
+        b: 'minecraft:iron_bars',
+        e: 'create:piston_extension_pole'
+    }).id('ico:worm_head')
+    e.remove({id:'createbigcannons:worm_head'})
+
+    e.shaped('createbigcannons:ram_head', [
+        's', 
+        'e',
+    ], {
+        s: '#minecraft:wooden_slabs',
+        e: 'create:piston_extension_pole'
+    }).id('ico:ram_head')
+    e.remove({id:'createbigcannons:ram_head'})
+
+    e.shaped('createbigcannons:cannon_drill', [
+        ' Ps', 
+        'pcp',
+        ' e '
+    ], {
+        s: '#ico:tool/screwdriver',
+        P: 'kubejs:wrought_iron_sheet',
+        p: 'create:fluid_pipe',
+        c: 'create:andesite_casing',
+        e: 'create:piston_extension_pole'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:cannon_drill')
+    e.remove({id:'createbigcannons:cannon_drill'})
+
+    e.shaped('createbigcannons:cannon_builder', [
+        'pwp', 
+        'Scs',
+        ' e '
+    ], {
+        p: 'kubejs:wrought_iron_sheet',
+        w: 'kubejs:wrought_iron_ingot',
+        S: 'create:shaft',
+        c: 'create:andesite_casing',
+        s: '#ico:tool/screwdriver',
+        e: 'create:piston_extension_pole'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:cannon_builder')
+    e.remove({id:'createbigcannons:cannon_builder'})
+
+    e.shaped('mekanism:resistive_heater', [
+        ' as', 
+        'bcb',
+        'IeI'
+    ], {
+        a: 'mekanism:advanced_control_circuit',
+        s: '#ico:tool/screwdriver',
+        b: 'minecraft:iron_bars',
+        c: 'mekanism:steel_casing',
+        I: 'mekanism:ingot_steel',
+        e: 'mekanism:energy_tablet'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:resistive_heater')
+    e.remove({id:'mekanism:resistive_heater'})
+
+    e.shaped('mekanism:fuelwood_heater', [
+        ' ps', 
+        'bcb',
+        'IfI'
+    ], {
+        b: 'minecraft:iron_bars',
+        c: 'mekanism:steel_casing',
+        I: 'mekanism:ingot_steel',
+        f: 'minecraft:blast_furnace',
+        s: '#ico:tool/screwdriver',
+        p: 'mekanism:basic_control_circuit'
+    }).id('ico:fuelwood_heater')
+    e.remove({id:'mekanism:fuelwood_heater'})
 })

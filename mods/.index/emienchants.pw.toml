@@ -1,0 +1,13 @@
+filename = 'EMIEnchants-forge-1.19.3-1.20.4-1.0.0.jar'
+name = 'EMI Enchants'
+side = 'client'
+
+[download]
+hash = 'ef61bb961d9554b0025e568e40fd8bf1a7a21e27eb3d0ccaf4934f9673e6fc862c931017bea741d2fc8afa274d333d190ed2486d9c01cafb1da5fdd493e8251c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/11hKNQb2/versions/Lzvq7JEE/EMIEnchants-forge-1.19.3-1.20.4-1.0.0.jar'
+
+[update.modrinth]
+mod-id = '11hKNQb2'
+version = 'Lzvq7JEE'
