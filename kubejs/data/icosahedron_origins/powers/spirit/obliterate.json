@@ -29,7 +29,7 @@
             "actions": [
                 {
                     "type": "origins:explode",
-                    "power": 4,
+                    "power": 5,
                     "destruction_type": "none",
                     "damage_self": false
                 },
@@ -43,6 +43,29 @@
                     "resource": "icosahedron_origins:spirit/obliterate_resource",
                     "change": 55,
                     "operation": "set"
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:dragon_breath",
+                    "count": 30,
+                    "speed": 0.5,
+                    "spread": {
+                        "x": 8,
+                        "y": 8,
+                        "z": 8
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.generic.explode",
+                    "volume": 1,
+                    "pitch": 0.8
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.ender_dragon.growl",
+                    "volume": 0.8,
+                    "pitch": 1.5
                 }
             ]
         }

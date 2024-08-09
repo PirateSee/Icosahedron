@@ -10,13 +10,31 @@
       "collection": "MANUAL"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_nickel": {
+      "item": {
+        "id": "kubejs:nickel_ingot",
+        "count": 32
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## Heavy Metal II",
+      "We need /b/fresh metal/b/ from the best of sources. Go mining, or better yet, /6/automate something/6/ to do it for you.",
+      "",
+      "This shipment needs /b/Blocks of Wrought Iron/b/. Well forged, and good for future applications.",
+      "",
+      "Payment of /b/Nickel/b/ will be delivered upon completion.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_wrought_iron\" quest=\"heavy_metal_2\"/>",
+      "<hr/>",
+      "<reward reward=\"award_nickel\" quest=\"heavy_metal_2\"/>"
     ],
     "groups": {
       "Section C: Challanges": {

@@ -12,11 +12,10 @@
         "icosahedron_origins:fox/sharp_hearing",
         "icosahedron_origins:fox/rapid_descent",
         "icosahedron_origins:fox/shove",
+        "icosahedron_origins:fox/small_stature",
         "icosahedron_origins:fox/cracked_plate",
         "icosahedron_origins:fox/cracked_toughness",
         "icosahedron_origins:fox/flimsy_stance",
-        "icosahedron_origins:fox/unaquatic",
-        "icosahedron_origins:fox/unaquatic_slow",
         "icosahedron_origins:fox/sleep_high"
     ],
     "icon": {

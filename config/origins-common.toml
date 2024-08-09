@@ -118,6 +118,7 @@
 		"icosahedron_origins:fox/unaquatic" = true
 		"icosahedron_origins:fox/unaquatic_slow" = true
 		"icosahedron_origins:fox/sleep_high" = true
+		"icosahedron_origins:fox/small_stature" = true
 
 	[origins."icosahedron_origins:mecha"]
 		enabled = true
@@ -379,6 +380,7 @@
 		"icosahedron_origins:fox/cracked_plate" = true
 		"icosahedron_origins:fox/cracked_toughness" = true
 		"icosahedron_origins:spirit/solar_weakness" = true
+		"icosahedron_origins:phantom/translucent" = true
 
 	[origins."icosahedron_origins:feline"]
 		enabled = true
@@ -400,4 +402,5 @@
 		"icosahedron_origins:arachnid/carnivore" = true
 		"origins:master_of_webs" = true
 		"origins:arthropod" = true
+		"icosahedron_origins:arachnid/jockey" = true
 

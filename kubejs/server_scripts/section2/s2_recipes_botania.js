@@ -137,10 +137,10 @@ ServerEvents.recipes(e => {
                 "item": "kubejs:rune_backing"
             },
             {
-                "tag": "minecraft:wool_carpets"
+                "tag": "minecraft:wool"
             },
             {
-                "tag": "minecraft:wool_carpets"
+                "tag": "minecraft:wool"
             },
             {
                 "item": "minecraft:feather"

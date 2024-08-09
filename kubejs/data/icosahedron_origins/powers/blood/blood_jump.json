@@ -3,7 +3,7 @@
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:chance",
-        "chance": 0.1,
+        "chance": 0.05,
         "action": {
             "type": "origins:change_resource",
             "resource": "icosahedron_origins:blood/blood_resource",
@@ -11,7 +11,7 @@
             "operation": "add"
         }
     },
-    "cooldown": 15,
+    "cooldown": 20,
     "key": {
         "key": "icosahedron_origins:blood/blood_resource"
     }

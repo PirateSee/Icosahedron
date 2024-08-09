@@ -6,7 +6,7 @@
     "start_value": 0,
     "hud_render": {
         "should_render": true,
-        "sprite_location": "https://github.com/apace100/origins-fabric/blob/1.18/src/main/resources/assets/origins/textures/gui/community/huang/resource_bar_01.png",
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
         "bar_index": 4,
         "condition": {
             "type": "origins:resource",

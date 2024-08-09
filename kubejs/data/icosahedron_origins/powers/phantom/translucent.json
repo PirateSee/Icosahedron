@@ -1,0 +1,6 @@
+{
+    "name": "§7o §r§nTranslucent",
+    "description": "You are slightly transparent",
+    "type": "origins:model_color",
+    "alpha": 0.5
+}

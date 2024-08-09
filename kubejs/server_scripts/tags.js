@@ -206,8 +206,9 @@ ServerEvents.tags('item', e => {
 	e.add('forge:glass', 'kubejs:quartz_glass')
 	e.add('forge:glass', 'kubejs:tempered_glass')
 
-    //plushie
+    //loot
     e.add('kubejs:plushies', Ingredient.of("@plushie_buddies").itemIds)
+    e.add('kubejs:relics', Ingredient.of("@relics").itemIds)
 
 	//manaweaving wands
 	e.add('ico:manaweaving_wands', 'mna:improvised_manaweaver_wand')

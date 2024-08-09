@@ -6,7 +6,19 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## Complex Curiosities I",
+      "Some like to collect intricate gizmos. You can supply.",
+      "",
+      "There is a request for /b/Logic Circuits/b/. Tiny processors capable of many boolean operations. within a small footprint.",
+      "",
+      "Trade those for (unkown reward).",
+      "",
+      "<hr/>",
+      "<task task=\"submit_logic_circuit\" quest=\"complex_curiosities_1\"/>",
+      "<hr/>",
+      "<reward reward=\"award_unkn\" quest=\"complex_curiosities_1\"/>"
+    ],
     "groups": {
       "Section C: Challanges": {
         "position": [

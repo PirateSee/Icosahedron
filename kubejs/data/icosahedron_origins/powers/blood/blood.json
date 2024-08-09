@@ -38,6 +38,22 @@
             "entity": true,
             "shape_type": "outline",
             "fluid_handling": "none",
+            "bientity_condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                    "inverted": true,
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:undead"
+                        },
+                        {
+                            "type": "origins:living"
+                        }
+                    ]
+                }
+            },
             "bientity_action": {
                 "type": "origins:and",
                 "actions": [
@@ -45,7 +61,7 @@
                         "type": "origins:target_action",
                         "action": {
                             "type": "origins:damage",
-                            "amount": 2,
+                            "amount": 1,
                             "damage_type": "minecraft:generic"
                         }
                     },
@@ -57,7 +73,7 @@
                                 {
                                     "type": "origins:change_resource",
                                     "resource": "icosahedron_origins:blood/blood_resource",
-                                    "change": 15,
+                                    "change": 10,
                                     "operation": "add"
                                 },
                                 {
@@ -84,7 +100,7 @@
                                         "type": "origins:resource",
                                         "resource": "icosahedron_origins:blood/blood_resource",
                                         "comparison": ">=",
-                                        "compare_to": 90
+                                        "compare_to": 104
                                     },
                                     "if_action": {
                                         "type": "origins:apply_effect",
@@ -127,7 +143,7 @@
         "type": "origins:modify_exhaustion",
         "modifier": {
             "operation": "multiply_total",
-            "value": -0.7,
+            "value": -0.5,
             "name": "Blood Supplement"
         }
     },
@@ -150,7 +166,7 @@
             "type": "origins:sprinting"
         },
         "type": "origins:action_over_time",
-        "interval": 200,
+        "interval": 220,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "icosahedron_origins:blood/blood_resource",

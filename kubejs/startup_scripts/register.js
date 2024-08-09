@@ -1,22 +1,40 @@
 StartupEvents.registry('fluid', e => {	
 	//coal products
     e.create('coal_tar').bucketColor(0xBBAFB9)
+        .stillTexture('icosahedron:block/fluid/coal_tar')
+        .flowingTexture('icosahedron:block/fluid/coal_tar_flowing')
 	e.create('creosote_oil').bucketColor(0xBBAFB9)
+        .stillTexture('icosahedron:block/fluid/creosote_oil')
+        .flowingTexture('icosahedron:block/fluid/creosote_oil_flowing')
     e.create('sulfur').bucketColor(0xBBAFB9).displayName('Aqueous Sulfur')
         .stillTexture('icosahedron:block/fluid/aq_sulfur')
         .flowingTexture('icosahedron:block/fluid/flowing_aq_sulfur')
 	e.create('slag_runoff').bucketColor(0xBBAFB9).displayName('Slag Runoff')
+        .stillTexture('icosahedron:block/fluid/creosote_oil')
+        .flowingTexture('icosahedron:block/fluid/creosote_oil_flowing')
 
 	//oil
-	e.create('ethylene').bucketColor(0xBBAFB9).displayName('Ethylene')
+	//e.create('ethylene').bucketColor(0xBBAFB9).displayName('Ethylene')
 	e.create('dirty_plastic').bucketColor(0xBBAFB9).displayName('Unrefined Plastic')
+        .stillTexture('icosahedron:block/fluid/dirty_plastic')
+        .flowingTexture('icosahedron:block/fluid/dirty_plastic_flowing')
 	e.create('styrene').bucketColor(0xBBAFB9).displayName('Styrene')
+        .stillTexture('icosahedron:block/fluid/styrene')
+        .flowingTexture('icosahedron:block/fluid/styrene_flowing')
 
 	//slurry
 	e.create('pentlandite_slurry').bucketColor(0xBBAFB9).displayName('Pentlandite Slurry')
+        .stillTexture('icosahedron:block/fluid/pentlandite_slurry')
+        .flowingTexture('icosahedron:block/fluid/pentlandite_slurry_flowing')
 	e.create('hematite_slurry').bucketColor(0xBBAFB9).displayName('Hematite Slurry')
+        .stillTexture('icosahedron:block/fluid/hematite_slurry')
+        .flowingTexture('icosahedron:block/fluid/hematite_slurry_flowing')
 	e.create('malachite_slurry').bucketColor(0xBBAFB9).displayName('Malachite Slurry')
+        .stillTexture('icosahedron:block/fluid/malachite_slurry')
+        .flowingTexture('icosahedron:block/fluid/malachite_slurry_flowing')
 	e.create('bauxite_slurry').bucketColor(0xBBAFB9).displayName('Bauxite Slurry')
+        .stillTexture('icosahedron:block/fluid/bauxite_slurry')
+        .flowingTexture('icosahedron:block/fluid/bauxite_slurry_flowing')
 
 	//molten
 	e.create('molten_pig_iron').displayName('Molten Pig Iron')
@@ -52,6 +70,8 @@ StartupEvents.registry('fluid', e => {
    		.stillTexture('icosahedron:block/blaze_icing')
 		.flowingTexture('icosahedron:block/flowing_blaze_icing')
 	e.create('molten_glass').bucketColor(0xBBAFB9).displayName('Molten Quartz Glass')
+        .stillTexture('icosahedron:block/fluid/molten_glass')
+        .flowingTexture('icosahedron:block/fluid/molten_glass_flowing')
 })
 
 StartupEvents.registry('item', e => {
@@ -183,6 +203,8 @@ StartupEvents.registry('item', e => {
 	e.create('cupronickel_rod').texture('icosahedron:item/ore/alloy/cupronickel_rod')
 	e.create('cupronickel_wire').texture('icosahedron:item/ore/alloy/cupronickel_wire')
 
+    e.create('fluix_sheet').texture('icosahedron:item/ore/alloy/fluix_sheet')
+
     //slag
 	e.create('slag').texture('icosahedron:item/ore/slag')
 	e.create('soft_slag_dust').texture('icosahedron:item/ore/soft_slag_dust')
@@ -267,6 +289,7 @@ StartupEvents.registry('item', e => {
     e.create('unetched_ender_eye').texture('icosahedron:item/unetched_ender_eye')
     e.create('heavyweight').texture('icosahedron:item/heavyweight')
 	e.create('supply_pass').displayName("Supply Cache Access Pass").texture('icosahedron:item/supply_pass')
+    e.create('emerald_tablet').displayName("§aEmerald Tablet§r").texture('icosahedron:item/emerald_tablet')
 
 	//tools
 	e.create('tool_handle').texture('icosahedron:item/tool/tool_handle')

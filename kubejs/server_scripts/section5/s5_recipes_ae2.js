@@ -6,6 +6,10 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:smelting/silicon_from_certus_quartz_dust'})
     e.remove({id: 'ae2:blasting/silicon_from_certus_quartz_dust'})
 
+    e.remove({id: 'ae2:materials/annihilationcore'})
+    e.remove({id: 'ae2:materials/formationcore'})
+    e.remove({id: 'ae2:decorative/quartz_glass'})
+
     //blocks
     e.remove({id: 'ae2:network/parts/quartz_fiber'})
     e.remove({id: 'ae2:network/cables/glass_fluix'})
@@ -19,7 +23,6 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:network/parts/terminals_crafting'})
     e.remove({id: 'ae2:network/parts/terminals_pattern_encoding'})
 
-    
     e.remove({id: 'ae2:network/blocks/energy_cell'})
     e.remove({id: 'ae2:network/blocks/dense_energy_cell'})
     e.remove({id: 'ae2:network/parts/cable_anchor'})
@@ -34,6 +37,20 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:network/crafting/16k_cpu_crafting_storage'})
     e.remove({id: 'ae2:network/crafting/64k_cpu_crafting_storage'})
     e.remove({id: 'ae2:network/crafting/256k_cpu_crafting_storage'})
+
+    e.remove({id: 'ae2:network/blocks/pattern_providers_interface'})
+    e.remove({id: 'ae2:network/blocks/interfaces_interface'})
+    e.remove({id: 'ae2:network/crafting/molecular_assembler'})
+
+    e.remove({id: 'ae2:network/blocks/io_port'})
+    e.remove({id: 'ae2:network/blocks/spatial_io_port'})
+    e.remove({id: 'ae2:network/blocks/spatial_io_pylon'})
+
+    e.remove({id: 'ae2:network/parts/annihilation_plane_alt'})
+    e.remove({id: 'ae2:network/parts/annihilation_plane_alt2'})
+
+    e.remove({id: 'ae2:network/parts/formation_plane'})
+    e.remove({id: 'ae2:network/parts/formation_plane_alt'})
 
     //cells
     e.remove({id: "ae2:network/cells/item_cell_housing"})
@@ -107,6 +124,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:tools/certus_quartz_axe'})
     e.remove({id: 'ae2:tools/fluix_axe'})
 
+    e.remove({id: 'ae2:tools/fluix_upgrade_smithing_template'})
+
     //base resources
     e.custom({
         "type": "ae2:transform",
@@ -135,6 +154,58 @@ ServerEvents.recipes(e => {
     
     e.recipes.create.mixing('ae2:silicon', ['ae2:certus_quartz_dust', 'ae2:sky_dust', 'minecraft:redstone']).heated().id('ico:silicon')
 
+    e.custom({
+		"type": "pneumaticcraft:pressure_chamber",
+		"inputs": [
+            {
+				"item": "minecraft:quartz",
+			},
+            {
+				"item": "kubejs:tungsten_ingot",
+			},
+			{
+				"item": "ae2:logic_processor",
+			},
+			{
+				"item": "ae2:fluix_dust",
+			}
+		],
+		"pressure": 4,
+		"results": [
+			{
+		  	    "item": "ae2:annihilation_core"
+			}
+		]
+	}).id("ico:annihilation_core")
+
+    e.custom({
+		"type": "pneumaticcraft:pressure_chamber",
+		"inputs": [
+            {
+				"tag": "forge:gems/certus_quartz",
+			},
+            {
+				"item": "kubejs:tungsten_ingot",
+			},
+			{
+				"item": "ae2:logic_processor",
+			},
+			{
+				"item": "ae2:fluix_dust",
+			}
+		],
+		"pressure": 4,
+		"results": [
+			{
+		  	    "item": "ae2:formation_core"
+			}
+		]
+	}).id("ico:formation_core")
+
+    e.recipes.create.compacting('ae2:quartz_glass', [Fluid.of('kubejs:molten_glass', 100), 'ae2:certus_quartz_dust'])
+
+    e.recipes.create.compacting('kubejs:fluix_sheet', '2x ae2:fluix_crystal')
+
     //blocks
 
     //wire
@@ -151,6 +222,7 @@ ServerEvents.recipes(e => {
 
     e.recipes.createDeploying('ae2:fluix_covered_cable', ['ae2:fluix_glass_cable', '#minecraft:wool'])
 
+    //network
     e.shaped('ae2:drive', [
 		' ET',
 		'FEF',
@@ -201,6 +273,87 @@ ServerEvents.recipes(e => {
         T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:energy_acceptor')
 
+    e.shaped('ae2:pattern_provider', [
+		' KT',
+		'FCA',
+        'III'
+	], {
+        I: 'betterend:thallasium_ingot',
+        F: 'ae2:formation_core',
+        A: 'ae2:annihilation_core',
+        C: 'create:mechanical_crafter',
+        K: 'ae2:calculation_processor',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:pattern_provider')
+
+    e.shaped('ae2:interface', [
+		' KT',
+		'FCA',
+        'III'
+	], {
+        I: 'betterend:thallasium_ingot',
+        F: 'ae2:formation_core',
+        A: 'ae2:annihilation_core',
+        C: '#forge:glass',
+        K: 'ae2:logic_processor',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:interface')
+
+    e.shaped('ae2:molecular_assembler', [
+		' GT',
+		'FCA',
+        'IGI'
+	], {
+        I: 'kubejs:tungsten_ingot',
+        F: 'ae2:formation_core',
+        A: 'ae2:annihilation_core',
+        C: 'create:mechanical_crafter',
+        G: 'ae2:quartz_glass',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:molecular_assembler')
+
+    e.recipes.createDeploying('ae2:annihilation_plane', ['kubejs:fluix_sheet', 'ae2:annihilation_core'])
+    e.recipes.createDeploying('ae2:formation_plane', ['kubejs:fluix_sheet', 'ae2:formation_core'])
+
+    e.shaped('ae2:spatial_pylon', [
+		' GT',
+		'CAC',
+        'GFG'
+	], {
+        F: 'kubejs:fluix_sheet',
+        A: 'mekanism:alloy_reinforced',
+        G: 'ae2:quartz_glass',
+        C: 'ae2:fluix_glass_cable',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:spatial_pylon')
+
+    e.shaped('ae2:spatial_io_port', [
+		' AT',
+		'CPC',
+        'GEG'
+	], {
+        E: 'ae2:engineering_processor',
+        A: 'mekanism:ultimate_control_circuit',
+        G: 'kubejs:tungsten_ingot',
+        C: 'ae2:fluix_glass_cable',
+        P: 'ae2:io_port',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:spatial_io_port')
+
+    e.shaped('ae2:io_port', [
+		' AT',
+		'CPC',
+        'GEG'
+	], {
+        E: 'ae2:logic_processor',
+        A: 'mekanism:basic_control_circuit',
+        G: 'kubejs:tungsten_ingot',
+        C: 'ae2:drive',
+        P: 'ae2:fluix_glass_cable',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:io_port')
+
+    //monitor
     inter = 'kubejs:incomplete_screen'
 	e.recipes.create.sequenced_assembly([
 		Item.of('2x ae2:semi_dark_monitor').withChance(16.0)
@@ -269,6 +422,7 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying('ae2:level_emitter', ['ae2:calculation_processor', 'create:electron_tube'])
     e.recipes.createDeploying('ae2:storage_monitor', ['#ae2:illuminated_panel', 'ae2:level_emitter'])
 
+    //craft
     e.recipes.createDeploying('ae2:crafting_accelerator', ['ae2:crafting_unit', 'ae2:engineering_processor'])
     e.recipes.createDeploying('ae2:crafting_monitor', ['ae2:storage_monitor', 'ae2:engineering_processor'])
     e.recipes.createDeploying('ae2:1k_crafting_storage', ['ae2:crafting_unit', 'ae2:cell_component_1k'])
@@ -288,8 +442,8 @@ ServerEvents.recipes(e => {
 		B: 'kubejs:carbon_steel_sheet',
         C: '#forge:gems/certus_quartz',
         U: 'kubejs:tungsten_ingot',
-        T: '#ico:tool/hammer'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:item_cell_housing')
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:item_cell_housing')
 
     e.shaped('ae2:fluid_cell_housing', [
 		' UT',
@@ -300,8 +454,8 @@ ServerEvents.recipes(e => {
 		B: 'kubejs:cupronickel_sheet',
         C: '#forge:gems/certus_quartz',
         U: 'kubejs:tungsten_ingot',
-        T: '#ico:tool/hammer'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:fluid_cell_housing')
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fluid_cell_housing')
 
     e.shaped('appbot:mana_cell_housing', [
 		' UT',
@@ -312,8 +466,8 @@ ServerEvents.recipes(e => {
 		B: 'botania:manasteel_ingot',
         C: 'botania:gaia_ingot',
         U: 'kubejs:tungsten_ingot',
-        T: '#ico:tool/hammer'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:mana_cell_housing')
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:mana_cell_housing')
 
     e.shaped('appmek:chemical_cell_housing', [
 		' UT',
@@ -324,8 +478,8 @@ ServerEvents.recipes(e => {
 		B: 'mekanism:ingot_osmium',
         C: '#forge:gems/certus_quartz',
         U: 'kubejs:tungsten_ingot',
-        T: '#ico:tool/hammer'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:chemical_cell_housing')
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:chemical_cell_housing')
 
     e.shaped('ae2:blank_pattern', [
 		'  T',
@@ -335,8 +489,8 @@ ServerEvents.recipes(e => {
         G: 'ae2:quartz_glass',
 		B: 'kubejs:wrought_iron_ingot',
         C: '#forge:gems/certus_quartz',
-        T: '#ico:tool/hammer'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:blank_pattern')
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:blank_pattern')
 
     e.shaped('ae2:view_cell', [
 		'  T',
@@ -346,8 +500,8 @@ ServerEvents.recipes(e => {
         G: 'ae2:quartz_glass',
 		B: 'kubejs:pig_iron_ingot', 
         C: '#forge:gems/certus_quartz',
-        T: '#ico:tool/hammer'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:view_cell')
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:view_cell')
 
     e.recipes.create.mechanical_crafting('ae2:cell_component_1k', [
         'GICIG',
@@ -437,4 +591,18 @@ ServerEvents.recipes(e => {
     e.recipes.create.mixing('2x ae2:sky_dust', ['ae2:sky_dust', '6x betterend:umbralith']).id('ico:sky_stone_umbralith')
 
     e.recipes.create.milling('4x betterend:crystal_shards', 'betterend:aurora_crystal').id('ico:aurora_crystal_milling')
+
+    e.custom({
+        "type":"createaddition:charging",
+        "input": {
+            "item": "minecraft:compass",
+            "count": 1
+        },
+        "result": {
+            "item": "ae2:meteorite_compass",
+            "count": 1
+        },
+        "energy": 16000,
+        "maxChargeRate": 400
+    }).id("ico:meteorite_compass_tesla")
 })

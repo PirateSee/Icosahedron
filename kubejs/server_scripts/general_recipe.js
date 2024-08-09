@@ -184,4 +184,7 @@ ServerEvents.recipes(e => {
 	corundum_processing("violet")
 	corundum_processing("white")
 	corundum_processing("black")
+
+    //no more tablet
+    e.recipes.create.milling('mekanism:dust_emerald', 'kubejs:emerald_tablet').id('ico:anger_the_gods')
 })
