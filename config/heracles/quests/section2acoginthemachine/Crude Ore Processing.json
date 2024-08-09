@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "atlas",
     "Blast Smelting",
     "The Sieve"
   ],

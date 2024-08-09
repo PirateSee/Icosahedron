@@ -1,13 +1,13 @@
-filename = 'pneumaticcraft-repressurized-6.0.15+mc1.20.1.jar'
+filename = 'pneumaticcraft-repressurized-6.0.16+mc1.20.1.jar'
 name = 'PneumaticCraft: Repressurized'
 side = 'both'
 
 [download]
-hash = 'c4dbf0e0dda8bf1e397443a81245270883be57b2a2d5553fd5905aae62e1e279edf49273a2b7864e9a55c155260adb4574ec74bbab9c001d95bb015422c45102'
+hash = '964303b4c56e5746ecdb01f85e0319425b61e99a90e1837b01e1cb1316504611714309d89d12d9a7c06db240f2c4bc6bce262f99ecba70939d1ac3f2ad9972d4'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/ncAcdgk7/versions/Pq4YT1ta/pneumaticcraft-repressurized-6.0.15%2Bmc1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/ncAcdgk7/versions/T1JaBU0q/pneumaticcraft-repressurized-6.0.16%2Bmc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'ncAcdgk7'
-version = 'Pq4YT1ta'
+version = 'T1JaBU0q'

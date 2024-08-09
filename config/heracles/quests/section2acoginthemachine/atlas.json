@@ -1,0 +1,58 @@
+{
+  "dependencies": [
+    "Crude Ore Processing"
+  ],
+  "tasks": {
+    "get_atlas": {
+      "type": "heracles:item",
+      "item": "antiqueatlas:empty_antique_atlas",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "icon": {
+        "item": {
+          "id": "antiqueatlas:antique_atlas",
+          "count": 1,
+          "nbt": {}
+        },
+        "type": "heracles:item"
+      }
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          232,
+          27
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "antiqueatlas:antique_atlas",
+        "count": 1,
+        "nbt": {}
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "De-Google maps"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

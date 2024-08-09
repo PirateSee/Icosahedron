@@ -1,0 +1,13 @@
+filename = 'Galosphere-1.20.1-1.4.1-Forge.jar'
+name = 'Galosphere'
+side = 'both'
+
+[download]
+hash = 'b8da969941750d8e6aad849400e0cb313cdcefc03385c77c1514d2569eb7e05f03c59f277527ad8ccb4005e3b3d9a4c93cd789466f9ee018cbdc9f3ff9a45118'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Kn7xyQ1v/versions/JCd7hBd9/Galosphere-1.20.1-1.4.1-Forge.jar'
+
+[update.modrinth]
+mod-id = 'Kn7xyQ1v'
+version = 'JCd7hBd9'

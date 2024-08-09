@@ -1,0 +1,13 @@
+filename = 'Philips-Ruins1.20.1-4.3.jar'
+name = 'Philips Ruins'
+side = 'both'
+
+[download]
+hash = '91506781105fe01eb1b4fc69a777f9d9970156f8cb3b8cf198c49eac30f7b07e301ff20ccecb4141888ea8ba233b4311fbab090c36a9572b9bba45405b4f53e6'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/KdJhOYVV/versions/cNX57BAM/Philips-Ruins1.20.1-4.3.jar'
+
+[update.modrinth]
+mod-id = 'KdJhOYVV'
+version = 'cNX57BAM'
