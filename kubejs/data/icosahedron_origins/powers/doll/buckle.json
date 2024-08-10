@@ -6,5 +6,5 @@
         "type": "origins:exhaust",
         "amount": 0.4
     },
-    "cooldown": 10
+    "cooldown": 40
 }

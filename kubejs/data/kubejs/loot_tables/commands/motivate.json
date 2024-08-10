@@ -1,0 +1,204 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Quality means doing it right when no one is looking."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You Suck",
+                  "bold": true,
+                  "underlined": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:emerald_tablet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "§aSecretorum Hermetis"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "The sacrifice of oneself to the pursuit of knowledge Is the highest tribute to the gods.",
+                  "color": "green",
+                  "underlined": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:emerald_tablet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "§aTabula Smaragdina"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "If all the mountains were of silver and gold",
+                    "color": "green",
+                    "underlined": true
+                  }
+                ],
+                {
+                  "text": "What would they profit a man who lives in constant fear of death?",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "Hence there cannot be in the whole world anything better than our Medicine, Which has power to heal all the diseases of the flesh.",
+                  "color": "green",
+                  "underlined": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:emerald_tablet",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "§aEmerald Tablet - Volume I"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Tis true without lying, certain and most true. That which is below is like that which is above And that which is above is like that which is below",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "And that which is above is like that which is below",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "To do the miracles of one only thing",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "And as all things have been and arose",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "From one by the mediation of one:",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "So all things have their birth",
+                  "color": "green",
+                  "underlined": true
+                },
+                {
+                  "text": "From this one thing by adaptation.",
+                  "color": "green",
+                  "underlined": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "I'd rather have half of my idea change the world than my whole idea be a few papers in a journal."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "It is better to keep your mouth closed and let people think you are a fool than to open it and remove all doubt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Go to Heaven for the climate, Hell for the company"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You must have a supplier relationship of constant improvement."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

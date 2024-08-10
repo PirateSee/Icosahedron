@@ -29,7 +29,7 @@
     "minecraft:blaze_powder": 1200
   },
   "validDimensions": {
-    "minecraft:the_end": false,
+    "minecraft:the_end": true,
     "minecraft:overworld": true,
     "minecraft:the_nether": true
   },

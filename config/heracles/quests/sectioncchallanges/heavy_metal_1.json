@@ -8,13 +8,31 @@
       "collection": "MANUAL"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_copper": {
+      "item": {
+        "id": "minecraft:copper_ingot",
+        "count": 64
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## Heavy Metal I",
+      "We need /b/fresh metal/b/ from the best of sources. Go mining, or better yet, /6/automate something/6/ to do it for you.",
+      "",
+      "This shipment needs /b/Blocks of Iron/b/. The most simple and classic metal.",
+      "",
+      "Payment of /b/Copper/b/ will be delivered upon completion.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_iron\" quest=\"heavy_metal_1\"/>",
+      "<hr/>",
+      "<reward reward=\"award_copper\" quest=\"heavy_metal_1\"/>"
     ],
     "groups": {
       "Section C: Challanges": {

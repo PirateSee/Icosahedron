@@ -1,6 +1,10 @@
 {
     "name": "§a+ §r§nBlink",
-    "description": "Teleport 8 blocks forward, even through walls",
+    "description": "While not sneaking, teleport 8 blocks forward, even through walls",
+    "condition": {
+        "inverted": true,
+        "type": "origins:sneaking"
+    },
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:and",

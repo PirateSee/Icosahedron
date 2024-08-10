@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "icosahedron:item/buckets/bucket_coal_tar"
+    }
+}

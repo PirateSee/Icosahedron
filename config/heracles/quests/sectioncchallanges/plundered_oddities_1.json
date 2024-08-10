@@ -8,13 +8,31 @@
       "collection": "MANUAL"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_sack": {
+      "item": {
+        "id": "supplementaries:sack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## Plundered Oddities I",
+      "Go out there and get some /6/mob drop loot/6/!",
+      "",
+      "The target is /b/Ender Pearls./b/ Best obtained from killed /b/Endermen/b/.",
+      "",
+      "The bounty is a /b/sack/b/. It can store 9 items and /6/retains contents when mined/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_ender_pearl\" quest=\"plundered_oddities_1\"/>",
+      "<hr/>",
+      "<reward reward=\"award_sack\" quest=\"plundered_oddities_1\"/>"
     ],
     "groups": {
       "Section C: Challanges": {

@@ -23,11 +23,11 @@ ServerEvents.recipes(e => {
 		],
 		"results": [
 			{
-			"item": pdust
+			    "item": pdust
 			},
 			{
-			"item": "kubejs:soft_slag_dust",
-			"chance": 0.15
+                "item": "kubejs:soft_slag_dust",
+                "chance": 0.15
 			},
 			{
 				"item": 'create:experience_nugget',
@@ -45,7 +45,7 @@ ServerEvents.recipes(e => {
 	//crude_ore_processing('kubejs:limonite_ore','kubejs:impure_iron_grit','kubejs:iron_grit','minecraft:iron_ingot')
 
 	e.remove([{ type: 'minecraft:smelting', output: 'create:zinc_ingot'}, { type: 'minecraft:blasting', output: 'create:zinc_ingot' }])
-	e.recipes.createMilling('kubejs:sphalerite_grit','kubejs:sphalerite_ore')
+	e.recipes.createMilling(['kubejs:sphalerite_grit', Item.of('kubejs:sphalerite_grit').withChance(0.5)],'kubejs:sphalerite_ore')
 	//e.recipes.createMilling('kubejs:impure_zinc_grit','create:raw_zinc')
 	e.custom({
 		"type": "createsifter:sifting",
@@ -60,7 +60,7 @@ ServerEvents.recipes(e => {
 		"results": [
 		{
 			"item": 'kubejs:small_zinc_grit',
-			"count": 1
+			"count": 2
 		},
 		{
 			"item": 'kubejs:small_zinc_grit',
@@ -85,7 +85,7 @@ ServerEvents.recipes(e => {
 	e.shapeless('kubejs:zinc_grit', '4x kubejs:small_zinc_grit')
 	e.blasting('create:zinc_ingot', 'kubejs:zinc_grit')
 
-	e.recipes.createMilling('kubejs:impure_iron_grit','kubejs:limonite_ore')
+	e.recipes.createMilling(['kubejs:impure_iron_grit', Item.of('kubejs:impure_iron_grit').withChance(0.5)],'kubejs:limonite_ore')
 	//e.recipes.createMilling('kubejs:impure_zinc_grit','create:raw_zinc')
 	e.custom({
 		"type": "createsifter:sifting",
@@ -100,7 +100,7 @@ ServerEvents.recipes(e => {
 		"results": [
 		{
 			"item": 'kubejs:small_iron_grit',
-			"count": 1
+			"count": 2
 		},
 		{
 			"item": 'kubejs:small_iron_grit',
@@ -117,6 +117,8 @@ ServerEvents.recipes(e => {
 	e.shapeless('kubejs:iron_grit', '4x kubejs:small_iron_grit')
 	e.blasting('minecraft:iron_ingot', 'kubejs:iron_grit')
   
+    e.shapeless('kubejs:copper_grit', '4x kubejs:small_copper_grit')
+
 	//wrought iron
 	
 	/*e.recipes.melterMelting(Fluid.of('kubejs:molten_pig_iron', 180),"minecraft:iron_ingot").processingTime(800).minimumHeat(4)

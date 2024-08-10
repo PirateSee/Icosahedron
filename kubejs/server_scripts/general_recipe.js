@@ -239,4 +239,6 @@ ServerEvents.recipes(e => {
 	}).id('ico:stone_rune_blank')
 
 	e.shapeless('mna:purified_vinteum_dust', ['mna:vinteum_dust', 'mna:vinteum_dust', 'mna:arcane_compound','minecraft:glowstone_dust']).id('ico:purified_vinteum_dust')
+    //no more tablet
+    e.recipes.create.milling('mekanism:dust_emerald', 'kubejs:emerald_tablet').id('ico:anger_the_gods')
 })

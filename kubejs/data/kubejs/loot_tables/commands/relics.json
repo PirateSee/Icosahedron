@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:tag",
+					"name": "kubejs:relics",
+					"expand": true
+				}
+			]
+		}
+	]
+}

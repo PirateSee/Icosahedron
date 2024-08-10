@@ -94,9 +94,9 @@ ServerEvents.recipes(e => {
     e.recipes.create.mixing('32 minecraft:brick', ['kubejs:plasticizer', '4x minecraft:clay']).id("ico:plasticizer_brick")
     e.recipes.create.mixing('24x minecraft:white_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/white']).id("ico:plasticizer_concrete")
 
-    e.recipes.create.mixing('minecraft:blue_ice', [Fluid.of('minecraft:water', 500), Fluid.of('kubejs:ethylene', 50)]).id("ico:ethylene_blue_ice")
-    e.recipes.create.mixing('minecraft:packed_ice', [Fluid.of('minecraft:water', 500), Fluid.of('kubejs:ethylene', 10)]).id("ico:ethylene_packed_ice")
-    e.recipes.create.mixing('minecraft:ice', [Fluid.of('minecraft:water', 250), Fluid.of('kubejs:ethylene', 1)]).id("ico:ethylene_ice")
+    e.recipes.create.mixing('minecraft:blue_ice', [Fluid.of('minecraft:water', 500), Fluid.of('mekanism:ethene', 50)]).id("ico:ethylene_blue_ice")
+    e.recipes.create.mixing('minecraft:packed_ice', [Fluid.of('minecraft:water', 500), Fluid.of('mekanism:ethene', 10)]).id("ico:ethylene_packed_ice")
+    e.recipes.create.mixing('minecraft:ice', [Fluid.of('minecraft:water', 250), Fluid.of('mekanism:ethene', 1)]).id("ico:ethylene_ice")
 
     e.custom({
         "type": "pneumaticcraft:thermo_plant",
@@ -129,14 +129,14 @@ ServerEvents.recipes(e => {
         },
         "input2": {
           "type": "pneumaticcraft:fluid",
-          "amount": 600,
+          "amount": 900,
           "fluid": 'kubejs:coal_tar'
         },
         "pressure": 3.5,
         "time": 400
     }).id("ico:rubber")
 
-    e.recipes.create.compacting('kubejs:polystyrene', [Fluid.of('kubejs:styrene', 500), {fluidTag: 'forge:plantoil', amount: 200}]).heated().id("ico:polystyrene")
+    e.recipes.create.compacting('kubejs:polystyrene', [Fluid.of('kubejs:styrene', 250), {fluidTag: 'forge:plantoil', amount: 250}]).heated().id("ico:polystyrene")
 
     e.recipes.create.compacting('32x kubejs:sealant', 'kubejs:rubber').heated().id("ico:rubber_sealant")
 
@@ -153,16 +153,18 @@ ServerEvents.recipes(e => {
     }).id("ico:laser_emitter")
 
     e.custom({
-      "type":"createaddition:charging",
-      "input": {
-        "item": "kubejs:pressed_iron",
-        "count": 1
-      },
-      "result": {
-        "item": "kubejs:magnetized_iron",
-        "count": 1
-      },
-      "energy": 2000,
-      "maxChargeRate": 200
+        "type":"createaddition:charging",
+        "input": {
+            "item": "kubejs:pressed_iron",
+            "count": 1
+        },
+        "result": {
+            "item": "kubejs:magnetized_iron",
+            "count": 1
+        },
+        "energy": 2000,
+        "maxChargeRate": 200
     }).id("ico:magnetized_iron")
+
+    
 })

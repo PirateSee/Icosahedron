@@ -73,13 +73,21 @@
             "command": "tp ~ ~0.25 ~"
         },
         "else_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:slow_falling",
-                "duration": 30,
-                "amplifier": 0,
-                "show_particles": false,
-                "show_icon": false
+            "type": "origins:if_else",
+            "condition": {
+                "inverted": true,
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_end"
+            },
+            "if_action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slow_falling",
+                    "duration": 30,
+                    "amplifier": 0,
+                    "show_particles": true,
+                    "show_icon": true
+                }
             }
         }
     }

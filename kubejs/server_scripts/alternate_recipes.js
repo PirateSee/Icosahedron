@@ -14,8 +14,6 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'kubejs:aquatrine']),
 	]).transitionalItem(inter).loops(1)
 
-	e.recipes.createDeploying('kubejs:wooden_slide', ['#minecraft:planks', 'create:iron_sheet'])
-
 	e.custom({
 	"type": "pneumaticcraft:pressure_chamber",
 	"inputs": [
@@ -145,49 +143,49 @@ ServerEvents.recipes(e => {
 		"type": "create_mechanical_extruder:extruding",
 		"ingredients": [
 			{
-			"item": "create:mechanical_saw"
+			    "fluid": "create:chocolate"
 			},
 			{
-			"tag": "minecraft:logss"
-			}
-		],
-		"catalyst": {
-			"item": "kubejs:treated_wood_planks"
-		},
-		"result": {
-			"item": "minecraft:oak_log"
-		}
-	})
-
-	e.custom({
-		"type": "create_mechanical_extruder:extruding",
-		"ingredients": [
-			{
-			"fluid": "create:chocolate"
-			},
-			{
-			"fluid": "minecraft:lava"
+			    "fluid": "minecraft:lava"
 			}
 		],
 		"result": {
 			"item": "create:scoria"
 		}
-	})
+	}).id('extrude_scoria')
 
 	e.custom({
 		"type": "create_mechanical_extruder:extruding",
 		"ingredients": [
 			{
-			"fluid": "create:honey"
+			    "fluid": "create:honey"
 			},
 			{
-			"fluid": "minecraft:lava"
+			    "fluid": "minecraft:lava"
 			}
 		],
 		"result": {
 			"item": "create:limestone"
 		}
-	})
+	}).id('extrude_limestone')
+
+    e.custom({
+		"type": "create_mechanical_extruder:extruding",
+		"ingredients": [
+			{
+                "fluid": "minecraft:lava"
+            },
+			{
+			    "item": "minecraft:blue_ice"
+			}
+		],
+		"catalyst": {
+			"item": "minecraft:soul_soil"
+		},
+		"result": {
+			"item": "minecraft:oak_log"
+		}
+	}).id('extrude_basalt')
 
 	//transmutation
 
@@ -225,6 +223,32 @@ ServerEvents.recipes(e => {
         F: 'minecraft:flint'
     }).id('ico:arrow')
 
+    //automate
+
+    e.custom({
+		"type": "createsifter:sifting",
+		"ingredients": [
+		{
+			"item": "createsifter:brass_mesh"
+		},
+		{
+			"item": 'minecraft:red_sand'
+		}
+		],
+		"results": [
+		{
+			"item": 'immersive_weathering:red_sand_layer_block',
+			"count": 1
+		},
+		{
+			"item": 'kubejs:small_copper_grit',
+			"chance": 0.5
+		}
+		],
+		"processingTime": 300,
+		"minimumSpeed": 64.0
+	})
+
 	//other
 
 	e.recipes.create.deploying('minecraft:spectral_arrow', ['minecraft:arrow', 'minecraft:glowstone_dust'])
@@ -255,4 +279,6 @@ ServerEvents.recipes(e => {
     }).id("ico:antique_ink")
 
     e.recipes.create.emptying([Fluid.of('create_enchantment_industry:ink', 1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
+
+    e.recipes.create.mixing('2x createadditon:electrum_ingot', ['minecraft:gold_ingot', 'mna:transmuted_silver']).id('ico:electrum')
 })

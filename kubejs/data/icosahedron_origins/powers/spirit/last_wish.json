@@ -34,7 +34,7 @@
     "hold_resource": {
         "type": "origins:resource",
         "min": 0,
-        "max": 15,
+        "max": 10,
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",

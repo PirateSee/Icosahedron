@@ -4,17 +4,35 @@
     "submit_dark_metal_ingot": {
       "type": "heracles:item",
       "item": "born_in_chaos_v1:dark_metal_ingot",
-      "amount": 32,
+      "amount": 8,
       "collection": "MANUAL"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_sack": {
+      "item": {
+        "id": "supplementaries:sack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## Plundered Oddities II",
+      "Go out there and get some /6/mob drop loot/6/!",
+      "",
+      "The target is /b/Dark Metal Ingots./b/ Many /6/tough enemies/6/ drop /b/fragments/b/ of one.",
+      "",
+      "The bounty is a /b/sack/b/. It can store 9 items and /6/retains contents when mined/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_dark_metal_ingot\" quest=\"plundered_oddities_2\"/>",
+      "<hr/>",
+      "<reward reward=\"award_sack\" quest=\"plundered_oddities_2\"/>"
     ],
     "groups": {
       "Section C: Challanges": {

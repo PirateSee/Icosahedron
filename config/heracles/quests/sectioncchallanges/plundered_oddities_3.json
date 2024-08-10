@@ -8,13 +8,31 @@
       "collection": "MANUAL"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_sack": {
+      "item": {
+        "id": "supplementaries:sack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## Plundered Oddities III",
+      "Go out there and get some /6/mob drop loot/6/!",
+      "",
+      "The target is /b/Blaze Rods./b/ Best obtained from killed /b/Blazes/b/.",
+      "",
+      "The bounty is a /b/sack/b/. It can store 9 items and /6/retains contents when mined/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_blaze_rod\" quest=\"plundered_oddities_3\"/>",
+      "<hr/>",
+      "<reward reward=\"award_sack\" quest=\"plundered_oddities_3\"/>"
     ],
     "groups": {
       "Section C: Challanges": {

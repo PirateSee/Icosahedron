@@ -1,12 +1,15 @@
 {
     "name": "§c- §r§nCarnivorous",
-    "description": "Eat a diet of meat. Veggies give very little saturation.",
+    "description": "Eat a diet of meat. Veggies give no saturation.",
     "type": "origins:multiple",
     "tooltip": {
         "type": "origins:tooltip",
         "item_condition": {
             "type": "origins:and",
             "conditions": [
+                {
+                    "type": "origins:food"
+                },
                 {
                     "inverted": true,
                     "type": "origins:or",
@@ -26,11 +29,8 @@
                     "inverted": true,
                     "type": "origins:ingredient",
                     "ingredient": {
-                        "item": "origins:ignore_diet"
+                        "tag": "origins:ignore_diet"
                     }
-                },
-                {
-                    "type": "origins:food"
                 }
             ]
         },
@@ -43,6 +43,9 @@
             "type": "origins:and",
             "conditions": [
                 {
+                    "type": "origins:food"
+                },
+                {
                     "inverted": true,
                     "type": "origins:or",
                     "conditions": [
@@ -61,11 +64,8 @@
                     "inverted": true,
                     "type": "origins:ingredient",
                     "ingredient": {
-                        "item": "origins:ignore_diet"
+                        "tag": "origins:ignore_diet"
                     }
-                },
-                {
-                    "type": "origins:food"
                 }
             ]
         },

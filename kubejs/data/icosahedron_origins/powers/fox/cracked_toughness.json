@@ -4,7 +4,7 @@
     "modifier": {
         "attribute": "minecraft:generic.armor_toughness",
         "operation": "multiply_base",
-        "value": -0.15,
+        "value": -0.1,
         "name": "Cracked Armour Toughness"
     },
     "update_health": false

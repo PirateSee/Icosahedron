@@ -1,6 +1,6 @@
 {
     "name": "§c- §r§nBuckle",
-    "description": "For a while after taking damage, health regen is disabled and you move slower.",
+    "description": "For ten seconds after taking damage, health regen is disabled and you move slower.",
     "condition": {
         "type": "origins:resource",
         "resource": "icosahedron_origins:guard/buckle_resource",

@@ -1,0 +1,61 @@
+{
+    "name": "§a+ §r§nJockey",
+    "description": "Use entities while sneaking to get them to sit ontop of you. Other players can use you to sit on you.",
+    "type": "origins:multiple",
+    "mount_on": {
+        "condition": {
+            "type": "origins:sneaking"
+        },
+        "type": "origins:action_on_entity_use",
+        "bientity_action": {
+            "type": "origins:invert",
+            "action": {
+                "type": "origins:mount"
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:living"
+                    },
+                    {
+                        "inverted": true,
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:player"
+                    }
+                ]
+            }
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "action_result": "success",
+        "priority": 0
+    },
+    "dismount": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:passenger_action",
+            "action": {
+                "type": "origins:dismount"
+            }
+        },
+        "key": {
+            "key": "key.sneak"
+        }
+    },
+    "mount_other": {
+        "type": "origins:action_on_being_used",
+        "bientity_action": {
+            "type": "origins:mount"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "action_result": "success",
+        "priority": 0
+    }
+}

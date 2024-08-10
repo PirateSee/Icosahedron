@@ -111,6 +111,12 @@ ServerEvents.recipes(e => {
     e.remove({id:'pneumaticcraft:sourdough'})
     e.remove({id:'minecraft:ender_eye'})
 
+    //kill
+    e.remove({id:'pneumaticcraft:pneumatic_helmet'})
+    e.remove({id:'pneumaticcraft:pneumatic_chestplate'})
+    e.remove({id:'pneumaticcraft:pneumatic_leggings'})
+    e.remove({id:'pneumaticcraft:pneumatic_boots'})
+
     //recipes
 
     //logstics
@@ -673,7 +679,7 @@ ServerEvents.recipes(e => {
       "fluid_input": {
         "type": "pneumaticcraft:fluid",
         "amount": 250,
-        "fluid": "kubejs:ethylene"
+        "fluid": "mekanism:ethene"
       },
       "item_input": {
           "item": "kubejs:plasticizer"
@@ -1044,7 +1050,7 @@ ServerEvents.recipes(e => {
     "results": [
       {
         "amount": 7,
-        "fluid": "kubejs:ethylene"
+        "fluid": "mekanism:ethene"
       },
       {
         "amount": 2,

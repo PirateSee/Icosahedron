@@ -6,7 +6,7 @@
         {
             "attribute": "minecraft:generic.max_health",
             "operation": "addition",
-            "value": 4,
+            "value": 6,
             "name": "Sturdy Bonus"
         },
         {

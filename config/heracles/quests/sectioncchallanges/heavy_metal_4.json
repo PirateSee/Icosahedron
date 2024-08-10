@@ -10,13 +10,31 @@
       "collection": "MANUAL"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_tungsten": {
+      "item": {
+        "id": "kubejs:tungsten_ingot",
+        "count": 32
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## Heavy Metal IV",
+      "We need /b/fresh metal/b/ from the best of sources. Go mining, or better yet, /6/automate something/6/ to do it for you.",
+      "",
+      "This shipment needs /b/Blocks of Steel/b/. High-strength and versitile alloy.",
+      "",
+      "Payment of /b/Tungsten/b/ will be delivered upon completion.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_steel\" quest=\"heavy_metal_4\"/>",
+      "<hr/>",
+      "<reward reward=\"award_tungsten\" quest=\"heavy_metal_4\"/>"
     ],
     "groups": {
       "Section C: Challanges": {

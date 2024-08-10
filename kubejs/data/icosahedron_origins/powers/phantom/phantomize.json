@@ -108,6 +108,24 @@
                     "space": "local",
                     "client": true,
                     "server": true
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.firework_rocket.launch",
+                    "volume": 0.6,
+                    "pitch": 0.6
+                },
+                {
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:ash",
+                    "count": 30,
+                    "speed": 0.1,
+                    "spread": {
+                        "x": 0.5,
+                        "y": 2,
+                        "z": 0.5
+                    },
+                    "offset_y": 3
                 }
             ]
         },
