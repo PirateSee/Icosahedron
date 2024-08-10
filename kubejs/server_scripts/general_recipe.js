@@ -184,4 +184,59 @@ ServerEvents.recipes(e => {
 	corundum_processing("violet")
 	corundum_processing("white")
 	corundum_processing("black")
+
+	
+	//mna
+
+	e.remove({id:'mna:vinteum_manaweaver_wand'})
+	e.remove({id:'mna:chimerite_manaweaver_wand'})
+	e.remove({id:'mna:stone_runes/rune_blank'})
+
+	e.shaped('mna:guide_book', [
+		' AI', 
+		' BV', 
+		' AI'
+	], {
+		A: 'mna:arcane_compound',
+		I: 'mna:vinteum_ingot',
+		B: 'minecraft:writable_book',
+		V: 'mna:vellum'
+	}).id('ico:guide_book')
+
+	e.shaped('mna:manaweaver_wand', [
+		'TI ', 
+		'DFD', 
+		' S '
+	], {
+		T: '#ico:tool/file',
+		I: 'mna:vinteum_ingot',
+		D: 'mna:vinteum_dust',
+		F: 'mna:ritual_focus_minor',
+		S: 'minecraft:stick'
+	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:manaweaver_wand')
+
+	e.shaped('mna:manaweaver_wand_advanced', [
+		'TCW', 
+		'DFD', 
+		' S '
+	], {
+		W: '#ico:tool/screwdriver',
+		T: '#ico:tool/file',
+		C: 'mna:chimerite_gem',
+		D: 'mna:purified_vinteum_dust',
+		F: 'mna:ritual_focus_lesser',
+		S: 'betterend:leather_wrapped_stick'
+	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:manaweaver_wand_advanced')
+
+	e.shaped('mna:stone_rune_blank', [
+		'ASD', 
+		'SSS', 
+		'DSA'
+	], {
+		A: 'mna:arcane_compound',
+		D: 'mna:arcane_ash',
+		S: '#forge:stone'
+	}).id('ico:stone_rune_blank')
+
+	e.shapeless('mna:purified_vinteum_dust', ['mna:vinteum_dust', 'mna:vinteum_dust', 'mna:arcane_compound','minecraft:glowstone_dust']).id('ico:purified_vinteum_dust')
 })

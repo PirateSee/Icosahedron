@@ -1,6 +1,8 @@
 ServerEvents.recipes(e => {
 	//removal
 	
+	console.info("log from s1")
+
 	//andesite alloy
 	e.remove({id:'create:crafting/materials/andesite_alloy'})
 	e.remove({id:'create:crafting/materials/andesite_alloy_from_zinc'})
@@ -9,6 +11,7 @@ ServerEvents.recipes(e => {
 	//recipes
 	
 	//andesite alloy
+
 	e.shaped('kubejs:andesite_alloy_dust', [
 		'IA', 
 		'AI'
