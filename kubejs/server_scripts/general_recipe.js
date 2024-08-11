@@ -191,6 +191,10 @@ ServerEvents.recipes(e => {
 	e.remove({id:'mna:vinteum_manaweaver_wand'})
 	e.remove({id:'mna:chimerite_manaweaver_wand'})
 	e.remove({id:'mna:stone_runes/rune_blank'})
+	e.remove({id:'mna:manaweaving/eldrin/eldrin_rift'})
+	e.remove({id:'mna:manaweaving/eldrin/wellspring_pillar'})
+	e.remove({id:'mna:purified_vinteum_dust'})
+	e.remove({id:'mna:basic_table'})
 
 	e.shaped('mna:guide_book', [
 		' AI', 
@@ -240,6 +244,30 @@ ServerEvents.recipes(e => {
 
 	e.shapeless('mna:purified_vinteum_dust', ['mna:vinteum_dust', 'mna:vinteum_dust', 'mna:arcane_compound','minecraft:glowstone_dust']).id('ico:purified_vinteum_dust')
 
+	e.shaped('mna:basic_table', [
+		'sWs', 
+		'LHL', 
+		'LSL'
+	], {
+		H: '#ico:tool/hammer',
+		S: '#ico:tool/saw',
+		W: '#minecraft:planks',
+		L: '#minecraft:logs',
+		s: 'mna:transmuted_silver'
+	}).damageIngredient(Item.of('#ico:tool/hammer')).damageIngredient(Item.of('#ico:tool/saw')).id('ico:basic_table')
+
+	/*/e.shaped('mna:ornate_table', [
+		'sWs', 
+		'LHL', 
+		'LSL'
+	], {
+		H: '#ico:tool/hammer',
+		S: '#ico:tool/file',
+		W: '#minecraft:planks',
+		L: '#minecraft:logs',
+		s: 'mna:transmuted_silver'
+	}).damageIngredient(Item.of('#ico:tool/hammer')).damageIngredient(Item.of('#ico:tool/file')).id('ico:basic_table')
+/*/
 	e.recipes.create.mechanical_crafting('mna:wellspring_pillar', [
 		'SRS', 
 		'PCa', 
@@ -262,6 +290,20 @@ ServerEvents.recipes(e => {
 		P: 'mna:rune_projection',
 		a: 'mna:rune_arcane'
 	}).id('ico:wellspring_pillar')
+
+	e.recipes.create.mechanical_crafting('mna:eldrin_rift', [
+		' CCC ',
+		'CEOEC',
+		'COMOC',
+		'CEOEC',
+		' CCC '
+	], {
+		C: 'mna:chimerite_gem',
+		E: 'mna:rune_ender',
+		O: 'mekanism:dust_osmium',
+		M: 'mna:greater_mote_ender'
+		
+	}).id('ico:eldrin_rift')
 
 	e.recipes.create.mixing(Fluid.of('kubejs:mana_tea', 500), [Fluid.of('minecraft:water', 500), 'minecraft:sugar', '#botania:mystical_flowers']).heated()
 	e.recipes.create.filling('mna:mana_coffee', ['mna:clay_mug',Fluid.of('kubejs:mana_tea', 250)])
