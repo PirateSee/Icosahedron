@@ -5,7 +5,7 @@
 	#The maximum range at which a player local to another player can be heard without requiring being an op.
 	#Default: 100
 	#Range: > 0
-	talkRange = 850
+	talkRange = 356
 	#The maximum range at which a player local to another player can be heard when shouting.
 	#Default: 400
 	#Range: > 0
@@ -16,7 +16,7 @@
 	shoutFoodCost = 1
 	#Set to true to treat operators like players. Aka talking hits the entire world
 	#Default: false
-	opAsPlayer = false
+	opAsPlayer = true
 
 #Miscellaneous
 [miscellaneous]
