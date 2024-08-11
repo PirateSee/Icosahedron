@@ -5,5 +5,8 @@
   "rollEnabled": true,
   "rollMagnitude": 1.0,
   "applyToOthers": true,
-  "dbgShowStandingTransforms": false
+  "applyToNonPlayerEntities": true,
+  "blockedEntities": [],
+  "dbgShowStandingTransforms": false,
+  "dbgShowValueScales": false
 }

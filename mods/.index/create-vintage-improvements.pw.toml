@@ -1,13 +1,13 @@
-filename = 'vintageimprovements-1.20.1-0.2.0.1.jar'
+filename = 'vintageimprovements-1.20.1-0.2.0.2.jar'
 name = 'Create: Vintage Improvements'
 side = 'both'
 
 [download]
-hash = '2f4219c0822aec8c922ba6308dcba69bfe0197be34b9fcf21cc26cb2e615c3a3b112c1216e7d4592b18370b253e9634ac93f73085216184878ee519354a186b6'
+hash = '5eefc215c6073a707dcc6e46e580849b3f7a0d11147bbb48bc8d307e3e77d4be11ca09b19173f84ebb1ddc44e207471228f4692db4705f964b596e12238b4a82'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/S27aYArf/versions/EiiQt417/vintageimprovements-1.20.1-0.2.0.1.jar'
+url = 'https://cdn.modrinth.com/data/S27aYArf/versions/Z8VfPb3D/vintageimprovements-1.20.1-0.2.0.2.jar'
 
 [update.modrinth]
 mod-id = 'S27aYArf'
-version = 'EiiQt417'
+version = 'Z8VfPb3D'

@@ -22,8 +22,16 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 5,
+          "weight": 2,
+          "quality": -10,
           "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Toilet paper",
+                "strikethrough": true
+              }
+            },
             {
               "function": "minecraft:set_lore",
               "lore": [
@@ -39,6 +47,7 @@
         {
           "type": "minecraft:item",
           "name": "kubejs:emerald_tablet",
+          "quality": 2,
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -59,6 +68,7 @@
         {
           "type": "minecraft:item",
           "name": "kubejs:emerald_tablet",
+          "quality": 2,
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -91,6 +101,7 @@
         {
           "type": "minecraft:item",
           "name": "kubejs:emerald_tablet",
+          "quality": 2,
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -193,6 +204,564 @@
               "lore": [
                 {
                   "text": "You must have a supplier relationship of constant improvement."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Good design is obvious. Great design is transparent."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "There is no such thing as a boring project. There are only boring executions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Rock and Stone!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "There is nothing impossible to they who will try."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Keep your face always toward the sunshine, and shadows will fall behind you"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Champions keep playing until they get it right."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You are your best thing."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Success is not final, failure is not fatal: it is the courage to continue that counts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Nothing is impossible. The word itself says, 'I'm possible!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Champions keep playing until they get it right."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "90% of gamblers leave before they hit big!",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You are your best thing."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "\"It is better to fail in originality than to succeed in imitation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Nothing is impossible. The word itself says, 'I'm possible!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "A person who never made a mistake never tried anything new."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Script for song page 1"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "The Unholy Moley"
+                },
+                {
+                  "text": "Underworld bully"
+                },
+                {
+                  "text": "I will crush those who oppose me"
+                },
+                {
+                  "text": "Just like mummy told me"
+                },
+                {
+                  "text": "My ambitions are cavernous"
+                },
+                {
+                  "text": "My motto is avarice"
+                },
+                {
+                  "text": "With loot I get so amourous"
+                },
+                {
+                  "text": "For gold I am ravenous"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Script for song page 2"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "My manner is bombastic"
+                },
+                {
+                  "text": "My statements, sarcastic"
+                },
+                {
+                  "text": "My flow's pyroclastic"
+                },
+                {
+                  "text": "My legend's dynastic"
+                },
+                {
+                  "text": "When I rise like Lazarus"
+                },
+                {
+                  "text": "My odour is always hazardous"
+                },
+                {
+                  "text": "Your skill is at best average"
+                },
+                {
+                  "text": "There's no way you can handle this"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Script for song page 3"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Noticed your moves are atrocious"
+                },
+                {
+                  "text": "So focus"
+                },
+                {
+                  "text": "Hopeless"
+                },
+                {
+                  "text": "Is what you are"
+                },
+                {
+                  "text": "Now bow down to a true star"
+                },
+                {
+                  "text": "Voice like thunder"
+                },
+                {
+                  "text": "I leave the earth drawn asunder"
+                },
+                {
+                  "text": "So don't make a blunder"
+                },
+                {
+                  "text": "You'll be six feet under"
+                },
+                {
+                  "text": "You better hide under covers I do what I wanna"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Script for song page 4"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Did your feelings get hurt"
+                },
+                {
+                  "text": "Step up girl you better stay alert"
+                },
+                {
+                  "text": "Or you'll be nappin up in that dirt"
+                },
+                {
+                  "text": "Fortissimole and I'm puttin in the work"
+                },
+                {
+                  "text": "I hope you like this room"
+                },
+                {
+                  "text": "Cause now it will be your tomb"
+                },
+                {
+                  "text": "All your plans I will ruin"
+                },
+                {
+                  "text": "If you don't play to my tune"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Script for song page 5"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "I thought you were gonna dig deep"
+                },
+                {
+                  "text": "You sure didn't"
+                },
+                {
+                  "text": "Must be kidding"
+                },
+                {
+                  "text": "Now you can't make a peep"
+                },
+                {
+                  "text": " Fortissimole in these streets"
+                },
+                {
+                  "text": "Pause for the call"
+                },
+                {
+                  "text": "From the windows to the walls"
+                },
+                {
+                  "text": "See victory is not yours"
+                },
+                {
+                  "text": "I came for the roars and applause"
+                },
+                {
+                  "text": "And you are the main course"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": "Victory is mine "
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Believe you can and you're halfway there."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Love yourself first and everything else falls into line."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Be yourself; everyone else is already taken."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "We will fail when we fail to try."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Life isn't about finding yourself. Life is about creating yourself."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Above all, be the heroine of your life, not the victim."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Embrace the glorious mess that you are."
                 }
               ]
             }

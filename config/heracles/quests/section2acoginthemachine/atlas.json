@@ -24,13 +24,15 @@
       "text": ""
     },
     "description": [
-      ""
+      "Are /4/YOU/4/ tired of having no clue there the hell you are? Well you are in luck, by using /b/Antique Ink/b/ you can craft /b/Antique Atlas/b/! Go ahead on a adventure to draw every single hill, river or pond you will see and remember ||fish has seen all your sins||",
+      "",
+      "<crafting-recipe id=\"ico:empty_antique_atlal\" grid-width=\"3\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
-          232,
-          27
+          240,
+          30
         ]
       }
     },

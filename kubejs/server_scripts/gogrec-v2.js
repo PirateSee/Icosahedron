@@ -504,4 +504,8 @@ ServerEvents.recipes(e => {
         p: 'mekanism:basic_control_circuit'
     }).id('ico:fuelwood_heater')
     e.remove({id:'mekanism:fuelwood_heater'})
+
+    e.shapeless('antiqueatlas:empty_antique_atlas', ['minecraft:book', 'minecraft:compass', 'supplementaries:antique_ink']).id('ico:empty_antique_atlal')
+    e.remove({id:'antiqueatlas:empty_atlas'})
+    e.remove({id:'antiqueatlas:empty_atlas_new'})
 })
