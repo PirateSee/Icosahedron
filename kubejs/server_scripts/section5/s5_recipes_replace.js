@@ -953,7 +953,7 @@ ServerEvents.recipes(e => {
         }
     }).id("ico:alloy_reinforced")
 
-    e.recipes.create.compacting(['mekanism:alloy_atomic', Fluid.of('kubejs:slag_runoff', 100)], ["mekanism:alloy_reinforced", 'kubejs:refined_tungsten', Fluid.of('kubejs:ethylene', 500)]).superheated().id("alloy_atomic")
+    e.recipes.create.compacting(['mekanism:alloy_atomic', Fluid.of('kubejs:slag_runoff', 100)], ["mekanism:alloy_reinforced", 'kubejs:refined_tungsten', Fluid.of('mekanism:ethene', 500)]).superheated().id("ico:alloy_atomic")
 
     e.custom({
         "type": "mekanism:reaction",
@@ -1017,7 +1017,7 @@ ServerEvents.recipes(e => {
         "duration": 100,
         "fluidInput": {
             "amount": 750,
-            "fluid": "kubejs:ethylene"
+            "fluid": "mekanism:ethene"
         },
         "gasInput": {
             "amount": 500,

@@ -69,6 +69,17 @@ ServerEvents.recipes(e => {
 
     e.shapeless('2x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '#botania:mystical_flowers'])
 
+    e.shaped('botania:pump', [
+        'WWT',
+        'SPS', 
+		'WWW'
+	], {
+		W: 'botania:livingrock', 
+		P: 'create:mechanical_pump',
+        S: 'botania:manasteel_ingot',
+        T: '#ico:tool/file'
+	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:pump')
+
     e.custom({
 		"type": "create:compacting",
 		"ingredients": [

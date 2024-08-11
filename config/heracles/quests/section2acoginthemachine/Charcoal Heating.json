@@ -23,8 +23,6 @@
       "",
       "To use, fuel the burner by /b/right clicking/b/ it with /6/charcoal/6/. Once fueled, /6/activate it with a flint and steel./6/ Once started, it will /6/burn until it runs out of fuel./6/",
       "",
-      "> --/7/The heat this gives off is fairly poor, but it allows for some basic cooking of mixed ingredients. I've got to find a better solution if I want to be able to melt anything metal. For now, it can speed up Andesite Alloy production./7/--",
-      "",
       "<hr/>",
       "<task task=\"get_basic_burner\" quest=\"Charcoal Heating\"/>"
     ],

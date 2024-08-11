@@ -320,15 +320,6 @@ ServerEvents.recipes(e => {
         R: 'minecraft:redstone'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:walkie_talkie')
 
-    e.shaped('simpleradio:transceiver', [
-		'IT', 
-		'CR',
-		'C '
-	], {
-		T: '#ico:tool/screwdriver',
-		
-	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:transceiver')
-
     e.shaped('simpleradio:transmitting_module', [
 		'SCT', 
 		'RRR',
@@ -432,10 +423,12 @@ ServerEvents.recipes(e => {
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:radiosmither')
 
     e.shaped('simpleradio:antenna', [
-		'CT', 
-		'C '
+        'BBB',
+        ' CT', 
+		' C '
 	], {
 		T: '#ico:tool/screwdriver',
+        B: 'iron_bars',
         C: 'kubejs:carbon_steel_rod'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:antenna')
 
