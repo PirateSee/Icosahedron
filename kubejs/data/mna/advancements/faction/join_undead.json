@@ -1,0 +1,31 @@
+{
+	"parent": "mna:root",
+	"display": {
+		"icon": {
+			"item": "mna:mark_of_the_undead"
+		},
+		"title": {
+			"translate": "mna:faction/join_undead.title"
+		},
+		"description": {
+			"translate": "mna:faction/join_undead.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"criteria": {
+		"faction": {
+			"trigger": "mna:faction_join",
+			"conditions": {
+				"faction": "mna:undead"
+			}
+		}
+	},
+	"requirements": [],
+    "rewards":
+    {
+        "function": "kubejs:undead"
+    }
+}

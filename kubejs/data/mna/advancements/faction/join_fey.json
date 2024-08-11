@@ -1,0 +1,31 @@
+{
+	"parent": "mna:root",
+	"display": {
+		"icon": {
+			"item": "mna:mark_of_the_fey"
+		},
+		"title": {
+			"translate": "mna:faction/join_fey.title"
+		},
+		"description": {
+			"translate": "mna:faction/join_fey.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"criteria": {
+		"faction": {
+			"trigger": "mna:faction_join",
+			"conditions": {
+				"faction": "mna:fey"
+			}
+		}
+	},
+	"requirements": [],
+    "rewards":
+    {
+        "function": "kubejs:fey"
+    }
+}
