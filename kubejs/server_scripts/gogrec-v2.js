@@ -508,4 +508,24 @@ ServerEvents.recipes(e => {
     e.shapeless('antiqueatlas:empty_antique_atlas', ['minecraft:book', 'minecraft:compass', 'supplementaries:antique_ink']).id('ico:empty_antique_atlal')
     e.remove({id:'antiqueatlas:empty_atlas'})
     e.remove({id:'antiqueatlas:empty_atlas_new'})
+
+
+    e.remove([{ type: 'minecraft:smelting', output: "mna:vinteum_dust"}, { type: 'minecraft:blasting', output: "mna:vinteum_dust" }])
+
+    e.recipes.create.crushing(['mna:vinteum_dust', Item.of('2x mna:vinteum_dust').withChance(0.5) , Item.of('mna:vinteum_dust').withChance(0.25) , Item.of('mna:chimerite_gem').withChance(0.07)],'mna:vinteum_ore').id('ico:vinteum_ore_crushing')
+
+    e.recipes.create.crushing(['mna:vinteum_dust', Item.of('2x mna:vinteum_dust').withChance(0.5) , Item.of('mna:vinteum_dust').withChance(0.25) , Item.of('mna:chimerite_gem').withChance(0.07)],'mna:raw_vinteum').id('ico:vinteum_raw_ore_crushing')
+
+    e.recipes.create.crushing(['kubejs:unrefined_diamond', Item.of('kubejs:unrefined_diamond').withChance(0.75), Item.of('mna:chimerite_gem').withChance(0.35) , Item.of('create:experience_nugget').withChance(0.75), Item.of('minecraft:cobblestone').withChance(0.12)],'minecraft:diamond_ore').id('ico:diamond_ore_crush1')
+    e.recipes.create.crushing(['2x kubejs:unrefined_diamond', Item.of('kubejs:unrefined_diamond').withChance(0.75), Item.of('mna:chimerite_gem').withChance(0.35) , Item.of('create:experience_nugget').withChance(0.75), Item.of('minecraft:cobbled_deepslate').withChance(0.12)],'minecraft:deepslate_diamond_ore').id('ico:diamond_ore_crush2')
+
+
+    e.recipes.create.crushing(['kubejs:rough_emerald', Item.of('kubejs:rough_emerald').withChance(0.75), Item.of('mna:chimerite_gem').withChance(0.4) , Item.of('create:experience_nugget').withChance(0.75), Item.of('minecraft:cobblestone').withChance(0.12)],'minecraft:emerald_ore').id('ico:diamond_emerald_crush1')
+    e.recipes.create.crushing(['2x kubejs:rough_emerald', Item.of('kubejs:rough_emerald').withChance(0.75), Item.of('mna:chimerite_gem').withChance(0.4) , Item.of('create:experience_nugget').withChance(0.75), Item.of('minecraft:cobbled_deepslate').withChance(0.12)],'minecraft:deepslate_emerald_ore').id('ico:diamond_emerald_crush2')
+
+
+    e.remove({id:'create:crushing/diamond_ore'})
+    e.remove({id:'create:crushing/deepslate_diamond_ore'})
+    e.remove({id:'create:crushing/emerald_ore'})
+    e.remove({id:'create:crushing/deepslate_emerald_ore'})
 })
