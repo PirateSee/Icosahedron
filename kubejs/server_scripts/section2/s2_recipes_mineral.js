@@ -72,7 +72,7 @@ ServerEvents.recipes(e => {
 		},
 		{
 			"item": 'mna:vinteum_dust',
-			"chance": 0.05
+			"chance": 0.15
 		},
 		{
 			"item": "kubejs:soft_slag_dust",

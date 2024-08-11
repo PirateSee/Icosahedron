@@ -76,7 +76,7 @@ ServerEvents.recipes(e => {
 			},
             {
                 "item": 'mna:vinteum_dust',
-                "chance": 0.05
+                "chance": 0.25
             },
 			{
 				"item": 'immersive_weathering:sand_layer_block',
@@ -96,7 +96,7 @@ ServerEvents.recipes(e => {
 	})
 
     e.recipes.create.milling('3x kubejs:soft_slag_dust', 'kubejs:slag')
-    e.recipes.create.crushing([Item.of('minecraft:quartz').withChance(0.2), Item.of('mna:vinteum_dust').withChance(0.1), Item.of('createaddition:electrum_nugget').withChance(0.2), "minecraft:flint", Item.of('create:experience_nugget').withChance(0.1)], 'kubejs:slag')
+    e.recipes.create.crushing([Item.of('minecraft:quartz').withChance(0.2), Item.of('mna:vinteum_dust').withChance(0.4), Item.of('createaddition:electrum_nugget').withChance(0.2), "minecraft:flint", Item.of('create:experience_nugget').withChance(0.1)], 'kubejs:slag')
 
 	e.custom({
 		"type":"vintageimprovements:centrifugation",
@@ -108,7 +108,7 @@ ServerEvents.recipes(e => {
 		],
 		"results": [ 
 			{
-				"item": 'kubejs:soft_slag_dust'
+				"item": 'kubejs:slag'
 			},
 			{
 				"item": 'minecraft:flint'
@@ -160,7 +160,7 @@ ServerEvents.recipes(e => {
 	e.recipes.createoreexcavation.drilling(['minecraft:netherrack', 'kubejs:scorched_tailings', Item.of('kubejs:sulfur').withChance(0.02)], 'ico:bauxite_tailings', 240).id('ico:bauxite_tailings_drill').drill('kubejs:compressed_iron_drill')
 
     //end
-    e.recipes.createoreexcavation.vein('{"text": "Ender Wolframite"}', 'kubejs:wolframite_ore').placement(128, 16, 17922462).biomeWhitelist('forge:the_end/in').id('ico:ender_wolframite')
+    e.recipes.createoreexcavation.vein('{"text": "Ender Wolframite"}', 'kubejs:wolframite_ore').placement(128, 16, 17922462).biomeWhitelist('forge:end/in_the').id('ico:ender_wolframite')
 	e.recipes.createoreexcavation.drilling(['minecraft:end_stone', Item.of('kubejs:wolframite_ore').withChance(0.5), Item.of('kubejs:uraninite_ore').withChance(0.05)], 'ico:ender_wolframite', 240).id('ico:ender_wolframite_drill').drill('kubejs:netherite_drill')
 
 	//extracted material refinement
@@ -226,7 +226,7 @@ ServerEvents.recipes(e => {
 		D: 'mna:purified_vinteum_dust',
 		F: 'mna:ritual_focus_lesser',
 		S: 'betterend:leather_wrapped_stick'
-	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:manaweaver_wand_advanced')
+	}).damageIngredient(Item.of('#ico:tool/file')).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:manaweaver_wand_advanced')
 
 	e.shaped('mna:stone_rune_blank', [
 		'ASD', 
@@ -239,6 +239,127 @@ ServerEvents.recipes(e => {
 	}).id('ico:stone_rune_blank')
 
 	e.shapeless('mna:purified_vinteum_dust', ['mna:vinteum_dust', 'mna:vinteum_dust', 'mna:arcane_compound','minecraft:glowstone_dust']).id('ico:purified_vinteum_dust')
+
+    //simple radio
+    e.shaped('simpleradio:walkie_talkie', [
+		'IT', 
+		'CR',
+		'C '
+	], {
+		T: '#ico:tool/screwdriver',
+		C: 'minecraft:raw_copper',
+        I: 'minecraft:iron_nugget',
+        R: 'minecraft:redstone'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:walkie_talkie')
+
+    e.shaped('simpleradio:transceiver', [
+		'IT', 
+		'CR',
+		'C '
+	], {
+		T: '#ico:tool/screwdriver',
+		
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:transceiver')
+
+    e.shaped('simpleradio:transmitting_module', [
+		'SCT', 
+		'RRR',
+	], {
+		T: '#ico:tool/screwdriver',
+		C: 'kubejs:carbon_steel_ingot',
+        R: 'kubejs:redstone_cable',
+        S: '#forge:rods/all_metal'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:transmitting_module')
+
+    e.shaped('simpleradio:receiving_module', [
+		'ECT', 
+		'RRR',
+	], {
+		T: '#ico:tool/screwdriver',
+		C: 'kubejs:carbon_steel_sheet',
+        R: 'kubejs:redstone_cable',
+        E: 'create:electron_tube'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:recieving_module')
+
+    e.shaped('simpleradio:listener_module', [
+		'ECT', 
+		'RRR',
+	], {
+		T: '#ico:tool/screwdriver',
+		C: 'kubejs:carbon_steel_ingot',
+        R: 'kubejs:redstone_cable',
+        E: 'create:brass_casing'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:listener_module')
+
+    e.shaped('simpleradio:speaker_module', [
+		'ECT', 
+		'RRR',
+	], {
+		T: '#ico:tool/screwdriver',
+		C: 'kubejs:carbon_steel_sheet',
+        R: 'kubejs:redstone_cable',
+        E: 'minecraft:note_block'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:speaker_module')
+
+    e.shaped('simpleradio:transceiver', [
+		' UT', 
+		'RLE',
+        'CSC'
+	], {
+		T: '#ico:tool/screwdriver',
+		R: 'simpleradio:transmitting_module',
+        E: 'simpleradio:receiving_module',
+        L: 'simpleradio:listener_module',
+        S: 'simpleradio:speaker_module',
+        U: 'kubejs:logic_circuit',
+        C: 'kubejs:carbon_steel_ingot'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:transceiver')
+
+    e.shaped('simpleradio:radio', [
+		'CCT', 
+		'SUE'
+	], {
+		T: '#ico:tool/screwdriver',
+        E: 'simpleradio:receiving_module',
+        S: 'simpleradio:speaker_module',
+        U: 'kubejs:logic_circuit',
+        C: 'kubejs:carbon_steel_sheet'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:radio')
+
+    e.shaped('simpleradio:microphone', [
+		' WT', 
+		'LWR',
+        'nNn'
+	], {
+		T: '#ico:tool/screwdriver',
+        R: 'simpleradio:transmitting_module',
+        L: 'simpleradio:listener_module',
+        N: 'kubejs:nickel_ingot',
+        n: 'kubejs:nickel_ingot_sheet',
+        W: '#minecraft:wool'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:microphone')
+
+    e.shaped('simpleradio:speaker', [
+		'  T', 
+		'SnE',
+        'nNn'
+	], {
+		T: '#ico:tool/screwdriver',
+        E: 'simpleradio:receiving_module',
+        S: 'simpleradio:speaker_module',
+        N: 'kubejs:nickel_ingot',
+        n: 'kubejs:nickel_ingot_sheet',
+        W: '#minecraft:wool'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:speaker')
+
+    e.shaped('simpleradio:antenna', [
+		'CT', 
+		'C '
+	], {
+		T: '#ico:tool/screwdriver',
+        C: 'kubejs:carbon_steel_rod'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:antenna')
+
     //no more tablet
     e.recipes.create.milling('mekanism:dust_emerald', 'kubejs:emerald_tablet').id('ico:anger_the_gods')
 })

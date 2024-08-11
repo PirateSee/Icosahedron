@@ -40,12 +40,6 @@ ServerEvents.tags('item', e => {
 	e.add('ico:component', 'pneumaticcraft:reinforced_bricks')
 	e.add('ico:component', 'pneumaticcraft:pressure_tube')
 	e.add('ico:component', 'pneumaticcraft:turbine_blade')
-	
-    //ore replacable
-    e.add('ico:end_ore_replacable', Ingredient.of('#forge:stones/end').itemIds)
-    e.add('ico:end_ore_replacable', 'minecraft:blackstone')
-    e.add('ico:end_ore_replacable', 'minecraft:basalt')
-    e.add('ico:end_ore_replacable', 'minecraft:smooth_basalt')
 
 	//ores
 	e.add('ico:ore', 'kubejs:limonite_ore')
@@ -243,4 +237,10 @@ ServerEvents.tags('block', e => {
 	e.add('forge:plant', 'betterend:neon_cactus')
 	e.add('forge:plant', 'betterend:cave_pumpkin')
 	e.add('forge:plant', 'betterend:dense_vine')
+
+    //ore replacable
+    e.add('ico:end_ore_replacable', Ingredient.of('#c:end_stones').itemIds)
+    e.add('ico:end_ore_replacable', 'minecraft:blackstone')
+    e.add('ico:end_ore_replacable', 'minecraft:basalt')
+    e.add('ico:end_ore_replacable', 'minecraft:smooth_basalt')
 })
