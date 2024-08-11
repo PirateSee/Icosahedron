@@ -11,7 +11,20 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Protective Upgrade"
@@ -23,7 +36,9 @@
       "Tools are made with Tetra.",
       "",
       "<hr/>",
-      "<task task=\"adv_suit_up\" quest=\"Arms of Steel\"/>"
+      "<task task=\"adv_suit_up\" quest=\"Arms of Steel\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"Arms of Steel\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

@@ -1,14 +1,31 @@
 {
     "name": "§c- §r§nFlimsy Swing",
-    "description": "Damage you deal is reduced slightly (unless you're on fire)",
-    "condition": {
-        "inverted": true,
-        "type": "origins:on_fire"
+    "description": "Damage you deal is reduced slightly, and attack speed reduced. (unless you're on fire)",
+    "type": "origins:multiple",
+    "damage": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:on_fire"
+        },
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": -0.2,
+            "name": "Flimsy Swing Penalty"
+        }
     },
-    "type": "origins:modify_damage_dealt",
-    "modifier": {
-        "operation": "multiply_base",
-        "value": -0.05,
-        "name": "Flimsy Swing Penalty"
+    "speed": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:on_fire"
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "multiply_base",
+            "value": -0.2
+        },
+        "tick_rate": 20,
+        "update_health": false
     }
 }

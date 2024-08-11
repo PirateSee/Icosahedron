@@ -113,5 +113,12 @@
     "tag.item.ae2.all_quartz": "Quartz",
     "tag.item.ae2.can_remove_color": "Color Removers",
 
-    "tag.item.ae2.p2p_attunements.fe_p2p_tunnel": "Item P2P Attunable"
+    "tag.item.ae2.p2p_attunements.fe_p2p_tunnel": "Energy P2P Attunable",
+    "tag.item.ae2.p2p_attunements.me_p2p_tunnel": "ME P2P Attunable",
+    "tag.item.ae2.p2p_attunements.redstone_p2p_tunnel": "Redstone P2P Attunable",
+    "tag.item.ae2.p2p_attunements.item_p2p_tunnel": "Item P2P Attunable",
+    "tag.item.ae2.p2p_attunements.fluid_p2p_tunnel": "Fluid P2P Attunable",
+    "tag.item.ae2.p2p_attunements.light_p2p_tunnel": "Light P2P Attunable",
+    "tag.item.appbot.p2p_attunements.mana_p2p_tunnel": "Mana P2P Attunable",
+    "tag.item.appmek.p2p_attunements.chemical_p2p_tunnel": "Chemical P2P Attunable"
 }

@@ -17,7 +17,15 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Metal of the Earth ---",
+      "A fine alloy of magic.",
+      "",
+      "Terrasteel is made on the /b/Terrestrial Agglomeration Plate/b/. To make an ingot, an /6/incredibly large amount of mana/6/ must be pumped into the /b/Plate/b/.",
+      "",
+      "This will net you a single /b/Terrasteel Ingot/b/. This will be enough to progress, but if you want more, you're going to need to ramp up /b/Mana/b/ production.",
+      "",
+      "<hr/>",
+      "<task task=\"get_terrasteel\" quest=\"metal of the earth\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

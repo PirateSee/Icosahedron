@@ -209,6 +209,7 @@ ServerEvents.tags('item', e => {
     //loot
     e.add('kubejs:plushies', Ingredient.of("@plushie_buddies").itemIds)
     e.add('kubejs:relics', Ingredient.of("@relics").itemIds)
+    e.remove('kubejs:relics', 'relics:researching_table')
 
 	//manaweaving wands
 	e.add('ico:manaweaving_wands', 'mna:improvised_manaweaver_wand')

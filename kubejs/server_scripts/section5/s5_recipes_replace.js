@@ -42,6 +42,11 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:fluid_tank/elite'})
     e.remove({id: 'mekanism:fluid_tank/ultimate'})
 
+    e.remove({id: 'mekanism:bin/basic'})
+    e.remove({id: 'mekanism:bin/advanced'})
+    e.remove({id: 'mekanism:bin/elite'})
+    e.remove({id: 'mekanism:bin/ultimate'})
+
     e.remove({id: 'mekanism:dynamic_tank'})
     e.remove({id: 'mekanism:dynamic_valve'})
 
@@ -71,6 +76,13 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:sps_casing'})
     e.remove({id: 'mekanism:sps_port'})
 
+    //transporter
+    e.remove({id: 'mekanism:transmitter/universal_cable/basic'})
+    e.remove({id: 'mekanism:transmitter/mechanical_pipe/basic'})
+    e.remove({id: 'mekanism:transmitter/pressurized_tube/basic'})
+    e.remove({id: 'mekanism:transmitter/logistical_transporter/basic'})
+    e.remove({id: 'mekanism:transmitter/thermodynamic_conductor/basic'})
+
     //components
     e.remove({id:'mekanism:steel_casing'})
     e.remove({id:'mekanism:control_circuit/basic'})
@@ -97,6 +109,10 @@ ServerEvents.recipes(e => {
 
     //equipment
     e.remove({id: 'mekanism:energy_tablet'})
+
+    //begone
+    e.remove({id: 'mekanism:nutritional_liquifier'})
+    e.remove({id: 'mekanism:canteen'})
 
     //infusion
     e.custom({
@@ -379,6 +395,49 @@ ServerEvents.recipes(e => {
             P: 'kubejs:high_pressure_plate'
     }).id('ico:basic_fluid_tank')*/
 
+    e.shaped('mekanism:basic_bin', [ 
+        ' AT', 
+        'C C',
+        'CCC'
+        ], {
+            A: 'kubejs:cupronickel_sheet',
+            C: 'minecraft:cobblestone',
+            T: '#ico:tool/file'
+    }).damageIngredient(Item.of('#ico:tool/file')).id('ico:basic_bin')
+
+    e.shaped('mekanism:advanced_bin', [ 
+        ' AT', 
+        'CBC',
+        'CCC'
+        ], {    
+            B: 'mekanism:basic_bin',
+            A: 'mekanism:alloy_infused',
+            C: 'minecraft:cobblestone',
+            T: '#ico:tool/file'
+    }).damageIngredient(Item.of('#ico:tool/file')).id('ico:advanced_bin')
+
+    e.shaped('mekanism:elite_bin', [ 
+        ' AT', 
+        'CBC',
+        'CCC'
+        ], {    
+            B: 'mekanism:advanced_bin',
+            A: 'mekanism:alloy_reinforced',
+            C: 'minecraft:cobblestone',
+            T: '#ico:tool/file'
+    }).damageIngredient(Item.of('#ico:tool/file')).id('ico:elite_bin')
+
+    e.shaped('mekanism:ultimate_bin', [ 
+        ' AT', 
+        'CBC',
+        'CCC'
+        ], {    
+            B: 'mekanism:elite_bin',
+            A: 'mekanism:alloy_atomic',
+            C: 'minecraft:cobblestone',
+            T: '#ico:tool/file'
+    }).damageIngredient(Item.of('#ico:tool/file')).id('ico:ultimate_bin')
+
     /*e.shaped('2x mekanism:thermal_evaporation_block', [ 
         ' HT', 
         'HSH',
@@ -640,6 +699,59 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'create:portable_fluid_interface']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(1).id("ico:sps_port")
+
+    //transmitter
+    e.shaped('4x mekanism:basic_universal_cable', [ 
+        ' ST', 
+        'IOI'
+        ], {
+            O: 'kubejs:redstone_cable',
+            I: 'mekanism:ingot_steel',
+            S: 'kubejs:sealant',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_universal_cable')
+
+    e.shaped('4x mekanism:basic_mechanical_pipe', [ 
+        ' ST', 
+        'IOI'
+        ], {
+            O: 'create:mechanical_pump',
+            I: 'mekanism:ingot_steel',
+            S: 'kubejs:sealant',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_mechanical_pipe')
+
+    e.shaped('4x mekanism:basic_logistical_transporter', [ 
+        ' ST', 
+        'IOI'
+        ], {
+            O: 'mekanism:basic_control_circuit',
+            I: 'mekanism:ingot_steel',
+            S: 'kubejs:sealant',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_logistical_transporter')
+
+    e.shaped('4x mekanism:basic_thermodynamic_conductor', [ 
+        ' ST', 
+        'IOI'
+        ], {
+            O: 'kubejs:cupronickel_sheet',
+            I: 'mekanism:ingot_steel',
+            S: 'kubejs:sealant',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_thermodynamic_conductor')
+
+    e.shaped('2x mekanism:restrictive_transporter', [ 
+        ' ST', 
+        'IOI'
+        ], {
+            O: 'quark:grate',
+            I: 'mekanism:ingot_steel',
+            S: 'kubejs:sealant',
+            T: '#ico:tool/hammer'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:restrictive_transporter')
+
+    e.recipes.createDeploying('mekanism:diversion_transporter', ['mekanism:restrictive_transporter', 'create:electron_tube']).id('ico:diversion_transporter')
 
     //components
     e.custom({

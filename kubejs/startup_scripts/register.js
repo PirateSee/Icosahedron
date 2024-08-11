@@ -278,6 +278,7 @@ StartupEvents.registry('item', e => {
 
 	//magic
 	e.create('rune_backing').texture('icosahedron:item/magic/rune_backing')
+    e.create('rune_essence').texture('icosahedron:item/magic/rune_essence').displayName('Rune of Essence')
 
 	e.create('ornate_gold').texture('icosahedron:item/magic/ornate_gold')
 	/*e.create('dripping_source_gem').texture('icosahedron:item/magic/dripping_source_gem')

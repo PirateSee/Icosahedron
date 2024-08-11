@@ -14,7 +14,13 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Spark of Mana ---",
+      "A spark in the right cirmcumstance can turn into so much more.",
+      "",
+      "/b/Sparks/b/ /6/rapidly transport/6/ /b/mana/b/ between them rapidly. Place one over a /b/Mana Pool/b/ or similar storage device, and the second on a destination. The /6/first device may acess the second's storage/6/ to fuel itself.",
+      "",
+      "<hr/>",
+      "<task task=\"get_spark\" quest=\"spark_of_mana\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

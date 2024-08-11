@@ -10,13 +10,51 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_relic": {
+      "title": "Recieve Random Relic",
+      "icon": {
+        "item": {
+          "id": "relics:researching_table",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/relics",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "## - Gate to Alfheim ---",
+      "Another dimension? Not quite, but a good trading partner nontheless.",
+      "",
+      "There are some resources that just don't exist in our realm. Living in one more of technology and less of magic, mystical materials are scarce. However, rumors of a realm by the name of /a/Alfheim/a/ with an /6/abondance of useful magical materials/6/ have been around for a while. Elves that used to roam this realm were banished back to their home of Alfheim. But there is a theoretical way to open a weak link- enough to trade items with them.",
+      "",
+      "The blueprints for a supposed portal is as folows:",
+      "",
+      "■ - Air",
+      "/4/■/4/ - Livingwood (any varient)",
+      "/2/■/2/ - Shimmering Livingwood",
+      "/a/■/a/ - /e/Elven Gateway Core/e/",
+      "",
+      "/0/■/0//4/■/4//2/■/2//4/■/4//0/■/0/",
+      "/4/■/4//0/■■■/0//4/■/4/",
+      "/2/■/2//0/■■■/0//2/■/2/",
+      "/4/■/4//0/■■■/0//4/■/4/",
+      "/0/■/0//4/■/4//a/■/a//4/■/4//0/■/0/",
+      "",
+      "This portal must be/6/ powered with/6/ up to two /b/Mana Pools/b/ with /b/Natura Pylons/b/ above them. Activate the portal by tapping on the /e/Elven Gateway Core/e/ with your /b/Wand of the Forest/b/. The process of opening the portal will likely take a /c/large amount of mana/c/, and continously consume to keep open for trading. If /c/any pool runs out of mana/c/, the portal may /6/shut down/6/.",
+      "",
+      "If the elves on the other side see your /b/Lexica Botanica/b/, being good (distant) neighbors, they should leave a note about trade agrements inside.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_open_gate\" quest=\"gate to alfheim\"/>",
+      "<hr/>",
+      "<reward reward=\"award_relic\" quest=\"gate to alfheim\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

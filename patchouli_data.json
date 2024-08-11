@@ -98,7 +98,16 @@
         "botania:alfhomancy/gaia_ritual",
         "botania:functional_flowers/exoflame",
         "botania:functional_flowers/intro",
-        "botania:devices/incense"
+        "botania:devices/incense",
+        "botania:mana/pool_cart",
+        "botania:mana/distributor",
+        "botania:devices/platform",
+        "botania:devices/brewery",
+        "botania:devices/complex_brews",
+        "botania:alfhomancy/elf_message",
+        "botania:alfhomancy/intro",
+        "botania:misc/decorative_blocks",
+        "botania:devices/mana_conjuration"
       ],
       "bookmarks": [],
       "completedManualQuests": []

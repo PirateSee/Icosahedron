@@ -50,13 +50,20 @@
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:apply_effect",
-                    "effect": {
-                        "effect": "minecraft:slow_falling",
-                        "duration": 12,
-                        "amplifier": 0,
-                        "show_particles": true,
-                        "show_icon": true
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:dimension",
+                        "dimension": "minecraft:the_end"
+                    },
+                    "if_action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:slow_falling",
+                            "duration": 12,
+                            "amplifier": 0,
+                            "show_particles": true,
+                            "show_icon": true
+                        }
                     }
                 },
                 {

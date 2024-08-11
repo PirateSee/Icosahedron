@@ -5,6 +5,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:mana_spreader'})
     e.remove({id: 'botania:runic_altar'})
     e.remove({id: 'botania:runic_altar_alt'})
+    e.remove({id: 'botania:brewery'})
 
     e.remove({id: 'mna:arcane_compound'})
 
@@ -52,6 +53,19 @@ ServerEvents.recipes(e => {
         G: 'minecraft:gold_ingot',
         T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:mana_spreader')
+
+    e.shaped('botania:brewery', [
+        ' BT',
+        'WMW', 
+		'NSN'
+	], {
+		W: 'botania:livingrock', 
+		M: 'botania:rune_mana',
+        B: 'minecraft:brewing_stand',
+        S: 'botania:manasteel_block',
+        N: 'minecraft:gold_nugget',
+        T: '#ico:tool/file'
+	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:brewery')
 
     e.shapeless('2x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '#botania:mystical_flowers'])
 

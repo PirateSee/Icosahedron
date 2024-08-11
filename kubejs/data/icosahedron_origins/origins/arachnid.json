@@ -8,6 +8,7 @@
         "icosahedron_origins:arachnid/web_spit",
         "icosahedron_origins:arachnid/jockey",
         "icosahedron_origins:arachnid/carnivore",
+        "icosahedron_origins:haul/combo",
         "origins:arthropod"
     ],
     "icon": {

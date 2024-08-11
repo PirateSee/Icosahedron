@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:protection",
+      "minecraft:mending",
+      "extra_enchantments:overshield"
+    ]
+  }

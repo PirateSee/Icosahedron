@@ -102,6 +102,30 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:network/cells/item_storage_components_cell_64k_part'})
     e.remove({id: 'ae2:network/cells/item_storage_components_cell_256k_part'})
 
+    //upgrades
+    e.remove({id: 'ae2:materials/basiccard'})
+    e.remove({id: 'ae2:materials/cardredstone'})
+    e.remove({id: 'ae2:materials/cardcapacity'})
+    e.remove({id: 'ae2:materials/cardvoid'})
+    e.remove({id: 'ae2:materials/cardcrafting'})
+    e.remove({id: 'ae2:materials/advancedcard'})
+    e.remove({id: 'ae2:materials/cardfuzzy'})
+    e.remove({id: 'ae2:materials/cardspeed'})
+    e.remove({id: 'ae2:materials/cardinverter'})
+    e.remove({id: 'ae2:materials/carddistribution'})
+    e.remove({id: 'ae2:materials/cardenergy'})
+
+    //equipment
+    e.remove({id: 'ae2:tools/network_memory_card'})
+    e.remove({id: 'ae2:tools/network_tool'})
+    e.remove({id: 'ae2:tools/matter_cannon'})
+    e.remove({id: 'ae2:tools/network_color_applicator'})
+    e.remove({id: 'ae2:tools/misctools_entropy_manipulator'})
+    e.remove({id: 'ae2:tools/misctools_charged_staff'})
+
+    //wireless
+    e.remove({id: 'ae2:network/wireless_part'})
+
     //begone
     e.remove({id: 'ae2:network/crystal_resonance_generator'})
     e.remove({id: 'ae2:network/vibration_chamber'})
@@ -585,6 +609,87 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying('appmek:chemical_storage_cell_16k', ['appmek:chemical_cell_housing', 'ae2:cell_component_16k'])
     e.recipes.createDeploying('appmek:chemical_storage_cell_64k', ['appmek:chemical_cell_housing', 'ae2:cell_component_64k'])
     e.recipes.createDeploying('appmek:chemical_storage_cell_256k', ['appmek:chemical_cell_housing', 'ae2:cell_component_256k'])
+
+    //cards
+    e.recipes.createDeploying('ae2:redstone_card', ['ae2:basic_card', 'minecraft:redstone_torch'])
+    e.recipes.createDeploying('ae2:capacity_card', ['ae2:basic_card', '#forge:gems/certus_quartz'])
+    e.recipes.createDeploying('ae2:void_card', ['ae2:basic_card', 'ae2:calculation_processor'])
+    e.recipes.createDeploying('ae2:crafting_card', ['ae2:basic_card', 'quark:crafter'])
+
+    e.recipes.createDeploying('ae2:fuzzy_card', ['ae2:advanced_card', '#minecraft:wool'])
+    e.recipes.createDeploying('ae2:speed_card', ['ae2:advanced_card', 'ae2:fluix_crystal'])
+    e.recipes.createDeploying('ae2:inverter_card', ['ae2:advanced_card', 'minecraft:redstone_torch'])
+    e.recipes.createDeploying('ae2:energy_card', ['ae2:advanced_card', 'ae2:dense_energy_cell'])
+    e.recipes.createDeploying('ae2:equal_distribution_card', ['ae2:advanced_card', 'ae2:calculation_processor'])
+
+    //tools
+    inter = 'kubejs:incomplete_screen'
+	e.recipes.create.sequenced_assembly([
+		Item.of('ae2:memory_card').withChance(16.0)
+	], 'ae2:calculation_processor', [
+        e.recipes.createDeploying(inter, [inter, 'minecraft:gold_ingot']),
+        e.recipes.createDeploying(inter, [inter, 'kubejs:redstone_cable']),
+		e.recipes.createPressing(inter,inter),
+	]).transitionalItem(inter).loops(2).id("ico:memory_card")
+
+    e.shapeless('ae2:network_tool', ['ae2:calculation_processor', 'pneumaticcraft:printed_circuit_board', '#ae2:quartz_wrench', '#ae2:illuminated_panel']).id('ico:network_tool')
+
+    e.recipes.create.mechanical_crafting('ae2:matter_cannon', [
+        'SFSB',
+        'KC  ',
+        'S   '
+    ], {
+        C: 'ae2:energy_cell',
+        K: 'ae2:cell_component_4k',
+        F: 'ae2:formation_core',
+        S: 'mekanism:ingot_steel',
+        B: 'pneumaticcraft:cannon_barrel'
+    }).id('ico:matter_cannon')
+
+    e.recipes.create.mechanical_crafting('ae2:color_applicator', [
+        '  S  ',
+        ' FS  ',
+        'SSC  ',
+        '   K ',
+        '    S'
+    ], {
+        C: 'ae2:energy_cell',
+        K: 'ae2:cell_component_4k',
+        F: 'ae2:formation_core',
+        S: 'mekanism:ingot_steel',
+    }).id('ico:color_applicator')
+
+    e.shaped('ae2:charged_staff', [
+		'C ',
+		' I'
+	], {
+        C: 'ae2:charged_certus_quartz_crystal',
+        I: '#forge:rods/all_metal'
+	}).id('ico:charged_staff')
+
+    e.recipes.create.mechanical_crafting('ae2:entropy_manipulator', [
+        'F   ',
+        'EC  ',
+        '  S ',
+        '   S'
+    ], {
+        C: 'ae2:energy_cell',
+        F: 'ae2:fluix_crystal',
+        E: 'ae2:engineering_processor',
+        S: 'mekanism:ingot_steel',
+    }).id('ico:entropy_manipulator')
+
+    //wireless
+    e.shaped('ae2:wireless_receiver', [
+		' PT',
+		'UOU',
+        ' U '
+	], {
+        U: 'kubejs:tungsten_ingot',
+        P: 'ae2:fluix_pearl',
+        O: 'mekanism:polonium_pellet',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:wireless_receiver')
 
     //alternate
     e.recipes.create.mixing('2x ae2:sky_dust', ['ae2:sky_dust', '6x betterend:violecite']).id('ico:sky_stone_violecite')

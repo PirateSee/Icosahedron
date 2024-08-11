@@ -1,0 +1,87 @@
+{
+  "dependencies": [
+    "Gemstone Polishing"
+  ],
+  "tasks": {
+    "adv_enchanter": {
+      "advancements": [
+        "minecraft:story/enchant_item"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {
+    "award_achient_tome": {
+      "title": "Recieve Random Ancient Tome",
+      "icon": {
+        "item": {
+          "id": "quark:ancient_tome",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/tomes",
+      "type": "heracles:loottable"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Enchanter ---",
+      "Looking for some tougher gear huh?",
+      "",
+      "First thing you'll notice when using an Enchanting Table, is that it has been completely overhauled.",
+      "",
+      "/b/Matrix Enchanting/b/ is a new enchanting system with more depth than vanilla. Use /b/Lapis/b/ and /b/Experinece Levels/b/ to generate /b/Enchantment Pieces/b/. What pieces you fit onto the grid make it on the final enchanted item. Pieces always /6/generate at level 1/6/, but duplicates can be /6/placed ontop of each other/6/ to /b/upgrade/b/ the enchantment.",
+      "",
+      "/6/Incompatible peices will never generate/6/. If you get a /b/Silk Touch/b/ piece, you'll never find a /b/Fortune/b/ piece in that session. /6/Enchant then disenchant to clear/6/ the pending enchantments, or grab a diffrent item.",
+      "",
+      "/b/Enchantability/b/ and /b/Bookshelves/b/ increase the /6/maximum generatable pieces/6/.",
+      "",
+      "<hr/>",
+      "Some /c/vanilla enchantments have been disabled/c/ in this modpack. Don't bother looking for /c/Protection/c/ and /c/Mending/c/. Instead use specific damage type protections or /b/Mana Repair/b/.",
+      "",
+      "/b/Candles/b/ /6/influence which enchantments/6/ may appear. Up to a /6/maximum of four/6/ candles can influence, and they /6/must be lit/6/.",
+      "",
+      "/d/E/d//a/M/a//b/I/b/ shows the effects of the difrent colored candles. Check uses for the candles, or recipes for enchantments.",
+      "",
+      "Placing /b/Soul Sand/b/ below the candles /6/dampens the enchantment/6/ instead.",
+      "",
+      "The best way to further increase enchantments after this is to enchant /b/Books/b/, or use /b/Ancient Tomes/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_enchanter\" quest=\"enchanter\"/>",
+      "<hr/>",
+      "<reward reward=\"award_achient_tome\" quest=\"enchanter\"/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -61,
+          210
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "quark:matrix_enchanter",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Enchanter"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

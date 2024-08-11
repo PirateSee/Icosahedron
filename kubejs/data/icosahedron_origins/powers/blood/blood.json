@@ -24,9 +24,17 @@
             "hit_bientity_condition": {
                 "type": "origins:target_condition",
                 "condition": {
-                    "inverted": true,
-                    "type": "origins:in_tag",
-                    "tag": "minecraft:undead"
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:undead",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:living"
+                        }
+                    ]
                 }
             }
         },
@@ -41,10 +49,10 @@
             "bientity_condition": {
                 "type": "origins:target_condition",
                 "condition": {
-                    "inverted": true,
                     "type": "origins:and",
                     "conditions": [
                         {
+                            "inverted": true,
                             "type": "origins:in_tag",
                             "tag": "minecraft:undead"
                         },

@@ -16,7 +16,13 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Elemental Steel ---",
+      "Phew! That portal worked! We calculated a 65% chance of failure, so it's a good thing it didn't blow up.",
+      "",
+      "Trade Manasteel for Elementium.",
+      "",
+      "<hr/>",
+      "<task task=\"get_elementium\" quest=\"elemental steel\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
@@ -43,7 +49,7 @@
     "repeatable": false,
     "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED",
+    "hidden": "IN_PROGRESS",
     "unlockNotification": false
   }
 }

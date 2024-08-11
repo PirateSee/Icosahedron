@@ -228,24 +228,48 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "createsifter:sifting",
 		"ingredients": [
-		{
-			"item": "createsifter:brass_mesh"
-		},
-		{
-			"item": 'minecraft:red_sand'
-		}
+            {
+                "item": "createsifter:brass_mesh"
+            },
+            {
+                "item": 'minecraft:red_sand'
+            }
 		],
 		"results": [
-		{
-			"item": 'immersive_weathering:red_sand_layer_block',
-			"count": 1
-		},
-		{
-			"item": 'kubejs:small_copper_grit',
-			"chance": 0.5
-		}
+            {
+                "item": 'immersive_weathering:red_sand_layer_block',
+                "chance": 0.5
+            },
+            {
+                "item": 'kubejs:small_copper_grit',
+                "chance": 0.2
+            }
 		],
-		"processingTime": 300,
+		"processingTime": 100,
+		"minimumSpeed": 32.0
+	})
+
+    e.custom({
+		"type": "createsifter:sifting",
+		"ingredients": [
+            {
+                "item": "createsifter:brass_mesh"
+            },
+            {
+                "item": 'minecraft:sand'
+            }
+		],
+		"results": [
+            {
+                "item": 'immersive_weathering:sand_layer_block',
+                "chance": 0.5
+            },
+            {
+                "item": 'kubejs:rough_aquatrine',
+                "chance": 0.06
+            }
+		],
+		"processingTime": 200,
 		"minimumSpeed": 64.0
 	})
 
@@ -280,5 +304,5 @@ ServerEvents.recipes(e => {
 
     e.recipes.create.emptying([Fluid.of('create_enchantment_industry:ink', 1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
 
-    e.recipes.create.mixing('2x createadditon:electrum_ingot', ['minecraft:gold_ingot', 'mna:transmuted_silver']).id('ico:electrum')
+    e.recipes.create.mixing('2x createadditon:electrum_ingot', ['minecraft:gold_ingot', 'mna:transmuted_silver']).id('ico:quicksilver_electrum')
 })

@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:command",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:empty",
+					"weight": 0
+				}
+			]
+		}
+	]
+}
