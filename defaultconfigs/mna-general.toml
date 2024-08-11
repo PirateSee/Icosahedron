@@ -20,7 +20,7 @@ undeadSouls = 50
 #Range: > 1
 ticksForFullManaRegen = 2400
 #How much bonus health does each tier give?  Only up to the first five values will be used.  Reminder that a heart is TWO points.
-tier_health_boosts = [0, 2, 4, 6, 8]
+tier_health_boosts = [0, 0, 0, 0, 0]
 #How much brimstone is each heart worth?
 #Range: 1 ~ 20000
 brimstonePerHeart = 50

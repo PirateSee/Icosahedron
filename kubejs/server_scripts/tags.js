@@ -239,7 +239,7 @@ ServerEvents.tags('block', e => {
 	e.add('forge:plant', 'betterend:dense_vine')
 
     //ore replacable
-    e.add('ico:end_ore_replacable', Ingredient.of('#c:end_stones').itemIds)
+    e.add('ico:end_ore_replacable', '#c:end_stones')
     e.add('ico:end_ore_replacable', 'minecraft:blackstone')
     e.add('ico:end_ore_replacable', 'minecraft:basalt')
     e.add('ico:end_ore_replacable', 'minecraft:smooth_basalt')
