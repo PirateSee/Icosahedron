@@ -240,6 +240,32 @@ ServerEvents.recipes(e => {
 
 	e.shapeless('mna:purified_vinteum_dust', ['mna:vinteum_dust', 'mna:vinteum_dust', 'mna:arcane_compound','minecraft:glowstone_dust']).id('ico:purified_vinteum_dust')
 
+	e.recipes.create.mechanical_crafting('mna:wellspring_pillar', [
+		'SRS', 
+		'PCa', 
+		'MBM',
+		' L ',
+		' L ',
+		'FLE',
+		'ASW'
+	], {
+		S: 'mna:decoration/arcane_sandstone',
+		C: 'mna:decoration/chimerite_arcane_sandstone_chiseled',
+		M: 'mna:rune_ritual_metal',
+		L: 'mna:decoration/chimerite_arcane_sandstone_straight',
+		B: 'mna:chimerite_block',
+		R: 'mna:eldrin_rift',
+		F: 'mna:rune_fire',
+		A: 'mna:rune_air',
+		E: 'mna:rune_earth',
+		W: 'mna:rune_water',
+		P: 'mna:rune_projection',
+		a: 'mna:rune_arcane'
+	}).id('ico:wellspring_pillar')
+
+	e.recipes.create.mixing(Fluid.of('kubejs:mana_tea', 500), [Fluid.of('minecraft:water', 500), 'minecraft:sugar', '#botania:mystical_flowers']).heated()
+	e.recipes.create.filling('mna:mana_coffee', ['mna:clay_mug',Fluid.of('kubejs:mana_tea', 250)])
+
     //simple radio
     e.shaped('simpleradio:walkie_talkie', [
 		'IT', 

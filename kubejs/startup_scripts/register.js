@@ -71,6 +71,11 @@ StartupEvents.registry('fluid', e => {
 	e.create('molten_glass').bucketColor(0xBBAFB9).displayName('Molten Quartz Glass')
         .stillTexture('icosahedron:block/fluid/molten_glass')
         .flowingTexture('icosahedron:block/fluid/molten_glass_flowing')
+	
+	e.create('mana_tea').displayName('Mana Tea')
+		.stillTexture('icosahedron:block/mana_tea')
+		.flowingTexture('icosahedron:block/flowing_mana_tea')
+	
 })
 
 StartupEvents.registry('item', e => {
