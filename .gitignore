@@ -55,3 +55,4 @@ config/voicechat/voicechat-client.properties
 /config/sound_physics_remastered
 emi.json
 emi.json
+.mixin.out/class/com/simibubi/create/content/contraptions/MountedStorage.class
