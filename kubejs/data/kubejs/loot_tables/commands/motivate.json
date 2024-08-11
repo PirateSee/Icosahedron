@@ -398,7 +398,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "\"It is better to fail in originality than to succeed in imitation."
+                  "text": "It is better to fail in originality than to succeed in imitation."
                 }
               ]
             }

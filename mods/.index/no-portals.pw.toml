@@ -1,0 +1,13 @@
+filename = 'no-portals-1.20.1-1.0.2.jar'
+name = 'No Portals'
+side = 'server'
+
+[download]
+hash = '0fee5059e97d144104fca0dcbbc886e6b236a2b8c014533318311f2d2b3287c52ea7f4270cd63d71f89799bc8ffab21ed29e76db77dc7b59a85a740ae1cab7d4'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZzkyvOit/versions/ViLmi1t9/no-portals-1.20.1-1.0.2.jar'
+
+[update.modrinth]
+mod-id = 'ZzkyvOit'
+version = 'ViLmi1t9'
