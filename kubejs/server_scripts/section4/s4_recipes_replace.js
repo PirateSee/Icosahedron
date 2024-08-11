@@ -62,6 +62,8 @@ ServerEvents.recipes(e => {
     e.remove({id:'pneumaticcraft:reinforced_air_canister'})
     e.remove({id:'pneumaticcraft:module_expansion_card'})
 
+    e.remove({id:'pneumaticcraft:gun_ammo'})
+
     //components
     e.remove({id:'pneumaticcraft:reinforced_stone'})
     e.remove({id:'pneumaticcraft:pressure_chamber/turbine_blade'})
@@ -826,6 +828,8 @@ ServerEvents.recipes(e => {
         B: 'pneumaticcraft:logistics_core',
         T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:logistics_configurator')
+
+    e.recipes.create.pressing('pneumaticcraft:gun_ammo', ['createbigcannons:nitropowder', 'pneumaticcraft:ingot_iron_compressed', 'minecraft:copper_ingot'])
 
     //resources
 

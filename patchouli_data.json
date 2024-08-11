@@ -110,7 +110,8 @@
         "botania:devices/mana_conjuration",
         "botania:challenges/potion_brewer",
         "botania:devices/flasks",
-        "botania:baubles/blood_pendant"
+        "botania:baubles/blood_pendant",
+        "botania:misc/head_creating"
       ],
       "bookmarks": [],
       "completedManualQuests": []

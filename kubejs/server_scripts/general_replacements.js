@@ -398,7 +398,7 @@ ServerEvents.recipes(e => {
     e.shaped('quark:magnet', [
 		'CIC',
 		'MMM',
-		'CIC '
+		'CIC'
 	], {
 		I: 'minecraft:iron_ingot',
         M: 'kubejs:magnetized_iron',

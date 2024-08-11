@@ -34,7 +34,7 @@ Soul fires are cold instead of hot.
 You will not regret eating 23 pounds of uranium-235.
 Rare ancient tomes can be used to upgrade enchantments up a level. Seething industrial balze enchanters have similar properties.
 Disenchanters pull out your experience and compress it into a storable liquid form.
-Chests may contain old Relics, which you can equip for passive or active bonuses. A researching table may help in unlocking more power from them.
+Chests may contain old Relics, which you can equip for passive or active bonuses.
 Nuclear waste can be processed back into fissile fuel, at an 80% conversion rate.
 Soul Sand Valleys are just barely cool enough to be habitable.
 The Spark Origin can suspend Blastballs in a stasis chamber similar to Ender Pearls.

@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "Nether Passport",
     "Wrought Iron"
   ],
   "tasks": {
