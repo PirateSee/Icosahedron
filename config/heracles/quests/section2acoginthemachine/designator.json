@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "I command thee"
@@ -27,7 +40,9 @@
       "",
       "The Wand has other useful applications which are more useful later. For now, let's move on to getting some mana so you can make use of your fancy new stick.",
       "<hr/>",
-      "<task task=\"get_wand_of_forest\" quest=\"designator\"/>"
+      "<task task=\"get_wand_of_forest\" quest=\"designator\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"designator\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

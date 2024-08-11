@@ -141,7 +141,7 @@ ServerEvents.recipes(e => {
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:deployer')
 
-	e.shaped('create:mechanical_crafter', [
+	e.shaped('2x create:mechanical_crafter', [
 		'RE ', 
 		'FCT', 
 		' A '

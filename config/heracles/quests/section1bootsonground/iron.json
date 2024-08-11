@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "A typical start"
@@ -19,7 +32,9 @@
       "<h2>- Aquire Hardware ---</h2>",
       "Make some iron. Simple, right? you've done this many times before, im sure.",
       "<hr/>",
-      "<task task=\"getiron\" quest=\"iron\"/>"
+      "<task task=\"getiron\" quest=\"iron\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"iron\"/>"
     ],
     "groups": {
       "Section 1: Boots on Ground": {

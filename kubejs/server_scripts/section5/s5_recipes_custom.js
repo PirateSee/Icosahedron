@@ -7,8 +7,6 @@ ServerEvents.recipes(e => {
 		W: 'tetra:dragon_sinew'
 	}).id('ico:dragon_sinew_mesh')
 
-	e.recipes.create.crushing('betterend:endstone_dust', 'minecraft:end_stone')
-
 	e.custom({
 		"type": "createsifter:sifting",
 		"ingredients": [
@@ -26,7 +24,7 @@ ServerEvents.recipes(e => {
 			},
 			{
 				"item": 'mekanism:dust_osmium',
-				"chance": 0.05
+				"chance": 0.15
 			}
 		],
 		"processingTime": 900,

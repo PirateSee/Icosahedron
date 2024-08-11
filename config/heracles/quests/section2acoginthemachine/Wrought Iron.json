@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Workable and tough"
@@ -29,7 +42,9 @@
       "Wrought iron can be worked into tools with /b/diamond-level mining/b/ capabilities. Do note that wrought iron is fairly brittle, and doesn't do so well as a tool head. It will have to do for now. It is currently your only option for diamond-level tools.",
       "",
       "<hr/>",
-      "<task task=\"get_wrought_iron\" quest=\"Wrought Iron\"/>"
+      "<task task=\"get_wrought_iron\" quest=\"Wrought Iron\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Wrought Iron\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

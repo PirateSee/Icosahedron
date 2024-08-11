@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_achient_tome": {
+      "title": "Recieve Random Ancient Tome",
+      "icon": {
+        "item": {
+          "id": "quark:ancient_tome",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/tomes",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Heat it up"
@@ -25,7 +38,9 @@
       "",
       "Automation of /b/Blaze Cakes/b/ is a little complex, but could be a good investment.",
       "<hr/>",
-      "<task task=\"get_blaze_cake\" quest=\"Magma Treats\"/>"
+      "<task task=\"get_blaze_cake\" quest=\"Magma Treats\"/>",
+      "<hr/>",
+      "<reward reward=\"award_achient_tome\" quest=\"Magma Treats\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

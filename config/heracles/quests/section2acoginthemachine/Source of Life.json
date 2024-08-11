@@ -10,7 +10,20 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Rotational Generation"
@@ -26,7 +39,9 @@
       "<hr/>",
       "Now that you have some kenetic energy generation, you can start powering machines. Do note you have a limited amount of energy (measured in SUs). exceeding the capacity halts the entire network.",
       "<hr/>",
-      "<task task=\"adv_water_wheel\" quest=\"Source of Life\"/>"
+      "<task task=\"adv_water_wheel\" quest=\"Source of Life\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Source of Life\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

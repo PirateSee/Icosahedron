@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -23,7 +36,9 @@
       "",
       "Use these lenses to turn /b/Mana Spreaders/b/ from simple logistics machines to /6/laser blasters/6/ with great potential.",
       "<hr/>",
-      "<task task=\"get_mana_lens\" quest=\"magic optics\"/>"
+      "<task task=\"get_mana_lens\" quest=\"magic optics\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"magic optics\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

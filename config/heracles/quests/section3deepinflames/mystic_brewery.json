@@ -1,0 +1,56 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "adv_brew": {
+      "advancements": [
+        "botania:main/brew_pickup"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Mystic Brewery ---",
+      "A new potion brewing method.",
+      "",
+      "Botania's Botanical Brewery allows for brewing /6/varients on potions/6/. These potions have more versatile use cases but require /b/Mana/b/ and more reagents.",
+      "",
+      "The /6/potions can be infused/6/ into /b/Flasks/b/ that can be /6/quaffed multiple times/6/, /b/Amulets/b/ that /6/passively provide the effect/6/ via /b/Mana/b/, and /b/Incense Sticks/b/ that can be used to provide the effect for a /6/long time while within range/6/ of an /b/Incense Plate/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"adv_brew\" quest=\"mystic_brewery\"/>",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          60,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:brewery",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Mystic Brewery"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

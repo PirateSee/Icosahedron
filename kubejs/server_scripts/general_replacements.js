@@ -55,6 +55,8 @@ ServerEvents.recipes(e => {
 
     e.remove({id:'createconnected:crafting/kinetics/fluid_vessel'})
 
+    e.remove({id:'quark/oddities/crafting/magnet'})
+
 	//kinetics
 	e.remove({id:'create:crafting/kinetics/gearbox'})
 
@@ -392,6 +394,16 @@ ServerEvents.recipes(e => {
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:disenchanter')
 
 	e.shapeless('create_enchantment_industry:enchanting_guide', ['create:sturdy_sheet', 'pneumaticcraft:plastic', 'minecraft:enchanted_book'])
+
+    e.shaped('quark:magnet', [
+		'CIC',
+		'MMM',
+		'CIC '
+	], {
+		I: 'minecraft:iron_ingot',
+        M: 'kubejs:magnetized_iron',
+        C: 'minecraft:cobblestone'
+	}).id('ico:magnet')
 
 	//tweaks
 

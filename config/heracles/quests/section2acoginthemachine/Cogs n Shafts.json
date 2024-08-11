@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Kenetic Mobility"
@@ -34,7 +47,9 @@
       "Try connecting cogs and shafts together. Use Create's ponder system to learn more.",
       "Hover over the item and hold W to ponder.",
       "<hr/>",
-      "<task task=\"getcog\" quest=\"Cogs n Shafts\"/>"
+      "<task task=\"getcog\" quest=\"Cogs n Shafts\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Encased\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

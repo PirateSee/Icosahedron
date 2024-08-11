@@ -304,5 +304,5 @@ ServerEvents.recipes(e => {
 
     e.recipes.create.emptying([Fluid.of('create_enchantment_industry:ink', 1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
 
-    e.recipes.create.mixing('2x createadditon:electrum_ingot', ['minecraft:gold_ingot', 'mna:transmuted_silver']).id('ico:quicksilver_electrum')
+    e.recipes.create.mixing('2x createadditon:electrum_ingot', ['minecraft:gold_ingot', '2x mna:transmuted_silver']).id('ico:quicksilver_electrum')
 })

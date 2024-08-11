@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -22,7 +35,9 @@
       "/b/Ash/b/ can be obtained by /6/burning wood in the world/6/. Make a pile of logs or planks and light them on fire and wait for them to burn away. You'll be left with /b/Ash Piles,/b/ which you can collect with a /b/Shovel./b/",
       "",
       "<hr/>",
-      "<task task=\"get_blast_furnace\" quest=\"Blast Smelting\"/>"
+      "<task task=\"get_blast_furnace\" quest=\"Blast Smelting\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"Blast Smelting\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

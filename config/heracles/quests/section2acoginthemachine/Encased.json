@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Keep it inside"
@@ -46,7 +59,9 @@
       "To build more advanced machines we're going to need something to put them in.",
       "/6/Right click a stripped log/6/ with /b/Andesite Framing/b/ to make andesite casing. Probably make a bunch, nearly every kinetic machine will need one.",
       "<hr/>",
-      "<task task=\"get_andesite_casing\" quest=\"Encased\"/>"
+      "<task task=\"get_andesite_casing\" quest=\"Encased\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Encased\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

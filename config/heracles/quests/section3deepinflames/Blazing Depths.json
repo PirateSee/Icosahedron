@@ -11,7 +11,20 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -27,7 +40,9 @@
       "Best of luck.",
       "",
       "<hr/>",
-      "<task task=\"adv_nether\" quest=\"Blazing Depths\"/>"
+      "<task task=\"adv_nether\" quest=\"Blazing Depths\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Blazing Depths\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

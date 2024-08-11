@@ -12,7 +12,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Finally copper"
@@ -49,7 +62,9 @@
       "<p>Advanced ores can't be smelted here. Hold on to them, you'll be able to process them later.</p>",
       "</hint>",
       "<hr/>",
-      "<task task=\"get_copper_ingot\" quest=\"Crude Ore Processing\"/>"
+      "<task task=\"get_copper_ingot\" quest=\"Crude Ore Processing\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"Crude Ore Processing\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

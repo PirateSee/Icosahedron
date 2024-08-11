@@ -10,7 +10,20 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""

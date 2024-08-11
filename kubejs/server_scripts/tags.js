@@ -243,4 +243,5 @@ ServerEvents.tags('block', e => {
     e.add('ico:end_ore_replacable', 'minecraft:blackstone')
     e.add('ico:end_ore_replacable', 'minecraft:basalt')
     e.add('ico:end_ore_replacable', 'minecraft:smooth_basalt')
+    e.add('ico:end_ore_replacable', '#nullscape:dead_corals')
 })

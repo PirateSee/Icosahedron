@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -23,7 +36,9 @@
       "",
       "/b/Brass/b/ is used for a variety of /b/high-tier kinetic machinery/b/. Worth getting a lot of it.",
       "<hr/>",
-      "<task task=\"get_brass_ingot\" quest=\"Big Brass\"/>"
+      "<task task=\"get_brass_ingot\" quest=\"Big Brass\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"Big Brass\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

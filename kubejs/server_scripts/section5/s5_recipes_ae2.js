@@ -1,5 +1,4 @@
 ServerEvents.recipes(e => {
-
     //base resources
     e.remove({id: 'ae2:transform/fluix_crystals'})
     e.remove({id: 'create:compat/ae2/mixing/fluix_crystal'})
