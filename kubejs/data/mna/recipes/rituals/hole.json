@@ -1,0 +1,64 @@
+{
+	"type": "mna:ritual",
+	"tier": 1,
+	"pattern":
+	[
+		[ 0, 1, 1, 1, 0 ],
+		[ 1, 0, 1, 0, 1 ],
+		[ 0, 0, 1, 0, 0 ],
+		[ 0, 2, 1, 2, 0 ],
+		[ 0, 0, 1, 0, 0 ]
+	],
+	"displayPattern":
+	[
+		[ 0, 7, 8, 9, 0 ],
+		[ 6, 0, 4, 0, 10],
+		[ 0, 0, 3, 0, 0 ],
+		[ 0, 13, 2, 12, 0 ],
+		[ 0, 0, 1, 0, 0 ]
+	],
+	"reagents":
+	[
+		"     ",
+		"P   S",
+		"  B  ",
+		" A A ",
+		"     "	
+	],
+	"keys":
+	{
+		"B": 
+		{ 
+			"item": "mna:flat_lands_book",
+			"optional": false,
+			"consume": false,
+			"manual_return": true
+		},
+		"P": 
+		{ 
+			"item": "minecraft:stone_pickaxe",
+			"optional": false,
+			"consume": true
+		},
+		"S":
+		{
+			"item": "minecraft:stone_shovel",
+			"optional": false,
+			"consume": true
+		},
+        "A":
+        { 
+			"item": "mna:arcane_ash",
+			"optional": false,
+			"consume": true
+		}
+	},
+	"parameters":
+	{
+		"innerColor": "0x662200",
+		"outerColor": "0xcc6600",
+		"displayIndexes": false,
+		"connectBeam": false,
+		"beamColor": "0x5c4e43"
+	}
+}

@@ -195,6 +195,11 @@ ServerEvents.recipes(e => {
 	e.remove({id:'mna:manaweaving/eldrin/wellspring_pillar'})
 	e.remove({id:'mna:purified_vinteum_dust'})
 	e.remove({id:'mna:basic_table'})
+	e.remove({id:'mna:ornate_table'})
+	e.remove({id:'mna:ornate_table_from_basic_table'})
+	e.remove({id:'mna:rune_clay_plate'})
+	e.remove({id:'mna:manaweaving/ender_disc'})
+	e.remove({id:'mna:spell_book'})
 
 	e.shaped('mna:guide_book', [
 		' AI', 
@@ -256,18 +261,18 @@ ServerEvents.recipes(e => {
 		s: 'mna:transmuted_silver'
 	}).damageIngredient(Item.of('#ico:tool/hammer')).damageIngredient(Item.of('#ico:tool/saw')).id('ico:basic_table')
 
-	/*/e.shaped('mna:ornate_table', [
-		'sWs', 
-		'LHL', 
-		'LSL'
+	e.shaped('mna:ornate_table', [
+		'HCS', 
+		'sTs', 
+		'   '
 	], {
 		H: '#ico:tool/hammer',
 		S: '#ico:tool/file',
-		W: '#minecraft:planks',
-		L: '#minecraft:logs',
+		C: 'minecraft:blue_carpet',
+		T: 'mna:basic_table',
 		s: 'mna:transmuted_silver'
-	}).damageIngredient(Item.of('#ico:tool/hammer')).damageIngredient(Item.of('#ico:tool/file')).id('ico:basic_table')
-/*/
+	}).damageIngredient(Item.of('#ico:tool/hammer')).damageIngredient(Item.of('#ico:tool/file')).id('ico:ornate_table')
+
 	e.recipes.create.mechanical_crafting('mna:wellspring_pillar', [
 		'SRS', 
 		'PCa', 
@@ -304,6 +309,31 @@ ServerEvents.recipes(e => {
 		M: 'mna:greater_mote_ender'
 		
 	}).id('ico:eldrin_rift')
+
+	e.shaped('mna:rune_clay_plate', [
+		'CAC', 
+		'FCW', 
+		'CEC'
+	], {
+		C: 'minecraft:clay_ball',
+		E: 'mna:stone_rune_brown',
+		A: 'mna:stone_rune_white',
+		F: 'mna:stone_rune_red',
+		W: 'mna:stone_rune_blue'
+	}).id('ico:rune_clay_plate')
+
+	e.shaped('mna:spell_book', [
+		'ILL', 
+		'SVV', 
+		'ILL'
+	], {
+		I: 'mna:transmuted_silver',
+		L: 'minecraft:leather',
+		S: 'betterend:leather_stripe',
+		V: 'mna:vellum'
+	}).id('ico:spell_book')
+
+	e.shapeless('mna:healing_poultice', ['#botania:mystical_flowers', '#ico:arcane_base','#mna:healing_poultice_bases']).id('ico:healing_poultice')
 
 	e.recipes.create.mixing(Fluid.of('kubejs:mana_tea', 500), [Fluid.of('minecraft:water', 500), 'minecraft:sugar', '#botania:mystical_flowers']).heated()
 	e.recipes.create.filling('mna:mana_coffee', ['mna:clay_mug',Fluid.of('kubejs:mana_tea', 250)])
