@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -152,7 +152,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -167,7 +167,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -182,7 +182,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -197,7 +197,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -212,7 +212,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -227,7 +227,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -256,7 +256,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -271,7 +271,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -286,7 +286,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -301,7 +301,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -316,7 +316,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -331,7 +331,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -346,7 +346,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -377,7 +377,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -392,7 +392,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -407,7 +407,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -422,7 +422,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -650,7 +650,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -665,7 +665,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -680,7 +680,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -695,7 +695,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -710,7 +710,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -725,7 +725,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -740,7 +740,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -755,13 +755,253 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:paper",
-          "weight": 10,
+          "weight": 13,
           "functions": [
             {
               "function": "minecraft:set_lore",
               "lore": [
                 {
                   "text": "Embrace the glorious mess that you are."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Attitude is the 'little' thing that makes a big difference."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "If you don't like the road you're walking, start paving another one!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "It is never too late to be what you might have been."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Make each day your masterpiece."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Life is 10% what happens to us and 90% how we react to it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Life isn’t about waiting for the storm to pass; It’s about learning how to dance in the rain."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You only live once, but if done right, once should be enough."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Peace comes from within. Do not seek it without."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "The key to success is to focus on goals, not obstacles."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Action is the foundational key to all success."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "The only way to do great work is to love what you do."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "When something goes wrong, don’t go with it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Good things happen to those who hustle."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "You can’t be happy unless you’re unhappy sometimes."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "There is no way to happiness. Happiness is the way."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 13,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "The best time to plant a tree was 20 years ago. The second best time is now."
                 }
               ]
             }
