@@ -20,7 +20,7 @@
       "",
       "/b/Treated Wood/b/ is used in the creation of /b/Brass Casings/b/ and other higher tier machinery.",
       "",
-      "/6/Mixing crushed coal/6/ will give /b/Tar/b/, which can be mixed with /b/Water/b/ to make /b/Creosote Oil/b/. /6/Pouring this on planks/6/ will give /b/Treated Wood/b/.",
+      "/6/Mixing crushed coal/6/ will give /b/Coal Tar/b/, which can be mixed with /b/Water/b/ to make /b/Creosote Oil/b/. /6/Pouring this on planks/6/ will give /b/Treated Wood/b/.",
       "<hr/>",
       "<task task=\"get_treated_wood_planks\" quest=\"Treated Wood\"/>"
     ],

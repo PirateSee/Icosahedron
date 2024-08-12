@@ -17,9 +17,11 @@
     },
     "description": [
       "## - Elemental Steel ---",
-      "Phew! That portal worked! We calculated a 65% chance of failure, so it's a good thing it didn't blow up.",
+      "Phew! That portal worked! We calculated a 78% chance of failure, so it's a good thing it didn't blow up.",
       "",
-      "Trade Manasteel for Elementium.",
+      "Now that it's open, you can toss /6/various things in for other resources/6/. Just don't toss random stuff in, because then the /c/Elves will keep it/c/.",
+      "",
+      "Trade some /b/Manasteel/b/ for /b/Elementium/b/. ",
       "",
       "<hr/>",
       "<task task=\"get_elementium\" quest=\"elemental steel\"/>"

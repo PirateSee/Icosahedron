@@ -37,7 +37,33 @@
         "text": "Carnivorous: This gives no saturation",
         "order": 0
     },
-    "tooltip_": {
+    "tooltip_partial": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food"
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "ico:partial_meat"
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "origins:ignore_diet"
+                    }
+                }
+            ]
+        },
+        "text": "Carnivorous: This gives half the saturation",
+        "order": 0
+    },
+    "food": {
         "type": "origins:modify_food",
         "item_condition": {
             "type": "origins:and",
@@ -72,6 +98,35 @@
         "saturation_modifier": {
             "operation": "set_total",
             "value": 0,
+            "name": "Carnivorous Penalty"
+        }
+    },
+    "food_partial": {
+        "type": "origins:modify_food",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "origins:ignore_diet"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "ico:partial_meat"
+                    }
+                }
+            ]
+        },
+        "saturation_modifier": {
+            "operation": "multiply_total",
+            "value": -0.5,
             "name": "Carnivorous Penalty"
         }
     }

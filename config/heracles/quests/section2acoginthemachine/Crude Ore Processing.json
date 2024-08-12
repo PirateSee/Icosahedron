@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "atlas",
     "Blast Smelting",
     "The Sieve"
   ],
@@ -8,7 +7,7 @@
     "get_copper_ingot": {
       "type": "heracles:item",
       "item": "minecraft:copper_ingot",
-      "amount": 1,
+      "amount": 16,
       "collection": "AUTOMATIC"
     }
   },

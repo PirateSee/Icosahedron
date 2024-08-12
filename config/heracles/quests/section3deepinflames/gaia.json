@@ -16,7 +16,19 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Gaia ---",
+      "The /b/Guardian of Gaia/b/.",
+      "",
+      "This ritrual summons a /b/powerful foe/b/ - a Guardian of the Goddess of Gaia herself. Typically done by elves, this will require some /b/Alfheim resources/b/.",
+      "",
+      "The /6/more players within range/6/, the more /6/difficult the boss, but the more rewards/6/. Slaying this Guardian will yield /b/Gaia Spirits/b/, a valuable resource.",
+      "",
+      "To start the ritrual, you'll need a /6/powered beacon/6/ and /b/four Gaia Pylons/b/.",
+      "",
+      "The /b/Lexica Botanica/b/ contains a /6/schematic on the exact placements/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_gaia_spirit\" quest=\"gaia\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {
@@ -43,7 +55,7 @@
     "repeatable": false,
     "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED",
+    "hidden": "IN_PROGRESS",
     "unlockNotification": false
   }
 }

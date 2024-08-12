@@ -16,7 +16,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Fluid transfer"
@@ -29,7 +42,9 @@
       "<crafting-recipe id=\"ico:fluid_pipe\"/>",
       "<hr/>",
       "<task task=\"get_pipes\" quest=\"Hydrodynamics\"/>",
-      "<task task=\"get_pump\" quest=\"Hydrodynamics\"/>"
+      "<task task=\"get_pump\" quest=\"Hydrodynamics\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Hydrodynamics\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

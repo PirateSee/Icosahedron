@@ -2,7 +2,14 @@
   "dependencies": [
     "waste handling"
   ],
-  "tasks": {},
+  "tasks": {
+    "adv_sps": {
+      "advancements": [
+        "mekanism:sps"
+      ],
+      "type": "heracles:advancement"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -38,7 +45,8 @@
       "",
       "Inside, /b/Supercharged Coils/b/ pointed at the center produce /d/Antimatter/d/. /b/Multiple SPS ports/b/ are required to input /6/enough energy/6/, and to input/export /b/Polonium/b/ and /d/Antimatter/d/.",
       "",
-      "<hr/>"
+      "<hr/>",
+      "<task task=\"adv_sps\" quest=\"waste shifter\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {

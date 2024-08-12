@@ -43,7 +43,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 2.2,
+                                    "y": 2,
                                     "space": "world",
                                     "client": true,
                                     "server": true

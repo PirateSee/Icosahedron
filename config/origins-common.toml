@@ -321,6 +321,7 @@
 		"icosahedron_origins:spirit/invis_short" = true
 		"icosahedron_origins:spirit/no_step" = true
 		"icosahedron_origins:spirit/last_wish" = true
+		"icosahedron_origins:spirit/jump_amp" = true
 
 	[origins."icosahedron_origins:food"]
 		enabled = true
@@ -404,4 +405,20 @@
 		"origins:arthropod" = true
 		"icosahedron_origins:arachnid/jockey" = true
 		"icosahedron_origins:haul/combo" = true
+
+	[origins."icosahedron_origins:ribbit"]
+		enabled = true
+		"icosahedron_origins:fox/superhop" = true
+		"icosahedron_origins:fox/superhop_charge" = true
+		"icosahedron_origins:fox/superhop_cooldown" = true
+		"icosahedron_origins:fox/superhop_cooling" = true
+		"icosahedron_origins:ribbit/superhop_leap_weaker" = true
+		"icosahedron_origins:fox/superhop_release" = true
+		"icosahedron_origins:fox/superhop_fov" = true
+		"icosahedron_origins:ribbit/webbed_feet" = true
+		"icosahedron_origins:seaborn/swim_speed" = true
+		"icosahedron_origins:seaborn/big_lungs" = true
+		"icosahedron_origins:ribbit/tiny" = true
+		"icosahedron_origins:fox/cracked_plate" = true
+		"icosahedron_origins:fox/cracked_toughness" = true
 

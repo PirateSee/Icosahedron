@@ -2,7 +2,14 @@
   "dependencies": [
     "antimatter"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_teleporter_core": {
+      "type": "heracles:item",
+      "item": "mekanism:teleportation_core",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -10,7 +17,14 @@
     },
     "description": [
       "## - Teleporting ---",
-      "/d/Anti-Tech/d/: Teleportation"
+      "/d/Anti-Tech/d/: Teleportation",
+      "",
+      "In order to accomplish such an impossible task of instantanous teleportation, materials must be/6/ pooled from every aspect/6/. /b/Technology/b/. /5/Magic/5/. /6/Combat/6/. Everything needs to be put together for this.",
+      "",
+      "These cores can be used to make /b/Teleporters/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_teleporter_core\" quest=\"teleporting\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {
@@ -27,7 +41,7 @@
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
     "title": {
       "translate": "Teleporting"
     }

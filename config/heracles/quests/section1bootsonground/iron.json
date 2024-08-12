@@ -6,7 +6,7 @@
     "getiron": {
       "type": "heracles:item",
       "item": "minecraft:iron_ingot",
-      "amount": 6,
+      "amount": 4,
       "collection": "AUTOMATIC"
     }
   },

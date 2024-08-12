@@ -3,14 +3,27 @@
     "Hydrodynamics"
   ],
   "tasks": {
-    "get_melter": {
+    "get_basin_lid": {
       "type": "heracles:item",
-      "item": "melter:melter",
+      "item": "createbigcannons:basin_foundry_lid",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -26,7 +39,9 @@
       "Those /b/Fluid Pipes/b/ from before are going to be nessary to /6/transport the liquid metal/6/ for further processing.",
       "",
       "<hr/>",
-      "<task task=\"get_melter\" quest=\"Melting Away\"/>"
+      "<task task=\"get_basin_lid\" quest=\"Melting Away\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Melting Away\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

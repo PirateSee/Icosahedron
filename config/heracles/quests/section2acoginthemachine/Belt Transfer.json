@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -22,7 +35,10 @@
       "<br/>",
       "",
       "<hr/>",
-      "<task task=\"get_mech_belt\" quest=\"Belt Transfer\"/>"
+      "<task task=\"get_mech_belt\" quest=\"Belt Transfer\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Belt Transfer\"/>"
+      
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

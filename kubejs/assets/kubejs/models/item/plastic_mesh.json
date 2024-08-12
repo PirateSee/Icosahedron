@@ -1,0 +1,7 @@
+{
+    "parent": "createsifter:block/meshes/mesh",
+    "textures": {
+        "mesh": "icosahedron:item/plastic_mesh",
+        "frame": "create:block/brass_casing"
+    }
+}

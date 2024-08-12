@@ -22,6 +22,15 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:runic_altar/earth'})
     e.remove({id: 'botania:runic_altar/air'})
 
+    e.remove({id: 'botania:fel_pumpkin'})
+
+    e.remove({id: 'botania:manasteel_pick'})
+    e.remove({id: 'botania:manasteel_shovel'})
+    e.remove({id: 'botania:manasteel_axe'})
+    e.remove({id: 'botania:manasteel_hoe'})
+    e.remove({id: 'botania:manasteel_sword'})
+    e.remove({id: 'botania:livingwood_bow'})
+
     e.shaped('botania:diluted_pool', [
         '  T',
         'WVW', 
@@ -91,16 +100,14 @@ ServerEvents.recipes(e => {
               "count": 2
 			},
 			{
-			  "item": 'botania:mana_powder',
-			},
-			{
 			  "item": 'mna:vinteum_dust',
+              "count": 2
 			}
 		],
 		"results": [
 			{
 			  "item": "mna:vinteum_coated_iron",
-			  "count": 1
+			  "count": 2
 			}
 		],
 		"heatRequirement": "lowheated"
@@ -140,9 +147,9 @@ ServerEvents.recipes(e => {
         }
     }).id('ico:mana_powder_2')
 
-    e.recipes.create.mixing('botania:mana_pearl', ['minecraft:ender_pearl', '6x botania:mana_powder'])
+    e.recipes.create.mixing('botania:mana_pearl', ['minecraft:ender_pearl', '8x botania:mana_powder'])
 
-    e.recipes.create.compacting('kubejs:rune_backing', ['botania:manasteel_ingot', 'botania:mana_powder', '2x botania:livingrock'])
+    e.recipes.create.compacting('kubejs:rune_backing', ['botania:manasteel_ingot', '2x botania:mana_powder', '2x botania:livingrock'])
 
     e.shaped('botania:runic_altar', [
 		'  T',
@@ -258,4 +265,17 @@ ServerEvents.recipes(e => {
             "item": "botania:rune_earth"
         }
     }).id('botania:runic_altar/earth')
+
+    e.shaped('botania:fel_pumpkin', [
+		'NSN',
+        'BPR', 
+		'NGN'
+	], {
+		P: 'minecraft:pumpkin',
+        S: 'minecraft:string',
+        B: 'minecraft:bone',
+        G: 'minecraft:gunpowder',
+        R: 'minecraft:rotten_flesh',
+        N: 'create:cinder_flour'
+	}).id('ico:fel_pumpkin')
 })

@@ -38,10 +38,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "IN_PROGRESS"
+    "hidden": "IN_PROGRESS",
+    "unlockNotification": false
   }
 }

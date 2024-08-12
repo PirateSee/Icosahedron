@@ -3,9 +3,36 @@
     "Carbon Steel"
   ],
   "tasks": {
+    "get_adv_saw": {
+      "type": "heracles:item",
+      "item": "kubejs:advanced_saw",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_adv_file": {
+      "type": "heracles:item",
+      "item": "kubejs:advanced_file",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
     "get_advanced_tool": {
       "type": "heracles:item",
       "item": "kubejs:advanced_hammer",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_adv_screwdriver": {
+      "type": "heracles:item",
+      "item": "kubejs:advanced_screwdriver",
       "nbt": {
         "Damage": 0
       },
@@ -39,6 +66,9 @@
       "",
       "<hr/>",
       "<task task=\"get_advanced_tool\" quest=\"Advanced Tools\"/>",
+      "<task task=\"get_adv_saw\" quest=\"Advanced Tools\"/>",
+      "<task task=\"get_adv_file\" quest=\"Advanced Tools\"/>",
+      "<task task=\"get_adv_screwdriver\" quest=\"Advanced Tools\"/>",
       "<hr/>",
       "<reward reward=\"award_enchanted_book\" quest=\"Advanced Tools\"/>"
     ],

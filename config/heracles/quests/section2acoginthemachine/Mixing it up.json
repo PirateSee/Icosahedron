@@ -10,7 +10,20 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Wisk and stir"
@@ -27,7 +40,9 @@
       "",
       "If you want to use the /b/alternate recipe/b/ that mixes /b/directly into alloy/b/, skipping the furnace step, set /b/Andesite Alloy/b/ as the /6/recipe filter/6/. You can do this by /6/right clicking/6/ while holding an item on the /6/side of the basin/6/. This will prevent the mixer from making any recipe other then the one that outputs the item set on the filter.",
       "<hr/>",
-      "<task task=\"adv_create_mixing\" quest=\"Mixing it up\"/>"
+      "<task task=\"adv_create_mixing\" quest=\"Mixing it up\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Mixing it up\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

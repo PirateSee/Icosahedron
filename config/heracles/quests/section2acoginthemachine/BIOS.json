@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Input/Output"
@@ -22,7 +35,9 @@
       "",
       "Welcome to the start of some automation! /b/Conveyor Belts/b/ will likely help you finish automating things, but Andesite Funnels will at least let you /6/input/output from machines/6/, and /6/Tunnels will split items/6/, although they do need to be placed on conveyor belts.",
       "<hr/>",
-      "<task task=\"get_funnel\" quest=\"BIOS\"/>"
+      "<task task=\"get_funnel\" quest=\"BIOS\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"BIOS\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

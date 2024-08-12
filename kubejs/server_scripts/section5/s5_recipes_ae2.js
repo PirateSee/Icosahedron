@@ -51,6 +51,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:network/parts/formation_plane'})
     e.remove({id: 'ae2:network/parts/formation_plane_alt'})
 
+    e.remove({id: 'ae2:network/blocks/spatial_anchor'})
+
     //cells
     e.remove({id: "ae2:network/cells/item_cell_housing"})
     e.remove({id: "ae2:network/cells/fluid_cell_housing"})
@@ -444,6 +446,17 @@ ServerEvents.recipes(e => {
 
     e.recipes.createDeploying('ae2:level_emitter', ['ae2:calculation_processor', 'create:electron_tube'])
     e.recipes.createDeploying('ae2:storage_monitor', ['#ae2:illuminated_panel', 'ae2:level_emitter'])
+
+    e.recipes.create.mechanical_crafting('ae2:spatial_anchor', [
+        '  T',
+        'MLM',
+        ' E '
+	], {
+		E: 'ae2:engineering_processor',
+        L: 'create_power_loader:brass_chunk_loader',
+        M: 'ae2:fluix_glass_cable',
+        T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:spatial_anchor')
 
     //craft
     e.recipes.createDeploying('ae2:crafting_accelerator', ['ae2:crafting_unit', 'ae2:engineering_processor'])

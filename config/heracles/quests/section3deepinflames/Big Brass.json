@@ -6,7 +6,7 @@
     "get_brass_ingot": {
       "type": "heracles:item",
       "item": "create:brass_ingot",
-      "amount": 1,
+      "amount": 8,
       "collection": "AUTOMATIC"
     }
   },

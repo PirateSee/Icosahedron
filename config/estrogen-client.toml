@@ -4,26 +4,26 @@
 [chestRenderingGlobal]
 	#.
 	#Enable chest feature rendering
-	chestFeatureRendering = true
+	chestFeatureRendering = false
 	#.
 	#Enable chest feature armor rendering
-	chestArmorRendering = true
+	chestArmorRendering = false
 	#.
 	#Enable chest feature physics rendering
-	chestPhysicsRendering = true
+	chestPhysicsRendering = false
 
 #.
 #Settings for the chest feature (for the local player)
 [chestEstrogen]
 	#.
 	#Enable chest feature
-	chestFeature = true
+	chestFeature = false
 	#.
 	#Enable chest feature armor
-	chestArmor = true
+	chestArmor = false
 	#.
 	#Enable chest feature physics
-	chestPhysics = true
+	chestPhysics = false
 	#.
 	#Chest feature bounciness
 	#Range: 0.0 ~ 1.0

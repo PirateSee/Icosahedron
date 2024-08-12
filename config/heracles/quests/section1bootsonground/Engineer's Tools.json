@@ -29,7 +29,7 @@
     },
     "description": [
       "<h2>- Engineer's Tools ---</h2>",
-      "You cant just make everything with your bare hands. While most vanilla recipes can be, a lot of machinery is going to need some tools.",
+      "You cant just make everything with your bare hands. While /6/most vanilla recipes/6/ can be, a lot of machinery is going to need some /b/tools/b/.",
       "",
       "<columns>",
       "    <column>",
@@ -43,7 +43,7 @@
       "    </column>",
       "</columns>",
       "",
-      "You can combine them into a multitool to save you some space. The multitool is also far more durable.",
+      "You can combine them into a /b/Multitool/b/ to save you some space. The /b/Multitool/b/ is also far more durable.",
       "",
       "<crafting-recipe id=\"ico:tool_simple_multitool\" grid-width=\"3\"/>",
       "",

@@ -16,7 +16,8 @@
         "icosahedron_origins:haul",
         "icosahedron_origins:feline",
         "icosahedron_origins:arachnid",
-        "icosahedron_origins:phantom"
+        "icosahedron_origins:phantom",
+        "icosahedron_origins:ribbit"
     ],
     "enabled": true,
     "replace": true,

@@ -43,6 +43,9 @@ ServerEvents.recipes(e => {
 	e.remove({id:'create:crafting/materials/sand_paper'})
 	e.remove({id:'create:crafting/materials/red_sand_paper'})
 
+    e.remove({id:'create:crafting/kinetics/goggles'})
+    e.remove({id:'create:crafting/kinetics/wrench'})
+
 	//other
 	e.remove({id:'createlowheated:basic_burner'})
 	
@@ -119,6 +122,25 @@ ServerEvents.recipes(e => {
 		C: 'create:mechanical_pump'
 	}).id('ico:copper_backtank')
 
+    e.shaped('create:goggles', [
+        ' S ',
+        'GLG'
+    ], {
+        S: 'minecraft:string',
+        G: '#forge:glass',
+        L: 'create:iron_sheet'
+    }).id('ico:goggles')
+
+    e.shaped('create:wrench', [
+        'LL',
+        'LC',
+        ' S'
+    ], {
+        S: 'minecraft:stick',
+        C: 'create:cogwheel',
+        L: 'create:iron_sheet'
+    }).id('ico:wrench')
+
 	e.shaped('create:windmill_bearing', [
 		'ILI', 
 		' OT', 
@@ -127,7 +149,7 @@ ServerEvents.recipes(e => {
 		L: '#minecraft:wooden_slabs', 
 		S: 'create:shaft',
 		O: '#forge:stone',
-		I: 'create:iron_sheet',
+		I: 'minecraft:iron_ingot',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:windmill_bearing')
 

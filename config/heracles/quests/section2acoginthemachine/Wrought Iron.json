@@ -39,7 +39,7 @@
       "",
       "<item id=\"kubejs:wrought_iron_ingot\" scale=\"2.0\"> </item>",
       "",
-      "Wrought iron can be worked into tools with /b/diamond-level mining/b/ capabilities. Do note that wrought iron is fairly brittle, and doesn't do so well as a tool head. It will have to do for now. It is currently your only option for diamond-level tools.",
+      "Wrought iron can be worked into tools with /b/diamond-level mining/b/ capabilities. Do note that wrought iron is fairly brittle, and doesn't do so well as a tool head.",
       "",
       "<hr/>",
       "<task task=\"get_wrought_iron\" quest=\"Wrought Iron\"/>",

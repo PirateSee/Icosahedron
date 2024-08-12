@@ -262,8 +262,9 @@ StartupEvents.registry('item', e => {
 	e.create('plasticizer').texture('icosahedron:item/component/oil/plasticizer')
 	e.create('rubber').texture('icosahedron:item/component/oil/rubber')
 	e.create('polystyrene').texture('icosahedron:item/component/oil/polystyrene')
+    e.create('plastic_mesh','createsifter:mesh').texture('icosahedron:item/mekanism/plastic_mesh')
 
-    //mekanism tier (section 5)
+    //mekanism tier (section 5)    
     e.create('dragon_sinew_mesh','createsifter:mesh').texture('icosahedron:item/mekanism/dragon_sinew_mesh')
 
     e.create('machine_plating').texture('icosahedron:item/component/mekanism/machine_plating')

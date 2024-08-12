@@ -18,10 +18,12 @@
     "description": [
       "<h2>- Kinetic Alloy ---</h2>",
       "Alright, now that the simple stuff is out of the way...",
-      "Make some Andesite Alloy.",
-      "<crafting-recipe id=\"create:crafting/materials/andesite_alloy\" grid-width=\"2\"/>",
-      "<br/>",
-      "Your going to need quite a bit of this stuff. It's used for everything involving rotation, and will also be a general base material for many things going forward.",
+      "",
+      "Make some /b/Andesite Alloy/b/.",
+      "<crafting-recipe id=\"ico:andesite_alloy_dust\" grid-width=\"2\"/>",
+      "Smelt this dust for /b/Andesite Alloy/b/.",
+      "",
+      "Your going to need quite a bit of this stuff. It's used for /6/everything involving rotation/6/, and will also be a general /b/base material/b/ for many things going forward.",
       "<hr/>",
       "<task task=\"getaa\" quest=\"Kenetic Alloy\"/>"
     ],

@@ -5,6 +5,7 @@
         "icosahedron_origins:spirit/float",
         "icosahedron_origins:spirit/float_hover",
         "icosahedron_origins:spirit/float_jump",
+        "icosahedron_origins:spirit/jump_amp",
         "icosahedron_origins:doll/fall_immune",
         "icosahedron_origins:spirit/blink",
         "icosahedron_origins:spirit/vanishing",

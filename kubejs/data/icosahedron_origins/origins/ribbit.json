@@ -1,0 +1,21 @@
+{
+    "name": "Ribbit",
+    "description": "§0[Aquatic] [Nimble]§7\nSmall amphibious creatures with good mobility, but poor fortitute.",
+    "powers": [
+        "icosahedron_origins:fox/superhop",
+        "icosahedron_origins:fox/superhop_charge",
+        "icosahedron_origins:fox/superhop_cooldown",
+        "icosahedron_origins:fox/superhop_cooling",
+        "icosahedron_origins:ribbit/superhop_leap_weaker",
+        "icosahedron_origins:fox/superhop_release",
+        "icosahedron_origins:fox/superhop_fov",
+        "icosahedron_origins:ribbit/webbed_feet",
+        "icosahedron_origins:seaborn/swim_speed",
+        "icosahedron_origins:seaborn/big_lungs",
+        "icosahedron_origins:ribbit/tiny",
+        "icosahedron_origins:fox/cracked_plate",
+        "icosahedron_origins:fox/cracked_toughness"
+    ],
+    "order": 114,
+    "impact": 1
+}

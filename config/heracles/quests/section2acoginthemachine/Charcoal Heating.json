@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Boiling Basin"
@@ -24,7 +37,9 @@
       "To use, fuel the burner by /b/right clicking/b/ it with /6/charcoal/6/. Once fueled, /6/activate it with a flint and steel./6/ Once started, it will /6/burn until it runs out of fuel./6/",
       "",
       "<hr/>",
-      "<task task=\"get_basic_burner\" quest=\"Charcoal Heating\"/>"
+      "<task task=\"get_basic_burner\" quest=\"Charcoal Heating\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Charcoal Heating\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

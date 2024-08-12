@@ -2,13 +2,32 @@
   "dependencies": [
     "complex_curiosities_2"
   ],
-  "tasks": {},
+  "tasks": {
+    "submit_lube_bearing": {
+      "type": "heracles:item",
+      "item": "kubejs:lubricated_bearing",
+      "amount": 16,
+      "collection": "MANUAL"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## Complex Curiosities III",
+      "Some like to collect intricate gizmos. You can supply.",
+      "",
+      "There is a request for /b/Lubricated Bearings/b/.  Friction-free rotors perfect for high-speed rotations.",
+      "",
+      "Trade those for /b/Ancient Tomes/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_lube_bearing\" quest=\"complex_curiosities_3\"/>",
+      "<hr/>",
+      "<reward reward=\"award_ancient_tome\" quest=\"complex_curiosities_3\"/>"
+    ],
     "groups": {
       "Section C: Challanges": {
         "position": [

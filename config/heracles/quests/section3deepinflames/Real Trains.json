@@ -10,7 +10,15 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_tracks": {
+      "item": {
+        "id": "create:track",
+        "count": 26
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -24,7 +32,11 @@
       "Lay some /b/Train Tracks,/b/ place down a /b/Train Station/b/, put on a /b/Train Controler/b/ and get moving. Trains /6/do not require fuel/6/, but will move /6/much faster with some/6/ placed anywhere on the vehicle.",
       "",
       "A /b/Train Schedule/b/ and an /b/entity/b/ in the driver's seat can /6/automatically drive/6/ the train.",
-      "<hr/>"
+      "<hr/>",
+      "<task task=\"adv_train\" quest=\"Real Trains\"/>",
+      "<hr/>",
+      "Some free tracks for you.",
+      "<reward reward=\"award_tracks\" quest=\"Real Trains\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

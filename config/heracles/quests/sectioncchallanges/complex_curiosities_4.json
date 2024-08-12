@@ -2,13 +2,32 @@
   "dependencies": [
     "complex_curiosities_3"
   ],
-  "tasks": {},
+  "tasks": {
+    "submit_printed_circuit_board": {
+      "type": "heracles:item",
+      "item": "pneumaticcraft:printed_circuit_board",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## Complex Curiosities IV",
+      "Some like to collect intricate gizmos. You can supply.",
+      "",
+      "There is a request for /b/Printed Circuit Boards/b/. Lightning courses through the thin plate performing uncomprehencable amounts of mathmatical operations.",
+      "",
+      "Trade those for /b/Ancient Tomes/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_printed_circuit_board\" quest=\"complex_curiosities_4\"/>",
+      "<hr/>",
+      "<reward reward=\"award_ancient_tome\" quest=\"complex_curiosities_4\"/>"
+    ],
     "groups": {
       "Section C: Challanges": {
         "position": [

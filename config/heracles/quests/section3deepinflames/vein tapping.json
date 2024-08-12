@@ -20,6 +20,10 @@
       "## - Vein Tapping ---",
       "A little prospecting to strike gold.",
       "",
+      "/b/Mining Machines/b/ can /6/infintely extract minerals/6/ from veins. Use a /b/Vein Finder Tool/b/ to locate veins, then place and power /b/Mining Machines/b/ to start the extraction.",
+      "",
+      "They aren't cheap, but the reward is worth it.",
+      "",
       "<hr/>",
       "<task task=\"get_mining_machine\" quest=\"vein tapping\"/>"
     ],

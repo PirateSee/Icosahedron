@@ -34,26 +34,26 @@
         "id": "tetra:holo",
         "count": 1,
         "nbt": {
-          "holo/scanner:scanner/sweeper_adjustable": 0,
-          "holo/scanner": "holo/scanner",
-          "holo/core_material": "frame/dim",
-          "holo/scanner_tweak:scanner/adjustable_span": -3,
-          "holo/scanner_tweak:scanner/adjustable_range": 6,
-          "holo/scanner:scanner/sweeper": 0,
-          "holo/repo": "holo/repo",
-          "holo/repo_material": "repo/default",
           "honing_progress": 1050,
           "holo/frame": "holo/frame",
           "HideFlags": 1,
+          "holo/repo_material": "repo/default",
           "holo/scanner_material": "scanner/default",
           "holo/core": "holo/core",
           "id": "cffc85aa-913d-40f2-ab10-17dac2a30d8e",
-          "holo/frame_material": "core/ancient"
+          "holo/scanner": "holo/scanner",
+          "holo/frame_material": "core/ancient",
+          "holo/scanner:scanner/sweeper": 0,
+          "holo/scanner_tweak:scanner/adjustable_range": 6,
+          "holo/scanner_tweak:scanner/adjustable_span": -3,
+          "holo/scanner:scanner/sweeper_adjustable": 0,
+          "holo/repo": "holo/repo",
+          "holo/core_material": "frame/dim"
         }
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
     "title": {
       "translate": "Sweeping Gaze"
     }

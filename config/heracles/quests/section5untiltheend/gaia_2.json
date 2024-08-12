@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "mekanism"
+    "And down it goes"
   ],
   "tasks": {},
   "rewards": {},
@@ -9,13 +9,18 @@
       "text": ""
     },
     "description": [
-      ""
+      "## - Gaia 2 ---",
+      "The Gaia Guardian is back.",
+      "",
+      "Activating the /b/Ritrual of Gaia/b/ with a /b/Gaia Ingot/b/ instead of a /b/Terrasteel/b/ one summons a /6/more powerful version/6/.",
+      "",
+      "<hr/>"
     ],
     "groups": {
       "Section 5: Until the End": {
         "position": [
           120,
-          -60
+          -30
         ]
       }
     },

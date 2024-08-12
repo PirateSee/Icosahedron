@@ -76,6 +76,11 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:sps_casing'})
     e.remove({id: 'mekanism:sps_port'})
 
+    e.remove({id: 'mekanismgenerators:reactor/frame'})
+    e.remove({id: 'mekanismgenerators:reactor/port'})
+    e.remove({id: 'mekanismgenerators:reactor/logic_adapter'})
+    e.remove({id: 'mekanismgenerators:reactor/controller'})
+
     //transporter
     e.remove({id: 'mekanism:transmitter/universal_cable/basic'})
     e.remove({id: 'mekanism:transmitter/mechanical_pipe/basic'})
@@ -113,6 +118,7 @@ ServerEvents.recipes(e => {
     //begone
     e.remove({id: 'mekanism:nutritional_liquifier'})
     e.remove({id: 'mekanism:canteen'})
+    e.remove({id: 'mekanism:upgrade/anchor'})
 
     //infusion
     e.custom({
@@ -699,6 +705,39 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'create:portable_fluid_interface']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(1).id("ico:sps_port")
+
+    inter = 'kubejs:incomplete_casing'
+	e.recipes.create.sequenced_assembly([
+		Item.of('4x mekanismgenerators:fusion_reactor_frame').withChance(16.0)
+	], 'mekanism:steel_casing', [
+		e.recipes.createDeploying(inter, [inter, 'mekanism:pellet_polonium']),
+        e.recipes.createDeploying(inter, [inter, 'mekanism:alloy_atomic']),
+		e.recipes.createPressing(inter,inter),
+	]).transitionalItem(inter).loops(4).id("ico:fusion_reactor_frame")
+
+    inter = 'kubejs:incomplete_casing'
+	e.recipes.create.sequenced_assembly([
+		Item.of('2x mekanismgenerators:fusion_reactor_port').withChance(16.0)
+	], 'mekanism:ultimate_control_circuit', [
+		e.recipes.createDeploying(inter, [inter, 'mekanismgenerators:fusion_reactor_frame']),
+        e.recipes.createDeploying(inter, [inter, 'mekanismgenerators:fusion_reactor_frame']),
+        e.recipes.createCutting(inter,inter),
+        e.recipes.createDeploying(inter, [inter, 'create:portable_fluid_interface']),
+		e.recipes.createPressing(inter,inter),
+	]).transitionalItem(inter).loops(1).id("ico:fusion_reactor_port")
+
+    e.recipes.createDeploying('mekanismgenerators:fusion_reactor_logic_adapter', ['mekanismgenerators:fusion_reactor_frame', 'pneumaticcraft:printed_circuit_board'])
+
+    e.recipes.create.mechanical_crafting('mekanismgenerators:fusion_reactor_controller', [
+        'UGGGU',
+        'F T F',
+        ' FFF '
+    ], {
+        U: 'mekanism:ultimate_control_circuit',
+        G: '#forge:glass',
+        T: 'mekanism:basic_chemical_tank',
+        F: 'mekanismgenerators:fusion_reactor_frame'
+    })
 
     //transmitter
     e.shaped('4x mekanism:basic_universal_cable', [ 

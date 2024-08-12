@@ -253,7 +253,7 @@ ServerEvents.recipes(e => {
 		"type": "createsifter:sifting",
 		"ingredients": [
             {
-                "item": "createsifter:brass_mesh"
+                "item": "kubejs:plastic_mesh"
             },
             {
                 "item": 'minecraft:sand'

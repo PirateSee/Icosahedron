@@ -1,0 +1,13 @@
+{
+    "hidden": true,
+    "condition": {
+        "inverted": true,
+        "type": "origins:sneaking"
+    },
+    "type": "origins:modify_jump",
+    "modifier": {
+        "operation": "addition",
+        "value": 0.1,
+        "name": "Float Jumping"
+    }
+}

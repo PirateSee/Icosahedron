@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "antimatter"
+    "teleporting"
   ],
   "tasks": {},
   "rewards": {},
@@ -12,8 +12,8 @@
     "groups": {
       "Section 5: Until the End": {
         "position": [
-          450,
-          60
+          510,
+          -30
         ]
       }
     },

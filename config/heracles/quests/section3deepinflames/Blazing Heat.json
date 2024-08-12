@@ -10,22 +10,32 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_hoglin_hide": {
+      "title": "Some insulation",
+      "item": {
+        "id": "cold_sweat:hoglin_hide",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Caution: Hot Surface"
     },
     "description": [
       "<h2>- Blazing Heat ---</h2>",
+      "Whats hotter than a Blaze?",
       "",
       "/b/Blazes/b/ make great fireplaces. Works just fine as an industrial-grade heater. May violate workplace safety laws, but it's assumed that cage it's in keeps it safely locked up and working. There are no known instances of that thing escaping.",
       "",
       "When the Blaze Burner is fed with fuel, it starts burning brightly. This heat is enough to /c/cook you/c/, and also heat up /b/Basins/b/ for /6/Mixing or Compacting,/6/ or /b/Steam Engines/b/.",
-      "",
-      "> --/7/This will greatly aid in metallurgy and other processes, but i'd recommend to keep that thing away from anywhere you might be walking. I don't want to be near that thing while its running, and you probably don't either./7/--",
-      "",
       "<hr/>",
-      "<task task=\"get_blaze_burner\" quest=\"Blazing Heat\"/>"
+      "<task task=\"get_blaze_burner\" quest=\"Blazing Heat\"/>",
+      "<hr/>",
+      "Maybe put some heat insulation on your armor. Or just put some cold blocks to counteract it.",
+      "<reward reward=\"award_hoglin_hide\" quest=\"Blazing Heat\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

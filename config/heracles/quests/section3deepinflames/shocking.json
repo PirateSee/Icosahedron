@@ -17,6 +17,11 @@
     },
     "description": [
       "## - Shocking ---",
+      "Some electricity for you.",
+      "",
+      "Generate electricty using /6/Kinetic Energy/6/ by using /b/Generator Coils/b/. Surround them in /b/Magnets/b/ and place a /b/Carbon Brush/b/ capture the electricity. The /6/more and better magnets/6/ you add, the /c/more SUs/c/ are used, and the /6/more power/6/ you get.",
+      "",
+      "/b/Ponder/b/ for the full breakdown.",
       "",
       "<hr/>",
       "<task task=\"get_generator_coil\" quest=\"shocking\"/>"

@@ -11,7 +11,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Mana-infused metal"
@@ -25,7 +38,9 @@
       "This material is used for more advanced devices, and is a decent tool material. Tools made from /b/Manasteel/b/ can be /6/repaired with mana/6/.",
       "",
       "<hr/>",
-      "<task task=\"get_manasteel\" quest=\"manasteel\"/>"
+      "<task task=\"get_manasteel\" quest=\"manasteel\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"manasteel\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "Crude Ore Processing"
+    "Deafening Clang"
   ],
   "tasks": {
     "adv_create_kitted": {
@@ -31,19 +31,21 @@
     "description": [
       "<h2>- Specs for the job ---</h2>",
       "Now that you got the basics down, its time to get some tools.",
-      "<hr/>",
-      "The Engineer's Goggles will grant you detailed stress information for blocks you look at.",
-      "<crafting-recipe id=\"create:crafting/kinetics/goggles\" grid-width=\"3\"/>",
-      "The Wrench allows you to rotate and deconstruct kinetic blocks quickly. It can also configure some blocks.",
-      "<crafting-recipe id=\"create:crafting/kinetics/wrench\" grid-width=\"3\"/>",
+      "",
+      "The /b/Engineer's Goggles/b/ will grant you /6/detailed stress information/6/ for blocks you look at.",
+      "<crafting-recipe id=\"ico:goggles\" grid-width=\"3\"/>",
+      "The /b/Wrench/b/ allows you to /6/rotate and deconstruct/6/ kinetic blocks quickly. It can also configure some blocks.",
+      "<crafting-recipe id=\"ico:wrench\" grid-width=\"3\"/>",
       "These will help you build bigger contraptions later.",
       "<hr/>",
-      "<task task=\"adv_create_kitted\" quest=\"Specs for the job\"/>"
+      "<task task=\"adv_create_kitted\" quest=\"Specs for the job\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"Specs for the job\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
-          210,
+          90,
           -60
         ]
       }
@@ -61,10 +63,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

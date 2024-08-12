@@ -18,7 +18,20 @@
       }
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Trees-B-Gone"
@@ -30,7 +43,9 @@
       "<br/>",
       "<crafting-recipe id=\"ico:mechanical_saw\" grid-width=\"2\"/>",
       "<hr/>",
-      "<task task=\"get_mech_saw\" quest=\"Cutting Sawblade\"/>"
+      "<task task=\"get_mech_saw\" quest=\"Cutting Sawblade\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Cutting Sawblade\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

@@ -118,6 +118,8 @@ ServerEvents.recipes(e => {
     e.remove({id:'pneumaticcraft:pneumatic_chestplate'})
     e.remove({id:'pneumaticcraft:pneumatic_leggings'})
     e.remove({id:'pneumaticcraft:pneumatic_boots'})
+    e.remove({id:'pneumaticcraft:reinforced_chest'})
+    e.remove({id:'pneumaticcraft:smart_chest'})
 
     //recipes
 

@@ -149,4 +149,36 @@ ServerEvents.recipes(e => {
 	}).id('ico:steeled_corrugated_metal')
 
     e.shapeless('kubejs:steeled_plate_vent', ['kubejs:steeled_plate', 'create:iron_sheet', '#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:steeled_plate_vent')
+
+    e.shaped('8x kubejs:crystal_block', [
+		'GB',
+        'BG' 
+	], {
+		G: '#forge:gems',
+        B: '#forge:ingots/brick'
+	}).id('ico:crystal_block')
+
+    e.shaped('4x kubejs:crystal_block', [
+		'CC',
+        'CC' 
+	], {
+		C: 'kubejs:crystal_block'
+	}).id('ico:crystal_brick')
+
+    e.shaped('2x kubejs:crystal_pillar', [
+		'C',
+        'C' 
+	], {
+		C: 'kubejs:crystal_block'
+	}).id('ico:crystal_pillar')
+
+    e.shaped('kubejs:ornate_gold_block', [
+		'III',
+        'III',
+        'III' 
+	], {
+		I: 'kubejs:ornate_gold'
+	}).id('ico:ornate_gold_block')
+
+    e.shapeless('9x kubejs:ornate_gold', 'kubejs:ornate_gold_block')
 })

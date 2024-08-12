@@ -462,6 +462,14 @@ ServerEvents.recipes(e => {
         C: 'kubejs:carbon_steel_rod'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:antenna')
 
+    //mesh
+    e.shaped('kubejs:plastic_mesh', [
+		'WFW'
+	], {
+		F: 'kubejs:brass_filter_framing',
+		W: 'pneumaticcraft:plastic'
+	}).id('ico:plastic_mesh')
+
     //no more tablet
     e.recipes.create.milling('mekanism:dust_emerald', 'kubejs:emerald_tablet').id('ico:anger_the_gods')
 })

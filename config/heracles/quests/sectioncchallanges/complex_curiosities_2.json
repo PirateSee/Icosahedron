@@ -2,13 +2,32 @@
   "dependencies": [
     "complex_curiosities_1"
   ],
-  "tasks": {},
+  "tasks": {
+    "submit_precicion_mechanism": {
+      "type": "heracles:item",
+      "item": "create:precision_mechanism",
+      "amount": 16,
+      "collection": "MANUAL"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## Complex Curiosities II",
+      "Some like to collect intricate gizmos. You can supply.",
+      "",
+      "There is a request for /b/Precicion Mechanisms/b/. An uncountable number of gears spinning in unison.",
+      "",
+      "Trade those for /b/Ancient Tomes/b/.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_precicion_mechanism\" quest=\"complex_curiosities_2\"/>",
+      "<hr/>",
+      "<reward reward=\"award_ancient_tome\" quest=\"complex_curiosities_2\"/>"
+    ],
     "groups": {
       "Section C: Challanges": {
         "position": [

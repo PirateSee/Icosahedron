@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_enchanted_book": {
+      "title": "Recieve Random Enchanted Book",
+      "icon": {
+        "item": {
+          "id": "minecraft:enchanted_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/enchanted_books",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Great View from up Here"
@@ -24,7 +37,9 @@
       "/6/Right click/6/ with a /b/Flint and Steel/b/ to light the burner and /6/ascend/6/. Use /b/Sand/b/ to weigh it down and /6/decend/6/. /b/Shears/b/ will /6/remove sandbags/6/. /c/Rain will extinguish the burner./c/",
       "",
       "<hr/>",
-      "<task task=\"get_hot_air_balloon\" quest=\"eye in the sky\"/>"
+      "<task task=\"get_hot_air_balloon\" quest=\"eye in the sky\"/>",
+      "<hr/>",
+      "<reward reward=\"award_enchanted_book\" quest=\"eye in the sky\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

@@ -92,7 +92,22 @@ ServerEvents.recipes(e => {
     }).id("ico:plasticizer")
 
     e.recipes.create.mixing('32 minecraft:brick', ['kubejs:plasticizer', '4x minecraft:clay']).id("ico:plasticizer_brick")
-    e.recipes.create.mixing('24x minecraft:white_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/white']).id("ico:plasticizer_concrete")
+    e.recipes.create.mixing('24x minecraft:white_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/white']).id("ico:plasticizer_white_concrete")
+    e.recipes.create.mixing('24x minecraft:light_gray_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/light_gray']).id("ico:plasticizer_light_gray_concrete")
+    e.recipes.create.mixing('24x minecraft:gray_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/gray']).id("ico:plasticizer_gray_concrete")
+    e.recipes.create.mixing('24x minecraft:black_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/black']).id("ico:plasticizer_black_concrete")
+    e.recipes.create.mixing('24x minecraft:brown_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/brown']).id("ico:plasticizer_brown_concrete")
+    e.recipes.create.mixing('24x minecraft:red_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/red']).id("ico:plasticizer_red_concrete")
+    e.recipes.create.mixing('24x minecraft:orange_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/orange']).id("ico:plasticizer_orange_concrete")
+    e.recipes.create.mixing('24x minecraft:yellow_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/yellow']).id("ico:plasticizer_yellow_concrete")
+    e.recipes.create.mixing('24x minecraft:lime_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/lime']).id("ico:plasticizer_lime_concrete")
+    e.recipes.create.mixing('24x minecraft:green_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/green']).id("ico:plasticizer_green_concrete")
+    e.recipes.create.mixing('24x minecraft:cyan_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/cyan']).id("ico:plasticizer_cyan_concrete")
+    e.recipes.create.mixing('24x minecraft:light_blue_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/light_blue']).id("ico:plasticizer_light_blue_concrete")
+    e.recipes.create.mixing('24x minecraft:blue_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/blue']).id("ico:plasticizer_blue_concrete")
+    e.recipes.create.mixing('24x minecraft:purple_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/purple']).id("ico:plasticizer_purple_concrete")
+    e.recipes.create.mixing('24x minecraft:magenta_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/magenta']).id("ico:plasticizer_magenta_concrete")
+    e.recipes.create.mixing('24x minecraft:pink_concrete_powder', ['kubejs:plasticizer', '8x minecraft:sand', '8x minecraft:gravel', '#forge:dyes/pink']).id("ico:plasticizer_pink_concrete")
 
     e.recipes.create.mixing('minecraft:blue_ice', [Fluid.of('minecraft:water', 500), Fluid.of('mekanism:ethene', 50)]).id("ico:ethylene_blue_ice")
     e.recipes.create.mixing('minecraft:packed_ice', [Fluid.of('minecraft:water', 500), Fluid.of('mekanism:ethene', 10)]).id("ico:ethylene_packed_ice")
@@ -162,8 +177,8 @@ ServerEvents.recipes(e => {
             "item": "kubejs:magnetized_iron",
             "count": 1
         },
-        "energy": 2000,
-        "maxChargeRate": 200
+        "energy": 10000,
+        "maxChargeRate": 500
     }).id("ico:magnetized_iron")
 
     

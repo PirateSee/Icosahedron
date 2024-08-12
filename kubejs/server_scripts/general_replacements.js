@@ -91,6 +91,20 @@ ServerEvents.recipes(e => {
 	e.remove({id:'minecraft:gold_hoe'})
 
 	e.remove({id:'farmersdelight:gold_knife'})
+
+    e.remove({id:'vintageimprovements:scoria_recycling'})
+    e.remove({id:'vintageimprovements:sulfur_nuggets_to_item'})
+    e.remove({id:'vintageimprovements:sulfur_item_to_nuggets'})
+    e.remove({id:'vintageimprovements:sulfur_items_to_block'})
+    e.remove({id:'vintageimprovements:sulfur_block_to_items'})
+    e.remove({id:'vintageimprovements:pressurizing/sulfur_dioxide'})
+    e.remove({id:'vintageimprovements:pressurizing/sulfuric_acid'})
+    e.remove({id:'vintageimprovements:pressurizing/sulfur_trioxide'})
+
+    //mesh
+    e.remove({id:'createsifter:advanced_brass_mesh'})
+    e.remove({id:'createsifter:brass_mesh'})
+    e.remove({id:'createsifter:zinc_mesh'})
 	
 	//replacing recipes
 	

@@ -6,7 +6,7 @@
     "get_andesite_casing": {
       "type": "heracles:item",
       "item": "create:andesite_casing",
-      "amount": 1,
+      "amount": 6,
       "collection": "AUTOMATIC"
     }
   },
