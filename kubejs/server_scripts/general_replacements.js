@@ -55,7 +55,7 @@ ServerEvents.recipes(e => {
 
     e.remove({id:'createconnected:crafting/kinetics/fluid_vessel'})
 
-    e.remove({id:'quark/oddities/crafting/magnet'})
+    e.remove({id:'quark:oddities/crafting/magnet'})
 
 	//kinetics
 	e.remove({id:'create:crafting/kinetics/gearbox'})

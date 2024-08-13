@@ -73,8 +73,8 @@ StartupEvents.registry('fluid', e => {
         .flowingTexture('icosahedron:block/fluid/molten_glass_flowing')
 	
 	e.create('mana_tea').displayName('Mana Tea')
-		.stillTexture('icosahedron:block/mana_tea')
-		.flowingTexture('icosahedron:block/flowing_mana_tea')
+		.stillTexture('icosahedron:block/fluid/mana_tea')
+		.flowingTexture('icosahedron:block/fluid/flowing_mana_tea')
 	
 })
 
@@ -170,10 +170,8 @@ StartupEvents.registry('item', e => {
     //tungsten
 	e.create('tungsten_ingot').texture('icosahedron:item/ore/refined/tungsten_ingot')
 	e.create('tungsten_nugget').texture('icosahedron:item/ore/refined/tungsten_nugget')
-	e.create('tungsten_sheet').texture('icosahedron:item/ore/refined/tungsten_sheet')
     //aluminum
 	e.create('aluminum_ingot').texture('icosahedron:item/ore/refined/aluminum_ingot')
-	e.create('aluminum_nugget').texture('icosahedron:item/ore/refined/aluminum_nugget')
 	e.create('aluminum_sheet').texture('icosahedron:item/ore/refined/aluminum_sheet')
 
     //alloys
@@ -255,7 +253,6 @@ StartupEvents.registry('item', e => {
     e.create('lubricated_bearing').texture('icosahedron:item/component/pneumatic/lubricated_bearing')
     //tech
     e.create('lcd_display').texture('icosahedron:item/component/pneumatic/lcd_display').displayName('LCD Screen')
-	e.create('oled_display').texture('icosahedron:item/component/pneumatic/oled_display').displayName('OLED Display')
 	e.create('laser_emitter').texture('icosahedron:item/component/pneumatic/laser_emitter')
 
     //oil tier (section 4-5)
@@ -293,8 +290,8 @@ StartupEvents.registry('item', e => {
 
 	//other
     e.create('unetched_ender_eye').texture('icosahedron:item/unetched_ender_eye')
-    e.create('heavyweight').texture('icosahedron:item/heavyweight')
-	e.create('supply_pass').displayName("Supply Cache Access Pass").texture('icosahedron:item/supply_pass')
+    /*e.create('heavyweight').texture('icosahedron:item/heavyweight')
+	e.create('supply_pass').displayName("Supply Cache Access Pass").texture('icosahedron:item/supply_pass')*/
     e.create('emerald_tablet').displayName("§aEmerald Tablet§r").texture('icosahedron:item/emerald_tablet')
 
 	//tools
@@ -345,7 +342,7 @@ StartupEvents.registry('item', e => {
 	e.create('netherite_drill').texture('icosahedron:item/netherite_drill')
 
 	//function
-	e.create('random_tool_alpha')
+	//e.create('random_tool_alpha')
 
     //incomplete
 	e.create('uninfused_basic_circuit').texture('icosahedron:item/incomplete/uninfused_basic_circuit')
@@ -760,6 +757,7 @@ StartupEvents.registry("block", (event) => {
 				}
 			}
 		}
+
 })
 
 Platform.mods.kubejs.name = 'Icosahedron'

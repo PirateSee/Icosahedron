@@ -31,6 +31,9 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:manasteel_sword'})
     e.remove({id: 'botania:livingwood_bow'})
 
+    e.remove({id: 'botania:petal_apothecary/orechid'})
+    e.remove({id: 'botania:petal_apothecary/orechid_ignem'})
+
     e.shaped('botania:diluted_pool', [
         '  T',
         'WVW', 

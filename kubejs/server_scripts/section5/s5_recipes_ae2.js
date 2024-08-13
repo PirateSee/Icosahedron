@@ -275,7 +275,7 @@ ServerEvents.recipes(e => {
     e.recipes.create.mechanical_crafting('ae2:controller', [
 		'UIIIU',
         'IFGFI',
-        'IGCGI',
+        'IGCGI',    
         'IFGFI',
         'UIIIU'
 	], {
@@ -699,7 +699,7 @@ ServerEvents.recipes(e => {
 	], {
         U: 'kubejs:tungsten_ingot',
         P: 'ae2:fluix_pearl',
-        O: 'mekanism:polonium_pellet',
+        O: 'mekanism:pellet_polonium',
         T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:wireless_receiver')
 

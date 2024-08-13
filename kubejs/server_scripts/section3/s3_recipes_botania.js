@@ -168,7 +168,7 @@ ServerEvents.recipes(e => {
         A: 'botania:alchemy_catalyst'
 	}).id('ico:conjuration_catalyst')
 
-    e.recipes.create.pressing('botania:gaia_ingot', ['botania:terrasteel_ingot', '4x botania:life_essence', 'betterend:amber_gem']).superheated().id('ico:gaia_ingot')
+    e.recipes.create.compacting('botania:gaia_ingot', ['botania:terrasteel_ingot', '4x botania:life_essence', 'betterend:amber_gem']).superheated().id('ico:gaia_ingot')
 
     e.custom({
         "type": "botania:mana_infusion",
