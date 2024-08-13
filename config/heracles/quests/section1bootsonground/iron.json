@@ -31,6 +31,9 @@
     "description": [
       "<h2>- Aquire Hardware ---</h2>",
       "Make some iron. Simple, right? you've done this many times before, im sure.",
+      "",
+      "You'll notice some ores are a bit diffrent. Hold on to Limonite and Salpherite. They contain minerals",
+      "",
       "<hr/>",
       "<task task=\"getiron\" quest=\"iron\"/>",
       "<hr/>",

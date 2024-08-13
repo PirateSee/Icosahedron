@@ -296,4 +296,26 @@ ServerEvents.recipes(e => {
 	e.shapeless('kubejs:advanced_multitool', ['kubejs:advanced_tool_handle', 'kubejs:advanced_hammer', 'kubejs:advanced_file', 'kubejs:advanced_saw', 'create:polished_rose_quartz']).id('ico:tool_advanced_multitool')
 
 	e.recipes.create.filling('5x kubejs:sealant', [Fluid.of('kubejs:coal_tar', 50), 'minecraft:iron_nugget'])
+
+    e.shaped('kubejs:compressed_iron_drill', [
+		'iIi',
+		'IGI', 
+		'GAG'  
+	], {
+		I: 'kubejs:high_pressure_plate',
+		i: 'create:brass_nugget',
+		G: 'pneumaticcraft:ingot_iron_compressed',
+		A: 'create:andesite_alloy'
+	}).id('ico:compressed_iron_drill')
+
+    e.shaped('kubejs:netherite_drill', [
+		'iIi',
+		'IGI', 
+		'GAG'  
+	], {
+		I: 'minecraft:high_pressure_plate',
+		i: 'pneumaticcraft:plastic',
+		G: 'minecraft:diamond',
+		A: 'minecraft:netherite_ingot'
+	}).id('ico:netherite_drill')
 })

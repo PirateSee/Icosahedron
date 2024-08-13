@@ -1,0 +1,82 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "die": {
+      "icon": {
+        "item": {
+          "id": "minecraft:skeleton_skull",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "stat": "minecraft:deaths",
+      "target": 1,
+      "title": "Die",
+      "type": "heracles:stat"
+    }
+  },
+  "rewards": {
+    "award_recovery_compass": {
+      "item": {
+        "id": "minecraft:recovery_compass",
+        "count": 1,
+        "nbt": {
+          "Enchantments": [
+            {
+              "lvl": 1,
+              "id": "mna:soulbound"
+            }
+          ]
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Funeral Service ---",
+      "Died? Oops...",
+      "",
+      "Here is a /b/Recovery Compass/b/ that will /6/point you at your last death/6/. It's /b/Soulbound/b/, so you shouldn't be able to lose it (just /c/don't misplace it/c/).",
+      "",
+      "Careful /6/not to die again/6/ on the way, since that will change the /b/Compass's/b/ target.",
+      "",
+      "If you really need extra help getting/finding your stuff, you may ask an admin.",
+      "",
+      "<hr/>",
+      "<task task=\"die\" quest=\"funeral_service\"/>",
+      "<hr/>",
+      "<reward reward=\"award_recovery_compass\" quest=\"funeral_service\"/>"
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          120,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:recovery_compass",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/complex.png",
+    "title": {
+      "translate": "Funeral Service"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

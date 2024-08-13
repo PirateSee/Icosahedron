@@ -1,0 +1,51 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Etching ---",
+      "Want some custom tunes?",
+      "",
+      "Etched lets you play /b/custom music/b/. Place a /b/Blank Music Disc/b/ and a /b/Record Label/b/ in an /b/Etching Table/b/ to start /6/making a disc/6/. /6/Insert a link/6/ to etch onto the disc.",
+      "",
+      "You can insert discs into /b/Boomboxes/b/ to play music on the go.",
+      "",
+      "/b/Radios/b/ will /6/play music right from a link/6/.",
+      "",
+      "/6/Insert a URL/6/ that leads to an /b/MP3, WAV or OGG file, SoundCloud or Bandcamp song, or a Minecraft Sound Event./b/",
+      "",
+      "<hr/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -120,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "etched:radio",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "Etching"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

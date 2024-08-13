@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
     ], {
         U: 'kubejs:tungsten_ingot',
         a: 'mekanism:alloy_atomic',
-        D: 'born_in_chaos_v1:armor_plate_from_dark_metal',
+        D: 'born_in_chaos_v1:dark_metal_ingot',
         A: 'mekanism:pellet_antimatter',
         G: 'botania:gaia_ingot',
         R: 'mna:eldrin_rift',
