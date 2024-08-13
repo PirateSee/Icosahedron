@@ -1,13 +1,13 @@
-filename = 'bury_me_deep-1.20.1-1.0.2.jar'
+filename = 'bury_me_deep-1.20.1-1.0.3.jar'
 name = 'Bury Me Deep'
 side = 'both'
 
 [download]
-hash = 'c38a2a0686513f437a1ac47b11d634323a305acf1bc3a49cf3ef2324157b7470e9176a121a5332da898bd611db4373eebf09f887df199b7eac5c2bd501861c9d'
+hash = '4e14969fcb77b2fd3d93f88590830b3e69c9b0141f71b713179f2f3b2d10c957ac080220f4352201a8ba924dd3d59b58ed634892008478820cc5dd5c67e5b154'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/Sa8lEyhX/versions/BW0XnGsH/bury_me_deep-1.20.1-1.0.2.jar'
+url = 'https://cdn.modrinth.com/data/Sa8lEyhX/versions/lhWBC49a/bury_me_deep-1.20.1-1.0.3.jar'
 
 [update.modrinth]
 mod-id = 'Sa8lEyhX'
-version = 'BW0XnGsH'
+version = 'lhWBC49a'
