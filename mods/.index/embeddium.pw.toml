@@ -1,13 +1,13 @@
-filename = 'embeddium-0.3.28+mc1.20.1.jar'
+filename = 'embeddium-0.3.29+mc1.20.1.jar'
 name = 'Embeddium'
 side = 'both'
 
 [download]
-hash = '7dea141e886090a463e4f28c65cffa4a2252985197214fcf48795ffc5c3e42c9cbad44dfa3c975ef1ffa63448f155ba787f95ca30231b404fc737808f5bba866'
+hash = '01eb1e817ee080ac9e82badb0661da2f740753d24576fea27c86007f28ccc4724b4c5dd0eac3cb4d3db3922b6da15c918a826df21056067f995e2d9ca512bb02'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/sk9rgfiA/versions/lopZqfMw/embeddium-0.3.28%2Bmc1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/sk9rgfiA/versions/vCML9MtQ/embeddium-0.3.29%2Bmc1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'sk9rgfiA'
-version = 'lopZqfMw'
+version = 'vCML9MtQ'

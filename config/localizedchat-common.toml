@@ -5,7 +5,7 @@
 	#The maximum range at which a player local to another player can be heard without requiring being an op.
 	#Default: 100
 	#Range: > 0
-	talkRange = 356
+	talkRange = 650
 	#The maximum range at which a player local to another player can be heard when shouting.
 	#Default: 400
 	#Range: > 0
