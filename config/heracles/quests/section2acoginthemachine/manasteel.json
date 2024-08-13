@@ -7,7 +7,7 @@
     "get_manasteel": {
       "type": "heracles:item",
       "item": "botania:manasteel_ingot",
-      "amount": 1,
+      "amount": 4,
       "collection": "AUTOMATIC"
     }
   },

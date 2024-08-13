@@ -2,7 +2,14 @@
   "dependencies": [
     "mekanism"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_seperator": {
+      "type": "heracles:item",
+      "item": "mekanism:electrolytic_separator",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
@@ -60,7 +67,8 @@
       "",
       "/b/Advanced Solar Generators/b/ at the top /6/increase the passive heating rate/6/.",
       "",
-      "<hr/>"
+      "<hr/>",
+      "<task task=\"get_seperator\" quest=\"chemical_manipulation\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {

@@ -21,9 +21,9 @@
 	#This is the range after which audio begins to decay for frequency modulation. Defaults to 400.
 	falloffFM = 300
 	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 900.
-	maxAMDistance = 750
+	maxAMDistance = 650
 	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 800.
-	falloffAM = 650
+	falloffAM = 550
 	#This is whether or not using the walkie talkie slows the player. Defaults to true.
 	walkieTalkieSlow = true
 	#When true, replaces the walkie talkie with the spuddie talkie. Defaults to true.
