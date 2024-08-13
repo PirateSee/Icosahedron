@@ -3,7 +3,7 @@
 [general]
 	#The distance used to spread players in blocks (default: 2000)
 	#Range: > 2000
-	spreadDistance = 3750
+	spreadDistance = 3250
 
 #Blacklist Settings
 [blacklist]

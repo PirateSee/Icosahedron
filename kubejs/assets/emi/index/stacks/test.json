@@ -2,7 +2,24 @@
   "filters":
   [
     "ae2:facade",
-    "/vintageimprovements:.*(cobalt|enderium|pig_iron|queens_slime|slimesteel|lead|aluminum|amethyst_bronze|bronze|cast_iron|constantan|electrum|hepatizon|invar|lumium|manyullyn|nickel|osmium|palladium|platinum|pure_gold|refined_glowstone|refined_obsidian|rhodium|rose_gold|signalum|silver|steel|tin|uranium|andesite|blaze|netherite|nethersteel|vanadium|zinc|calorite|ostrum|desh|ironwood|knightmetal|shadow_steel|fiery|refined_radiance)/"
+    "/vintageimprovements:.*(cobalt|enderium|pig_iron|queens_slime|slimesteel|lead|aluminum|amethyst_bronze|bronze|cast_iron|constantan|electrum|hepatizon|invar|lumium|manyullyn|nickel|osmium|palladium|platinum|pure_gold|refined_glowstone|refined_obsidian|rhodium|rose_gold|signalum|silver|steel|tin|uranium|andesite|blaze|netherite|nethersteel|vanadium|zinc|calorite|ostrum|desh|ironwood|knightmetal|shadow_steel|fiery|refined_radiance)/",
+    "botania:elementium_pickaxe",
+    "botania:elementium_shovel",
+    "botania:elementium_axe",
+    "botania:elementium_sword",
+    "botania:elementium_hoe",
+    "minecraft:debug_stick",
+    "mna:debug_wand",
+    "born_in_chaos_v1:supreme_measure",
+    "mna:ender_disc",
+    "pneumaticcraft:pneumatic_helmet",
+    "pneumaticcraft:pneumatic_chestplate",
+    "pneumaticcraft:pneumatic_leggings",
+    "pneumaticcraft:pneumatic_boots",
+    "vinery:straw_hat",
+    "vinery:winemaker_apron",
+    "vinery:winemaker_leggings",
+    "vinery:winemaker_boots"
   ],
   "disable": true
 }
