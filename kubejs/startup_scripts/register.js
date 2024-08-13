@@ -757,7 +757,15 @@ StartupEvents.registry("block", (event) => {
 				}
 			}
 		}
-
+	//mna
+	event.create("magic_carpet")
+		.mapColor("none")
+		.soundType(SoundType.WOOL)
+		.hardness(0.5).resistance(0.6).requiresTool(false)
+		.textureAll('icosahedron:block/aquatrine_sand_ore')
+		.fullBlock(false)
+		.box(0,0,0,16,1,16)
+		.tagBlock("mna:animus_flying")
 })
 
 Platform.mods.kubejs.name = 'Icosahedron'
