@@ -177,7 +177,7 @@ ServerEvents.recipes(e => {
             "item": "kubejs:magnetized_iron",
             "count": 1
         },
-        "energy": 10000,
+        "energy": 5000,
         "maxChargeRate": 500
     }).id("ico:magnetized_iron")
 

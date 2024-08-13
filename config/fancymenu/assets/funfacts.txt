@@ -48,3 +48,4 @@ Compasses in the Nether point you at the portal you left. In The End, they point
 
 Eating a Golden Apple gives you another down chance. An enchanted one lets you revive yourself if eaten while down.
 Is this thing on? Hello?
+The Transceiver is a direct upgrade on the Walkie Talkie, allowing full mobility while transmitting, more range, and a short cooldown.
