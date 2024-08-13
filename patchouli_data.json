@@ -163,7 +163,8 @@
         "botania:devices/mana_bomb",
         "botania:devices/turntable",
         "botania:ender/black_hole_talisman",
-        "botania:misc/azulejo"
+        "botania:misc/azulejo",
+        "botania:mana/spark_changer"
       ],
       "bookmarks": [],
       "completedManualQuests": []

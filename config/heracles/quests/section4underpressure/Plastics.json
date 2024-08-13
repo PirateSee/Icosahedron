@@ -11,7 +11,15 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_sack": {
+      "item": {
+        "id": "supplementaries:sack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -25,7 +33,9 @@
       "/b/Plastic Sheets/b/, /b/Rubber/b/, and /b/Polystyrene/b/ are three complex but useful plastic products. Many machines going forward will need at least a little bit of one of these.",
       "",
       "<hr/>",
-      "<task task=\"get_plastic\" quest=\"Plastics\"/>"
+      "<task task=\"get_plastic\" quest=\"Plastics\"/>",
+      "<hr/>",
+      "<reward reward=\"award_sack\" quest=\"Plastics\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

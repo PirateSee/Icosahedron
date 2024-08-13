@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -25,7 +38,9 @@
       "",
       "There are a lot of other quirks and features, give them a /6/ponder/6/ for a more detailed overview.",
       "<hr/>",
-      "<task task=\"get_mechanical_crafter\" quest=\"Cog Crafting\"/>"
+      "<task task=\"get_mechanical_crafter\" quest=\"Cog Crafting\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Cog Crafting\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

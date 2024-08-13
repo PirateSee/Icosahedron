@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -24,7 +37,9 @@
       "Any open ends of the tube will /c/leak air/c/, and as such /6/should be sealed/6/ to prevent power loss.",
       "",
       "<hr/>",
-      "<task task=\"get_pressure_tube\" quest=\"Pressure Pipe\"/>"
+      "<task task=\"get_pressure_tube\" quest=\"Pressure Pipe\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Pressure Pipe\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

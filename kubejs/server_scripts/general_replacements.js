@@ -101,6 +101,14 @@ ServerEvents.recipes(e => {
     e.remove({id:'vintageimprovements:pressurizing/sulfuric_acid'})
     e.remove({id:'vintageimprovements:pressurizing/sulfur_trioxide'})
 
+    e.remove({id: 'create_new_age:cutting/copper_sheet'})
+    e.remove({id: 'create_new_age:cutting/overcharged_iron_sheet'})
+    e.remove({id: 'create_new_age:cutting/overcharged_golden_sheet'})
+    e.remove({id: 'create_new_age:diamond_wire'})
+    e.remove({id: 'create_new_age:shapeless/energiser_t1'})
+    e.remove({id: 'create_new_age:shaped/energiser_t2'})
+    e.remove({id: 'create_new_age:shaped/energiser_t3'})
+
     //mesh
     e.remove({id:'createsifter:advanced_brass_mesh'})
     e.remove({id:'createsifter:brass_mesh'})

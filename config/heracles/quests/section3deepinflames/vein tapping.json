@@ -11,7 +11,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Miners hate him"
@@ -25,7 +38,9 @@
       "They aren't cheap, but the reward is worth it.",
       "",
       "<hr/>",
-      "<task task=\"get_mining_machine\" quest=\"vein tapping\"/>"
+      "<task task=\"get_mining_machine\" quest=\"vein tapping\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"vein tapping\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

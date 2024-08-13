@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -22,7 +35,9 @@
       "",
       "/6/Mixing crushed coal/6/ will give /b/Coal Tar/b/, which can be mixed with /b/Water/b/ to make /b/Creosote Oil/b/. /6/Pouring this on planks/6/ will give /b/Treated Wood/b/.",
       "<hr/>",
-      "<task task=\"get_treated_wood_planks\" quest=\"Treated Wood\"/>"
+      "<task task=\"get_treated_wood_planks\" quest=\"Treated Wood\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Treated Wood\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

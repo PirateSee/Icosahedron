@@ -3,6 +3,7 @@
     "values": [
       "minecraft:protection",
       "minecraft:mending",
-      "extra_enchantments:overshield"
+      "extra_enchantments:overshield",
+      "allurement:reforming"
     ]
   }

@@ -16,7 +16,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -33,7 +46,9 @@
       "",
       "<hr/>",
       "<task task=\"get_refinery_output\" quest=\"Refinery\"/>",
-      "<task task=\"get_refinery\" quest=\"Refinery\"/>"
+      "<task task=\"get_refinery\" quest=\"Refinery\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Refinery\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -27,7 +40,9 @@
       "These processes /6/use no fuel/6/ and /6/simultaneously process all items/6/ cought in the stream. This makes it perfect for quick /b/bulk processing/b/.",
       "",
       "<hr/>",
-      "<task task=\"get_encased_fan\" quest=\"Slipstream Processing\"/>"
+      "<task task=\"get_encased_fan\" quest=\"Slipstream Processing\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Slipstream Processing\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

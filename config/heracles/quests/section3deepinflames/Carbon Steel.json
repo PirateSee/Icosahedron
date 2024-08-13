@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -25,7 +38,9 @@
       "Carbon Steel is very strong, but not very easy to work with, so it'll have to be /6/shaped while its still hot/6/. Hot carbon steel can be freely pressed or rolled into other shapes, but once it has been /6/quenched with water/6/ it can no longer be changed.",
       "",
       "<hr/>",
-      "<task task=\"get_carbon_steel\" quest=\"Carbon Steel\"/>"
+      "<task task=\"get_carbon_steel\" quest=\"Carbon Steel\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Carbon Steel\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Excellent liquid fuel"
@@ -24,7 +37,9 @@
       "Biodiesel is relatively easy to automate, being a combination of various/b/ renewable plant products/b/. It will also be used to make /b/Lubricant/b/, an important crafting liquid later.",
       "",
       "<hr/>",
-      "<task task=\"get_biodiesel\" quest=\"Plant Fuel\"/>"
+      "<task task=\"get_biodiesel\" quest=\"Plant Fuel\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Plant Fuel\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

@@ -22,7 +22,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -40,7 +53,9 @@
       "<hr/>",
       "<task task=\"get_bearing\" quest=\"Oil Rig\"/>",
       "<task task=\"get_crank\" quest=\"Oil Rig\"/>",
-      "<task task=\"get_head\" quest=\"Oil Rig\"/>"
+      "<task task=\"get_head\" quest=\"Oil Rig\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Oil Rig\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

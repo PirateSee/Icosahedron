@@ -16,7 +16,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -34,7 +47,9 @@
       "",
       "<hr/>",
       "<task task=\"get_uv_lightbox\" quest=\"Etched Lightning\"/>",
-      "<task task=\"get_etching_tank\" quest=\"Etched Lightning\"/>"
+      "<task task=\"get_etching_tank\" quest=\"Etched Lightning\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Etched Lightning\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -23,7 +36,9 @@
       "",
       "/b/Cruhsing Wheels/b/ can process any /6/Milling recipe/6/ faster, along with new /6/Crushing recipes/6/. Make sure something is catching the output on the other side, the /c/wheels wont hold on to the result/c/ unless their output is clogged.",
       "<hr/>",
-      "<task task=\"get_crushing_wheel\" quest=\"Crushing It\"/>"
+      "<task task=\"get_crushing_wheel\" quest=\"Crushing It\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Crushing It\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

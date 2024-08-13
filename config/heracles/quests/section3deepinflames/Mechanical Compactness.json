@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Engineers love him"
@@ -22,7 +35,9 @@
       "/b/Precision Mechanisms/b/ are complex components used for high-tier Create machinery. These require /6/Sequenced Assembly/6/ to be made. They are used for some /b/equipment/b/, /b/trains/b/, and /b/mining machines/b/.",
       "",
       "<hr/>",
-      "<task task=\"get_precision_mechanism\" quest=\"Mechanical Compactness\"/>"
+      "<task task=\"get_precision_mechanism\" quest=\"Mechanical Compactness\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Mechanical Compactness\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -27,7 +40,9 @@
       "",
       "Here's to more advanced automation!",
       "<hr/>",
-      "<task task=\"get_deployer\" quest=\"Hands of Brass\"/>"
+      "<task task=\"get_deployer\" quest=\"Hands of Brass\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Hands of Brass\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

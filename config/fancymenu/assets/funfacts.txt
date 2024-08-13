@@ -24,7 +24,6 @@ Multitools have more durability then the tools included combined.
 Broadswords have a signifigant upswing time.
 Scrolls that discribe how to turn double-headed tools into weapons can be found.
 I have 3 bricks.
-Amethyst contains some magical properties, but they must be polished for them to fully realize.
 When you walk fowards, you move.
 The word autodefenestration means to throw oneself out a window
 The first usage of the term "Fun Fact" comes from a newspaper column titled: "Fun fact, and fancy".
@@ -46,3 +45,6 @@ Rafsa_
 WAKE UP WAKE UP WAKE UP
 The Protection and Mending enchantments have been disabled. Don't go looking for them.
 Compasses in the Nether point you at the portal you left. In The End, they point to the main island.
+
+Eating a Golden Apple gives you another down chance. An enchanted one lets you revive yourself if eaten while down.
+Is this thing on? Hello?

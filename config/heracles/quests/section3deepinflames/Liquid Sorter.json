@@ -16,7 +16,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -38,7 +51,9 @@
       "",
       "<hr/>",
       "<task task=\"get_brass_tunnel\" quest=\"Liquid Sorter\"/>",
-      "<task task=\"get_smart_pipe\" quest=\"Liquid Sorter\"/>"
+      "<task task=\"get_smart_pipe\" quest=\"Liquid Sorter\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Liquid Sorter\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

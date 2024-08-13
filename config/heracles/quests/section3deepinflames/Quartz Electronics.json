@@ -12,7 +12,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -25,7 +38,9 @@
       "",
       "They can be made via /b/Deployers/b/ later, skipping the need for a hammer.",
       "<hr/>",
-      "<task task=\"get_electron_tube\" quest=\"Quartz Electronics\"/>"
+      "<task task=\"get_electron_tube\" quest=\"Quartz Electronics\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Quartz Electronics\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

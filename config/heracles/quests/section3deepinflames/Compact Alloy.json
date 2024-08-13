@@ -12,7 +12,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -26,7 +39,9 @@
       "You'll need to /6/superheat/6/ /b/Aluminum/b/ and /b/Pressed Iron/b/, then /6/compact/6/ them with /b/Corundum Clusters/b/ to make ingots. The pressure alloy ingots msut then be /6/exploded/6/ to make /b/Pressure Alloy/b/. Blowing up the ingots /c/may cause you to lose som/c/e, so a /6/more efficent process/6/ is worth investing in.",
       "",
       "<hr/>",
-      "<task task=\"get_compressed_iron\" quest=\"Compact Alloy\"/>"
+      "<task task=\"get_compressed_iron\" quest=\"Compact Alloy\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Compact Alloy\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

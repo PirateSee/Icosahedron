@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -21,7 +34,9 @@
       "",
       "",
       "<hr/>",
-      "<task task=\"get_lube_bearing\" quest=\"Lubricated\"/>"
+      "<task task=\"get_lube_bearing\" quest=\"Lubricated\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Lubricated\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

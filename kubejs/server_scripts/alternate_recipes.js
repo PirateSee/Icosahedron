@@ -305,4 +305,43 @@ ServerEvents.recipes(e => {
     e.recipes.create.emptying([Fluid.of('create_enchantment_industry:ink', 1000), 'minecraft:glass_bottle'], 'supplementaries:antique_ink')
 
     e.recipes.create.mixing('2x createadditon:electrum_ingot', ['minecraft:gold_ingot', '2x mna:transmuted_silver']).id('ico:quicksilver_electrum')
+
+    //chainmail
+    e.remove({id: 'mna:chainmail_helmet'})
+    e.remove({id: 'mna:chainmail_chestplate'})
+    e.remove({id: 'mna:chainmail_leggings'})
+    e.remove({id: 'mna:chainmail_boots'})
+
+    e.recipes.shaped('minecraft:chainmail_helmet', [
+        'NIN',
+        'N N'
+    ], {
+        N: 'minecraft:iron_nugget',
+        I: 'minecraft:iron_ingot'
+    })
+
+    e.recipes.shaped('minecraft:chainmail_chestplate', [
+        'I I',
+        'NNN',
+        'NNN'
+    ], {
+        N: 'minecraft:iron_nugget',
+        I: 'minecraft:iron_ingot'
+    })
+
+    e.recipes.shaped('minecraft:chainmail_leggings', [
+        'NNN',
+        'I I',
+        'N N'
+    ], {
+        N: 'minecraft:iron_nugget',
+        I: 'minecraft:iron_ingot'
+    })
+
+    e.recipes.shaped('minecraft:chainmail_boots', [
+        'N N',
+        'N N'
+    ], {
+        N: 'minecraft:iron_nugget'
+    })
 })

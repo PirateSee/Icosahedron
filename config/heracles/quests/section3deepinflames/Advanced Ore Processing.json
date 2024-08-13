@@ -25,7 +25,7 @@
       "",
       "This will process /6/Pentlandite, Bauxite, Malachite, Hematite/6/",
       "",
-      "/b/Bauxite/b/ and /b/Malachite/b/ yield /b/Iron/b/ and /b/Copper/b/ respectively. They can be found in the /c/Nether/c/ and are far /6/more common and mineral-rich/6/ than their overworld counterparts. Risk for reward.",
+      "/b/Hematite/b/ yields /b/Iron/b/ and is found in /6/Crimson Forests/6/. /b/Malachite/b/ yields /b/Copper/b/ in /6/Warped Forests/6/. Both are far /6/more common and mineral-rich/6/ than their overworld counterparts. Risk for reward.",
       "<hr/>",
       "<task task=\"get_aluminum\" quest=\"Advanced Ore Processing\"/>"
     ],

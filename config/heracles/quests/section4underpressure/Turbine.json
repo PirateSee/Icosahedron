@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -22,7 +35,9 @@
       "/b/Turbine Rotors/b/ are moderately complex components using /b/Plastic Sheets/b/. They are used in a few machines.",
       "",
       "<hr/>",
-      "<task task=\"get_turbine\" quest=\"Turbine\"/>"
+      "<task task=\"get_turbine\" quest=\"Turbine\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Turbine\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

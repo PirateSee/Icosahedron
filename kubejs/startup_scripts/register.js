@@ -762,7 +762,7 @@ StartupEvents.registry("block", (event) => {
 		.mapColor("none")
 		.soundType(SoundType.WOOL)
 		.hardness(0.5).resistance(0.6).requiresTool(false)
-		.textureAll('icosahedron:block/aquatrine_sand_ore')
+		.textureAll('icosahedron:block/magic_carpet')
 		.fullBlock(false)
 		.box(0,0,0,16,1,16)
 		.tagBlock("mna:animus_flying")

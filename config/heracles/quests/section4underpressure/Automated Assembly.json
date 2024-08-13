@@ -28,13 +28,28 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_achient_tome": {
+      "title": "Recieve Random Ancient Tome",
+      "icon": {
+        "item": {
+          "id": "quark:ancient_tome",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/tomes",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
     "description": [
-      ""
+      "",
+      "<hr/>",
+      "<reward reward=\"award_achient_tome\" quest=\"Automated Assembly\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {

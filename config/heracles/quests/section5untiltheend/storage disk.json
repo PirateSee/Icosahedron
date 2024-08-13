@@ -2,8 +2,35 @@
   "dependencies": [
     "Complex Ore Processing"
   ],
-  "tasks": {},
-  "rewards": {},
+  "tasks": {
+    "get_drive": {
+      "type": "heracles:item",
+      "item": "ae2:drive",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_terminal": {
+      "type": "heracles:item",
+      "item": "ae2:terminal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "get_acceptor": {
+      "type": "heracles:item",
+      "item": "ae2:energy_acceptor",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "award_cell": {
+      "item": {
+        "id": "ae2:item_storage_cell_1k",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -16,9 +43,19 @@
       "",
       "/b/Applied Energistics 2/b/ (AE2) provides a solution: /b/Store stuff in data disks/b/ and /6/acess them through a single terminal/6/ with a /b/search bar/b/. These /b/Matter Energy/b/ (ME) Networks provide powerful logistics and automation solutions via the various devices that can be installed on a network.",
       "",
-      "<text>You may view the guide in-game by hovering over items. You also may refer to the  <underline><dark_aqua><link href=\"https://guide.appliedenergistics.org/1.20.1\">Online Documentation</link></dark_aqua></underline> for everything you need to know about <aqua>ME Networks</aqua>. Both the in-game and online guides are identical, so pick your perfered method.</text>",
+      "<text>You may <aqua>view the guide in-game</aqua> by hovering over items. You also may refer to the  <underline><dark_aqua><link href=\"https://guide.appliedenergistics.org/1.20.1\">Online Documentation</link></dark_aqua></underline> for everything you need to know about <aqua>ME Networks</aqua>. Both the in-game and online guides are identical, so pick your perfered method.</text>",
       "",
-      "<hr/>"
+      "The minimum you'll need for a setup is a /b/ME Drive/b/, an /b/Energy Acceptor/b/, and some /b/Storage Cells/b/. If you want to acess the storage, you'll need a /b/ME Terminal/b/.",
+      "",
+      "Note that /b/Cable Subparts/b/ like /b/Terminals/b/ must be /6/mounted on a cable/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_drive\" quest=\"storage disk\"/>",
+      "<task task=\"get_acceptor\" quest=\"storage disk\"/>",
+      "<task task=\"get_terminal\" quest=\"storage disk\"/>",
+      "<hr/>",
+      "Here is a free storage cell for you. Smallest size. Best for a variety of items",
+      "<reward reward=\"award_cell\" quest=\"storage disk\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {

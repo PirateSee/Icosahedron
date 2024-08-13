@@ -38,7 +38,6 @@
       "<task task=\"get_mech_belt\" quest=\"Belt Transfer\"/>",
       "<hr/>",
       "<reward reward=\"award_motiviation\" quest=\"Belt Transfer\"/>"
-      
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {

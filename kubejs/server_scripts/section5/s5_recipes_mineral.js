@@ -154,6 +154,95 @@ ServerEvents.recipes(e => {
         "processingTime": 2000
     }).id('ico:decomposing_wolframite')
 
+    //uranium
+    e.custom({
+        "type": "mekanism:dissolution",
+        "gasInput": {
+            "amount": 1,
+            "gas": "mekanism:sulfuric_acid"
+        },
+        "itemInput": {
+            "ingredient": {
+                "item": "kubejs:uraninite_ore"
+            }
+        },
+        "output": {
+          "amount": 200,
+            "chemicalType": "slurry",
+            "slurry": "kubejs:dirty_uraninite"
+        }
+    })
+    e.custom({
+        "type": "mekanism:washing",
+        "fluidInput": {
+            "amount": 5,
+            "tag": "minecraft:water"
+        },
+        "output": {
+            "amount": 1,
+            "slurry": "kubejs:clean_uraninite"
+        },
+        "slurryInput": {
+            "amount": 1,
+            "slurry": "kubejs:dirty_uraninite"
+        }
+    })
+    e.custom({
+        "type": "mekanism:crystallizing",
+        "chemicalType": "slurry",
+        "input": {
+            "amount": 200,
+            "slurry": 'kubejs:clean_uraninite'
+        },
+        "output": {
+            "item": "kubejs:uraninite_crystal"
+        }
+    })
+    e.custom({
+        "type": "mekanism:injecting",
+        "chemicalInput": {
+            "amount": 1,
+            "gas": "mekanism:hydrogen_chloride"
+        },
+        "itemInput": {
+            "ingredient": {
+                "item": "kubejs:uraninite_crystal"
+            }
+        },
+            "output": {
+            "count": 1,
+            "item": "kubejs:uraninite_shard"
+        }
+    })
+    e.custom({
+        "type": "mekanism:purifying",
+        "chemicalInput": {
+            "amount": 1,
+            "gas": "mekanism:oxygen"
+        },
+        "itemInput": {
+            "ingredient": {
+                "item": "kubejs:uraninite_shard"
+            }
+        },
+        "output": {
+            "count": 1,
+            "item": "kubejs:uraninite_clump"
+        }
+    })
+    e.custom({
+        "type": "mekanism:crushing",
+        "input": {
+            "ingredient": {
+                "item": "kubejs:uraninite_clump"
+            }
+        },
+        "output": {
+            "count": 1,
+            "item": "kubejs:uraninite_powder"
+        }
+    })
+
     e.custom({
         "type":"vintageimprovements:centrifugation",
         "ingredients": [ 
@@ -184,5 +273,24 @@ ServerEvents.recipes(e => {
     
     e.blasting('kubejs:tungsten_ingot', 'kubejs:tungsten_dust')
 
-    e.recipes.create.crushing(Item.of('mekanism:dirty_dust_tin').withChance(0.05), 'minecraft:granite')
+    //e.recipes.create.crushing(Item.of('mekanism:dirty_dust_tin').withChance(0.05), 'minecraft:granite')
+
+    e.remove({id: 'betterend:amber_gem'})
+    e.custom({
+        "type": "mekanism:purifying",
+        "chemicalInput": {
+            "amount": 1,
+            "gas": "mekanism:oxygen"
+        },
+        "itemInput": {
+            "ingredient": {
+                "count": 4,
+                "item": "betterend:raw_amber"
+            }
+        },
+        "output": {
+            "count": 1,
+            "item": "betterend:amber_gem"
+        }
+    })
 })

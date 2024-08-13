@@ -23,6 +23,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:runic_altar/air'})
 
     e.remove({id: 'botania:fel_pumpkin'})
+    e.remove({id: 'botania:pump'})
 
     e.remove({id: 'botania:manasteel_pick'})
     e.remove({id: 'botania:manasteel_shovel'})

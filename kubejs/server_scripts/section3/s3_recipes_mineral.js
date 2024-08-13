@@ -113,11 +113,11 @@ ServerEvents.recipes(e => {
         'minecraft:diamond',            // Arg 2: the item to replace
         'kubejs:unrefined_diamond'         // Arg 3: the item to replace it with
     )
-    e.replaceOutput(
+    /*e.replaceOutput(
         { output: 'minecraft:amethyst_shard' }, // Arg 1: the filter
         'minecraft:amethyst_shard',            // Arg 2: the item to replace
         'kubejs:unrefined_amethyst'         // Arg 3: the item to replace it with
-    )
+    )*/
 
     let gemstonePolishing = (id,output) => {
         e.recipes.create.splashing('kubejs:cleaned_unrefined_'.concat(id), 'kubejs:unrefined_'.concat(id)).id("ico:splashing_".concat(id))
@@ -139,7 +139,7 @@ ServerEvents.recipes(e => {
     }
     
     gemstonePolishing('diamond', 'minecraft:diamond')
-    gemstonePolishing('amethyst', 'minecraft:amethyst')
+    //gemstonePolishing('amethyst', 'minecraft:amethyst')
 
     e.recipes.createMilling('kubejs:coal_powder', '#minecraft:coals')
     

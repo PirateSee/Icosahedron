@@ -24,7 +24,7 @@
       "",
       "The Belt Grinder must be /c/powered above a set RPM/c/ aganist the flow of items depending on the recipe and then be /6/passed items over/6/ it similar to the saw.",
       "",
-      "This will allow you to refine /b/Diamonds/b/ and /b/Amethyst/b/.",
+      "This will allow you to refine /b/Diamonds/b/.",
       "<hr/>",
       "<task task=\"get_diamond\" quest=\"Gemstone Polishing\"/>"
     ],

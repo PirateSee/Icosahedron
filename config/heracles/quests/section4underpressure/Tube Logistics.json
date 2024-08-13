@@ -22,7 +22,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -97,7 +110,9 @@
       "<hr/>",
       "<task task=\"get_logistics_module\" quest=\"Tube Logistics\"/>",
       "<task task=\"get_logistics_provider\" quest=\"Tube Logistics\"/>",
-      "<task task=\"get_logistics_frame\" quest=\"Tube Logistics\"/>"
+      "<task task=\"get_logistics_frame\" quest=\"Tube Logistics\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Tube Logistics\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
