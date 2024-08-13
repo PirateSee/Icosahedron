@@ -25,7 +25,7 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 0.5"
+                "command": "scale set pehkui:height 0.4"
             }
         ]
     },

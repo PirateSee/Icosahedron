@@ -288,4 +288,11 @@ ServerEvents.tags('block', e => {
     e.add('ico:end_ore_replacable', 'minecraft:basalt')
     e.add('ico:end_ore_replacable', 'minecraft:smooth_basalt')
     e.add('ico:end_ore_replacable', '#nullscape:dead_corals')
+
+	
+})
+
+ServerEvents.tags('block', e => {
+	e.removeAll('mna:animus_flying')
+	e.add('mna:animus_flying', 'kubejs:magic_carpet')
 })
