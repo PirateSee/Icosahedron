@@ -333,6 +333,17 @@ ServerEvents.recipes(e => {
 		V: 'mna:vellum'
 	}).id('ico:spell_book')
 
+	e.shaped('kubejs:magic_carpet', [
+		'GAG', 
+		'ACA', 
+		'GLG'
+	], {
+		C: 'minecraft:red_carpet',
+		A: 'mna:arcane_ash',
+		G: 'minecraft:gold_nugget',
+		L: 'mna:slipstream_generator'
+	}).id('ico:magic_carpet')
+
 	e.shapeless('mna:healing_poultice', ['#botania:mystical_flowers', '#ico:arcane_base','#mna:healing_poultice_bases']).id('ico:healing_poultice')
 
 	e.recipes.create.mixing(Fluid.of('kubejs:mana_tea', 500), [Fluid.of('minecraft:water', 500), 'minecraft:sugar', '#botania:mystical_flowers']).heated()
