@@ -1,17 +1,28 @@
 ServerEvents.recipes(e => {
+    //remove energisers
     e.remove({type: 'create_new_age:energising'})
-    //e.remove({id: 'create_new_age:energising/iron_ingot'})
-    //e.remove({id: 'create_new_age:energising/iron_sheet'})
-    e.remove({id: 'create_new_age:pressing/overcharged_iron'})
 
-    //e.remove({id: 'create_new_age:energising/gold_ingot'})
-    //e.remove({id: 'create_new_age:energising/golden_sheet'})
+    e.remove({id: 'create_new_age:shapeless/energiser_t1'})
+    e.remove({id: 'create_new_age:shaped/energiser_t2'})
+    e.remove({id: 'create_new_age:shaped/energiser_t3'})
+
+    e.remove({id: 'create_new_age:pressing/overcharged_iron'})
     e.remove({id: 'create_new_age:pressing/overcharged_gold'})
 
     e.remove({id: 'create_new_age:enchanted_golden_apple'})
+    //reactor
     e.remove({id: 'create_new_age:reactor/reactor_casing'})
     e.remove({id: 'create_new_age:reactor/reactor_glass'})
 
+    e.remove({id: 'create_new_age:reactor/reactor_glass'})
+
+    //remove wires
+    e.remove({id: 'create_new_age:cutting/copper_sheet'})
+    e.remove({id: 'create_new_age:cutting/overcharged_iron_sheet'})
+    e.remove({id: 'create_new_age:cutting/overcharged_golden_sheet'})
+    e.remove({id: 'create_new_age:diamond_wire'})
+
+    //mag
     e.remove({id: 'create_new_age:shaped/layered_magnet'})
     e.remove({id: 'create_new_age:shaped/fluxuated_magnet'})
 
@@ -28,9 +39,10 @@ ServerEvents.recipes(e => {
         },
         "energy": 10000,
         "maxChargeRate": 500
-    }).id("ico:magnetized_iron")
+    }).id("ico:overcharged_diamond")
 
-    inter = 'create_new_age:incomplete_reactor_casing'
+    //reactor
+    let inter = 'create_new_age:incomplete_reactor_casing'
 	e.recipes.create.sequenced_assembly([
 		Item.of('2x create_new_age:reactor_casing').withChance(16.0)
 	], 'kubejs:blast_brick', [
@@ -39,4 +51,24 @@ ServerEvents.recipes(e => {
 	]).transitionalItem(inter).loops(1).id("ico:new_age_reactor_casing")
 
     e.recipes.createDeploying('create_new_age:reactor_glass', 'create_new_age:reactor_casing', 'kubejs:tempered_glass').id('ico:new_age_reactor_glass')
+
+    //mag
+    e.shaped('3x create_new_age:layered_magnet', [
+        'GGG',
+        'III',
+        'GGG'
+    ], {
+        G: 'create:golden_sheet',
+        I: 'kubejs:magnetized_iron'
+    })
+
+    e.shaped('2x create_new_age:fluxuated_magnetite', [
+        'IMI',
+        'MDM',
+        'IMI'
+    ], {
+        M: 'create_new_age:magnetite',
+        D: 'create_new_age:overcharged_diamond',
+        I: 'kubejs:magnetized_iron'
+    })
 })

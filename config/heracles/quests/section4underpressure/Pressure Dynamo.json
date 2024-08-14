@@ -10,7 +10,20 @@
       "collection": "AUTOMATIC"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_motiviation": {
+      "title": "Motivation",
+      "icon": {
+        "item": {
+          "id": "minecraft:paper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/motivate",
+      "type": "heracles:loottable"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -26,7 +39,9 @@
       "The /b/Compressed Air Engine/b/ can be used to turn /b/Compressed Air/b/ back into /b/Kinetic Energy/b/.",
       "",
       "<hr/>",
-      "<task task=\"get_rotational_compressor\" quest=\"Pressure Dynamo\"/>"
+      "<task task=\"get_rotational_compressor\" quest=\"Pressure Dynamo\"/>",
+      "<hr/>",
+      "<reward reward=\"award_motiviation\" quest=\"Pressure Dynamo\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
