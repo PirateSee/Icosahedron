@@ -12,6 +12,8 @@
     }
   ],
   "lookup_history": [
+    "item:ae2:view_cell",
+    "item:ae2:wireless_receiver",
     "item:create_new_age:reactor_rod",
     "item:mekanism:radioactive_waste_barrel",
     "item:mekanism:nutritional_liquifier",
@@ -899,7 +901,6 @@
     "item:mna:decoration/redstone_arcane_stone",
     "item:mna:decoration/redstone_arcane_stone_chiseled",
     "item:ae2:cell_workbench",
-    "item:ae2:view_cell",
     "item:ae2:sky_stone_block",
     "item:ae2:sky_dust",
     "item:ae2:quartz_fixture",
@@ -984,7 +985,6 @@
     "item:ae2:sky_stone_brick",
     "item:minecraft:flint_and_steel{Damage:0}",
     "item:supplementaries:flint_block",
-    "item:ae2:wireless_receiver",
     "item:ae2:item_cell_housing",
     "item:ae2:spatial_cell_component_16",
     "item:ae2:spatial_cell_component_2",
