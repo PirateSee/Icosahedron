@@ -1,5 +1,8 @@
 {
   "CONFIG_VERSION": 1,
+  "chat_nameplate": 0,
+  "entity_nameplate": 0,
+  "list_nameplate": 0,
   "action_wheel_button": "key.keyboard.unknown",
   "popup_button": "key.keyboard.unknown",
   "chat_messages": true

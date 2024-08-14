@@ -2,13 +2,13 @@
 #These are the configurations for the transceiver item.
 [transceiver]
 	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 1000.
-	maxFMDistance = 1000
+	maxFMDistance = 1250
 	#This is the range after which audio begins to decay for frequency modulation. Defaults to 900.
-	falloffFM = 900
+	falloffFM = 1150
 	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 1800.
-	maxAMDistance = 1800
+	maxAMDistance = 1900
 	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 1700.
-	falloffAM = 1700
+	falloffAM = 1800
 	#This is whether or not using the transceiver slows the player. Defaults to true.
 	transceiverSlow = false
 	#When false, removes the transceiver recipe. Defaults to true.
@@ -17,13 +17,13 @@
 #These are the configurations for the walkie talkie item.
 [walkie_talkie]
 	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 500.
-	maxFMDistance = 350
+	maxFMDistance = 450
 	#This is the range after which audio begins to decay for frequency modulation. Defaults to 400.
-	falloffFM = 300
+	falloffFM = 350
 	#This is the range after which players can no longer be heard for amplitude modulation. Defaults to 900.
-	maxAMDistance = 650
+	maxAMDistance = 700
 	#This is the range after which audio begins to decay for amplitude modulation. Defaults to 800.
-	falloffAM = 550
+	falloffAM = 625
 	#This is whether or not using the walkie talkie slows the player. Defaults to true.
 	walkieTalkieSlow = true
 	#When true, replaces the walkie talkie with the spuddie talkie. Defaults to true.
