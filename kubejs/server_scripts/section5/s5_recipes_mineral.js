@@ -39,7 +39,7 @@ ServerEvents.recipes(e => {
     })*/
 
     //tungsten
-    e.custom({
+    /*e.custom({
         "type": "mekanism:dissolution",
         "gasInput": {
             "amount": 1,
@@ -81,7 +81,7 @@ ServerEvents.recipes(e => {
         "output": {
             "item": "kubejs:wolframite_crystal"
         }
-    })
+    })*/
     e.custom({
         "type": "mekanism:injecting",
         "chemicalInput": {
@@ -90,7 +90,7 @@ ServerEvents.recipes(e => {
         },
         "itemInput": {
             "ingredient": {
-                "item": "kubejs:wolframite_crystal"
+                "item": "kubejs:wolframite_ore"
             }
         },
             "output": {
@@ -155,7 +155,7 @@ ServerEvents.recipes(e => {
     }).id('ico:decomposing_wolframite')
 
     //uranium
-    e.custom({
+    /*e.custom({
         "type": "mekanism:dissolution",
         "gasInput": {
             "amount": 1,
@@ -197,7 +197,7 @@ ServerEvents.recipes(e => {
         "output": {
             "item": "kubejs:uraninite_crystal"
         }
-    })
+    })*/
     e.custom({
         "type": "mekanism:injecting",
         "chemicalInput": {
@@ -206,7 +206,7 @@ ServerEvents.recipes(e => {
         },
         "itemInput": {
             "ingredient": {
-                "item": "kubejs:uraninite_crystal"
+                "item": "kubejs:uraninite_ore"
             }
         },
             "output": {

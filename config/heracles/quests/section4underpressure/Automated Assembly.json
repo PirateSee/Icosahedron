@@ -47,6 +47,14 @@
       "text": ""
     },
     "description": [
+      "# - Automated Assembly ---",
+      "Your very own assembly line.",
+      "",
+      "The Assembler is a multiblock device that transforms one input into an output.",
+      "",
+      "Place down an /b/Assembly Platform/b/. Adjacent to it must be two /b/Assembly IO Units/b/, one /6/Import and one Outpu/6/t. They will /6/place into/pull from adjacent storages/6/. Additonaly either a /b/Laser/b/ or /b/Drill/b/ unit depending on recipe (or both, for quick switching). An /b/Assembly Controller/b/ needs to be /6/adjacent to any part/6/ of the setup, not nessarily the /b/Platform/b/.",
+      "",
+      "The /b/Controller/b/ will require /b/Compressed Air/b/ /6/from below/6/, and the respective /b/Drill or Laser program/b/ to function.",
       "",
       "<hr/>",
       "<reward reward=\"award_achient_tome\" quest=\"Automated Assembly\"/>"

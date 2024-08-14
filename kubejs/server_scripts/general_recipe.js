@@ -424,20 +424,21 @@ ServerEvents.recipes(e => {
         R: 'simpleradio:transmitting_module',
         L: 'simpleradio:listener_module',
         N: 'kubejs:nickel_ingot',
-        n: 'kubejs:nickel_ingot_sheet',
+        n: 'kubejs:nickel_sheet',
         W: '#minecraft:wool'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:microphone')
 
     e.shaped('simpleradio:speaker', [
 		'  T', 
-		'SnE',
+		'SGE',
         'nNn'
 	], {
 		T: '#ico:tool/screwdriver',
         E: 'simpleradio:receiving_module',
         S: 'simpleradio:speaker_module',
         N: 'kubejs:nickel_ingot',
-        n: 'kubejs:nickel_sheet'        
+        n: 'kubejs:nickel_sheet',
+        G: 'quark:iron_grate'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:speaker_radio')
 
     e.shaped('simpleradio:radiosmither', [

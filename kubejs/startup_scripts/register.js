@@ -166,6 +166,7 @@ StartupEvents.registry('item', e => {
     e.create('tin_ingot').texture('icosahedron:item/ore/refined/tin_ingot')
     //nickel
 	e.create('nickel_ingot').texture('icosahedron:item/ore/refined/nickel_ingot')
+    e.create('nickel_sheet').texture('icosahedron:item/ore/refined/nickel_sheet')
 	e.create('nickel_nugget').texture('icosahedron:item/ore/refined/nickel_nugget')
     //tungsten
 	e.create('tungsten_ingot').texture('icosahedron:item/ore/refined/tungsten_ingot')
@@ -241,7 +242,7 @@ StartupEvents.registry('item', e => {
     //brass related
     e.create('brass_framing').texture('icosahedron:item/component/brass/brass_framing')
 	e.create('brass_filter_framing').texture('icosahedron:item/component/brass/brass_filter_framing')
-	e.create('unfinished_brass_filter').texture('icosahedron:item/component/brass/unfinished_brass_mesh')
+	e.create('unfinished_brass_filter').texture('icosahedron:item/incomplete/unfinished_brass_mesh').displayName('Unfinished Brass Mesh')
     //logic
     e.create('logic_circuit').texture('icosahedron:item/component/brass/logic_circuit')
 	e.create('redstone_cable').texture('icosahedron:item/component/brass/redstone_cable')

@@ -2,13 +2,29 @@
   "dependencies": [
     "Automated Assembly"
   ],
-  "tasks": {},
+  "tasks": {
+    "get_ender_eye": {
+      "type": "heracles:item",
+      "item": "minecraft:ender_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
   "rewards": {},
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "# - Laser Eye Surgery ---",
+      "Opened Eyes.",
+      "",
+      "You can now make /b/Eyes of Ender/b/ with the /b/Assembler/b/ and /b/Pressure Chamber/b/.",
+      "",
+      "Have you gotten /b/12 End Remastered Eyes/b/ yet? You'll need 12 unique ones to open the portal.",
+      "<hr/>",
+      "<task task=\"get_ender_eye\" quest=\"Engraved Eyes\"/>"
+    ],
     "groups": {
       "Section 4: Under Pressure": {
         "position": [

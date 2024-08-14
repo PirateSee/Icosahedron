@@ -254,6 +254,12 @@ ServerEvents.tags('item', e => {
 	e.add('ico:manaweaving_wands', 'mna:manaweaver_wand')
 	e.add('ico:manaweaving_wands', 'mna:manaweaver_wand_advanced')
 
+    //rad armor
+    e.add('create_new_age:nuclear/hazmat_suit', 'mekanism:hazmat_mask')
+    e.add('create_new_age:nuclear/hazmat_suit', 'mekanism:hazmat_gown')
+    e.add('create_new_age:nuclear/hazmat_suit', 'mekanism:hazmat_pants')
+    e.add('create_new_age:nuclear/hazmat_suit', 'mekanism:hazmat_boots')
+
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
 })

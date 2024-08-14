@@ -7,7 +7,12 @@
       "text": ""
     },
     "description": [
-      "## - Before the End ---"
+      "## - Before the End ---",
+      "This is it.",
+      "",
+      "You'll need /b/12 unique eyes/b/.",
+      "",
+      "<item id=\"endrem:old_eye\"/>"
     ],
     "groups": {
       "Section 5: Until the End": {
