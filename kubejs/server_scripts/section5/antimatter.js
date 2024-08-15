@@ -31,10 +31,29 @@ ServerEvents.recipes(e => {
     e.remove({id: 'appmek:portable_chemical_storage_cell_256k'})
 
     //quantum bridging
-    e.remove({id: 'ae2:transform/entangled_sigularity'})
-    e.remove({id: 'ae2:transform/entangled_sigularity'})
-    e.remove({id: 'ae2:network/blocks/quantum_ring'})
-    e.remove({id: 'ae2:network/blocks/quantum_link'})
+    e.remove({id: 'ae2:transform/entangled_singularity'})
+    e.remove({id: 'ae2:transform/entangled_singularity_from_pearl'})
+    //e.remove({id: 'ae2:network/blocks/quantum_ring'})
+    //e.remove({id: 'ae2:network/blocks/quantum_link'})
+
+    e.custom({
+        "type": "ae2:transform",
+        "circumstance": {
+            "type": "explosion"
+        },
+        "ingredients": [
+            {
+                "item": "ae2:singularity"
+            },
+            {
+                "item": "mekanism:pellet_antimatter"
+            }
+        ],
+        "result": {
+            "count": 2,
+            "id": "ae2:quantum_entangled_singularity"
+        }
+    })
     
     //teleporting
     e.remove({id: 'mekanism:teleportation_core'})

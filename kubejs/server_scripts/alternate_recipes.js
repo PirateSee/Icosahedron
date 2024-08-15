@@ -330,8 +330,8 @@ ServerEvents.recipes(e => {
     })
 
     e.recipes.shaped('minecraft:chainmail_leggings', [
-        'NNN',
-        'I I',
+        'NIN',
+        'N N',
         'N N'
     ], {
         N: 'minecraft:iron_nugget',

@@ -1,0 +1,40 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "# - Rainy Day ---"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          330,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create_enchantment_industry:disenchanter",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Rainy Day"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_iron_block": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_block",
+      "amount": 128,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {
+    "award_sack": {
+      "item": {
+        "id": "supplementaries:sack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Heavy Metal ---",
+      "Best supplier on the planet.",
+      "",
+      "Gather two /b/stacks of iron blocks/b/ and you'll get a /b/Sack/b/.",
+      "",
+      "You could mine all of it of course, but some kind of /b/automatic iron/b/ would be better.",
+      "",
+      "<hr/>",
+      "<task task=\"submit_iron_block\" quest=\"heavy_metal\"/>",
+      "<hr/>",
+      "<reward reward=\"award_sack\" quest=\"heavy_metal\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          270,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Heavy Metal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

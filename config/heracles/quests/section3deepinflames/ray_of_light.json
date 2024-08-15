@@ -1,0 +1,55 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_beacon": {
+      "type": "heracles:item",
+      "item": "minecraft:beacon",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "# - Ray of Light ---",
+      "A shining light-a perfect signal and motivator.",
+      "",
+      "/b/Maxed out Beacons/b/ can give /b/Insulation/b/ as a /6/secondary effect/6/.",
+      "",
+      "Use /b/Corundum/b/ to /6/redirect beacon beams/6/.",
+      "",
+      "<hr/>",
+      "<task task=\"get_beacon\" quest=\"ray_of_light\"/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -90,
+          240
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:beacon",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Ray of Light"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

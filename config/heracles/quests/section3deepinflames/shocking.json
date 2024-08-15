@@ -3,6 +3,12 @@
     "Cog Crafting"
   ],
   "tasks": {
+    "get_copper_spool": {
+      "type": "heracles:item",
+      "item": "createaddition:copper_spool",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
     "get_generator_coil": {
       "type": "heracles:item",
       "item": "create_new_age:generator_coil",
@@ -13,12 +19,6 @@
       "type": "heracles:item",
       "item": "createaddition:connector",
       "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "get_copper_spool": {
-      "type": "heracles:item",
-      "item": "createaddition:copper_spool",
-      "amount": 1,
       "collection": "AUTOMATIC"
     }
   },

@@ -8,7 +8,15 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_cake": {
+      "item": {
+        "id": "createaddition:chocolate_cake",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
@@ -23,7 +31,8 @@
       "",
       "<hr/>",
       "<task task=\"adv_brew\" quest=\"mystic_brewery\"/>",
-      "<hr/>"
+      "<hr/>",
+      "<reward reward=\"award_cake\" quest=\"mystic_brewery\"/>"
     ],
     "groups": {
       "Section 3: Deep in Flames": {

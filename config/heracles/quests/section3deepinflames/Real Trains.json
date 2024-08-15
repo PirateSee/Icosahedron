@@ -32,6 +32,8 @@
       "Lay some /b/Train Tracks,/b/ place down a /b/Train Station/b/, put on a /b/Train Controler/b/ and get moving. Trains /6/do not require fuel/6/, but will move /6/much faster with some/6/ placed anywhere on the vehicle.",
       "",
       "A /b/Train Schedule/b/ and an /b/entity/b/ in the driver's seat can /6/automatically drive/6/ the train.",
+      "",
+      "Train Tracks can /6/roll right through/6/ /b/Nether/b/ and /b/Aether/b/ portals.",
       "<hr/>",
       "<task task=\"adv_train\" quest=\"Real Trains\"/>",
       "<hr/>",

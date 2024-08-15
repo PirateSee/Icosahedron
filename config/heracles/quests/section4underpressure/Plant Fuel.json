@@ -8,6 +8,12 @@
       "item": "createdieselgenerators:biodiesel_bucket",
       "amount": 1,
       "collection": "AUTOMATIC"
+    },
+    "get_lube_bearing": {
+      "type": "heracles:item",
+      "item": "kubejs:lubricated_bearing",
+      "amount": 1,
+      "collection": "AUTOMATIC"
     }
   },
   "rewards": {
@@ -34,18 +40,19 @@
       "",
       "/b/Biodiesel/b/ (and similar products) make for good, /6/efficent liquid fuel/6/. Biodiesel and other /6/liquid fuels can be burnt/6/ in a /b/Diesel Engine/b/ for rotational energy.",
       "",
-      "Biodiesel is relatively easy to automate, being a combination of various/b/ renewable plant products/b/. It will also be used to make /b/Lubricant/b/, an important crafting liquid later.",
+      "Biodiesel is relatively easy to automate, being a combination of various/b/ renewable plant products/b/. It will also be used to make /b/Lubricant/b/, an important crafting liquid for making /b/Lubricated Bearings/b/, which are used for other machines.",
       "",
       "<hr/>",
       "<task task=\"get_biodiesel\" quest=\"Plant Fuel\"/>",
+      "<task task=\"get_lube_bearing\" quest=\"Plant Fuel\"/>",
       "<hr/>",
       "<reward reward=\"award_motiviation\" quest=\"Plant Fuel\"/>"
     ],
     "groups": {
       "Section 4: Under Pressure": {
         "position": [
-          30,
-          90
+          0,
+          120
         ]
       }
     },

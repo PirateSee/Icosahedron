@@ -88,6 +88,9 @@ ServerEvents.recipes(e => {
     e.remove({id: 'mekanism:transmitter/logistical_transporter/basic'})
     e.remove({id: 'mekanism:transmitter/thermodynamic_conductor/basic'})
 
+    e.remove({id: 'mekanism:transmitter/restrictive_transporter'})
+    e.remove({id: 'mekanism:transmitter/diversion_transporter'})
+
     //components
     e.remove({id:'mekanism:steel_casing'})
     e.remove({id:'mekanism:control_circuit/basic'})
@@ -760,7 +763,7 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/hammer'
     }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_mechanical_pipe')
 
-    e.shaped('4x mekanism:basic_logistical_transporter', [ 
+    /*e.shaped('4x mekanism:basic_logistical_transporter', [ 
         ' ST', 
         'IOI'
         ], {
@@ -768,7 +771,7 @@ ServerEvents.recipes(e => {
             I: 'mekanism:ingot_steel',
             S: 'kubejs:sealant',
             T: '#ico:tool/hammer'
-    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_logistical_transporter')
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:basic_logistical_transporter')*/
 
     e.shaped('4x mekanism:basic_thermodynamic_conductor', [ 
         ' ST', 

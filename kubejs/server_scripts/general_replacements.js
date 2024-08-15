@@ -67,7 +67,7 @@ ServerEvents.recipes(e => {
 	//obliterate
 
 	//equipment
-	e.remove({mod:'mcdw'})
+	
 	e.remove({id:'minecraft:iron_axe'})
 	e.remove({id:'minecraft:iron_pickaxe'})
 	e.remove({id:'minecraft:iron_sword'})
@@ -84,13 +84,25 @@ ServerEvents.recipes(e => {
 
 	e.remove({id:'farmersdelight:diamond_knife'})
 
-	e.remove({id:'minecraft:gold_axe'})
-	e.remove({id:'minecraft:gold_pickaxe'})
-	e.remove({id:'minecraft:gold_sword'})
-	e.remove({id:'minecraft:gold_shovel'})
-	e.remove({id:'minecraft:gold_hoe'})
+	e.remove({id:'minecraft:golden_axe'})
+	e.remove({id:'minecraft:golden_pickaxe'})
+	e.remove({id:'minecraft:golden_sword'})
+	e.remove({id:'minecraft:golden_shovel'})
+	e.remove({id:'minecraft:golden_hoe'})
 
-	e.remove({id:'farmersdelight:gold_knife'})
+	e.remove({id:'farmersdelight:golden_knife'})
+
+    e.remove({id: 'aether:gravitite_axe'})
+    e.remove({id: 'aether:gravitite_pickaxe'})
+    e.remove({id: 'aether:gravitite_sword'})
+    e.remove({id: 'aether:gravitite_shovel'})
+    e.remove({id: 'aether:gravitite_hoe'})
+
+    e.remove({id: 'aether:zanite_axe'})
+    e.remove({id: 'aether:zanite_pickaxe'})
+    e.remove({id: 'aether:zanite_sword'})
+    e.remove({id: 'aether:zanite_shovel'})
+    e.remove({id: 'aether:zanite_hoe'})
 
     e.remove({id:'vintageimprovements:scoria_recycling'})
     e.remove({id:'vintageimprovements:sulfur_nuggets_to_item'})

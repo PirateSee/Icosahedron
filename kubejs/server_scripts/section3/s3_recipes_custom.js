@@ -313,9 +313,11 @@ ServerEvents.recipes(e => {
 		'IGI', 
 		'GAG'  
 	], {
-		I: 'minecraft:high_pressure_plate',
-		i: 'pneumaticcraft:plastic',
+		I: 'kubejs:tungsten_ingot',
+		i: 'mekanism:reinforced_alloy',
 		G: 'minecraft:diamond',
 		A: 'minecraft:netherite_ingot'
 	}).id('ico:netherite_drill')
+
+    e.recipes.create.pressing('kubejs:nickel_sheet', 'kubejs:nickel_ingot')
 })

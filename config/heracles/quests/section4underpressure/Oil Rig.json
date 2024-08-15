@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "Plant Fuel",
     "Lubricated"
   ],
   "tasks": {
@@ -60,7 +61,7 @@
     "groups": {
       "Section 4: Under Pressure": {
         "position": [
-          0,
+          -30,
           150
         ]
       }

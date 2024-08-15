@@ -1,10 +1,10 @@
 {
     "key": "refined_obsidian",
     "category": "metal",
-    "primary": 7.9,
-    "secondary": 6.2,
+    "primary": 7.8,
+    "secondary": 6.5,
     "tertiary": 1.3,
-    "durability": 728,
+    "durability": 752,
     "integrityCost": 3,
     "integrityGain": 8,
     "magicCapacity": 52,

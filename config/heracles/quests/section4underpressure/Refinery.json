@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "Lubricated"
+    "Plant Fuel"
   ],
   "tasks": {
     "get_refinery_output": {

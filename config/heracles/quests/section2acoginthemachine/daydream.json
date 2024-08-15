@@ -1,0 +1,71 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "kill_stalker": {
+      "entity": {
+        "type": "born_in_chaos_v1:nightmare_stalker"
+      },
+      "amount": 1,
+      "type": "heracles:kill_entity"
+    }
+  },
+  "rewards": {
+    "award_relic": {
+      "title": "Recieve Random Relic",
+      "icon": {
+        "item": {
+          "id": "relics:researching_table",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "loot_table": "kubejs:commands/relics",
+      "type": "heracles:loottable"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Daydream ---",
+      "Nightmare Stalker? No thanks.",
+      "",
+      "Perhaps you've noticed the /6/omminous red messages/6/. The /b/Nightmare Stalker/b/ is a /6/challanging foe/6/ that spawns out /6/after the third night/6/.",
+      "",
+      "They are /6/invisible until hit/6/ and apply /6/many debuffs/6/ when attacking. Kill one, and you'll be rewarded.",
+      "",
+      "<hr/>",
+      "<task task=\"kill_stalker\" quest=\"daydream\"/>",
+      "<hr/>",
+      "<reward reward=\"award_relic\" quest=\"daydream\"/>"
+    ],
+    "groups": {
+      "Section 2: A Cog in the Machine": {
+        "position": [
+          300,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "born_in_chaos_v1:nightmare_stalker_skull",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Daydream"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

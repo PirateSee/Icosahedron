@@ -26,6 +26,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'create_new_age:shaped/layered_magnet'})
     e.remove({id: 'create_new_age:shaped/fluxuated_magnet'})
 
+    e.remove({id: 'create_new_age:shaped/boiler_heater'})
+
     //restore recipes
     e.custom({
         "type":"createaddition:charging",
@@ -42,7 +44,7 @@ ServerEvents.recipes(e => {
     }).id("ico:overcharged_diamond")
 
     //reactor
-    let inter = 'create_new_age:incomplete_reactor_casing'
+    let inter = 'create_new_age:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
 		Item.of('2x create_new_age:reactor_casing').withChance(16.0)
 	], 'kubejs:blast_brick', [
@@ -71,4 +73,15 @@ ServerEvents.recipes(e => {
         D: 'create_new_age:overcharged_diamond',
         I: 'kubejs:magnetized_iron'
     })
+
+    e.shaped('create_new_age:heater', [
+        '  T',
+        'CBC',
+        'CIC'
+    ], {
+        I: 'kubejs:magnetized_iron',
+        B: 'create:empty_blaze_burner',
+        C: 'kubejs:carbon_steel_sheet',
+        T: '#ico:tools/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:boiler_heater')
 })

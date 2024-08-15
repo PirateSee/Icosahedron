@@ -20,6 +20,8 @@
       "",
       "You can find /b/Aquatrine/b/ buried in /6/sand or sandstone near oceans/6/. Usually this means you have to dig underwater, but you can find a bunch burried on /b/beaches/b/, as long as you dig a little.",
       "",
+      "<img src=\"ico:textures/aquatrine.png\"/>",
+      "",
       "<hr/>",
       "<task task=\"get_aquatrine\" quest=\"Aquatic Gem\"/>"
     ],

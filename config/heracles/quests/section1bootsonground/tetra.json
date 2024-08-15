@@ -4,14 +4,6 @@
   ],
   "tasks": {
     "adv_tetra_workbench": {
-      "title": "",
-      "icon": {
-        "item": {
-          "id": "minecraft:air",
-          "count": 0
-        },
-        "type": "heracles:item"
-      },
       "advancements": [
         "tetra:upgrades/workbench"
       ],
@@ -26,10 +18,22 @@
     "description": [
       "<h2>- A new Paradigm ---</h2>",
       "Standard issue tools are great and all, but what if you wanted more?",
-      "Tetra has you covered.",
-      "Whack a Crafting Table with a hammer and get started.",
+      "",
+      "You may have noticed that /c/Iron and better tools are uncraftable/c/. So what do you do?",
+      "",
+      "/b/Tetra/b/ has you covered.",
+      "/6/Whack a/6/ /b/Crafting Table/b/ with a /b/hammer/b/ and get started.",
       "<br/>",
+      "<columns>",
+      "<column>",
       "<crafting-recipe id=\"tetra:hammer/oak\" grid-width=\"3\"/>",
+      "</column>",
+      "<column>",
+      "<crafting-recipe id=\"tetra:hammer/stone\" grid-width=\"3\"/>",
+      "</column>",
+      "</columns>",
+      "",
+      "/6/Right click/6/ a /b/Crafting Table/b/ with a /b/Hammer/b/. You can use this table to /6/swap out tool parts/6/.",
       "<hr/>",
       "<task task=\"adv_tetra_workbench\" quest=\"tetra\"/>"
     ],
@@ -64,10 +68,11 @@
     }
   },
   "settings": {
-    "unlockNotification": false,
     "showDependencyArrow": true,
     "repeatable": false,
+    "autoClaimRewards": false,
     "individual_progress": false,
-    "hidden": "LOCKED"
+    "hidden": "LOCKED",
+    "unlockNotification": false
   }
 }

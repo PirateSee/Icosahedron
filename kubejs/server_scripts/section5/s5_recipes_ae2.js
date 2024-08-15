@@ -103,6 +103,17 @@ ServerEvents.recipes(e => {
     e.remove({id: 'ae2:network/cells/item_storage_components_cell_64k_part'})
     e.remove({id: 'ae2:network/cells/item_storage_components_cell_256k_part'})
 
+    e.remove({id: 'ae2:network/cells/spatial_storage_cell_2_cubed'})
+    e.remove({id: 'ae2:network/cells/spatial_storage_cell_2_cubed_storage'})
+    e.remove({id: 'ae2:network/cells/spatial_storage_cell_16_cubed'})
+    e.remove({id: 'ae2:network/cells/spatial_storage_cell_16_cubed_storage'})
+    e.remove({id: 'ae2:network/cells/spatial_storage_cell_128_cubed'})
+    e.remove({id: 'ae2:network/cells/spatial_storage_cell_128_cubed_storage'})
+
+    e.remove({id: 'ae2:network/cells/spatial_components'})
+    e.remove({id: 'ae2:network/cells/spatial_components_0'})
+    e.remove({id: 'ae2:network/cells/spatial_components_1'})
+
     //upgrades
     e.remove({id: 'ae2:materials/basiccard'})
     e.remove({id: 'ae2:materials/cardredstone'})
@@ -358,7 +369,7 @@ ServerEvents.recipes(e => {
         'GEG'
 	], {
         E: 'ae2:engineering_processor',
-        A: 'mekanism:ultimate_control_circuit',
+        A: 'mekanism:pellet_polonium',
         G: 'kubejs:tungsten_ingot',
         C: 'ae2:fluix_glass_cable',
         P: 'ae2:io_port',
@@ -447,7 +458,7 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying('ae2:level_emitter', ['ae2:calculation_processor', 'create:electron_tube'])
     e.recipes.createDeploying('ae2:storage_monitor', ['#ae2:illuminated_panel', 'ae2:level_emitter'])
 
-    e.recipes.create.mechanical_crafting('ae2:spatial_anchor', [
+    e.shaped('ae2:spatial_anchor', [
         '  T',
         'MLM',
         ' E '
@@ -621,6 +632,46 @@ ServerEvents.recipes(e => {
     e.recipes.createDeploying('appmek:chemical_storage_cell_16k', ['appmek:chemical_cell_housing', 'ae2:cell_component_16k'])
     e.recipes.createDeploying('appmek:chemical_storage_cell_64k', ['appmek:chemical_cell_housing', 'ae2:cell_component_64k'])
     e.recipes.createDeploying('appmek:chemical_storage_cell_256k', ['appmek:chemical_cell_housing', 'ae2:cell_component_256k'])
+
+    e.recipes.create.mechanical_crafting('ae2:spatial_cell_component_2', [
+        'IIFII',
+        ' FPF ',
+        '  F  ',
+        '  E  '
+	], {
+		P: 'ae2:engineering_processor',
+        I: 'kubejs:tungsten_ingot',
+        E: 'mekanism:atomic_alloy',
+        F: 'ae2:fluix_pearl'
+	}).id('ico:spatial_cell_component_2')
+
+    e.recipes.create.mechanical_crafting('ae2:spatial_cell_component_16', [
+        'IIFII',
+        ' FPF ',
+        '  F  ',
+        '  E  '
+	], {
+		P: 'ae2:engineering_processor',
+        I: 'kubejs:tungsten_ingot',
+        E: 'mekanism:atomic_alloy',
+        F: 'ae2:spatial_cell_component_2'
+	}).id('ico:spatial_cell_component_16')
+
+    e.recipes.create.mechanical_crafting('ae2:spatial_cell_component_128', [
+        'IIFII',
+        ' FPF ',
+        '  F  ',
+        '  E  '
+	], {
+		P: 'ae2:engineering_processor',
+        I: 'kubejs:refined_tungsten',
+        E: 'mekanism:atomic_alloy',
+        F: 'ae2:spatial_cell_component_16'
+	}).id('ico:spatial_cell_component_128')
+
+    e.recipes.createDeploying('ae2:spatial_storage_cell_2k', ['ae2:item_cell_housing', 'ae2:spatial_cell_component_2'])
+    e.recipes.createDeploying('ae2:spatial_storage_cell_16k', ['ae2:item_cell_housing', 'ae2:spatial_cell_component_16'])
+    e.recipes.createDeploying('ae2:spatial_storage_cell_128k', ['ae2:item_cell_housing', 'ae2:spatial_cell_component_128'])
 
     //cards
     e.recipes.createDeploying('ae2:redstone_card', ['ae2:basic_card', 'minecraft:redstone_torch'])

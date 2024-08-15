@@ -1,9 +1,9 @@
 {
     "key": "tungsten",
     "category": "metal",
-    "primary": 6.3,
-    "secondary": 7.8,
-    "tertiary": 2.3,
+    "primary": 7.1,
+    "secondary": 10.6,
+    "tertiary": 2.1,
     "durability": 2478,
     "integrityCost": 3,
     "integrityGain": 3,
