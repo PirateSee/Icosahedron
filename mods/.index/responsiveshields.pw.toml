@@ -1,0 +1,13 @@
+filename = 'responsiveshields-2.3-mc1.18-19-20.x.jar'
+name = 'Responsive Shields'
+side = 'server'
+
+[download]
+hash = 'e154e2dea3a31564b5d88c430069ca2e376141ed0994d275fa22507f4fb6abc51f44d272f88a682f36d8ce3f8269d2aa31b713a909582c37a7eacb0d24790a4e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/MBmh0f9A/versions/6vuwab6O/responsiveshields-2.3-mc1.18-19-20.x.jar'
+
+[update.modrinth]
+mod-id = 'MBmh0f9A'
+version = '6vuwab6O'

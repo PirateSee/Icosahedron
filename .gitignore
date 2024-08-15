@@ -56,3 +56,4 @@ config/voicechat/voicechat-client.properties
 emi.json
 emi.json
 .mixin.out/class/com/simibubi/create/content/contraptions/MountedStorage.class
+config/gamepad_profiles/gamepad_profile_0
