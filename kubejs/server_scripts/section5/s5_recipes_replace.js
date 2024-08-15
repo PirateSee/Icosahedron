@@ -118,6 +118,11 @@ ServerEvents.recipes(e => {
     //equipment
     e.remove({id: 'mekanism:energy_tablet'})
 
+    e.remove({id: 'mekanism:tier_installer/basic'})
+    e.remove({id: 'mekanism:tier_installer/advanced'})
+    e.remove({id: 'mekanism:tier_installer/elite'})
+    e.remove({id: 'mekanism:tier_installer/ultimate'})
+
     //begone
     e.remove({id: 'mekanism:nutritional_liquifier'})
     e.remove({id: 'mekanism:canteen'})
@@ -390,20 +395,6 @@ ServerEvents.recipes(e => {
         P: 'mekanism:alloy_reinforced'
     }).id('ico:elite_chemical_tank')
 
-    /*e.recipes.create.mechanical_crafting('mekanism:basic_fluid_tank', [
-        ' PFP ',
-        'HOFOH',
-        'HOSOH',
-        'HOFOH',
-        ' PFP '
-        ], {
-            F: 'create:fluid_tank',
-            S: 'mekanism:steel_casing',
-            H: 'mekanism:ingot_steel',
-            O: 'kubejs:tempered_glass',
-            P: 'kubejs:high_pressure_plate'
-    }).id('ico:basic_fluid_tank')*/
-
     e.shaped('mekanism:basic_bin', [ 
         ' AT', 
         'C C',
@@ -447,17 +438,6 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/file'
     }).damageIngredient(Item.of('#ico:tool/file')).id('ico:ultimate_bin')
 
-    /*e.shaped('2x mekanism:thermal_evaporation_block', [ 
-        ' HT', 
-        'HSH',
-        'RH '
-        ], {
-            S: 'create:copper_casing',
-            H: 'mekanism:ingot_steel',
-            R: 'kubejs:rubber',
-            T: '#ico:tool/hammer'
-    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:thermal_evaporation_block')*/
-
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
 		Item.of('2x mekanism:thermal_evaporation_block').withChance(16.0)
@@ -467,17 +447,6 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'kubejs:rubber']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(2).id("ico:thermal_evaporation_block")
-
-    /*e.shaped('2x mekanism:thermal_evaporation_valve', [ 
-        ' HT', 
-        'HSH',
-        'RH '
-        ], {
-            S: 'mekanism:advanced_control_circuit',
-            H: 'mekanism:thermal_evaporation_block',
-            R: 'create:portable_fluid_interface',
-            T: '#ico:tool/screwdriver'
-    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:thermal_evaporation_valve')*/
 
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
@@ -503,17 +472,6 @@ ServerEvents.recipes(e => {
 
     e.recipes.createDeploying('mekanism:structural_glass', ['kubejs:tempered_glass', 'mekanism:ingot_steel'])
 
-    /*e.shaped('6x mekanism:boiler_casing', [ 
-        ' HT', 
-        ' S ',
-        'RH '
-        ], {
-            S: 'mekanism:steel_block',
-            H: 'kubejs:tungsten_ingot',
-            R: 'kubejs:rubber',
-            T: '#ico:tool/hammer'
-    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:boiler_casing')*/
-
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
 		Item.of('6x mekanism:boiler_casing').withChance(16.0)
@@ -523,17 +481,6 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'kubejs:rubber']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(2).id("ico:boiler_casing")
-
-    /*e.shaped('2x mekanism:boiler_valve', [ 
-        ' HT', 
-        'HSH',
-        'RH '
-        ], {
-            S: 'mekanism:advanced_control_circuit',
-            H: 'mekanism:boiler_casing',
-            R: 'create:portable_fluid_interface',
-            T: '#ico:tool/screwdriver'
-    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:boiler_valve')*/
 
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
@@ -568,17 +515,6 @@ ServerEvents.recipes(e => {
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:pressure_disperser')
 
-    /*e.shaped('4x mekanismgenerators:turbine_casing', [ 
-        ' HT', 
-        ' S ',
-        'RH '
-        ], {
-            S: 'mekanism:block_steel',
-            H: 'mekanism:ingot_osmium',
-            R: 'kubejs:rubber',
-            T: '#ico:tool/hammer'
-    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:turbine_casing')*/
-
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
 		Item.of('6x mekanismgenerators:turbine_casing').withChance(16.0)
@@ -588,17 +524,6 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'kubejs:rubber']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(2).id("ico:turbine_casing")
-
-    /*e.shaped('2x mekanismgenerators:turbine_valve', [ 
-        ' HT', 
-        'HSH',
-        'RH '
-        ], {
-            S: 'mekanism:advanced_control_circuit',
-            H: 'mekanism:boiler_casing',
-            R: 'create:portable_fluid_interface',
-            T: '#ico:tool/screwdriver'
-    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:turbine_valve')*/
 
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
@@ -633,17 +558,6 @@ ServerEvents.recipes(e => {
 
     e.recipes.createDeploying('mekanism:structural_glass', ['kubejs:tempered_glass', 'mekanism:ingot_lead'])
 
-    /*e.shaped('4x mekanismgenerators:fission_reactor_casing', [ 
-        ' LT', 
-        'LSL',
-        'HL '
-        ], {
-            S: 'mekanism:steel_casing',
-            L: 'mekanism:ingot_lead',
-            H: 'mekanism:hdpe_sheet',
-            T: '#ico:tool/screwdriver'
-    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fission_reactor_casing')*/
-
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
 		Item.of('4x mekanismgenerators:fission_reactor_casing').withChance(16.0)
@@ -653,17 +567,6 @@ ServerEvents.recipes(e => {
         e.recipes.createDeploying(inter, [inter, 'mekanism:hdpe_sheet']),
 		e.recipes.createPressing(inter,inter),
 	]).transitionalItem(inter).loops(2).id("ico:fission_reactor_casing")
-
-    /*e.shaped('2x mekanismgenerators:fission_reactor_port', [ 
-        ' CT', 
-        'CAC',
-        'IC '
-        ], {
-            C: 'mekanismgenerators:fission_reactor_casing',
-            I: 'create:portable_fluid_interface',
-            A: 'mekanism:ultimate_control_circuit',
-            T: '#ico:tool/screwdriver'
-    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:fission_reactor_port')*/
 
     inter = 'kubejs:incomplete_casing'
 	e.recipes.create.sequenced_assembly([
@@ -1103,4 +1006,48 @@ ServerEvents.recipes(e => {
             R: 'kubejs:redstone_cable',
             T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:energy_tablet')
+
+    e.shaped('mekanism:basic_tier_installer', [ 
+        'ACA', 
+        'ITI',
+        'ACA'
+        ], {    
+            C: 'mekanism:basic_control_circuit',
+            A: 'kubejs:cupronickel_sheet',
+            I: 'mekanism:ingot_osmium',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:basic_tier_installer')
+
+    e.shaped('mekanism:advanced_tier_installer', [ 
+        'ACA', 
+        'ITI',
+        'ACA'
+        ], {    
+            C: 'mekanism:advanced_control_circuit',
+            A: 'mekanism:alloy_infused',
+            I: 'kubejs:machine_plating',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:advanced_tier_installer')
+
+    e.shaped('mekanism:elite_tier_installer', [ 
+        'ACA', 
+        'ITI',
+        'ACA'
+        ], {    
+            C: 'mekanism:elite_control_circuit',
+            A: 'mekanism:alloy_reinforced',
+            I: 'kubejs:lithium_ion_cell',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:elite_tier_installer')
+
+    e.shaped('mekanism:ultimate_tier_installer', [ 
+        'ACA', 
+        'ITI',
+        'ACA'
+        ], {    
+            C: 'mekanism:ultimate_control_circuit',
+            A: 'mekanism:alloy_atomic',
+            I: 'mekanism:hdpe_stick',
+            T: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:ultimate_tier_installer')
 })

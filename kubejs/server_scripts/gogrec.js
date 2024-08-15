@@ -536,7 +536,7 @@ ServerEvents.recipes(e => {
 
 
 
-    e.recipes.create.mechanical_crafting('mekanism:basic_smelting_factory', [ 
+    /*e.recipes.create.mechanical_crafting('mekanism:basic_smelting_factory', [ 
         'pcp',
         'rmr',
         'eme',
@@ -871,7 +871,7 @@ ServerEvents.recipes(e => {
           t: 'kubejs:tungsten_ingot',
           H: 'mekanism:hdpe_sheet',
           m: 'mekanism:advanced_purifying_factory'
-      }).id('ico:elite_purifying_factory')
+      }).id('ico:elite_purifying_factory')*/
     //recipe genocide 
     e.remove({id:'mekanism:factory/basic/smelting'})
     e.remove({id:'mekanism:factory/basic/enriching'})
@@ -900,6 +900,14 @@ ServerEvents.recipes(e => {
     e.remove({id:'mekanism:factory/elite/infusing'})
     e.remove({id:'mekanism:factory/elite/crushing'})
     e.remove({id:'mekanism:factory/elite/sawing'})
-
+    e.remove({id:'mekanism:factory/elite/smelting'})
+    e.remove({id:'mekanism:factory/ultimate/enriching'})
+    e.remove({id:'mekanism:factory/ultimate/compressing'})
+    e.remove({id:'mekanism:factory/ultimate/combining'})
+    e.remove({id:'mekanism:factory/ultimate/purifying'})
+    e.remove({id:'mekanism:factory/ultimate/injecting'})
+    e.remove({id:'mekanism:factory/ultimate/infusing'})
+    e.remove({id:'mekanism:factory/ultimate/crushing'})
+    e.remove({id:'mekanism:factory/ultimate/sawing'})
 
 })

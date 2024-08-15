@@ -239,16 +239,6 @@ ServerEvents.recipes(e => {
 	e.recipes.create.filling('kubejs:lcd_display', ['#forge:glass_panes', Fluid.of('estrogen:molten_amethyst', 50)])
 
 	//advanced tools
-	e.shaped('kubejs:advanced_tool_handle', [
-		'SLT', 
-		'WS '  
-	], {
-		S: 'kubejs:treated_wood_planks',
-		L: 'minecraft:lapis_lazuli',
-		W: '#minecraft:warped_stems',
-		T: '#ico:tool/saw'
-	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:advanced_tool_handle')
-
 	e.shaped('kubejs:advanced_screwdriver', [
 		'RT', 
 		'I ',
@@ -256,7 +246,7 @@ ServerEvents.recipes(e => {
 	], {
 		I: 'kubejs:carbon_steel_ingot',
 		R: 'kubejs:carbon_steel_rod',
-		H: 'kubejs:advanced_tool_handle',
+		H: 'kubejs:tool_handle',
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:advanced_screwdriver')
 
@@ -267,7 +257,7 @@ ServerEvents.recipes(e => {
 	], {
 		I: 'kubejs:carbon_steel_ingot',
 		S: 'kubejs:carbon_steel_sheet',
-		H: 'kubejs:advanced_tool_handle',
+		H: 'kubejs:tool_handle',
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:advanced_file')
 
@@ -278,7 +268,7 @@ ServerEvents.recipes(e => {
 	], {
 		S: 'kubejs:carbon_steel_sheet',
 		R: 'kubejs:carbon_steel_rod',
-		H: 'kubejs:advanced_tool_handle',
+		H: 'kubejs:tool_handle',
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:advanced_hammer')
 
@@ -289,7 +279,7 @@ ServerEvents.recipes(e => {
 	], {
 		S: 'kubejs:carbon_steel_sheet',
 		R: 'kubejs:carbon_steel_rod',
-		H: 'kubejs:advanced_tool_handle',
+		H: 'kubejs:tool_handle',
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:advanced_saw')
 

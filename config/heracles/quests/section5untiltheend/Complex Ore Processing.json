@@ -23,7 +23,13 @@
       "",
       "But from this, you can get so much more.",
       "",
+      "<hr/>",
       "This will process /b/Wolframite/b/ and /b/Uraninite/b/.",
+      "",
+      "/5/Wolframite - Tungsten/5/",
+      "- Found at any height in /7/The End/7/, Most common at y50",
+      "/8/Uraninite - Uranium, Lead/8/",
+      "- Found at any height in /7/The End/7/, Most common at y50",
       "<hr/>",
       "<task task=\"get_tungsten\" quest=\"Complex Ore Processing\"/>"
     ],
