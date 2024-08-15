@@ -547,4 +547,261 @@ ServerEvents.recipes(e => {
     e.remove({id:'mekanismgenerators:gas_burning_generator'})
     e.remove({id:'mekanismgenerators:wind_generator'})
     e.remove({id:'mekanism:dimensional_stabilizer'})
+
+
+
+    e.shaped('botania:mana_distributor', [
+        ' mf', 
+        ' l ',
+        'mlm'
+    ], {
+        m: 'botania:manasteel_ingot',
+        f: '#ico:tool/file',
+        l: 'botania:livingrock'
+    }).damageIngredient(Item.of('#ico:tool/file')).id('ico:ana_distributor')
+
+    e.remove({id:'botania:mana_distributor'})
+
+    e.shaped('mekanism:logistical_sorter', [
+        '  f', 
+        'sps',
+        'scs'
+    ], {
+        s: 'mekanism:ingot_steel',
+        f: '#ico:tool/screwdriver',
+        p: 'create:smart_fluid_pipe',
+        c: 'mekanism:basic_control_circuit'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:logistical_sorter')
+
+    e.remove({id:'mekanism:logistical_sorter'})
+
+    e.recipes.create.mechanical_crafting('mekanism:solar_neutron_activator', [ 
+        'hah', 
+        'ttt',
+        'ece',
+        'sSs'
+        ], {
+          h: 'mekanism:hdpe_sheet',
+          a: 'mekanismgenerators:advanced_solar_generator',
+          t: 'kubejs:tungsten_ingot',
+          e: 'mekanism:alloy_atomic',
+          c: 'mekanism:ultimate_control_circuit',
+          s: 'mekanism:ingot_steel',
+          S: 'mekanism:steel_casing'
+      }).id('ico:solar_neutron_activator')
+
+      e.remove({id:'mekanism:solar_neutron_activator'})
+
+      e.recipes.create.mechanical_crafting('mekanism:isotopic_centrifuge', [ 
+        'lel', 
+        'lTl',
+        'cSc',
+        'tet'
+        ], {
+          l: 'mekanism:ingot_lead',
+          e: 'mekanism:alloy_atomic',
+          T: 'mekanism:basic_chemical_tank',
+          c: 'mekanism:ultimate_control_circuit',
+          S: 'mekanism:steel_casing',
+          t: 'kubejs:tungsten_ingot'
+      }).id('ico:isotopic_centrifuge')
+
+      e.remove({id:'mekanism:isotopic_centrifuge'})
+
+      e.shaped('mekanism:electric_pump', [
+        ' is', 
+        'oSo',
+        'opo'
+    ], {
+        s: '#ico:tool/screwdriver',
+        i: 'mekanism:alloy_infused',
+        o: 'mekanism:ingot_osmium',
+        S: 'mekanism:steel_casing',
+        p: 'create:mechanical_pump'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:electric_pump')
+
+    e.remove({id:'mekanism:electric_pump'})
+
+    e.shaped('mekanism:industrial_alarm', [
+        ' rs', 
+        'iwi'
+    ], {
+        s: '#ico:tool/screwdriver',
+        r: 'minecraft:redstone_lamp',
+        i: 'mekanism:ingot_lead',
+        w: 'kubejs:redstone_cable'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:industrial_alarm')
+
+    e.remove({id:'mekanism:industrial_alarm'})
+
+    e.shapeless('mekanism:laser_tractor_beam', ['mekanism:laser_amplifier', 'create:encased_fan', '#ico:tool/screwdriver']).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:laser_tractor_beam')
+
+    e.remove({id:'mekanism:laser_tractor_beam'})
+
+    e.shaped('mekanism:laser_amplifier', [
+        ' dS', 
+        'sbs',
+        ' d '
+    ], {
+        S: '#ico:tool/screwdriver',
+        d: 'minecraft:diamond',
+        s: 'mekanism:ingot_steel',
+        b: 'mekanism:basic_energy_cube'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:laser_amplifier')
+
+    e.remove({id:'mekanism:laser_amplifier'})
+
+    e.recipes.create.mechanical_crafting('mekanism:laser', [ 
+        'rt ', 
+        'dsl',
+        'rt '
+        ], {
+          r: 'mekanism:alloy_reinforced',
+          t: 'mekanism:energy_tablet',
+          d: 'minecraft:diamond',
+          s: 'mekanism:steel_casing',
+          l: 'kubejs:laser_emitter'
+      }).id('ico:laser')
+
+      e.remove({id:'mekanism:laser'})
+
+      e.shaped('mekanism:security_desk', [
+        ' ls', 
+        'ici',
+        'oCo'
+    ], {
+        l: 'kubejs:lcd_display',
+        s: '#ico:tool/screwdriver',
+        i: 'mekanism:ingot_steel',
+        c: 'mekanism:basic_control_circuit',
+        o: 'mekanism:ingot_osmium',
+        C: 'mekanism:steel_casing'
+
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:security_desk')
+
+    e.remove({id:'mekanism:security_desk'})
+
+    e.recipes.create.mechanical_crafting('mekanism:flamethrower', [ 
+        ' hrr ', 
+        'btcal',
+        'abb  '
+        ], {
+          a: 'mekanism:alloy_infused',
+          h: 'mekanism:hdpe_sheet',
+          r: 'mekanism:hdpe_rod',
+          b: 'mekanism:ingot_bronze',
+          t: 'mekanism:basic_chemical_tank',
+          c: 'mekanism:advanced_control_circuit',
+          l: 'createdieselgenerators:lighter'
+      }).id('ico:flamethrower')
+
+      e.remove({id:'mekanism:flamethrower'})
+
+      e.shaped('mekanism:seismic_reader', [
+        '  s', 
+        'iti',
+        'ili'
+    ], {
+        s: '#ico:tool/screwdriver',
+        i: 'mekanism:ingot_steel',
+        t: 'mekanism:energy_tablet',
+        l: 'minecraft:lapis_lazuli'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:seismic_reader')
+
+    e.remove({id:'mekanism:seismic_reader'})
+
+    e.shaped('mekanism:seismic_vibrator', [
+        ' cs', 
+        'lSl',
+        'ipi'
+    ], {
+        c: 'mekanism:basic_control_circuit',
+        s: '#ico:tool/screwdriver',
+        l: 'minecraft:lapis_lazuli',
+        S: 'mekanism:steel_casing',
+        i: 'mekanism:ingot_steel',
+        p: 'create:mechanical_press'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:seismic_vibrator')
+
+    e.remove({id:'mekanism:seismic_vibrator'})
+
+    e.recipes.create.mechanical_crafting('mekanism:modification_station', [ 
+        ' hrh', 
+        'siti',
+        'pcCc'
+        ], {
+          h: 'mekanism:hdpe_sheet',
+          r: 'mekanism:hdpe_rod',
+          s: 'mekanism:security_desk',
+          i: 'mekanism:ingot_steel',
+          t: 'kubejs:tungsten_ingot',
+          p: 'mekanism:pellet_polonium',
+          c: 'mekanism:ultimate_control_circuit',
+          C: 'mekanism:steel_casing'
+      }).id('ico:modification_station')
+
+      e.remove({id:'mekanism:modification_station'})
+
+      e.shaped('quark:ender_watcher', [
+        'oro', 
+        'rer',
+        'oro'
+    ], {
+        o: 'minecraft:obsidian',
+        r: 'minecraft:redstone',
+        e: 'minecraft:ender_pearl'
+    }).id('ico:ender_watcher')
+
+    e.remove({id:'quark:automation/crafting/ender_watcher'})
+
+    e.shaped('create_new_age:heat_pipe', [
+        ' h ', 
+        'ctc'
+    ], {
+        h: '#ico:tool/hammer',
+        c: 'create:copper_sheet',
+        t: 'kubejs:nickel_ingot'
+    }).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:heat_pipe')
+
+    e.remove({id:'create_new_age:shaped/heat_pipe'})
+    e.remove({id:'create_new_age:shaped/heat_pipe_mirror'})
+
+    e.shaped('create_new_age:stirling_engine', [
+        '  s', 
+        'rfr',
+        'hth'
+    ], {
+        s: '#ico:tool/screwdriver',
+        r: 'create:shaft',
+        f: 'create:flywheel',
+        h: 'create_new_age:heat_pipe',
+        t: 'kubejs:nickel_ingot'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:stirling_engine')
+
+    e.remove({id:'create_new_age:shaped/stirling_engine'})
+
+    e.shaped('create_new_age:basic_solar_heating_plate', [
+        'gs', 
+        'mt',
+        'ht'
+    ], {
+        g: 'kubejs:tempered_glass',
+        s: '#ico:tool/screwdriver',
+        m: 'kubejs:magnetized_iron',
+        t: 'kubejs:nickel_ingot',
+        h: 'create_new_age:heat_pipe'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:basic_solar_heating_plate')
+
+    e.remove({id:'create_new_age:shaped/basic_solar_plate'})
+
+    e.shaped('create_new_age:advanced_solar_heating_plate', [
+        'ws', 
+        'S '
+    ], {
+        w: 'pneumaticcraft:solar_wafer',
+        s: '#ico:tool/screwdriver',
+        S: 'create_new_age:basic_solar_heating_plate'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:advanced_solar_heating_plate')
+
+    e.remove({id:'create_new_age:shaped/advanced_solar_plate'})
 })
