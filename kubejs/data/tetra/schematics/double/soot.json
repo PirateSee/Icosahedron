@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "localizationKey": "soot",
+    "slots": [
+        "double/handle"
+    ],
+    "materialSlotCount": 0,
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureX": 0,
+        "textureY": 96
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+			{
+				"type": "tetra:module",
+				"module": "double/basic_handle"
+			}
+        ]
+    },
+    "outcomes": [
+        {
+            "improvements": {
+                "basic_handle/soot": 0
+            }
+        }
+    ]
+}

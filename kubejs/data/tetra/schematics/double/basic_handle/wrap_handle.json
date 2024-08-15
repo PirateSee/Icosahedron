@@ -1,0 +1,10 @@
+{
+    "replace": false,
+	"requirement": {
+		"type": "tetra:not",
+		"requirement": {
+			"type": "tetra:module",
+			"module": "double/curved_handle"
+		}
+    }
+}

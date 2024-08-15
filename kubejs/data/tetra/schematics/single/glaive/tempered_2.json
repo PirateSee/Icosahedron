@@ -1,0 +1,30 @@
+{
+    "replace": true,
+	"localizationKey": "single/head/spearhead/tempered_2",
+    "slots": [
+        "single/head"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "improvement",
+    "glyph": {
+        "textureX": 208,
+        "textureY": 32
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "glaive/tempered",
+        "level": 1
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:iron"
+            },
+            "improvements": {
+                "glaive/tempered": 2
+            }
+        }
+    ]
+}

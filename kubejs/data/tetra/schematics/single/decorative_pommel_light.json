@@ -1,0 +1,32 @@
+{
+    "replace": true,
+    "slots": [
+        "single/handle"
+    ],
+	"localizationKey": "sword/decorative_pommel",
+    "materialSlotCount": 1,
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureX": 80,
+        "textureY": 16
+    },
+    "requirement": {
+        "type": "tetra:module",
+        "module": "single/light_handle"
+    },
+    "outcomes": [
+        {
+            "materials": [
+                "tetra:metal/",
+                "tetra:wood/",
+                "tetra:gem/",
+                "tetra:stone/",
+                "tetra:bone/"
+            ],
+            "improvements": {
+                "light_handle/decorative_pommel/": 0
+            }
+        }
+    ]
+}

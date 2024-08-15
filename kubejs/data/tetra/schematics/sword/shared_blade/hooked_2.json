@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "glyph": {
+		"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureX": 48,
+        "textureY": 0
+    }
+}

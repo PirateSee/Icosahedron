@@ -1,0 +1,29 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+	"glyph": {
+		"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureY": 0
+    },
+	"translation": {
+        "primaryAttributes": {
+            "generic.attack_damage": 2
+        },
+        "secondaryAttributes": {
+            "generic.attack_speed": -1
+        },
+        "durability": 5,
+        "integrity": -3,
+        "magicCapacity": 4
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+            "countFactor": 2,
+            "moduleKey": "sword/katana_blade",
+            "moduleVariant": "katana_blade/"
+        }
+    ]
+}

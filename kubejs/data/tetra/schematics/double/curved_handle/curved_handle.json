@@ -1,0 +1,33 @@
+{
+    "replace": true,
+    "slots": [
+        "double/handle"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+		"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureY": 32
+    },
+	"translation": {
+        "secondaryAttributes": {
+            "generic.attack_speed": -2
+        },
+		"secondaryEffects": {
+            "throwable": [0,1]
+        },
+		"tertiaryEffects": {
+            "throwable": [0,1]
+        },
+        "durability": 1,
+        "integrity": 3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rods/" ],
+            "moduleKey": "double/curved_handle",
+            "moduleVariant": "curved_handle/"
+        }
+    ]
+}

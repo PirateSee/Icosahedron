@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "slots": [
+    "sword/pommel"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "minor",
+  "glyph": {
+    "textureX": 16,
+    "textureY": 112
+  },
+  "outcomes": [
+    {
+      "materials": [
+        "tetra:metal/",
+        "tetra:wood/",
+        "tetra:gem/",
+		"tetra:stone/",
+		"tetra:bone/"
+      ],
+      "moduleKey": "sword/decorative_pommel",
+      "moduleVariant": "decorative_pommel/"
+    }
+  ]
+}

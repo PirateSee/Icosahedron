@@ -1,0 +1,55 @@
+{
+    "replace": true,
+    "localizationKey": "single/gravedigger",
+    "slots": [
+        "single/head"
+    ],
+    "materialSlotCount": 1,
+	"materialRevealSlot":0,
+    "displayType": "improvement",
+    "glyph": {
+		"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureX": 64,
+        "textureY": 16
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "single/gravedigger"
+                }
+            },
+            {
+                "type": "tetra:or",
+                "requirements": [
+					{
+						"type": "tetra:module",
+						"module": "single/basic_shovel"
+					},
+					{
+						"type": "tetra:module",
+						"module": "single/excavator"
+					}
+				]
+            }
+        ]
+    },
+    "outcomes": [
+        {
+			"material": {
+                "items": [
+                    "minecraft:diamond"
+                ]
+            },
+            "requiredTools": {
+                "hammer_dig": "minecraft:iron"
+            },
+            "improvements": {
+                "single/gravedigger": 1
+            }
+        }
+    ]
+}

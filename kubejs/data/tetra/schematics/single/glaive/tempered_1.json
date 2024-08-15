@@ -1,0 +1,44 @@
+{
+    "replace": true,
+	"localizationKey": "single/head/spearhead/tempered_1",
+    "slots": [
+        "single/head"
+    ],
+    "materialSlotCount": 0,
+    "displayType": "improvement",
+    "glyph": {
+        "textureX": 208,
+        "textureY": 32
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:or",
+                "requirements": [
+                    {
+                        "type": "tetra:module",
+                        "module": "single/glaive"
+                    }
+                ]
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "glaive/tempered"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:stone"
+            },
+            "improvements": {
+                "glaive/tempered": 1
+            }
+        }
+    ]
+}

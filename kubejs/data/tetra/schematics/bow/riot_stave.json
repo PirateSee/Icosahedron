@@ -1,0 +1,35 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+		"textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
+        "textureX": 0,
+        "textureY": 64
+    },
+	"translation": {
+    "primaryAttributes": {
+		"tetra:draw_speed": -3,
+		"tetra:draw_strength": 4,
+		"generic.armor": 2
+    },
+    "tertiaryAttributes": {
+		"tetra:draw_speed": 1,
+		"tetra:draw_strength": 2,
+		"generic.armor": 1
+    },
+    "durability": 5,
+    "integrity": -3,
+    "magicCapacity": 3
+  },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/", "tetra:rods/stick", "tetra:metal/" ],
+            "moduleKey": "bow/riot_stave",
+            "moduleVariant": "riot_stave/"
+        }
+    ]
+}

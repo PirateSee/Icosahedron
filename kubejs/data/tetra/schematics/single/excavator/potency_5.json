@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "localizationKey": "single/hone_excavator_5",
+    "slots": [
+        "single/head"
+    ],
+    "materialSlotCount": 0,
+    "displayType": "improvement",
+	"hone": true,
+	"rarity": "hone",
+    "glyph": {
+        "textureX": 144,
+        "textureY": 48
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "excavator_hone/potency",
+        "level": 4
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": 6
+            },
+            "improvements": {
+                "excavator_hone/potency": 5
+            }
+        }
+    ]
+}

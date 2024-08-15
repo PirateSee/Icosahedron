@@ -1,0 +1,41 @@
+{
+    "replace": true,
+    "localizationKey": "single/hone_excavator_1",
+    "slots": [
+        "single/head"
+    ],
+    "materialSlotCount": 0,
+    "displayType": "improvement",
+    "hone": true,
+	"rarity": "hone",
+    "glyph": {
+        "textureX": 144,
+        "textureY": 48
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "excavator_hone/potency"
+                }
+            },
+			{
+				"type": "tetra:module",
+				"module": "single/excavator"
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": 4
+            },
+            "improvements": {
+                "excavator_hone/potency": 1
+            }
+        }
+    ]
+}
