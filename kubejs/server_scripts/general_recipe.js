@@ -367,6 +367,11 @@ ServerEvents.recipes(e => {
 
 
 	e.recipes.create.mixing(Fluid.of('kubejs:mana_tea', 500), [Fluid.of('minecraft:water', 500), 'minecraft:sugar', '#botania:mystical_flowers']).heated()
+	e.recipes.create.mixing(Item.of('mna:aum').withChance(0.1), [Fluid.of('kubejs:mana_tea', 250), '#c:seeds'])
+	e.recipes.create.mixing(Item.of('mna:cerublossom').withChance(0.1), [Fluid.of('kubejs:mana_tea', 250), '#c:seeds'])
+	e.recipes.create.mixing(Item.of('mna:tarma_root').withChance(0.1), [Fluid.of('kubejs:mana_tea', 250), '#c:seeds'])
+	e.recipes.create.mixing(Item.of('mna:desert_nova').withChance(0.1), [Fluid.of('kubejs:mana_tea', 250), '#c:seeds'])
+	e.recipes.create.mixing(Item.of('mna:wakebloom').withChance(0.1), [Fluid.of('kubejs:mana_tea', 250), '#c:seeds'])
 	e.recipes.create.filling('mna:mana_coffee', ['mna:clay_mug',Fluid.of('kubejs:mana_tea', 250)])
 
     //simple radio

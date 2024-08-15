@@ -711,7 +711,7 @@ spellBiomeBlacklist = []
 		minimum = 1.0
 		#Maximum Value
 		#Range: 0.0 ~ 9999.0
-		maximum = 3.0
+		maximum = 5.0
 		#Default Value
 		#Range: 0.0 ~ 9999.0
 		default = 1.0
