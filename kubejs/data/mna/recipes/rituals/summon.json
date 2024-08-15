@@ -1,0 +1,60 @@
+{
+	"type": "mna:ritual",
+	"tier": 3,
+	"pattern":
+	[
+		[ 7, 8, 9,10,11 ],
+		[ 6, 0, 0, 0,12 ],
+		[ 5, 0,15,14,13 ],
+		[ 4, 0, 0, 0, 0 ],
+		[ 3, 2, 1, 0, 0 ]
+	],
+	"reagents":
+	[
+		"  cE ",
+		"     ",
+		"c CWc",
+		"     ",
+		" Ec  "
+	],
+	"keys":
+	{
+		"C": 
+		{ 
+			"item": "mna:player_charm",
+			"optional": false,
+			"consume": false
+		},
+		"E": 
+		{ 
+			"item": "minecraft:ender_pearl",
+			"optional": false,
+			"consume": true
+		},
+		"P": 
+		{ 
+			"item": "minecraft:ender_pearl",
+			"optional": false,
+			"consume": true
+		},
+		"W": 
+		{ 
+			"item": "mna:world_charm",
+			"optional": true,
+			"consume": false
+		},
+		"c": 
+		{ 
+			"item": "kubejs:charged_vinteum_dust",
+			"optional": false,
+			"consume": true
+		}
+	},
+	"parameters":
+	{
+		"innerColor": "0xFFFFFF",
+		"outerColor": "0xFFFFFF",
+		"connectBeam": false,
+		"beamColor": "0x2db542"
+	}
+}

@@ -200,6 +200,7 @@ ServerEvents.recipes(e => {
 	e.remove({id:'mna:rune_clay_plate'})
 	e.remove({id:'mna:manaweaving/ender_disc'})
 	e.remove({id:'mna:spell_book'})
+	e.remove({id:'mna:manaweaving/eldrin/eldrin_altar'})
 
 	e.shaped('mna:guide_book', [
 		' AI', 
@@ -296,6 +297,21 @@ ServerEvents.recipes(e => {
 		a: 'mna:rune_arcane'
 	}).id('ico:wellspring_pillar')
 
+	e.recipes.create.mechanical_crafting('mna:eldrin_altar', [
+		'  c  ',
+		'cVCVc',
+		' apa ',
+		'cVPVc',
+		'  c  '
+	], {
+		C: 'mna:decoration/chimerite_arcane_sandstone_chiseled',
+		P: 'mna:decoration/chimerite_arcane_sandstone_pillar',
+		a: 'mna:rune_arcane',
+		p: 'mna:pedestal',
+		c: '#mna:chimerite_crystals',
+		V: 'kubejs:charged_vinteum_dust'
+	}).id('ico:eldrin_altar')
+
 	e.recipes.create.mechanical_crafting('mna:eldrin_rift', [
 		' CCC ',
 		'CEOEC',
@@ -334,17 +350,21 @@ ServerEvents.recipes(e => {
 	}).id('ico:spell_book')
 
 	e.shaped('kubejs:magic_carpet', [
-		'GAG', 
+		'GPG', 
 		'ACA', 
 		'GLG'
 	], {
 		C: 'minecraft:red_carpet',
 		A: 'mna:arcane_ash',
 		G: 'minecraft:gold_nugget',
-		L: 'mna:slipstream_generator'
+		L: 'mna:slipstream_generator',
+		P: 'kubejs:charged_vinteum_dust'
 	}).id('ico:magic_carpet')
 
 	e.shapeless('mna:healing_poultice', ['#botania:mystical_flowers', '#ico:arcane_base','#mna:healing_poultice_bases']).id('ico:healing_poultice')
+
+	e.shapeless('kubejs:charged_vinteum_dust', ['aether:ambrosium_shard', 'mna:arcane_ash','mna:purified_vinteum_dust']).id('ico:charged_vinteum_dust')
+
 
 	e.recipes.create.mixing(Fluid.of('kubejs:mana_tea', 500), [Fluid.of('minecraft:water', 500), 'minecraft:sugar', '#botania:mystical_flowers']).heated()
 	e.recipes.create.filling('mna:mana_coffee', ['mna:clay_mug',Fluid.of('kubejs:mana_tea', 250)])

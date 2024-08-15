@@ -1,0 +1,60 @@
+{
+	"type": "mna:ritual",
+	"tier": 3,
+	"pattern":
+	[
+		[11,10, 9, 8, 7 ],
+		[12, 0, 0, 0, 6 ],
+		[13,14,15, 0, 5 ],
+		[ 0, 0, 0, 0, 4 ],
+		[ 0, 0, 1, 2, 3 ]
+	],
+	"reagents":
+	[
+		"SEc  ",
+		"     ",
+		"cWC c",
+		"     ",
+		"  cES"
+	],
+	"keys":
+	{
+		"C": 
+		{ 
+			"item": "mna:ritual/visit_target_items",
+			"optional": false,
+			"consume": false
+		},
+		"E": 
+		{ 
+			"item": "minecraft:ender_pearl",
+			"optional": false,
+			"consume": true
+		},
+		"W": 
+		{ 
+			"item": "mna:world_charm",
+			"optional": true,
+			"consume": false
+		},
+		"S": 
+		{ 
+			"item": "minecraft:bone",
+			"optional": true,
+			"consume": true
+		},
+		"c": 
+		{ 
+			"item": "kubejs:charged_vinteum_dust",
+			"optional": false,
+			"consume": true
+		}
+	},
+	"parameters":
+	{
+		"innerColor": "0xFFFFFF",
+		"outerColor": "0xFFFFFF",
+		"connectBeam": false,
+		"beamColor": "0x2db542"
+	}
+}

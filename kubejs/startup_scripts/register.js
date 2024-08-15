@@ -372,6 +372,10 @@ StartupEvents.registry('item', e => {
     e.create('incomplete_solid_state_cell', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_solid_state_cell')
     e.create('incomplete_casing', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_casing')
     e.create('incomplete_screen', 'create:sequenced_assembly').texture('icosahedron:item/incomplete/incomplete_screen')
+
+	//mna
+	e.create('charged_vinteum_dust').texture('icosahedron:item/component/charged_vinteum_dust')
+
 })
 
 //reflection based

@@ -1,0 +1,84 @@
+{
+	"type": "mna:ritual",
+	"tier": 1,
+	"pattern":
+	[
+		[ 0, 1, 0, 1, 0, 1, 0],
+		[ 1, 0, 0, 1, 0, 0, 1],
+		[ 0, 0, 1, 0, 1, 0, 0],
+		[ 1, 1, 0, 1, 0, 1, 1],
+		[ 0, 0, 1, 0, 1, 0, 0],
+		[ 1, 0, 0, 1, 0, 0, 1],
+		[ 0, 1, 0, 1, 0, 1, 0]		
+	],
+	"displayPattern":
+	[
+		[ 0, 10, 0, 1, 0, 17, 0],
+		[ 11, 0, 0,-1, 0, 0, 16],
+		[ 0, 0, 2, 0, 8, 0, 0],
+		[ 3,-1, 0,-1, 0,-1, 7],
+		[ 0, 0, 4, 0, 6, 0, 0],
+		[ 12, 0, 0,-1, 0, 0, 15],
+		[ 0, 13, 0, 5, 0, 14, 0]		
+	],
+	"reagents":
+	[
+		" D C D ",
+		"F     F",
+		"       ",
+		"A  c  A",
+		"       ",
+		"F     F",
+		" D T D "
+	],
+	"keys":
+	{
+		"C": 
+		{ 
+			"item": "mna:locating_compasses",
+			"optional": false,
+			"consume": true			
+		},
+		"A": 
+		{ 
+			"item": "mna:arcane_ash",
+			"optional": false,
+			"consume": true			
+		},
+		"T": 
+		{ 
+			"item": "mna:thaumaturgic_link",
+			"optional": false,
+			"consume": true			
+		},
+		"c": 
+		{ 
+			"item": "mna:chimerite_gem",
+			"optional": false,
+			"consume": true			
+		},
+		"D": 
+		{ 
+			"item": "minecraft:diamond",
+			"optional": false,
+			"consume": true			
+		},
+		"F": 
+		{ 
+			"item": "mna:ritual_focus_minor",
+			"optional": false,
+			"consume": true			
+		}
+	},
+	"manaweave":
+	[
+		"mna:manaweave_patterns/square"
+	],
+	"parameters":
+	{
+		"innerColor": "0x4e0f7a",
+		"outerColor": "0xad58e8",
+		"displayIndexes": false,
+		"kittable": false
+	}
+}
