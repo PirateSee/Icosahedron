@@ -1,0 +1,52 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_adv_computer": {
+      "type": "heracles:item",
+      "item": "computercraft:computer_advanced",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Gaming Rig ---",
+      "Finally a computer good enough to run Minecraft.",
+      "",
+      "The /b/Advanced Computer/b/ is an improvement on the standard Computer, featuring /6/mouse support/6/, /b/color display/b/, and more.",
+      "<hr/>",
+      "<task task=\"get_adv_computer\" quest=\"gaming_rig\"/>"
+    ],
+    "groups": {
+      "Section 4: Under Pressure": {
+        "position": [
+          -90,
+          270
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "computercraft:computer_advanced",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Gaming Rig"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

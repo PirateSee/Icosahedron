@@ -1,0 +1,45 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Trinkets and Baubles ---",
+      "Trinkets, Curios, Baubles... aren't they all the same?",
+      "",
+      "In your /b/inventory/b/, press the button on the /6/bottom left of the player preview/6/ to open the /b/Curios /b/menu. This lets you equip /b/Rings/b/, /b/Charms/b/, /b/Gloves/b/, and other /b/acessories/b/.",
+      "",
+      "The general /b/Curio/b/ slot /6/accepts any acessory/6/ in it. Additonaly, it /6/keeps with you after death/6/."
+    ],
+    "groups": {
+      "Section 1: Boots on Ground": {
+        "position": [
+          90,
+          60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "aether:golden_ring",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "Trinkets and Baubles"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

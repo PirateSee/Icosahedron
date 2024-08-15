@@ -10,7 +10,7 @@
         "type": "origins:modify_damage_dealt",
         "modifier": {
             "operation": "multiply_base",
-            "value": -0.2,
+            "value": -0.15,
             "name": "Flimsy Swing Penalty"
         }
     },

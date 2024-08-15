@@ -13,7 +13,7 @@
         {
             "attribute": "minecraft:generic.attack_speed",
             "operation": "multiply_total",
-            "value": -0.3,
+            "value": -0.2,
             "name": "Heavy Swipe"
         },
         {

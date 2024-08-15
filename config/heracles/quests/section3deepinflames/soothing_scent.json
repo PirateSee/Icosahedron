@@ -1,0 +1,64 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_inscense_stick": {
+      "type": "heracles:item",
+      "item": "botania:incense_stick",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "award_ghast_tear": {
+      "item": {
+        "id": "minecraft:ghast_tear",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Soothing Scent ---",
+      "Get a wiff of this!",
+      "",
+      "A /b/Botanical Brewery/b/ can /6/imbue brews/6/ into /b/Incense Sticks/b/. Place one on an /b/Incense Plate/b/ and /6/light with/6/ a /b/Flint and Steel/b/ to recieve the /6/effect within radius/6/. /c/Sticks can not be removed once lit/c/.",
+      "",
+      "It's like a /b/mini beacon/b/ for a few hours, great for work sites.",
+      "<hr/>",
+      "<task task=\"get_inscense_stick\" quest=\"soothing_scent\"/>",
+      "<hr/>",
+      "<reward reward=\"award_ghast_tear\" quest=\"soothing_scent\"/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -150,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "botania:incense_stick",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Soothing Scent"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

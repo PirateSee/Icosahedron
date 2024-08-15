@@ -1,18 +1,18 @@
 {
   "dependencies": [],
   "tasks": {
-    "get_disenchanter": {
+    "get_light_relay": {
       "type": "heracles:item",
-      "item": "create_enchantment_industry:disenchanter",
+      "item": "botania:light_relay",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
   },
   "rewards": {
-    "award_bottles": {
+    "award_cake": {
       "item": {
-        "id": "minecraft:experience_bottle",
-        "count": 8
+        "id": "createaddition:chocolate_cake",
+        "count": 2
       },
       "type": "heracles:item"
     }
@@ -22,35 +22,35 @@
       "text": ""
     },
     "description": [
-      "## - Rainy Day ---",
-      "Saving for one?",
+      "## - Light Traveler ---",
+      "No checked baggage, one carry-on.",
       "",
-      "A /b/Disenchanter/b/ lets you /6/store your experience/6/ in liquid form.",
+      "/b/Luminizers/b/ are quick travel methods. /6/Link two/6/ with a /b/Wand of the Forest/b/ up to /6/20 blocks away/6/. Click on one to /6/quickly zip/6/ to that /b/Luminizer's/b/ linked destination.",
       "",
-      "To get it back, pump /6/Liquid Experinece/6/ /6/out an open pipe end/6/.",
+      "A /b/Luminizer Launcher/b/ can force entities ontop of it to ride an adjacent /b/Luminizer/b/.",
       "<hr/>",
-      "<task task=\"get_disenchanter\" quest=\"rainy_day\"/>",
+      "<task task=\"get_light_relay\" quest=\"light_traveler\"/>",
       "<hr/>",
-      "<reward reward=\"award_bottles\" quest=\"rainy_day\"/>"
+      "<reward reward=\"award_cake\" quest=\"light_traveler\"/>"
     ],
     "groups": {
-      "Section 2: A Cog in the Machine": {
+      "Section 3: Deep in Flames": {
         "position": [
-          330,
-          -60
+          -150,
+          240
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "create_enchantment_industry:disenchanter",
+        "id": "botania:light_relay",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
     "title": {
-      "translate": "Rainy Day"
+      "translate": "Light Traveler"
     }
   },
   "settings": {

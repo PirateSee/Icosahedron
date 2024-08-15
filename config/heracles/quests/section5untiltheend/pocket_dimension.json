@@ -1,0 +1,66 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "get_spatial_io": {
+      "type": "heracles:item",
+      "item": "ae2:spatial_io_port",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "award_heart_sea": {
+      "item": {
+        "id": "minecraft:heart_of_the_sea",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Pocket Dimension ---",
+      "A world in the palm of your hand.",
+      "",
+      "/b/Spatial Storage/b/ lets you store /6/entire structures/6/ into a small cell. View the /b/Guide/b/ for specifics.",
+      "",
+      "This technology has /6/great potential/6/, but comes with /c/high power cost/c/. Make sure you have enough /b/Energy Cells/b/ to withstand the spike of power draw.",
+      "",
+      "Teleporters, anyone?",
+      "<hr/>",
+      "<task task=\"get_spatial_io\" quest=\"pocket_dimension\"/>",
+      "<hr/>",
+      "<reward reward=\"award_heart_sea\" quest=\"pocket_dimension\"/>"
+    ],
+    "groups": {
+      "Section 5: Until the End": {
+        "position": [
+          270,
+          -60
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "ae2:spatial_storage_cell_128",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Pocket Dimension"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

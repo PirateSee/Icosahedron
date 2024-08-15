@@ -867,7 +867,7 @@ ServerEvents.recipes(e => {
     e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
-			"amount": 80,
+			"amount": 40,
 			"infuse_type": "mekanism:refined_obsidian"
 		},
 		"itemInput": {

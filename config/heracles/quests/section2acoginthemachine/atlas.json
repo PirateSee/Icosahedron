@@ -30,6 +30,9 @@
       "",
       "<crafting-recipe id=\"ico:empty_antique_atlal\" grid-width=\"3\"/>",
       "",
+      "If you want to /6/copy map data/6/, craft a /b/filled Atlas/b/ with an /b/empty one/b/. The two copies will /6/always have the same map data/6/.",
+      "",
+      "If you want to /6/merge map data/6/, craft two /b/filled Atlases/b/ together.",
       "<hr/>",
       "<task task=\"get_atlas\" quest=\"atlas\"/>"
     ],

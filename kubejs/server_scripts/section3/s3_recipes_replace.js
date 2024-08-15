@@ -37,6 +37,7 @@ ServerEvents.recipes(e => {
 	e.remove({id:'computercraft:disk_drive'})
 	e.remove({id:'computercraft:speaker'})
 	e.remove({id:'computercraft:monitor_normal'})
+    e.remove({id:'computercraft:pocket_computer_normal'})
 	
 	//electric
 	e.remove({id:'create_new_age:shaped/generator_coil'})
@@ -108,14 +109,13 @@ ServerEvents.recipes(e => {
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:centrifuge')
 
 	e.shaped('create:propeller', [
-		'IPT', 
-		' A ', 
-		' PI'
+		' IT', 
+		'IAI',
+        ' I'
 	], {
-		A: 'kubejs:aquatrine',
 		T: '#ico:tool/hammer',
-		I: 'kubejs:pressed_iron',
-		P: 'immersive_aircraft:propeller'
+		I: 'kubejs:carbon_steel_sheet',
+		A: 'create:andesite_alloy'
 	}).damageIngredient(Item.of('#ico:tool/hammer')).id('ico:propeller')
 
 	e.shaped('create:encased_fan', [
@@ -240,6 +240,17 @@ ServerEvents.recipes(e => {
 		I: 'kubejs:wrought_iron_ingot',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:computer')
+
+    e.shaped('computercraft:pocket_computer_normal', [
+		'LTL', 
+		'ILI', 
+		'ICI'
+	], {
+		C: 'create:precision_mechanism',
+		L: 'kubejs:logic_circuit',
+		I: 'kubejs:wrought_iron_ingot',
+		T: '#ico:tool/screwdriver'
+	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:pocket_computer')
 
 	e.shaped('8x computercraft:cable', [
 		' T ',
@@ -392,15 +403,15 @@ ServerEvents.recipes(e => {
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:carbon_brushes')
 
 	e.recipes.create.mechanical_crafting('create_new_age:generator_coil', [
-        'S S S',
+        '  S  ',
         ' CCC ',
         'SCACS',
 		' CCC ',
-		'S S S'
+		'  S  '
 	], {
         A: 'create:andesite_alloy_block',
 		C: 'minecraft:copper_ingot',
-		S: 'kubejs:carbon_steel_sheet',
+		S: 'kubejs:nickel_sheet',
 	})
 
 	inter = 'kubejs:incomplete_capacitor'

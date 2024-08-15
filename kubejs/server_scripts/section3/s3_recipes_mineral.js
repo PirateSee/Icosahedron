@@ -153,7 +153,7 @@ ServerEvents.recipes(e => {
 
     e.recipes.create.mixing('kubejs:bronze_ingot', ['minecraft:copper_ingot','kubejs:tin_ingot'])
 
-    e.recipes.create.mixing(Fluid.of('kubejs:molten_pressure_alloy', 300), ['1x kubejs:aluminum_ingot', '2x kubejs:pressed_iron']).superheated().id('ico:mix_molten_pressure_alloy')
+    e.recipes.create.mixing(Fluid.of('kubejs:molten_pressure_alloy', 400), ['1x kubejs:aluminum_ingot', '2x kubejs:pressed_iron']).superheated().id('ico:mix_molten_pressure_alloy')
     e.recipes.create.compacting(['kubejs:pressure_alloy', Fluid.of('kubejs:slag_runoff', 50)], [Fluid.of('kubejs:molten_pressure_alloy', 200), '#ico:corundum_clusters']).id('ico:compact_pressure_alloy')
     /*e.custom({
         "type":"vintageimprovements:pressurizing",

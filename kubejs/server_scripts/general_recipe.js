@@ -388,7 +388,7 @@ ServerEvents.recipes(e => {
 
     e.shaped('simpleradio:transmitting_module', [
 		'SCT', 
-		'RRR',
+		'RR ',
 	], {
 		T: '#ico:tool/screwdriver',
 		C: 'kubejs:carbon_steel_ingot',
@@ -398,7 +398,7 @@ ServerEvents.recipes(e => {
 
     e.shaped('simpleradio:receiving_module', [
 		'ECT', 
-		'RRR',
+		'RR ',
 	], {
 		T: '#ico:tool/screwdriver',
 		C: 'kubejs:carbon_steel_sheet',
@@ -408,7 +408,7 @@ ServerEvents.recipes(e => {
 
     e.shaped('simpleradio:listener_module', [
 		'ECT', 
-		'RRR',
+		'RR ',
 	], {
 		T: '#ico:tool/screwdriver',
 		C: 'kubejs:carbon_steel_ingot',
@@ -418,7 +418,7 @@ ServerEvents.recipes(e => {
 
     e.shaped('simpleradio:speaker_module', [
 		'ECT', 
-		'RRR',
+		'RR ',
 	], {
 		T: '#ico:tool/screwdriver',
 		C: 'kubejs:carbon_steel_sheet',
@@ -474,19 +474,17 @@ ServerEvents.recipes(e => {
         S: 'simpleradio:speaker_module',
         N: 'kubejs:nickel_ingot',
         n: 'kubejs:nickel_sheet',
-        G: 'quark:iron_grate'
+        G: 'kubejs:pig_iron_sheet'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:speaker_radio')
 
     e.shaped('simpleradio:radiosmither', [
 		' RT', 
-		'SWS',
-        ' C '
+		'SWS'
 	], {
 		T: '#ico:tool/screwdriver',
-        S: 'kubejs:carbon_steel_sheet',
+        S: 'kubejs:pig_iron_ingot',
         W: 'kubejs:pig_iron_block',
-        C: 'kubejs:carbon_steel_ingot',
-        R: 'kubejs:logic_circuit'
+        R: 'minecraft:repeater'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:radiosmither')
 
     e.shaped('simpleradio:antenna', [
@@ -506,6 +504,9 @@ ServerEvents.recipes(e => {
 		F: 'kubejs:brass_filter_framing',
 		W: 'pneumaticcraft:plastic'
 	}).id('ico:plastic_mesh')
+
+    e.recipes.create.pressing('kubejs:aluminum_sheet', 'kubejs:aluminum_ingot').id('ico:aluminum_sheet')
+    e.recipes.create.pressing('kubejs:nickel_sheet', 'kubejs:nickel_ingot').id('ico:nickel_sheet')
 
     //no more tablet
     e.recipes.create.milling('mekanism:dust_emerald', 'kubejs:emerald_tablet').id('ico:anger_the_gods')

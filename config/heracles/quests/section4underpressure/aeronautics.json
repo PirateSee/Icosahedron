@@ -1,18 +1,21 @@
 {
   "dependencies": [],
   "tasks": {
-    "get_disenchanter": {
+    "get_biplane": {
       "type": "heracles:item",
-      "item": "create_enchantment_industry:disenchanter",
+      "item": "immersive_aircraft:biplane",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
   },
   "rewards": {
-    "award_bottles": {
+    "award_parachute": {
       "item": {
-        "id": "minecraft:experience_bottle",
-        "count": 8
+        "id": "aether:golden_parachute",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
       },
       "type": "heracles:item"
     }
@@ -22,35 +25,35 @@
       "text": ""
     },
     "description": [
-      "## - Rainy Day ---",
-      "Saving for one?",
+      "## - Areonautics ---",
+      "Take to the skies",
       "",
-      "A /b/Disenchanter/b/ lets you /6/store your experience/6/ in liquid form.",
+      "Biplanes are a pretty fast method of travel. Similar to other aircraft, upgrades can be installed in it's four upgrade slots.",
       "",
-      "To get it back, pump /6/Liquid Experinece/6/ /6/out an open pipe end/6/.",
+      "Be sure to check out the other Immersive Aircraft vechiles.",
       "<hr/>",
-      "<task task=\"get_disenchanter\" quest=\"rainy_day\"/>",
+      "<task task=\"get_biplane\" quest=\"aeronautics\"/>",
       "<hr/>",
-      "<reward reward=\"award_bottles\" quest=\"rainy_day\"/>"
+      "<reward reward=\"award_parachute\" quest=\"aeronautics\"/>"
     ],
     "groups": {
-      "Section 2: A Cog in the Machine": {
+      "Section 4: Under Pressure": {
         "position": [
-          330,
-          -60
+          -60,
+          270
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "create_enchantment_industry:disenchanter",
+        "id": "immersive_aircraft:biplane",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
     "title": {
-      "translate": "Rainy Day"
+      "translate": "Aeronautics"
     }
   },
   "settings": {

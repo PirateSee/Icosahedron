@@ -52,6 +52,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'computercraft:computer_advanced'})
     e.remove({id: 'computercraft:computer_advanced_upgrade'})
     e.remove({id: 'computercraft:monitor_advanced'})
+    e.remove({id: 'computercraft:pocket_computer_advanced'})
+    e.remove({id: 'computercraft:pocket_computer_advanced_upgrade'})
 
     //equipment
     e.remove({id:'pneumaticcraft:memory_stick'})
@@ -1079,7 +1081,7 @@ ServerEvents.recipes(e => {
     "type": "computercraft:computer_upgrade",
     "category": "redstone",
     "key": {
-      "G": {"item": "create:golden_sheet"},
+      "G": {"item": "create:brass_sheet"},
       "C": {"item": "computercraft:computer_normal"},
       "P": {"item": "pneumaticcraft:printed_circuit_board"},
       "I": {"item": 'compressedcreativity:compressed_iron_casing'},
@@ -1092,6 +1094,24 @@ ServerEvents.recipes(e => {
     "result": {"item": "computercraft:computer_advanced"},
     "show_notification": true
   }).id("ico:computer_advanced")
+
+  e.custom({
+    "type": "computercraft:computer_upgrade",
+    "category": "redstone",
+    "key": {
+      "G": {"item": "create:brass_sheet"},
+      "C": {"item": "computercraft:pocket_computer_normal"},
+      "P": {"item": "pneumaticcraft:printed_circuit_board"},
+      "I": {"item": 'compressedcreativity:compressed_iron_casing'},
+      "T": {"tag": 'ico:tool/screwdriver'},
+    },
+    "pattern": [
+      "PTP",
+      "GCG",
+      "GIG"],
+    "result": {"item": "computercraft:pocket_computer_advanced"},
+    "show_notification": true
+  }).id("ico:pocket_computer_advanced")
 
   e.shaped('2x computercraft:monitor_advanced', [
 		'RST',

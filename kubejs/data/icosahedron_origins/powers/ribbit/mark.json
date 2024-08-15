@@ -1,0 +1,19 @@
+{
+    "name": "§a+ §r§nMarked",
+    "description": "Hit entities glow",
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+        "type": "origins:target_action",
+        "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:glowing",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            }
+        }
+    },
+    "cooldown": 1
+}

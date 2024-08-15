@@ -35,6 +35,8 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:petal_apothecary/orechid'})
     e.remove({id: 'botania:petal_apothecary/orechid_ignem'})
 
+    e.remove({id: 'botania:mana_gun'})
+
     e.shaped('botania:diluted_pool', [
         '  T',
         'WVW', 
@@ -282,4 +284,16 @@ ServerEvents.recipes(e => {
         R: 'minecraft:rotten_flesh',
         N: 'create:cinder_flour'
 	}).id('ico:fel_pumpkin')
+
+    e.shaped('botania:mana_gun', [
+        'SRT',
+        ' LN', 
+		'  L'
+	], {
+        L: '#botania:livingwood_logs',
+		R: 'botania:rune_mana',
+        N: 'minecraft:tnt',
+        S: 'botania:redstone_spreader',
+        T: '#ico:tool/saw'
+	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:mana_gun')
 })

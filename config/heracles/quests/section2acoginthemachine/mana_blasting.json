@@ -1,20 +1,24 @@
 {
   "dependencies": [],
   "tasks": {
-    "get_disenchanter": {
+    "get_mana_blaster": {
       "type": "heracles:item",
-      "item": "create_enchantment_industry:disenchanter",
+      "item": "botania:mana_gun",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
   },
   "rewards": {
-    "award_bottles": {
-      "item": {
-        "id": "minecraft:experience_bottle",
-        "count": 8
+    "award_achient_tome": {
+      "icon": {
+        "item": {
+          "id": "quark:ancient_tome",
+          "count": 1
+        },
+        "type": "heracles:item"
       },
-      "type": "heracles:item"
+      "loot_table": "kubejs:commands/tomes",
+      "type": "heracles:loottable"
     }
   },
   "display": {
@@ -22,35 +26,35 @@
       "text": ""
     },
     "description": [
-      "## - Rainy Day ---",
-      "Saving for one?",
+      "## - Mana Blasting ---",
+      "So anyway, I started blasting.",
       "",
-      "A /b/Disenchanter/b/ lets you /6/store your experience/6/ in liquid form.",
+      "The /b/Mana Blaster/b/ shoots /b/Mana Bursts/b/ right from your hand. When /6/fitted with various/6/ /b/Lenses/b/, it can be a good /6/utility weapon/6/.",
       "",
-      "To get it back, pump /6/Liquid Experinece/6/ /6/out an open pipe end/6/.",
+      "You'll need a Mana Tablet to store Mana as ammo.",
       "<hr/>",
-      "<task task=\"get_disenchanter\" quest=\"rainy_day\"/>",
+      "<task task=\"get_mana_blaster\" quest=\"mana_blasting\"/>",
       "<hr/>",
-      "<reward reward=\"award_bottles\" quest=\"rainy_day\"/>"
+      "<reward reward=\"award_achient_tome\" quest=\"mana_blasting\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
-          330,
+          360,
           -60
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "create_enchantment_industry:disenchanter",
+        "id": "botania:mana_gun",
         "count": 1
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
     "title": {
-      "translate": "Rainy Day"
+      "translate": "Mana Blasting"
     }
   },
   "settings": {

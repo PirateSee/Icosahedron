@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nEmbers",
-    "description": "Fire only hurts half as much.",
+    "description": "Fire hurts a third less.",
     "badges": [
         {
             "type": "origins:tooltip",
@@ -15,7 +15,7 @@
     },
     "modifier": {
         "operation": "multiply_base",
-        "value": -0.5,
+        "value": -0.3,
         "name": "Embers Bonus"
     },
     "damage_armor_condition": {

@@ -1,6 +1,13 @@
 {
     "name": "§7o §r§nLast Wish",
     "description": "While the Obliterate effect is ticking, hold down the key to explode early.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Hold shift to avoid Blinking.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
     "type": "origins:multiple",
     "activate": {
         "condition": {

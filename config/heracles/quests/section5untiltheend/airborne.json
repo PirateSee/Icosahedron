@@ -1,18 +1,18 @@
 {
   "dependencies": [],
   "tasks": {
-    "get_disenchanter": {
+    "get_jetpack": {
       "type": "heracles:item",
-      "item": "create_enchantment_industry:disenchanter",
+      "item": "mekanism:jetpack",
       "amount": 1,
       "collection": "AUTOMATIC"
     }
   },
   "rewards": {
-    "award_bottles": {
+    "award_dark_metal": {
       "item": {
-        "id": "minecraft:experience_bottle",
-        "count": 8
+        "id": "born_in_chaos_v1:dark_metal_ingot",
+        "count": 1
       },
       "type": "heracles:item"
     }
@@ -22,35 +22,36 @@
       "text": ""
     },
     "description": [
-      "## - Rainy Day ---",
-      "Saving for one?",
+      "## - Airborne ---",
+      "Hydrogen-powered flight!",
       "",
-      "A /b/Disenchanter/b/ lets you /6/store your experience/6/ in liquid form.",
+      "/b/Jetpacks/b/ let you fly /6/vertically and hover/6/ with ease. They require /b/Hydrogen/b/ as fuel.",
       "",
-      "To get it back, pump /6/Liquid Experinece/6/ /6/out an open pipe end/6/.",
+      "While you can /6/scale mountains/6/, they /c/don't go that fast horizontaly/c/.",
       "<hr/>",
-      "<task task=\"get_disenchanter\" quest=\"rainy_day\"/>",
+      "<task task=\"get_jetpack\" quest=\"airborne\"/>",
       "<hr/>",
-      "<reward reward=\"award_bottles\" quest=\"rainy_day\"/>"
+      "<reward reward=\"award_dark_metal\" quest=\"airborne\"/>"
     ],
     "groups": {
-      "Section 2: A Cog in the Machine": {
+      "Section 5: Until the End": {
         "position": [
-          330,
-          -60
+          180,
+          -40
         ]
       }
     },
     "icon": {
       "item": {
-        "id": "create_enchantment_industry:disenchanter",
-        "count": 1
+        "id": "mekanism:jetpack",
+        "count": 1,
+        "nbt": {}
       },
       "type": "heracles:item"
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
     "title": {
-      "translate": "Rainy Day"
+      "translate": "Airborne"
     }
   },
   "settings": {

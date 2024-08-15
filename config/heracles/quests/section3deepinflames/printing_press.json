@@ -1,12 +1,40 @@
 {
   "dependencies": [],
-  "tasks": {},
-  "rewards": {},
+  "tasks": {
+    "get_printer": {
+      "type": "heracles:item",
+      "item": "create_enchantment_industry:printer",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "award_bottles": {
+      "item": {
+        "id": "minecraft:experience_bottle",
+        "count": 16
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Printing Press ---",
+      "A revolution of information.",
+      "",
+      "The /b/Printer/b/ can /6/duplicate books/6/. Right click the Printer with either a /b/Written Book/b/ or /b/Enchanted Book/b/.",
+      "",
+      "If printing /b/Written Books/b/, fill the /b/Printer/b/ with /b/Ink/b/.",
+      "",
+      "If printing /b/Enchanted Books/b/, fill with /b/Liquid Experince/b/. You'll need /b/Liquid Hyper Experince/b/ if the book /6/has an enchantment over the maximum level/6/.",
+      "<hr/>",
+      "<task task=\"get_printer\" quest=\"printing_press\"/>",
+      "<hr/>",
+      "<reward reward=\"award_bottles\" quest=\"printing_press\"/>"
+    ],
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [

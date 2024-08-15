@@ -1,0 +1,63 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "dim_aether": {
+      "icon": {
+        "item": {
+          "id": "aether:aether_portal_frame",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "from": "minecraft:overworld",
+      "to": "aether:the_aether",
+      "title": "Go to the Aether",
+      "type": "heracles:changed_dimension"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "## - Aether ---",
+      "An opposite to the nether.",
+      "",
+      "The /b/Aether/b/ is a hostile paradise in the sky. It's altitude makes it /6/slightly chilly/6/, but you can /6/warm up in caves/6/.",
+      "",
+      "Build a /b/Glowstone/b/ portal frame and light with /b/water/b/.",
+      "",
+      "Should you /6/fall off the floating islands/6/, you'll end up back in the /b/Overworld/b/.",
+      "<hr/>",
+      "<task task=\"dim_aether\" quest=\"aether\"/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          -120,
+          90
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "aether:aether_portal_frame",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gemstone.png",
+    "title": {
+      "translate": "Aether"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

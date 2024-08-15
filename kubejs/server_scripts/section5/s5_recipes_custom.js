@@ -70,6 +70,19 @@ ServerEvents.recipes(e => {
         }
     }).id('ico:cupronickel_from_wire')
 
+    e.custom({
+        "type": "mekanism:infusion_conversion",
+        "input": {
+            "ingredient": {
+                'item': "kubejs:cupronickel_ingot"
+            }
+        },
+        "output": {
+            "amount": 20,
+            "infuse_type": "kubejs:cupronickel"
+        }
+    }).id('ico:cupronickel_from_ingot')
+
 	e.custom({
 		"type": "mekanism:metallurgic_infusing",
 		"chemicalInput": {
@@ -230,7 +243,7 @@ ServerEvents.recipes(e => {
         }
     }).id("ico:sturdy_sheet_dust")
 
-	e.recipes.create.compacting('kubejs:andesite_pressure_alloy', ['3x create:andesite_alloy', Fluid.of('kubejs:molten_pressure_alloy', 100)]).superheated().id("andesite_pressure_alloy")
+	e.recipes.create.compacting('kubejs:andesite_pressure_alloy', ['2x create:andesite_alloy', Fluid.of('kubejs:molten_pressure_alloy', 100)]).superheated().id("andesite_pressure_alloy")
 
 	e.custom({
 		"type": "mekanism:metallurgic_infusing",
@@ -270,7 +283,7 @@ ServerEvents.recipes(e => {
 		"itemInput": {
 			"ingredient": {
 				"item": "kubejs:tungsten_ingot",
-				"count": 2
+				"count": 1
 			}
 		},
 		"output": {

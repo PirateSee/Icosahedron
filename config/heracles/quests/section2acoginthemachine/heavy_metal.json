@@ -4,7 +4,7 @@
     "get_iron_block": {
       "type": "heracles:item",
       "item": "minecraft:iron_block",
-      "amount": 128,
+      "amount": 64,
       "collection": "MANUAL"
     }
   },
@@ -30,14 +30,14 @@
       "You could mine all of it of course, but some kind of /b/automatic iron/b/ would be better.",
       "",
       "<hr/>",
-      "<task task=\"submit_iron_block\" quest=\"heavy_metal\"/>",
+      "<task task=\"get_iron_block\" quest=\"heavy_metal\"/>",
       "<hr/>",
       "<reward reward=\"award_sack\" quest=\"heavy_metal\"/>"
     ],
     "groups": {
       "Section 2: A Cog in the Machine": {
         "position": [
-          270,
+          300,
           -60
         ]
       }
