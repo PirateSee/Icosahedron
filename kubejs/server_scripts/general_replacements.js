@@ -401,12 +401,13 @@ ServerEvents.recipes(e => {
 	e.shaped('create_enchantment_industry:printer', [
 		'ST',
 		'KP',
-		'I '
+		'ID'
 	], {
 		S: 'create:spout',
 		K: 'minecraft:dried_kelp',
 		P: 'kubejs:wrought_iron_spring',
 		I: 'kubejs:carbon_steel_sheet',
+        D: 'botania:mana_diamond',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:enchanting_printer')
 

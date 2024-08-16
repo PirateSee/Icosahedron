@@ -61,17 +61,21 @@
                             "include_target": true
                         },
                         {
-                            "type": "origins:explode",
+                            "type": "apugli:explode",
                             "power": 2,
                             "destruction_type": "none",
-                            "damage_self": true
+                            "damage_self": true,
+                            "damage_modifer": {
+                                "operation": "multiply_total_multiplicative",
+                                "value": -0.75
+                            }
                         }
                     ]
                 }
             }
         ]
     },
-    "bientity_action_on_hit": {
+    "owner_target_bientity_action_on_hit": {
         "type": "origins:and",
         "actions": [
             {

@@ -44,19 +44,6 @@ ServerEvents.recipes(e => {
         }
     }).id('ico:nickel_from_ingot')
 
-	/*e.custom({
-        "type": "mekanism:infusion_conversion",
-        "input": {
-            "ingredient": {
-                "tag": "forge:dusts/copper"
-            }
-        },
-        "output": {
-            "amount": 10,
-            "infuse_type": "kubejs:copper"
-        }
-    }).id('ico:copper_from_dust')*/
-
 	e.custom({
         "type": "mekanism:infusion_conversion",
         "input": {
@@ -101,23 +88,6 @@ ServerEvents.recipes(e => {
 		}
 	}).id('cuppronickel_from_copper')
 
-	/*e.custom({
-		"type": "mekanism:metallurgic_infusing",
-		"chemicalInput": {
-			"amount": 80,
-			"infuse_type": "kubejs:copper"
-		},
-		"itemInput": {
-			"ingredient": {
-				"item": "create:zinc_ingot"
-			}
-		},
-		"output": {
-			"count": 1,
-			"item": "create:brass_ingot"
-		}
-	}).id('infused_brass')*/
-
 	e.custom({
 		"type":"createaddition:rolling",
 		"input": {
@@ -158,66 +128,6 @@ ServerEvents.recipes(e => {
     e.recipes.create.deploying('kubejs:uninfused_elite_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:alloy_reinforced']).id("ico:uninfused_elite_circuit")
 
     e.recipes.create.deploying('kubejs:uninfused_ultimate_circuit', ['pneumaticcraft:printed_circuit_board', 'mekanism:alloy_atomic']).id("ico:uninfused_ultimate_circuit")
-
-	/*e.custom({
-		"type": "pneumaticcraft:pressure_chamber",
-		"inputs": [
-			{
-				"item": "mekanism:basic_control_circuit",
-			},
-			{
-				"type": "pneumaticcraft:stacked_item",
-				"item": "mekanism:alloy_infused",
-				"count": 2
-			}
-		],
-		"pressure": 3,
-		"results": [
-			{
-		  	"item": "kubejs:uninfused_advanced_circuit"
-			}
-		]
-	}).id("ico:uninfused_advanced_circuit")
-
-	e.custom({
-		"type": "pneumaticcraft:pressure_chamber",
-		"inputs": [
-			{
-				"item": "mekanism:advanced_control_circuit",
-			},
-			{
-				"type": "pneumaticcraft:stacked_item",
-				"item": "mekanism:alloy_reinforced",
-				"count": 2
-			}
-		],
-		"pressure": 3,
-		"results": [
-			{
-		  	"item": "kubejs:uninfused_elite_circuit"
-			}
-		]
-	}).id("ico:uninfused_elite_circuit")
-
-	e.custom({
-		"type": "pneumaticcraft:pressure_chamber",
-		"inputs": [
-			{
-				"item": "mekanism:elite_control_circuit",
-			},
-			{
-				"type": "pneumaticcraft:stacked_item",
-				"item": "mekanism:alloy_atomic",
-				"count": 2
-			}
-		],
-		"pressure": 3,
-		"results": [
-			{
-		  	"item": "kubejs:uninfused_ultimate_circuit"
-			}
-		]
-	}).id("ico:uninfused_ultimate_circuit")*/
 
 	let inter = 'kubejs:incomplete_machine_plating'
 	e.recipes.createSequencedAssembly([

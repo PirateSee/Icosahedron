@@ -809,9 +809,8 @@ ServerEvents.recipes(e => {
 			"infuse_type": "mekanism:carbon"
 		},
 		"itemInput": {
-            "amount": 3,
 			"ingredient": {
-				"item": "kubejs:pressed_iron"
+				"item": "kubejs:carbon_steel_ingot"
 			}
 		},
 		"output": {

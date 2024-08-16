@@ -3,7 +3,7 @@ ServerEvents.recipes(e => {
 	//e.recipes.remove({output:''})
 
 	//leather tanning
-	e.campfireCooking('minecraft:leather', 'minecraft:rabbit_hide').id('ico:leather_from_rabbit')
+    e.campfireCooking('minecraft:rabbit_hide', 'minecraft:rotten_flesh').id('ico:leather_from_rotten_flesh')
 	e.campfireCooking('2x minecraft:leather', 'cold_sweat:hoglin_hide').id('ico:leather_from_hoglin')
 	
 	

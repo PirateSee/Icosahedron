@@ -4,7 +4,8 @@
     "powers": [
         "icosahedron_origins:water_breathing_force",
         "icosahedron_origins:water_breathing_no_suffocate",
-        "icosahedron_origins:conduit_in_end"
+        "icosahedron_origins:conduit_in_end",
+        "icosahedron_origins:exhaust_less"
     ],
     "impact": 0
 }

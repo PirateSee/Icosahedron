@@ -10,7 +10,18 @@
       "type": "heracles:advancement"
     }
   },
-  "rewards": {},
+  "rewards": {
+    "award_tunic": {
+      "item": {
+        "id": "minecraft:leather_chestplate",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
   "display": {
     "subtitle": {
       "translate": "Regulated Tempature"
@@ -69,12 +80,15 @@
       "While /b/Fire Resistance/b/ will /6/prevent the negative effects/6/ of heat, it won't /6/prevent your body tempature from rising/6/. This means if the effect runs out, you might /c/start burning/c/ unless you /6/cooled down beforehand/6/.",
       "<hr/>",
       "",
-      "Fur can be obtained by shearing goats. Hoglin hide is dropped by Hoglins when they die.",
+      "/b/Fur/b/ can be obtained by /6/shearing goats/6/. /b/Hoglin hide/b/ is dropped by /b/Hoglins/b/ when they die.",
       "",
-      "Armour can accept multiple pieces of insulation, each increasing the strength. You can also mix and match insulation types.",
+      "Armour can accept /6/multiple pieces/6/ of insulation, each increasing the strength. You can also /6/mix and match/6/ insulation types.",
       "",
       "<hr/>",
-      "<task task=\"adv_insulate\" quest=\"Sew much insulation\"/>    "
+      "<task task=\"adv_insulate\" quest=\"Sew much insulation\"/>",
+      "<hr/>",
+      "You can also use /b/Leather/Fur/Hoglin Armor/b/ to /6/line other armor/6/.",
+      "<reward reward=\"award_tunic\" quest=\"Sew much insulation\"/>"
     ],
     "groups": {
       "Section 1: Boots on Ground": {

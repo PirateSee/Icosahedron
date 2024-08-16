@@ -1,5 +1,12 @@
 ServerEvents.recipes(e => {
 
+    //kill duping
+    e.remove({output: '#mekanism:crystals'})
+    e.remove({output: '#mekanism:shards'})
+    e.remove({output: '#mekanism:crystals'})
+    e.remove({output: '#mekanism:clumps'})
+    e.remove({output: '#mekanism:dirty_dusts'})
+
     //tungsten
     e.custom({
         "type": "mekanism:injecting",
