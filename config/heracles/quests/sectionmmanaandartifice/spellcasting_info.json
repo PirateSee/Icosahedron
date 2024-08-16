@@ -6,14 +6,28 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "An introduction to spellcasting"
     },
-    "description": [],
+    "description": [
+      "<h1>- Spellcasting 101 ---</h1>",
+      "",
+      "Alright now that you know how to make a spell your probably asking \"Ok cool but how do I do anything complex or interesting with this?\". That is what we will be going over here.",
+      "",
+      "/4/As a slight heads up, in this we will be referring to the method your spell uses to target something as its \"/6/shape/6/\", and the effect it has on the world as its \"/6/action/s/6/\"./4/",
+      "",
+      "",
+      "Ok lets start this off with something simple. Lets say you want your spell to effect a small area around where it lands. To do this you will want to add the /b/Range/b/ modifier onto the spell. Doing so will unlock a button to the right of your /6/shape/6/, if it supports it, that will increase or decrease the Radius the spell resolves in. The same goes for most if not all modifiers.",
+      "",
+      "",
+      "But what if you want multiple actions in one spell? That is where the /b/Book of Rote/b/ comes in. The /b/Book of Rote/b/ is a /5/Teir 2/5/ item that allows you to create spells on the fly with any /6/modifers/6/, /6/shapes/6/, or /6/actions/6/ you have made /5/Rote/5/. And it allows you to add up to 6 /6/actions/6/ onto any spell you want.",
+      "",
+      "/4/Warning if you want to add multiple damaging /6/actions/6/ onto a spell they need to have a delay between them due to immunity frames./4/"
+    ],
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
-          125,
-          173
+          60,
+          135
         ]
       }
     },
@@ -26,7 +40,7 @@
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
     "title": {
-      "translate": "spellcasting info"
+      "translate": "Spellcasting 101"
     }
   },
   "settings": {

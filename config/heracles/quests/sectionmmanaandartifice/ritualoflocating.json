@@ -6,14 +6,22 @@
   "rewards": {},
   "display": {
     "subtitle": {
-      "text": ""
+      "translate": "Lost your car keys?"
     },
-    "description": [],
+    "description": [
+      "<h1>- Ritual of Locating ---</h1>",
+      "",
+      "If your ever in need of locating a specific structure. Then look no further than the /b/Ritual of Locating/b/. This /5/Ritual/5/ allows you to make a /b/Compass/b/ point twards the nearest /6/Structure/6/ or /6/Biome/6/ of a given type. ",
+      "",
+      "To do this you need to first get a /b/Thaumaturgic Link/b/ which you purchase from the /6/Wandering Wizard/6/ which can be summoned via the /6/Ritual of the Wandering Wizard/6/.",
+      "",
+      "Then once you have a /b/Thaumaturgic Link/b/, a /b/Compass/b/, a /b/Chimerite Gem/b/, 4 /b/Diamonds/b/, and 4 /b/Magic Foci/b/, you can do the /5/Ritual/5/ itself which is located under the /6/Rituals Tab/6/ of the /b/Codex Arcana/b/."
+    ],
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
-          141,
-          92
+          60,
+          95
         ]
       }
     },
@@ -24,9 +32,9 @@
       },
       "type": "heracles:item"
     },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
     "title": {
-      "translate": "ritualoflocating"
+      "translate": "Ritual of Locating"
     }
   },
   "settings": {

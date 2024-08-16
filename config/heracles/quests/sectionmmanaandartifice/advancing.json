@@ -2,7 +2,8 @@
   "dependencies": [
     "spellcasting",
     "the_divine_art",
-    "charms"
+    "charms",
+    "constructs"
   ],
   "tasks": {},
   "rewards": {},
@@ -14,8 +15,8 @@
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
-          -2,
-          216
+          0,
+          185
         ]
       }
     },

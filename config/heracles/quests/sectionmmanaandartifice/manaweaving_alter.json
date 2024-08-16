@@ -1,7 +1,6 @@
 {
   "dependencies": [
-    "manaweaving",
-    "novice_wizard"
+    "manaweaving"
   ],
   "tasks": {},
   "rewards": {},
@@ -15,8 +14,8 @@
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
-          -74,
-          71
+          -20,
+          95
         ]
       }
     },

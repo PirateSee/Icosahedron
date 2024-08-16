@@ -38,29 +38,23 @@
       "",
       "",
       "<item id=\"mna:improvised_manaweaver_wand\"/>",
-      "The /b/Improvised Manaweaver's Wand/b/ is the cheapest of the Manaweaving Wands, it only has enough durability for a couple patterns and Id only ever recomend using it in the off chance you dont have access to your main wand.",
+      "The /b/Improvised Manaweaver's Wand/b/ is the cheapest of the Manaweaving Wands, it only has enough durability for a couple patterns and we only recomend using it in the off chance you dont have access to your main wand.",
       "",
       "<crafting-recipe id=\"mna:improvised_manaweaver_wand\"/>",
       "/6/This recipe can be done with allmost any stick shaped object and any magical flower./6/",
       "",
-      "",
       "<item id=\"mna:manaweaver_wand\"/>",
-      "The /b/Vinteum Manaweaver's Wand/b/ has a --much-- higher durability ",
+      "The /b/Vinteum Manaweaver's Wand/b/ has a higher durability ",
       "than The /b/Improvized Manaweaver's Wand/b/, and has the lowest /9/Mana/9/ cost when drawing patterns.",
       "",
-      "<crafting-recipe id=\"mna:vinteum_manaweaver_wand\"/>",
-      "",
-      "",
       "<item id=\"mna:manaweaver_wand_advanced\"/>",
-      "The /b/Chimerite Manaweaver's Wand/b/ is the most expensive out of all of the Manaweaving wands. It also has the highest /9/Mana/9/ cost out of all the wands. But it does not cost any durability to use.",
-      "",
-      "<crafting-recipe id=\"mna:chimerite_manaweaver_wand\"/>"
+      "The /b/Chimerite Manaweaver's Wand/b/ is the most expensive out of all of the Manaweaving wands. It also has the highest /9/Mana/9/ cost out of all the wands. But it does not cost any durability to use. And in this pack it is locked behind /5/Teir 2/5/."
     ],
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
-          -2,
-          105
+          -20,
+          55
         ]
       }
     },
