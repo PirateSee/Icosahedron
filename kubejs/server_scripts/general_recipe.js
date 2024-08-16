@@ -202,6 +202,8 @@ ServerEvents.recipes(e => {
 	e.remove({id:'mna:spell_book'})
 	e.remove({id:'mna:manaweaving/eldrin/eldrin_altar'})
 	e.remove({id:'mna:practitioners_pouch'})
+	e.remove({id:'mna:lodestar'})
+	e.remove({id:'mna:lodestar_flipped'})
 
 	e.shaped('mna:guide_book', [
 		' AI', 
@@ -373,6 +375,18 @@ ServerEvents.recipes(e => {
 		V: 'mna:purified_vinteum_dust',
 		W: 'mna:wizard_chalk'
 	}).id('ico:practitioners_pouch')
+
+	e.shaped('mna:lodestar', [
+		'SP ', 
+		'MCS', 
+		'AAA'
+	], {
+		C: 'mna:chimerite_gem',
+		S: 'mna:transmuted_silver',
+		A: 'mna:decoration/arcane_stone',
+		M: 'create:precision_mechanism',
+		P: 'mna:lodestar_copier'
+	}).id('ico:lodestar')
 
 	e.shapeless('mna:healing_poultice', ['#botania:mystical_flowers', '#ico:arcane_base','#mna:healing_poultice_bases']).id('ico:healing_poultice')
 
