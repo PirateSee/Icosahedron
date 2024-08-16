@@ -243,7 +243,7 @@ ServerEvents.recipes(e => {
 	//gem polishing
     //replace other gem-outputting recipes
     e.replaceOutput(
-        { output: 'minecraft:emerald' }, // Arg 1: the filter
+        { output: 'minecraft:emerald', not: {id: 'minecraft:emerald'} }, // Arg 1: the filter
         'minecraft:emerald',            // Arg 2: the item to replace
         'kubejs:rough_emerald'         // Arg 3: the item to replace it with
     )

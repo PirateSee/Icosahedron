@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.1,
+        "name": "Global Exhaustion Reduction"
+    }
+}

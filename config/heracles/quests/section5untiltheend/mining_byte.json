@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "teleporting"
+    "antimatter"
   ],
   "tasks": {},
   "rewards": {},
@@ -8,7 +8,10 @@
     "subtitle": {
       "text": ""
     },
-    "description": [],
+    "description": [
+      "## - Mining Byte ---",
+      "/d/Anti-Tech/d/: Auto X-Ray Mining"
+    ],
     "groups": {
       "Section 5: Until the End": {
         "position": [

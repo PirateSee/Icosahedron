@@ -109,7 +109,7 @@ ServerEvents.recipes(e => {
     //gemstone polishing
     //replace other diamond-outputting recipes
     e.replaceOutput(
-        { output: 'minecraft:diamond' }, // Arg 1: the filter
+        { output: 'minecraft:diamond', not: {id: 'minecraft:diamond'} }, // Arg 1: the filter
         'minecraft:diamond',            // Arg 2: the item to replace
         'kubejs:unrefined_diamond'         // Arg 3: the item to replace it with
     )

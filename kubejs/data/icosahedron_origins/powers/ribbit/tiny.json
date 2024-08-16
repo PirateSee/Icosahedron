@@ -21,11 +21,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:width 0.5"
+                "command": "scale set pehkui:width 0.45"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 0.4"
+                "command": "scale set pehkui:height 0.45"
             }
         ]
     },
@@ -34,11 +34,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:width 0.5"
+                "command": "scale set pehkui:width 0.45"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 0.5"
+                "command": "scale set pehkui:height 0.45"
             }
         ]
     }

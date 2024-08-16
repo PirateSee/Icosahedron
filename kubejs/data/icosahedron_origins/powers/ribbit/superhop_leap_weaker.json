@@ -43,7 +43,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 1,
+                                    "y": 1.5,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -80,7 +80,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.9,
+                                    "y": 1.3,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -117,7 +117,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.8,
+                                    "y": 1,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -150,7 +150,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.7,
+                                    "y": 0.9,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -183,7 +183,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.6,
+                                    "y": 1,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -216,7 +216,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.5,
+                                    "y": 0.9,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -249,7 +249,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.4,
+                                    "y": 0.7,
                                     "space": "world",
                                     "client": true,
                                     "server": true
@@ -280,7 +280,7 @@
                                 },
                                 {
                                     "type": "origins:add_velocity",
-                                    "y": 0.3,
+                                    "y": 0.5,
                                     "space": "world",
                                     "client": true,
                                     "server": true
