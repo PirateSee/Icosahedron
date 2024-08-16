@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "novice_wizard",
     "runeforging"
   ],
   "tasks": {
@@ -45,14 +44,16 @@
       "translate": "Offbrand witchery"
     },
     "description": [
-      "<h1>- Ritual Magic 101 ---</h1>",
+      "<h1>- Ritual Magic ---</h1>",
       "",
-      "One of the most powerfull types of magic you can do is ritual magic. ",
-      "Rituals can do many things including but not limited to locating structures, locating biomes, and crafting spells.",
-      "As you progress more rituals will become accessable to you, as such I recomend having alot of /b/Purified Vinteum Dust/b/ and /b/Wizard Chalk/b/ on hand.",
+      "One of the most powerfull types of magic you can do is /6/Ritual Magic/6/. ",
+      "/6/Rituals/6/ can do many things including but not limited to locating structures, locating biomes, and crafting spells.",
+      "As you progress more /6/Rituals/6/ will become accessable to you, as such we recomend having alot of /b/Purified Vinteum Dust/b/ and /b/Wizard Chalk/b/ on hand.",
       "",
       "Rituals are performed by drawing patterns onto the ground via /b/Wizard Chalk/b/. Once you have the correct shape for the ritual you want (you can find them in the rituals section of the /b/Codex Arcana/b/), you use /b/Purified Vinteum Dust/b/ on the center rune. This will activate the runes, if the ritual requires items you will be required to place them on now. ",
       "Then to activate the ritual you use the /b/Purified Vinteum Dust/b/ on the center rune again, and /6/draw any Manaweaving patterns that appear/6/.",
+      "",
+      "/4/A slight heads up, a few of the Rituals have been changed or made impossable in this pack for balance reasons. (eg. The Ritual of the gate.)/4/",
       "",
       "<hr/>",
       "<task task=\"obtain_wizard_chalk\" quest=\"rituals\"/>",
@@ -62,8 +63,8 @@
     "groups": {
       "Section M: Mana and Artifice": {
         "position": [
-          71,
-          71
+          20,
+          95
         ]
       }
     },
@@ -79,7 +80,7 @@
     },
     "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
     "title": {
-      "translate": "Ritual Magic 101"
+      "translate": "Ritual Magic"
     }
   },
   "settings": {

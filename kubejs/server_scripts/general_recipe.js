@@ -201,6 +201,7 @@ ServerEvents.recipes(e => {
 	e.remove({id:'mna:manaweaving/ender_disc'})
 	e.remove({id:'mna:spell_book'})
 	e.remove({id:'mna:manaweaving/eldrin/eldrin_altar'})
+	e.remove({id:'mna:practitioners_pouch'})
 
 	e.shaped('mna:guide_book', [
 		' AI', 
@@ -360,6 +361,18 @@ ServerEvents.recipes(e => {
 		L: 'mna:slipstream_generator',
 		P: 'kubejs:charged_vinteum_dust'
 	}).id('ico:magic_carpet')
+
+	e.shaped('mna:practitioners_pouch', [
+		' s ', 
+		'SCS', 
+		'VWV'
+	], {
+		C: '#c:chests',
+		S: 'mna:infused_silk',
+		s: 'betterend:leather_stripe',
+		V: 'mna:purified_vinteum_dust',
+		W: 'mna:wizard_chalk'
+	}).id('ico:practitioners_pouch')
 
 	e.shapeless('mna:healing_poultice', ['#botania:mystical_flowers', '#ico:arcane_base','#mna:healing_poultice_bases']).id('ico:healing_poultice')
 
