@@ -111,7 +111,7 @@ ServerEvents.recipes(e => {
 	e.shaped('create:propeller', [
 		' IT', 
 		'IAI',
-        ' I'
+        ' I '
 	], {
 		T: '#ico:tool/hammer',
 		I: 'kubejs:carbon_steel_sheet',

@@ -138,9 +138,9 @@ ServerEvents.recipes(e => {
 		S: 'createaddition:brass_rod'
 	}).id('ico:incomplete_brass_filter')
 
-	e.recipes.create.mixing(Fluid.of('kubejs:sulfur', 500), ['kubejs:sulfur', Fluid.of('minecraft:water', 500)]).heated()
-	e.recipes.create.mixing('4x minecraft:gunpowder', ['2x kubejs:sulfur', 'kubejs:coal_powder', 'minecraft:sugar'])
-	e.recipes.create.compacting('kubejs:sulfur', '2x minecraft:gunpowder')
+	e.recipes.create.mixing(Fluid.of('kubejs:sulfur', 500), ['kubejs:sulfur', Fluid.of('minecraft:water', 500)]).heated().id('ico:aq_sulfur')
+	e.recipes.create.mixing('3x minecraft:gunpowder', ['2x kubejs:sulfur', 'kubejs:coal_powder', 'minecraft:sugar']).id('ico:gunpowder_from_crude_sulfur')
+	e.recipes.create.compacting('kubejs:sulfur', '2x minecraft:gunpowder').id('ico:sulfur_from_gunpowder')
 
 	e.recipes.create.mixing('2x minecraft:corase_dirt', ['minecraft:dirt', 'minecraft:gravel'])
 

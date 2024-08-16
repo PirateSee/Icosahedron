@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
         ],
         "result": {
             "count": 2,
-            "id": "ae2:quantum_entangled_singularity"
+            "item": "ae2:quantum_entangled_singularity"
         }
     })
     

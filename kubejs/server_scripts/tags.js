@@ -265,6 +265,7 @@ ServerEvents.tags('item', e => {
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')
+    e.remove('forge:ingots/brass', 'scguns:ancient_brass')
 })
 
 ServerEvents.tags('block', e => {
