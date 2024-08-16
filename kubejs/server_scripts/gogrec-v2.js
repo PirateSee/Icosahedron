@@ -829,4 +829,17 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:reactor_heat_vent')
 
     e.remove({id:'create_new_age:reactor/reactor_heat_vent'})
+
+    e.shaped('exposure:interplanar_projector', [
+        'grg', 
+        'rer',
+        'grg'
+    ], {
+        g: 'minecraft:tinted_glass',
+        r: 'minecraft:redstone',
+        e: 'minecraft:ender_pearl'
+    }).id('ico:interplanar_projector')
+
+    e.remove({id:'exposure:interplanar_projector'})
+
 })

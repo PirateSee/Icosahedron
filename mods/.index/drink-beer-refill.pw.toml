@@ -1,0 +1,13 @@
+filename = 'drinkbeer-refill-1.20.1-1.0.4.b.jar'
+name = 'Drink Beer Refill'
+side = 'both'
+
+[download]
+hash = 'a06f7e1f58c906c6d9b643494cf334dc6a379c3a4070a00f0bd9d680b164ae21b234e12ac2025cabd1f6bf84fc094f3304869268771771fcd50444744a1f767c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/RZwVw5iA/versions/52Hcejci/drinkbeer-refill-1.20.1-1.0.4.b.jar'
+
+[update.modrinth]
+mod-id = 'RZwVw5iA'
+version = '52Hcejci'
