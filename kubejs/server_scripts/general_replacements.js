@@ -66,6 +66,8 @@ ServerEvents.recipes(e => {
 
 	//obliterate
 
+    e.remove({id: 'vintageimprovements:centrifugation/ender_eye'})
+
 	//equipment
 	
 	e.remove({id:'minecraft:iron_axe'})
