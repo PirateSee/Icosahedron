@@ -805,4 +805,28 @@ ServerEvents.recipes(e => {
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:advanced_solar_heating_plate')
 
     e.remove({id:'create_new_age:shaped/advanced_solar_plate'})
+
+    e.shaped('create_new_age:reactor_fuel_acceptor', [
+        '  s', 
+        'rfr',
+        'rfr'
+    ], {
+        f: 'create:brass_funnel',
+        r: 'create_new_age:reactor_casing',
+        s: '#ico:tool/screwdriver'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:reactor_fuel_acceptor')
+
+    e.remove({id:'create_new_age:reactor/reactor_fuel_acceptor'})
+
+    e.shaped('create_new_age:reactor_heat_vent', [
+        ' cs', 
+        'rqr'
+    ], {
+        c: 'create:copper_sheet',
+        s: '#ico:tool/screwdriver',
+        r: 'create_new_age:reactor_casing',
+        q: 'create_new_age:heat_pipe'
+    }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:reactor_heat_vent')
+
+    e.remove({id:'create_new_age:reactor/reactor_heat_vent'})
 })
