@@ -1,7 +1,7 @@
 version:3465
 realmsNotifications:false
 reducedDebugInfo: true
-resourcePacks:[]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","fabric","file/simpleradioredone","file/icoHud"]
 key_key.attack:key.mouse.left
 key_key.use:key.mouse.right
 key_key.forward:key.keyboard.w

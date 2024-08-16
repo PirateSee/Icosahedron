@@ -1,5 +1,7 @@
 {
-  "dependencies": [],
+  "dependencies": [
+    "arcane_metal"
+  ],
   "tasks": {
     "Novice Spellcaster": {
       "title": "Read the Codex Arcana",

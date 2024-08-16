@@ -1,0 +1,7 @@
+{
+	"pack": {
+		"pack_format": 15,
+		"supported_formats": [3, 15],
+		"description": {"text": "Simple radio textrures remade", "color": "red"}
+	}
+}

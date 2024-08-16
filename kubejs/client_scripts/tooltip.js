@@ -3,6 +3,7 @@ ItemEvents.tooltip(event => {
     event.add("minecraft:raw_gold", Text.gray('Requires Crude Ore Procesing'))
     event.add("kubejs:sphalerite_ore", Text.gray('Requires Crude Ore Procesing'))
     event.add("kubejs:limonite_ore", Text.gray('Requires Crude Ore Procesing'))
+    event.add("scguns:raw_anthralite", Text.gray('Requires Crude Ore Procesing'))
 
     event.add("kubejs:pentlandite_ore", Text.gray('Requires Advanced Ore Procesing'))
     event.add("kubejs:bauxite_ore", Text.gray('Requires Advanced Ore Procesing'))
@@ -14,8 +15,9 @@ ItemEvents.tooltip(event => {
 
     event.add("minecraft:raw_copper", Text.darkGray('(See Quests)'))
     event.add("minecraft:raw_gold", Text.darkGray('(See Quests)'))
+    event.add("kubejs:sphalerite_ore", Text.darkGray('(See Quests)'))
     event.add("kubejs:limonite_ore", Text.darkGray('(See Quests)'))
-    event.add("kubejs:limonite_ore", Text.darkGray('(See Quests)'))
+    event.add("scguns:raw_anthralite", Text.darkGray('(See Quests)'))
 
     event.add("kubejs:pentlandite_ore", Text.darkGray('(See Quests)'))
     event.add("kubejs:bauxite_ore", Text.darkGray('(See Quests)'))

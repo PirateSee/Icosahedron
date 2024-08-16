@@ -10,7 +10,7 @@ servers.dat
 servers.dat_old
 heracles_options.json
 shaderpacks
-resourcepacks
+resourcepacks/*
 texturepacks
 server_resource_packs
 crash-reports
@@ -61,3 +61,5 @@ config/gamepad_profiles/gamepad_profile_0
 config/voicechat/username-cache.json
 config/voicechat/voicechat-volumes.properties
 config/voicechat/voicechat-volumes.properties
+!resourcepacks/icoHud
+!resourcepacks/simpleradioredone

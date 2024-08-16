@@ -1,6 +1,6 @@
 {
   "dependencies": [
-    "Crushing It"
+    "Magma Treats"
   ],
   "tasks": {
     "unlock_mna": {
@@ -32,7 +32,7 @@
     "groups": {
       "Section 3: Deep in Flames": {
         "position": [
-          -30,
+          60,
           240
         ]
       }
