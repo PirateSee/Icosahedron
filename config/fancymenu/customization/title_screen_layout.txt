@@ -59,7 +59,7 @@ element {
 
 element {
   interactable = true
-  source = Icosahedron ALPHA%n%Minecraft {"placeholder":"mcversion"}%n%Neo{"placeholder":"loadername"} {"placeholder":"loaderver"}%n%{"placeholder":"loadedmods"} Total Mods
+  source = Icosahedron v1.0.0%n%Minecraft {"placeholder":"mcversion"}%n%Neo{"placeholder":"loadername"} {"placeholder":"loaderver"}%n%{"placeholder":"loadedmods"} Total Mods
   source_mode = direct
   shadow = false
   scale = 0.5

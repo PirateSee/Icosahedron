@@ -78,7 +78,7 @@ element {
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = true
-  nine_slice_border_x = 7
+  nine_slice_border_x = 8
   nine_slice_border_y = 7
   navigatable = true
   element_type = custom_button
@@ -111,7 +111,7 @@ element {
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = true
-  nine_slice_border_x = 7
+  nine_slice_border_x = 8
   nine_slice_border_y = 7
   navigatable = true
   element_type = custom_button

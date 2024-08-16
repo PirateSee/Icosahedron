@@ -60,6 +60,7 @@ ServerEvents.recipes(e => {
     stonedecor("bauxite")
     stonedecor("limonite")
     stonedecor("wolframite")
+    stonedecor("uraninite")
 
     //wood
     e.shaped('4x kubejs:treated_wood_stairs', [
