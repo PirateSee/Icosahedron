@@ -98,7 +98,7 @@ StartupEvents.registry('item', e => {
 	e.create('small_iron_grit').texture('icosahedron:item/ore/crude/small_pure_iron_grit')
 
     e.create('impure_anthralite_grit').texture('icosahedron:item/ore/crude/dirty_anthralite_grit')
-	e.create('anthralite_grit').texture('icosahedron:item/ore/crude/pure_anthralite_grit')
+	//e.create('anthralite_grit').texture('icosahedron:item/ore/crude/pure_anthralite_grit')
 
 	//gemstone	
 	e.create('rough_nether_quartz').texture('icosahedron:item/ore/gemstone/rough_quartz')

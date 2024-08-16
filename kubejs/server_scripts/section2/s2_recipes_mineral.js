@@ -42,7 +42,7 @@ ServerEvents.recipes(e => {
 	
 	crude_ore_processing('minecraft:raw_copper','kubejs:impure_copper_grit','kubejs:copper_grit','minecraft:copper_ingot')
 	crude_ore_processing('minecraft:raw_gold','kubejs:impure_gold_grit','kubejs:gold_grit','minecraft:gold_ingot')
-    crude_ore_processing('scguns:raw_anthralite','kubejs:impure_anthralite_grit','kubejs:anthralite_grit','scguns:anthralite_ingot')
+    crude_ore_processing('scguns:raw_anthralite','kubejs:impure_anthralite_grit','scguns:anthralite_dust','scguns:anthralite_ingot')
 	//crude_ore_processing('kubejs:limonite_ore','kubejs:impure_iron_grit','kubejs:iron_grit','minecraft:iron_ingot')
 
 	e.remove([{ type: 'minecraft:smelting', output: 'create:zinc_ingot'}, { type: 'minecraft:blasting', output: 'create:zinc_ingot' }])

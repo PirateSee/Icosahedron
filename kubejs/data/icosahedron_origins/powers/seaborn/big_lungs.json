@@ -7,7 +7,7 @@
         "fluid": "minecraft:water"
     },
     "type": "origins:action_over_time",
-    "interval": 5,
+    "interval": 3,
     "entity_action": {
         "type": "origins:gain_air",
         "value": 1

@@ -4,6 +4,9 @@
       "minecraft:protection",
       "minecraft:mending",
       "extra_enchantments:overshield",
-      "allurement:reforming"
+      "allurement:reforming",
+      "scguns:puncturing",
+      "scguns:reclaimed",
+      "scguns:accelerator"
     ]
   }

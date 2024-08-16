@@ -42,6 +42,8 @@ ServerEvents.recipes(e => {
 
     e.remove({id: 'scguns:enchanted_bandage'})
     e.remove({id: 'scguns:dragon_salve'})
+    e.remove({id: 'scguns:basic_poultice'})
+    e.remove({id: 'scguns:honey_sulfur_poultice'})
 
     //sulfur
     e.recipes.create.milling(Item.of('kubejs:sulfur').withChance(0.6), 'vintageimprovements:sulfur_chunk')
