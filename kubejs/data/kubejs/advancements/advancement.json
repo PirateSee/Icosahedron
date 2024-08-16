@@ -1,0 +1,28 @@
+{
+  "criteria": {
+
+      "book": {
+
+          "trigger": "minecraft:enter_block",
+
+          "conditions": {
+
+              "block": "minecraft:air"
+
+          }
+
+      }
+
+  },
+
+  "rewards": {
+
+      "loot": [
+
+          "kubejs:commands/quest_book"
+
+      ]
+
+  }
+
+}

@@ -651,8 +651,8 @@ ServerEvents.recipes(e => {
 
     e.remove({id:'mekanism:laser_amplifier'})
 
-    e.recipes.create.mechanical_crafting('mekanism:laser', [ 
-        'rt ', 
+    e.shaped('mekanism:laser', [ 
+        'rtS', 
         'dsl',
         'rt '
         ], {
@@ -660,8 +660,9 @@ ServerEvents.recipes(e => {
           t: 'mekanism:energy_tablet',
           d: 'minecraft:diamond',
           s: 'mekanism:steel_casing',
-          l: 'kubejs:laser_emitter'
-      }).id('ico:laser')
+          l: 'kubejs:laser_emitter',
+          S: '#ico:tool/screwdriver'
+      }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:laser')
 
       e.remove({id:'mekanism:laser'})
 
