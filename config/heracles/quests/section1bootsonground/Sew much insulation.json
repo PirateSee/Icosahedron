@@ -84,6 +84,8 @@
       "",
       "Armour can accept /6/multiple pieces/6/ of insulation, each increasing the strength. You can also /6/mix and match/6/ insulation types.",
       "",
+      "Try placing /b/Smokestacks/b/ on /b/Iceboxes/b/ or /b/Heaters/b/ for /6/active cooling/heating/6/ of a room.",
+      "",
       "<hr/>",
       "<task task=\"adv_insulate\" quest=\"Sew much insulation\"/>",
       "<hr/>",
