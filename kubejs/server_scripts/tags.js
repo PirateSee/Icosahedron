@@ -260,8 +260,8 @@ ServerEvents.tags('item', e => {
     e.add('create_new_age:nuclear/hazmat_suit', 'mekanism:hazmat_pants')
     e.add('create_new_age:nuclear/hazmat_suit', 'mekanism:hazmat_boots')
 
-    //incense
-    e.add('ico:incense_sticks', 'botania:incense')
+    //amber
+    e.add('forge:gems/amber', 'betterend:amber_gem')
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')

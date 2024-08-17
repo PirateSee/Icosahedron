@@ -41,7 +41,7 @@
                     "textureLocation": "tetrasulphide:textures/gui/sulphide_glyphs.png",
 					"textureY": 0
                 },
-                "availableTextures": [ "metal" ],
+                "availableTextures": [ "metal", "shiny", "crude" ],
                 "models": [ { "location": "tetrasulphide:item/module/sword/blade/katana/" } ]
             }
         }
