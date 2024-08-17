@@ -4,7 +4,7 @@
   //
   // tips : a spread factor can be a decimal number (such as 1.5)
   //        a spread factor of 1 means all structure's placement are not modified (useful if you want to use only custom spread factors)
-  //        a spread factor above 1 means all structures are rarer
+  //        a spread factor above 1 means all structures are rarer minecraft:end_city
   //        a spread factor below 1 means all structure are more common
   "spreadFactor": 2.35,
 
@@ -15,6 +15,19 @@
       "structure": "ae2:meteorite",
       "factor": 1.25
     },
+    {
+      "structure": "minecraft:fortress",
+      "factor": 1.25
+    },
+    {
+      "structure": "minecraft:bastion_remnant",
+      "factor": 1.25
+    },
+    {
+      "structure": "minecraft:end_city",
+      "factor": 1.25
+    },
+    
     // add the structures you want to modify in the format:
     // {
     //     "structure": "namespace:structure_name",
