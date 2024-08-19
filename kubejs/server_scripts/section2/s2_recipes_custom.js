@@ -164,5 +164,5 @@ ServerEvents.recipes(e => {
 	e.blasting('kubejs:nugget_mold', 'kubejs:unfired_nugget_mold')
 
 	//sealant
-	e.recipes.createMixing('kubejs:sealant', ['2x supplementaries:daub', '6x minecraft:mud'])
+	e.recipes.createMixing('kubejs:sealant', ['supplementaries:daub', '2x minecraft:mud'])
 })
