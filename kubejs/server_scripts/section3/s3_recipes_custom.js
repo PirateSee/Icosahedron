@@ -285,7 +285,7 @@ ServerEvents.recipes(e => {
 
 	e.shapeless('kubejs:advanced_multitool', ['kubejs:advanced_tool_handle', 'kubejs:advanced_hammer', 'kubejs:advanced_file', 'kubejs:advanced_saw', 'create:polished_rose_quartz']).id('ico:tool_advanced_multitool')
 
-	e.recipes.create.filling('5x kubejs:sealant', [Fluid.of('kubejs:coal_tar', 50), 'minecraft:iron_nugget'])
+	e.recipes.create.filling('7x kubejs:sealant', [Fluid.of('kubejs:coal_tar', 50), 'minecraft:iron_nugget'])
 
     e.shaped('kubejs:compressed_iron_drill', [
 		'iIi',

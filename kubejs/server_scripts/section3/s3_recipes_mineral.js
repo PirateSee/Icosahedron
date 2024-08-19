@@ -141,6 +141,12 @@ ServerEvents.recipes(e => {
     gemstonePolishing('diamond', 'minecraft:diamond')
     //gemstonePolishing('amethyst', 'minecraft:amethyst')
 
+    e.replaceInput(
+        {id: 'create:milling/coal' }, // Arg 1: the filter
+        'minecraft:coal',            // Arg 2: the item to replace
+        'kubejs:coal_powder'         // Arg 3: the item to replace it with
+    )
+    e.remove({id:'create:milling/charcoal'})
     e.recipes.createMilling('kubejs:coal_powder', '#minecraft:coals')
     
     //alloying

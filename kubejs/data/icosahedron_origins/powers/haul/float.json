@@ -5,9 +5,9 @@
         "type": "origins:and",
         "conditions": [
             {
+                "inverted": true,
                 "type": "origins:block_collision",
                 "block_condition": {
-                    "inverted": true,
                     "type": "origins:movement_blocking"
                 },
                 "offset_x": 0,
