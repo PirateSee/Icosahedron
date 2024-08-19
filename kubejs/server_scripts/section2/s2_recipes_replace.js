@@ -50,8 +50,8 @@ ServerEvents.recipes(e => {
 	e.remove({id:'createlowheated:basic_burner'})
 	
 	e.remove({id:'minecraft:blast_furnace'})
-	
-	e.remove({id:'melter:melter_block'})
+    e.remove({id:'quark:building/crafting/furnaces/blackstone_blast_furnace'})
+    e.remove({id:'quark:building/crafting/furnaces/deepslate_blast_furnace'})
 
 	e.remove({id:'createsifter:andesite_mesh'})
 	e.remove({id:'createsifter:string_mesh'})

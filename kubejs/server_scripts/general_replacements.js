@@ -62,7 +62,6 @@ ServerEvents.recipes(e => {
 
 	//tweaks
 	e.remove({id:'create:milling/cobblestone'})
-	e.remove({id:'minecraft:flint_and_steel'})
 
 	//obliterate
 
@@ -438,7 +437,6 @@ ServerEvents.recipes(e => {
 
 	e.recipes.create.milling('minecraft:gravel', '#forge:cobblestone')
 
-	e.shapeless('minecraft:flint_and_steel', ['kubejs:wrought_iron_ingot', 'minecraft:flint']).id('ico:flint_and_steel')
 
 	//kinetics
 

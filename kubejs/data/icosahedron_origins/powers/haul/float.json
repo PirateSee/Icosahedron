@@ -11,7 +11,7 @@
                     "type": "origins:movement_blocking"
                 },
                 "offset_x": 0,
-                "offset_y": -0.1,
+                "offset_y": -0.5,
                 "offset_z": 0
             },
             {

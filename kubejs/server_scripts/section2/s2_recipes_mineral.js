@@ -5,6 +5,11 @@ ServerEvents.recipes(e => {
 	e.remove({id:'create:mixing/brass_ingot'})
 		
 	//crude ore processing
+    e.remove({id: 'quark:tweaks/smelting/raw_copper_block_smelt'})
+    e.remove({id: 'quark:tweaks/blasting/raw_copper_block_smelt'})
+    e.remove({id: 'quark:tweaks/smelting/raw_gold_block_smelt'})
+    e.remove({id: 'quark:tweaks/blasting/raw_gold_block_smelt'})
+
 	let crude_ore_processing = (input,dust,pdust,output) => {
 		if (output != 'minecraft:iron_ingot') {
 			e.remove([{ type: 'minecraft:smelting', output: output}, { type: 'minecraft:blasting', output: output }])
