@@ -33,6 +33,13 @@
                     }
                 }
             }
+        },
+        "sword/knife": {
+            "config": {
+                "attributes": {
+                    "parent": "bettercombat:knife"
+                }
+            }
         }
     }
 }

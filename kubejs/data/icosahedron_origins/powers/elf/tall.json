@@ -1,17 +1,17 @@
 {
-    "name": "§7o §r§nTiny",
-    "description": "You are one block tall. This makes it hard for mobs to see you from far.",
+    "name": "§7o §r§nTall",
+    "description": "Your hitbox is taller, making you barely fit through doorways, but you can reach farther.",
     "type": "origins:action_on_callback",
     "entity_action_chosen": {
         "type": "origins:and",
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:width 0.45"
+                "command": "scale set pehkui:hitbox_height 1.1"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 0.45"
+                "command": "scale set pehkui:eye_height 1.1"
             }
         ]
     },
@@ -21,11 +21,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:width 1"
+                "command": "scale set pehkui:hitbox_height 1"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 1"
+                "command": "scale set pehkui:eye_height 1"
             }
         ]
     },
@@ -34,11 +34,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:width 0.45"
+                "command": "scale set pehkui:hitbox_height 1.1"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 0.45"
+                "command": "scale set pehkui:eye_height 1.1"
             }
         ]
     },
@@ -47,11 +47,11 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:width 0.45"
+                "command": "scale set pehkui:hitbox_height 1.1"
             },
             {
                 "type": "origins:execute_command",
-                "command": "scale set pehkui:height 0.45"
+                "command": "scale set pehkui:eye_height 1.1"
             }
         ]
     }

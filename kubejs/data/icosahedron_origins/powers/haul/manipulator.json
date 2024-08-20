@@ -1,6 +1,6 @@
 {
     "name": "§a+ §r§nManipulator",
-    "description": "Your hands mine as a wooden tool. Increased block interaction range.",
+    "description": "Your hands mine as a wooden tool. Increased block interaction range. Mine with less penalty in air.",
     "type": "origins:multiple",
     "range": {
         "type": "origins:attribute",
@@ -64,8 +64,20 @@
         },
         "modifier": {
             "operation": "addition",
-            "value": 0.05,
+            "value": 0.042,
             "name": "Manipulator Bonus"
+        }
+    },
+    "air_affinity": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:on_block"
+        },
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 4.5,
+            "name": "Manipulator Arial Afinity"
         }
     }
 }

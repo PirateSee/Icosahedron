@@ -1,0 +1,9 @@
+{
+    "hidden": true,
+    "type": "apugli:mobs_ignore",
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": ">",
+        "compare_to": 24
+    }
+}

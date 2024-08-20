@@ -15,9 +15,11 @@
         "icosahedron_origins:ribbit/mark",
         "icosahedron_origins:ribbit/tiny",
         "icosahedron_origins:seaborn/fire_weak",
-        "icosahedron_origins:fox/cracked_plate",
-        "icosahedron_origins:fox/cracked_toughness"
+        "icosahedron_origins:ribbit/camo"
     ],
+    "icon": {
+        "item": "minecraft:lime_wool"
+    },
     "order": 114,
     "impact": 1
 }

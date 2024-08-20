@@ -1,0 +1,16 @@
+{
+    "name": "Elf",
+    "description": "§0[Building]§7\nElves have similar stature to regular Humans, but are taller and act more carefuly.",
+    "powers": [
+        "icosahedron_origins:seaborn/arrowrad_mark",
+        "icosahedron_origins:elf/tall",
+        "icosahedron_origins:elf/reach",
+        "icosahedron_origins:fox/cracked_plate",
+        "icosahedron_origins:fox/cracked_toughness"
+    ],
+    "icon": {
+        "item": "minecraft:arrow"
+    },
+    "order": 115,
+    "impact": 1
+}

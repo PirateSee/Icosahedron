@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "forge:block_reach",
+        "operation": "addition",
+        "value": 2,
+        "name": "Tall Bonus"
+    },
+    "update_health": false
+}

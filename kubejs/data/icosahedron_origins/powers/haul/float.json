@@ -30,7 +30,7 @@
                 "type": "origins:apply_effect",
                 "effect": {
                     "effect": "minecraft:levitation",
-                    "duration": 100,
+                    "duration": 140,
                     "amplifier": 255,
                     "show_particles": true,
                     "show_icon": true

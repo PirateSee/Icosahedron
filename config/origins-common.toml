@@ -424,4 +424,14 @@
 		"icosahedron_origins:fox/cracked_toughness" = true
 		"icosahedron_origins:ribbit/mark" = true
 		"icosahedron_origins:seaborn/fire_weak" = true
+		"icosahedron_origins:ribbit/camo" = true
+
+	[origins."icosahedron_origins:elf"]
+		enabled = true
+		"icosahedron_origins:haul/manipulator" = true
+		"icosahedron_origins:seaborn/arrowrad_mark" = true
+		"icosahedron_origins:elf/tall" = true
+		"icosahedron_origins:elf/reach" = true
+		"icosahedron_origins:fox/cracked_plate" = true
+		"icosahedron_origins:fox/cracked_toughness" = true
 

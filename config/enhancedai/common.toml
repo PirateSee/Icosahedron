@@ -236,10 +236,10 @@
 		"Flee Distance Far" = 16.0
 		#Speed multiplier when the skeleton avoids the player and it's within 'Flee Distance Near' blocks from him.
 		#Range: 0.0 ~ 4.0
-		"Flee speed Multiplier Near" = 1.25
+		"Flee speed Multiplier Near" = 0.85
 		#Speed multiplier when the skeleton avoids the player and it's farther than 'Flee Distance Far' blocks from him.
 		#Range: 0.0 ~ 4.0
-		"Flee speed Multiplier Far" = 1.1
+		"Flee speed Multiplier Far" = 0.7
 
 	#Skeletons are more precise when shooting and strafing is removed, can hit a target from up to 64 blocks and try to stay away from the target. Use the enhancedai:better_skeleton_shoot entity type tag to add more skeletons that are affected by this feature
 	[Skeletons."Skeleton Shoot"]
@@ -248,7 +248,7 @@
 		"Strafe chance" = 0.333
 		#Chance for a Skeleton to spawn as a spammer, which spams arrows instead of fully charging the bow
 		#Range: 0.0 ~ 1.0
-		"Spammer chance" = 0.07
+		"Spammer chance" = 0.06
 
 		#The range from where a skeleton will shoot a player
 		[Skeletons."Skeleton Shoot"."Shooting Range"]
@@ -260,16 +260,16 @@
 		#The ticks cooldown after shooting. This is reduced by 33% in Hard difficulty
 		[Skeletons."Skeleton Shoot"."Shooting Cooldown"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 40.0
+			Minimum = 50.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 55.0
+			Maximum = 60.0
 
 		#The ticks the skeleton charges the bow. at least 20 ticks for a full charge.
 		[Skeletons."Skeleton Shoot"."Bow charge ticks"]
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Minimum = 15.0
+			Minimum = 25.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			Maximum = 30.0
+			Maximum = 35.0
 
 		#How much inaccuracy does the arrow fired by skeletons have. Vanilla skeletons have 10/6/2 inaccuracy in easy/normal/hard difficulty.
 		[Skeletons."Skeleton Shoot"."Arrow Inaccuracy"]
@@ -278,7 +278,7 @@
 			#Range: 0.0 ~ 30.0
 			Normal = 2.5
 			#Range: 0.0 ~ 30.0
-			Hard = 1.5
+			Hard = 2.0
 
 	#Wither skeletons can spawn with a bow and shoot Wither arrows.
 	[Skeletons."Wither Skeletons"]
@@ -588,22 +588,22 @@
 		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting 'Max' to 0 will leave the follow range as vanilla. I recommend using mods like Mobs Properties Randomness to have more control over the attribute.
 		[Mobs.Targeting."Follow Range Override"]
 			#Range: 0.0 ~ 128.0
-			Minimum = 24.0
+			Minimum = 16.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 64.0
+			Maximum = 32.0
 
 		#How far away can the mobs see the player even through walls. Setting 'Max' to 0 will make mobs not able to see through walls. I recommend using mods like Mobs Properties Randomness to have more control over the attribute; the attribute name is 'enhancedai:generic.xray_follow_range'.
 		[Mobs.Targeting."XRay Range Override"]
 			#Range: 0.0 ~ 128.0
-			Minimum = 12.0
+			Minimum = 1.0
 			#Range: 0.0 ~ 128.0
-			Maximum = 24.0
+			Maximum = 6.0
 
 		[Mobs.Targeting."Hurt by target"]
 			#Mobs will no longer switch target if it's the same or if the current one it's closer.
 			"Better version" = true
 			#Mobs will no longer attack each other.
-			"Prevent infighting" = true
+			"Prevent infighting" = false
 
 		#Chances for a mob to spawn neutral
 		[Mobs.Targeting."Neutral Chances"]

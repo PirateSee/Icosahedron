@@ -15,7 +15,6 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:mana_infusion/manasteel_block'})
     e.remove({id: 'botania:mana_infusion/mana_powder_dust'})
     e.remove({id: 'botania:mana_infusion/mana_powder_dye'})
-    e.remove({id: 'botania:mana_pearl'})
 
     e.remove({id: 'botania:runic_altar/water'})
     e.remove({id: 'botania:runic_altar/fire'})
@@ -153,7 +152,7 @@ ServerEvents.recipes(e => {
         }
     }).id('ico:mana_powder_2')
 
-    e.recipes.create.mixing('botania:mana_pearl', ['minecraft:ender_pearl', '8x botania:mana_powder'])
+    e.recipes.create.mixing('botania:mana_pearl', ['minecraft:ender_pearl', 'botania:mana_powder'])
 
     e.recipes.create.compacting('kubejs:rune_backing', ['botania:manasteel_ingot', '2x botania:mana_powder', '2x botania:livingrock'])
 

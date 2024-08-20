@@ -22,12 +22,21 @@
     "fall": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
-            "type": "origins:name",
-            "name": "fall"
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "fall"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "fall.player"
+                }
+            ]
         },
         "modifier": {
             "operation": "multiply_total",
-            "value": -0.7,
+            "value": -0.75,
             "name": "Webbed Feet Bonus"
         }
     }
