@@ -247,7 +247,7 @@ ServerEvents.recipes(e => {
 		'DSA'
 	], {
 		A: 'mna:arcane_compound',
-		D: 'mna:arcane_ash',
+		D: 'mna:vinteum_dust',
 		S: '#forge:stone'
 	}).id('ico:stone_rune_blank')
 
