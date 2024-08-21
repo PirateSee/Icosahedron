@@ -841,5 +841,6 @@ ServerEvents.recipes(e => {
     }).id('ico:interplanar_projector')
 
     e.remove({id:'exposure:interplanar_projector'})
+    e.remove({id:'immersive_aircraft:gyrodyne'})
 
 })
