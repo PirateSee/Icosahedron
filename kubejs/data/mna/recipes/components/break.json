@@ -1,0 +1,18 @@
+{
+	"type": "mna:component",
+	"tier": 1,
+	"output": "mna:break",
+	"items":
+	[
+		"mna:stone_rune_brown",		
+		"mna:vinteum_dust",
+		"stone_pickaxe",
+		"stone_shovel",
+		"stone_axe",
+		"mna:stone_rune_gray"
+	],
+	"patterns":
+	[
+		"mna:manaweave_patterns/square"	
+	]
+}
