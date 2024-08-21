@@ -82,6 +82,6 @@ ServerEvents.recipes(e => {
         I: 'kubejs:magnetized_iron',
         B: 'create:empty_blaze_burner',
         C: 'kubejs:carbon_steel_sheet',
-        T: '#ico:tools/screwdriver'
+        T: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:boiler_heater')
 })

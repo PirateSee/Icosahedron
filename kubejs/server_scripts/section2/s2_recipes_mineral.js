@@ -141,7 +141,7 @@ ServerEvents.recipes(e => {
 		"results": [
 			{
 				"fluid": "kubejs:molten_pig_iron",
-				"amount": 60
+				"amount": 135
 			}
 		],
 		"processingTime": 360,
