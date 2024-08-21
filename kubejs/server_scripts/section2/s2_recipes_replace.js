@@ -428,7 +428,7 @@ ServerEvents.recipes(e => {
 		'CEC',
 		'PSP'
 	], {
-		E: 'immersive_aircraft:engine',
+		E: 'immersive_aircraft:boiler',
 		P: 'immersive_aircraft:propeller',
 		S: 'minecraft:scaffolding',
 		C: 'create_connected:encased_chain_cogwheel',
