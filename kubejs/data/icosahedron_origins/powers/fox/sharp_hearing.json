@@ -2,6 +2,7 @@
     "name": "§a+ §r§nSharp Hearing",
     "description": "Sense entities through walls",
     "condition": {
+        "inverted": true,
         "type": "origins:status_effect",
         "effect": "minecraft:darkness",
         "min_duration": 5
@@ -13,11 +14,23 @@
             {
                 "type": "origins:distance",
                 "comparison": "<=",
-                "compare_to": 16
+                "compare_to": 10
             },
             {
-                "inverted": true,
-                "type": "origins:can_see"
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "inverted": true,
+                        "type": "origins:can_see"
+                    },
+                    {
+                        "type": "origins:actor_condition",
+                        "condition": {
+                            "type": "origins:status_effect",
+                            "effect": "minecraft:blindness"
+                        }
+                    }
+                ]
             },
             {
                 "type": "origins:target_condition",
