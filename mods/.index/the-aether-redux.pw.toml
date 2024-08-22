@@ -1,0 +1,13 @@
+filename = 'aether-redux-2.0.17-1.20.1-neoforge.jar'
+name = 'The Aether: Redux'
+side = 'both'
+
+[download]
+hash = '88622d14616f327fe28953f40f52b2611fea58294707750a48c6f9f25cd154d79de55bec437be92503c3863161e001c614d38b7e54217869f5f12f7920b8f57c'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/khv3WzAS/versions/szIDRNOA/aether-redux-2.0.17-1.20.1-neoforge.jar'
+
+[update.modrinth]
+mod-id = 'khv3WzAS'
+version = 'szIDRNOA'
