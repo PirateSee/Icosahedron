@@ -1,0 +1,67 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "submit_empty_soulspring": {
+      "type": "heracles:item",
+      "item": "cold_sweat:soulspring_lamp",
+      "amount": 1,
+      "collection": "MANUAL"
+    }
+  },
+  "rewards": {
+    "get_soulspring": {
+      "item": {
+        "id": "cold_sweat:soulspring_lamp",
+        "count": 1,
+        "nbt": {
+          "Lit": 0,
+          "stateChangeTimer": 0,
+          "Fuel": 64
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "Whoops!"
+    },
+    "description": [
+      "## - Trade Offer ---",
+      "Whoops, you might have an empty soulspring lamp. Whoops! your supposed to have a full one",
+      "",
+      "Trade in your empty one for a filled one here.",
+      "<hr/>",
+      "<task task=\"submit_empty_soulspring\" quest=\"trade_offer\"/>",
+      "<hr/>",
+      "<reward reward=\"get_soulspring\" quest=\"trade_offer\"/>"
+    ],
+    "groups": {
+      "Section 3: Deep in Flames": {
+        "position": [
+          60,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "cold_sweat:soulspring_lamp",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/complex.png",
+    "title": {
+      "translate": "Trade Offer"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

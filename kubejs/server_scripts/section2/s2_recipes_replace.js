@@ -435,7 +435,7 @@ ServerEvents.recipes(e => {
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:quadrocopter')
 
-    e.shaped('cold_sweat:soulspring_lamp', [
+    e.shaped(Item.of('cold_sweat:soulspring_lamp', '{Fuel:64.0d,Lit:0b,stateChangeTimer:0}'), [
 		' GT', 
 		'WHW', 
 		'WCW'  

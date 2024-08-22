@@ -26,7 +26,9 @@
     "vintageimprovements:pig_iron_wire",
     "vintageimprovements:pig_iron_spring",
     "vintageimprovements:small_pig_iron_spring",
-    "vintageimprovements:queens_slime_rod"
+    "vintageimprovements:queens_slime_rod",
+	"relics:infinity_ham",
+	"relics:magic_mirror"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.
