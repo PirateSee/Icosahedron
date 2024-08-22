@@ -204,7 +204,7 @@ ServerEvents.recipes(e => {
         p: 'pneumaticcraft:pressure_tube',
         s: '#ico:tool/screwdriver'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:flow_detector_module')
-    e.shaped('create:chute', [
+    e.shaped('4x create:chute', [
         'hp ', 
         ' i ',
         ' p '
