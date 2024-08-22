@@ -107,9 +107,9 @@ StartupEvents.registry('item', e => {
     e.create('aquatrine').texture('icosahedron:item/ore/gemstone/aquatrine')
 	e.create('rough_aquatrine').texture('icosahedron:item/ore/gemstone/rough_aquatrine')
 	
-	e.create('unrefined_amethyst').texture('icosahedron:item/ore/gemstone/rough_amethyst')
+	/*e.create('unrefined_amethyst').texture('icosahedron:item/ore/gemstone/rough_amethyst')
 	e.create('cleaned_unrefined_amethyst').texture('icosahedron:item/ore/gemstone/cleaned_rough_amethyst')
-	e.create('unpolished_amethyst').texture('icosahedron:item/ore/gemstone/unpolished_amethyst')
+	e.create('unpolished_amethyst').texture('icosahedron:item/ore/gemstone/unpolished_amethyst')*/
 	
 	e.create('unrefined_diamond').texture('icosahedron:item/ore/gemstone/rough_diamond')
 	e.create('cleaned_unrefined_diamond').texture('icosahedron:item/ore/gemstone/cleaned_rough_diamond')

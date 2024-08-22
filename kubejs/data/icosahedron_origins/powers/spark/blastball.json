@@ -53,7 +53,7 @@
                                 "type": "origins:add_velocity",
                                 "x": 0,
                                 "y": 0.1,
-                                "z": 1.3,
+                                "z": 1.5,
                                 "client": false,
                                 "server": true,
                                 "set": false
@@ -62,7 +62,7 @@
                         },
                         {
                             "type": "apugli:explode",
-                            "power": 1,
+                            "power": 2,
                             "destruction_type": "none",
                             "damage_self": true,
                             "damage_modifer": {
@@ -90,11 +90,6 @@
                 }
             },
             {
-                "type": "origins:damage",
-                "amount": 6,
-                "damage_type": "minecraft:explosion"
-            },
-            {
                 "type": "apoli:target_action",
                 "action": {
                     "type": "apoli:and",
@@ -119,7 +114,7 @@
                                 "type": "origins:add_velocity",
                                 "x": 0,
                                 "y": 0.1,
-                                "z": 1.3,
+                                "z": 1.5,
                                 "client": false,
                                 "server": true,
                                 "set": false
@@ -127,14 +122,10 @@
                             "include_target": true
                         },
                         {
-                            "type": "apugli:explode",
-                            "power": 1,
+                            "type": "origins:explode",
+                            "power": 2,
                             "destruction_type": "none",
-                            "damage_self": true,
-                            "damage_modifer": {
-                                "operation": "multiply_total_multiplicative",
-                                "value": -0.75
-                            }
+                            "damage_self": true
                         }
                     ]
                 }
@@ -144,7 +135,7 @@
     "key": {
         "key": "key.origins.primary_active"
     },
-    "divergence": 0.1,
+    "divergence": 0,
     "speed": 0.8,
     "cooldown": 5
 }
