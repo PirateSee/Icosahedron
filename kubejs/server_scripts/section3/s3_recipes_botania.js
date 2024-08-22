@@ -3,6 +3,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:incense_plate'})
     e.remove({id: 'botania:mana_fluxfield'})
     e.remove({id: 'botania:natura_pylon'})
+    e.remove({id: 'botania:gaia_pylon'})
     e.remove({id: 'botania:elven_spreader'})
     e.remove({id: 'botania:elven_trade/dragonstone'})
     e.remove({id: 'botania:elven_trade/dragonstone_block'})
