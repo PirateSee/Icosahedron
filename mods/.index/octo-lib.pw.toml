@@ -1,13 +1,13 @@
-filename = 'octolib-1.20.1-0.3.jar'
+filename = 'OctoLib-FORGE-0.4.2+1.20.1.jar'
 name = 'OctoLib'
 side = 'both'
 
 [download]
-hash = '193889cafc9c3bfb83626008e142f2c7beb29119ae0887679f77e409cd8bcfee7f7b7018f1f78706972b247aa5d02c60245ef4fa678bf26623aad387f8b706cc'
+hash = 'be8c3ee844e24a6ec68bd805ccae6fc54928aa211f44fb208454a835796e2405765e7cadcff5763782f3d9bc262b44626b69863d83804258501f5e6e0926d96e'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/RH2KUdKJ/versions/DGHuSq0v/octolib-1.20.1-0.3.jar'
+url = 'https://cdn.modrinth.com/data/RH2KUdKJ/versions/9dJfM8hR/OctoLib-FORGE-0.4.2%2B1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'RH2KUdKJ'
-version = 'DGHuSq0v'
+version = '9dJfM8hR'

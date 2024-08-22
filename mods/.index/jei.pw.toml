@@ -1,6 +1,6 @@
 filename = 'jei-1.20.1-forge-15.12.3.54.jar'
 name = 'Just Enough Items'
-side = 'both'
+side = 'client'
 
 [download]
 hash = '631ee6e786a62cdb5c8c9c2ca3c79e70b5bcbc27399bc2c9e38de30087e6309b3064fa18370f0e25310f194ad6f281af5d7905e05efb187ed404a15e7837e89f'

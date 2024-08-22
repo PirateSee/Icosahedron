@@ -16,7 +16,7 @@
 ["Soulspring Lamp"]
 	#Defines items that the Soulspring Lamp can use as fuel
 	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
-	"Fuel Items" = [["cold_sweat:soul_sprout", 4]]
+	"Fuel Items" = [["cold_sweat:soul_sprout", 4.0, "{}"]]
 	#Defines the dimensions that the Soulspring Lamp can be used in
 	#Format: ["dimension-id-1", "dimension-id-2", ...etc]
 	"Valid Dimensions" = ["minecraft:the_nether"]
@@ -37,13 +37,13 @@
 	#"hot": The amount of heat insulation the item provides.
 	#*"type": Optional. Either "static" or "adaptive". Defines the insulation type. Defaults to static.
 	#*"nbt": Optional. If set, the item will only provide insulation if it has the specified NBT tag.
-	"Insulation Ingredients" = [["cold_sweat:chameleon_molt", 1.5, 1.5, "adaptive", "{}"], ["cold_sweat:fur", 2.0, 0.0, "static", "{}"], ["cold_sweat:hoglin_headpiece", 0.0, 8.0, "static", "{}"], ["minecraft:leather_boots", 4.0, 4.0, "static", "{}"], ["minecraft:purple_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:hoglin_tunic", 0.0, 12.0, "static", "{}"], ["minecraft:green_wool", 1.5, 0.0, "static", "{}"], ["minecraft:white_wool", 1.5, 0.0, "static", "{}"], ["minecraft:cyan_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur_boots", 8.0, 0.0, "static", "{}"], ["minecraft:brown_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur_pants", 10.0, 0.0, "static", "{}"], ["minecraft:pink_wool", 1.5, 0.0, "static", "{}"], ["minecraft:gray_wool", 1.5, 0.0, "static", "{}"], ["minecraft:rabbit_hide", 0.0, 1.5, "static", "{}"], ["cold_sweat:hoglin_hooves", 0.0, 8.0, "static", "{}"], ["minecraft:light_blue_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur_parka", 12.0, 0.0, "static", "{}"], ["minecraft:blue_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:hoglin_hide", 0.0, 2.0, "static", "{}"], ["minecraft:magenta_wool", 1.5, 0.0, "static", "{}"], ["minecraft:leather_leggings", 5.0, 5.0, "static", "{}"], ["minecraft:red_wool", 1.5, 0.0, "static", "{}"], ["minecraft:lime_wool", 1.5, 0.0, "static", "{}"], ["minecraft:light_gray_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur_cap", 8.0, 0.0, "static", "{}"], ["minecraft:orange_wool", 1.5, 0.0, "static", "{}"], ["minecraft:leather_helmet", 4.0, 4.0, "static", "{}"], ["minecraft:leather_chestplate", 6.0, 6.0, "static", "{}"], ["minecraft:leather", 1.0, 1.0, "static", "{}"], ["cold_sweat:hoglin_trousers", 0.0, 10.0, "static", "{}"], ["minecraft:yellow_wool", 1.5, 0.0, "static", "{}"], ["minecraft:black_wool", 1.5, 0.0, "static", "{}"]]
+	"Insulation Ingredients" = [["minecraft:light_gray_wool", 1.5, 0.0, "static", "{}"], ["minecraft:rabbit_hide", 0.0, 1.5, "static", "{}"], ["minecraft:green_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:hoglin_hide", 0.0, 2.0, "static", "{}"], ["cold_sweat:hoglin_headpiece", 0.0, 8.0, "static", "{}"], ["minecraft:purple_wool", 1.5, 0.0, "static", "{}"], ["minecraft:yellow_wool", 1.5, 0.0, "static", "{}"], ["minecraft:orange_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:hoglin_hooves", 0.0, 8.0, "static", "{}"], ["cold_sweat:fur_pants", 10.0, 0.0, "static", "{}"], ["minecraft:black_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur_cap", 8.0, 0.0, "static", "{}"], ["minecraft:leather", 1.0, 1.0, "static", "{}"], ["minecraft:pink_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur", 2.0, 0.0, "static", "{}"], ["cold_sweat:hoglin_trousers", 0.0, 10.0, "static", "{}"], ["minecraft:lime_wool", 1.5, 0.0, "static", "{}"], ["minecraft:leather_boots", 4.0, 4.0, "static", "{}"], ["minecraft:leather_chestplate", 6.0, 6.0, "static", "{}"], ["minecraft:gray_wool", 1.5, 0.0, "static", "{}"], ["minecraft:magenta_wool", 1.5, 0.0, "static", "{}"], ["minecraft:leather_helmet", 4.0, 4.0, "static", "{}"], ["cold_sweat:fur_parka", 12.0, 0.0, "static", "{}"], ["minecraft:blue_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:hoglin_tunic", 0.0, 12.0, "static", "{}"], ["minecraft:red_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:chameleon_molt", 1.5, 1.5, "adaptive", "{}"], ["minecraft:leather_leggings", 5.0, 5.0, "static", "{}"], ["minecraft:white_wool", 1.5, 0.0, "static", "{}"], ["minecraft:brown_wool", 1.5, 0.0, "static", "{}"], ["minecraft:light_blue_wool", 1.5, 0.0, "static", "{}"], ["minecraft:cyan_wool", 1.5, 0.0, "static", "{}"], ["cold_sweat:fur_boots", 8.0, 0.0, "static", "{}"]]
 	#Defines the items that provide insulation when worn
 	#See Insulation Ingredients for formatting
-	"Insulating Armor" = [["cold_sweat:fur_parka", 12.0, 0.0, "static", "{}"], ["cold_sweat:hoglin_headpiece", 0.0, 8.0, "static", "{}"], ["minecraft:leather_boots", 4.0, 4.0, "static", "{}"], ["cold_sweat:hoglin_tunic", 0.0, 12.0, "static", "{}"], ["minecraft:leather_leggings", 5.0, 5.0, "static", "{}"], ["cold_sweat:fur_cap", 8.0, 0.0, "static", "{}"], ["minecraft:leather_helmet", 4.0, 4.0, "static", "{}"], ["minecraft:leather_chestplate", 6.0, 6.0, "static", "{}"], ["cold_sweat:fur_boots", 8.0, 0.0, "static", "{}"], ["cold_sweat:fur_pants", 10.0, 0.0, "static", "{}"], ["cold_sweat:hoglin_trousers", 0.0, 10.0, "static", "{}"], ["cold_sweat:hoglin_hooves", 0.0, 8.0, "static", "{}"]]
+	"Insulating Armor" = [["minecraft:leather_chestplate", 6.0, 6.0, "static", "{}"], ["minecraft:leather_helmet", 4.0, 4.0, "static", "{}"], ["create:netherite_diving_helmet"], ["cold_sweat:fur_parka", 12.0, 0.0, "static", "{}"], ["minecraft:netherite_leggings"], ["create:netherite_backtank"], ["cold_sweat:hoglin_tunic", 0.0, 12.0, "static", "{}"], ["cold_sweat:hoglin_headpiece", 0.0, 8.0, "static", "{}"], ["minecraft:leather_leggings", 5.0, 5.0, "static", "{}"], ["cold_sweat:hoglin_hooves", 0.0, 8.0, "static", "{}"], ["minecraft:netherite_boots"], ["cold_sweat:fur_pants", 10.0, 0.0, "static", "{}"], ["cold_sweat:fur_cap", 8.0, 0.0, "static", "{}"], ["cold_sweat:fur_boots", 8.0, 0.0, "static", "{}"], ["create:netherite_diving_boots"], ["cold_sweat:hoglin_trousers", 0.0, 10.0, "static", "{}"], ["minecraft:leather_boots", 4.0, 4.0, "static", "{}"]]
 	#Defines the items that provide insulation when worn in a curio slot
 	#See Insulation Ingredients for formatting
-	"Insulating Curios" = [["aether:ice_ring", 1.5, 0, "static", "{}"], ["aether:ice_pendant", 1.5, 0, "static", "{}"], ["relics:wool_mitten", 1, 0, "static", "{}"], ["relics:magma_walker", 0, 1, "static", "{}"]]
+	"Insulating Curios" = [["relics:magma_walker", 0.0, 1.0, "static", "{}"], ["aether:ice_ring", 1.5, 0.0, "static", "{}"], ["aether:ice_pendant", 1.5, 0.0, "static", "{}"], ["relics:wool_mitten", 1.0, 0.0, "static", "{}"]]
 	#Defines how many insulation slots armor pieces have
 	#There are 4 modes for this setting:
 	#Static: Each armor slot (head, body, legs, feet) has a fixed number of insulation slots
@@ -57,6 +57,9 @@
 	#Defines wearable items that cannot be insulated
 	#Format: ["item_id", "item_id", ...etc]
 	"Insulation Blacklist" = []
+	#Defines the effectiveness of insulating items in protecting against temperature
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"Insulation Strength" = 1.0
 
 [Consumables]
 	#Defines items that affect the player's temperature when consumed
@@ -68,4 +71,13 @@
 	#Defines how much a waterskin will change the player's body temperature by when used
 	#Range: > 0
 	"Waterskin Strength" = 50
+
+[Misc]
+	#Defines items that affect the player's temperature when in the inventory
+	#Format: [["item_id", temperature, strict_type, trait, *nbt], ["item_id", temperature, strict_type, trait, *nbt], ...etc]
+	#temperature: The temperature change the item will apply to the entity. For core temperature, this is applied every tick
+	#strict_type: Either "inventory", "hotbar", or "hand". Defines what slots the item must be in to apply to the entity
+	#trait: The temperature trait to apply the effect to. Typical values are "core" for body temperature or "world" for ambient temperature. More on the mod documentation page.
+	#nbt: Optional. The NBT data the item must have to apply to the entity.
+	"Carried Item Temperatures" = []
 

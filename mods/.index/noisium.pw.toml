@@ -1,13 +1,13 @@
-filename = 'noisium-forge-2.2.2+mc1.20-1.20.1.jar'
+filename = 'noisium-forge-2.3.0+mc1.20-1.20.1.jar'
 name = 'Noisium'
 side = 'both'
 
 [download]
-hash = '3232c59e8d294faa17292ee1e1bbfdb315b947fb315e03d9ec2e41c18dd36f8f7bc90c95601db872eaf1ddb06f71222d10eb0a377db23d82aaf026ade15f85d0'
+hash = '5bc43bc1b748edcd63d074a8bb14d393d986c51e1933e1f38cd7a2dd2fd70dba5a46a6415f46d4a52c68e7e1e9ce101e54376ad04273df958608e2fdb43db502'
 hash-format = 'sha512'
 mode = 'url'
-url = 'https://cdn.modrinth.com/data/KuNKN7d2/versions/xwm7o9FD/noisium-forge-2.2.2%2Bmc1.20-1.20.1.jar'
+url = 'https://cdn.modrinth.com/data/KuNKN7d2/versions/gbYUKrDP/noisium-forge-2.3.0%2Bmc1.20-1.20.1.jar'
 
 [update.modrinth]
 mod-id = 'KuNKN7d2'
-version = 'xwm7o9FD'
+version = 'gbYUKrDP'
