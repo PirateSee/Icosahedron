@@ -533,4 +533,7 @@ ServerEvents.recipes(e => {
 
     //no more tablet
     e.recipes.create.milling('mekanism:dust_emerald', 'kubejs:emerald_tablet').id('ico:anger_the_gods')
+
+    //portal
+    e.shapeless('etched:portal_radio', ['etched:radio', 'minecraft:cake'])
 })

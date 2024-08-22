@@ -105,6 +105,18 @@ ServerEvents.recipes(e => {
     e.remove({id: 'aether:zanite_shovel'})
     e.remove({id: 'aether:zanite_hoe'})
 
+    e.remove({id: 'aether:veridium_axe'})
+    e.remove({id: 'aether:veridium_pickaxe'})
+    e.remove({id: 'aether:veridium_sword'})
+    e.remove({id: 'aether:veridium_shovel'})
+    e.remove({id: 'aether:veridium_hoe'})
+
+    e.remove({id: 'aether:skyjade_axe'})
+    e.remove({id: 'aether:skyjade_pickaxe'})
+    e.remove({id: 'aether:skyjade_sword'})
+    e.remove({id: 'aether:skyjade_shovel'})
+    e.remove({id: 'aether:skyjade_hoe'})
+
     e.remove({id:'vintageimprovements:scoria_recycling'})
     e.remove({id:'vintageimprovements:sulfur_nuggets_to_item'})
     e.remove({id:'vintageimprovements:sulfur_item_to_nuggets'})

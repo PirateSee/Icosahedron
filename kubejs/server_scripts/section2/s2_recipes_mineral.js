@@ -262,4 +262,12 @@ ServerEvents.recipes(e => {
 	e.recipes.create.sandpaper_polishing('minecraft:quartz', 'kubejs:rough_nether_quartz')
 	e.recipes.create.sandpaper_polishing('minecraft:emerald', 'kubejs:rough_emerald')
     e.recipes.create.sandpaper_polishing('kubejs:aquatrine', 'kubejs:rough_aquatrine')
+
+    e.recipes.create.crushing(['kubejs:rough_aquatrine', Item.of('kubejs:rough_aquatrine').withChance(0.75), Item.of('create:experience_nugget').withChance(0.1), Item.of('minecraft:sand').withChance(0.12)], 'kubejs:sand_aquatrine_ore')
+    e.recipes.create.crushing(['kubejs:rough_aquatrine', Item.of('kubejs:rough_aquatrine').withChance(0.75), Item.of('create:experience_nugget').withChance(0.1), Item.of('minecraft:sandstone').withChance(0.12)], 'kubejs:sandstone_aquatrine_ore')
+    
+    e.smelting('kubejs:aquatrine', 'kubejs:sand_aquatrine_ore')
+    e.blasting('kubejs:aquatrine', 'kubejs:sand_aquatrine_ore')
+    e.smelting('kubejs:aquatrine', 'kubejs:sandstone_aquatrine_ore')
+    e.blasting('kubejs:aquatrine', 'kubejs:sandstone_aquatrine_ore')
 })
