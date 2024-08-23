@@ -1,21 +1,10 @@
 {
     "name": "§a+ §r§nSentry",
-    "description": "Increased damage and resistance while seated or stationary for more than 3 seconds.",
+    "description": "Increased damage and resistance while seated.",
     "type": "origins:multiple",
     "attack": {
         "condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:riding"
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "icosahedron_origins:haul/sentry_resource",
-                    "comparison": "==",
-                    "compare_to": 6
-                }
-            ]
+            "type": "origins:riding"
         },
         "type": "origins:modify_damage_dealt",
         "modifiers": [
@@ -31,55 +20,13 @@
             }
         ]
     },
-    "resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 6
-    },
-    "modify": {
-        "condition": {
-            "type": "apugli:velocity",
-            "axes": [
-                "x",
-                "y",
-                "z"
-            ],
-            "compare_to": 0.1,
-            "comparison": "<"
-        },
-        "type": "origins:action_over_time",
-        "interval": 10,
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "icosahedron_origins:haul/sentry_resource",
-            "change": 1,
-            "operation": "add"
-        },
-        "falling_action": {
-            "type": "origins:change_resource",
-            "resource": "icosahedron_origins:haul/sentry_resource",
-            "change": 0,
-            "operation": "set"
-        }
-    },
     "resistance": {
         "type": "origins:action_over_time",
         "interval": 2,
         "entity_action": {
             "type": "origins:if_else",
             "condition": {
-                "type": "origins:or",
-                "conditions": [
-                    {
-                        "type": "origins:riding"
-                    },
-                    {
-                        "type": "origins:resource",
-                        "resource": "icosahedron_origins:haul/sentry_resource",
-                        "comparison": "==",
-                        "compare_to": 6
-                    }
-                ]
+                "type": "origins:riding"
             },
             "if_action": {
                 "type": "origins:and",
