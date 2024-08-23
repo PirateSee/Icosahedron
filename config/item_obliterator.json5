@@ -42,7 +42,7 @@
   // Items here will not be able to be right-clicked (Interact)
   //    Example: minecraft:apple
   "only_disable_interactions": [
-    "examplemod:example_item"
+    "!endrem:.*"
   ],
   // -----------------------------------------------------------
   // Items here will not be able to be used to attack

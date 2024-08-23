@@ -113,7 +113,7 @@ ServerEvents.recipes(e => {
     e.remove({id:'pneumaticcraft:pressure_chamber/wheat_flour'})
     e.remove({id:'pneumaticcraft:explosion_crafting/wheat_flour'})
     e.remove({id:'pneumaticcraft:sourdough'})
-    e.remove({id:'minecraft:ender_eye'})
+    //e.remove({id:'minecraft:ender_eye'})
 
     //kill
     e.remove({id:'pneumaticcraft:pneumatic_helmet'})
@@ -1126,36 +1126,5 @@ ServerEvents.recipes(e => {
   //random
 
   e.recipes.create.mixing('pneumaticcraft:sourdough', ['create:wheat_flour', Fluid.of('pneumaticcraft:yeast_culture', 150)])
-
-    e.custom({
-        "type": "pneumaticcraft:pressure_chamber",
-        "inputs": [
-            {
-                "item": "minecraft:ender_pearl"
-            },
-            {
-                "type": "pneumaticcraft:stacked_item",
-                "item": "minecraft:blaze_powder",
-                "count": 2
-            }
-        ],
-        "pressure": 5,
-        "results": [
-            {
-                "item": "kubejs:unetched_ender_eye"
-            }
-        ]
-    })
-
-    e.custom({
-        "type": "pneumaticcraft:assembly_laser",
-        "input": {
-            "item": "kubejs:unetched_ender_eye"
-        },
-            "program": "laser",
-            "result": {
-            "item": "minecraft:ender_eye"
-        }
-    })
 
 })

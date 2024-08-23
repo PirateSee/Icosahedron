@@ -743,7 +743,7 @@ ServerEvents.recipes(e => {
 
       e.remove({id:'mekanism:modification_station'})
 
-      e.shaped('quark:ender_watcher', [
+    /*e.shaped('quark:ender_watcher', [
         'oro', 
         'rer',
         'oro'
@@ -753,7 +753,7 @@ ServerEvents.recipes(e => {
         e: 'minecraft:ender_pearl'
     }).id('ico:ender_watcher')
 
-    e.remove({id:'quark:automation/crafting/ender_watcher'})
+    e.remove({id:'quark:automation/crafting/ender_watcher'})*/
 
     e.shaped('create_new_age:heat_pipe', [
         ' h ', 
@@ -830,7 +830,7 @@ ServerEvents.recipes(e => {
 
     e.remove({id:'create_new_age:reactor/reactor_heat_vent'})
 
-    e.shaped('exposure:interplanar_projector', [
+    /*e.shaped('exposure:interplanar_projector', [
         'grg', 
         'rer',
         'grg'
@@ -840,7 +840,7 @@ ServerEvents.recipes(e => {
         e: 'minecraft:ender_pearl'
     }).id('ico:interplanar_projector')
 
-    e.remove({id:'exposure:interplanar_projector'})
+    e.remove({id:'exposure:interplanar_projector'})*/
     e.remove({id:'immersive_aircraft:gyrodyne'})
 
 })
