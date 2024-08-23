@@ -78,8 +78,7 @@
     "create_new_age:overcharged_iron_wire",
     "create_new_age:energiser_t3",
     "create_new_age:energiser_t2",
-    "create_new_age:energiser_t1",
-    "/mekanism:[clump|shard|crystal|dirty_dust].*/"
+    "create_new_age:energiser_t1"
   ],
   "disable": true
 }
