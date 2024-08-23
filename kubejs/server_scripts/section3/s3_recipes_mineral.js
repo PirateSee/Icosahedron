@@ -202,7 +202,7 @@ ServerEvents.recipes(e => {
 
     //e.recipes.create.pressing('kubejs:hot_carbon_steel_sheet', 'kubejs:hot_carbon_steel')
 
-    e.custom({
+    /*e.custom({
         "type": "vintageimprovements:hammering",
         "hammerBlows": 1,
         "ingredients": [
@@ -215,7 +215,9 @@ ServerEvents.recipes(e => {
             "item": "kubejs:hot_carbon_steel_sheet"
         }
         ]
-    })
+    })*/
+
+    e.recipes.create.pressing('kubejs:hot_carbon_steel_sheet', 'kubejs:hot_carbon_steel').id('ico:hot_carbon_steel_sheet')
 
     e.custom({
             "type":"createaddition:rolling",

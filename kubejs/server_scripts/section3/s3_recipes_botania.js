@@ -22,30 +22,30 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:elementium_sword'})
 
     e.custom({
-            "type": "botania:petal_apothecary",
-            "ingredients": [
-                {
-                    "item": "botania:rune_water"
-                },
-                {
-                    "item": "botania:rune_earth"
-                },
-                {
-                    "item": "botania:rune_mana"
-                },
-                {
-                    "item": "botania:rune_air"
-                },
-                {
-                    "item": "botania:rune_fire"
-                }
-            ],
-            "output": {
-                "item": "kubejs:rune_essence"
+        "type": "botania:petal_apothecary",
+        "ingredients": [
+            {
+                "item": "botania:rune_water"
             },
-            "reagent": {
-                "tag": "botania:seed_apothecary_reagent"
+            {
+                "item": "botania:rune_earth"
+            },
+            {
+                "item": "botania:rune_mana"
+            },
+            {
+                "item": "botania:rune_air"
+            },
+            {
+                "item": "botania:rune_fire"
             }
+        ],
+        "output": {
+            "item": "kubejs:rune_essence"
+        },
+        "reagent": {
+            "tag": "botania:seed_apothecary_reagent"
+        }
     })
 
     e.shaped('botania:terra_plate', [

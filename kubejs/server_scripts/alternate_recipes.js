@@ -111,7 +111,7 @@ ServerEvents.recipes(e => {
 		]
     })
 
-	e.recipes.createMixing('16x kubejs:sealant', ['minecraft:slime_ball', {fluidTag: 'forge:plantoil', amount: 300}]).heated()
+	e.recipes.createMixing('16x kubejs:sealant', ['#forge:slimeballs', {fluidTag: 'forge:plantoil', amount: 300}]).heated()
 
 	//copper corroding
 
