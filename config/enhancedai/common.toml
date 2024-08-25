@@ -24,7 +24,7 @@
 	#Witches drink more potions.
 	"Enable Thirsty Witches" = true
 	#Witches summon Villagers and cast a lightning upon them.
-	"Enable Dark Arts Witches" = true
+	"Enable Dark Arts Witches" = false
 
 	#Witches throw potions farther, faster and more potion types. Also no longer chase player if they can't see him. Use the enhancedai:better_potion_throwing entity type tag to add more witches that are affected by this feature.
 	[Witches."Witch Potion Throwing"]
