@@ -159,7 +159,7 @@ ServerEvents.recipes(e => {
         B: '#forge:ingots/brick'
 	}).id('ico:crystal_block')
 
-    e.shaped('4x kubejs:crystal_block', [
+    e.shaped('4x kubejs:crystal_bricks', [
 		'CC',
         'CC' 
 	], {

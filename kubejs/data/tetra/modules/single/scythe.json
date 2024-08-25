@@ -53,7 +53,7 @@
                     "textureY": 16
                 },
                 "availableTextures": [
-                    "crude",
+                    "grainy",
                     "metal",
                     "shiny"
                 ],

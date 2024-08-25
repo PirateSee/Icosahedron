@@ -264,7 +264,7 @@ ServerEvents.tags('item', e => {
     e.add('forge:gems/amber', 'betterend:amber_gem')
 
     //blacklist
-    e.add('mna:arcane_furnace_doubling_blacklist', 'create:andesite_alloy_dust')
+    e.add('mna:arcane_furnace_doubling_blacklist', 'kubejs:andesite_alloy_dust')
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')

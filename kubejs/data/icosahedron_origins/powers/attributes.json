@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "parcool:max_stamina",
+            "operation": "addition",
+            "value": -800,
+            "name": "Attribute Adjustment"
+        },
+        {
+            "attribute": "parcool:stamina_recovery",
+            "operation": "addition",
+            "value": -12,
+            "name": "Attribute Adjustment"
+        }
+    ],
+    "update_health": false
+}

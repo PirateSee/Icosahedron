@@ -370,6 +370,8 @@
 		"origins:conduit_power_on_land" = true
 		"icosahedron_origins:conduit_in_end" = true
 		"icosahedron_origins:exhaust_less" = true
+		"icosahedron_origins:attributes" = true
+		"icosahedron_origins:respawn" = true
 
 	[origins."icosahedron_origins:phantom"]
 		enabled = true

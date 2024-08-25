@@ -172,5 +172,13 @@
 	"tetra.module.sword/katana_blade.name": "Katana",
 	"tetra.module.sword/katana_blade.description": "A long but lightweight blade with good sweeping ablity.",
 	"tetra.module.sword/katana_blade.material_name": "%s Katana",
-    "tetra.module.sword/katana_blade.prefix": "%s"
+    "tetra.module.sword/katana_blade.prefix": "%s",
+
+    "tetra/schematic/double/cap.name": "Cap",
+	"tetra/schematic/double/cap.description": "Place a material cap on top of the tool, allowing the material's special properties to take effect.",
+	"tetra/schematic/double/cap.slot1": "Cap Material",
+	"tetra.module.double/cap.name": "Cap",
+	"tetra.module.double/cap.description": "A small cap placed on top of the tool. Properties of the material the cap is made out of can effect the whole tool from here.",
+	"tetra.module.double/cap.material_name": "%s Cap",
+    "tetra.module.double/cap.prefix": "%s"
 }

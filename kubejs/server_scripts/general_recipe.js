@@ -154,9 +154,12 @@ ServerEvents.recipes(e => {
 	
 	e.recipes.createoreexcavation.vein('{"text": "Aquatic Salpherite"}', 'kubejs:sphalerite_ore').placement(64, 16, 8291831).biomeWhitelist('forge:ocean').id('ico:aquatic_sphalerite')
 	e.recipes.createoreexcavation.drilling(['minecraft:sand', Item.of('minecraft:prismarine_shard').withChance(0.75), Item.of('kubejs:sphalerite_ore').withChance(0.5)], 'ico:aquatic_sphalerite', 240).id('ico:aquatic_sphalerite_drill')
+    
+    e.recipes.createoreexcavation.vein('{"text": "Dry Pentlandite"}', 'kubejs:pentlandite_ore').placement(64, 16, 129857).biomeWhitelist('forge:dry/climate').id('ico:dry_pentlandite')
+	e.recipes.createoreexcavation.drilling(['minecraft:coarse_dirt', Item.of('minecraft:dead_bush').withChance(0.25), Item.of('kubejs:pentlandite_ore').withChance(0.33)], 'ico:dry_pentlandite', 240).id('ico:dry_pentlandite_drill')
 
 	//nether
-	e.recipes.createoreexcavation.vein('{"text": "Bauxite Tailings"}', 'kubejs:bauxite_ore').placement(128, 16, 2162738).biomeWhitelist('forge:the_nether/in').id('ico:bauxite_tailings')
+	e.recipes.createoreexcavation.vein('{"text": "Bauxite Tailings"}', 'kubejs:bauxite_ore').placement(128, 16, 2162738).biomeWhitelist('forge:nether/in').id('ico:bauxite_tailings')
 	e.recipes.createoreexcavation.drilling(['minecraft:netherrack', 'kubejs:scorched_tailings', Item.of('kubejs:sulfur').withChance(0.02)], 'ico:bauxite_tailings', 240).id('ico:bauxite_tailings_drill').drill('kubejs:compressed_iron_drill')
 
     //end

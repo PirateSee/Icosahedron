@@ -130,6 +130,13 @@ ServerEvents.recipes(e => {
     e.remove({id:'createsifter:advanced_brass_mesh'})
     e.remove({id:'createsifter:brass_mesh'})
     e.remove({id:'createsifter:zinc_mesh'})
+
+    //conflict
+    e.remove({id:'handcrafted:wood_plate'})
+    e.remove({id:'handcrafted:terracotta_plate'})
+
+    e.remove({id:'mekanism:storage_blocks/charcoal'})
+    e.remove({id:'betterend:charcoal_block'})
 	
 	//replacing recipes
 	
@@ -461,4 +468,34 @@ ServerEvents.recipes(e => {
 		W: 'create:cogwheel',
 		T: '#ico:tool/screwdriver'
 	}).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:gearbox')
+
+    //conflict
+
+    e.shaped('handcrafted:wood_plate', [
+        "II"
+    ], {
+        I: '#minecraft:wooden_slabs'
+    }).id('ico:wood_plate')
+
+    e.shaped('handcrafted:terracotta_plate', [
+        "II"
+    ], {
+        I: 'minecraft:terracotta'
+    }).id('ico:terracotta_plate')
+
+    e.shapeless('betterend:charcoal_block', 'quark:charcoal_block').id('ico:quark_to_betterend_charcoal_block')
+    e.shapeless('mekanism:block_charcoal', 'betterend:charcoal_block').id('ico:betterend_to_mekanism_charcoal_block')
+    e.shapeless('quark:charcoal_block', 'mekanism:block_charcoal').id('ico:mekanism_to_quark_charcoal_block')
+
+    e.shapeless('create_connected:copycat_slab', 'copycats:copycat_slab').id('ico:copycats_to_connected_slab')
+    e.shapeless('create_connected:copycat_block', 'copycats:copycat_block').id('ico:copycats_to_connected_block')
+    e.shapeless('create_connected:copycat_stairs', 'copycats:copycat_stairs').id('ico:copycats_to_connected_stairs')
+    e.shapeless('create_connected:copycat_fence', 'copycats:copycat_fence').id('ico:copycats_to_connected_fence')
+    e.shapeless('create_connected:copycat_fence_gate', 'copycats:copycat_fence_gate').id('ico:copycats_to_connected_fence_gate')
+    e.shapeless('create_connected:copycat_wall', 'copycats:copycat_wall').id('ico:copycats_to_connected_wall')
+    e.shapeless('create_connected:copycat_board', 'copycats:copycat_board').id('ico:copycats_to_connected_board')
+    e.shapeless('create_connected:copycat_box', 'copycats:copycat_box').id('ico:copycats_to_connected_box')
+    e.shapeless('create_connected:copycat_catwalk', 'copycats:copycat_catwalk').id('ico:copycats_to_connected_catwalk')
+    e.shapeless('create_connected:copycat_beam', 'copycats:copycat_beam').id('ico:copycats_to_connected_beam')
+    e.shapeless('create_connected:copycat_vertical_step', 'copycats:copycat_vertical_step').id('ico:copycats_to_connected_vertical_step')
 })

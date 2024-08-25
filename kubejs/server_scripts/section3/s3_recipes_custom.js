@@ -283,7 +283,7 @@ ServerEvents.recipes(e => {
 		T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:advanced_saw')
 
-	e.shapeless('kubejs:advanced_multitool', ['kubejs:advanced_tool_handle', 'kubejs:advanced_hammer', 'kubejs:advanced_file', 'kubejs:advanced_saw', 'create:polished_rose_quartz']).id('ico:tool_advanced_multitool')
+	e.shapeless('kubejs:advanced_multitool', ['kubejs:advanced_screwdriver', 'kubejs:advanced_hammer', 'kubejs:advanced_file', 'kubejs:advanced_saw', 'create:polished_rose_quartz']).id('ico:tool_advanced_multitool')
 
 	e.recipes.create.filling('7x kubejs:sealant', [Fluid.of('kubejs:coal_tar', 50), 'minecraft:iron_nugget'])
 
