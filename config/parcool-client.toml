@@ -114,7 +114,7 @@
 	#Make Vault Need Vault Key Pressed
 	vault_needs_key_pressed = false
 	#enable players to do actions needing Fast-Running by sprint
-	substitute_sprint = false
+	substitute_sprint = true
 	#How long duration of dodge is deal as successive dodge
 	#Range: > 0
 	successive_dodge_cool_time = 30
@@ -176,15 +176,15 @@
 		#Range: 0 ~ 10000
 		stamina_consumption_of_Dodge = 80
 		#Range: 0 ~ 10000
-		stamina_consumption_of_FastRun = 2
+		stamina_consumption_of_FastRun = 3
 		#Range: 0 ~ 10000
-		stamina_consumption_of_FastSwim = 3
+		stamina_consumption_of_FastSwim = 4
 		#Range: 0 ~ 10000
-		stamina_consumption_of_Flipping = 80
+		stamina_consumption_of_Flipping = 20
 		#Range: 0 ~ 10000
 		stamina_consumption_of_HangDown = 3
 		#Range: 0 ~ 10000
-		stamina_consumption_of_HorizontalWallRun = 2
+		stamina_consumption_of_HorizontalWallRun = 3
 		#Range: 0 ~ 10000
 		stamina_consumption_of_JumpFromBar = 100
 		#Range: 0 ~ 10000
@@ -200,11 +200,11 @@
 		#Range: 0 ~ 10000
 		stamina_consumption_of_Vault = 50
 		#Range: 0 ~ 10000
-		stamina_consumption_of_VerticalWallRun = 150
+		stamina_consumption_of_VerticalWallRun = 200
 		#Range: 0 ~ 10000
 		stamina_consumption_of_WallJump = 120
 		#Range: 0 ~ 10000
-		stamina_consumption_of_WallSlide = 8
+		stamina_consumption_of_WallSlide = 10
 		#Infinite Stamina (this needs a permission from server, even if it is on single player's game. normally permitted)
 		#Please check 'parcool-server.toml' in 'serverconfig' directory
 		infinite_stamina = false
