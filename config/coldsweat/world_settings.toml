@@ -57,7 +57,7 @@
 [Blocks]
 	#Allows for adding simple BlockTemps without the use of Java mods
 	#Format (All temperatures are in Minecraft units):
-	#[["block-ids", <temperature>, <range (max 7)>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
+	#[["block-ids", <temperature>, <range>, <*true/false: falloff>, <*max effect>, <*predicates>], [etc...], [etc...]]
 	#(* = optional) (1 °MC = 42 °F/ 23.33 °C)
 	#
 	#Arguments:

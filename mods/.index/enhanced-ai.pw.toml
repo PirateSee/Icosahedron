@@ -1,13 +1,13 @@
-filename = 'EnhancedAI-2.4.8-mc1.20.1.jar'
+filename = 'EnhancedAI-2.4.9-mc1.20.1.jar'
 name = 'Enhanced AI'
 side = 'both'
 
 [download]
-hash = 'f80b4225d23320a4cb8d7cdc4a7acf37fa696771'
+hash = '99aca97263b1c80c8e2a4b669a1ca4591a4f7291'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5601009
+file-id = 5669144
 project-id = 515276
