@@ -228,7 +228,11 @@ ServerEvents.tags('item', e => {
 
 	e.add('pneumaticcraft:wiring', 'createaddition:electrum_nugget')
 
-    e.add('botania:mystical_flowers', Ingredient.of("#mna:ma_flowers").itemIds)
+    e.add('botania:mystical_flowers', 'mna:wakebloom')
+    e.add('botania:mystical_flowers', 'mna:aum')
+    e.add('botania:mystical_flowers', 'mna:cerublossom')
+    e.add('botania:mystical_flowers', 'mna:tarma_root')
+    e.add('botania:mystical_flowers', 'mna:desert_nova')
 
     //curio
     e.add('curios:back', 'create:copper_backtank')
@@ -265,6 +269,7 @@ ServerEvents.tags('item', e => {
 
     //blacklist
     e.add('mna:arcane_furnace_doubling_blacklist', 'kubejs:andesite_alloy_dust')
+    e.add('mna:arcane_furnace_doubling_blacklist', 'kubejs:zinc_grit')
 
 	//remove
 	e.remove('pneumaticcraft:upgrade_components', 'minecraft:lapis_lazuli')

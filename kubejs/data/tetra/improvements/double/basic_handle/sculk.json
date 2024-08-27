@@ -1,0 +1,10 @@
+[
+    {
+        "key": "basic_handle/sculk",
+        "models": [
+            {
+                "location": "tetrasulphide:items/module/double/handle/skulk"
+            }
+        ]
+    }
+]

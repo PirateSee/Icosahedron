@@ -1,0 +1,128 @@
+[
+    {
+        "predicate": {
+            "items": [ "deeperdarker:resonarium_sword" ]
+        },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": [ "sword/basic_blade", "basic_blade/resonarium" ],
+            "sword/hilt": [ "sword/basic_hilt", "basic_hilt/stick" ],
+            "sword/pommel": [ "sword/decorative_pommel", "decorative_pommel/resonarium" ],
+            "sword/guard": [ "sword/makeshift_guard", "makeshift_guard/resonarium" ]
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:resonarium_shovel" ]
+        },
+        "item": "tetra:modular_single",
+        "modules": {
+            "single/head": [ "single/basic_shovel", "basic_shovel/resonarium" ],
+            "single/handle": [ "single/basic_handle", "basic_handle/stick" ]
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:resonarium_pickaxe" ]
+        },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": [ "double/basic_pickaxe_left", "basic_pickaxe/resonarium" ],
+            "double/head_right": [ "double/basic_pickaxe_right", "basic_pickaxe/resonarium" ],
+            "double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:resonarium_hoe" ]
+        },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": [ "double/hoe_left", "hoe/resonarium" ],
+            "double/head_right": [ "double/butt_right", "butt/resonarium" ],
+            "double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:resonarium_axe" ]
+        },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": [ "double/basic_axe_left", "basic_axe/resonarium" ],
+            "double/head_right": [ "double/butt_right", "butt/resonarium" ],
+            "double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:warden_sword" ]
+        },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": [ "sword/basic_blade", "basic_blade/warden" ],
+            "sword/hilt": [ "sword/basic_hilt", "basic_hilt/stick" ],
+            "sword/pommel": [ "sword/decorative_pommel", "decorative_pommel/warden" ],
+            "sword/guard": [ "sword/makeshift_guard", "makeshift_guard/warden" ]
+        },
+        "improvements": {
+            "sword/hilt:basic_hilt/skulk": 0
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:warden_shovel" ]
+        },
+        "item": "tetra:modular_single",
+        "modules": {
+            "single/head": [ "single/basic_shovel", "basic_shovel/warden" ],
+            "single/handle": [ "single/basic_handle", "basic_handle/stick" ]
+        },
+        "improvements": {
+            "single/handle:basic_handle/skulk": 0
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:warden_pickaxe" ]
+        },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": [ "double/basic_pickaxe_left", "basic_pickaxe/warden" ],
+            "double/head_right": [ "double/basic_pickaxe_right", "basic_pickaxe/warden" ],
+            "double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+        },
+        "improvements": {
+            "double/handle:basic_handle/skulk": 0
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:warden_hoe" ]
+        },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": [ "double/hoe_left", "hoe/warden" ],
+            "double/head_right": [ "double/butt_right", "butt/warden" ],
+            "double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+        },
+        "improvements": {
+            "double/handle:basic_handle/skulk": 0
+        }
+    },
+    {
+        "predicate": {
+            "items": [ "deeperdarker:warden_axe" ]
+        },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": [ "double/basic_axe_left", "basic_axe/warden" ],
+            "double/head_right": [ "double/butt_right", "butt/warden" ],
+            "double/handle": [ "double/basic_handle", "basic_handle/stick" ]
+        },
+        "improvements": {
+            "double/handle:basic_handle/skulk": 0
+        }
+    }
+    
+]

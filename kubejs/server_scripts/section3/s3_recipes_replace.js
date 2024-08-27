@@ -198,7 +198,7 @@ ServerEvents.recipes(e => {
 		'ILLLA',
 		'CC SH'
 	], {
-		C: 'kubejs:carbon_steel_block',
+		C: 'minecraft:iron_block',
 		I: 'kubejs:carbon_steel_ingot',
 		L: '#minecraft:logs',
 		A: 'create:andesite_casing',

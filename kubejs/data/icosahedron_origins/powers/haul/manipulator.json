@@ -31,6 +31,11 @@
                     "inverted": true,
                     "type": "origins:in_tag",
                     "tag": "minecraft:needs_diamond_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_netherite_tool"
                 }
             ]
         },
@@ -59,12 +64,17 @@
                     "inverted": true,
                     "type": "origins:in_tag",
                     "tag": "minecraft:needs_diamond_tool"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:needs_netherite_tool"
                 }
             ]
         },
         "modifier": {
             "operation": "addition",
-            "value": 0.042,
+            "value": 0.035,
             "name": "Manipulator Bonus"
         }
     },
@@ -76,7 +86,7 @@
         "type": "origins:modify_break_speed",
         "modifier": {
             "operation": "multiply_total",
-            "value": 4.5,
+            "value": 3,
             "name": "Manipulator Arial Afinity"
         }
     }

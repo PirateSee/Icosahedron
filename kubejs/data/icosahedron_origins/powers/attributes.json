@@ -5,13 +5,13 @@
         {
             "attribute": "parcool:max_stamina",
             "operation": "addition",
-            "value": -800,
+            "value": -500,
             "name": "Attribute Adjustment"
         },
         {
             "attribute": "parcool:stamina_recovery",
             "operation": "addition",
-            "value": -12,
+            "value": -10,
             "name": "Attribute Adjustment"
         }
     ],

@@ -4,7 +4,7 @@
     "get_iron_block": {
       "type": "heracles:item",
       "item": "minecraft:iron_block",
-      "amount": 64,
+      "amount": 128,
       "collection": "MANUAL"
     }
   },

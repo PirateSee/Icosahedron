@@ -117,6 +117,19 @@ ServerEvents.recipes(e => {
     e.remove({id: 'aether:skyjade_shovel'})
     e.remove({id: 'aether:skyjade_hoe'})
 
+    e.remove({id: 'deeperdarker:warden_axe_smithing'})
+    e.remove({id: 'deeperdarker:warden_pickaxe_smithing'})
+    e.remove({id: 'deeperdarker:warden_sword_smithing'})
+    e.remove({id: 'deeperdarker:warden_shovel_smithing'})
+    e.remove({id: 'deeperdarker:warden_hoe_smithing'})
+
+    e.remove({id: 'deeperdarker:resonarium_axe_smithing'})
+    e.remove({id: 'deeperdarker:resonarium_pickaxe_smithing'})
+    e.remove({id: 'deeperdarker:resonarium_sword_smithing'})
+    e.remove({id: 'deeperdarker:resonarium_shovel_smithing'})
+    e.remove({id: 'deeperdarker:resonarium_hoe_smithing'})
+
+
     e.remove({id:'vintageimprovements:scoria_recycling'})
     e.remove({id:'vintageimprovements:sulfur_nuggets_to_item'})
     e.remove({id:'vintageimprovements:sulfur_item_to_nuggets'})
