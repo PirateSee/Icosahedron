@@ -81,7 +81,9 @@ ServerEvents.recipes(e => {
         T: '#ico:tool/file'
 	}).damageIngredient(Item.of('#ico:tool/file')).id('ico:brewery')
 
-    e.shapeless('2x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '#botania:mystical_flowers'])
+    e.shapeless('3x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '#botania:mystical_flowers']).id('ico:arcane_compound_from_flower')
+    e.shapeless('3x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '#mna:ma_flowers']).id('ico:arcane_compound_from_ma_flower')
+    e.shapeless('3x mna:arcane_compound', ['#ico:arcane_base', 'mna:vinteum_dust', '#forge:dusts/gold', '2x #botania:petals']).id('ico:arcane_compound_from_petals')
 
     e.shaped('botania:pump', [
         'WWT',
@@ -154,7 +156,7 @@ ServerEvents.recipes(e => {
 
     e.recipes.create.mixing('botania:mana_pearl', ['minecraft:ender_pearl', 'botania:mana_powder'])
 
-    e.recipes.create.compacting('kubejs:rune_backing', ['botania:manasteel_ingot', '2x botania:mana_powder', '2x botania:livingrock'])
+    e.recipes.create.compacting('3x kubejs:rune_backing', ['2x botania:manasteel_ingot', '3x botania:mana_powder', '4x botania:livingrock'])
 
     e.shaped('botania:runic_altar', [
 		'  T',
@@ -295,4 +297,19 @@ ServerEvents.recipes(e => {
         S: 'botania:redstone_spreader',
         T: '#ico:tool/saw'
 	}).damageIngredient(Item.of('#ico:tool/saw')).id('ico:mana_gun')
+
+    e.custom({
+        "type": "botania:mana_infusion",
+        "catalyst": {
+            "type": "block",
+            "block": "botania:alchemy_catalyst"
+        },
+        "input": {
+            "item": 'minecraft:ender_eye'
+        },
+        "mana": 28000,
+        "output": {
+            "item": "minecraft:ghast_tear"
+        }
+    }).id('ico:ghast_tear_from_ender_eye')
 })

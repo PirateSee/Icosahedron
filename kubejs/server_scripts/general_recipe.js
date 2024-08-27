@@ -244,15 +244,23 @@ ServerEvents.recipes(e => {
 		S: 'betterend:leather_wrapped_stick'
 	}).damageIngredient(Item.of('#ico:tool/file')).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:manaweaver_wand_advanced')
 
-	e.shaped('mna:stone_rune_blank', [
-		'ASD', 
+	e.shaped('2x mna:stone_rune_blank', [
+		'DSD', 
 		'SSS', 
-		'DSA'
+		'DSD'
 	], {
-		A: 'mna:arcane_compound',
 		D: 'mna:vinteum_dust',
 		S: '#forge:stone'
 	}).id('ico:stone_rune_blank')
+
+    e.shaped('2x mna:stone_rune_blank', [
+		'DSD', 
+		'SSS', 
+		'DSD'
+	], {
+		D: 'mna:arcane_ash',
+		S: '#forge:stone'
+	}).id('ico:stone_rune_blank_from_ash')
 
 	e.shapeless('mna:purified_vinteum_dust', ['mna:vinteum_dust', 'mna:vinteum_dust', 'mna:arcane_compound','minecraft:glowstone_dust']).id('ico:purified_vinteum_dust')
 

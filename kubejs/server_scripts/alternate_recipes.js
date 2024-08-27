@@ -344,4 +344,40 @@ ServerEvents.recipes(e => {
     ], {
         N: 'minecraft:iron_nugget'
     })
+
+    //forged
+
+    e.recipes.create.compacting('tetra:forged_wall', '8x tetra:metal_scrap').id('ico:forged_wall')
+
+    e.stonecutting('tetra:forged_wall', 'tetra:forged_pillar').id('ico:forged_wall_from_pillar_stonecutting')
+    e.stonecutting('tetra:forged_wall', 'tetra:forged_platform').id('ico:forged_wall_from_platform_stonecutting')
+
+    e.shaped('2x tetra:forged_pillar', [
+        'F',
+        'F'
+    ], {
+        F: 'tetra:forged_wall'
+    }).id('ico:forged_pillar')
+
+    e.stonecutting('tetra:forged_pillar', 'tetra:forged_wall').id('ico:forged_pillar_stonecutting')
+    e.stonecutting('tetra:forged_pillar', 'tetra:forged_platform').id('ico:forged_pillar_from_platform_stonecutting')
+
+    e.shaped('2x tetra:forged_platform', [
+        'FF'
+    ], {
+        F: 'tetra:forged_wall'
+    }).id('ico:forged_platform')
+
+    e.stonecutting('tetra:forged_platform', 'tetra:forged_wall').id('ico:forged_platform_stonecutting')
+    e.stonecutting('tetra:forged_platform', 'tetra:forged_pillar').id('ico:forged_platform_from_pillar_stonecutting')
+
+    e.shaped('6x tetra:forged_platform_slab', [
+        'FFF'
+    ], {
+        F: 'tetra:forged_platform'
+    }).id('ico:forged_platform_slab')
+
+    e.stonecutting('2x tetra:forged_platform_slab', 'tetra:forged_wall').id('ico:forged_platform_slab_from_wall_stonecutting')
+    e.stonecutting('2x tetra:forged_platform_slab', 'tetra:forged_pillar').id('ico:forged_platform_slab_from_pillar_stonecutting')
+    e.stonecutting('2x tetra:forged_platform_slab', 'tetra:forged_platform').id('ico:forged_platform_slab_stonecutting')
 })

@@ -124,7 +124,7 @@ ServerEvents.recipes(e => {
         e.recipes.create.cutting('kubejs:unpolished_'.concat(id), 'kubejs:cleaned_unrefined_'.concat(id)).id("ico:cutting_".concat(id))
         e.custom({
             "type": "vintageimprovements:polishing",
-            "speed_limits": 1,
+            "speed_limits": 2,
             "ingredients": [
                 {
                     "item": 'kubejs:unpolished_'.concat(id)
@@ -230,6 +230,56 @@ ServerEvents.recipes(e => {
             }
         })
 
+    //re-melting
+    e.custom({
+        "type": "createbigcannons:melting",
+        "ingredients": [
+            {
+                "item": 'kubejs:carbon_steel_ingot'
+            }
+        ],
+        "results": [
+            {
+                "item": "kubejs:hot_carbon_steel"
+            }
+        ],
+        "processingTime": 400,
+        "heatRequirement": "heated"
+    })
+
+    e.custom({
+        "type": "createbigcannons:melting",
+        "ingredients": [
+            {
+                "item": 'kubejs:carbon_steel_sheet'
+            }
+        ],
+        "results": [
+            {
+                "item": "kubejs:hot_carbon_steel"
+            }
+        ],
+        "processingTime": 400,
+        "heatRequirement": "heated"
+    })
+
+    e.custom({
+        "type": "createbigcannons:melting",
+        "ingredients": [
+            {
+                "item": 'kubejs:carbon_steel_rod',
+                "count": 2
+            }
+        ],
+        "results": [
+            {
+                "item": "kubejs:hot_carbon_steel"
+            }
+        ],
+        "processingTime": 400,
+        "heatRequirement": "heated"
+    })
+
     //quenching
     e.recipes.create.filling('kubejs:carbon_steel_ingot', [Fluid.water(100), 'kubejs:hot_carbon_steel'])
     e.recipes.create.filling('kubejs:carbon_steel_rod', [Fluid.water(100), 'kubejs:hot_carbon_steel_rod'])
@@ -247,4 +297,6 @@ ServerEvents.recipes(e => {
         ], {
             N: 'kubejs:nickel_nugget'
         }).id('ico:compact_nickel_nugget')
+
+
 })

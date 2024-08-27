@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'botania:elementium_sword'})
 
     e.custom({
-        "type": "botania:petal_apothecary",
+        "type": "botania:runic_altar",
         "ingredients": [
             {
                 "item": "botania:rune_water"
@@ -38,15 +38,16 @@ ServerEvents.recipes(e => {
             },
             {
                 "item": "botania:rune_fire"
+            },
+            {
+                "item": "kubejs:rune_backing"
             }
         ],
+        "mana": 25000,
         "output": {
             "item": "kubejs:rune_essence"
         },
-        "reagent": {
-            "tag": "botania:seed_apothecary_reagent"
-        }
-    })
+    }).id('ico:rune_essence')
 
     e.shaped('botania:terra_plate', [
         '  T',

@@ -77,11 +77,11 @@ ServerEvents.recipes(e => {
 
 	e.remove({id:'farmersdelight:iron_knife'})
 
-	e.remove({id:'minecraft:diamond_axe'})
+	//e.remove({id:'minecraft:diamond_axe'})
 	e.remove({id:'minecraft:diamond_pickaxe'})
-	e.remove({id:'minecraft:diamond_sword'})
+	/*e.remove({id:'minecraft:diamond_sword'})
 	e.remove({id:'minecraft:diamond_shovel'})
-	e.remove({id:'minecraft:diamond_hoe'})
+	e.remove({id:'minecraft:diamond_hoe'})*/
 
 	e.remove({id:'farmersdelight:diamond_knife'})
 
@@ -498,4 +498,14 @@ ServerEvents.recipes(e => {
     e.shapeless('create_connected:copycat_catwalk', 'copycats:copycat_catwalk').id('ico:copycats_to_connected_catwalk')
     e.shapeless('create_connected:copycat_beam', 'copycats:copycat_beam').id('ico:copycats_to_connected_beam')
     e.shapeless('create_connected:copycat_vertical_step', 'copycats:copycat_vertical_step').id('ico:copycats_to_connected_vertical_step')
+
+    //lost knowledge
+    e.shaped('minecraft:diamond_pickaxe', [
+        'DDD',
+        ' S ',
+        ' S '
+    ], {
+        D: 'minecraft:diamond',
+        S: 'minecraft:stick'
+    }).id('ico:lost_miners_knowledge')
 })

@@ -43,6 +43,8 @@ ServerEvents.recipes(e => {
 		"minimumSpeed": 64.0
 		})
 		e.blasting(output, pdust)
+
+        e.recipes.create.milling(pdust, output)
 	}
 	
 	crude_ore_processing('minecraft:raw_copper','kubejs:impure_copper_grit','kubejs:copper_grit','minecraft:copper_ingot')
@@ -90,6 +92,7 @@ ServerEvents.recipes(e => {
 	})
 	e.shapeless('kubejs:zinc_grit', '4x kubejs:small_zinc_grit')
 	e.blasting('create:zinc_ingot', 'kubejs:zinc_grit')
+    e.recipes.create.milling('kubejs:zinc_grit', 'create:zinc_ingot')
 
 	e.recipes.createMilling(['kubejs:impure_iron_grit', Item.of('kubejs:impure_iron_grit').withChance(0.5)],'kubejs:limonite_ore')
 	//e.recipes.createMilling('kubejs:impure_zinc_grit','create:raw_zinc')
@@ -122,6 +125,8 @@ ServerEvents.recipes(e => {
 	})
 	e.shapeless('kubejs:iron_grit', '4x kubejs:small_iron_grit')
 	e.blasting('minecraft:iron_ingot', 'kubejs:iron_grit')
+    e.recipes.create.milling('kubejs:iron_grit', 'minecraft:iron_ingot')
+
   
     e.shapeless('kubejs:copper_grit', '4x kubejs:small_copper_grit')
 
