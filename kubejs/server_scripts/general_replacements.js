@@ -496,9 +496,50 @@ ServerEvents.recipes(e => {
         I: 'minecraft:terracotta'
     }).id('ico:terracotta_plate')
 
-    e.shapeless('betterend:charcoal_block', 'quark:charcoal_block').id('ico:quark_to_betterend_charcoal_block')
-    e.shapeless('mekanism:block_charcoal', 'betterend:charcoal_block').id('ico:betterend_to_mekanism_charcoal_block')
-    e.shapeless('quark:charcoal_block', 'mekanism:block_charcoal').id('ico:mekanism_to_quark_charcoal_block')
+    e.custom({
+        "type": "botania:mana_infusion",
+        "catalyst": {
+            "type": "block",
+            "block": "botania:alchemy_catalyst"
+        },
+        "input": {
+            "item": 'quark:charcoal_block'
+        },
+        "mana": 1,
+        "output": {
+            "item": "betterend:charcoal_block"
+        }
+    }).id('ico:quark_to_betterend_charcoal_block')
+
+    e.custom({
+        "type": "botania:mana_infusion",
+        "catalyst": {
+            "type": "block",
+            "block": "botania:alchemy_catalyst"
+        },
+        "input": {
+            "item": 'betterend:charcoal_block'
+        },
+        "mana": 1,
+        "output": {
+            "item": "mekanism:block_charcoal"
+        }
+    }).id('ico:betterend_to_mekanism_charcoal_block')
+
+    e.custom({
+        "type": "botania:mana_infusion",
+        "catalyst": {
+            "type": "block",
+            "block": "botania:alchemy_catalyst"
+        },
+        "input": {
+            "item": 'mekanism:block_charcoal'
+        },
+        "mana": 1,
+        "output": {
+            "item": "quark:charcoal_block"
+        }
+    }).id('ico:mekanism_to_quark_charcoal_block')
 
     e.shapeless('create_connected:copycat_slab', 'copycats:copycat_slab').id('ico:copycats_to_connected_slab')
     e.shapeless('create_connected:copycat_block', 'copycats:copycat_block').id('ico:copycats_to_connected_block')
