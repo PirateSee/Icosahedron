@@ -83,3 +83,5 @@ lootData:
         '[\w]+:chests\/[\w_\/]*(frosz?|taiga|cold|winter|snow|icey?|glac)[\w_\/]*': 0.025
         minecraft:chests/village/village_fletcher: 0.025
         minecraft:chests/igloo_chest: 0.025
+        '[\w]+:chests\/ancient_temple_[apex|fountain|storage|basement][\w_\/]*': 0.004
+        deeperdarker:chests/ancient_temple_secret: 0.008

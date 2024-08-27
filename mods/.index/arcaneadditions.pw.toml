@@ -1,0 +1,13 @@
+filename = 'ArcaneAdditions-1.20.1-forge-1.9.5.jar'
+name = 'ArcaneAdditions'
+side = 'both'
+
+[download]
+hash = '4e3a0eb43c4e94d8bb6bef4757b552c1da3843a83f774bc91957dc8ac3420aa0eb8f55d14504bccf90b8bae30e452adeecb7a3d5b5d9451f87038ab2bbe047de'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/QjEwLGIZ/versions/TiK5iFR4/ArcaneAdditions-1.20.1-forge-1.9.5.jar'
+
+[update.modrinth]
+mod-id = 'QjEwLGIZ'
+version = 'TiK5iFR4'

@@ -547,4 +547,17 @@ ServerEvents.recipes(e => {
 
     //portal
     e.shapeless('etched:portal_radio', ['etched:radio', 'minecraft:cake'])
+
+    //muddy
+    e.recipes.create.cutting('goodending:stripped_muddy_oak_log', 'goodending:muddy_oak_log')
+    e.recipes.create.cutting('6x goodending:muddy_oak_planks', 'goodending:stripped_muddy_oak_log')
+
+    e.recipes.create.cutting('goodending:stripped_muddy_oak_wood', 'goodending:muddy_oak_wood')
+    e.recipes.create.cutting('6x goodending:muddy_oak_planks', 'goodending:stripped_muddy_oak_wood')
+
+    e.recipes.create.cutting('quark:stripped_ancient_log', 'quark:ancient_log')
+    e.recipes.create.cutting('6x quark:ancient_planks', 'quark:stripped_ancient_log')
+
+    e.recipes.create.cutting('quark:stripped_ancient_wood', 'quark:ancient_wood')
+    e.recipes.create.cutting('6x quark:ancient_planks', 'quark:stripped_ancient_wood')
 })

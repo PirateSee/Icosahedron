@@ -1,0 +1,13 @@
+filename = 'aethersdelight-0.1.1-1.20.1.jar'
+name = "Aether's Delight"
+side = 'both'
+
+[download]
+hash = 'cb0338db9894961c39affdc700ac42b8b488373a454477b85c767f9a914697ebdeb4e14a25bb255541086f804e71274226a9f04ae1b78e0987b791daf211e183'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XUztKPS9/versions/hJmJzmuX/aethersdelight-0.1.1-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'XUztKPS9'
+version = 'hJmJzmuX'

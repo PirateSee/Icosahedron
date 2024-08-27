@@ -48,3 +48,5 @@ lootData:
         minecraft:chests/ruined_portal: 0.025
         '[\w]+:chests\/[\w_\/]*(nether|hell|lava|magma|fire|burn|fortress)[\w_\/]*': 0.025
         '[\w]+:chests\/[\w_\/]*(bastion|piglin)[\w_\/]*': 0.025
+        '[\w]+:chests\/ancient_temple_[apex|fountain|storage|basement][\w_\/]*': 0.004
+        deeperdarker:chests/ancient_temple_secret: 0.008

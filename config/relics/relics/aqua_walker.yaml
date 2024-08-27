@@ -38,3 +38,5 @@ lootData:
     entries:
         '[\w]+:chests\/[\w_\/]*(water|ocean|river|(?<!air)ship|aqua)[\w_\/]*': 0.025
         minecraft:chests/buried_treasure: 0.025
+        '[\w]+:chests\/ancient_temple_[apex|fountain|storage|basement][\w_\/]*': 0.004
+        deeperdarker:chests/ancient_temple_secret: 0.008

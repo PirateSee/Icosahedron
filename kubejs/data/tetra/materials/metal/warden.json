@@ -1,0 +1,29 @@
+{
+    "key": "warden",
+    "category": "metal",
+    "primary": 8,
+    "secondary": 3,
+    "tertiary": 4.5,
+    "durability": 2519,
+    "integrityCost": 3,
+    "integrityGain": 8,
+    "magicCapacity": 67,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 10,
+    "tints": {
+        "glyph": "0a4f5f",
+        "texture": "0a4f5f"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [
+            "deeperdarker:reinforced_echo_shard"
+        ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:netherite"
+    }
+}

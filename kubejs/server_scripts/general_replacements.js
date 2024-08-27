@@ -69,11 +69,11 @@ ServerEvents.recipes(e => {
 
 	//equipment
 	
-	e.remove({id:'minecraft:iron_axe'})
+	/*e.remove({id:'minecraft:iron_axe'})
 	e.remove({id:'minecraft:iron_pickaxe'})
 	e.remove({id:'minecraft:iron_sword'})
 	e.remove({id:'minecraft:iron_shovel'})
-	e.remove({id:'minecraft:iron_hoe'})
+	e.remove({id:'minecraft:iron_hoe'})*/
 
 	e.remove({id:'farmersdelight:iron_knife'})
 
@@ -85,11 +85,11 @@ ServerEvents.recipes(e => {
 
 	e.remove({id:'farmersdelight:diamond_knife'})
 
-	e.remove({id:'minecraft:golden_axe'})
+	/*e.remove({id:'minecraft:golden_axe'})
 	e.remove({id:'minecraft:golden_pickaxe'})
 	e.remove({id:'minecraft:golden_sword'})
 	e.remove({id:'minecraft:golden_shovel'})
-	e.remove({id:'minecraft:golden_hoe'})
+	e.remove({id:'minecraft:golden_hoe'})*/
 
 	e.remove({id:'farmersdelight:golden_knife'})
 

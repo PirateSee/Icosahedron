@@ -1,0 +1,13 @@
+filename = 'chisel-neoforge-1.21.1-1.8.1.jar'
+name = 'Chisel Reborn'
+side = 'both'
+
+[download]
+hash = '53cde99140ff52c58a57c6b312e27885b36b44f702248f28719313bb3bf232a03f5453595e5ce7a607706d8bf369690e6fb7f927dd007708d33181d7c15bc388'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/4KWv7wbN/versions/eBc9Y0Ku/chisel-neoforge-1.21.1-1.8.1.jar'
+
+[update.modrinth]
+mod-id = '4KWv7wbN'
+version = 'eBc9Y0Ku'

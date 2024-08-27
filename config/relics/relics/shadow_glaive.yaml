@@ -138,3 +138,5 @@ lootData:
         '[\w]+:chests\/[\w_\/]*(end|warp)[\w_\/]*': 0.025
         minecraft:chests/ancient_city_ice_box: 0.025
         '[\w]+:chests\/[\w_\/]*(warden|sculk|echo)[\w_\/]*': 0.025
+        '[\w]+:chests\/ancient_temple_[apex|fountain|storage|basement][\w_\/]*': 0.005
+        deeperdarker:chests/ancient_temple_secret: 0.025

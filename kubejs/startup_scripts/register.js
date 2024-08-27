@@ -293,7 +293,7 @@ StartupEvents.registry('item', e => {
 	e.create('blank_essence').texture('icosahedron:item/magic/source_catcher')*/
 
 	//other
-    e.create('unetched_ender_eye').texture('icosahedron:item/unetched_ender_eye')
+    //e.create('unetched_ender_eye').texture('icosahedron:item/unetched_ender_eye')
     /*e.create('heavyweight').texture('icosahedron:item/heavyweight')
 	e.create('supply_pass').displayName("Supply Cache Access Pass").texture('icosahedron:item/supply_pass')*/
     e.create('emerald_tablet').displayName("§aEmerald Tablet§r").texture('icosahedron:item/emerald_tablet')

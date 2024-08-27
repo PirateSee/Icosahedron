@@ -1,0 +1,29 @@
+{
+    "key": "resonarium",
+    "category": "metal",
+    "primary": 6,
+    "secondary": 2.9,
+    "tertiary": 1.2,
+    "durability": 1193,
+    "integrityCost": 2,
+    "integrityGain": 3,
+    "magicCapacity": 67,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 8,
+    "tints": {
+        "glyph": "57c5ec",
+        "texture": "57c5ec"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [
+            "deeperdarker:resonarium_plate"
+        ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

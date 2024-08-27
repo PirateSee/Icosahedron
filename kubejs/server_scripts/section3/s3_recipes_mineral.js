@@ -281,9 +281,60 @@ ServerEvents.recipes(e => {
     })
 
     //quenching
-    e.recipes.create.filling('kubejs:carbon_steel_ingot', [Fluid.water(100), 'kubejs:hot_carbon_steel'])
-    e.recipes.create.filling('kubejs:carbon_steel_rod', [Fluid.water(100), 'kubejs:hot_carbon_steel_rod'])
-    e.recipes.create.filling('kubejs:carbon_steel_sheet', [Fluid.water(100), 'kubejs:hot_carbon_steel_sheet'])
+    e.recipes.create.filling('kubejs:carbon_steel_ingot', [Fluid.water(100), 'kubejs:hot_carbon_steel']).id('spout_quench_carbon_steel')
+    e.recipes.create.filling('kubejs:carbon_steel_rod', [Fluid.water(100), 'kubejs:hot_carbon_steel_rod']).id('spout_quench_carbon_steel_rod')
+    e.recipes.create.filling('kubejs:carbon_steel_sheet', [Fluid.water(100), 'kubejs:hot_carbon_steel_sheet']).id('spout_quench_carbon_steel_sheet')
+
+    e.custom({
+        "type": "ae2:transform",
+        "circumstance": {
+            "type": "fluid",
+            "tag": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "item": "kubejs:hot_carbon_steel"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "kubejs:carbon_steel_ingot"
+        }
+    }).id('drop_quench_carbon_steel')
+
+    e.custom({
+        "type": "ae2:transform",
+        "circumstance": {
+            "type": "fluid",
+            "tag": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "item": "kubejs:hot_carbon_steel_rod"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "kubejs:carbon_steel_rod"
+        }
+    }).id('drop_quench_carbon_steel_rod')
+
+    e.custom({
+        "type": "ae2:transform",
+        "circumstance": {
+            "type": "fluid",
+            "tag": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "item": "kubejs:hot_carbon_steel_sheet"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "kubejs:carbon_steel_sheet"
+        }
+    }).id('drop_quench_carbon_steel_sheet')
 
     e.recipes.create.sandpaper_polishing('minecraft:quartz', 'kubejs:rough_nether_quartz')
     e.recipes.create.sandpaper_polishing('minecraft:emerald', 'kubejs:rough_emerald')
@@ -291,12 +342,10 @@ ServerEvents.recipes(e => {
     //nickel
     e.shapeless('9x kubejs:nickel_nugget', 'kubejs:nickel_ingot')
     e.shaped('kubejs:nickel_ingot', [
-            'NNN', 
-            'NNN', 
-            'NNN'
-        ], {
-            N: 'kubejs:nickel_nugget'
-        }).id('ico:compact_nickel_nugget')
-
-
+        'NNN', 
+        'NNN', 
+        'NNN'
+    ], {
+        N: 'kubejs:nickel_nugget'
+    }).id('ico:compact_nickel_nugget')
 })

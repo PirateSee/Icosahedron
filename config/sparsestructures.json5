@@ -27,6 +27,10 @@
       "structure": "minecraft:end_city",
       "factor": 1.25
     },
+	{
+		"structure": "deeperdarker:ancient_temple",
+		"factor": 1
+	}
     
     // add the structures you want to modify in the format:
     // {
