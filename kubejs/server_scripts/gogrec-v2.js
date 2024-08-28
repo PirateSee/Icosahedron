@@ -622,13 +622,13 @@ ServerEvents.recipes(e => {
 
     e.remove({id:'mekanism:electric_pump'})
 
-    e.shaped('mekanism:industrial_alarm', [
+    e.shaped('2x mekanism:industrial_alarm', [
         ' rs', 
         'iwi'
     ], {
         s: '#ico:tool/screwdriver',
         r: 'minecraft:redstone_lamp',
-        i: 'mekanism:ingot_lead',
+        i: 'createbigcannons:cast_iron_ingot',
         w: 'kubejs:redstone_cable'
     }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:industrial_alarm')
 

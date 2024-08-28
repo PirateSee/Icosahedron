@@ -472,4 +472,60 @@ ServerEvents.recipes(e => {
 		e.recipes.createPressing(inter, inter)
 	]).transitionalItem(inter).loops(1)
 
+    //wall lamps
+
+    let wall_lamps = (color) => {
+        let lamp = 'pneumaticcraft:wall_lamp_' + color
+        let lamp_inverted = 'pneumaticcraft:wall_lamp_inverted_' + color
+
+        e.shaped('4x ' + lamp, [
+            ' RT',
+            'CGC',
+            ' D '
+        ], {
+            R: 'minecraft:redstone',
+            C: 'createbigcannons:cast_iron_ingot',
+            G: 'minecraft:glowstone',
+            D: 'minecraft:' + color + '_dye',
+            T: '#ico:tool/screwdriver'
+        }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:wall_lamp_' + color)
+
+        e.shaped('4x ' + lamp_inverted, [
+            ' RT',
+            'CGC',
+            ' D '
+        ], {
+            R: 'minecraft:redstone_torch',
+            C: 'createbigcannons:cast_iron_ingot',
+            G: 'minecraft:glowstone',
+            D: 'minecraft:' + color + '_dye',
+            T: '#ico:tool/screwdriver'
+        }).damageIngredient(Item.of('#ico:tool/screwdriver')).id('ico:wall_lamp_inverted_' + color)
+
+        e.shapeless(lamp, [lamp_inverted, 'minecraft:redstone_torch']).id('ico:invert_wall_lamp_inverted_' + color)
+        e.shapeless(lamp_inverted, [lamp, 'minecraft:redstone_torch']).id('ico:invert_wall_lamp_' + color)
+
+        e.shapeless(lamp, ['#pneumaticcraft:wall_lamps', 'minecraft:' + color + '_dye']).id('ico:dye_wall_lamp_' + color)
+        e.shapeless(lamp_inverted, ['#pneumaticcraft:wall_lamps_inverted', 'minecraft:' + color + '_dye']).id('ico:dye_wall_lamp_inverted_' + color)
+
+        e.remove({id: lamp_inverted})
+        e.remove({id: lamp})
+    }
+
+    wall_lamps('white')
+    wall_lamps('light_gray')
+    wall_lamps('gray')
+    wall_lamps('black')
+    wall_lamps('brown')
+    wall_lamps('red')
+    wall_lamps('orange')
+    wall_lamps('yellow')
+    wall_lamps('lime')
+    wall_lamps('green')
+    wall_lamps('cyan')
+    wall_lamps('light_blue')
+    wall_lamps('blue')
+    wall_lamps('purple')
+    wall_lamps('magenta')
+    wall_lamps('pink')
 })
