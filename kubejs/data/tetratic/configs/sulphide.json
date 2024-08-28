@@ -34,10 +34,26 @@
                 }
             }
         },
-        "sword/knife": {
-            "config": {
-                "attributes": {
-                    "parent": "bettercombat:knife"
+        "sword/blade": {
+            "sword/knife": {
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:knife"
+                    }
+                }
+            },
+            "sword/stonecutter": {
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:stonecutter"
+                    }
+                }
+            },
+            "sword/unbound_stonecutter": {
+                "config": {
+                    "attributes": {
+                        "parent": "bettercombat:stonecutter"
+                    }
                 }
             }
         }
