@@ -1,0 +1,13 @@
+{
+    "origins": [
+        "icosahedron_origins:faction/none",
+        "icosahedron_origins:faction/council",
+        "icosahedron_origins:faction/demon",
+        "icosahedron_origins:faction/fey",
+        "icosahedron_origins:faction/undead"
+    ],
+    "enabled": true,
+    "name": "Faction",
+    "auto_choose": true,
+    "hidden": true
+}

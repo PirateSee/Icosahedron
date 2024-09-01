@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "cold_sweat:cold_resistance",
+        "operation": "addition",
+        "value": 1,
+        "name": "Undead"
+    },
+    "update_health": true
+}

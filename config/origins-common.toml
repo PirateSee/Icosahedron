@@ -437,3 +437,21 @@
 		"icosahedron_origins:fox/cracked_plate" = true
 		"icosahedron_origins:fox/cracked_toughness" = true
 
+	[origins."icosahedron_origins:faction/council"]
+		enabled = true
+
+	[origins."icosahedron_origins:faction/none"]
+		enabled = true
+
+	[origins."icosahedron_origins:faction/demon"]
+		enabled = true
+		"icosahedron_origins:faction/demon" = true
+
+	[origins."icosahedron_origins:faction/fey"]
+		enabled = true
+		"icosahedron_origins:faction/fey" = true
+
+	[origins."icosahedron_origins:faction/undead"]
+		enabled = true
+		"icosahedron_origins:faction/undead" = true
+

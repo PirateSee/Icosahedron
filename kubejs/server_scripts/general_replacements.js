@@ -562,4 +562,17 @@ ServerEvents.recipes(e => {
         D: 'minecraft:diamond',
         S: 'minecraft:stick'
     }).id('ico:lost_miners_knowledge')
+
+    //redstone module
+    e.remove('vintageimprovements:sequenced_assembly/redstone_module')
+
+    let inter = 'vintageimprovements:incomplete_redstone_module'
+	e.recipes.create.sequenced_assembly([
+		Item.of('vintageimprovements:redstone_module').withChance(120.0),
+	], 'create:golden_sheet', [
+		e.recipes.createDeploying(inter, [inter, 'minecraft:redstone_dust']),
+        e.recipes.createDeploying(inter, [inter, 'minecraft:quartz']),
+		e.recipes.createPressing(inter, inter),
+		e.recipes.createDeploying(inter, [inter, 'minecraft:iron_nugget'])
+	]).transitionalItem(inter).loops(3)
 })

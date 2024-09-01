@@ -182,4 +182,41 @@ ServerEvents.recipes(e => {
 	}).id('ico:ornate_gold_block')
 
     e.shapeless('9x kubejs:ornate_gold', 'kubejs:ornate_gold_block')
+
+    //quark vertical planks
+    /*e.remove({id:'quark:crafting/vertplanks/vertical_oak_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_spruce_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_birch_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_jungle_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_acacia_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_dark_oak_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_mangrove_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_cherry_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_crimson_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_warped_planks'})
+    e.remove({id:'quark:crafting/vertplanks/vertical_bamboo_planks'})*/
+
+
+    let vertplank = (wood) => {
+        e.remove({id:'quark:building/crafting/vertplanks/vertical_' + wood + '_planks'})
+        e.recipes.shaped('3x quark:vertical_' + wood + '_planks', [
+            'P',
+            'P',
+            'P'
+        ], {
+            P: 'chipped:vertical_' + wood + '_planks'
+        }).id('ico:vertical_' + wood + '_planks')
+    }
+
+    vertplank('oak')
+    vertplank('spruce')
+    vertplank('birch')
+    vertplank('jungle')
+    vertplank('acacia')
+    vertplank('dark_oak')
+    vertplank('mangrove')
+    vertplank('cherry')
+    vertplank('crimson')
+    vertplank('warped')
+    vertplank('bamboo')
 })

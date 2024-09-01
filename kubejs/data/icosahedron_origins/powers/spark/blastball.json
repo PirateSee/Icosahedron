@@ -144,7 +144,7 @@
     "key": {
         "key": "key.origins.primary_active"
     },
-    "divergence": 0,1,
+    "divergence": 0.1,
     "speed": 0.8,
     "cooldown": 5
 }

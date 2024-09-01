@@ -1,0 +1,19 @@
+{
+    "hidden": true,
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "cold_sweat:cold_resistance ",
+            "operation": "addition",
+            "value": 0.75,
+            "name": "Fey"
+        },
+        {
+            "attribute": "cold_sweat:heat_resistance",
+            "operation": "addition",
+            "value": 0.75,
+            "name": "Fey"
+        }
+    ],
+    "update_health": true
+}
