@@ -568,9 +568,9 @@ ServerEvents.recipes(e => {
 
     let inter = 'vintageimprovements:incomplete_redstone_module'
 	e.recipes.create.sequenced_assembly([
-		Item.of('vintageimprovements:redstone_module').withChance(120.0),
+		Item.of('vintageimprovements:redstone_module').withChance(120.0)
 	], 'create:golden_sheet', [
-		e.recipes.createDeploying(inter, [inter, 'minecraft:redstone_dust']),
+		e.recipes.createDeploying(inter, [inter, 'minecraft:redstone']),
         e.recipes.createDeploying(inter, [inter, 'minecraft:quartz']),
 		e.recipes.createPressing(inter, inter),
 		e.recipes.createDeploying(inter, [inter, 'minecraft:iron_nugget'])
