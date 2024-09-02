@@ -64,11 +64,7 @@ ServerEvents.recipes(e => {
     advanced_ore('pentlandite', 'nickel', [
             {
                 "fluid": "kubejs:molten_nickel",
-                "amount": 50
-            },
-            {
-                "fluid": "kubejs:molten_iron",
-                "amount": 20
+                "amount": 90
             },
             {
                 "fluid": "kubejs:slag_runoff",

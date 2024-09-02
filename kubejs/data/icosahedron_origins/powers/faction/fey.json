@@ -3,15 +3,15 @@
     "type": "origins:attribute",
     "modifiers": [
         {
-            "attribute": "cold_sweat:cold_resistance ",
+            "attribute": "cold_sweat:cold_dampening",
             "operation": "addition",
-            "value": 0.75,
+            "value": 0.5,
             "name": "Fey"
         },
         {
-            "attribute": "cold_sweat:heat_resistance",
+            "attribute": "cold_sweat:heat_dampening",
             "operation": "addition",
-            "value": 0.75,
+            "value": 0.5,
             "name": "Fey"
         }
     ],

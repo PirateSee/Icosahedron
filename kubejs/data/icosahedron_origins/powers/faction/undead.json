@@ -2,7 +2,7 @@
     "hidden": true,
     "type": "origins:attribute",
     "modifier": {
-        "attribute": "cold_sweat:cold_resistance",
+        "attribute": "cold_sweat:cold_dampening",
         "operation": "addition",
         "value": 1,
         "name": "Undead"
