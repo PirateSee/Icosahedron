@@ -10,5 +10,5 @@
 	#If this is set to true, the mod will use the tag for ocean biomes to blacklist them (default: true)
 	blacklistOceans = true
 	#Biomes in this list will be blacklisted from having players spawn in them. By default the mod uses a tag for ocean biomes.
-	biomeBlacklist = ["minecraft:snowy_taiga", "minecraft:snowy_beach", "minecraft:snowy_plains", "minecraft:snowy_slopes", "minecraft:badlands", "minecraft:wooded_badlands", "minecraft:meadow", "minecraft:mushroom_fields", "minecraft:ice_spikes", "minecraft:grove", "minecraft:frozen_peaks", "minecraft:frozen_river", "minecraft:eroded_badlands", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna", "minecraft:old_growth_pine_taiga", "minecraft:taiga", "minecraft:jagged_peaks"]
+	biomeBlacklist = ["minecraft:snowy_taiga", "minecraft:snowy_beach", "minecraft:snowy_plains", "minecraft:snowy_slopes", "minecraft:badlands", "minecraft:wooded_badlands", "minecraft:meadow", "minecraft:mushroom_fields", "minecraft:ice_spikes", "minecraft:grove", "minecraft:frozen_peaks", "minecraft:frozen_river", "minecraft:eroded_badlands", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna", "minecraft:old_growth_pine_taiga", "minecraft:taiga", "minecraft:jagged_peaks", "minecraft:desert"]
 
